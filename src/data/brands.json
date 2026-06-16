@@ -1,0 +1,74 @@
+[
+  {
+    "id": "snibe",
+    "name": "SNIBE",
+    "logo": "/images/brands/snibe.png",
+    "description": "Мировой лидер ИХЛА с 30-летней историей. Представлен в 163 странах, более 40 000 установленных анализаторов. №1 в Узбекистане по иммунохемилюминесцентному анализу."
+  },
+  {
+    "id": "bd",
+    "name": "BD",
+    "logo": "/images/brands/bd.png",
+    "description": "Becton Dickinson — глобальная медико-технологическая компания. Решения для микробиологии, гемокультуры и фенотипической идентификации с определением антибиотикорезистентности."
+  },
+  {
+    "id": "randox",
+    "name": "Randox",
+    "logo": "/images/brands/randox.png",
+    "description": "Один из мировых лидеров in-vitro диагностики и контроля качества. Биочиповые анализаторы и крупнейшая схема внешней оценки качества RIQAS."
+  },
+  {
+    "id": "dymind",
+    "name": "Dymind",
+    "logo": "/images/brands/dymind.png",
+    "description": "Производитель гематологических анализаторов с AI-анализом. Обладатель премий Red Dot и iF Design Award за дизайн и инновации."
+  },
+  {
+    "id": "werfen",
+    "name": "Werfen",
+    "logo": "/images/brands/werfen.png",
+    "description": "Мировой лидер в области гемостаза и анализа критических состояний (КЩС). Анализаторы ACL TOP и GEM Premier."
+  },
+  {
+    "id": "illumina",
+    "name": "Illumina",
+    "logo": "/images/brands/illumina.png",
+    "description": "Пионер секвенирования нового поколения (NGS). Основана в 1998 году, Сан-Диего. Представлена в 160 странах."
+  },
+  {
+    "id": "lifotronic",
+    "name": "Lifotronic",
+    "logo": "/images/brands/lifotronic.png",
+    "description": "Производитель анализаторов гликированного гемоглобина методом ионообменной ВЭЖХ — золотого стандарта ВОЗ."
+  },
+  {
+    "id": "urit",
+    "name": "URIT",
+    "logo": "/images/brands/urit.png",
+    "description": "Производитель анализаторов мочи, проточных цитометров и модульных гематологических лабораторий."
+  },
+  {
+    "id": "clarius",
+    "name": "Clarius",
+    "logo": "/images/brands/clarius.png",
+    "description": "Беспроводные ультразвуковые сканеры для медицины, обучения и ветеринарии. Более 20 000 врачей по всему миру."
+  },
+  {
+    "id": "condalab",
+    "name": "Condalab",
+    "logo": "/images/brands/condalab.png",
+    "description": "Испанский производитель питательных сред с 1960 года. Экспорт в 130 стран, соответствие ISO, FDA, USP, AOAC."
+  },
+  {
+    "id": "thermofisher",
+    "name": "Thermo Fisher",
+    "logo": "/images/brands/thermofisher.png",
+    "description": "Молекулярная аллергодиагностика Phadia — золотой стандарт в аллергологии."
+  },
+  {
+    "id": "keyu",
+    "name": "KEYU",
+    "logo": "/images/brands/keyu.png",
+    "description": "AI-анализаторы кала с распознаванием формённых элементов и гельминтов."
+  }
+]

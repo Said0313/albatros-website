@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "maglumi-x3",
+    "slug": "maglumi-x3",
+    "name": "Maglumi X3",
+    "category": "ИХЛА",
+    "brand": "SNIBE",
+    "shortDescription": "Компактный иммунохемилюминесцентный анализатор для небольших лабораторий.",
+    "fullDescription": "Maglumi X3 — компактная настольная система иммунохемилюминесцентного анализа (ИХЛА) от SNIBE. Идеальное решение для лабораторий с умеренной нагрузкой, обеспечивающее доступ к панели из 260 параметров. SNIBE — мировой лидер с 30-летней историей, представленный в 163 странах, с более чем 40 000 установленных анализаторов. №1 в Узбекистане по ИХЛА.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "до 200 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "72 позиции"
+      },
+      {
+        "label": "Реагенты",
+        "value": "20 позиций"
+      },
+      {
+        "label": "Размеры",
+        "value": "90×75×78 см"
+      },
+      {
+        "label": "Масса",
+        "value": "127 кг"
+      },
+      {
+        "label": "Параметров",
+        "value": "260"
+      }
+    ],
+    "images": [
+      "/images/products/maglumi-x3.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "maglumi-x6",
+    "slug": "maglumi-x6",
+    "name": "Maglumi X6",
+    "category": "ИХЛА",
+    "brand": "SNIBE",
+    "shortDescription": "Высокопроизводительный ИХЛА-анализатор для средних лабораторий.",
+    "fullDescription": "Maglumi X6 — производительная система ИХЛА от SNIBE для средних и крупных лабораторий. Расширенная загрузка образцов и реагентов в сочетании с непрерывной работой обеспечивает высокую пропускную способность при стабильном качестве результатов.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "до 450 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "112 позиций"
+      },
+      {
+        "label": "Реагенты",
+        "value": "30 позиций"
+      },
+      {
+        "label": "Размеры",
+        "value": "148×94×155 см"
+      },
+      {
+        "label": "Масса",
+        "value": "450 кг"
+      },
+      {
+        "label": "Параметров",
+        "value": "260"
+      }
+    ],
+    "images": [
+      "/images/products/maglumi-x6.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "maglumi-x8",
+    "slug": "maglumi-x8",
+    "name": "Maglumi X8",
+    "category": "ИХЛА",
+    "brand": "SNIBE",
+    "shortDescription": "Производительная ИХЛА-платформа для крупных лабораторий.",
+    "fullDescription": "Maglumi X8 — высокопроизводительный иммунохемилюминесцентный анализатор для крупных клинико-диагностических лабораторий. Большой запас образцов и реагентов на борту, технология STAT-X для срочных проб.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "до 600 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "300 позиций"
+      },
+      {
+        "label": "Реагенты",
+        "value": "42 позиции"
+      },
+      {
+        "label": "Размеры",
+        "value": "192×118×150 см"
+      },
+      {
+        "label": "Масса",
+        "value": "670 кг"
+      },
+      {
+        "label": "Параметров",
+        "value": "260"
+      }
+    ],
+    "images": [
+      "/images/products/maglumi-x8.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "maglumi-x10",
+    "slug": "maglumi-x10",
+    "name": "Maglumi X10",
+    "category": "ИХЛА",
+    "brand": "SNIBE",
+    "shortDescription": "Флагманский ИХЛА-анализатор производительностью до 1000 тестов/час.",
+    "fullDescription": "Maglumi X10 — флагман линейки SNIBE Maglumi X-серии. Максимальная производительность до 1000 тестов в час, рекордная загрузка образцов и реагентов. Предназначен для крупнейших лабораторий и лабораторных сетей. Может объединяться в трек-систему Biolumi CX.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "до 1000 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "300 позиций"
+      },
+      {
+        "label": "Реагенты",
+        "value": "50 позиций"
+      },
+      {
+        "label": "Размеры",
+        "value": "192.5×123×154 см"
+      },
+      {
+        "label": "Масса",
+        "value": "690 кг"
+      },
+      {
+        "label": "Параметров",
+        "value": "260"
+      }
+    ],
+    "images": [
+      "/images/products/maglumi-x10.png"
+    ],
+    "featured": true,
+    "isNew": true
+  },
+  {
+    "id": "biossays-240-plus",
+    "slug": "biossays-240-plus",
+    "name": "Biossays 240 Plus",
+    "category": "Биохимия",
+    "brand": "SNIBE",
+    "shortDescription": "Компактный настольный биохимический анализатор открытого типа 2-в-1.",
+    "fullDescription": "Biossays 240 Plus — компактный настольный биохимический анализатор открытого типа, совмещённый с электролитным модулем (2 в 1). Панель из 100+ параметров: липиды, функция почек и печени, белки, ревматизм, ионы, анемия, диабет, кардиология.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "240 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "45+ позиций"
+      },
+      {
+        "label": "Реагенты",
+        "value": "45+ позиций"
+      },
+      {
+        "label": "Кюветы",
+        "value": "80"
+      },
+      {
+        "label": "Электролитный модуль",
+        "value": "10 000 тестов"
+      }
+    ],
+    "images": [
+      "/images/products/biossays-240-plus.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "biossays-c10",
+    "slug": "biossays-c10",
+    "name": "Biossays C10",
+    "category": "Биохимия",
+    "brand": "SNIBE",
+    "shortDescription": "Мощная интеллектуальная биохимическая система до 2000 тестов/час.",
+    "fullDescription": "Biossays C10 — мощная и интеллектуальная биохимическая система от SNIBE. Производительность по биохимии до 2000 тестов/час плюс электролитный модуль 1000 тестов/час. Возможность добавления decapper-модуля для автоматического снятия крышек.",
+    "specifications": [
+      {
+        "label": "Биохимия",
+        "value": "до 2000 тестов/час"
+      },
+      {
+        "label": "Электролиты",
+        "value": "1000 тестов/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "300 позиций"
+      },
+      {
+        "label": "Реагенты",
+        "value": "100+100 позиций"
+      }
+    ],
+    "images": [
+      "/images/products/biossays-c10.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "biolumi-cx-solution",
+    "slug": "biolumi-cx-solution",
+    "name": "Biolumi CX Solution",
+    "category": "Биохимия",
+    "brand": "SNIBE",
+    "shortDescription": "Интегрированная платформа ИХЛА + Биохимия с трек-системой.",
+    "fullDescription": "Biolumi CX Solution — интегрированная платформа, объединяющая ИХЛА и биохимию в единую трек-систему. Доступные конфигурации: X10+C10 (ИХЛА 1000 т/ч + биохимия 2000 т/ч), X8+C10, X8+C8, X6+C8. Все конфигурации включают электролитный модуль 1000 т/ч.",
+    "specifications": [
+      {
+        "label": "Конфигурация X10+C10",
+        "value": "ИХЛА 1000 + Биохимия 2000 т/ч"
+      },
+      {
+        "label": "Конфигурация X8+C10",
+        "value": "600 + 2000 т/ч"
+      },
+      {
+        "label": "Конфигурация X6+C8",
+        "value": "450 + 1600 т/ч"
+      },
+      {
+        "label": "Электролиты",
+        "value": "1000 т/ч"
+      }
+    ],
+    "images": [
+      "/images/products/biolumi-cx-solution.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "acl-top-350-cts",
+    "slug": "acl-top-350-cts",
+    "name": "ACL TOP 350 CTS",
+    "category": "Гемостаз",
+    "brand": "Werfen",
+    "shortDescription": "Автоматический анализатор гемостаза №1 в Узбекистане.",
+    "fullDescription": "ACL TOP 350 CTS от Werfen — №1 в Узбекистане по автоматическому гемостазу. Время до первого результата всего 3 минуты, преаналитический модуль оценивает заполненность пробирки, аномальную аспирацию, гемолиз, гипербилирубинемию и липемию. Широкое меню: рутинный гемостаз, антикоагулянтная терапия, диагностика тромбозов, тромбофилии, болезни Виллебранда, АФС.",
+    "specifications": [
+      {
+        "label": "Время до первого анализа",
+        "value": "3 минуты"
+      },
+      {
+        "label": "Образцы",
+        "value": "до 40 со штрих-кодом"
+      },
+      {
+        "label": "Реагенты на борту",
+        "value": "26"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 110 тестов/час"
+      }
+    ],
+    "images": [
+      "/images/products/acl-top-350-cts.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "gem-premier-5000",
+    "slug": "gem-premier-5000",
+    "name": "GEM Premier 5000",
+    "category": "КЩС",
+    "brand": "Werfen",
+    "shortDescription": "Анализатор газов крови, электролитов и CO-оксиметрии с iQM2.",
+    "fullDescription": "GEM Premier 5000 измеряет газы крови, pH, электролиты, глюкозу, лактат, гематокрит, CO-оксиметрию и общий билирубин. Система автоматического контроля качества iQM2 с технологией IntraSpect обеспечивает непрерывный контроль в реальном времени. 17 измеряемых и 26 расчётных параметров.",
+    "specifications": [
+      {
+        "label": "Измеряемые параметры",
+        "value": "17"
+      },
+      {
+        "label": "Расчётные параметры",
+        "value": "26"
+      },
+      {
+        "label": "Контроль качества",
+        "value": "iQM2 / IntraSpect"
+      },
+      {
+        "label": "Параметры",
+        "value": "pH, pCO₂, pO₂, Na+, K+, Ca++, Cl-, Glu, Lac, Hct, CO-окси, tBili"
+      }
+    ],
+    "images": [
+      "/images/products/gem-premier-5000.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "gem-premier-3500",
+    "slug": "gem-premier-3500",
+    "name": "GEM Premier 3500",
+    "category": "КЩС",
+    "brand": "Werfen",
+    "shortDescription": "Анализатор для диагностики критических состояний за 85 секунд.",
+    "fullDescription": "GEM Premier 3500 — анализатор для экспресс-диагностики критических состояний. Измеряет pH, pCO₂, pO₂, электролиты, глюкозу, лактат и гематокрит со скоростью 85 секунд. 9 измеряемых и 17 расчётных параметров.",
+    "specifications": [
+      {
+        "label": "Скорость",
+        "value": "85 секунд"
+      },
+      {
+        "label": "Измеряемые параметры",
+        "value": "9"
+      },
+      {
+        "label": "Расчётные параметры",
+        "value": "17"
+      },
+      {
+        "label": "Параметры",
+        "value": "pH, pCO₂, pO₂, Na+, K+, Ca++, Cl-, Glu, Lac, Hct"
+      }
+    ],
+    "images": [
+      "/images/products/gem-premier-3500.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "dh-800",
+    "slug": "dh-800",
+    "name": "Dymind DH-800",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "6-Diff гематологический анализатор с AI-анализом, до 110 тестов/час.",
+    "fullDescription": "Dymind DH-800 — топовый гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Сочетает лазерное светорассеивание, флуоресцентный метод и проточную цитометрию. 46 основных и 163 исследовательских параметра, экран 15.6\", автозагрузка 60 образцов, память на 300 000 записей.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "6-Diff + RET + NRBC"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 110 тестов/час"
+      },
+      {
+        "label": "Параметры",
+        "value": "46 основных / 163 исследовательских"
+      },
+      {
+        "label": "Экран",
+        "value": "15.6\""
+      },
+      {
+        "label": "Образцы",
+        "value": "60"
+      },
+      {
+        "label": "Габариты",
+        "value": "655×868×867 мм / 115 кг"
+      }
+    ],
+    "images": [
+      "/images/products/dh-800.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "dh-615",
+    "slug": "dh-615",
+    "name": "Dymind DH-615",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "6-Diff анализатор с AI, обладатель Red Dot и iF Design Award.",
+    "fullDescription": "Dymind DH-615 — гематологический анализатор 6-Diff + RET с AI-анализом, до 100 тестов/час. 64 параметра (35 основных + 29 исследовательских), лазерно-флуоресцентный метод, экран 12.1\", память 150 000 записей. Обладатель премий Red Dot Winner 2021 и iF Design Award.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "6-Diff + RET"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 100 тестов/час"
+      },
+      {
+        "label": "Параметры",
+        "value": "64 (35 + 29)"
+      },
+      {
+        "label": "Экран",
+        "value": "12.1\""
+      },
+      {
+        "label": "Образцы",
+        "value": "60"
+      },
+      {
+        "label": "Награды",
+        "value": "Red Dot 2021, iF Design"
+      }
+    ],
+    "images": [
+      "/images/products/dh-615.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "dh-88",
+    "slug": "dh-88",
+    "name": "Dymind DH-88",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "6-Diff анализатор со встроенным измерением СОЭ.",
+    "fullDescription": "Dymind DH-88 — гематологический анализатор 6-Diff + СОЭ + RET + NRBC с AI-анализом, до 100 тестов/час. Встроенный модуль СОЭ выдаёт 80 тестов/час по модифицированному методу Вестергрена — 30 результатов за 25 минут с превосходной корреляцией с золотым стандартом. Объём образца 20 мкл.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "6-Diff + СОЭ + RET + NRBC"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 100 тестов/час"
+      },
+      {
+        "label": "СОЭ",
+        "value": "80 тестов/час, метод Вестергрена"
+      },
+      {
+        "label": "Образцы",
+        "value": "до 55"
+      },
+      {
+        "label": "Объём образца",
+        "value": "20 мкл"
+      },
+      {
+        "label": "Параметры",
+        "value": "33 (27 + 6)"
+      }
+    ],
+    "images": [
+      "/images/products/dh-88.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "df56-vet",
+    "slug": "df56-vet",
+    "name": "Dymind DF56 Vet",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "Ветеринарный 6-Diff анализатор для 6 видов животных.",
+    "fullDescription": "Dymind DF56 Vet — ветеринарный гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Поддерживает 6 видов животных: кошки, собаки, кролики, коровы, лошади, овцы. Производительность до 100 тестов/час, объём образца 20 мкл.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "6-Diff + RET + NRBC"
+      },
+      {
+        "label": "Виды животных",
+        "value": "6"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 100 тестов/час"
+      },
+      {
+        "label": "Объём образца",
+        "value": "20 мкл"
+      }
+    ],
+    "images": [
+      "/images/products/df56-vet.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "df50-crp",
+    "slug": "df50-crp",
+    "name": "Dymind DF50 CRP",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "5-Diff анализатор со встроенным определением CRP.",
+    "fullDescription": "Dymind DF50 CRP — гематологический анализатор 5-Diff + CRP, до 60 тестов/час. В режиме 3-Diff автозагрузка до 55 образцов при объёме 20 мкл. Встроенный сканер штрих-кода, термопринтер, сенсорный экран с русскоязычным интерфейсом.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "5-Diff + CRP"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 60 тестов/час"
+      },
+      {
+        "label": "Образцы (3-Diff)",
+        "value": "до 55"
+      },
+      {
+        "label": "Объём образца",
+        "value": "20 мкл"
+      },
+      {
+        "label": "Интерфейс",
+        "value": "русский язык"
+      }
+    ],
+    "images": [
+      "/images/products/df50-crp.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "dh-26",
+    "slug": "dh-26",
+    "name": "Dymind DH-26",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "Компактный 3-Diff гематологический анализатор.",
+    "fullDescription": "Dymind DH-26 — компактный гематологический анализатор 3-Diff производительностью до 20 тестов/час. Оптимальное решение для небольших лабораторий и кабинетов.",
+    "specifications": [
+      {
+        "label": "Дифференцировка",
+        "value": "3-Diff"
+      },
+      {
+        "label": "Производительность",
+        "value": "до 20 тестов/час"
+      },
+      {
+        "label": "Тип",
+        "value": "компактный настольный"
+      }
+    ],
+    "images": [
+      "/images/products/dh-26.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "cube-30-touch",
+    "slug": "cube-30-touch",
+    "name": "CUBE 30 Touch",
+    "category": "Гематология",
+    "brand": "Dymind",
+    "shortDescription": "Автоматический анализатор СОЭ по методу Вестергрена.",
+    "fullDescription": "CUBE 30 Touch — автоматический анализатор скорости оседания эритроцитов (СОЭ). Выдаёт 30 результатов за 25 минут по модифицированному методу Вестергрена с превосходной корреляцией с золотым стандартом.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "модифицированный Вестергрен"
+      },
+      {
+        "label": "Результаты",
+        "value": "30 за 25 минут"
+      },
+      {
+        "label": "Тип",
+        "value": "автоматический СОЭ"
+      }
+    ],
+    "images": [
+      "/images/products/cube-30-touch.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "urit-bs-8000",
+    "slug": "urit-bs-8000",
+    "name": "URIT BS-8000 Series",
+    "category": "Автоматизированная лаборатория",
+    "brand": "URIT",
+    "shortDescription": "Автономная модульная гематологическая лаборатория.",
+    "fullDescription": "URIT BS-8000 Series — автономная модульная гематологическая лаборатория. Включает модули подготовки образцов, анализа крови CBC, морфологии клеток (до 60 слайдов/час, предварительная классификация 33 типов клеток), приготовления и окрашивания мазков, центр управления данными и хранение пробирок.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "модульная лаборатория"
+      },
+      {
+        "label": "Морфология",
+        "value": "до 60 слайдов/час"
+      },
+      {
+        "label": "Классификация",
+        "value": "33 типа клеток"
+      },
+      {
+        "label": "Исследование",
+        "value": "23 RBC + 24 WBC"
+      }
+    ],
+    "images": [
+      "/images/products/urit-bs-8000.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "urit-us-2000c",
+    "slug": "urit-us-2000c",
+    "name": "URIT US-2000C",
+    "category": "Клинический анализ",
+    "brand": "URIT",
+    "shortDescription": "Модульная автоматизированная станция анализа мочи с AI.",
+    "fullDescription": "URIT US-2000C — полностью автоматизированная модульная станция анализа мочи с AI-усилением. Объединяет химический, микроскопический и физический анализ мочи в единый рабочий процесс.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "модульная станция"
+      },
+      {
+        "label": "Анализ",
+        "value": "химический + микроскопический + физический"
+      },
+      {
+        "label": "AI",
+        "value": "да"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "urit-us-1000",
+    "slug": "urit-us-1000",
+    "name": "URIT US-1000",
+    "category": "Клинический анализ",
+    "brand": "URIT",
+    "shortDescription": "Автоматизированная система анализа мочи.",
+    "fullDescription": "URIT US-1000 — автоматизированная система для химического анализа мочи. Надёжное решение для рутинной лабораторной диагностики.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "автоматический анализатор мочи"
+      },
+      {
+        "label": "Анализ",
+        "value": "химический"
+      }
+    ],
+    "images": [
+      "/images/products/urit-us-1000.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "urit-us-1680",
+    "slug": "urit-us-1680",
+    "name": "URIT US-1680",
+    "category": "Клинический анализ",
+    "brand": "URIT",
+    "shortDescription": "Полностью автоматизированный анализатор мочи 3-в-1.",
+    "fullDescription": "URIT US-1680 — полностью автоматизированный анализатор мочи, объединяющий химический, физический и микроскопический анализ в одном корпусе.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "полностью автоматический"
+      },
+      {
+        "label": "Анализ",
+        "value": "химический + физический + микроскопический"
+      },
+      {
+        "label": "Корпус",
+        "value": "единый"
+      }
+    ],
+    "images": [
+      "/images/products/urit-us-1680.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "urit-bf-730",
+    "slug": "urit-bf-730",
+    "name": "URIT BF-730",
+    "category": "Клинический анализ",
+    "brand": "URIT",
+    "shortDescription": "Проточный цитометр для клинической и научной практики.",
+    "fullDescription": "URIT BF-730 — проточный цитометр для клинической и научной практики. Применения: онкология, репродуктология, иммунология. Оценка иммунного статуса (Т-лимфоциты, лейкоциты), апоптоз, клеточный цикл, выявление иммунных и генетических маркеров (HLA-B27), анализ фенотипа клеток.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "проточный цитометр"
+      },
+      {
+        "label": "Применения",
+        "value": "онкология, иммунология, репродуктология"
+      },
+      {
+        "label": "Маркеры",
+        "value": "HLA-B27, фенотип клеток"
+      }
+    ],
+    "images": [
+      "/images/products/urit-bf-730.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "keyu-ku-f20",
+    "slug": "keyu-ku-f20",
+    "name": "KEYU KU-F20",
+    "category": "Клинический анализ",
+    "brand": "KEYU",
+    "shortDescription": "AI-анализатор кала: 30 формённых элементов, 6 видов гельминтов.",
+    "fullDescription": "KEYU KU-F20 — автоматический анализатор кала с AI. Распознаёт 30 формённых элементов и 6 видов гельминтов. Включает ИХА на скрытую кровь и трансферрин.",
+    "specifications": [
+      {
+        "label": "AI",
+        "value": "да"
+      },
+      {
+        "label": "Формённые элементы",
+        "value": "30"
+      },
+      {
+        "label": "Гельминты",
+        "value": "6 видов"
+      },
+      {
+        "label": "ИХА",
+        "value": "скрытая кровь + трансферрин"
+      }
+    ],
+    "images": [
+      "/images/products/keyu-ku-f20.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "keyu-ku-f40",
+    "slug": "keyu-ku-f40",
+    "name": "KEYU KU-F40",
+    "category": "Клинический анализ",
+    "brand": "KEYU",
+    "shortDescription": "Автоматический анализатор диагностики кала.",
+    "fullDescription": "KEYU KU-F40 — автоматический анализатор для диагностики кала. Производительное решение для клинических лабораторий.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "автоматический анализатор кала"
+      }
+    ],
+    "images": [
+      "/images/products/keyu-ku-f40.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "sqa-io-vu",
+    "slug": "sqa-io-vu",
+    "name": "SQA-IO + SQA-VU",
+    "category": "Клинический анализ",
+    "brand": "Condalab",
+    "shortDescription": "Автоматизированный анализ спермы за 75 секунд по стандартам ВОЗ.",
+    "fullDescription": "SQA-IO + SQA-VU — система автоматизированного анализа спермы. Результат за 75 секунд в полном соответствии со стандартами ВОЗ 5-го и 6-го изданий.",
+    "specifications": [
+      {
+        "label": "Время анализа",
+        "value": "75 секунд"
+      },
+      {
+        "label": "Стандарты",
+        "value": "ВОЗ 5-е и 6-е издания"
+      },
+      {
+        "label": "Тип",
+        "value": "автоматический"
+      }
+    ],
+    "images": [
+      "/images/products/sqa-io-vu.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "h100-plus",
+    "slug": "h100-plus",
+    "name": "Lifotronic H100 Plus",
+    "category": "ВЭЖХ",
+    "brand": "Lifotronic",
+    "shortDescription": "Флагманский анализатор гликированного гемоглобина (IEC-HPLC).",
+    "fullDescription": "Lifotronic H100 Plus — флагманский анализатор гликированного гемоглобина по золотому стандарту ВОЗ (ионообменная ВЭЖХ, IEC-HPLC). Наивысшая скорость, расширенная загрузка, полная автоматизация и модульная расширяемость. Встроенный режим тестирования талассемии.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "IEC-HPLC (золотой стандарт ВОЗ)"
+      },
+      {
+        "label": "Автоматизация",
+        "value": "полная"
+      },
+      {
+        "label": "Талассемия",
+        "value": "встроенный режим"
+      },
+      {
+        "label": "Расширяемость",
+        "value": "модульная"
+      }
+    ],
+    "images": [
+      "/images/products/h100-plus.png"
+    ],
+    "featured": true,
+    "isNew": true
+  },
+  {
+    "id": "h8",
+    "slug": "h8",
+    "name": "Lifotronic H8",
+    "category": "ВЭЖХ",
+    "brand": "Lifotronic",
+    "shortDescription": "HbA1c-анализатор с точной диагностикой талассемии.",
+    "fullDescription": "Lifotronic H8 — анализатор гликированного гемоглобина методом IEC-HPLC. Обеспечивает точную диагностику талассемии и выявление патологических вариантов гемоглобина.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "IEC-HPLC"
+      },
+      {
+        "label": "Диагностика",
+        "value": "талассемия, варианты Hb"
+      }
+    ],
+    "images": [
+      "/images/products/h8.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "h9",
+    "slug": "h9",
+    "name": "Lifotronic H9",
+    "category": "ВЭЖХ",
+    "brand": "Lifotronic",
+    "shortDescription": "HbA1c-анализатор нового поколения методом HPLC.",
+    "fullDescription": "Lifotronic H9 — анализатор гликированного гемоглобина нового поколения, использующий метод высокоэффективной жидкостной хроматографии.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "HPLC"
+      },
+      {
+        "label": "Поколение",
+        "value": "новое"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "gh-900-plus",
+    "slug": "gh-900-plus",
+    "name": "Lifotronic GH-900 Plus",
+    "category": "ВЭЖХ",
+    "brand": "Lifotronic",
+    "shortDescription": "Анализатор гликированного гемоглобина.",
+    "fullDescription": "Lifotronic GH-900 Plus — анализатор гликированного гемоглобина для рутинной диагностики диабета.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "HPLC"
+      },
+      {
+        "label": "Назначение",
+        "value": "HbA1c / диабет"
+      }
+    ],
+    "images": [
+      "/images/products/gh-900-plus.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "bd-phoenix-m50",
+    "slug": "bd-phoenix-m50",
+    "name": "BD Phoenix M50",
+    "category": "Микробиология",
+    "brand": "BD",
+    "shortDescription": "Система идентификации и определения чувствительности к антибиотикам.",
+    "fullDescription": "BD Phoenix M50 — надёжная и быстрая система фенотипической идентификации микроорганизмов и определения их устойчивости к антибиотикам (AST). Ключевой инструмент в борьбе с антибиотикорезистентностью.",
+    "specifications": [
+      {
+        "label": "Назначение",
+        "value": "идентификация + AST"
+      },
+      {
+        "label": "Метод",
+        "value": "фенотипический"
+      },
+      {
+        "label": "Производитель",
+        "value": "BD"
+      }
+    ],
+    "images": [
+      "/images/products/bd-phoenix-m50.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "bd-bactec-fx40",
+    "slug": "bd-bactec-fx40",
+    "name": "BD BACTEC FX 40",
+    "category": "Микробиология",
+    "brand": "BD",
+    "shortDescription": "Система ускоренного обнаружения бактерий и грибков в крови.",
+    "fullDescription": "BD BACTEC FX 40 — система ускоренного обнаружения бактерий и грибков в клинических образцах крови. Питательные среды BACTEC: Standard/10 Aerobic, Plus Anaerobic, Peds Plus, Myco/F Lytic. Подходит для лабораторий, ОРИТ и ЛПУ без собственной микробиологической лаборатории.",
+    "specifications": [
+      {
+        "label": "Назначение",
+        "value": "гемокультуры"
+      },
+      {
+        "label": "Среды",
+        "value": "Standard/10, Plus Anaerobic, Peds Plus, Myco/F"
+      }
+    ],
+    "images": [
+      "/images/products/bd-bactec-fx40.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "condalab-media",
+    "slug": "condalab-media",
+    "name": "Condalab Питательные среды",
+    "category": "Микробиология",
+    "brand": "Condalab",
+    "shortDescription": "Готовые питательные среды от испанского производителя с 1960 г.",
+    "fullDescription": "Condalab — производитель питательных сред, основан в 1960 году в Мадриде (Испания). Экспорт в 130 стран. Соответствие стандартам ISO, Европейской фармакопеи, FDA, APHA, USP, AOAC.",
+    "specifications": [
+      {
+        "label": "Основана",
+        "value": "1960, Мадрид"
+      },
+      {
+        "label": "Экспорт",
+        "value": "130 стран"
+      },
+      {
+        "label": "Стандарты",
+        "value": "ISO, EP, FDA, USP, AOAC"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "molecision-r8",
+    "slug": "molecision-r8",
+    "name": "Molecision R8",
+    "category": "ПЦР",
+    "brand": "SNIBE",
+    "shortDescription": "Полностью автоматизированная высокопроизводительная ПЦР-лаборатория.",
+    "fullDescription": "Molecision R8 — полностью автоматизированная высокопроизводительная ПЦР-«лаборатория» от SNIBE. Объединяет выделение нуклеиновых кислот, постановку реакции и детекцию в едином рабочем процессе.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "автоматизированная ПЦР"
+      },
+      {
+        "label": "Производительность",
+        "value": "высокая"
+      },
+      {
+        "label": "Производитель",
+        "value": "SNIBE"
+      }
+    ],
+    "images": [
+      "/images/products/molecision-r8.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "molecision-s6",
+    "slug": "molecision-s6",
+    "name": "Molecision S6",
+    "category": "ПЦР",
+    "brand": "SNIBE",
+    "shortDescription": "Полностью интегрированная цифровая ПЦР-система.",
+    "fullDescription": "Molecision S6 — полностью интегрированная цифровая ПЦР-система от SNIBE для высокоточного количественного анализа нуклеиновых кислот.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "цифровая ПЦР"
+      },
+      {
+        "label": "Интеграция",
+        "value": "полная"
+      }
+    ],
+    "images": [
+      "/images/products/molecision-s6.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "molecision-mp-32",
+    "slug": "molecision-mp-32",
+    "name": "Molecision MP-32",
+    "category": "ПЦР",
+    "brand": "SNIBE",
+    "shortDescription": "Система очистки нуклеиновых кислот до 32 образцов.",
+    "fullDescription": "Molecision MP-32 — система автоматической очистки нуклеиновых кислот до 32 образцов одновременно. УФ-лампа для деконтаминации и HEPA-фильтр обеспечивают стерильность после каждого запуска.",
+    "specifications": [
+      {
+        "label": "Образцы",
+        "value": "до 32"
+      },
+      {
+        "label": "Деконтаминация",
+        "value": "УФ-лампа"
+      },
+      {
+        "label": "Фильтр",
+        "value": "HEPA"
+      }
+    ],
+    "images": [
+      "/images/products/molecision-mp-32.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "molecision-mp-96",
+    "slug": "molecision-mp-96",
+    "name": "Molecision MP-96",
+    "category": "ПЦР",
+    "brand": "SNIBE",
+    "shortDescription": "Система очистки нуклеиновых кислот до 96 образцов.",
+    "fullDescription": "Molecision MP-96 — высокопроизводительная система автоматической очистки нуклеиновых кислот до 96 образцов одновременно.",
+    "specifications": [
+      {
+        "label": "Образцы",
+        "value": "до 96"
+      },
+      {
+        "label": "Тип",
+        "value": "очистка нуклеиновых кислот"
+      }
+    ],
+    "images": [
+      "/images/products/molecision-mp-96.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "blozer-200",
+    "slug": "blozer-200",
+    "name": "BLOZER 200",
+    "category": "Иммуногематология",
+    "brand": "BLOZER",
+    "shortDescription": "Полностью автоматический анализатор гелевой агглютинации.",
+    "fullDescription": "BLOZER 200 — полностью автоматический иммуногематологический анализатор на основе гель-картной агглютинации (золотой стандарт). 96 гелевых карт/час, 144 образца. Применение: акушерство, трансфузиология, хирургия, гематология, реанимация и неонатология.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "гель-картная агглютинация"
+      },
+      {
+        "label": "Производительность",
+        "value": "96 карт/час"
+      },
+      {
+        "label": "Образцы",
+        "value": "144"
+      },
+      {
+        "label": "Тип",
+        "value": "полностью автоматический"
+      }
+    ],
+    "images": [
+      "/images/products/blozer-200.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "blozer-72",
+    "slug": "blozer-72",
+    "name": "BLOZER 72",
+    "category": "Иммуногематология",
+    "brand": "BLOZER",
+    "shortDescription": "Компактный автоматический анализатор иммуногематологии.",
+    "fullDescription": "BLOZER 72 — компактный автоматический иммуногематологический анализатор на основе гель-картной агглютинации. Оптимален для лабораторий с умеренной нагрузкой.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "гель-картная агглютинация"
+      },
+      {
+        "label": "Тип",
+        "value": "компактный автоматический"
+      }
+    ],
+    "images": [
+      "/images/products/blozer-72.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "evidence-multistat",
+    "slug": "evidence-multistat",
+    "name": "Evidence Multistat",
+    "category": "Токсикология",
+    "brand": "Randox",
+    "shortDescription": "Биочиповый иммунофлуоресцентный анализатор на 500+ веществ.",
+    "fullDescription": "Evidence Multistat от Randox — полностью автоматизированный биочиповый иммунофлуоресцентный анализатор. Биочиповая технология (BAT) — микроматрица 7×7, до 44 единиц. Определяет 500+ веществ и метаболитов. Применение: аллергия, аутоиммунные и воспалительные заболевания, наркотики и лекарства, вызывающие зависимость.",
+    "specifications": [
+      {
+        "label": "Технология",
+        "value": "биочип (BAT) 7×7"
+      },
+      {
+        "label": "Единиц",
+        "value": "до 44"
+      },
+      {
+        "label": "Вещества",
+        "value": "500+"
+      },
+      {
+        "label": "Применение",
+        "value": "аллергия, токсикология, аутоиммунные"
+      }
+    ],
+    "images": [
+      "/images/products/evidence-multistat.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "phadia-200",
+    "slug": "phadia-200",
+    "name": "Phadia 200",
+    "category": "Аллергология",
+    "brand": "Thermo Fisher",
+    "shortDescription": "Молекулярная аллергодиагностика — золотой стандарт.",
+    "fullDescription": "Phadia 200 — полностью автоматизированный иммунофлуоресцентный анализатор для молекулярной аллергодиагностики, признанный золотым стандартом в аллергологии.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "иммунофлуоресцентный"
+      },
+      {
+        "label": "Назначение",
+        "value": "молекулярная аллергодиагностика"
+      },
+      {
+        "label": "Статус",
+        "value": "золотой стандарт"
+      }
+    ],
+    "images": [
+      "/images/products/phadia-200.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "riqas",
+    "slug": "riqas",
+    "name": "RIQAS",
+    "category": "Контроль качества",
+    "brand": "Randox",
+    "shortDescription": "Крупнейшая международная схема внешней оценки качества.",
+    "fullDescription": "RIQAS от Randox — крупнейшая международная схема внешней оценки качества (ВОК). Более 85 000 лабораторий из 140 стран. Основана в 1991 году.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "внешняя оценка качества"
+      },
+      {
+        "label": "Лаборатории",
+        "value": "85 000+"
+      },
+      {
+        "label": "Страны",
+        "value": "140"
+      },
+      {
+        "label": "Основана",
+        "value": "1991"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "acusera",
+    "slug": "acusera",
+    "name": "ACUSERA",
+    "category": "Контроль качества",
+    "brand": "Randox",
+    "shortDescription": "Независимый внутренний контроль качества третьей стороны.",
+    "fullDescription": "ACUSERA от Randox — независимый внутренний контроль качества (ВКК) третьей стороны. Широкий ассортимент контрольных материалов с присвоенными значениями.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "внутренний контроль (ВКК)"
+      },
+      {
+        "label": "Сторона",
+        "value": "независимая третья"
+      }
+    ],
+    "images": [
+      "/images/products/acusera.png"
+    ],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "qcmd",
+    "slug": "qcmd",
+    "name": "QCMD",
+    "category": "Контроль качества",
+    "brand": "Randox",
+    "shortDescription": "ВОК для молекулярного тестирования инфекционных заболеваний.",
+    "fullDescription": "QCMD — внешняя оценка качества для молекулярного тестирования инфекционных заболеваний. Обеспечивает достоверность ПЦР-диагностики.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "ВОК молекулярная"
+      },
+      {
+        "label": "Назначение",
+        "value": "инфекционные заболевания"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "qnostics",
+    "slug": "qnostics",
+    "name": "Qnostics",
+    "category": "Контроль качества",
+    "brand": "Randox",
+    "shortDescription": "Молекулярные средства контроля на 500+ мишеней.",
+    "fullDescription": "Qnostics — молекулярные средства контроля для тестирования на инфекционные заболевания. Более 500 вирусных, бактериальных и грибковых мишеней.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "молекулярный контроль"
+      },
+      {
+        "label": "Мишени",
+        "value": "500+ вирусных, бактериальных, грибковых"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "miseq-i100",
+    "slug": "miseq-i100",
+    "name": "MiSeq i100 Series",
+    "category": "Генетика",
+    "brand": "Illumina",
+    "shortDescription": "Простейшее и быстрое настольное секвенирование нового поколения.",
+    "fullDescription": "MiSeq i100 Series от Illumina — простейшая и быстрая настольная система секвенирования нового поколения (NGS), устанавливающая новые стандарты доступности геномных исследований. Illumina — пионер NGS, основана в 1998 г. в Сан-Диего, представлена в 160 странах.",
+    "specifications": [
+      {
+        "label": "Тип",
+        "value": "настольный секвенатор NGS"
+      },
+      {
+        "label": "Производитель",
+        "value": "Illumina"
+      },
+      {
+        "label": "Формат",
+        "value": "i100"
+      }
+    ],
+    "images": [
+      "/images/products/miseq-i100.png"
+    ],
+    "featured": false,
+    "isNew": true
+  },
+  {
+    "id": "nextseq-550",
+    "slug": "nextseq-550",
+    "name": "NextSeq 550",
+    "category": "Генетика",
+    "brand": "Illumina",
+    "shortDescription": "Секвенатор высокой и средней производительности NGS + array.",
+    "fullDescription": "NextSeq 550 от Illumina — секвенатор высокой и средней производительности, поддерживающий как NGS, так и микрочиповые (array) исследования в одном приборе.",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "высокая / средняя"
+      },
+      {
+        "label": "Технологии",
+        "value": "NGS + array"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "nextseq-1000-2000",
+    "slug": "nextseq-1000-2000",
+    "name": "NextSeq 1000 & 2000",
+    "category": "Генетика",
+    "brand": "Illumina",
+    "shortDescription": "Секвенаторы с химией XLEAP-SBS и анализом DRAGEN.",
+    "fullDescription": "NextSeq 1000 & 2000 от Illumina используют химию XLEAP-SBS и встроенный вторичный анализ DRAGEN для ускоренной обработки геномных данных.",
+    "specifications": [
+      {
+        "label": "Химия",
+        "value": "XLEAP-SBS"
+      },
+      {
+        "label": "Анализ",
+        "value": "встроенный DRAGEN"
+      }
+    ],
+    "images": [],
+    "featured": false,
+    "isNew": false
+  },
+  {
+    "id": "novaseq-6000",
+    "slug": "novaseq-6000",
+    "name": "NovaSeq 6000",
+    "category": "Генетика",
+    "brand": "Illumina",
+    "shortDescription": "Настраиваемый высокопроизводительный секвенатор.",
+    "fullDescription": "NovaSeq 6000 от Illumina — мощный настраиваемый секвенатор с выбором типа проточной кюветы и длины считывания под конкретные исследовательские задачи.",
+    "specifications": [
+      {
+        "label": "Гибкость",
+        "value": "тип кюветы и длина считывания"
+      },
+      {
+        "label": "Класс",
+        "value": "высокая производительность"
+      }
+    ],
+    "images": [],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "novaseq-x",
+    "slug": "novaseq-x",
+    "name": "NovaSeq X / X Plus",
+    "category": "Генетика",
+    "brand": "Illumina",
+    "shortDescription": "Флагманский секвенатор с лиофилизированными реагентами.",
+    "fullDescription": "NovaSeq X / X Plus от Illumina — флагманская система секвенирования с исключительной пропускной способностью и лиофилизированными реагентами для упрощённой логистики и устойчивости.",
+    "specifications": [
+      {
+        "label": "Пропускная способность",
+        "value": "исключительная"
+      },
+      {
+        "label": "Реагенты",
+        "value": "лиофилизированные"
+      }
+    ],
+    "images": [],
+    "featured": true,
+    "isNew": true
+  },
+  {
+    "id": "clarius-hd3",
+    "slug": "clarius-hd3",
+    "name": "Clarius HD3",
+    "category": "Функциональная диагностика",
+    "brand": "Clarius",
+    "shortDescription": "Беспроводные УЗИ-сканеры для медицины, обучения и ветеринарии.",
+    "fullDescription": "Clarius HD3 — линейка беспроводных ультразвуковых сканеров для медицины, обучения и ветеринарии. Доступны датчики C3 (2-6 МГц, глубина 40 см, 192 элемента, угол 73°), L7 (4-13 МГц, глубина 11 см) и L15 (5-15 МГц, глубина 7 см). Более 20 000 врачей и свыше 6 млн сканирований.",
+    "specifications": [
+      {
+        "label": "Датчик C3",
+        "value": "2-6 МГц, 40 см, 192 элемента"
+      },
+      {
+        "label": "Датчик L7",
+        "value": "4-13 МГц, 11 см"
+      },
+      {
+        "label": "Датчик L15",
+        "value": "5-15 МГц, 7 см"
+      },
+      {
+        "label": "Пользователи",
+        "value": "20 000+ врачей"
+      }
+    ],
+    "images": [
+      "/images/products/clarius-hd3.png"
+    ],
+    "featured": true,
+    "isNew": false
+  },
+  {
+    "id": "satlars-t8",
+    "slug": "satlars-t8",
+    "name": "SATLARS T8",
+    "category": "Автоматизированная лаборатория",
+    "brand": "SNIBE",
+    "shortDescription": "Модульная автоматизированная лаборатория, впервые в Узбекистане.",
+    "fullDescription": "SATLARS T8 — модульная автоматизированная лабораторная линия, впервые представленная в Узбекистане. Обладатель iF Design Award 2025. Модули: загрузчик (1000 проб/час), центрифугирование (550 проб/час), ввод/вывод (1000 проб/час), снятие крышек (1000 проб/час), двусторонняя 4-канальная транспортная система, запечатывание (1000 проб/час), холодильный модуль (15 360 проб), снятие запечаток (500 проб/час). Хранение до 60 288 образцов, объединение до 4 холодильных модулей. Совместима с Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8.",
+    "specifications": [
+      {
+        "label": "Награда",
+        "value": "iF Design Award 2025"
+      },
+      {
+        "label": "Загрузчик",
+        "value": "1000 проб/час"
+      },
+      {
+        "label": "Хранение",
+        "value": "до 60 288 образцов"
+      },
+      {
+        "label": "Холодильные модули",
+        "value": "до 4"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Maglumi, Biossays, Molecision"
+      }
+    ],
+    "images": [
+      "/images/products/satlars-t8.png"
+    ],
+    "featured": true,
+    "isNew": true
+  }
+]
