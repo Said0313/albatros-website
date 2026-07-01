@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "catalog": "Katalog",
+    "about": "Kompaniya haqida",
+    "partners": "Hamkorlar",
+    "events": "Tadbirlar",
+    "contact": "Aloqa"
+  },
+  "common": {
+    "downloadPrice": "Narxlar roʻyxatini yuklab olish",
+    "priceShort": "Narxlar roʻyxati",
+    "openCatalog": "Katalogni ochish",
+    "aboutCompany": "Kompaniya haqida",
+    "more": "Batafsil",
+    "view": "Koʻrish",
+    "requestPrice": "Narxni soʻrash",
+    "submit": "Ariza yuborish",
+    "contactUs": "Biz bilan bogʻlanish",
+    "share": "Ulashish",
+    "copied": "Nusxalandi",
+    "allEvents": "Barcha tadbirlar",
+    "positions": "pozitsiya",
+    "new": "YANGI",
+    "menu": "Menyu",
+    "loading": "Yuklanmoqda…"
+  },
+  "hero": {
+    "eyebrow": "🇺🇿  Oʻzbekiston  ·  In-Vitro diagnostika  ·  2017 yildan",
+    "titleA": "Laboratoriya",
+    "titleB": "diagnostikasining",
+    "titleHighlight": "ilgʻor texnologiyalari",
+    "subtitle": "Oʻzbekistonda IVD sohasidagi 14 jahon yetakchisining rasmiy distribyutori. Tugatish-shartli yetkazib berish, 24/7 servis, xalqaro standartlar."
+  },
+  "directions": {
+    "eyebrow": "{count} YOʻNALISH",
+    "title": "Diagnostika yoʻnalishlari",
+    "intro": "Yechimlarning toʻliq majmuasi — immunokimyo va gematologiyadan tortib molekulyar diagnostika va avtomatlashtirilgan laboratoriya liniyalarigacha."
+  },
+  "featured": {
+    "title": "Flagman uskunalar",
+    "subtitle": "Jahon ishlab chiqaruvchilarining ilgʻor yechimlari"
+  },
+  "partners": {
+    "homeTitle": "Bizning xorijiy hamkorlarimiz",
+    "homeSubtitle": "Oʻzbekistonda In-Vitro diagnostikasining 14 jahon yetakchisi",
+    "pageTitle": "Bizning hamkorlarimiz",
+    "pageSubtitle": "Biz Oʻzbekistonda in-vitro diagnostika sohasining 14 jahon yetakchisini taqdim etamiz.",
+    "since": "{year} yildan"
+  },
+  "clients": {
+    "homeTitle": "Bizning mijozlarimiz"
+  },
+  "about": {
+    "eyebrow": "KOMPANIYA HAQIDA",
+    "panelText": "Oʻzbekistonda laboratoriya diagnostikasi uchun premium uskunalarning rasmiy distribyutori. Yetkazib berish, ishga tushirish, oʻqitish va servis — asbobning butun hayot tsikli davomida.",
+    "stats": {
+      "models": "uskuna modellari",
+      "brands": "hamkor brendlar",
+      "clients": "klinika va laboratoriya",
+      "support": "servis qoʻllab-quvvatlash",
+      "founded": "tashkil etilgan yil",
+      "trained": "oʻqitilgan mutaxassis"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "Kompaniya haqida",
+    "title": "Laboratoriyangizni jihozlashda ishonchli hamkoringiz",
+    "intro1": "Albatros Health Care 2017 yilda Oʻzbekiston klinik-diagnostika laboratoriyalari amaliyotiga zamonaviy texnologiyalarni joriy etish maqsadida tashkil etilgan. Bugun biz respublikadagi tibbiy laboratoriya uskunalari va IVD yechimlarining yetakchi distribyutorlaridan biri boʻlib, 14 jahon brendini taqdim etamiz: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius va boshqalar. Mamlakat boʻylab 2000 dan ortiq klinika va laboratoriya bizga laboratoriyalarini jihozlashni ishonib topshiradi.",
+    "intro2": "Kompaniya missiyasi — uskunalarni tugatish-shartli yetkazib berish hamda hamkorlarni tezkor uslubiy va servis qoʻllab-quvvatlash bilan taʼminlash. Jamoada oliy maxsus maʼlumotli, uskuna ishlab chiqaruvchilari zavodlarida muntazam malaka oshirib turadigan mutaxassislar ishlaydi. Biz klinik biokimyo va molekulyar biologiya sohasidagi xorijiy ekspertlarni jalb qilgan holda muntazam xalqaro konferensiya va seminarlar tashkil etamiz.",
+    "slogan": "Albatros Health Care — laboratoriyani jihozlash va qoʻllab-quvvatlashda ishonchli hamkoringiz.",
+    "stats": {
+      "models": "analizator modellari",
+      "directions": "diagnostika yoʻnalishi",
+      "leaders": "jahon yetakchisi",
+      "conferences": "tashkil etilgan konferensiya",
+      "congresses": "kongresslarda ishtirok",
+      "manuals": "uslubiy qoʻllanma",
+      "doctors": "oʻqitilgan shifokor",
+      "clients": "bazadagi mijoz"
+    },
+    "v1t": "Tugatish-shartli yetkazib berish",
+    "v1x": "Toʻliq tsikl — uskunani tanlash va oʻrnatishdan tortib xodimlarni oʻqitish va uslubiy qoʻllab-quvvatlashgacha.",
+    "v2t": "24/7 servis",
+    "v2x": "Oʻzbekiston Respublikasi boʻylab kunu tun servis-texnik qoʻllab-quvvatlash.",
+    "v3t": "Xalqaro standartlar",
+    "v3x": "Faqat ISO, FDA va Yevropa farmakopeyasi standartlariga mos jahon IVD yetakchilari bilan ishlaymiz.",
+    "v4t": "Taʼlim",
+    "v4x": "ToshVMOʻI bilan birgalikda uslubiy qoʻllanmalar ishlab chiqamiz va xalqaro ishtirokli konferensiyalar oʻtkazamiz."
+  },
+  "events": {
+    "title": "Tadbirlar",
+    "pageSubtitle": "Konferensiyalar, seminarlar va kompaniyaning muhim tadbirlari."
+  },
+  "statsBar": {
+    "founded": "tashkil etilgan yil",
+    "brands": "jahon brendi",
+    "clients": "bazadagi mijozlar",
+    "service": "texnik servis"
+  },
+  "cta": {
+    "title": "Laboratoriyangizni jihozlashga tayyormisiz?",
+    "subtitle": "Maslahat va narxni hisoblash uchun biz bilan bogʻlaning"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "subtitle": "Jahon brendlarining laboratoriya uskunalari va IVD yechimlari",
+    "search": "Uskunalarni qidirish...",
+    "direction": "Yoʻnalish",
+    "brand": "Brend",
+    "filters": "Filtrlar",
+    "reset": "Filtrlarni tozalash",
+    "found": "Topildi: {count} mahsulot",
+    "empty": "Hech narsa topilmadi",
+    "metaTitle": "Uskunalar katalogi"
+  },
+  "product": {
+    "breadcrumbHome": "Bosh sahifa",
+    "related": "Oʻxshash mahsulotlar"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "subtitle": "Uskunalar narxini hisoblash va maslahat uchun biz bilan bogʻlaning.",
+    "address": "Manzil",
+    "addressValue": "Oʻzbekiston Respublikasi, Toshkent sh., Xalqobod koʻchasi, 17",
+    "office": "Bosh ofis / Savdo boʻlimi",
+    "accounting": "Buxgalteriya",
+    "email": "Email",
+    "hours": "Ish vaqti",
+    "hoursValue": "Du–Ju 09:00–18:00",
+    "telegram": "Telegram"
+  },
+  "form": {
+    "name": "Ism*",
+    "phone": "Telefon* (+998...)",
+    "company": "Kompaniya",
+    "comment": "Izoh",
+    "consent": "Shaxsiy maʼlumotlarni qayta ishlashga roziman",
+    "submit": "Ariza yuborish",
+    "sending": "Yuborilmoqda…",
+    "success": "Rahmat! Tez orada siz bilan bogʻlanamiz.",
+    "error": "Arizani yuborib boʻlmadi. Keyinroq urinib koʻring yoki bizga qoʻngʻiroq qiling.",
+    "callTitle": "Qoʻngʻiroqqa buyurtma",
+    "callSubtitle": "Tez orada siz bilan bogʻlanamiz",
+    "priceFor": "Narx soʻrovi: {product}"
+  },
+  "footer": {
+    "tagline": "2017 yildan beri Oʻzbekistonda IVD diagnostikasi jahon yetakchilarining rasmiy distribyutori.",
+    "hours": "Du–Ju 09:00–18:00",
+    "addressValue": "Toshkent sh., Xalqobod koʻchasi, 17",
+    "navigation": "Navigatsiya",
+    "directions": "Yoʻnalishlar",
+    "contacts": "Aloqa",
+    "rights": "© 2017–2025 Albatros Health Care. Barcha huquqlar himoyalangan.",
+    "city": "Toshkent, Oʻzbekiston"
+  }
+}

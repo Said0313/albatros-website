@@ -6,24 +6,32 @@
   --red-primary: #d0181f;
   --red-dark: #b5141b;
   --red-bright: #ed1c24;
-  --blue-deep: #152e73;
+  --blue-deep: #1d3a82;
   --blue-brand: #1d3a82;
   --blue-mid: #2e549c;
   --blue-light: #5c7fb4;
-  --bg-page: #060c1a;
-  --bg-card: #0c1628;
-  --bg-elevated: #111e38;
-  --bg-border: #1a2b4a;
-  --teal: #3e8fa6;
+  /* LIGHT THEME surfaces */
+  --bg-page: #fbfcfe;
+  --bg-card: #ffffff;
+  --bg-elevated: #f4f7fb;
+  --bg-border: #e5eaf3;
+  --line-2: #eef2f8;
+  --teal: #2e8aa0;
   --teal-bright: #00c9b8;
-  --text-primary: #eef2ff;
-  --text-secondary: #7a8fb8;
-  --text-muted: #3d4f72;
-  --grad-hero: linear-gradient(160deg, #060c1a 0%, #0c1628 60%, #1a0608 100%);
-  --grad-card: linear-gradient(145deg, #0c1628, #111e38);
+  /* text — dark navy on light */
+  --text-primary: #0c1b3a;
+  --text-strong: #0a1428;
+  --text-secondary: #5e6e8f;
+  --text-muted: #8a98b5;
+  --grad-hero: linear-gradient(165deg, #ffffff 0%, #f4f7fb 55%, #eef2f8 100%);
+  --grad-card: linear-gradient(180deg, #ffffff, #f7f9fd);
   --grad-red: linear-gradient(135deg, #b5141b, #ed1c24);
-  --grad-blue: linear-gradient(135deg, #152e73, #2e549c);
-  --grad-text-hero: linear-gradient(90deg, #eef2ff 0%, #5c7fb4 50%, #d0181f 100%);
+  --grad-blue: linear-gradient(135deg, #1d3a82, #2e549c);
+  --grad-text-hero: linear-gradient(90deg, #0c1b3a 0%, #2e549c 55%, #d0181f 100%);
+  --surface-2: #f4f7fb;
+  --tint-blue: #eef3fa;
+  --shadow-card: 0 2px 8px rgba(16, 40, 90, 0.05);
+  --shadow-hover: 0 24px 48px -28px rgba(29, 58, 130, 0.35);
 }
 
 * {
@@ -76,8 +84,9 @@ body {
     color: transparent;
   }
   .card-surface {
-    background: var(--grad-card);
+    background: var(--surface, #ffffff);
     border: 1px solid var(--bg-border);
+    box-shadow: var(--shadow-card);
   }
   .btn-red {
     background: var(--grad-red);
@@ -117,14 +126,26 @@ body {
   align-items: center;
   gap: 32px;
   width: max-content;
-  animation: marquee-scroll 42s linear infinite;
+  animation: marquee-scroll 40s linear infinite;
 }
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
+/* Clients marquee: same chrome as the partner marquee but scrolls LEFT (reverse
+   of marquee-scroll) and a touch slower so it reads calmer. */
+.marquee-track-rev {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: marquee-scroll 46s linear infinite reverse;
+}
+.marquee:hover .marquee-track-rev {
+  animation-play-state: paused;
+}
 @keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
 }
 .logo-chip {
   display: flex;
@@ -134,13 +155,66 @@ body {
   min-width: 150px;
   padding: 18px 28px;
   background: #ffffff;
+  border: 1px solid var(--bg-border);
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 24px -16px rgba(29, 58, 130, 0.28);
 }
 .logo-chip img {
   max-height: 36px;
   width: auto;
   object-fit: contain;
+}
+
+/* ── Catalog filter sidebar: independent thin scroll (desktop) ── */
+.filter-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-border) transparent;
+}
+.filter-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.filter-scroll::-webkit-scrollbar-thumb {
+  background: var(--bg-border);
+  border-radius: 6px;
+}
+.filter-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-light);
+}
+
+/* ── Directions photo-cards (ported from Claude Design "Albatros Directions") ── */
+.alb-card {
+  box-shadow: var(--shadow-card);
+  transition: transform 0.28s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+.alb-card:hover {
+  transform: translateY(-6px);
+  border-color: #5c7fb4 !important;
+  box-shadow: var(--shadow-hover);
+}
+.alb-card:hover .alb-go {
+  opacity: 1;
+  transform: translateX(0);
+}
+.alb-card:hover .alb-photo img {
+  transform: scale(1.045);
+}
+.alb-go {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.alb-photo img {
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* ── DNA intro splash (ported from Claude Design "Albatros DNA Intro") ── */
+@keyframes alb-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(220%); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -152,9 +226,13 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+  /* Marquee is essential decorative branding — keep it moving, just slower */
   .marquee-track {
-    animation: none !important;
-    flex-wrap: wrap;
-    justify-content: center;
+    animation: marquee-scroll 90s linear infinite !important;
+    animation-iteration-count: infinite !important;
+  }
+  .marquee-track-rev {
+    animation: marquee-scroll 96s linear infinite reverse !important;
+    animation-iteration-count: infinite !important;
   }
 }
