@@ -63,7 +63,7 @@ export function CategoriesGrid() {
         </div>
 
         {/* General directions (top level of the taxonomy) — click to open the catalog filtered */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 14, marginBottom: 34 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(248px,1fr))", gap: 14, marginBottom: 34, alignItems: "stretch" }}>
           {generalDirections.map((g) => (
             <Link
               key={g.key}
@@ -88,6 +88,9 @@ export function CategoriesGrid() {
                   {directionPositions(g.key)} {tc("positions")}
                 </span>
               )}
+              <span style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: 13, lineHeight: 1.5, color: "#5E6E8F", marginTop: 2 }}>
+                {t(`tileDesc.${g.key}`)}
+              </span>
             </Link>
           ))}
         </div>

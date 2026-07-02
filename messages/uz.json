@@ -35,7 +35,13 @@
   "directions": {
     "eyebrow": "{count} YOʻNALISH",
     "title": "Diagnostika yoʻnalishlari",
-    "intro": "Yechimlarning toʻliq majmuasi — immunokimyo va gematologiyadan tortib molekulyar diagnostika va avtomatlashtirilgan laboratoriya liniyalarigacha."
+    "intro": "Yechimlarning toʻliq majmuasi — immunokimyo va gematologiyadan tortib molekulyar diagnostika va avtomatlashtirilgan laboratoriya liniyalarigacha.",
+    "tileDesc": {
+      "equipment": "Immunokimyo, biokimyo, gematologiya, gemostaz, mikrobiologiya va molekulyar diagnostika uchun avtomatik analizatorlar va laboratoriya tizimlari. Kalit topshirish asosida yetkazib berish: montaj, ishga tushirish, xodimlarni oʻqitish va servis hamrohligi bilan.",
+      "reagents": "Barcha tadqiqot guruhlari uchun original diagnostik reagentlar va test-tizimlar: gormonlar, onkomarkerlar, infeksiyalar, kardiomarkerlar, biokimyo, gematologiya va gemostaz koʻrsatkichlari. Analizatorlar bilan toʻliq moslik va natijalar barqarorligi.",
+      "consumables": "Analizatorlarning uzluksiz ishlashi uchun original sarf materiallari: kyuvetalar, uchliklar, yuvish va tizim eritmalari, kartrijlar va boshlangʻich toʻplamlar. Muayyan uskuna modellariga moslab tanlangan, toʻxtashlarning oldini oladi.",
+      "controls": "Laboratoriya ichki sifat nazorati va analizatorlarni kalibrlash uchun nazorat materiallari va kalibratorlar. Natijalarning ishonchliligi va takrorlanuvchanligini, meʼyoriy talablarga muvofiqligini va sifatni tashqi baholashga tayyorlikni taʼminlaydi."
+    }
   },
   "featured": {
     "title": "Flagman uskunalar",
