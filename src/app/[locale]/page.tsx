@@ -5,6 +5,7 @@ import { CategoriesGrid } from "@/components/home/CategoriesGrid";
 import { PartnersMarquee } from "@/components/home/PartnersMarquee";
 import { ClientsMarquee } from "@/components/home/ClientsMarquee";
 import { AboutSection } from "@/components/home/AboutSection";
+import { ServicesSection } from "@/components/home/ServicesSection";
 import { EventsTimeline } from "@/components/home/EventsTimeline";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { getFeatured } from "@/lib/catalog";
@@ -25,6 +26,7 @@ export default function HomePage() {
       <PartnersMarquee />
       <ClientsMarquee />
       <AboutSection />
+      <ServicesSection />
       <EventsTimeline />
       <ContactCTA />
     </>

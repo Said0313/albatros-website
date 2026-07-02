@@ -51,6 +51,24 @@
   "clients": {
     "homeTitle": "Bizning mijozlarimiz"
   },
+  "services": {
+    "turnkey": {
+      "title": "Kalit topshirish tamoyilida yetkazib berish",
+      "body": "Toʻliq ish tsikli: laboratoriya vazifalariga mos konfiguratsiyani tanlash, yetkazib berish, montaj, ishga tushirish va xodimlarni oʻqitish. Siz ishga tayyor yechim va har bir bosqichda hamrohlik olasiz."
+    },
+    "service": {
+      "title": "Servis 24/7",
+      "body": "Oʻzbekiston Respublikasining butun hududida sutkalik servis-texnik qoʻllab-quvvatlash. Muhandislar ishlab chiqaruvchi zavodlarda malaka oshiradi, shu sababli nosozliklar tez va uzoq toʻxtashlarsiz bartaraf etiladi."
+    },
+    "standards": {
+      "title": "Xalqaro standartlar",
+      "body": "IVD sohasining jahon yetakchilari bilan bevosita ishlaymiz. Uskunalar va reagentlar ISO, FDA va Yevropa farmakopeyasi standartlariga mos keladi."
+    },
+    "education": {
+      "title": "Taʼlim",
+      "body": "ToshVMOʻI bilan hamkorlikda uslubiy qoʻllanmalar tayyorlaymiz, xorijiy ekspertlar ishtirokida seminar va konferensiyalar oʻtkazamiz, laboratoriya mutaxassislariga malakasini oshirishda koʻmaklashamiz."
+    }
+  },
   "about": {
     "eyebrow": "KOMPANIYA HAQIDA",
     "panelText": "Oʻzbekistonda laboratoriya diagnostikasi uchun premium uskunalarning rasmiy distribyutori. Yetkazib berish, ishga tushirish, oʻqitish va servis — asbobning butun hayot tsikli davomida.",
