@@ -8,7 +8,7 @@ import { ServicesSection } from "@/components/home/ServicesSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
 const stats = [
-  { end: 44, suffix: "+", key: "models" },
+  { end: 45, suffix: "+", key: "models" },
   { end: 16, key: "directions" },
   { end: 12, key: "leaders" },
   { end: 85, key: "conferences" },

@@ -30,7 +30,7 @@
     "titleA": "Laboratoriya",
     "titleB": "diagnostikasining",
     "titleHighlight": "ilgʻor texnologiyalari",
-    "subtitle": "Oʻzbekistonda IVD sohasidagi 14 jahon yetakchisining rasmiy distribyutori. Tugatish-shartli yetkazib berish, 24/7 servis, xalqaro standartlar."
+    "subtitle": "Oʻzbekistonda IVD sohasidagi 12 jahon yetakchisining rasmiy distribyutori. Tugatish-shartli yetkazib berish, 24/7 servis, xalqaro standartlar."
   },
   "directions": {
     "eyebrow": "{count} YOʻNALISH",
@@ -43,9 +43,9 @@
   },
   "partners": {
     "homeTitle": "Bizning xorijiy hamkorlarimiz",
-    "homeSubtitle": "Oʻzbekistonda In-Vitro diagnostikasining 14 jahon yetakchisi",
+    "homeSubtitle": "Oʻzbekistonda In-Vitro diagnostikasining 12 jahon yetakchisi",
     "pageTitle": "Bizning hamkorlarimiz",
-    "pageSubtitle": "Biz Oʻzbekistonda in-vitro diagnostika sohasining 14 jahon yetakchisini taqdim etamiz.",
+    "pageSubtitle": "Biz Oʻzbekistonda in-vitro diagnostika sohasining 12 jahon yetakchisini taqdim etamiz.",
     "since": "{year} yildan",
     "detailProducts": "Brend uskunalari",
     "officialSite": "Rasmiy sayt",
@@ -92,7 +92,7 @@
   "aboutPage": {
     "eyebrow": "Kompaniya haqida",
     "title": "Laboratoriyangizni jihozlashda ishonchli hamkoringiz",
-    "intro1": "Albatros Health Care 2017 yilda Oʻzbekiston klinik-diagnostika laboratoriyalari amaliyotiga zamonaviy texnologiyalarni joriy etish maqsadida tashkil etilgan. Bugun biz respublikadagi tibbiy laboratoriya uskunalari va IVD yechimlarining yetakchi distribyutorlaridan biri boʻlib, 14 jahon brendini taqdim etamiz: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius va boshqalar. Mamlakat boʻylab 2000 dan ortiq klinika va laboratoriya bizga laboratoriyalarini jihozlashni ishonib topshiradi.",
+    "intro1": "Albatros Health Care 2017 yilda Oʻzbekiston klinik-diagnostika laboratoriyalari amaliyotiga zamonaviy texnologiyalarni joriy etish maqsadida tashkil etilgan. Bugun biz respublikadagi tibbiy laboratoriya uskunalari va IVD yechimlarining yetakchi distribyutorlaridan biri boʻlib, 12 jahon brendini taqdim etamiz: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius va boshqalar. Mamlakat boʻylab 2000 dan ortiq klinika va laboratoriya bizga laboratoriyalarini jihozlashni ishonib topshiradi.",
     "intro2": "Kompaniya missiyasi — uskunalarni tugatish-shartli yetkazib berish hamda hamkorlarni tezkor uslubiy va servis qoʻllab-quvvatlash bilan taʼminlash. Jamoada oliy maxsus maʼlumotli, uskuna ishlab chiqaruvchilari zavodlarida muntazam malaka oshirib turadigan mutaxassislar ishlaydi. Biz klinik biokimyo va molekulyar biologiya sohasidagi xorijiy ekspertlarni jalb qilgan holda muntazam xalqaro konferensiya va seminarlar tashkil etamiz.",
     "slogan": "Albatros Health Care — laboratoriyani jihozlash va qoʻllab-quvvatlashda ishonchli hamkoringiz.",
     "stats": {

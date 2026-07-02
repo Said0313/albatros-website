@@ -20,7 +20,7 @@ interface Stat {
 }
 
 const STATS: Stat[] = [
-  { num: 44, suffix: "+", key: "models" },
+  { num: 45, suffix: "+", key: "models" },
   { num: 12, suffix: "", key: "brands" },
   { num: 900, suffix: "+", key: "clients" },
   { num: 24, suffix: "/7", key: "support" },
