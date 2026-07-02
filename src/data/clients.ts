@@ -3,8 +3,9 @@
  * clients marquee and on the /clients page. Logos live in /public/images/clients/
  * (mirroring the partner logo convention). `name` is the <img> alt / card title.
  *
- * `description` (RU) + `descriptionUz` power the /clients cards; a few clients have
- * no vetted description yet and intentionally render logo + name only.
+ * `description` (RU, from the vetted Appendix A copy) + `descriptionUz` power the
+ * /clients cards. Four clients (Alfa Med Service, Arzon Lab, Sinomed MD, Shifonur)
+ * have no vetted description yet and intentionally render logo + name only.
  *
  * Order: the strongly-red logos (akfa, vitros, hayat, arzon, shifonur, alfa) are
  * interleaved with blue/green/dark/mixed and softer-coral ones so no two strong-red
@@ -19,19 +20,67 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { id: "akfa-medline", name: "Akfa Medline", logo: "/images/clients/akfa-medline.jpg" },
-  { id: "dialab", name: "Dialab", logo: "/images/clients/dialab.png" },
-  { id: "biogen-med", name: "Biogen Med", logo: "/images/clients/biogen-med.jpg" },
-  { id: "vitros", name: "Vitros", logo: "/images/clients/vitros.svg" },
-  { id: "darmon-servis", name: "Darmon Servis", logo: "/images/clients/darmon-servis.svg" },
-  { id: "hayat-medical-centre", name: "Hayat Medical Centre", logo: "/images/clients/hayat-medical-centre.png" },
+  {
+    id: "akfa-medline",
+    name: "Akfa Medline",
+    logo: "/images/clients/akfa-medline.jpg",
+    description:
+      "Крупнейший в Центральной Азии частный многопрофильный университетский госпиталь, работает в Ташкенте с 2017 года. Единственная в Узбекистане клиника с международной аккредитацией JCI. Более 150 врачей, оборудование Siemens, лаборатория на системах Roche и Sysmex, роботизированная хирургия, круглосуточный режим работы.",
+    descriptionUz:
+      "Markaziy Osiyodagi eng yirik xususiy koʻp tarmoqli universitet shifoxonasi, Toshkentda 2017 yildan beri faoliyat yuritadi. Oʻzbekistonda yagona JCI xalqaro akkreditatsiyasiga ega klinika. 150 dan ortiq shifokor, Siemens uskunalari, Roche va Sysmex laboratoriyasi, robototexnik jarrohlik, 24/7 rejimida ishlaydi.",
+  },
+  { id: "dialab", name: "Dialab", logo: "/images/clients/dialab.png",
+    description:
+      "Сеть клинико-диагностических лабораторий и клиник в Узбекистане, основана в 2011 году. Более десяти филиалов по стране, лабораторные исследования и инструментальная диагностика (УЗИ, ЛОР) на современном оборудовании.",
+    descriptionUz:
+      "Oʻzbekistondagi klinik-diagnostik laboratoriyalar va klinikalar tarmogʻi, 2011 yilda tashkil etilgan. Mamlakat boʻylab oʻndan ortiq filial, zamonaviy uskunalarda laboratoriya tekshiruvlari va instrumental diagnostika (UZI, LOR)." },
+  { id: "biogen-med", name: "Biogen Med", logo: "/images/clients/biogen-med.jpg",
+    description:
+      "Сеть медицинских клиник и лабораторий в Ташкенте с несколькими филиалами. Лабораторные анализы, УЗИ, круглосуточный ЛОР-прием, консультации специалистов и процедурный кабинет.",
+    descriptionUz:
+      "Toshkentdagi bir nechta filialga ega tibbiyot klinikalari va laboratoriyalari tarmogʻi. Laboratoriya tahlillari, UZI, sutkalik LOR qabuli, mutaxassislar maslahati va muolaja xonasi." },
+  { id: "vitros", name: "Vitros", logo: "/images/clients/vitros.svg",
+    description:
+      "Частная сеть клинико-диагностических лабораторий, на рынке Узбекистана с 2012 года. Около 15 филиалов в Ташкенте, более 600 видов анализов. Исследования выполняются на оборудовании и реагентах Ortho Clinical Diagnostics (США).",
+    descriptionUz:
+      "Xususiy klinik-diagnostik laboratoriyalar tarmogʻi, Oʻzbekiston bozorida 2012 yildan beri. Toshkentda 15 ga yaqin filial, 600 dan ortiq tahlil turi. Tekshiruvlar Ortho Clinical Diagnostics (AQSh) uskunalari va reagentlarida bajariladi." },
+  { id: "darmon-servis", name: "Darmon Servis", logo: "/images/clients/darmon-servis.svg",
+    description:
+      "Многопрофильная лечебно-диагностическая клиника, основана в 2005 году. Прием по 18 направлениям, работа по принципам доказательной медицины, лаборатория DS Lab с международным контролем качества (BIO-RAD, RIQAS) и более чем 1000 видами анализов, диагностика МРТ, МСКТ, УЗИ в режиме 24/7.",
+    descriptionUz:
+      "Koʻp tarmoqli davolash-diagnostika klinikasi, 2005 yilda tashkil etilgan. 18 yoʻnalish boʻyicha qabul, dalilga asoslangan tibbiyot tamoyillarida ishlaydi, xalqaro sifat nazoratiga ega DS Lab laboratoriyasi (BIO-RAD, RIQAS) va 1000 dan ortiq tahlil turi, MRT, MSKT, UZI diagnostikasi 24/7 rejimida." },
+  { id: "hayat-medical-centre", name: "Hayat Medical Centre", logo: "/images/clients/hayat-medical-centre.png",
+    description:
+      "Многопрофильная клиника в Ташкенте, работает с 2015 года. Поликлиника, стационар и лечебно-диагностическое отделение, собственная лаборатория на системах Roche, МРТ 1.5Т, цифровой рентген Siemens, УЗИ Philips, центр физиотерапии и реабилитации, детское отделение Hayat Kids.",
+    descriptionUz:
+      "Toshkentdagi koʻp tarmoqli klinika, 2015 yildan beri faoliyat yuritadi. Poliklinika, statsionar va davolash-diagnostika boʻlimi, Roche tizimlaridagi oʻz laboratoriyasi, 1.5T MRT, Siemens raqamli rentgeni, Philips UZI, fizioterapiya va reabilitatsiya markazi, Hayat Kids bolalar boʻlimi." },
   { id: "sinomed-md", name: "Sinomed MD", logo: "/images/clients/sinomed-md.svg" },
-  { id: "samarqand-tibbiy-diagnostika", name: "Samarqand tibbiy diagnostika", logo: "/images/clients/samarqand-tibbiy-diagnostika.webp" },
+  { id: "samarqand-tibbiy-diagnostika", name: "Samarqand tibbiy diagnostika", logo: "/images/clients/samarqand-tibbiy-diagnostika.webp",
+    description:
+      "Частный диагностический центр и лаборатория в Самарканде с несколькими филиалами. Объединяет современное диагностическое оборудование и квалифицированных специалистов, известен точной лабораторной диагностикой по доступным ценам.",
+    descriptionUz:
+      "Samarqanddagi bir nechta filialga ega xususiy diagnostika markazi va laboratoriyasi. Zamonaviy diagnostika uskunalari va malakali mutaxassislarni birlashtiradi, arzon narxlarda aniq laboratoriya diagnostikasi bilan tanilgan." },
   { id: "arzon-lab", name: "Arzon Lab", logo: "/images/clients/arzon-lab.webp" },
-  { id: "openlab", name: "OpenLab", logo: "/images/clients/openlab.jpg" },
+  { id: "openlab", name: "OpenLab", logo: "/images/clients/openlab.jpg",
+    description:
+      "Независимая клинико-диагностическая лаборатория в Ташкенте, работающая в формате открытой лаборатории (open-space), где пациент может наблюдать за ходом исследований. Основные анализы выполняются в экспресс-режиме (от 30 минут), прием семь дней в неделю.",
+    descriptionUz:
+      "Toshkentdagi mustaqil klinik-diagnostik laboratoriya, ochiq laboratoriya (open-space) formatida ishlaydi, bunda bemor tekshiruv jarayonini kuzatishi mumkin. Asosiy tahlillar ekspress rejimda (30 daqiqadan) bajariladi, qabul haftaning yetti kuni." },
   { id: "shifonur", name: "Shifonur", logo: "/images/clients/shifonur.webp" },
-  { id: "swiss-lab", name: "Swiss Lab", logo: "/images/clients/swiss-lab.svg" },
-  { id: "defactum", name: "Defactum", logo: "/images/clients/defactum.svg" },
+  { id: "swiss-lab", name: "Swiss Lab", logo: "/images/clients/swiss-lab.svg",
+    description:
+      "Первая в Узбекистане сеть клинико-диагностических лабораторий, узбекско-швейцарское совместное предприятие (2019). Около двадцати лабораторий в Ташкенте, Ангрене и Самарканде, более 2000 видов исследований, международные сертификаты качества (BioSystems PREVECAL, ФСВОК). Работает в формате открытой, прозрачной лаборатории.",
+    descriptionUz:
+      "Oʻzbekistondagi birinchi klinik-diagnostik laboratoriyalar tarmogʻi, oʻzbek-shveytsariya qoʻshma korxonasi (2019). Toshkent, Angren va Samarqandda yigirmaga yaqin laboratoriya, 2000 dan ortiq tekshiruv turi, xalqaro sifat sertifikatlari (BioSystems PREVECAL, FSVOK). Ochiq, shaffof laboratoriya formatida ishlaydi." },
+  { id: "defactum", name: "Defactum", logo: "/images/clients/defactum.svg",
+    description:
+      "Многопрофильная клиника и лаборатория в Ташкенте. Амбулаторный прием, диагностика (УЗИ, ЭКГ, эндоскопия, ПЦР), детское отделение и программы чек-апов, сеть филиалов с центром в Юнусабадском районе.",
+    descriptionUz:
+      "Toshkentdagi koʻp tarmoqli klinika va laboratoriya. Ambulator qabul, diagnostika (UZI, EKG, endoskopiya, PSR), bolalar boʻlimi va chek-ap dasturlari, markazi Yunusobod tumanida joylashgan filiallar tarmogʻi." },
   { id: "alfa-med-service", name: "Alfa Med Service", logo: "/images/clients/alfa-med-service.webp" },
-  { id: "shox-international-hospital", name: "Shox International Hospital", logo: "/images/clients/shox-international-hospital.jpg" },
+  { id: "shox-international-hospital", name: "Shox International Hospital", logo: "/images/clients/shox-international-hospital.jpg",
+    description:
+      "Одна из первых частных клиник Узбекистана, сеть многопрофильных медицинских центров с более чем 15-летней историей. Специализируется на кардиологической диагностике и хирургии, применяет малоинвазивные и роботизированные методы, располагает собственной лабораторией и стационаром.",
+    descriptionUz:
+      "Oʻzbekistonning birinchi xususiy klinikalaridan biri, 15 yildan ortiq tarixga ega koʻp tarmoqli tibbiyot markazlari tarmogʻi. Kardiologik diagnostika va jarrohlikka ixtisoslashgan, kam invaziv va robototexnik usullarni qoʻllaydi, oʻz laboratoriyasi va statsionariga ega." },
 ];

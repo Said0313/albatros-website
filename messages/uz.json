@@ -52,7 +52,10 @@
     "noProducts": "Uskunalar tez orada qoʻshiladi"
   },
   "clients": {
-    "homeTitle": "Bizning mijozlarimiz"
+    "homeTitle": "Bizning mijozlarimiz",
+    "pageTitle": "Bizning mijozlarimiz",
+    "scaleStat": "Oʻzbekiston boʻylab 500 dan ortiq mijoz",
+    "scaleNote": "Bu yerda bizga ishonch bildirgan tashkilotlarning bir qismi keltirilgan"
   },
   "services": {
     "sectionTitle": "Xizmat koʻrsatish",
