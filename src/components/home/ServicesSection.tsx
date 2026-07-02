@@ -10,10 +10,10 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
  * equal-height cards stand out.
  */
 const CARDS = [
-  { key: "turnkey", color: "#D0181F" },
-  { key: "service", color: "#2E549C" },
-  { key: "standards", color: "#3E8FA6" },
-  { key: "education", color: "#5C7FB4" },
+  { key: "turnkey", color: "#D0181F", tint: "rgba(208,24,31,0.10)" },
+  { key: "service", color: "#2E549C", tint: "rgba(46,84,156,0.10)" },
+  { key: "standards", color: "#3E8FA6", tint: "rgba(62,143,166,0.12)" },
+  { key: "education", color: "#5C7FB4", tint: "rgba(92,127,180,0.13)" },
 ] as const;
 
 export function ServicesSection() {
@@ -29,13 +29,22 @@ export function ServicesSection() {
         {CARDS.map((c, i) => (
           <ScrollReveal key={c.key} delay={(i % 2) * 0.08} className="h-full">
             <div
-              className="h-full rounded-2xl border border-bg-border bg-bg-card p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
+              className="relative h-full overflow-hidden rounded-2xl border border-bg-border bg-bg-card p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
               style={{ borderLeft: `4px solid ${c.color}` }}
             >
-              <h3 className="font-display text-xl font-bold text-text-primary md:text-[22px]">
+              <span
+                aria-hidden
+                className="pointer-events-none absolute right-5 top-2 font-display text-6xl font-extrabold leading-none"
+                style={{ color: c.tint }}
+              >
+                {`0${i + 1}`}
+              </span>
+              <h3 className="relative font-display text-xl font-bold text-text-primary md:text-[22px]">
                 {t(`${c.key}.title`)}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-text-secondary">{t(`${c.key}.body`)}</p>
+              <p className="relative mt-3 max-w-[46ch] text-sm leading-relaxed text-text-secondary">
+                {t(`${c.key}.body`)}
+              </p>
             </div>
           </ScrollReveal>
         ))}
