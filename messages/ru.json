@@ -46,7 +46,10 @@
     "homeSubtitle": "14 мировых лидеров In-Vitro диагностики в Узбекистане",
     "pageTitle": "Наши партнёры",
     "pageSubtitle": "Мы представляем в Узбекистане 14 мировых лидеров индустрии in-vitro диагностики.",
-    "since": "с {year}"
+    "since": "с {year}",
+    "detailProducts": "Оборудование бренда",
+    "officialSite": "Официальный сайт",
+    "noProducts": "Оборудование скоро появится"
   },
   "clients": {
     "homeTitle": "Наши клиенты"
