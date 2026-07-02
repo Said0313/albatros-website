@@ -140,6 +140,8 @@
     "filters": "Filtrlar",
     "reset": "Filtrlarni tozalash",
     "found": "Topildi: {count} mahsulot",
+    "showAllTests": "Barcha testlarni koʻrsatish ({count})",
+    "hideTests": "Yigʻish",
     "empty": "Hech narsa topilmadi",
     "metaTitle": "Uskunalar katalogi"
   },

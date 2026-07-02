@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { products, categories, generalDirections, directionCount, productDirection } from "@/lib/catalog";
 import { categoryLabel } from "@/data/i18n";
 import { ProductCard } from "@/components/catalog/ProductCard";
+import { ReagentCard } from "@/components/catalog/ReagentCard";
 import { cn } from "@/lib/utils";
 
 export function CatalogView() {
@@ -178,7 +179,7 @@ export function CatalogView() {
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.25 }}
                 >
-                  <ProductCard product={p} />
+                  {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
                 </motion.div>
               ))}
             </AnimatePresence>
