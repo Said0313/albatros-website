@@ -13,15 +13,19 @@ export interface Client {
   logo: string;
 }
 
+// Ordered so the strongly-red logos (akfa, arzon, swiss-lab, vitros, alfa) are
+// interleaved with the blue/green/dark/mixed ones (dialab, darmon, openlab,
+// defactum, shox) — no two strong-red logos sit adjacent, including across the
+// duplicated-track loop seam (shox -> akfa).
 export const clients: Client[] = [
   { id: "akfa-medline", name: "Akfa Medline", logo: "/images/clients/akfa-medline.jpg" },
-  { id: "alfa-med-service", name: "Alfa Med Service", logo: "/images/clients/alfa-med-service.webp" },
+  { id: "dialab", name: "Dialab", logo: "/images/clients/dialab.png" },
   { id: "arzon-lab", name: "Arzon Lab", logo: "/images/clients/arzon-lab.webp" },
   { id: "darmon-servis", name: "Darmon Servis", logo: "/images/clients/darmon-servis.svg" },
-  { id: "defactum", name: "Defactum", logo: "/images/clients/defactum.svg" },
-  { id: "dialab", name: "Dialab", logo: "/images/clients/dialab.png" },
-  { id: "openlab", name: "OpenLab", logo: "/images/clients/openlab.jpg" },
-  { id: "shox-international-hospital", name: "Shox International Hospital", logo: "/images/clients/shox-international-hospital.jpg" },
   { id: "swiss-lab", name: "Swiss Lab", logo: "/images/clients/swiss-lab.svg" },
+  { id: "openlab", name: "OpenLab", logo: "/images/clients/openlab.jpg" },
   { id: "vitros", name: "Vitros", logo: "/images/clients/vitros.svg" },
+  { id: "defactum", name: "Defactum", logo: "/images/clients/defactum.svg" },
+  { id: "alfa-med-service", name: "Alfa Med Service", logo: "/images/clients/alfa-med-service.webp" },
+  { id: "shox-international-hospital", name: "Shox International Hospital", logo: "/images/clients/shox-international-hospital.jpg" },
 ];

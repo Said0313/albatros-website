@@ -26,9 +26,9 @@ export function PartnersMarquee() {
               <Image
                 src={b.logo}
                 alt={b.name}
-                width={150}
-                height={36}
-                className="h-9 w-auto object-contain"
+                width={160}
+                height={48}
+                className="w-auto object-contain"
               />
             </Link>
           ))}
