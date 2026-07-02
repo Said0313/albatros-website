@@ -19,8 +19,12 @@
  * gradient background (z-index 10000, under #alb-pre's 10001) and removes #alb-pre
  * (its own dropPre), so there is no white gap. Emitted via one dangerouslySetInnerHTML
  * on a <div suppressHydrationWarning> so the inline script can removeChild #alb-pre
- * with no hydration mismatch. Once-per-session via sessionStorage `alb_splash`; a 4s
- * failsafe drops it if the client splash never mounts.
+ * with no hydration mismatch.
+ *
+ * Removal is event-based, never a timer, and NOT gated once-per-session: the loader
+ * shows on every load (so it is visible during loading, incl. same-tab reloads) and
+ * fades out on the window `load` event. With JS disabled the script never runs, so
+ * the loader stays visible and animating (pure CSS) — the key acceptance test.
  */
 
 // Staggered per-rung delays (matches the reference: -0.15s * n across 20 rungs),
@@ -47,12 +51,15 @@ ${DELAYS}
 
 const SCRIPT = `
 (function(){
-  try{
-    var el=document.getElementById('alb-pre');
-    if(!el)return;
-    if(sessionStorage.getItem('alb_splash')){if(el.parentNode)el.parentNode.removeChild(el);return;}
-    setTimeout(function(){var e=document.getElementById('alb-pre');if(e&&e.parentNode)e.parentNode.removeChild(e);},4000);
-  }catch(e){var x=document.getElementById('alb-pre');if(x&&x.parentNode)x.parentNode.removeChild(x);}
+  function hide(){
+    var e=document.getElementById('alb-pre');
+    if(!e)return;
+    e.style.transition='opacity .45s ease';
+    e.style.opacity='0';
+    e.addEventListener('transitionend',function(){if(e.parentNode)e.parentNode.removeChild(e);});
+  }
+  if(document.readyState==='complete')hide();
+  else window.addEventListener('load',hide,{once:true});
 })();
 `.trim();
 
