@@ -110,3 +110,18 @@ export function productDirection(p: Product): GeneralDirectionKey {
 export function directionCount(key: GeneralDirectionKey): number {
   return products.filter((p) => productDirection(p) === key).length;
 }
+
+// ── Position counting ──
+// An equipment product is 1 position; a grouped image-less card (reagents /
+// consumables / controls) counts as its number of individual analytes/items.
+export function itemCount(p: Product): number {
+  return p.imageless ? p.analytes?.length ?? 1 : 1;
+}
+
+export function directionPositions(key: GeneralDirectionKey): number {
+  return products.filter((p) => productDirection(p) === key).reduce((s, p) => s + itemCount(p), 0);
+}
+
+export function totalPositions(): number {
+  return products.reduce((s, p) => s + itemCount(p), 0);
+}

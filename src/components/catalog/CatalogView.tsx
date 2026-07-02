@@ -5,7 +5,7 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, SlidersHorizontal, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { products, categories, generalDirections, directionCount, productDirection } from "@/lib/catalog";
+import { products, categories, generalDirections, directionPositions, itemCount, productDirection } from "@/lib/catalog";
 import { categoryLabel } from "@/data/i18n";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { ReagentCard } from "@/components/catalog/ReagentCard";
@@ -30,9 +30,11 @@ export function CatalogView() {
   const inDir = (p: (typeof products)[number]) =>
     selectedDirs.length === 0 || selectedDirs.includes(productDirection(p));
   const scopedCats = categories.filter((c) => products.some((p) => inDir(p) && p.category === c.name));
-  const scopedCatCount = (name: string) => products.filter((p) => inDir(p) && p.category === name).length;
+  const scopedCatCount = (name: string) =>
+    products.filter((p) => inDir(p) && p.category === name).reduce((s, p) => s + itemCount(p), 0);
   const scopedBrands = Array.from(new Set(products.filter(inDir).map((p) => p.brand))).sort();
-  const scopedBrandCount = (b: string) => products.filter((p) => inDir(p) && p.brand === b).length;
+  const scopedBrandCount = (b: string) =>
+    products.filter((p) => inDir(p) && p.brand === b).reduce((s, p) => s + itemCount(p), 0);
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
@@ -114,12 +116,12 @@ export function CatalogView() {
         <div className={cn(filtersOpen ? "block" : "hidden", "lg:block")}>
         <FilterGroup title={t("generalDirection")}>
           {generalDirections
-            .filter((g) => directionCount(g.key) > 0)
+            .filter((g) => directionPositions(g.key) > 0)
             .map((g) => (
               <CheckRow
                 key={g.key}
                 label={categoryLabel(g.name, locale)}
-                count={directionCount(g.key)}
+                count={directionPositions(g.key)}
                 checked={selectedDirs.includes(g.key)}
                 onChange={() => updateParams("direction", g.key)}
               />

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { directions, categoryCount, generalDirections, directionCount } from "@/lib/catalog";
+import { directions, categoryCount, generalDirections, directionPositions } from "@/lib/catalog";
 import { categoryLabel } from "@/data/i18n";
 
 /**
@@ -83,9 +83,9 @@ export function CategoriesGrid() {
               <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 700, fontSize: 17, color: "#0C1B3A" }}>
                 {categoryLabel(g.name, locale)}
               </span>
-              {directionCount(g.key) > 0 && (
+              {directionPositions(g.key) > 0 && (
                 <span style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 12, color: "#5E6E8F" }}>
-                  {directionCount(g.key)} {tc("positions")}
+                  {directionPositions(g.key)} {tc("positions")}
                 </span>
               )}
             </Link>
