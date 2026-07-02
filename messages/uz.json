@@ -135,7 +135,13 @@
     "showAllTests": "Barcha testlarni koʻrsatish ({count})",
     "hideTests": "Yigʻish",
     "empty": "Hech narsa topilmadi",
-    "metaTitle": "Uskunalar katalogi"
+    "metaTitle": "Uskunalar katalogi",
+    "directionDesc": {
+      "equipment": "Klinik diagnostika uchun avtomatik analizatorlar va laboratoriya tizimlari: immunokimyo, biokimyo, gematologiya, gemostaz, mikrobiologiya va molekulyar diagnostika. Jahon ishlab chiqaruvchilarining uskunalari kalit topshirish asosida yetkazib beriladi: montaj, ishga tushirish, xodimlarni oʻqitish va asbobning butun xizmat muddati davomida servis hamrohligi bilan.",
+      "reagents": "Barcha tadqiqot guruhlari uchun diagnostik reagentlar va test-tizimlar: gormonlar, onkomarkerlar, infeksiyalar, kardiomarkerlar, biokimyo, gematologiya va gemostaz koʻrsatkichlari. Uskuna ishlab chiqaruvchilarining original toʻplamlari sifatida yetkazib beriladi, bu natijalar barqarorligini, analizatorlar bilan mosligini va laboratoriya diagnostikasi sifatining xalqaro standartlariga muvofiqligini taʼminlaydi.",
+      "consumables": "Analizatorlarning uzluksiz ishlashi uchun sarf materiallari: kyuvetalar, uchliklar, yuvish va tizim eritmalari, kartrijlar va boshlangʻich toʻplamlar. Original sarf materiallari muayyan uskuna modellariga moslab tanlangan, ular toʻxtashlarning oldini olishga yordam beradi, oʻlchash aniqligini saqlaydi va laboratoriyaning yuqori kunlik yuklamasida asboblar xizmat muddatini uzaytiradi.",
+      "controls": "Laboratoriya ichki sifat nazorati va analizatorlarni kalibrlash uchun nazorat materiallari va kalibratorlar. Natijalarning ishonchliligi va takrorlanuvchanligini, meʼyoriy talablarga muvofiqligini va sifatni tashqi baholashga tayyorlikni taʼminlaydi. Laboratoriya metodikalari va uskunalariga moslab tanlanadi, biokimyo, gemostaz, immunokimyo, siydik tahlili va boshqa yoʻnalishlarni qamrab oladi."
+    }
   },
   "product": {
     "breadcrumbHome": "Bosh sahifa",

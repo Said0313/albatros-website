@@ -161,6 +161,11 @@ export function CatalogView() {
       </aside>
 
       <div>
+        {selectedDirs.length === 1 && (
+          <p className="mb-5 max-w-3xl text-sm leading-relaxed text-text-secondary">
+            {t(`directionDesc.${selectedDirs[0]}`)}
+          </p>
+        )}
         <p className="mb-5 font-mono text-sm text-text-secondary">{t("found", { count: filtered.length })}</p>
         {filtered.length === 0 ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border border-bg-border bg-bg-card py-20 text-center">
