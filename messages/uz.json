@@ -54,12 +54,12 @@
   "services": {
     "sectionTitle": "Xizmat koʻrsatish",
     "turnkey": {
-      "title": "Kalit topshirish tamoyilida yetkazib berish",
-      "body": "Toʻliq ish tsikli: laboratoriya vazifalariga mos konfiguratsiyani tanlash, yetkazib berish, montaj, ishga tushirish va xodimlarni oʻqitish. Siz ishga tayyor yechim va har bir bosqichda hamrohlik olasiz."
+      "title": "Kalit topshirish asosida yetkazib berish",
+      "body": "Toʻliq tsikl: laboratoriya vazifalariga mos konfiguratsiyani tanlash, yetkazib berish, oʻrnatish, ishga tushirish va xodimlarni oʻqitish. Siz ishga tayyor yechimni va har bir bosqichda hamrohlikni olasiz."
     },
     "service": {
       "title": "Servis 24/7",
-      "body": "Oʻzbekiston Respublikasining butun hududida sutkalik servis-texnik qoʻllab-quvvatlash. Muhandislar ishlab chiqaruvchi zavodlarda malaka oshiradi, shu sababli nosozliklar tez va uzoq toʻxtashlarsiz bartaraf etiladi."
+      "body": "Oʻzbekiston Respublikasining butun hududi boʻylab sutkalik servis-texnik qoʻllab-quvvatlash. Muhandislar ishlab chiqaruvchi zavodlarda malaka oshirib turadi, shu bois nosozliklar tez va uzoq toʻxtashlarsiz bartaraf etiladi."
     },
     "standards": {
       "title": "Xalqaro standartlar",
@@ -67,7 +67,7 @@
     },
     "education": {
       "title": "Taʼlim",
-      "body": "ToshVMOʻI bilan hamkorlikda uslubiy qoʻllanmalar tayyorlaymiz, xorijiy ekspertlar ishtirokida seminar va konferensiyalar oʻtkazamiz, laboratoriya mutaxassislariga malakasini oshirishda koʻmaklashamiz."
+      "body": "ToshVMOʻI bilan hamkorlikda uslubiy qoʻllanmalar ishlab chiqamiz, xorijiy ekspertlar ishtirokida seminar va konferensiyalar oʻtkazamiz, laboratoriya mutaxassislariga malaka oshirishda yordam beramiz."
     }
   },
   "about": {
