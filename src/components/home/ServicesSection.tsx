@@ -13,7 +13,12 @@ const KEYS = ["turnkey", "service", "standards", "education"] as const;
 export function ServicesSection() {
   const t = useTranslations("services");
   return (
-    <section className="section-pad border-t border-bg-border">
+    <section className="border-t border-bg-border pt-14 pb-20 md:pt-16 md:pb-28">
+      <div className="container-x mb-12 text-center">
+        <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
+          {t("sectionTitle")}
+        </h2>
+      </div>
       <div className="container-x grid grid-cols-1 gap-6 md:grid-cols-2">
         {KEYS.map((k, i) => (
           <ScrollReveal key={k} delay={(i % 2) * 0.08}>
