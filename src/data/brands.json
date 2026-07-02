@@ -3,72 +3,144 @@
     "id": "snibe",
     "name": "SNIBE",
     "logo": "/images/brands/snibe.png",
-    "description": "Мировой лидер ИХЛА с 30-летней историей. Представлен в 163 странах, более 40 000 установленных анализаторов. №1 в Узбекистане по иммунохемилюминесцентному анализу."
+    "url": "https://www.snibe.com/en/",
+    "description": "Мировой лидер иммунохемилюминесцентного анализа с историей более 30 лет. Анализаторы MAGLUMI представлены в 163 странах, установлено свыше 40 000 систем. В Узбекистане SNIBE занимает первое место в сегменте ИХЛА.",
+    "founded": "1995",
+    "country": "Китай · Шэньчжэнь",
+    "specialty": "Иммунохемилюминесцентный анализ (ИХЛА)",
+    "specialtyUz": "Immunokimyoviy lyuminessent tahlil (IXLA)",
+    "descriptionUz": "Immunokimyoviy lyuminessent tahlil sohasida 30 yildan ortiq tarixga ega jahon yetakchisi. MAGLUMI analizatorlari 163 mamlakatda taqdim etilgan, 40 000 dan ortiq tizim oʻrnatilgan. Oʻzbekistonda SNIBE IXLA segmentida birinchi oʻrinda turadi."
   },
   {
     "id": "bd",
     "name": "BD",
     "logo": "/images/brands/bd.png",
-    "description": "Becton Dickinson — глобальная медико-технологическая компания. Решения для микробиологии, гемокультуры и фенотипической идентификации с определением антибиотикорезистентности."
+    "url": "https://www.bd.com/en-us",
+    "description": "Becton Dickinson, одна из крупнейших медико-технологических компаний мира. Системы BD для гемокультивирования и микробиологии обеспечивают фенотипическую идентификацию возбудителей и определение чувствительности к антибиотикам.",
+    "founded": "1897",
+    "country": "США · Нью-Джерси",
+    "specialty": "Микробиология и гемокультуры",
+    "specialtyUz": "Mikrobiologiya va gemokulturalar",
+    "descriptionUz": "Becton Dickinson, dunyodagi eng yirik tibbiy-texnologik kompaniyalardan biri. BD tizimlari gemokultivatsiya va mikrobiologiya uchun qoʻzgʻatuvchilarni fenotipik aniqlash hamda antibiotiklarga sezgirlikni belgilash imkonini beradi."
   },
   {
     "id": "randox",
     "name": "Randox",
     "logo": "/images/brands/randox.png",
-    "description": "Один из мировых лидеров in-vitro диагностики и контроля качества. Биочиповые анализаторы и крупнейшая схема внешней оценки качества RIQAS."
+    "url": "https://www.randox.com/",
+    "description": "Один из мировых лидеров лабораторной диагностики и контроля качества. Биочиповая технология для мультианализа из одной пробы и крупнейшая международная схема внешней оценки качества RIQAS.",
+    "founded": "1982",
+    "country": "Великобритания · Кримлин",
+    "specialty": "Контроль качества и биочиповые анализаторы",
+    "specialtyUz": "Sifat nazorati va biochip analizatorlari",
+    "descriptionUz": "Laboratoriya diagnostikasi va sifat nazoratining jahon yetakchilaridan biri. Bitta namunadan multitahlil qilish uchun biochip texnologiyasi va eng yirik xalqaro tashqi sifat baholash sxemasi RIQAS."
   },
   {
     "id": "dymind",
     "name": "Dymind",
     "logo": "/images/brands/dymind.png",
-    "description": "Производитель гематологических анализаторов с AI-анализом. Обладатель премий Red Dot и iF Design Award за дизайн и инновации."
+    "url": "https://www.dymind.com/en-US/",
+    "description": "Производитель гематологических анализаторов с анализом на основе искусственного интеллекта. Отмечен премиями Red Dot и iF Design Award за дизайн и инженерные решения.",
+    "founded": "2013",
+    "country": "Китай · Шэньчжэнь",
+    "specialty": "Гематологический анализ",
+    "specialtyUz": "Gematologik tahlil",
+    "descriptionUz": "Sunʼiy intellektga asoslangan tahlilga ega gematologik analizatorlar ishlab chiqaruvchisi. Dizayn va muhandislik yechimlari uchun Red Dot va iF Design Award mukofotlari sohibi."
   },
   {
     "id": "werfen",
     "name": "Werfen",
     "logo": "/images/brands/werfen.png",
-    "description": "Мировой лидер в области гемостаза и анализа критических состояний (КЩС). Анализаторы ACL TOP и GEM Premier."
+    "url": "https://www.werfen.com/en",
+    "description": "Мировой лидер в области гемостаза и диагностики критических состояний (КЩС). В портфель входят коагулометры ACL TOP и анализаторы газов крови GEM Premier.",
+    "founded": "1966",
+    "country": "Испания · Барселона",
+    "specialty": "Гемостаз и анализ критических состояний",
+    "specialtyUz": "Gemostaz va kritik holatlar tahlili",
+    "descriptionUz": "Gemostaz va kritik holatlar diagnostikasi (KKH) sohasidagi jahon yetakchisi. Portfelga ACL TOP koagulometrlari va GEM Premier qon gazlari analizatorlari kiradi."
   },
   {
     "id": "illumina",
     "name": "Illumina",
     "logo": "/images/brands/illumina.png",
-    "description": "Пионер секвенирования нового поколения (NGS). Основана в 1998 году, Сан-Диего. Представлена в 160 странах."
+    "url": "https://www.illumina.com/",
+    "description": "Пионер и мировой лидер секвенирования нового поколения (NGS). Технологии Illumina представлены более чем в 160 странах и лежат в основе современных геномных исследований.",
+    "founded": "1998",
+    "country": "США · Сан-Диего",
+    "specialty": "Секвенирование нового поколения (NGS)",
+    "specialtyUz": "Yangi avlod sekvenatsiyasi (NGS)",
+    "descriptionUz": "Yangi avlod sekvenatsiyasining (NGS) kashshofi va jahon yetakchisi. Illumina texnologiyalari 160 dan ortiq mamlakatda taqdim etilgan va zamonaviy genom tadqiqotlari asosini tashkil etadi."
   },
   {
     "id": "lifotronic",
     "name": "Lifotronic",
     "logo": "/images/brands/lifotronic.png",
-    "description": "Производитель анализаторов гликированного гемоглобина методом ионообменной ВЭЖХ — золотого стандарта ВОЗ."
+    "url": "https://en.lifotronic.com/",
+    "description": "Производитель анализаторов гликированного гемоглобина (HbA1c) методом ионообменной ВЭЖХ. Эта технология признана ВОЗ золотым стандартом мониторинга сахарного диабета.",
+    "founded": "2001",
+    "country": "Китай · Шэньчжэнь",
+    "specialty": "ВЭЖХ-анализ гликированного гемоглобина",
+    "specialtyUz": "Glikatlangan gemoglobinning YuSSX tahlili",
+    "descriptionUz": "Ion almashinuvchi YuSSX usuli bilan glikatlangan gemoglobin (HbA1c) analizatorlari ishlab chiqaruvchisi. Bu texnologiya JSST tomonidan qandli diabet monitoringining oltin standarti deb tan olingan."
   },
   {
     "id": "urit",
     "name": "URIT",
     "logo": "/images/brands/urit.png",
-    "description": "Производитель анализаторов мочи, проточных цитометров и модульных гематологических лабораторий."
+    "url": "https://www.urit.com/",
+    "description": "Производитель анализаторов мочи, проточных цитометров и модульных гематологических систем. Один из признанных мировых лидеров в анализе мочи.",
+    "founded": "1992",
+    "country": "Китай · Гуйлинь",
+    "specialty": "Анализ мочи и гематология",
+    "specialtyUz": "Siydik tahlili va gematologiya",
+    "descriptionUz": "Siydik analizatorlari, oqim sitometrlari va modulli gematologik tizimlar ishlab chiqaruvchisi. Siydik tahlili sohasida tan olingan jahon yetakchilaridan biri."
   },
   {
     "id": "clarius",
     "name": "Clarius",
     "logo": "/images/brands/clarius.png",
-    "description": "Беспроводные ультразвуковые сканеры для медицины, обучения и ветеринарии. Более 20 000 врачей по всему миру."
+    "url": "https://clarius.com/",
+    "description": "Беспроводные ультразвуковые сканеры высокой чёткости для клинической практики, обучения и ветеринарии. Системами Clarius пользуются более 20 000 врачей по всему миру.",
+    "founded": "2014",
+    "country": "Канада · Ванкувер",
+    "specialty": "Беспроводная ультразвуковая диагностика",
+    "specialtyUz": "Simsiz ultratovush diagnostikasi",
+    "descriptionUz": "Klinik amaliyot, oʻqitish va veterinariya uchun yuqori aniqlikdagi simsiz ultratovush skanerlari. Clarius tizimlaridan dunyo boʻylab 20 000 dan ortiq shifokor foydalanadi."
   },
   {
     "id": "condalab",
     "name": "Condalab",
     "logo": "/images/brands/condalab.png",
-    "description": "Испанский производитель питательных сред с 1960 года. Экспорт в 130 стран, соответствие ISO, FDA, USP, AOAC."
+    "url": "https://condalab.com/",
+    "description": "Испанский производитель питательных сред для микробиологии. Продукция экспортируется в 130 стран и соответствует стандартам ISO, FDA, USP и AOAC.",
+    "founded": "1960",
+    "country": "Испания · Мадрид",
+    "specialty": "Питательные среды для микробиологии",
+    "specialtyUz": "Mikrobiologiya uchun oziq muhitlar",
+    "descriptionUz": "Mikrobiologiya uchun oziq muhitlar ishlab chiqaruvchi ispaniyalik kompaniya. Mahsulotlari 130 mamlakatga eksport qilinadi va ISO, FDA, USP hamda AOAC standartlariga mos keladi."
   },
   {
     "id": "thermofisher",
-    "name": "Thermo Fisher",
-    "logo": "/images/brands/thermofisher.png",
-    "description": "Молекулярная аллергодиагностика Phadia — золотой стандарт в аллергологии."
+    "name": "Phadia (Thermo Fisher)",
+    "logo": "/images/brands/phadia.png",
+    "url": "https://www.thermofisher.com/",
+    "description": "Молекулярная аллергодиагностика Phadia в составе Thermo Fisher Scientific, признанная золотым стандартом в аллергологии.",
+    "founded": "1967",
+    "country": "Швеция · Уппсала",
+    "specialty": "Молекулярная аллергодиагностика (Phadia)",
+    "specialtyUz": "Molekulyar allergodiagnostika (Phadia)",
+    "descriptionUz": "Thermo Fisher Scientific tarkibidagi Phadia molekulyar allergodiagnostikasi, allergologiyada oltin standart sifatida tan olingan."
   },
   {
     "id": "keyu",
     "name": "KEYU",
     "logo": "/images/brands/keyu.png",
-    "description": "AI-анализаторы кала с распознаванием формённых элементов и гельминтов."
+    "url": "https://www.keyubio.com/",
+    "description": "Автоматические анализаторы кала с распознаванием форменных элементов и яиц гельминтов на основе искусственного интеллекта.",
+    "founded": "2008",
+    "country": "Китай",
+    "specialty": "AI-анализ кала",
+    "specialtyUz": "Najasning AI tahlili",
+    "descriptionUz": "Sunʼiy intellekt asosida shaklli elementlar va gelmint tuxumlarini aniqlaydigan avtomatik najas analizatorlari."
   }
 ]

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { clients } from "@/data/clients";
 
 /**
@@ -24,10 +25,15 @@ export function ClientsMarquee() {
       <div className="marquee">
         <div className="marquee-track-rev">
           {loop.map((c, i) => (
-            <div key={`${c.id}-${i}`} className="logo-chip">
+            <Link
+              key={`${c.id}-${i}`}
+              href="/partners"
+              aria-label={c.name}
+              className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={c.logo} alt={c.name} className="h-9 w-auto object-contain" />
-            </div>
+            </Link>
           ))}
         </div>
       </div>

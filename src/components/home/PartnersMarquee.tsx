@@ -1,22 +1,28 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { brands } from "@/lib/catalog";
 
 export function PartnersMarquee() {
+  const t = useTranslations("partners");
   const loop = [...brands, ...brands];
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x mb-12 text-center">
         <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
-          Наши зарубежные партнёры
+          {t("homeTitle")}
         </h2>
-        <p className="mt-3 text-text-secondary">
-          14 мировых лидеров In-Vitro диагностики в Узбекистане
-        </p>
+        <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
       </div>
       <div className="marquee">
         <div className="marquee-track">
           {loop.map((b, i) => (
-            <div key={`${b.id}-${i}`} className="logo-chip">
+            <Link
+              key={`${b.id}-${i}`}
+              href={`/partners#partner-${b.id}`}
+              aria-label={b.name}
+              className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
+            >
               <Image
                 src={b.logo}
                 alt={b.name}
@@ -24,7 +30,7 @@ export function PartnersMarquee() {
                 height={36}
                 className="h-9 w-auto object-contain"
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
