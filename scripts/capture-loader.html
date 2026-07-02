@@ -1,0 +1,96 @@
+<!doctype html>
+<!--
+  DEV-ONLY capture tool for the loader visual (Task 5).
+
+  Why this exists: the loader in #alb-pre must play with ZERO JavaScript, so it
+  needs a baked asset (animated WebP or looping MP4). This page renders the REAL
+  Claude Design canvas DNA (the exact draw from src/components/home/Splash.tsx —
+  same constants/geometry, so the captured look matches the live splash) and
+  records one seamless loop via canvas.captureStream() + MediaRecorder.
+
+  HOW TO USE (in a normal desktop browser, Chrome recommended):
+    1. Open this file in the browser (double-click, or serve it).
+    2. Click "Record loop" — it records exactly one phase period (~3.70s) so the
+       WebM loops seamlessly, then downloads loader-dna.webm.
+    3. Convert + optimize to an animated WebP or a small muted MP4, e.g.:
+         ffmpeg -i loader-dna.webm -vcodec libwebp -lossless 0 -q:v 55 -loop 0 \
+                -preset default -an -vsync 0 loader-dna.webp
+       (or produce loader-dna.mp4 with -movflags +faststart -pix_fmt yuv420p)
+    4. Put the file in /public (e.g. /public/loader-dna.webp).
+    5. In src/components/home/InlineSplash.tsx replace the CSS .alb-dna markup
+       with, inside #alb-pre, keeping the static logo above:
+         <img src="/loader-dna.webp" alt="" class="alb-dna" />           (WebP/GIF)
+       or  <video src="/loader-dna.mp4" autoplay muted loop playsinline ...></video>
+       Both play with no JS. Keep the window-load removal as-is.
+
+  This file is a dev tool only; it is not shipped or imported by the app, and it
+  does NOT modify the canvas animation code.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Albatros loader capture</title>
+    <style>
+      body { margin: 0; background: #0b1220; color: #dfe7f5; font: 14px system-ui, sans-serif; }
+      .wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 28px; }
+      .stage { background: radial-gradient(120% 80% at 50% 40%, #ffffff, #eaf0f8); border-radius: 12px; }
+      button { padding: 10px 18px; border: 0; border-radius: 8px; background: #d0181f; color: #fff; font-weight: 600; cursor: pointer; }
+      code { color: #9fd0ff; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p>Records one seamless loop of the real splash DNA to <code>loader-dna.webm</code>.</p>
+      <canvas id="c" class="stage" width="760" height="210" style="width:760px;height:210px"></canvas>
+      <button id="rec">Record loop</button>
+      <p id="status"></p>
+    </div>
+    <script>
+      // ---- Exact draw from Splash.tsx (steady state, rev = 1) ----
+      const cv = document.getElementById("c");
+      const ctx = cv.getContext("2d");
+      const W = 760, H = 210;
+      const RED = [208, 24, 31], REDL = [237, 28, 36], BLUE = [29, 58, 130], BLUEL = [46, 84, 156], TEAL = [46, 138, 160];
+      const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
+      const mix = (a, b, m) => [a[0] + (b[0] - a[0]) * m, a[1] + (b[1] - a[1]) * m, a[2] + (b[2] - a[2]) * m];
+      function draw(t) {
+        const w = W, h = H, cy = h / 2, amp = h * 0.34, N = 52, periods = 2.6, phase = t * 1.7;
+        ctx.clearRect(0, 0, w, h);
+        const nodes = [];
+        for (let i = 0; i < N; i++) {
+          const fx = i / (N - 1), x = 8 + fx * (w - 16), th = fx * periods * Math.PI * 2 + phase;
+          nodes.push({ x, yA: cy + amp * Math.sin(th), yB: cy - amp * Math.sin(th), z: Math.cos(th) });
+        }
+        ctx.setLineDash([2, 4]); ctx.lineWidth = 1.4;
+        for (const n of nodes) { const d = Math.abs(n.z); ctx.strokeStyle = rgba(TEAL, 0.18 + 0.4 * (1 - d)); ctx.beginPath(); ctx.moveTo(n.x, n.yA); ctx.lineTo(n.x, n.yB); ctx.stroke(); }
+        ctx.setLineDash([]);
+        const beads = [];
+        for (const n of nodes) { beads.push({ x: n.x, y: n.yA, z: n.z, s: "A" }); beads.push({ x: n.x, y: n.yB, z: -n.z, s: "B" }); }
+        beads.sort((a, b) => a.z - b.z);
+        for (const b of beads) { const dn = (b.z + 1) / 2, r = 2.6 + 4.4 * dn, a = 0.4 + 0.6 * dn, col = b.s === "A" ? mix(BLUE, BLUEL, dn) : mix(RED, REDL, dn); ctx.beginPath(); ctx.fillStyle = rgba(col, a); ctx.arc(b.x, b.y, r, 0, Math.PI * 2); ctx.fill(); }
+      }
+      const PERIOD = (2 * Math.PI) / 1.7; // one full phase loop (~3.696s) -> seamless
+      let raf, t0;
+      const loop = (now) => { if (t0 == null) t0 = now; draw((now - t0) / 1000); raf = requestAnimationFrame(loop); };
+      raf = requestAnimationFrame(loop);
+
+      document.getElementById("rec").onclick = () => {
+        const status = document.getElementById("status");
+        const stream = cv.captureStream(30);
+        const mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9") ? "video/webm;codecs=vp9" : "video/webm";
+        const rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 4_000_000 });
+        const chunks = [];
+        rec.ondataavailable = (e) => e.data.size && chunks.push(e.data);
+        rec.onstop = () => {
+          const blob = new Blob(chunks, { type: "video/webm" });
+          const a = document.createElement("a");
+          a.href = URL.createObjectURL(blob); a.download = "loader-dna.webm"; a.click();
+          status.textContent = "Downloaded loader-dna.webm — now convert to WebP/MP4 (see file header).";
+        };
+        status.textContent = "Recording one loop...";
+        rec.start();
+        setTimeout(() => rec.stop(), Math.round(PERIOD * 1000) + 60);
+      };
+    </script>
+  </body>
+</html>
