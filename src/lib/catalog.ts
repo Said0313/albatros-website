@@ -21,11 +21,44 @@ export const categories: Category[] = [
   { name: "Генетика", icon: "Dna" },
   { name: "Функциональная диагностика", icon: "Stethoscope" },
   { name: "Биодеконтаминация", icon: "ShieldCheck" },
-  { name: "Контроль качества", icon: "BadgeCheck" },
+  { name: "Программы контроля качества", icon: "BadgeCheck" },
   { name: "Автоматизированная лаборатория", icon: "Workflow" },
   { name: "Иммуногематология", icon: "HeartPulse" },
   { name: "Токсикология", icon: "AlertTriangle" },
   { name: "Клиническая диагностика", icon: "FlaskConical" },
+];
+
+/**
+ * Diagnostic directions for the photo-card grid (ported from Claude Design).
+ * `img` = each category's FLAGSHIP PRODUCT photo from /public/images/products
+ * (already normalized to a uniform 1000×1000 white canvas, so every card shows
+ * the device at a consistent scale and depicts the right equipment — the raw
+ * assets/dir/* images were inconsistently framed and a few were mismatched).
+ * `brand` = correct flagship brand. Counts are computed live via categoryCount().
+ */
+export interface Direction {
+  name: string;
+  img: string;
+  brand: string;
+}
+
+export const directions: Direction[] = [
+  { name: "ИХЛА", brand: "SNIBE · Maglumi", img: "/images/products/maglumi-x8.png" },
+  { name: "Биохимия", brand: "SNIBE · Biossays", img: "/images/products/biossays-c10.png" },
+  { name: "Гемостаз", brand: "Werfen · ACL TOP", img: "/images/products/acl-top-350-cts.png" },
+  { name: "Гематология", brand: "Dymind · DH", img: "/images/products/dh-800.png" },
+  { name: "Микробиология", brand: "BD · BACTEC", img: "/images/products/bd-phoenix-m50.png" },
+  { name: "ПЦР", brand: "SNIBE · Molecision", img: "/images/products/molecision-r8.png" },
+  { name: "Аллергология", brand: "Thermo Fisher · Phadia", img: "/images/products/phadia-200.png" },
+  { name: "КЩС", brand: "Werfen · GEM", img: "/images/products/gem-premier-5000.png" },
+  { name: "ВЭЖХ", brand: "Lifotronic · H", img: "/images/products/h100-plus.png" },
+  { name: "Клинический анализ", brand: "URIT · US", img: "/images/products/urit-us-1000.png" },
+  { name: "Генетика", brand: "Illumina · MiSeq", img: "/images/products/miseq-i100.png" },
+  { name: "Функциональная диагностика", brand: "Clarius", img: "/images/products/clarius-c3-hd3.png" },
+  { name: "Программы контроля качества", brand: "Randox", img: "/images/products/acusera.png" },
+  { name: "Автоматизированная лаборатория", brand: "SNIBE · SATLARS", img: "/images/products/satlars-t8.png" },
+  { name: "Иммуногематология", brand: "BLOZER", img: "/images/products/blozer-200.png" },
+  { name: "Токсикология", brand: "Randox · Evidence", img: "/images/products/evidence-multistat.png" },
 ];
 
 export function getProduct(slug: string): Product | undefined {
@@ -52,4 +85,28 @@ export function categoryCount(name: string): number {
 
 export function brandCount(name: string): number {
   return products.filter((p) => p.brand === name).length;
+}
+
+// ── General directions (top level of the two-level taxonomy) ──
+export type GeneralDirectionKey = "equipment" | "reagents" | "consumables" | "controls";
+
+export interface GeneralDirection {
+  key: GeneralDirectionKey;
+  name: string; // RU (localised via categoryLabel/CATEGORY_UZ)
+}
+
+export const generalDirections: GeneralDirection[] = [
+  { key: "equipment", name: "Медицинское оборудование" },
+  { key: "reagents", name: "Реагенты" },
+  { key: "consumables", name: "Расходные материалы" },
+  { key: "controls", name: "Контроль качества" },
+];
+
+/** A product with no explicit generalDirection belongs to the equipment catalog. */
+export function productDirection(p: Product): GeneralDirectionKey {
+  return p.generalDirection ?? "equipment";
+}
+
+export function directionCount(key: GeneralDirectionKey): number {
+  return products.filter((p) => productDirection(p) === key).length;
 }

@@ -1,52 +1,148 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import {
-  FlaskConical, Beaker, Droplets, Microscope, Bug, Dna, Wind, Activity,
-  BarChart3, TestTube2, Stethoscope, ShieldCheck, BadgeCheck, Workflow,
-  HeartPulse, AlertTriangle, type LucideIcon,
-} from "lucide-react";
-import { categories } from "@/lib/catalog";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { directions, categoryCount, generalDirections, directionCount } from "@/lib/catalog";
+import { categoryLabel } from "@/data/i18n";
 
-const icons: Record<string, LucideIcon> = {
-  FlaskConical, Beaker, Droplets, Microscope, Bug, Dna, Wind, Activity,
-  BarChart3, TestTube2, Stethoscope, ShieldCheck, BadgeCheck, Workflow,
-  HeartPulse, AlertTriangle,
-};
-
+/**
+ * "Направления диагностики" — photo-card grid ported pixel-for-pixel from the
+ * Claude Design "Albatros Directions" prototype. Only directions that have at
+ * least one catalog product are shown; counts are computed live from the catalog.
+ */
 export function CategoriesGrid() {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const locale = useLocale();
+  const t = useTranslations("directions");
+  const tc = useTranslations("common");
+  const items = directions
+    .map((d) => ({ ...d, count: categoryCount(d.name) }))
+    .filter((d) => d.count > 0);
 
   return (
-    <section className="section-pad">
-      <div className="container-x">
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">Направления диагностики</h2>
-          <p className="mt-3 text-text-secondary">18 специализаций лабораторной диагностики</p>
+    <section style={{ background: "#FBFCFE", fontFamily: "var(--font-inter), sans-serif", padding: "80px 24px 96px" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "flex-end",
+            justifyContent: "space-between",
+            gap: 32,
+            flexWrap: "wrap",
+            marginBottom: 48,
+          }}
+        >
+          <div style={{ flex: "1 1 520px" }}>
+            <div
+              style={{
+                fontFamily: "var(--font-mono), var(--font-inter), monospace",
+                fontSize: 13,
+                letterSpacing: ".18em",
+                color: "#2E8AA0",
+                marginBottom: 18,
+              }}
+            >
+              {t("eyebrow", { count: items.length })}
+            </div>
+            <h2
+              style={{
+                fontFamily: "var(--font-inter), sans-serif",
+                fontWeight: 800,
+                fontSize: "clamp(30px,7vw,46px)",
+                lineHeight: 1.05,
+                color: "#0C1B3A",
+                margin: 0,
+              }}
+            >
+              {t("title")}
+            </h2>
+          </div>
+          <p style={{ flex: "1 1 320px", color: "#5E6E8F", fontSize: 16, lineHeight: 1.6, maxWidth: 420, margin: 0 }}>
+            {t("intro")}
+          </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {categories.map((c, i) => {
-            const Icon = icons[c.icon] ?? FlaskConical;
-            return (
-              <motion.div
-                key={c.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.04, duration: 0.5 }}
+        {/* General directions (top level of the taxonomy) — click to open the catalog filtered */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 14, marginBottom: 34 }}>
+          {generalDirections.map((g) => (
+            <Link
+              key={g.key}
+              href={`/catalog?direction=${g.key}`}
+              className="alb-card"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 6,
+                textDecoration: "none",
+                background: "#FFFFFF",
+                border: "1px solid #E5EAF3",
+                borderRadius: 14,
+                padding: "18px 20px",
+              }}
+            >
+              <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 700, fontSize: 17, color: "#0C1B3A" }}>
+                {categoryLabel(g.name, locale)}
+              </span>
+              {directionCount(g.key) > 0 && (
+                <span style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 12, color: "#5E6E8F" }}>
+                  {directionCount(g.key)} {tc("positions")}
+                </span>
+              )}
+            </Link>
+          ))}
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(244px,1fr))", gap: 18 }}>
+          {items.map((item) => (
+            <Link
+              key={item.name}
+              href={`/catalog?category=${encodeURIComponent(item.name)}`}
+              className="alb-card"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                textDecoration: "none",
+                background: "#FFFFFF",
+                border: "1px solid #E5EAF3",
+                borderRadius: 14,
+                overflow: "hidden",
+              }}
+            >
+              <div
+                className="alb-photo"
+                style={{
+                  position: "relative",
+                  height: 158,
+                  background: "radial-gradient(120% 120% at 50% 38%,#ffffff 0%,#eef1f7 70%,#e4e9f3 100%)",
+                  overflow: "hidden",
+                }}
               >
-                <Link
-                  href={`/catalog?category=${encodeURIComponent(c.name)}`}
-                  className="flex h-full flex-col rounded-xl border border-bg-border bg-[linear-gradient(145deg,#0C1628,#111E38)] p-5 transition-all duration-300 hover:scale-[1.03] hover:border-brand-red hover:shadow-[0_0_20px_rgba(208,24,31,0.12)]"
-                >
-                  <Icon className="h-6 w-6 text-brand-red" />
-                  <span className="mt-2 text-[13px] text-text-primary">{c.name}</span>
-                </Link>
-              </motion.div>
-            );
-          })}
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  fill
+                  sizes="244px"
+                  style={{ objectFit: "contain", padding: 18 }}
+                />
+              </div>
+              <div style={{ padding: "18px 18px 16px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
+                <div style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 11, letterSpacing: ".08em", color: "#2E8AA0" }}>
+                  {item.brand}
+                </div>
+                <div style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 700, fontSize: 18, lineHeight: 1.2, color: "#0C1B3A" }}>
+                  {categoryLabel(item.name, locale)}
+                </div>
+                <div style={{ marginTop: "auto", display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 10 }}>
+                  <span style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 12, color: "#5E6E8F" }}>
+                    {item.count} {tc("positions")}
+                  </span>
+                  <span className="alb-go" style={{ fontSize: 13, fontWeight: 600, color: "#2E549C" }}>
+                    {tc("view")} →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
