@@ -109,7 +109,7 @@ function buildHelix() {
 const HELIX = buildHelix();
 
 const STYLE = `
-#alb-pre{position:fixed;inset:0;z-index:9990;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(120% 80% at 50% 40%,#FFFFFF,#EAF0F8);}
+#alb-pre{position:fixed;inset:0;z-index:10001;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(120% 80% at 50% 40%,#FFFFFF,#EAF0F8);}
 #alb-pre img{height:56px;width:auto;animation:alb-pre-pulse 1.6s ease-in-out infinite !important;}
 #alb-pre .alb-helix{width:min(760px,86vw);height:auto;display:block;}
 #alb-pre .alb-bead{animation:alb-bead 2.4s ease-in-out infinite !important;animation-duration:2.4s !important;animation-iteration-count:infinite !important;transition:none !important;}
