@@ -18,7 +18,7 @@ export function ClientsMarquee() {
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x mb-12 text-center">
-        <Link href="/clients" className="inline-block transition-colors hover:text-brand-blue-deep">
+        <Link href="/about#clients" className="inline-block transition-colors hover:text-brand-blue-deep">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
             {t("homeTitle")}
           </h2>
@@ -30,7 +30,7 @@ export function ClientsMarquee() {
           {loop.map((c, i) => (
             <Link
               key={`${c.id}-${i}`}
-              href="/clients"
+              href="/about#clients"
               aria-label={c.name}
               className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
             >

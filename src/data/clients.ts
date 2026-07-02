@@ -54,19 +54,31 @@ export const clients: Client[] = [
       "Многопрофильная клиника в Ташкенте, работает с 2015 года. Поликлиника, стационар и лечебно-диагностическое отделение, собственная лаборатория на системах Roche, МРТ 1.5Т, цифровой рентген Siemens, УЗИ Philips, центр физиотерапии и реабилитации, детское отделение Hayat Kids.",
     descriptionUz:
       "Toshkentdagi koʻp tarmoqli klinika, 2015 yildan beri faoliyat yuritadi. Poliklinika, statsionar va davolash-diagnostika boʻlimi, Roche tizimlaridagi oʻz laboratoriyasi, 1.5T MRT, Siemens raqamli rentgeni, Philips UZI, fizioterapiya va reabilitatsiya markazi, Hayat Kids bolalar boʻlimi." },
-  { id: "sinomed-md", name: "Sinomed MD", logo: "/images/clients/sinomed-md.svg" },
+  { id: "sinomed-md", name: "Sinomed MD", logo: "/images/clients/sinomed-md.svg",
+    description:
+      "Sinomed MD, современный частный многопрофильный госпиталь международного уровня в Ташкенте, открыт в 2025 году. Более 100 палат, 13 операционных и три реанимационных блока, а также первый в Узбекистане частный роддом в составе многопрофильного центра. Амбулаторный прием, диагностика, хирургия и круглосуточный стационар по международным стандартам. Клиника названа в честь Абу Али ибн Сины (Авиценны).",
+    descriptionUz:
+      "Sinomed MD, Toshkentdagi zamonaviy xususiy koʻp tarmoqli xalqaro darajadagi shifoxona, 2025 yilda ochilgan. 100 dan ortiq palata, 13 operatsiya xonasi va uchta reanimatsiya bloki, shuningdek Oʻzbekistonda koʻp tarmoqli markaz tarkibidagi birinchi xususiy tugʻruqxona. Ambulator qabul, diagnostika, jarrohlik va xalqaro standartlardagi sutkalik statsionar. Klinika Abu Ali ibn Sino (Avitsenna) sharafiga nomlangan." },
   { id: "samarqand-tibbiy-diagnostika", name: "Samarqand tibbiy diagnostika", logo: "/images/clients/samarqand-tibbiy-diagnostika.webp",
     description:
       "Частный диагностический центр и лаборатория в Самарканде с несколькими филиалами. Объединяет современное диагностическое оборудование и квалифицированных специалистов, известен точной лабораторной диагностикой по доступным ценам.",
     descriptionUz:
       "Samarqanddagi bir nechta filialga ega xususiy diagnostika markazi va laboratoriyasi. Zamonaviy diagnostika uskunalari va malakali mutaxassislarni birlashtiradi, arzon narxlarda aniq laboratoriya diagnostikasi bilan tanilgan." },
-  { id: "arzon-lab", name: "Arzon Lab", logo: "/images/clients/arzon-lab.webp" },
+  { id: "arzon-lab", name: "Arzon Lab", logo: "/images/clients/arzon-lab.webp",
+    description:
+      "Клинико-диагностическая лаборатория в Ташкенте, предлагает широкий спектр лабораторных анализов с акцентом на доступные цены.",
+    descriptionUz:
+      "Toshkentdagi klinik-diagnostik laboratoriya, arzon narxlarga urgʻu bergan holda keng koʻlamli laboratoriya tahlillarini taklif etadi." },
   { id: "openlab", name: "OpenLab", logo: "/images/clients/openlab.jpg",
     description:
       "Независимая клинико-диагностическая лаборатория в Ташкенте, работающая в формате открытой лаборатории (open-space), где пациент может наблюдать за ходом исследований. Основные анализы выполняются в экспресс-режиме (от 30 минут), прием семь дней в неделю.",
     descriptionUz:
       "Toshkentdagi mustaqil klinik-diagnostik laboratoriya, ochiq laboratoriya (open-space) formatida ishlaydi, bunda bemor tekshiruv jarayonini kuzatishi mumkin. Asosiy tahlillar ekspress rejimda (30 daqiqadan) bajariladi, qabul haftaning yetti kuni." },
-  { id: "shifonur", name: "Shifonur", logo: "/images/clients/shifonur.webp" },
+  { id: "shifonur", name: "Shifonur", logo: "/images/clients/shifonur.webp",
+    description:
+      "Многопрофильный медицинский центр в Ташкенте, работает с 2001 года. Первопроходец в Узбекистане по лазерной хирургии катаракты и эксимер-лазерной коррекции зрения. Сегодня оказывает помощь по офтальмологии, ЛОР, хирургии, гинекологии, эндокринологии и кардиологии, имеет собственную лабораторию и диагностику, а также филиалы в Самарканде, Бухаре, Карши и Хорезме.",
+    descriptionUz:
+      "Toshkentdagi koʻp tarmoqli tibbiyot markazi, 2001 yildan beri faoliyat yuritadi. Oʻzbekistonda kataraktani lazer bilan jarrohlik qilish va koʻrishni eksimer-lazer bilan tuzatishda kashshof. Bugungi kunda oftalmologiya, LOR, jarrohlik, ginekologiya, endokrinologiya va kardiologiya boʻyicha yordam koʻrsatadi, oʻz laboratoriyasi va diagnostikasiga, shuningdek Samarqand, Buxoro, Qarshi va Xorazmda filiallariga ega." },
   { id: "swiss-lab", name: "Swiss Lab", logo: "/images/clients/swiss-lab.svg",
     description:
       "Первая в Узбекистане сеть клинико-диагностических лабораторий, узбекско-швейцарское совместное предприятие (2019). Около двадцати лабораторий в Ташкенте, Ангрене и Самарканде, более 2000 видов исследований, международные сертификаты качества (BioSystems PREVECAL, ФСВОК). Работает в формате открытой, прозрачной лаборатории.",
@@ -77,7 +89,11 @@ export const clients: Client[] = [
       "Многопрофильная клиника и лаборатория в Ташкенте. Амбулаторный прием, диагностика (УЗИ, ЭКГ, эндоскопия, ПЦР), детское отделение и программы чек-апов, сеть филиалов с центром в Юнусабадском районе.",
     descriptionUz:
       "Toshkentdagi koʻp tarmoqli klinika va laboratoriya. Ambulator qabul, diagnostika (UZI, EKG, endoskopiya, PSR), bolalar boʻlimi va chek-ap dasturlari, markazi Yunusobod tumanida joylashgan filiallar tarmogʻi." },
-  { id: "alfa-med-service", name: "Alfa Med Service", logo: "/images/clients/alfa-med-service.webp" },
+  { id: "alfa-med-service", name: "Alfa Med Service", logo: "/images/clients/alfa-med-service.webp",
+    description:
+      "Многопрофильный лечебно-диагностический центр. В команде свыше 30 специалистов высшей категории, докторов и кандидатов медицинских наук. Профилактика, диагностика и лечение по широкому спектру направлений с вниманием к качеству обслуживания.",
+    descriptionUz:
+      "Koʻp tarmoqli davolash-diagnostika markazi. Jamoada oliy toifali 30 dan ortiq mutaxassis, fan doktorlari va nomzodlari faoliyat yuritadi. Keng yoʻnalishlar boʻyicha profilaktika, diagnostika va davolash, xizmat sifatiga eʼtibor bilan." },
   { id: "shox-international-hospital", name: "Shox International Hospital", logo: "/images/clients/shox-international-hospital.jpg",
     description:
       "Одна из первых частных клиник Узбекистана, сеть многопрофильных медицинских центров с более чем 15-летней историей. Специализируется на кардиологической диагностике и хирургии, применяет малоинвазивные и роботизированные методы, располагает собственной лабораторией и стационаром.",
