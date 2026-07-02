@@ -29,10 +29,10 @@ export function ClientsMarquee() {
               key={`${c.id}-${i}`}
               href="/partners"
               aria-label={c.name}
-              className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
+              className="logo-chip logo-chip--client transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={c.logo} alt={c.name} className="h-9 w-auto object-contain" />
+              <img src={c.logo} alt={c.name} />
             </Link>
           ))}
         </div>

@@ -164,6 +164,19 @@ body {
   width: auto;
   object-fit: contain;
 }
+/* Client chips: logos were trimmed of dead margin, so render them larger and at a
+   uniform height (width varies with aspect). Scoped to clients; partner chips keep
+   their 36px sizing above. */
+.logo-chip--client {
+  height: 84px;
+  padding: 14px 26px;
+}
+.logo-chip--client img {
+  height: 48px;
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
 
 /* ── Partner cards: deep-link target (from marquee logos on the homepage) ── */
 .partner-card {
