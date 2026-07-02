@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { clients } from "@/data/clients";
+import { certificates } from "@/data/certificates";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { ContactCTA } from "@/components/home/ContactCTA";
@@ -81,6 +82,27 @@ export default function AboutPage() {
               );
             })}
           </div>
+        </section>
+
+        <section id="certificates" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
+          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
+          {certificates.length > 0 ? (
+            <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+              {certificates.map((c) => (
+                <div
+                  key={c.id}
+                  className="flex items-center justify-center rounded-2xl border border-bg-border bg-bg-card p-4 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={c.image} alt={c.title ?? ""} className="h-auto w-full object-contain" />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-8 flex items-center justify-center rounded-2xl border border-dashed border-bg-border bg-bg-elevated py-16 text-sm text-text-muted">
+              {t("certificatesEmpty")}
+            </div>
+          )}
         </section>
       </div>
       <ContactCTA />

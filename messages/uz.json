@@ -112,7 +112,9 @@
     "v3t": "Xalqaro standartlar",
     "v3x": "Faqat ISO, FDA va Yevropa farmakopeyasi standartlariga mos jahon IVD yetakchilari bilan ishlaymiz.",
     "v4t": "Taʼlim",
-    "v4x": "ToshVMOʻI bilan birgalikda uslubiy qoʻllanmalar ishlab chiqamiz va xalqaro ishtirokli konferensiyalar oʻtkazamiz."
+    "v4x": "ToshVMOʻI bilan birgalikda uslubiy qoʻllanmalar ishlab chiqamiz va xalqaro ishtirokli konferensiyalar oʻtkazamiz.",
+    "certificatesTitle": "Sertifikatlar",
+    "certificatesEmpty": "Boʻlim toʻldirilmoqda"
   },
   "events": {
     "title": "Tadbirlar",
