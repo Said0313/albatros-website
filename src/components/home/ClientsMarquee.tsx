@@ -23,6 +23,7 @@ export function ClientsMarquee() {
             {t("homeTitle")}
           </h2>
         </Link>
+        <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
       </div>
       <div className="marquee">
         <div className="marquee-track-rev">
