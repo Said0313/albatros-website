@@ -3,6 +3,7 @@ import { clients } from "@/data/clients";
 import { certificates } from "@/data/certificates";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+import { ServicesSection } from "@/components/home/ServicesSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
 const stats = [
@@ -15,8 +16,6 @@ const stats = [
   { end: 4500, suffix: "+", key: "doctors" },
   { end: 2000, suffix: "+", key: "clients" },
 ];
-
-const valueKeys = ["v1", "v2", "v3", "v4"] as const;
 
 export default function AboutPage() {
   const t = useTranslations("aboutPage");
@@ -46,18 +45,13 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
-          {valueKeys.map((v, i) => (
-            <ScrollReveal key={v} delay={i * 0.08}>
-              <div className="h-full rounded-2xl border border-bg-border bg-bg-card p-7 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
-                <h3 className="font-display text-xl font-bold text-text-primary">{t(`${v}t`)}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-text-secondary">{t(`${v}x`)}</p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+      <div className="mt-16">
+        <ServicesSection />
+      </div>
 
+      <div className="container-x">
         <section id="clients" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tcl("pageTitle")}</h2>
           <p className="mt-4 font-display text-xl font-bold text-brand-blue-deep md:text-2xl">{tcl("scaleStat")}</p>
