@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { clients } from "@/data/clients";
 import { certificates } from "@/data/certificates";
+import { totalPositions } from "@/lib/catalog";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { ServicesSection } from "@/components/home/ServicesSection";
@@ -8,13 +9,13 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 
 const stats = [
   { end: 44, suffix: "+", key: "models" },
-  { end: 18, key: "directions" },
-  { end: 14, key: "leaders" },
+  { end: 16, key: "directions" },
+  { end: 12, key: "leaders" },
   { end: 85, key: "conferences" },
   { end: 24, key: "congresses" },
-  { end: 6, key: "manuals" },
+  { end: totalPositions(), suffix: "+", key: "assortment" },
   { end: 4500, suffix: "+", key: "doctors" },
-  { end: 2000, suffix: "+", key: "clients" },
+  { end: 900, suffix: "+", key: "clients" },
 ];
 
 export default function AboutPage() {

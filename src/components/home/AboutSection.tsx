@@ -1,73 +1,125 @@
-import Image from "next/image";
-import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { Button } from "@/components/ui/Button";
-import { slideFromLeft, slideFromRight } from "@/lib/animations";
+"use client";
 
-const highlights = [
-  "Поставка под ключ с методической поддержкой",
-  "Специалисты с профильным образованием",
-  "Международные конференции и семинары",
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
+import { AlbatrosWordmark } from "@/components/ui/AlbatrosWordmark";
+
+/**
+ * "О компании" stats panel — ported from the Claude Design "Albatros About"
+ * prototype, converted to the light theme. Two-column identity + count-up stats.
+ * The wordmark is set in the site font (Inter) via <AlbatrosWordmark> to avoid
+ * the raster logo's font clash. Numbers count up on scroll; static under reduced-motion.
+ */
+
+interface Stat {
+  num: number;
+  suffix: string;
+  key: string;
+  year?: boolean;
+}
+
+const STATS: Stat[] = [
+  { num: 44, suffix: "+", key: "models" },
+  { num: 12, suffix: "", key: "brands" },
+  { num: 900, suffix: "+", key: "clients" },
+  { num: 24, suffix: "/7", key: "support" },
+  { num: 2017, suffix: "", key: "founded", year: true },
+  { num: 4500, suffix: "+", key: "trained" },
 ];
 
-const orbitBrands = ["SNIBE", "BD", "Randox", "Werfen", "Dymind", "Illumina"];
+const fmt = (n: number) => n.toLocaleString("en-US").replace(/,/g, " ");
+
+const ACCENT = "#ED1C24";
+
+function useCountUp(target: number, run: boolean, duration = 1600) {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!run) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setValue(target);
+      return;
+    }
+    let raf = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setValue(Math.round(target * eased));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, run, duration]);
+  return value;
+}
+
+function StatItem({ stat, run }: { stat: Stat; run: boolean }) {
+  const value = useCountUp(stat.num, run);
+  const t = useTranslations("about.stats");
+  return (
+    <div style={{ padding: "30px 0", borderTop: "1px solid #E5EAF3" }}>
+      <div style={{ display: "flex", alignItems: "baseline", lineHeight: 1 }}>
+        <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(36px,11vw,58px)", color: "#0C1B3A", letterSpacing: "-.01em" }}>
+          {stat.year ? value : fmt(value)}
+        </span>
+        {stat.suffix && (
+          <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(20px,6vw,32px)", marginLeft: 2, color: ACCENT }}>
+            {stat.suffix}
+          </span>
+        )}
+      </div>
+      <div style={{ color: "#5E6E8F", fontSize: 15, marginTop: 14 }}>{t(stat.key)}</div>
+    </div>
+  );
+}
 
 export function AboutSection() {
-  return (
-    <section className="section-pad border-t border-bg-border">
-      <div className="container-x grid grid-cols-1 items-center gap-14 lg:grid-cols-[3fr_2fr]">
-        <ScrollReveal variant={slideFromLeft}>
-          <span className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-red">О компании</span>
-          <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-text-primary md:text-[38px]">
-            Ваш надёжный партнёр в оснащении лаборатории
-          </h2>
-          <p className="mt-5 text-base leading-[1.8] text-text-secondary">
-            Albatros Health Care с 2017 года поставляет современное лабораторное оборудование и
-            IVD-решения по всему Узбекистану. Мы представляем 14 мировых лидеров отрасли и обслуживаем
-            более 2000 клиентов — от районных лабораторий до крупнейших клинических центров.
-            Поставка под ключ, методическая поддержка и круглосуточный технический сервис — наш стандарт работы.
-          </p>
-          <ul className="mt-6 space-y-3">
-            {highlights.map((h) => (
-              <li key={h} className="flex items-center gap-3 text-text-primary">
-                <span className="h-2 w-2 shrink-0 rounded-full bg-brand-red" />
-                {h}
-              </li>
-            ))}
-          </ul>
-          <div className="mt-8">
-            <Button href="/about" variant="outline">Подробнее о компании</Button>
-          </div>
-        </ScrollReveal>
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const runRef = useRef(false);
+  const t = useTranslations("about");
+  if (inView) runRef.current = true;
 
-        <ScrollReveal variant={slideFromRight}>
-          <div className="relative mx-auto flex aspect-square w-full max-w-[380px] items-center justify-center">
-            <svg className="absolute inset-0 h-full w-full" viewBox="0 0 380 380">
-              <circle cx="190" cy="190" r="90" fill="none" stroke="rgba(46,84,156,0.35)" strokeWidth="1" className="origin-center animate-spin-slow" style={{ transformBox: "fill-box" }} />
-              <circle cx="190" cy="190" r="130" fill="none" stroke="rgba(93,127,180,0.25)" strokeWidth="1" strokeDasharray="4 6" />
-              <circle cx="190" cy="190" r="170" fill="none" stroke="rgba(208,24,31,0.2)" strokeWidth="1" />
-            </svg>
-            <div className="absolute inset-0 animate-spin-slow">
-              {orbitBrands.map((b, i) => {
-                const angle = (i / orbitBrands.length) * 2 * Math.PI;
-                const r = 130;
-                const x = 190 + r * Math.cos(angle);
-                const y = 190 + r * Math.sin(angle);
-                return (
-                  <div
-                    key={b}
-                    className="absolute flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-bg-border bg-bg-card text-[9px] font-bold text-text-secondary"
-                    style={{ left: `${(x / 380) * 100}%`, top: `${(y / 380) * 100}%` }}
-                  >
-                    {b}
-                  </div>
-                );
-              })}
-            </div>
-            <div className="relative z-10 flex h-28 w-28 animate-float items-center justify-center rounded-full border border-bg-border bg-bg-card p-4">
-              <Image src="/logo.png" alt="Albatros" width={90} height={90} className="h-auto w-full object-contain" />
-            </div>
+  return (
+    <section
+      style={{ position: "relative", background: "#EEF3FA", fontFamily: "var(--font-inter), sans-serif", overflow: "hidden" }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: "-10%",
+          left: "-6%",
+          width: 560,
+          height: 560,
+          borderRadius: "50%",
+          background: "radial-gradient(circle,rgba(46,84,156,.06),transparent 68%)",
+          filter: "blur(8px)",
+          pointerEvents: "none",
+        }}
+      />
+
+      <div
+        ref={ref}
+        className="container-x grid grid-cols-1 items-center gap-14 py-24 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20"
+        style={{ position: "relative" }}
+      >
+        {/* left: identity */}
+        <div>
+          <div style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 13, letterSpacing: ".18em", color: "#2E8AA0", marginBottom: 30 }}>
+            {t("eyebrow")}
           </div>
-        </ScrollReveal>
+          <div style={{ marginBottom: 34 }}>
+            <AlbatrosWordmark markSize={56} textSize={40} />
+          </div>
+          <p style={{ color: "#5E6E8F", fontSize: 18, lineHeight: 1.65, maxWidth: 440, margin: 0 }}>{t("panelText")}</p>
+        </div>
+
+        {/* right: stats */}
+        <div className="grid grid-cols-2 gap-x-6 sm:gap-x-12">
+          {STATS.map((s) => (
+            <StatItem key={s.key} stat={s} run={runRef.current} />
+          ))}
+        </div>
       </div>
     </section>
   );

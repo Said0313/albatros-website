@@ -81,7 +81,7 @@
     "eyebrow": "KOMPANIYA HAQIDA",
     "panelText": "Oʻzbekistonda laboratoriya diagnostikasi uchun premium uskunalarning rasmiy distribyutori. Yetkazib berish, ishga tushirish, oʻqitish va servis — asbobning butun hayot tsikli davomida.",
     "stats": {
-      "models": "uskuna modellari",
+      "models": "analizator modellari",
       "brands": "hamkor brendlar",
       "clients": "klinika va laboratoriya",
       "support": "servis qoʻllab-quvvatlash",
@@ -101,8 +101,8 @@
       "leaders": "jahon yetakchisi",
       "conferences": "tashkil etilgan konferensiya",
       "congresses": "kongresslarda ishtirok",
-      "manuals": "uslubiy qoʻllanma",
-      "doctors": "oʻqitilgan shifokor",
+      "assortment": "Assortiment",
+      "doctors": "oʻqitilgan mutaxassislar",
       "clients": "bazadagi mijoz"
     },
     "certificatesTitle": "Sertifikatlar",
