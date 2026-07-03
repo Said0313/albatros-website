@@ -1,48 +1,68 @@
 /**
  * First-paint splash loader. Rendered as the FIRST child of <body> in the initial
- * server HTML with fully self-contained inline critical CSS, so it paints from a
- * tiny payload before the JS bundle, with zero dependency on the app stylesheet or
- * any JS, and with NO external asset at all.
+ * server HTML with fully self-contained inline critical CSS (gradient + static logo)
+ * plus a small inline vanilla-JS script that runs the REAL Claude Design beaded
+ * double-helix canvas animation (the exact draw routine from Splash.tsx) right away,
+ * before the app bundle. This avoids every prior failure mode: no video (so no
+ * buffering, no poster stage, no software-decode stutter) and no CSS keyframe
+ * animation (so nothing the browser/OS can freeze, and it is a real rotating helix,
+ * not a sliding image). The logo is STATIC.
  *
- * The DNA is the real beaded double helix, animated the way the original albatros.uz
- * loader is: 40 fixed vertical columns (.el), each a teal dashed rung carrying a
- * blue bead on top and a red bead on the bottom, each rotating around the X axis
- * (rotateX 0 -> 360deg) under a shared perspective, with staggered negative
- * animation-delays so the columns form a travelling, rotating double helix. Because
- * the columns are FIXED and rotate in place (not a sliding image), the motion reads
- * as a real rotating helix, and perspective makes front beads larger for depth. It
- * is pure CSS: one single stage, smooth from the very first painted frame, no logo
- * gap, no poster, no video, no buffering. !important keeps it animating under the
- * global reduced-motion freeze. The logo is STATIC.
- *
- * Removal is event-based (window `load`), never a timer, and shows on every load.
- * Emitted via one dangerouslySetInnerHTML on a <div suppressHydrationWarning> so the
- * inline script can removeChild #alb-pre with no hydration mismatch.
+ * The canvas draws 52 nodes across the width as two strands (blue A, red B) with
+ * teal dashed rungs, depth-sorted, phase = t * 1.7. It runs on requestAnimationFrame
+ * from the moment the inline script parses. Removal is event-based (window `load`),
+ * never a timer, and shows on every load: the loader fades out and cancels the rAF
+ * when the page has loaded. Emitted via one dangerouslySetInnerHTML on a
+ * <div suppressHydrationWarning> so the inline script can removeChild #alb-pre with
+ * no hydration mismatch.
  */
-
-const ELS = `<span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span><span class="el"></span>`;
 
 const STYLE = `
 #alb-pre{position:fixed;inset:0;z-index:10001;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(120% 80% at 50% 40%,#FFFFFF,#EAF0F8);}
 #alb-pre img.alb-logo{height:56px;width:auto;display:block;}
-#alb-pre .alb-dna{width:min(760px,86vw);height:210px;display:flex;align-items:center;justify-content:center;overflow:hidden;perspective:600px;-webkit-perspective:600px;}
-#alb-pre .alb-dna .el{position:relative;width:1px;height:140px;margin:0 9px;border-left:1px dashed #3E8FA6;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;transform:rotateX(0deg);animation:alb-run 3.696s linear infinite !important;-webkit-animation:alb-run 3.696s linear infinite !important;}
-#alb-pre .alb-dna .el:before,#alb-pre .alb-dna .el:after{content:"";position:absolute;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;}
-#alb-pre .alb-dna .el:before{top:-6px;background:#2E549C;}
-#alb-pre .alb-dna .el:after{bottom:-6px;background:#D0181F;}
-#alb-pre .alb-dna .el:nth-of-type(1){animation-delay:-0.000s;-webkit-animation-delay:-0.000s;}#alb-pre .alb-dna .el:nth-of-type(2){animation-delay:-0.240s;-webkit-animation-delay:-0.240s;}#alb-pre .alb-dna .el:nth-of-type(3){animation-delay:-0.480s;-webkit-animation-delay:-0.480s;}#alb-pre .alb-dna .el:nth-of-type(4){animation-delay:-0.721s;-webkit-animation-delay:-0.721s;}#alb-pre .alb-dna .el:nth-of-type(5){animation-delay:-0.961s;-webkit-animation-delay:-0.961s;}#alb-pre .alb-dna .el:nth-of-type(6){animation-delay:-1.201s;-webkit-animation-delay:-1.201s;}#alb-pre .alb-dna .el:nth-of-type(7){animation-delay:-1.441s;-webkit-animation-delay:-1.441s;}#alb-pre .alb-dna .el:nth-of-type(8){animation-delay:-1.682s;-webkit-animation-delay:-1.682s;}#alb-pre .alb-dna .el:nth-of-type(9){animation-delay:-1.922s;-webkit-animation-delay:-1.922s;}#alb-pre .alb-dna .el:nth-of-type(10){animation-delay:-2.162s;-webkit-animation-delay:-2.162s;}#alb-pre .alb-dna .el:nth-of-type(11){animation-delay:-2.402s;-webkit-animation-delay:-2.402s;}#alb-pre .alb-dna .el:nth-of-type(12){animation-delay:-2.643s;-webkit-animation-delay:-2.643s;}#alb-pre .alb-dna .el:nth-of-type(13){animation-delay:-2.883s;-webkit-animation-delay:-2.883s;}#alb-pre .alb-dna .el:nth-of-type(14){animation-delay:-3.123s;-webkit-animation-delay:-3.123s;}#alb-pre .alb-dna .el:nth-of-type(15){animation-delay:-3.363s;-webkit-animation-delay:-3.363s;}#alb-pre .alb-dna .el:nth-of-type(16){animation-delay:-3.604s;-webkit-animation-delay:-3.604s;}#alb-pre .alb-dna .el:nth-of-type(17){animation-delay:-3.844s;-webkit-animation-delay:-3.844s;}#alb-pre .alb-dna .el:nth-of-type(18){animation-delay:-4.084s;-webkit-animation-delay:-4.084s;}#alb-pre .alb-dna .el:nth-of-type(19){animation-delay:-4.324s;-webkit-animation-delay:-4.324s;}#alb-pre .alb-dna .el:nth-of-type(20){animation-delay:-4.565s;-webkit-animation-delay:-4.565s;}#alb-pre .alb-dna .el:nth-of-type(21){animation-delay:-4.805s;-webkit-animation-delay:-4.805s;}#alb-pre .alb-dna .el:nth-of-type(22){animation-delay:-5.045s;-webkit-animation-delay:-5.045s;}#alb-pre .alb-dna .el:nth-of-type(23){animation-delay:-5.285s;-webkit-animation-delay:-5.285s;}#alb-pre .alb-dna .el:nth-of-type(24){animation-delay:-5.526s;-webkit-animation-delay:-5.526s;}#alb-pre .alb-dna .el:nth-of-type(25){animation-delay:-5.766s;-webkit-animation-delay:-5.766s;}#alb-pre .alb-dna .el:nth-of-type(26){animation-delay:-6.006s;-webkit-animation-delay:-6.006s;}#alb-pre .alb-dna .el:nth-of-type(27){animation-delay:-6.246s;-webkit-animation-delay:-6.246s;}#alb-pre .alb-dna .el:nth-of-type(28){animation-delay:-6.486s;-webkit-animation-delay:-6.486s;}#alb-pre .alb-dna .el:nth-of-type(29){animation-delay:-6.727s;-webkit-animation-delay:-6.727s;}#alb-pre .alb-dna .el:nth-of-type(30){animation-delay:-6.967s;-webkit-animation-delay:-6.967s;}#alb-pre .alb-dna .el:nth-of-type(31){animation-delay:-7.207s;-webkit-animation-delay:-7.207s;}#alb-pre .alb-dna .el:nth-of-type(32){animation-delay:-7.447s;-webkit-animation-delay:-7.447s;}#alb-pre .alb-dna .el:nth-of-type(33){animation-delay:-7.688s;-webkit-animation-delay:-7.688s;}#alb-pre .alb-dna .el:nth-of-type(34){animation-delay:-7.928s;-webkit-animation-delay:-7.928s;}#alb-pre .alb-dna .el:nth-of-type(35){animation-delay:-8.168s;-webkit-animation-delay:-8.168s;}#alb-pre .alb-dna .el:nth-of-type(36){animation-delay:-8.408s;-webkit-animation-delay:-8.408s;}#alb-pre .alb-dna .el:nth-of-type(37){animation-delay:-8.649s;-webkit-animation-delay:-8.649s;}#alb-pre .alb-dna .el:nth-of-type(38){animation-delay:-8.889s;-webkit-animation-delay:-8.889s;}#alb-pre .alb-dna .el:nth-of-type(39){animation-delay:-9.129s;-webkit-animation-delay:-9.129s;}#alb-pre .alb-dna .el:nth-of-type(40){animation-delay:-9.369s;-webkit-animation-delay:-9.369s;}
-@keyframes alb-run{from{transform:rotateX(0deg);}to{transform:rotateX(360deg);}}
-@-webkit-keyframes alb-run{from{-webkit-transform:rotateX(0deg);}to{-webkit-transform:rotateX(360deg);}}
+#alb-pre canvas.alb-dna{display:block;}
 `.trim();
 
 const SCRIPT = `
 (function(){
+  var pre=document.getElementById('alb-pre');
+  var cv=document.getElementById('alb-dna-cv');
+  if(!cv||!cv.getContext){return;}
+  var ctx=cv.getContext('2d');
+  var RED=[208,24,31],REDL=[237,28,36],BLUE=[29,58,130],BLUEL=[46,84,156],TEAL=[46,138,160];
+  var cw=0,ch=0;
+  function size(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    cw=Math.min(760,Math.round((window.innerWidth||760)*0.86))||760; ch=210;
+    cv.style.width=cw+'px'; cv.style.height=ch+'px';
+    cv.width=Math.round(cw*dpr); cv.height=Math.round(ch*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  function rgba(c,a){return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')';}
+  function mix(a,b,m){return [a[0]+(b[0]-a[0])*m,a[1]+(b[1]-a[1])*m,a[2]+(b[2]-a[2])*m];}
+  function draw(t){
+    var w=cw,h=ch,cy=h/2,amp=h*0.34,N=52,periods=2.6,phase=t*1.7,i;
+    ctx.clearRect(0,0,w,h);
+    var nodes=[];
+    for(i=0;i<N;i++){var fx=i/(N-1);var x=8+fx*(w-16);var th=fx*periods*Math.PI*2+phase;nodes.push({x:x,yA:cy+amp*Math.sin(th),yB:cy-amp*Math.sin(th),z:Math.cos(th)});}
+    ctx.setLineDash([2,4]);ctx.lineWidth=1.4;
+    for(i=0;i<N;i++){var n=nodes[i];var d=Math.abs(n.z);ctx.strokeStyle=rgba(TEAL,0.18+0.4*(1-d));ctx.beginPath();ctx.moveTo(n.x,n.yA);ctx.lineTo(n.x,n.yB);ctx.stroke();}
+    ctx.setLineDash([]);
+    var beads=[];
+    for(i=0;i<N;i++){var n2=nodes[i];beads.push({x:n2.x,y:n2.yA,z:n2.z,s:0});beads.push({x:n2.x,y:n2.yB,z:-n2.z,s:1});}
+    beads.sort(function(a,b){return a.z-b.z;});
+    for(i=0;i<beads.length;i++){var b=beads[i];var dn=(b.z+1)/2;var r=2.6+4.4*dn;var a=0.4+0.6*dn;var col=b.s===0?mix(BLUE,BLUEL,dn):mix(RED,REDL,dn);ctx.beginPath();ctx.fillStyle=rgba(col,a);ctx.arc(b.x,b.y,r,0,Math.PI*2);ctx.fill();}
+  }
+  size();
+  var start=performance.now();
+  var raf=0,running=true;
+  function loop(now){ if(!running)return; draw((now-start)/1000); raf=requestAnimationFrame(loop); }
+  draw(0); raf=requestAnimationFrame(loop);
+  window.addEventListener('resize',size);
   function hide(){
-    var e=document.getElementById('alb-pre');
-    if(!e)return;
-    e.style.transition='opacity .45s ease';
-    e.style.opacity='0';
-    e.addEventListener('transitionend',function(){if(e.parentNode)e.parentNode.removeChild(e);});
+    if(!pre){running=false;return;}
+    pre.style.transition='opacity .45s ease';pre.style.opacity='0';
+    pre.addEventListener('transitionend',function(){running=false;if(raf)cancelAnimationFrame(raf);if(pre.parentNode)pre.parentNode.removeChild(pre);});
   }
   if(document.readyState==='complete')hide();
   else window.addEventListener('load',hide,{once:true});
@@ -54,7 +74,7 @@ export function InlineSplash() {
     `<style>${STYLE}</style>` +
     `<div id="alb-pre" aria-hidden="true">` +
     `<img class="alb-logo" src="/logo.png" alt="Albatros Health Care"/>` +
-    `<div class="alb-dna">${ELS}</div>` +
+    `<canvas id="alb-dna-cv" class="alb-dna" style="width:min(760px,86vw);height:210px;display:block"></canvas>` +
     `</div>` +
     `<script>${SCRIPT}</script>`;
   return <div suppressHydrationWarning dangerouslySetInnerHTML={{ __html: html }} />;
