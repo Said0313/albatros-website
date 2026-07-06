@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#060C1A}
+  </style>
+</helmet>
+<div style="position:relative;width:100%;min-height:100vh;background:#060C1A;font-family:Inter,sans-serif;overflow:hidden;display:flex;align-items:center">
+  <sc-if value="{{ glow }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute;top:-10%;left:-6%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(46,84,156,.22),transparent 68%);filter:blur(8px);pointer-events:none"></div>
+  </sc-if>
+
+  <div style="position:relative;width:100%;max-width:1240px;margin:0 auto;padding:96px 48px;display:grid;grid-template-columns:1.05fr 1.35fr;gap:80px;align-items:center">
+
+    <!-- left: identity -->
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.18em;color:#3E8FA6;margin-bottom:30px">О КОМПАНИИ</div>
+      <img src="assets/logo-albatros-white.png" alt="Albatros Health Care" style="height:74px;width:auto;display:block;margin-bottom:34px"/>
+      <p style="color:#7A8FB8;font-size:18px;line-height:1.65;max-width:440px;margin:0">Официальный дистрибьютор премиум-оборудования для лабораторной диагностики в Узбекистане. Поставка, ввод в эксплуатацию, обучение и сервис — на всём жизненном цикле прибора.</p>
+    </div>
+
+    <!-- right: stats -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:48px">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+        <div style="padding:30px 0;border-top:1px solid #1A2B4A">
+          <div style="display:flex;align-items:baseline;line-height:1">
+            <span style="font-weight:800;font-size:58px;color:#EEF2FF;letter-spacing:-.01em;font-family:{{ numFamily }}">{{ s.num }}</span>
+            <span style="font-weight:800;font-size:32px;margin-left:2px;color:{{ accentColor }};font-family:{{ numFamily }}">{{ s.suffix }}</span>
+          </div>
+          <div style="color:#7A8FB8;font-size:15px;margin-top:14px">{{ s.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1240,&quot;height&quot;:640},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Красный&quot;,&quot;Тиловый&quot;,&quot;Синий&quot;],&quot;default&quot;:&quot;Красный&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;numberFont&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Syne&quot;,&quot;JetBrains Mono&quot;],&quot;default&quot;:&quot;Syne&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;glow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accents = { 'Красный': '#ED1C24', 'Тиловый': '#3E8FA6', 'Синий': '#5C7FB4' };
+    const fonts = { 'Syne': 'Syne, sans-serif', 'JetBrains Mono': "'JetBrains Mono', monospace" };
+    return {
+      glow: this.props.glow ?? true,
+      accentColor: accents[this.props.accent] ?? '#ED1C24',
+      numFamily: fonts[this.props.numberFont] ?? 'Syne, sans-serif',
+      stats: [
+        { num: '44',   suffix: '+',  label: 'моделей оборудования' },
+        { num: '14',   suffix: '',   label: 'брендов-партнёров' },
+        { num: '2000', suffix: '+',  label: 'клиник и лабораторий' },
+        { num: '24',   suffix: '/7', label: 'сервисная поддержка' },
+        { num: '2017', suffix: '',   label: 'год основания' },
+        { num: '4500', suffix: '+',  label: 'обученных специалистов' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
