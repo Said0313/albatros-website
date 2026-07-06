@@ -8,15 +8,22 @@ const config: Config = {
     extend: {
       colors: {
         "brand-red": { DEFAULT: "#D0181F", dark: "#B5141B", bright: "#ED1C24" },
-        "brand-blue": { DEFAULT: "#1D3A82", deep: "#152E73", mid: "#2E549C", light: "#5C7FB4" },
-        "brand-teal": { DEFAULT: "#3E8FA6", bright: "#00C9B8" },
-        bg: { page: "#060C1A", card: "#0C1628", elevated: "#111E38", border: "#1A2B4A" },
-        text: { primary: "#EEF2FF", secondary: "#7A8FB8", muted: "#3D4F72" },
+        "brand-blue": { DEFAULT: "#1D3A82", deep: "#1D3A82", mid: "#2E549C", light: "#5C7FB4" },
+        "brand-teal": { DEFAULT: "#2E8AA0", bright: "#00C9B8" },
+        // LIGHT THEME tokens
+        bg: { page: "#FBFCFE", card: "#FFFFFF", elevated: "#F4F7FB", border: "#E5EAF3" },
+        text: { primary: "#0C1B3A", secondary: "#5E6E8F", muted: "#8A98B5" },
       },
       fontFamily: {
-        display: ["var(--font-syne)", "sans-serif"],
+        // Headings use Inter (heavy weight) in BOTH locales. Syne was dropped:
+        // it ships with no Cyrillic glyphs, so RU headings already fell back to
+        // Inter while UZ (Latin) rendered in actual Syne — the two locales looked
+        // different. Inter for headings makes UZ match RU exactly.
+        display: ["var(--font-inter)", "system-ui", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
+        // JetBrains Mono also lacks Cyrillic — fall to Inter so "mono" spots with
+        // Cyrillic/Uzbek render cleanly instead of dropping to a system font.
+        mono: ["var(--font-mono)", "var(--font-inter)", "monospace"],
       },
       maxWidth: { content: "1280px" },
       animation: {

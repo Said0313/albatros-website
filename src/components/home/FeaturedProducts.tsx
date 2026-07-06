@@ -1,16 +1,21 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Link from "next/link";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import type { Product } from "@/types";
+import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { ProductImage } from "@/components/ui/ProductImage";
+import { categoryLabel, productShort } from "@/data/i18n";
 import { cn } from "@/lib/utils";
 
 export function FeaturedProducts({ products }: { products: Product[] }) {
+  const locale = useLocale();
+  const tf = useTranslations("featured");
+  const tc = useTranslations("common");
   const [emblaRef, embla] = useEmblaCarousel({ loop: true, align: "start" }, [
     Autoplay({ delay: 4500, stopOnInteraction: false }),
   ]);
@@ -29,11 +34,11 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
   }, [embla]);
 
   return (
-    <section className="section-pad border-t border-bg-border">
+    <section className="section-pad border-y border-bg-border bg-bg-elevated">
       <div className="container-x">
         <div className="mb-12 text-center">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">Флагманское оборудование</h2>
-          <p className="mt-3 text-text-secondary">Передовые решения от мировых производителей</p>
+          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tf("title")}</h2>
+          <p className="mt-3 text-text-secondary">{tf("subtitle")}</p>
         </div>
 
         <div className="relative">
@@ -43,18 +48,18 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
                 <Link
                   key={p.slug}
                   href={`/product/${p.slug}`}
-                  className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-bg-border bg-[linear-gradient(145deg,#0C1628,#111E38)] transition-colors hover:border-brand-red sm:w-[300px]"
+                  className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-bg-border bg-bg-card shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-blue-light hover:shadow-[0_24px_48px_-28px_rgba(29,58,130,0.35)] sm:w-[300px]"
                 >
-                  <div className="relative h-[200px] overflow-hidden rounded-t-2xl bg-bg-elevated">
-                    <ProductImage src={p.images[0]} alt={p.name} brand={p.brand} category={p.category} name={p.name} className="p-4" />
+                  <div className="relative aspect-square overflow-hidden rounded-t-2xl bg-white">
+                    <ProductImage src={p.images[0]} alt={p.name} brand={p.brand} category={p.category} name={p.name} sizes="300px" className="p-4" />
                   </div>
                   <div className="p-4">
-                    <Badge>{p.category}</Badge>
+                    <Badge>{categoryLabel(p.category, locale)}</Badge>
                     <h3 className="mt-2 font-display text-base font-bold text-text-primary">{p.name}</h3>
-                    <p className="mt-1 font-mono text-xs text-brand-blue-light">{p.brand}</p>
-                    <p className="mt-2 line-clamp-2 text-[13px] text-text-secondary">{p.shortDescription}</p>
+                    <p className="mt-1 font-mono text-xs text-brand-blue-deep">{p.brand}</p>
+                    <p className="mt-2 line-clamp-2 text-[13px] text-text-secondary">{productShort(p, locale)}</p>
                     <span className="mt-3 inline-flex items-center gap-1 text-sm text-brand-red-bright group-hover:underline">
-                      Подробнее <ArrowRight className="h-3.5 w-3.5" />
+                      {tc("more")} <ArrowRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
                 </Link>

@@ -1,10 +1,182 @@
 [
-  { "id": "e1", "year": "2025", "title": "Презентация SATLARS T8 — первой автоматизированной лаборатории в Узбекистане", "date": "Ноябрь 2025", "description": "Впервые в стране представлена модульная лабораторная линия — обладатель iF Design Award 2025." },
-  { "id": "e2", "year": "2025", "title": "Запуск флагмана Maglumi X10 — до 1000 тестов в час", "date": "Сентябрь 2025", "description": "Расширение портфеля ИХЛА новейшим высокопроизводительным анализатором SNIBE." },
-  { "id": "e3", "year": "2024", "title": "Международная конференция по лабораторной диагностике, Ташкент", "date": "Май 2024", "description": "85-я организованная конференция с международным участием для врачей-лаборантов Узбекистана." },
-  { "id": "e4", "year": "2024", "title": "Внедрение генетических платформ Illumina в Узбекистане", "date": "Март 2024", "description": "Поставка секвенаторов нового поколения для геномных исследований." },
-  { "id": "e5", "year": "2023", "title": "Методическое пособие по гемостазу совместно с ТашИУВ", "date": "Октябрь 2023", "description": "Одно из 6 методических пособий, разработанных с Ташкентским институтом усовершенствования врачей." },
-  { "id": "e6", "year": "2023", "title": "Участие в международном конгрессе по лабораторной медицине", "date": "Июнь 2023", "description": "24-е участие компании в профессиональных конгрессах мирового уровня." },
-  { "id": "e7", "year": "2022", "title": "Обучающий семинар по молекулярной диагностике и ПЦР", "date": "Апрель 2022", "description": "Подготовка специалистов по работе с системами Molecision." },
-  { "id": "e8", "year": "2021", "title": "Расширение сервисной службы до режима 24/7", "date": "Февраль 2021", "description": "Запуск круглосуточной сервисно-технической поддержки по всей республике." }
+  {
+    "id": "e2026-1",
+    "year": "2026",
+    "title": "Установка анализатора Biossays C8 (SNIBE)",
+    "date": "Январь 2026",
+    "description": "Инсталляция нового биохимического анализатора SNIBE в лаборатории партнёра.",
+    "titleUz": "Biossays C8 analizatorini oʻrnatish (SNIBE)",
+    "descriptionUz": "Hamkor laboratoriyasida yangi SNIBE biokimyoviy analizatorini oʻrnatish."
+  },
+  {
+    "id": "e2026-2",
+    "year": "2026",
+    "title": "Семинар: современная лабораторная медицина и управление качеством",
+    "date": "Январь 2026",
+    "description": "Обучающее мероприятие для специалистов клинико-диагностических лабораторий.",
+    "titleUz": "Seminar: zamonaviy laboratoriya tibbiyoti va sifat boshqaruvi",
+    "descriptionUz": "Klinik-diagnostika laboratoriyalari mutaxassislari uchun oʻquv tadbiri."
+  },
+  {
+    "id": "e2025-1",
+    "year": "2025",
+    "title": "1-я Центрально-Азиатская конференция по трансплантации и клеточной терапии",
+    "date": "Сентябрь 2025",
+    "description": "Участие компании в крупном региональном научном форуме.",
+    "titleUz": "1-Markaziy Osiyo transplantatsiya va hujayra terapiyasi konferensiyasi",
+    "descriptionUz": "Kompaniyaning yirik mintaqaviy ilmiy forumda ishtiroki."
+  },
+  {
+    "id": "e2025-2",
+    "year": "2025",
+    "title": "Семинар: автоматизация исследования мочи на анализаторе URIT US-1000",
+    "date": "Октябрь 2025",
+    "description": "Практический семинар по автоматизации общего анализа мочи.",
+    "titleUz": "Seminar: URIT US-1000 da siydik tahlilini avtomatlashtirish",
+    "descriptionUz": "Umumiy siydik tahlilini avtomatlashtirish boʻyicha amaliy seminar."
+  },
+  {
+    "id": "e2025-3",
+    "year": "2025",
+    "title": "Инсталляция иммунохемилюминесцентного анализатора C8 от SNIBE",
+    "date": "Январь 2025",
+    "description": "Ввод в эксплуатацию нового ИХЛА-анализатора SNIBE.",
+    "titleUz": "SNIBE C8 immunoxemilyuminessent analizatorini oʻrnatish",
+    "descriptionUz": "Yangi SNIBE IXLA-analizatorini ishga tushirish."
+  },
+  {
+    "id": "e2024-1",
+    "year": "2024",
+    "title": "Международный симпозиум по иммуноанализу, Hilton Tashkent City",
+    "date": "Май 2024",
+    "description": "Симпозиум с участием иностранных экспертов в области иммуноанализа.",
+    "titleUz": "Immunotahlil boʻyicha xalqaro simpozium, Hilton Tashkent City",
+    "descriptionUz": "Immunotahlil sohasidagi xorijiy ekspertlar ishtirokidagi simpozium."
+  },
+  {
+    "id": "e2024-2",
+    "year": "2024",
+    "title": "Стенд компании на 28-й международной выставке TIHE 2024",
+    "date": "Апрель 2024",
+    "description": "Участие в крупнейшей выставке здравоохранения Tashkent International Healthcare Exhibition.",
+    "titleUz": "Kompaniya stendi 28-xalqaro TIHE 2024 koʻrgazmasida",
+    "descriptionUz": "Tashkent International Healthcare Exhibition sogʻliqni saqlash koʻrgazmasida ishtirok."
+  },
+  {
+    "id": "e2024-3",
+    "year": "2024",
+    "title": "Конференция «Туракуловские чтения»",
+    "date": "Ноябрь 2024",
+    "description": "Участие в республиканской научной конференции по эндокринологии и лабораторной диагностике.",
+    "titleUz": "«Turakulov oʻqishlari» konferensiyasi",
+    "descriptionUz": "Endokrinologiya va laboratoriya diagnostikasi boʻyicha respublika ilmiy konferensiyasida ishtirok."
+  },
+  {
+    "id": "e2023-1",
+    "year": "2023",
+    "title": "Международная конференция по иммуноанализу с профессором Ричардом Пикнером",
+    "date": "Июнь 2023",
+    "description": "Научное мероприятие с участием ведущего британского эксперта по иммуноанализу.",
+    "titleUz": "Professor Richard Pikner bilan immunotahlil xalqaro konferensiyasi",
+    "descriptionUz": "Yetakchi britaniyalik immunotahlil eksperti ishtirokidagi ilmiy tadbir."
+  },
+  {
+    "id": "e2023-2",
+    "year": "2023",
+    "title": "Семинар: ИХЛА — новый взгляд на диагностику",
+    "date": "Ноябрь 2023",
+    "description": "Обучающий семинар по иммунохемилюминесцентному анализу.",
+    "titleUz": "Seminar: IXLA — diagnostikaga yangi nigoh",
+    "descriptionUz": "Immunoxemilyuminessent tahlil boʻyicha oʻquv seminari."
+  },
+  {
+    "id": "e2022-1",
+    "year": "2022",
+    "title": "Участие в международной выставке TIHE 2022",
+    "date": "Апрель 2022",
+    "description": "Демонстрация портфеля лабораторного оборудования на выставке здравоохранения.",
+    "titleUz": "Xalqaro TIHE 2022 koʻrgazmasida ishtirok",
+    "descriptionUz": "Sogʻliqni saqlash koʻrgazmasida laboratoriya uskunalari portfelini namoyish etish."
+  },
+  {
+    "id": "e2022-2",
+    "year": "2022",
+    "title": "«Дни медицинской науки» в Министерстве инновационного развития",
+    "date": "Май 2022",
+    "description": "Участие в государственном научно-практическом мероприятии.",
+    "titleUz": "Innovatsion rivojlanish vazirligida «Tibbiyot fani kunlari»",
+    "descriptionUz": "Davlat ilmiy-amaliy tadbirida ishtirok."
+  },
+  {
+    "id": "e2021-1",
+    "year": "2021",
+    "title": "Международный симпозиум: инновации в лабораторной диагностике",
+    "date": "Июль 2021",
+    "description": "Симпозиум с международным участием по современным методам диагностики.",
+    "titleUz": "Xalqaro simpozium: laboratoriya diagnostikasidagi innovatsiyalar",
+    "descriptionUz": "Zamonaviy diagnostika usullari boʻyicha xalqaro ishtirokli simpozium."
+  },
+  {
+    "id": "e2021-2",
+    "year": "2021",
+    "title": "Участие в международной выставке TIHE 2021",
+    "date": "Июнь 2021",
+    "description": "Представление решений для лабораторной диагностики.",
+    "titleUz": "Xalqaro TIHE 2021 koʻrgazmasida ishtirok",
+    "descriptionUz": "Laboratoriya diagnostikasi yechimlarini taqdim etish."
+  },
+  {
+    "id": "e2019-1",
+    "year": "2019",
+    "title": "Регистрационное удостоверение для анализатора MAGLUMI 600 (SNIBE)",
+    "date": "Август 2019",
+    "description": "Получено регистрационное удостоверение для компактного ИХЛА-анализатора.",
+    "titleUz": "MAGLUMI 600 analizatori uchun roʻyxatdan oʻtkazish guvohnomasi (SNIBE)",
+    "descriptionUz": "Ixcham IXLA-analizator uchun roʻyxatdan oʻtkazish guvohnomasi olindi."
+  },
+  {
+    "id": "e2019-2",
+    "year": "2019",
+    "title": "Регистрационное удостоверение для анализатора MAGLUMI 2000 (SNIBE)",
+    "date": "Июль 2019",
+    "description": "Регистрация высокопроизводительного ИХЛА-анализатора в Узбекистане.",
+    "titleUz": "MAGLUMI 2000 analizatori uchun roʻyxatdan oʻtkazish guvohnomasi (SNIBE)",
+    "descriptionUz": "Oʻzbekistonda yuqori unumdor IXLA-analizatorni roʻyxatdan oʻtkazish."
+  },
+  {
+    "id": "e2019-3",
+    "year": "2019",
+    "title": "Участие в международной выставке TIHE 2019",
+    "date": "Апрель 2019",
+    "description": "Демонстрация оборудования на Tashkent International Healthcare Exhibition.",
+    "titleUz": "Xalqaro TIHE 2019 koʻrgazmasida ishtirok",
+    "descriptionUz": "Tashkent International Healthcare Exhibition da uskunalarni namoyish etish."
+  },
+  {
+    "id": "e2017-1",
+    "year": "2017",
+    "title": "Семинар с международным участием, Radisson SAS Tashkent",
+    "date": "Декабрь 2017",
+    "description": "Первый крупный международный семинар компании для специалистов лабораторий.",
+    "titleUz": "Xalqaro ishtirokli seminar, Radisson SAS Tashkent",
+    "descriptionUz": "Kompaniyaning laboratoriya mutaxassislari uchun birinchi yirik xalqaro seminari."
+  },
+  {
+    "id": "e2017-2",
+    "year": "2017",
+    "title": "Разработан реагент для определения эритропоэтина в сыворотке крови",
+    "date": "Август 2017",
+    "description": "Собственная разработка реагента для иммунохимического анализа.",
+    "titleUz": "Qon zardobida eritropoetinni aniqlash uchun reagent ishlab chiqildi",
+    "descriptionUz": "Immunokimyoviy tahlil uchun reagentning xususiy ishlanmasi."
+  },
+  {
+    "id": "e2016-1",
+    "year": "2016",
+    "title": "Регистрационные удостоверения для MAGLUMI 800 и 2000 Plus (SNIBE)",
+    "date": "Июль 2016",
+    "description": "Получены первые регистрационные удостоверения на ИХЛА-анализаторы SNIBE.",
+    "titleUz": "MAGLUMI 800 va 2000 Plus uchun roʻyxatdan oʻtkazish guvohnomalari (SNIBE)",
+    "descriptionUz": "SNIBE IXLA-analizatorlari uchun birinchi roʻyxatdan oʻtkazish guvohnomalari olindi."
+  }
 ]

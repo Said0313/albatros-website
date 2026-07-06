@@ -4,6 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { useState, createContext, useContext, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Ctx {
   open: (product?: string) => void;
@@ -20,6 +21,7 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const t = useTranslations("form");
 
   const open = useCallback((p?: string) => {
     setProduct(p);
@@ -75,10 +77,10 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
                   <div className="mb-5 flex items-start justify-between">
                     <div>
                       <Dialog.Title className="font-display text-xl font-bold text-text-primary">
-                        Заказать звонок
+                        {t("callTitle")}
                       </Dialog.Title>
                       <Dialog.Description className="mt-1 text-sm text-text-secondary">
-                        {product ? `Запрос цены: ${product}` : "Мы свяжемся с вами в ближайшее время"}
+                        {product ? t("priceFor", { product }) : t("callSubtitle")}
                       </Dialog.Description>
                     </div>
                     <Dialog.Close className="rounded-md p-1 text-text-muted hover:text-text-primary">
@@ -95,37 +97,31 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
                       <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#22C55E]/15">
                         <Check className="h-8 w-8 text-[#22C55E]" />
                       </div>
-                      <p className="text-text-primary">
-                        Спасибо! Мы свяжемся с вами в ближайшее время.
-                      </p>
+                      <p className="text-text-primary">{t("success")}</p>
                     </motion.div>
                   ) : (
                     <form onSubmit={submit} className="space-y-3">
                       {product && <input type="hidden" name="product" value={product} />}
-                      <Field name="name" placeholder="Имя*" required />
-                      <Field name="phone" type="tel" placeholder="Телефон* (+998...)" required />
-                      <Field name="company" placeholder="Компания" />
+                      <Field name="name" placeholder={t("name")} required />
+                      <Field name="phone" type="tel" placeholder={t("phone")} required />
+                      <Field name="company" placeholder={t("company")} />
                       <textarea
                         name="comment"
-                        placeholder="Комментарий"
+                        placeholder={t("comment")}
                         rows={3}
                         className="w-full rounded-lg border border-bg-border bg-bg-elevated px-3.5 py-2.5 text-sm text-text-primary placeholder:text-text-muted focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
                       />
                       <label className="flex items-start gap-2 text-xs text-text-secondary">
                         <input type="checkbox" required className="mt-0.5 accent-brand-red" />
-                        Согласен на обработку персональных данных
+                        {t("consent")}
                       </label>
-                      {error && (
-                        <p className="text-sm text-brand-red">
-                          Не удалось отправить заявку. Попробуйте позже.
-                        </p>
-                      )}
+                      {error && <p className="text-sm text-brand-red">{t("error")}</p>}
                       <button
                         type="submit"
                         disabled={loading}
                         className="btn-red flex w-full items-center justify-center gap-2 rounded-lg py-3 font-medium"
                       >
-                        <Phone className="h-4 w-4" /> {loading ? "Отправка…" : "Отправить заявку"}
+                        <Phone className="h-4 w-4" /> {loading ? t("sending") : t("submit")}
                       </button>
                     </form>
                   )}

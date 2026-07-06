@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -9,9 +9,9 @@ const buttonVariants = cva(
       variant: {
         red: "btn-red",
         outline:
-          "border border-brand-blue-light text-brand-blue-light hover:bg-[rgba(93,127,180,0.1)]",
+          "border border-bg-border bg-bg-card text-brand-blue-deep shadow-[0_1px_2px_rgba(16,40,90,0.04)] hover:border-brand-blue-light hover:bg-bg-elevated",
         ghost: "text-text-secondary hover:text-text-primary",
-        white: "bg-white text-brand-red hover:bg-brand-red hover:text-white",
+        white: "border border-bg-border bg-bg-card text-brand-blue-deep hover:bg-bg-elevated",
       },
       size: {
         sm: "px-4 py-2 text-sm",

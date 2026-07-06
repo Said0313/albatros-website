@@ -16,7 +16,7 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
     <div>
       <button
         onClick={() => hasImages && setLightbox(true)}
-        className="relative block aspect-square w-full overflow-hidden rounded-2xl border border-bg-border bg-bg-elevated"
+        className="relative block aspect-square w-full overflow-hidden rounded-2xl border border-bg-border bg-white"
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -33,6 +33,8 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
               brand={brand}
               category={category}
               name={name}
+              priority
+              sizes="(max-width: 1024px) 100vw, 45vw"
               className="p-8 transition-transform duration-500 hover:scale-[1.02]"
             />
           </motion.div>
@@ -46,7 +48,7 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
               key={img}
               onClick={() => setActive(i)}
               className={cn(
-                "relative h-20 w-20 overflow-hidden rounded-lg border bg-bg-elevated",
+                "relative h-20 w-20 overflow-hidden rounded-lg border bg-white",
                 active === i ? "border-brand-red" : "border-bg-border"
               )}
             >

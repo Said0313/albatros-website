@@ -3,18 +3,21 @@
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
 const DNACanvas = dynamic(() => import("@/components/ui/DNACanvas"), { ssr: false });
 
 export function HeroSection() {
+  const t = useTranslations("hero");
+  const tc = useTranslations("common");
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden" style={{ background: "var(--grad-hero)" }}>
       <DNACanvas />
       <div
         className="absolute inset-0 z-[1]"
         style={{
-          background: "radial-gradient(ellipse 80% 60% at 50% 40%, transparent 0%, rgba(6,12,26,0.7) 100%)",
+          background: "radial-gradient(ellipse 70% 55% at 50% 38%, rgba(46,84,156,0.07) 0%, transparent 70%)",
         }}
       />
 
@@ -24,19 +27,19 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.6 }}
-            className="inline-flex items-center rounded-full border border-bg-border bg-[rgba(12,22,40,0.6)] px-4 py-1.5 text-[13px] text-text-secondary"
+            className="inline-flex items-center rounded-full border border-bg-border bg-white/70 px-4 py-1.5 text-[13px] text-text-secondary shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
           >
-            🇺🇿&nbsp;&nbsp;Узбекистан&nbsp;&nbsp;·&nbsp;&nbsp;In-Vitro диагностика&nbsp;&nbsp;·&nbsp;&nbsp;С 2017 года
+            {t("eyebrow")}
           </motion.div>
 
-          <h1 className="mt-7 font-display text-[42px] font-extrabold leading-[1.05] tracking-tight text-text-primary sm:text-[56px] lg:text-[76px]">
+          <h1 className="mt-7 font-display text-[clamp(28px,7.5vw,56px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[76px]">
             <motion.span
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
               className="block"
             >
-              Передовые технологии
+              {t("titleA")}
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 24 }}
@@ -44,9 +47,9 @@ export function HeroSection() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="block"
             >
-              лабораторной{" "}
+              {t("titleB")}{" "}
               <span className="relative inline-block grad-text">
-                диагностики
+                {t("titleHighlight")}
                 <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 300 8" preserveAspectRatio="none">
                   <motion.path
                     d="M0,4 Q150,8 300,4"
@@ -69,7 +72,7 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="mx-auto mt-7 max-w-xl text-[17px] leading-relaxed text-text-secondary sm:text-[19px]"
           >
-            Официальный дистрибьютор 14 мировых лидеров IVD-индустрии в Узбекистане. Поставка под ключ, сервис 24/7, международные стандарты.
+            {t("subtitle")}
           </motion.p>
 
           <motion.div
@@ -79,10 +82,10 @@ export function HeroSection() {
             className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }}>
-              <Button href="/catalog">Открыть каталог</Button>
+              <Button href="/catalog">{tc("openCatalog")}</Button>
             </motion.div>
             <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }}>
-              <Button href="/about" variant="outline">О компании</Button>
+              <Button href="/about" variant="outline">{tc("aboutCompany")}</Button>
             </motion.div>
           </motion.div>
         </div>
