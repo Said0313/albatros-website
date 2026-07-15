@@ -1,11 +1,29 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { brands } from "@/lib/catalog";
 import { brandSpecialty, brandDescription, brandCountry } from "@/data/i18n";
+import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { ContactCTA } from "@/components/home/ContactCTA";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const locale = params.locale as AppLocale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return pageMetadata({
+    locale,
+    path: "/partners",
+    title: t("partners.title"),
+    description: t("partners.description"),
+  });
+}
 
 export default function PartnersPage() {
   const t = useTranslations("partners");

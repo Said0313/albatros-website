@@ -129,8 +129,8 @@
     "subtitle": "Maslahat va narxni hisoblash uchun biz bilan bogʻlaning"
   },
   "catalog": {
-    "title": "Katalog",
-    "subtitle": "Jahon brendlarining laboratoriya uskunalari va IVD yechimlari",
+    "title": "Laboratoriya va diagnostika uskunalari katalogi",
+    "subtitle": "Jahon IVD brendlarining laboratoriya va diagnostika uskunalari, reagentlar, sarf materiallari va sifat nazorati.",
     "search": "Uskunalarni qidirish...",
     "generalDirection": "Umumiy yoʻnalish",
     "direction": "Yoʻnalish",
@@ -188,5 +188,31 @@
     "contacts": "Aloqa",
     "rights": "© 2017–2025 Albatros Health Care. Barcha huquqlar himoyalangan.",
     "city": "Toshkent, Oʻzbekiston"
+  },
+  "meta": {
+    "home": {
+      "title": "Laboratoriya diagnostikasi uchun tibbiy uskunalar",
+      "description": "Albatros Health Care, Oʻzbekistonda IVD diagnostikaning rasmiy distribyutori: laboratoriya va diagnostika uskunalari, reagentlar va laboratoriyani avtomatlashtirish."
+    },
+    "catalog": {
+      "title": "Laboratoriya va diagnostika uskunalari",
+      "description": "Jahon brendlarining laboratoriya va diagnostika uskunalari, reagentlar va sarf materiallari katalogi: IXLA, biokimyo, gematologiya, gemostaz, PZR, sifat nazorati."
+    },
+    "partners": {
+      "title": "IVD diagnostikaning rasmiy brend-hamkorlari",
+      "description": "SNIBE, Werfen, BD, Randox, Dymind, Illumina, URIT, Lifotronic va boshqa jahon laboratoriya diagnostikasi yetakchilarining Oʻzbekistondagi rasmiy distribyutori."
+    },
+    "about": {
+      "title": "Albatros Health Care kompaniyasi haqida",
+      "description": "Albatros Health Care, 2017 yildan beri Oʻzbekistonda tibbiy va laboratoriya uskunalari distribyutori. Kalit topshirish asosida yetkazib berish, oʻqitish va servis."
+    },
+    "events": {
+      "title": "Tadbirlar va konferensiyalar",
+      "description": "Albatros Health Care ning Oʻzbekistondagi tibbiy konferensiyalar, simpoziumlar va laboratoriya diagnostikasi koʻrgazmalarida 2017 yildan beri ishtiroki."
+    },
+    "contact": {
+      "title": "Aloqa",
+      "description": "Albatros Health Care bilan bogʻlaning: Toshkent sh., Xalqobod koʻch., 17, tel. +998 78 147 88 80, info@albatros.uz. Laboratoriya uskunalarini yetkazib berish."
+    }
   }
 }

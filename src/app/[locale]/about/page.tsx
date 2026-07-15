@@ -1,11 +1,29 @@
+import type { Metadata } from "next";
 import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { clients } from "@/data/clients";
 import { certificates } from "@/data/certificates";
 import { totalPositions } from "@/lib/catalog";
+import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const locale = params.locale as AppLocale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return pageMetadata({
+    locale,
+    path: "/about",
+    title: t("about.title"),
+    description: t("about.description"),
+  });
+}
 
 const stats = [
   { end: 45, suffix: "+", key: "models" },

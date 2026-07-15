@@ -1,6 +1,24 @@
+import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { ContactForm } from "@/components/contact/ContactForm";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const locale = params.locale as AppLocale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return pageMetadata({
+    locale,
+    path: "/contact",
+    title: t("contact.title"),
+    description: t("contact.description"),
+  });
+}
 
 const contacts: { icon: typeof MapPin; key: string; valueKey?: string; value?: string; href?: string }[] = [
   { icon: MapPin, key: "address", valueKey: "addressValue" },

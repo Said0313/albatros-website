@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import { brands, products } from "@/lib/catalog";
 import type { Brand } from "@/types";
 import { brandSpecialty, brandDescription, brandCountry } from "@/data/i18n";
+import { pageMetadata, type AppLocale } from "@/lib/seo";
+import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
 import { ProductCard } from "@/components/catalog/ProductCard";
 
@@ -19,14 +21,22 @@ export function generateStaticParams() {
   return brands.map((b) => ({ slug: b.id }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}): Promise<Metadata> {
   const brand = brands.find((b) => b.id === params.slug);
   if (!brand) return { title: "404" };
-  return {
-    title: brand.name,
-    description: brand.description,
-    openGraph: { images: [brand.logo] },
-  };
+  const locale = params.locale as AppLocale;
+  const specialty = brandSpecialty(brand, locale);
+  return pageMetadata({
+    locale,
+    path: `/partners/${brand.id}`,
+    title: specialty ? `${brand.name} · ${specialty}` : brand.name,
+    description: brandDescription(brand, locale),
+    images: [brand.logo],
+  });
 }
 
 export default function PartnerDetailPage({ params }: { params: { slug: string; locale: string } }) {
@@ -43,8 +53,15 @@ export default function PartnerDetailPage({ params }: { params: { slug: string; 
     .filter(Boolean)
     .join(" · ");
 
+  const crumbs = [
+    { name: tn("home"), path: "/" },
+    { name: tn("partners"), path: "/partners" },
+    { name: brand.name, path: `/partners/${brand.id}` },
+  ];
+
   return (
     <div className="pb-24 pt-28 md:pt-32">
+      <BreadcrumbJsonLd locale={locale as AppLocale} items={crumbs} />
       <div className="container-x">
         <nav className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-text-secondary">
           <Link href="/" className="hover:text-text-primary">

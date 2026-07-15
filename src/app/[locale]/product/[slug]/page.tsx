@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { products, getProduct, getRelated } from "@/lib/catalog";
+import { products, getProduct, getRelated, brandIdOf } from "@/lib/catalog";
 import { Link } from "@/i18n/navigation";
-import { categoryLabel, productFull, specLabel, specValue } from "@/data/i18n";
+import { categoryLabel, productFull, productShort, specLabel, specValue } from "@/data/i18n";
+import { absoluteUrl, categoryKeyword, pageMetadata, SITE_URL, type AppLocale } from "@/lib/seo";
+import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductActions } from "@/components/product/ProductActions";
@@ -15,14 +17,22 @@ export function generateStaticParams() {
   return products.filter((p) => !p.imageless).map((p) => ({ slug: p.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}): Promise<Metadata> {
   const product = getProduct(params.slug);
   if (!product) return { title: "404" };
-  return {
-    title: product.name,
-    description: product.shortDescription,
-    openGraph: { images: product.images.length ? product.images : ["/logo.png"] },
-  };
+  const locale = params.locale as AppLocale;
+  const kw = categoryKeyword(product.category, locale);
+  return pageMetadata({
+    locale,
+    path: `/product/${product.slug}`,
+    title: `${product.name} · ${kw}`,
+    description: productShort(product, locale),
+    images: product.images.length ? product.images : ["/logo.png"],
+  });
 }
 
 export default function ProductPage({ params }: { params: { slug: string; locale: string } }) {
@@ -37,8 +47,29 @@ export default function ProductPage({ params }: { params: { slug: string; locale
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const tc = useTranslations("common");
 
+  const loc = locale as AppLocale;
+  const brandId = brandIdOf(product.brand);
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: product.images.length ? product.images.map((i) => `${SITE_URL}${i}`) : [`${SITE_URL}/logo.png`],
+    description: productFull(product, loc) || productShort(product, loc),
+    brand: { "@type": "Brand", name: product.brand },
+    category: categoryLabel(product.category, loc),
+    url: absoluteUrl(loc, `/product/${product.slug}`),
+  };
+  const crumbs = [
+    { name: t("breadcrumbHome"), path: "/" },
+    { name: tn("catalog"), path: "/catalog" },
+    { name: categoryLabel(product.category, loc), path: `/catalog?category=${encodeURIComponent(product.category)}` },
+    { name: product.name, path: `/product/${product.slug}` },
+  ];
+
   return (
     <div className="pb-24 pt-28 md:pt-32">
+      <JsonLd data={productLd} />
+      <BreadcrumbJsonLd locale={loc} items={crumbs} />
       <div className="container-x">
         <nav className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-text-secondary">
           <Link href="/" className="hover:text-text-primary">{t("breadcrumbHome")}</Link>
@@ -57,12 +88,26 @@ export default function ProductPage({ params }: { params: { slug: string; locale
 
           <div>
             <div className="flex flex-wrap gap-2">
-              <Badge>{categoryLabel(product.category, locale)}</Badge>
-              <Badge variant="blue">{product.brand}</Badge>
+              <Link href={{ pathname: "/catalog", query: { category: product.category } }}>
+                <Badge>{categoryLabel(product.category, locale)}</Badge>
+              </Link>
+              {brandId ? (
+                <Link href={`/partners/${brandId}`}>
+                  <Badge variant="blue">{product.brand}</Badge>
+                </Link>
+              ) : (
+                <Badge variant="blue">{product.brand}</Badge>
+              )}
               {product.isNew && <Badge variant="teal">{tc("new")}</Badge>}
             </div>
             <h1 className="mt-4 font-display text-3xl font-extrabold text-text-primary md:text-4xl">{product.name}</h1>
-            <p className="mt-2 font-mono text-sm text-brand-blue-deep">{product.brand}</p>
+            {brandId ? (
+              <Link href={`/partners/${brandId}`} className="mt-2 inline-block font-mono text-sm text-brand-blue-deep hover:underline">
+                {product.brand}
+              </Link>
+            ) : (
+              <p className="mt-2 font-mono text-sm text-brand-blue-deep">{product.brand}</p>
+            )}
 
             <div className="my-6 h-px w-full bg-bg-border" />
 

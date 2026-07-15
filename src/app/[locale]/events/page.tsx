@@ -1,8 +1,26 @@
+import type { Metadata } from "next";
 import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { events } from "@/lib/catalog";
 import { eventTitle, eventDescription, eventDate } from "@/data/i18n";
+import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { ContactCTA } from "@/components/home/ContactCTA";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const locale = params.locale as AppLocale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return pageMetadata({
+    locale,
+    path: "/events",
+    title: t("events.title"),
+    description: t("events.description"),
+  });
+}
 
 export default function EventsPage() {
   const t = useTranslations("events");
