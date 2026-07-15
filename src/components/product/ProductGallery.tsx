@@ -4,13 +4,17 @@ import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { useLocale } from "next-intl";
 import { ProductImage } from "@/components/ui/ProductImage";
+import { imageAlt, type AppLocale } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
 export function ProductGallery({ images, name, brand, category }: { images: string[]; name: string; brand: string; category?: string }) {
   const [active, setActive] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const hasImages = images.length > 0;
+  const locale = useLocale() as AppLocale;
+  const alt = imageAlt({ name, brand, category, locale });
 
   return (
     <div>
@@ -29,7 +33,7 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
           >
             <ProductImage
               src={images[active]}
-              alt={name}
+              alt={alt}
               brand={brand}
               category={category}
               name={name}
@@ -52,7 +56,7 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
                 active === i ? "border-brand-red" : "border-bg-border"
               )}
             >
-              <ProductImage src={img} alt={`${name} ${i + 1}`} brand={brand} className="p-2" />
+              <ProductImage src={img} alt={`${alt} ${i + 1}`} brand={brand} className="p-2" />
             </button>
           ))}
         </div>
@@ -67,7 +71,7 @@ export function ProductGallery({ images, name, brand, category }: { images: stri
               <X className="h-6 w-6" />
             </Dialog.Close>
             <div className="relative h-[80vh] w-full max-w-3xl">
-              <ProductImage src={images[active]} alt={name} brand={brand} />
+              <ProductImage src={images[active]} alt={alt} brand={brand} />
             </div>
           </Dialog.Content>
         </Dialog.Portal>

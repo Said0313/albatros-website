@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { ProductImage } from "@/components/ui/ProductImage";
 import { categoryLabel, productShort } from "@/data/i18n";
+import { imageAlt, type AppLocale } from "@/lib/seo";
 
 export function ProductCard({ product }: { product: Product }) {
   const locale = useLocale();
@@ -19,7 +20,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-square w-full overflow-hidden rounded-t-2xl bg-white">
         <ProductImage
           src={product.images[0]}
-          alt={product.name}
+          alt={imageAlt({ name: product.name, brand: product.brand, category: product.category, locale: locale as AppLocale })}
           brand={product.brand}
           category={product.category}
           name={product.name}

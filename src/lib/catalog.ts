@@ -79,6 +79,13 @@ export function getBrandList(): string[] {
   return Array.from(new Set(products.map((p) => p.brand))).sort();
 }
 
+// Map a product's `brand` string to its partner page id. All partners match by
+// name except Thermo Fisher (product brand "Thermo Fisher", partner id "thermofisher").
+export function brandIdOf(brandName: string): string | undefined {
+  const b = brands.find((x) => (x.id === "thermofisher" ? "Thermo Fisher" : x.name) === brandName);
+  return b?.id;
+}
+
 export function categoryCount(name: string): number {
   return products.filter((p) => p.category === name).length;
 }
