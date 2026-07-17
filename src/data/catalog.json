@@ -2,7 +2,7 @@
   {
     "id": "maglumi-x3",
     "slug": "maglumi-x3",
-    "name": "Maglumi X3",
+    "name": "Maglumi X4",
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Компактный иммунохемилюминесцентный анализатор для небольших лабораторий.",
@@ -39,7 +39,8 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Kichik laboratoriyalar uchun ixcham immunoxemilyuminessent analizator.",
-    "fullDescriptionUz": "Maglumi X3 — SNIBE kompaniyasining ixcham stol usti immunoxemilyuminessent tahlil (IXLA) tizimi. Oʻrtacha yuklamali laboratoriyalar uchun ideal yechim, 260 parametrli panelga kirish imkonini beradi. SNIBE — 30 yillik tarixga ega jahon yetakchisi, 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda IXLA boʻyicha №1."
+    "fullDescriptionUz": "Maglumi X3 — SNIBE kompaniyasining ixcham stol usti immunoxemilyuminessent tahlil (IXLA) tizimi. Oʻrtacha yuklamali laboratoriyalar uchun ideal yechim, 260 parametrli panelga kirish imkonini beradi. SNIBE — 30 yillik tarixga ega jahon yetakchisi, 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda IXLA boʻyicha №1.",
+    "hidden": false
   },
   {
     "id": "maglumi-x6",
