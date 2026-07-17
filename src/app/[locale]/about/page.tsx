@@ -101,15 +101,26 @@ export default function AboutPage() {
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
           {certificates.length > 0 ? (
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
-              {certificates.map((c) => (
-                <div
-                  key={c.id}
-                  className="flex items-center justify-center rounded-2xl border border-bg-border bg-bg-card p-4 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={c.image} alt={c.title ?? ""} className="h-auto w-full object-contain" />
-                </div>
-              ))}
+              {certificates.map((c) => {
+                const certTitle = locale === "uz" ? c.titleUz ?? c.title : c.title;
+                return (
+                  <a
+                    key={c.id}
+                    href={c.file ?? c.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="flex items-center justify-center rounded-2xl border border-bg-border bg-bg-card p-4 shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition group-hover:border-brand-blue-light">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={c.image} alt={certTitle ?? ""} className="h-auto w-full object-contain" />
+                    </div>
+                    {certTitle && (
+                      <div className="mt-2 text-center text-sm text-text-secondary">{certTitle}</div>
+                    )}
+                  </a>
+                );
+              })}
             </div>
           ) : (
             <div className="mt-8 flex items-center justify-center rounded-2xl border border-dashed border-bg-border bg-bg-elevated py-16 text-sm text-text-muted">
