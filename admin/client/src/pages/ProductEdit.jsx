@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { api } from "../api";
 import { imgUrl } from "../imgUrl";
+import BrandCombobox from "../components/BrandCombobox.jsx";
 
 const EMPTY = {
   name: "",
@@ -33,11 +34,27 @@ export default function ProductEdit({ mode }) {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
   const [ok, setOk] = useState("");
+  const [catalogBrands, setCatalogBrands] = useState([]);
   const fileRef = useRef(null);
 
   useEffect(() => {
     api.meta().then(setMeta).catch((e) => setError(e.message));
   }, []);
+
+  // Brand suggestions: unique catalog brands merged with brands.json names.
+  useEffect(() => {
+    api
+      .listProducts()
+      .then((d) => setCatalogBrands(d.products.map((p) => p.brand).filter(Boolean)))
+      .catch(() => {});
+  }, []);
+
+  const brandOptions = useMemo(() => {
+    const merged = new Set(
+      [...(meta.brands || []).map((b) => b.name), ...catalogBrands].filter(Boolean)
+    );
+    return Array.from(merged).sort((a, b) => a.localeCompare(b));
+  }, [meta.brands, catalogBrands]);
 
   useEffect(() => {
     if (isNew) return;
@@ -228,17 +245,13 @@ export default function ProductEdit({ mode }) {
           </select>
 
           <label className="label">Бренд</label>
-          <input
-            className="field mb-4"
-            list="brands"
+          <BrandCombobox
+            className="mb-4"
             value={form.brand}
-            onChange={(e) => set("brand", e.target.value)}
+            onChange={(v) => set("brand", v)}
+            options={brandOptions}
+            placeholder="Выберите из списка или введите свой"
           />
-          <datalist id="brands">
-            {meta.brands.map((b) => (
-              <option key={b.id} value={b.name} />
-            ))}
-          </datalist>
 
           <label className="label">Приоритет (порядок сортировки)</label>
           <input
@@ -251,15 +264,30 @@ export default function ProductEdit({ mode }) {
 
           <div className="flex flex-wrap gap-5">
             <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" checked={form.hidden} onChange={(e) => set("hidden", e.target.checked)} />
+              <input
+                type="checkbox"
+                className="h-4 w-4 rounded border-line accent-clinical"
+                checked={form.hidden}
+                onChange={(e) => set("hidden", e.target.checked)}
+              />
               Скрыт
             </label>
             <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" checked={form.featured} onChange={(e) => set("featured", e.target.checked)} />
+              <input
+                type="checkbox"
+                className="h-4 w-4 rounded border-line accent-clinical"
+                checked={form.featured}
+                onChange={(e) => set("featured", e.target.checked)}
+              />
               Рекомендуемый
             </label>
             <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" checked={form.isNew} onChange={(e) => set("isNew", e.target.checked)} />
+              <input
+                type="checkbox"
+                className="h-4 w-4 rounded border-line accent-clinical"
+                checked={form.isNew}
+                onChange={(e) => set("isNew", e.target.checked)}
+              />
               Новинка
             </label>
           </div>
