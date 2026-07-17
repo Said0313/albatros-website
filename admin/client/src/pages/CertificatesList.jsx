@@ -8,7 +8,6 @@ export default function CertificatesList() {
       api={certificatesApi}
       basePath="/certificates"
       thumb={(c) => c.image}
-      canHide={false}
       columns={[
         {
           key: "title",

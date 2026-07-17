@@ -99,9 +99,9 @@ export default function AboutPage() {
 
         <section id="certificates" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
-          {certificates.length > 0 ? (
+          {certificates.filter((c) => !c.hidden).length > 0 ? (
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
-              {certificates.map((c) => {
+              {certificates.filter((c) => !c.hidden).map((c) => {
                 const certTitle = locale === "uz" ? c.titleUz ?? c.title : c.title;
                 return (
                   <a

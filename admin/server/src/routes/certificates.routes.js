@@ -24,13 +24,17 @@ function buildRecord(body, existing) {
   setOpt("title");
   setOpt("titleUz");
   setOpt("file");
+  if (typeof body.hidden === "boolean") {
+    if (body.hidden) c.hidden = true;
+    else delete c.hidden;
+  }
   return c;
 }
 
 const router = makeContentRouter({
   filePath: CERTIFICATES_PATH,
   label: "certificate",
-  fieldOrder: ["id", "image", "title", "titleUz", "file"],
+  fieldOrder: ["id", "image", "title", "titleUz", "file", "hidden"],
   nameOf: (r) => r.title || r.id,
   buildRecord,
   validateCreate: (body) => {
@@ -43,7 +47,6 @@ const router = makeContentRouter({
   idBase: (body) => body.title,
   idFallback: "certificate",
   fileFields: { image: "single", file: "single" },
-  supportsHidden: false,
   uploads: {
     image: (buffer, body) => processPhoto(buffer, body.base, "images/certificates"),
     pdf: async (buffer, body) => savePdf(buffer, body.base, "files/certificates"),

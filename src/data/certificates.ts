@@ -12,6 +12,7 @@ export interface Certificate {
   title?: string;
   titleUz?: string;
   file?: string; // optional full document (PDF) under /public, e.g. "/files/certificates/iso-9001.pdf"
+  hidden?: boolean; // hidden certificates are not rendered on the site
 }
 
 export const certificates: Certificate[] = certificatesData;
