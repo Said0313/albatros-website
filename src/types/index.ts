@@ -33,6 +33,8 @@ export interface Brand {
   specialty?: string;
   specialtyUz?: string;
   descriptionUz?: string;
+  // Admin-managed flag; the public site does not render it yet.
+  hidden?: boolean;
 }
 
 export interface CompanyEvent {
@@ -44,6 +46,14 @@ export interface CompanyEvent {
   description?: string;
   titleUz?: string;
   descriptionUz?: string;
+  // Added for the events page redesign (all optional, older records lack them):
+  // type key (seminar | conference | congress | symposium | exhibition |
+  // installation | registration | other), photos under /images/events/,
+  // hidden flag and manual priority (lower number = higher on the page).
+  type?: string;
+  images?: string[];
+  hidden?: boolean;
+  priority?: number;
 }
 
 export interface Category {
