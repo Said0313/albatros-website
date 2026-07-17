@@ -48,4 +48,40 @@ export const api = {
     fd.append("baseSlug", baseSlug || "product");
     return request("/products/upload", { method: "POST", body: fd });
   },
+
+  // price list
+  priceListInfo: () => request("/pricelist"),
+  priceListUpload: (file) => {
+    const fd = new FormData();
+    fd.append("file", file);
+    return request("/pricelist", { method: "POST", body: fd });
+  },
 };
+
+// Generic resource API for the Phase 2 content types (partners, clients,
+// certificates, events). Mirrors the server's contentRouter contract.
+function resource(name) {
+  return {
+    list: () => request(`/${name}`),
+    get: (id) => request(`/${name}/${id}`),
+    create: (body) => request(`/${name}`, { method: "POST", body: JSON.stringify(body) }),
+    update: (id, body) =>
+      request(`/${name}/${id}`, { method: "PUT", body: JSON.stringify(body) }),
+    setVisibility: (id, hidden) =>
+      request(`/${name}/${id}/visibility`, { method: "PATCH", body: JSON.stringify({ hidden }) }),
+    reorder: (ids) => request(`/${name}/reorder`, { method: "POST", body: JSON.stringify({ ids }) }),
+    remove: (id) => request(`/${name}/${id}`, { method: "DELETE" }),
+    upload: (file, kind, base) => {
+      const fd = new FormData();
+      fd.append("file", file);
+      fd.append("kind", kind);
+      fd.append("base", base || "");
+      return request(`/${name}/upload`, { method: "POST", body: fd });
+    },
+  };
+}
+
+export const partnersApi = resource("partners");
+export const clientsApi = resource("clients");
+export const certificatesApi = resource("certificates");
+export const eventsApi = resource("events");

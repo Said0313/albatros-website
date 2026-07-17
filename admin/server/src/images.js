@@ -72,4 +72,100 @@ function absFromPublicPath(publicPath) {
   return path.join(PRODUCT_IMAGES_DIR, path.basename(publicPath));
 }
 
-module.exports = { processAndSave, deleteByPublicPath, absFromPublicPath, PUBLIC_PREFIX };
+// ── Phase 2 generic asset helpers ──────────────────────────────────────────
+// Unlike product photos (white 1000x1000 canvas), logos keep their own aspect
+// and transparency: trim the surrounding whitespace/transparent border, cap to
+// a web-friendly size, save as PNG (matches public/images/brands convention).
+
+const { SITE_ROOT } = require("./config");
+
+function safeName(base, fallback) {
+  const s = String(base || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return s || fallback;
+}
+
+function uniqueNameIn(dir, base, ext, fallback) {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const safe = safeName(base, fallback);
+  let name = `${safe}.${ext}`;
+  let i = 2;
+  while (fs.existsSync(path.join(dir, name))) {
+    name = `${safe}-${i}.${ext}`;
+    i += 1;
+  }
+  return name;
+}
+
+// publicDir e.g. "images/brands" -> file saved to public/images/brands/<name>.png,
+// returned reference is "/images/brands/<name>.png".
+async function processLogo(buffer, baseName, publicDir, { maxW = 600, maxH = 320 } = {}) {
+  const dir = path.join(SITE_ROOT, "public", ...publicDir.split("/"));
+  const name = uniqueNameIn(dir, baseName, "png", "logo");
+  const out = await sharp(buffer)
+    .trim({ threshold: 10 }) // drop uniform border (white or transparent)
+    .resize(maxW, maxH, { fit: "inside", withoutEnlargement: true })
+    .png()
+    .toBuffer();
+  fs.writeFileSync(path.join(dir, name), out);
+  return `/${publicDir}/${name}`;
+}
+
+// Web-friendly photo (events): fit inside 1600x1600, JPEG q82.
+async function processPhoto(buffer, baseName, publicDir) {
+  const dir = path.join(SITE_ROOT, "public", ...publicDir.split("/"));
+  const name = uniqueNameIn(dir, baseName, "jpg", "photo");
+  const out = await sharp(buffer)
+    .rotate() // respect EXIF orientation
+    .resize(1600, 1600, { fit: "inside", withoutEnlargement: true })
+    .flatten({ background: { r: 255, g: 255, b: 255 } })
+    .jpeg({ quality: 82 })
+    .toBuffer();
+  fs.writeFileSync(path.join(dir, name), out);
+  return `/${publicDir}/${name}`;
+}
+
+function isPdf(buffer) {
+  return buffer && buffer.length > 4 && buffer.slice(0, 5).toString("latin1") === "%PDF-";
+}
+
+function savePdf(buffer, baseName, publicDir) {
+  if (!isPdf(buffer)) throw new Error("not a PDF");
+  const dir = path.join(SITE_ROOT, "public", ...publicDir.split("/"));
+  const name = uniqueNameIn(dir, baseName, "pdf", "document");
+  fs.writeFileSync(path.join(dir, name), buffer);
+  return `/${publicDir}/${name}`;
+}
+
+// Delete any file under public/ by its site-absolute reference (/images/...,
+// /files/...). Refuses paths that escape public/.
+function deletePublicFile(publicPath) {
+  if (typeof publicPath !== "string" || !publicPath.startsWith("/")) return null;
+  const abs = path.resolve(path.join(SITE_ROOT, "public", "." + publicPath));
+  const publicRoot = path.resolve(path.join(SITE_ROOT, "public"));
+  if (!abs.startsWith(publicRoot + path.sep)) return null;
+  if (fs.existsSync(abs)) {
+    fs.unlinkSync(abs);
+    return abs;
+  }
+  return null;
+}
+
+function absPublicFile(publicPath) {
+  return path.resolve(path.join(SITE_ROOT, "public", "." + publicPath));
+}
+
+module.exports = {
+  processAndSave,
+  deleteByPublicPath,
+  absFromPublicPath,
+  PUBLIC_PREFIX,
+  processLogo,
+  processPhoto,
+  savePdf,
+  isPdf,
+  deletePublicFile,
+  absPublicFile,
+};

@@ -4,3 +4,4 @@ server/.env
 server/users.json
 server/uploads-tmp/
 client/dist
+*.log

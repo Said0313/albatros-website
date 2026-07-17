@@ -31,6 +31,16 @@ module.exports = {
   CATALOG_PATH,
   BRANDS_PATH,
   PRODUCT_IMAGES_DIR,
+  // Phase 2 content sources (all plain JSON arrays + their asset folders).
+  CLIENTS_PATH: path.join(SITE_ROOT, "src", "data", "clients.json"),
+  CERTIFICATES_PATH: path.join(SITE_ROOT, "src", "data", "certificates.json"),
+  EVENTS_PATH: path.join(SITE_ROOT, "src", "data", "events.json"),
+  BRAND_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "brands"),
+  CLIENT_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "clients"),
+  CERT_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "certificates"),
+  CERT_FILES_DIR: path.join(SITE_ROOT, "public", "files", "certificates"),
+  EVENT_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "events"),
+  PRICE_LIST_PATH: path.join(SITE_ROOT, "public", "price-list.pdf"),
   USERS_PATH: path.join(__dirname, "..", "users.json"),
   UPLOADS_TMP: path.join(__dirname, "..", "uploads-tmp"),
 };

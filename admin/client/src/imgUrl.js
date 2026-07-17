@@ -3,6 +3,8 @@
 // re-uploaded image with the same name refreshes in the UI.
 export function imgUrl(publicPath, bust) {
   if (!publicPath) return "";
-  const mapped = publicPath.replace(/^\/images\//, "/api/site-images/");
+  const mapped = publicPath
+    .replace(/^\/images\//, "/api/site-images/")
+    .replace(/^\/files\//, "/api/site-files/");
   return bust ? `${mapped}?v=${bust}` : mapped;
 }
