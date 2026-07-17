@@ -1,0 +1,6 @@
+# Admin panel: never commit dependencies, secrets, user hashes, temp uploads or builds
+**/node_modules
+server/.env
+server/users.json
+server/uploads-tmp/
+client/dist
