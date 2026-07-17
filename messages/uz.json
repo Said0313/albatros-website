@@ -116,7 +116,21 @@
   },
   "events": {
     "title": "Tadbirlar",
-    "pageSubtitle": "Konferensiyalar, seminarlar va kompaniyaning muhim tadbirlari."
+    "pageSubtitle": "Konferensiyalar, seminarlar va kompaniyaning muhim tadbirlari.",
+    "allYears": "Barcha yillar",
+    "allTypes": "Barcha turlar",
+    "empty": "Hech narsa topilmadi",
+    "photos": "Foto",
+    "types": {
+      "seminar": "Seminarlar",
+      "conference": "Konferensiyalar",
+      "congress": "Kongresslar",
+      "symposium": "Simpoziumlar",
+      "exhibition": "Koʻrgazmalar",
+      "installation": "Oʻrnatishlar",
+      "registration": "Roʻyxatdan oʻtkazish",
+      "other": "Boshqa"
+    }
   },
   "statsBar": {
     "founded": "tashkil etilgan yil",

@@ -17,7 +17,7 @@ export function EventsTimeline() {
         </div>
 
         <div className="mx-auto max-w-3xl">
-          {events.slice(0, 8).map((e, i) => (
+          {events.filter((e) => !e.hidden).slice(0, 8).map((e, i) => (
             <ScrollReveal key={e.id} delay={i * 0.08}>
               <div className="flex gap-5">
                 <div className="w-14 shrink-0 pt-1 text-right font-mono text-sm text-brand-red">{e.year}</div>
