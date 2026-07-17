@@ -49,6 +49,11 @@ export const api = {
     return request("/products/upload", { method: "POST", body: fd });
   },
 
+  // audit log
+  auditList: (limit = 100) => request(`/audit?limit=${limit}`),
+  auditDetails: (hash) => request(`/audit/${hash}`),
+  auditRevert: (hash) => request(`/audit/${hash}/revert`, { method: "POST" }),
+
   // price list
   priceListInfo: () => request("/pricelist"),
   priceListUpload: (file) => {

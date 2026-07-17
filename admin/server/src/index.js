@@ -13,6 +13,7 @@ const clientRoutes = require("./routes/clients.routes");
 const certificateRoutes = require("./routes/certificates.routes");
 const { router: eventRoutes } = require("./routes/events.routes");
 const pricelistRoutes = require("./routes/pricelist.routes");
+const auditRoutes = require("./routes/audit.routes");
 
 const app = express();
 
@@ -44,6 +45,7 @@ app.use("/api/clients", clientRoutes);
 app.use("/api/certificates", certificateRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/pricelist", pricelistRoutes);
+app.use("/api/audit", auditRoutes);
 
 app.use((req, res) => res.status(404).json({ error: "Не найдено." }));
 
