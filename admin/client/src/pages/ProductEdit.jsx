@@ -3,6 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import { api } from "../api";
 import { imgUrl } from "../imgUrl";
 import BrandCombobox from "../components/BrandCombobox.jsx";
+import DraftUz from "../components/DraftUz.jsx";
 
 const EMPTY = {
   name: "",
@@ -361,7 +362,14 @@ export default function ProductEdit({ mode }) {
               />
             </div>
             <div>
-              <label className="label">Краткое описание, UZ *</label>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Краткое описание, UZ *</label>
+                <DraftUz
+                  source={form.shortDescription}
+                  value={form.shortDescriptionUz}
+                  onChange={(v) => set("shortDescriptionUz", v)}
+                />
+              </div>
               <textarea
                 className="field mb-4 h-24"
                 value={form.shortDescriptionUz}
@@ -377,7 +385,14 @@ export default function ProductEdit({ mode }) {
               />
             </div>
             <div>
-              <label className="label">Полное описание, UZ</label>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Полное описание, UZ</label>
+                <DraftUz
+                  source={form.fullDescription}
+                  value={form.fullDescriptionUz}
+                  onChange={(v) => set("fullDescriptionUz", v)}
+                />
+              </div>
               <textarea
                 className="field h-40"
                 value={form.fullDescriptionUz}

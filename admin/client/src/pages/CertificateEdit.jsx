@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { certificatesApi } from "../api";
 import SingleFileUpload from "../components/SingleFileUpload.jsx";
+import DraftUz from "../components/DraftUz.jsx";
 
 const EMPTY = { image: "", title: "", titleUz: "", file: "" };
 
@@ -80,7 +81,10 @@ export default function CertificateEdit({ mode }) {
           <h2 className="mb-4 font-bold text-ink">Названия</h2>
           <label className="label">Название, RU *</label>
           <input className="field mb-4" value={form.title} onChange={(e) => set("title", e.target.value)} />
-          <label className="label">Название, UZ *</label>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="label mb-0">Название, UZ *</label>
+            <DraftUz source={form.title} value={form.titleUz} onChange={(v) => set("titleUz", v)} />
+          </div>
           <input className="field mb-4" value={form.titleUz} onChange={(e) => set("titleUz", e.target.value)} />
         </section>
 

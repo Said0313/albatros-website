@@ -14,6 +14,7 @@ const certificateRoutes = require("./routes/certificates.routes");
 const { router: eventRoutes } = require("./routes/events.routes");
 const pricelistRoutes = require("./routes/pricelist.routes");
 const auditRoutes = require("./routes/audit.routes");
+const translateRoutes = require("./routes/translate.routes");
 
 const app = express();
 
@@ -46,6 +47,7 @@ app.use("/api/certificates", certificateRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/pricelist", pricelistRoutes);
 app.use("/api/audit", auditRoutes);
+app.use("/api/translate-draft", translateRoutes);
 
 app.use((req, res) => res.status(404).json({ error: "Не найдено." }));
 

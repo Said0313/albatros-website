@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { eventsApi } from "../api";
 import { imgUrl } from "../imgUrl";
 import { EVENT_TYPE_RU, RU_MONTHS, wordCount } from "./eventTypes.js";
+import DraftUz from "../components/DraftUz.jsx";
 
 const EMPTY = {
   title: "",
@@ -166,7 +167,10 @@ export default function EventEdit({ mode }) {
           <label className="label">Название, RU *</label>
           <input className="field mb-4" value={form.title} onChange={(e) => set("title", e.target.value)} />
 
-          <label className="label">Название, UZ *</label>
+          <div className="mb-1 flex items-center justify-between">
+            <label className="label mb-0">Название, UZ *</label>
+            <DraftUz source={form.title} value={form.titleUz} onChange={(v) => set("titleUz", v)} />
+          </div>
           <input className="field mb-4" value={form.titleUz} onChange={(e) => set("titleUz", e.target.value)} />
 
           <div className="mb-4 grid grid-cols-2 gap-3">
@@ -299,9 +303,16 @@ export default function EventEdit({ mode }) {
               />
             </div>
             <div>
-              <div className="mb-1 flex items-center justify-between">
+              <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
                 <label className="label mb-0">Описание, UZ *</label>
-                <WordHint text={form.descriptionUz} />
+                <span className="inline-flex items-center gap-2">
+                  <DraftUz
+                    source={form.description}
+                    value={form.descriptionUz}
+                    onChange={(v) => set("descriptionUz", v)}
+                  />
+                  <WordHint text={form.descriptionUz} />
+                </span>
               </div>
               <textarea
                 className="field h-40"

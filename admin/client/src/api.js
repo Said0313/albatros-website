@@ -49,6 +49,13 @@ export const api = {
     return request("/products/upload", { method: "POST", body: fd });
   },
 
+  // UZ auto-draft
+  translateDraft: (text) =>
+    request("/translate-draft", {
+      method: "POST",
+      body: JSON.stringify({ text, from: "ru", to: "uz" }),
+    }),
+
   // audit log
   auditList: (limit = 100) => request(`/audit?limit=${limit}`),
   auditDetails: (hash) => request(`/audit/${hash}`),

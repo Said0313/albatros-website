@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { partnersApi } from "../api";
 import SingleFileUpload from "../components/SingleFileUpload.jsx";
+import DraftUz from "../components/DraftUz.jsx";
 
 const EMPTY = {
   name: "",
@@ -150,7 +151,14 @@ export default function PartnerEdit({ mode }) {
               />
             </div>
             <div>
-              <label className="label">Специализация (краткое), UZ</label>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Специализация (краткое), UZ</label>
+                <DraftUz
+                  source={form.specialty}
+                  value={form.specialtyUz}
+                  onChange={(v) => set("specialtyUz", v)}
+                />
+              </div>
               <input
                 className="field mb-4"
                 value={form.specialtyUz}
@@ -166,7 +174,14 @@ export default function PartnerEdit({ mode }) {
               />
             </div>
             <div>
-              <label className="label">Описание (полное), UZ</label>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Описание (полное), UZ</label>
+                <DraftUz
+                  source={form.description}
+                  value={form.descriptionUz}
+                  onChange={(v) => set("descriptionUz", v)}
+                />
+              </div>
               <textarea
                 className="field h-32"
                 value={form.descriptionUz}

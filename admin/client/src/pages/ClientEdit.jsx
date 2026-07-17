@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { clientsApi } from "../api";
 import SingleFileUpload from "../components/SingleFileUpload.jsx";
+import DraftUz from "../components/DraftUz.jsx";
 
 const EMPTY = {
   name: "",
@@ -131,7 +132,14 @@ export default function ClientEdit({ mode }) {
               />
             </div>
             <div>
-              <label className="label">Описание, UZ</label>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Описание, UZ</label>
+                <DraftUz
+                  source={form.description}
+                  value={form.descriptionUz}
+                  onChange={(v) => set("descriptionUz", v)}
+                />
+              </div>
               <textarea
                 className="field h-36"
                 value={form.descriptionUz}
