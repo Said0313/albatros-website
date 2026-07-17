@@ -9,6 +9,7 @@ import ClientsList from "./pages/ClientsList.jsx";
 import ClientEdit from "./pages/ClientEdit.jsx";
 import CertificatesList from "./pages/CertificatesList.jsx";
 import CertificateEdit from "./pages/CertificateEdit.jsx";
+import PriceListPage from "./pages/PriceListPage.jsx";
 
 function RequireAuth({ children }) {
   const { user, loading } = useAuth();
@@ -27,6 +28,7 @@ const NAV = [
   { to: "/partners", label: "Партнёры" },
   { to: "/clients", label: "Клиенты" },
   { to: "/certificates", label: "Сертификаты" },
+  { to: "/pricelist", label: "Прайс-лист" },
 ];
 
 function Shell({ children }) {
@@ -94,6 +96,7 @@ export default function App() {
       <Route path="/certificates" element={guard(<CertificatesList />)} />
       <Route path="/certificates/new" element={guard(<CertificateEdit mode="new" />)} />
       <Route path="/certificates/:id" element={guard(<CertificateEdit mode="edit" />)} />
+      <Route path="/pricelist" element={guard(<PriceListPage />)} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
