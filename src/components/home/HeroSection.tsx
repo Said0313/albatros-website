@@ -23,16 +23,7 @@ export function HeroSection() {
 
       <div className="container-x relative z-10 py-28">
         <div className="mx-auto max-w-4xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15, duration: 0.6 }}
-            className="inline-flex items-center rounded-full border border-bg-border bg-white/70 px-4 py-1.5 text-[13px] text-text-secondary shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
-          >
-            {t("eyebrow")}
-          </motion.div>
-
-          <h1 className="mt-7 font-display text-[clamp(28px,7.5vw,56px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[76px]">
+          <h1 className="font-display text-[clamp(28px,7.5vw,56px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[76px]">
             <motion.span
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}

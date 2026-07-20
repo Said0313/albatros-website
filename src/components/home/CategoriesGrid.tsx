@@ -22,44 +22,30 @@ export function CategoriesGrid() {
   return (
     <section style={{ background: "#FBFCFE", fontFamily: "var(--font-inter), sans-serif", padding: "80px 24px 96px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "flex-end",
-            justifyContent: "space-between",
-            gap: 32,
-            flexWrap: "wrap",
-            marginBottom: 48,
-          }}
-        >
-          <div style={{ flex: "1 1 520px" }}>
-            <div
-              style={{
-                fontFamily: "var(--font-mono), var(--font-inter), monospace",
-                fontSize: 13,
-                letterSpacing: ".18em",
-                color: "#2E8AA0",
-                marginBottom: 18,
-              }}
-            >
-              {t("eyebrow", { count: items.length })}
-            </div>
-            <h2
-              style={{
-                fontFamily: "var(--font-inter), sans-serif",
-                fontWeight: 800,
-                fontSize: "clamp(30px,7vw,46px)",
-                lineHeight: 1.05,
-                color: "#0C1B3A",
-                margin: 0,
-              }}
-            >
-              {t("title")}
-            </h2>
+        <div style={{ marginBottom: 48 }}>
+          <div
+            style={{
+              fontFamily: "var(--font-mono), var(--font-inter), monospace",
+              fontSize: 13,
+              letterSpacing: ".18em",
+              color: "#2E8AA0",
+              marginBottom: 18,
+            }}
+          >
+            {t("eyebrow", { count: items.length })}
           </div>
-          <p style={{ flex: "1 1 320px", color: "#5E6E8F", fontSize: 16, lineHeight: 1.6, maxWidth: 420, margin: 0 }}>
-            {t("intro")}
-          </p>
+          <h2
+            style={{
+              fontFamily: "var(--font-inter), sans-serif",
+              fontWeight: 800,
+              fontSize: "clamp(30px,7vw,46px)",
+              lineHeight: 1.05,
+              color: "#0C1B3A",
+              margin: 0,
+            }}
+          >
+            {t("title")}
+          </h2>
         </div>
 
         {/* General directions (top level of the taxonomy) — click to open the catalog filtered */}
