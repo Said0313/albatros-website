@@ -5,7 +5,7 @@ Usage: python scripts/place-real-photos.py
 from PIL import Image
 import numpy as np, os
 
-SRC = r"Photos/Photos"
+SRC = "Photos"
 DST = "public/images/products"
 CANVAS = 1000          # uniform square
 CONTENT_MAX = 900      # device fits within this box; rest is white padding
@@ -68,8 +68,14 @@ def conservative_trim(im):
     return im.crop((int(left), int(top), int(right) + 1, int(bot) + 1))
 
 
+placed, skipped = 0, 0
 for fname, slug in mapping.items():
     src = os.path.join(SRC, fname)
+    if not os.path.exists(src):
+        # Already processed into DST previously; raw original was removed as a duplicate.
+        print(f"skip    {fname:34} -> not in {SRC}/ (already processed?)")
+        skipped += 1
+        continue
     im = Image.open(src).convert("RGBA")
     flat = Image.new("RGBA", im.size, BG); flat.alpha_composite(im); im = flat
     im = conservative_trim(im)
@@ -79,6 +85,7 @@ for fname, slug in mapping.items():
     canvas = Image.new("RGBA", (CANVAS, CANVAS), BG)
     canvas.alpha_composite(im, ((CANVAS - im.width) // 2, (CANVAS - im.height) // 2))
     canvas.convert("RGB").save(os.path.join(DST, f"{slug}.png"), "PNG")
-    print(f"placed {fname:34} -> {slug}.png  (device {im.width}x{im.height} on {CANVAS}x{CANVAS})")
+    print(f"placed  {fname:34} -> {slug}.png  (device {im.width}x{im.height} on {CANVAS}x{CANVAS})")
+    placed += 1
 
-print(f"\nDone: {len(mapping)} photos placed.")
+print(f"\nDone: {placed} photos placed, {skipped} skipped (not found in {SRC}/).")
