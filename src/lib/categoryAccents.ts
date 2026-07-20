@@ -1,6 +1,6 @@
 // Per-sub-category accent colors. A curated, muted palette in the brand family
 // (controlled saturation, medium tone) so the tiles read as intentional and
-// premium — not a rainbow. Keys are the INTERNAL RU category names (same keys
+// premium, not a rainbow. Keys are the INTERNAL RU category names (same keys
 // used across catalog.json / URLs); values are a single accent hex applied
 // subtly (thin top border on a tile, a small dot next to the brand label).
 //

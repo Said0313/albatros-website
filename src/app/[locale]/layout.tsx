@@ -28,7 +28,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400"], variable: "--
 // Bounded is the display face for headings in BOTH locales. Verified with
 // fontTools: the variable file carries the FULL Cyrillic block (all RU letters)
 // plus the Uzbek modifier letters ʻ/ʼ (U+02BB / U+02BC), so RU and UZ headings
-// both render in real Bounded — no missing-glyph squares. Weight axis 200–900
+// both render in real Bounded (no missing-glyph squares). Weight axis 200-900
 // covers the 700/800 heading weights; Inter stays the fallback.
 const bounded = localFont({
   src: "../../fonts/Bounded-Variable.ttf",
