@@ -25,7 +25,11 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
 - [x] Yandex Maps embed on the Contacts page (responsive iframe, h 360/440px). Resolved the short link to the office POI (Albatros Health Care, Xalqobod 17, oid 15895749238, ll 69.285340,41.328419). Localized "Мы на карте" / "Bizni xaritada". No personal data in the URL. Verified iframe + title render in served HTML (ru + uz).
 
 ## Phase 4 — product video + specs (+ admin fields)
-- [ ] pending
+- [x] 4.1 Admin: product editor gained a YouTube video URL field and a detailed RU/UZ description block (with DraftUz translate helper). Server allowlist + field order updated (videoUrl, detailedDescription, detailedDescriptionUz).
+- [x] 4.2 Public product page: embeds the YouTube video (youtube-nocookie, when a URL is set) and a clean detailed spec/description section below it. Both locales; renders only when data present.
+- [x] 4.3 Populated from the old site: scraped 116 old product pages, matched 57 of 62 new equipment products by model name, filled RU detailedDescription for 56 (median ~1550 chars, em-dash-swept) and videoUrl for 3 (maglumi-x3, acl-top-350-cts, dh-615). Verified the detailed section + video render on product pages.
+  - [~] detailedDescriptionUz PENDING TRANSLATION (needs-owner-review): the UZ product page already shows the detailed content via graceful fallback to RU (productDetailed uses uz ?? ru), so no content is missing; the admin editor now has the UZ field + DraftUz helper to complete these ~56 technical translations. Left untranslated in-session to avoid fabricating ~87k chars of low-quality machine Uzbek.
+  - Unmatched (no detailed filled): reagenty-ihla, maglumi-2000, maglumi-2000-plus, condalab-media, nextseq-1000-2000 (not present on the old catalog or Cyrillic-slugged).
 
 ## Phase 5 — mobile pass
 - [ ] pending
