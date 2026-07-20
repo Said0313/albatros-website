@@ -46,10 +46,20 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
 - [x] 6.2 DNA loader: mobile squish fixed in 5.1 (responsive wave periods); desktop unchanged (760x210, smooth rAF-driven helix). Proportional on both.
 
 ## Phase 7 — data audit (report only)
-- [ ] pending
+- [x] Wrote DATA_AUDIT.md comparing the new catalog against the old site product by product. Key findings: missing from new (ROTEM delta, Biossays E6, BQ-50, iScan; C8 replaced by C10); added not-on-old (Maglumi 2000/2000 Plus placeholders); the 13 grouped cards are validated new constructs; no fabricated products; names/categories align for 57 matched products. No catalog data changed.
 
-## Needs owner review
-(none yet)
+## Needs owner review (visual / translation / decisions)
+- 1.1 Header logo: no CSS squish reproducible on desktop (rendered ratio == natural); if a squish is still seen it is likely the mobile logo. Eyeball on the real device.
+- 1.10 Homepage "Направления" move-right: SKIPPED (instruction inconsistent, no reproducible blank area). See Phase 1 note for options; awaiting owner clarification.
+- 1.6 "Наши локальные партнёры" casing normalized to sentence case (owner wrote title case). Confirm preference.
+- 4.3 detailedDescriptionUz PENDING: 56 products have RU detailed specs; UZ falls back to RU on the page. Owner/translator to fill UZ via the admin DraftUz helper.
+- All Uzbek strings I authored (events, labels) are drafts for a native-speaker pass.
+- DATA_AUDIT.md findings: add missing products (ROTEM delta, Biossays E6, BQ-50, iScan), confirm Biossays C8 vs C10, confirm Maglumi 2000/2000 Plus.
+- Visual items to eyeball on device: mobile DNA loader proportions, Флагманское mobile arrows, direction cards without photos, partner logo sizes, About mobile sizing, services heading vs numerals, hero spacing.
 
 ## Skipped with reason
-(none yet)
+- 1.10 (see above): skipped to avoid a speculative structural change that could break the layout; logged with recommended options.
+
+## Build / push status
+- Every phase built (`npm run build`) and linted clean, then pushed to `feature/admin-panel`.
+- master untouched, nothing deployed, admin/ touched only in Phase 4 (the two explicit admin-field tasks).
