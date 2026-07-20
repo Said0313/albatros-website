@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 let playedThisLoad = false;
 
 /**
- * DNA intro splash — the Claude Design beaded double-helix (canvas), LIGHT themed.
+ * DNA intro splash - the Claude Design beaded double-helix (canvas), LIGHT themed.
  * Mounts on TOP of the inline first-paint pre-layer (#alb-pre, light bg + logo)
  * and removes it once this canvas version takes over, so the user never sees a
  * white screen: branded bg+logo paints in the initial HTML, the helix animates a
@@ -53,7 +53,7 @@ export function Splash() {
     }
     playedThisLoad = true;
     sessionStorage.setItem("alb_splash", "1");
-    // This canvas version now owns the screen — remove the inline pre-layer.
+    // This canvas version now owns the screen - remove the inline pre-layer.
     dropPre();
     const fadeStart = reduced ? 1.8 : 2.7;
 

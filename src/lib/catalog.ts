@@ -32,7 +32,7 @@ export const categories: Category[] = [
  * Diagnostic directions for the photo-card grid (ported from Claude Design).
  * `img` = each category's FLAGSHIP PRODUCT photo from /public/images/products
  * (already normalized to a uniform 1000×1000 white canvas, so every card shows
- * the device at a consistent scale and depicts the right equipment — the raw
+ * the device at a consistent scale and depicts the right equipment - the raw
  * assets/dir/* images were inconsistently framed and a few were mismatched).
  * `brand` = correct flagship brand. Counts are computed live via categoryCount().
  */

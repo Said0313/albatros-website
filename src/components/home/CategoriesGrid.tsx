@@ -8,7 +8,7 @@ import { categoryAccent } from "@/lib/categoryAccents";
 import { categoryLabel } from "@/data/i18n";
 
 /**
- * "Направления диагностики" — photo-card grid ported pixel-for-pixel from the
+ * "Направления диагностики" - photo-card grid ported pixel-for-pixel from the
  * Claude Design "Albatros Directions" prototype. Only directions that have at
  * least one catalog product are shown; counts are computed live from the catalog.
  */
@@ -49,7 +49,7 @@ export function CategoriesGrid() {
           </h2>
         </div>
 
-        {/* General directions (top level of the taxonomy) — click to open the catalog filtered */}
+        {/* General directions (top level of the taxonomy) - click to open the catalog filtered */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(248px,1fr))", gap: 14, marginBottom: 34, alignItems: "stretch" }}>
           {generalDirections.map((g) => (
             <Link

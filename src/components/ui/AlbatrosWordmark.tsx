@@ -2,7 +2,7 @@ import Image from "next/image";
 
 /**
  * Albatros wordmark set in the SITE typography (Inter) with the REAL DNA helix
- * mark (`/images/albatros-helix-mark.png`, transparent) — fixes the raster
+ * mark (`/images/albatros-helix-mark.png`, transparent) - fixes the raster
  * logo's font clash next to the heading text while using the authentic mark glyph.
  */
 export function AlbatrosWordmark({
@@ -15,7 +15,7 @@ export function AlbatrosWordmark({
   className?: string;
 }) {
   // Sizes scale down on small screens (clamp max = the requested size, so desktop
-  // is pixel-identical) — fixes "ALBATROS" clipping out of narrow mobile columns.
+  // is pixel-identical) - fixes "ALBATROS" clipping out of narrow mobile columns.
   const markH = `clamp(${(markSize * 0.72).toFixed(1)}px, 10.5vw, ${markSize}px)`;
   const mainSize = `clamp(${(textSize * 0.62).toFixed(1)}px, 7.5vw, ${textSize}px)`;
   const subSize = `clamp(${(textSize * 0.62 * 0.26).toFixed(2)}px, 1.95vw, ${(textSize * 0.26).toFixed(2)}px)`;

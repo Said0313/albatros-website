@@ -14,7 +14,7 @@ interface P {
 
 /**
  * Hero particle/network background (light theme). Dots ALWAYS drift and pulse
- * (ambient branding the owner wants — not gated by prefers-reduced-motion).
+ * (ambient branding the owner wants - not gated by prefers-reduced-motion).
  * Nearby dots are connected by faint blue lines; on hover, dots within ~160px of
  * the cursor brighten/enlarge and brand-red lines reach to the cursor. Pure
  * canvas + rAF.
@@ -53,7 +53,7 @@ export default function DNACanvas() {
       vy: (Math.random() - 0.5) * 0.35,
       r: 1.8 + Math.random() * 1.4,
       pulse: Math.random() * 6.3,
-      red: i % 3 === 0, // ~1/3 red dots, rest blue — keeps the current look
+      red: i % 3 === 0, // ~1/3 red dots, rest blue - keeps the current look
     }));
 
     const onResize = () => measure();

@@ -6,7 +6,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Компактный иммунохемилюминесцентный анализатор для небольших лабораторий.",
-    "fullDescription": "Maglumi X3 — компактная настольная система иммунохемилюминесцентного анализа (ИХЛА) от SNIBE. Идеальное решение для лабораторий с умеренной нагрузкой, обеспечивающее доступ к панели из 260 параметров. SNIBE — мировой лидер с 30-летней историей, представленный в 163 странах, с более чем 40 000 установленных анализаторов. №1 в Узбекистане по ИХЛА.",
+    "fullDescription": "Maglumi X3, компактная настольная система иммунохемилюминесцентного анализа (ИХЛА) от SNIBE. Идеальное решение для лабораторий с умеренной нагрузкой, обеспечивающее доступ к панели из 260 параметров. SNIBE, мировой лидер с 30-летней историей, представленный в 163 странах, с более чем 40 000 установленных анализаторов. №1 в Узбекистане по ИХЛА.",
     "specifications": [
       {
         "label": "Производительность",
@@ -39,7 +39,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Kichik laboratoriyalar uchun ixcham immunoxemilyuminessent analizator.",
-    "fullDescriptionUz": "Maglumi X3 — SNIBE kompaniyasining ixcham stol usti immunoxemilyuminessent tahlil (IXLA) tizimi. Oʻrtacha yuklamali laboratoriyalar uchun ideal yechim, 260 parametrli panelga kirish imkonini beradi. SNIBE — 30 yillik tarixga ega jahon yetakchisi, 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda IXLA boʻyicha №1.",
+    "fullDescriptionUz": "Maglumi X3, SNIBE kompaniyasining ixcham stol usti immunoxemilyuminessent tahlil (IXLA) tizimi. Oʻrtacha yuklamali laboratoriyalar uchun ideal yechim, 260 parametrli panelga kirish imkonini beradi. SNIBE, 30 yillik tarixga ega jahon yetakchisi, 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda IXLA boʻyicha №1.",
     "hidden": false
   },
   {
@@ -49,7 +49,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Высокопроизводительный ИХЛА-анализатор для средних лабораторий.",
-    "fullDescription": "Maglumi X6 — производительная система ИХЛА от SNIBE для средних и крупных лабораторий. Расширенная загрузка образцов и реагентов в сочетании с непрерывной работой обеспечивает высокую пропускную способность при стабильном качестве результатов.",
+    "fullDescription": "Maglumi X6, производительная система ИХЛА от SNIBE для средних и крупных лабораторий. Расширенная загрузка образцов и реагентов в сочетании с непрерывной работой обеспечивает высокую пропускную способность при стабильном качестве результатов.",
     "specifications": [
       {
         "label": "Производительность",
@@ -82,7 +82,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Oʻrta laboratoriyalar uchun yuqori unumdor IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi X6 — oʻrta va yirik laboratoriyalar uchun SNIBE kompaniyasining unumdor IXLA tizimi. Namuna va reagentlarni kengaytirilgan yuklash uzluksiz ishlash bilan birgalikda barqaror natija sifatida yuqori oʻtkazuvchanlikni taʼminlaydi."
+    "fullDescriptionUz": "Maglumi X6, oʻrta va yirik laboratoriyalar uchun SNIBE kompaniyasining unumdor IXLA tizimi. Namuna va reagentlarni kengaytirilgan yuklash uzluksiz ishlash bilan birgalikda barqaror natija sifatida yuqori oʻtkazuvchanlikni taʼminlaydi."
   },
   {
     "id": "maglumi-x8",
@@ -91,7 +91,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Производительная ИХЛА-платформа для крупных лабораторий.",
-    "fullDescription": "Maglumi X8 — высокопроизводительный иммунохемилюминесцентный анализатор для крупных клинико-диагностических лабораторий. Большой запас образцов и реагентов на борту, технология STAT-X для срочных проб.",
+    "fullDescription": "Maglumi X8, высокопроизводительный иммунохемилюминесцентный анализатор для крупных клинико-диагностических лабораторий. Большой запас образцов и реагентов на борту, технология STAT-X для срочных проб.",
     "specifications": [
       {
         "label": "Производительность",
@@ -124,7 +124,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Yirik laboratoriyalar uchun unumdor IXLA-platforma.",
-    "fullDescriptionUz": "Maglumi X8 — yirik klinik-diagnostika laboratoriyalari uchun yuqori unumdor immunoxemilyuminessent analizator. Bortda namuna va reagentlarning katta zaxirasi, shoshilinch namunalar uchun STAT-X texnologiyasi."
+    "fullDescriptionUz": "Maglumi X8, yirik klinik-diagnostika laboratoriyalari uchun yuqori unumdor immunoxemilyuminessent analizator. Bortda namuna va reagentlarning katta zaxirasi, shoshilinch namunalar uchun STAT-X texnologiyasi."
   },
   {
     "id": "maglumi-x10",
@@ -133,7 +133,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Флагманский ИХЛА-анализатор производительностью до 1000 тестов/час.",
-    "fullDescription": "Maglumi X10 — флагман линейки SNIBE Maglumi X-серии. Максимальная производительность до 1000 тестов в час, рекордная загрузка образцов и реагентов. Предназначен для крупнейших лабораторий и лабораторных сетей. Может объединяться в трек-систему Biolumi CX.",
+    "fullDescription": "Maglumi X10, флагман линейки SNIBE Maglumi X-серии. Максимальная производительность до 1000 тестов в час, рекордная загрузка образцов и реагентов. Предназначен для крупнейших лабораторий и лабораторных сетей. Может объединяться в трек-систему Biolumi CX.",
     "specifications": [
       {
         "label": "Производительность",
@@ -166,7 +166,7 @@
     "featured": true,
     "isNew": true,
     "shortDescriptionUz": "Soatiga 1000 tagacha testli flagman IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi X10 — SNIBE Maglumi X-seriyasining flagmani. Soatiga 1000 testgacha maksimal unumdorlik, namuna va reagentlarni rekord darajada yuklash. Eng yirik laboratoriyalar va laboratoriya tarmoqlari uchun moʻljallangan. Biolumi CX trek-tizimiga birlashtirilishi mumkin."
+    "fullDescriptionUz": "Maglumi X10, SNIBE Maglumi X-seriyasining flagmani. Soatiga 1000 testgacha maksimal unumdorlik, namuna va reagentlarni rekord darajada yuklash. Eng yirik laboratoriyalar va laboratoriya tarmoqlari uchun moʻljallangan. Biolumi CX trek-tizimiga birlashtirilishi mumkin."
   },
   {
     "id": "reagenty-ihla",
@@ -206,7 +206,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Компактный ИХЛА-анализатор для небольших лабораторий.",
-    "fullDescription": "Maglumi 600 — компактный иммунохемилюминесцентный анализатор SNIBE для количественного анализа широкого спектра диагностических тестов с пропускной способностью, оптимальной для небольших лабораторий. Флэш-хемилюминесцентная технология на основе ABEI-меток и магнитных микрочастиц.",
+    "fullDescription": "Maglumi 600, компактный иммунохемилюминесцентный анализатор SNIBE для количественного анализа широкого спектра диагностических тестов с пропускной способностью, оптимальной для небольших лабораторий. Флэш-хемилюминесцентная технология на основе ABEI-меток и магнитных микрочастиц.",
     "specifications": [
       {
         "label": "Производительность",
@@ -228,7 +228,7 @@
     "isNew": false,
     "originalUrl": "https://www.albatros.uz/product/maglumi_600-0i5W7",
     "shortDescriptionUz": "Kichik laboratoriyalar uchun ixcham IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi 600 — kichik laboratoriyalar uchun optimal oʻtkazuvchanlikka ega keng turdagi diagnostik testlarni miqdoriy tahlil qilish uchun SNIBE kompakt immunoxemilyuminessent analizatori. ABEI belgilari va magnit mikrozarrachalariga asoslangan flesh-xemilyuminessent texnologiya."
+    "fullDescriptionUz": "Maglumi 600, kichik laboratoriyalar uchun optimal oʻtkazuvchanlikka ega keng turdagi diagnostik testlarni miqdoriy tahlil qilish uchun SNIBE kompakt immunoxemilyuminessent analizatori. ABEI belgilari va magnit mikrozarrachalariga asoslangan flesh-xemilyuminessent texnologiya."
   },
   {
     "id": "maglumi-800",
@@ -237,7 +237,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Настольный ИХЛА-анализатор с производительностью 180 тестов/час.",
-    "fullDescription": "Maglumi 800 — настольный иммунохемилюминесцентный анализатор SNIBE для качественного и количественного анализа широкого спектра диагностических тестов с хорошей пропускной способностью. Безферментная флэш-хемилюминесценция на ABEI-метках, стабильных в кислых и щелочных буферах, и сепарация на магнитных наночастицах.",
+    "fullDescription": "Maglumi 800, настольный иммунохемилюминесцентный анализатор SNIBE для качественного и количественного анализа широкого спектра диагностических тестов с хорошей пропускной способностью. Безферментная флэш-хемилюминесценция на ABEI-метках, стабильных в кислых и щелочных буферах, и сепарация на магнитных наночастицах.",
     "specifications": [
       {
         "label": "Производительность",
@@ -271,7 +271,7 @@
     "isNew": false,
     "originalUrl": "https://www.albatros.uz/product/maglumi_800-ije7V",
     "shortDescriptionUz": "Soatiga 180 testli stol usti IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi 800 — yaxshi oʻtkazuvchanlikka ega keng turdagi diagnostik testlarni sifat va miqdor jihatdan tahlil qilish uchun SNIBE stol usti immunoxemilyuminessent analizatori. Kislotali va ishqorli buferlarda barqaror ABEI belgilaridagi fermentsiz flesh-xemilyuminessensiya va magnit nanozarrachalarda separatsiya."
+    "fullDescriptionUz": "Maglumi 800, yaxshi oʻtkazuvchanlikka ega keng turdagi diagnostik testlarni sifat va miqdor jihatdan tahlil qilish uchun SNIBE stol usti immunoxemilyuminessent analizatori. Kislotali va ishqorli buferlarda barqaror ABEI belgilaridagi fermentsiz flesh-xemilyuminessensiya va magnit nanozarrachalarda separatsiya."
   },
   {
     "id": "maglumi-2000",
@@ -280,7 +280,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Высокопроизводительный ИХЛА-анализатор для средних и крупных лабораторий.",
-    "fullDescription": "Maglumi 2000 — высокопроизводительный иммунохемилюминесцентный анализатор SNIBE для средних и крупных лабораторий. Непрерывная загрузка проб и реагентов, флэш-хемилюминесценция на ABEI-метках и магнитных микрочастицах.",
+    "fullDescription": "Maglumi 2000, высокопроизводительный иммунохемилюминесцентный анализатор SNIBE для средних и крупных лабораторий. Непрерывная загрузка проб и реагентов, флэш-хемилюминесценция на ABEI-метках и магнитных микрочастицах.",
     "specifications": [
       {
         "label": "Производительность",
@@ -299,7 +299,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Oʻrta va yirik laboratoriyalar uchun yuqori unumdor IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi 2000 — oʻrta va yirik laboratoriyalar uchun SNIBE yuqori unumdor immunoxemilyuminessent analizatori. Namuna va reagentlarni uzluksiz yuklash, ABEI belgilari va magnit mikrozarrachalarida flesh-xemilyuminessensiya."
+    "fullDescriptionUz": "Maglumi 2000, oʻrta va yirik laboratoriyalar uchun SNIBE yuqori unumdor immunoxemilyuminessent analizatori. Namuna va reagentlarni uzluksiz yuklash, ABEI belgilari va magnit mikrozarrachalarida flesh-xemilyuminessensiya."
   },
   {
     "id": "maglumi-2000-plus",
@@ -308,7 +308,7 @@
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Высокопроизводительный ИХЛА-анализатор для крупных лабораторий.",
-    "fullDescription": "Maglumi 2000 Plus — усовершенствованный высокопроизводительный иммунохемилюминесцентный анализатор SNIBE с увеличенной пропускной способностью для крупных лабораторий и потоковых исследований. Флэш-хемилюминесцентная технология на основе ABEI-меток и магнитных микрочастиц.",
+    "fullDescription": "Maglumi 2000 Plus, усовершенствованный высокопроизводительный иммунохемилюминесцентный анализатор SNIBE с увеличенной пропускной способностью для крупных лабораторий и потоковых исследований. Флэш-хемилюминесцентная технология на основе ABEI-меток и магнитных микрочастиц.",
     "specifications": [
       {
         "label": "Производительность",
@@ -327,7 +327,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Yirik laboratoriyalar uchun yuqori unumdor IXLA-analizator.",
-    "fullDescriptionUz": "Maglumi 2000 Plus — yirik laboratoriyalar va oqimli tadqiqotlar uchun kengaytirilgan oʻtkazuvchanlikka ega SNIBE takomillashtirilgan yuqori unumdor immunoxemilyuminessent analizatori. ABEI belgilari va magnit mikrozarrachalariga asoslangan flesh-xemilyuminessent texnologiya."
+    "fullDescriptionUz": "Maglumi 2000 Plus, yirik laboratoriyalar va oqimli tadqiqotlar uchun kengaytirilgan oʻtkazuvchanlikka ega SNIBE takomillashtirilgan yuqori unumdor immunoxemilyuminessent analizatori. ABEI belgilari va magnit mikrozarrachalariga asoslangan flesh-xemilyuminessent texnologiya."
   },
   {
     "id": "biossays-240-plus",
@@ -336,7 +336,7 @@
     "category": "Биохимия",
     "brand": "SNIBE",
     "shortDescription": "Компактный настольный биохимический анализатор открытого типа 2-в-1.",
-    "fullDescription": "Biossays 240 Plus — компактный настольный биохимический анализатор открытого типа, совмещённый с электролитным модулем (2 в 1). Панель из 100+ параметров: липиды, функция почек и печени, белки, ревматизм, ионы, анемия, диабет, кардиология.",
+    "fullDescription": "Biossays 240 Plus, компактный настольный биохимический анализатор открытого типа, совмещённый с электролитным модулем (2 в 1). Панель из 100+ параметров: липиды, функция почек и печени, белки, ревматизм, ионы, анемия, диабет, кардиология.",
     "specifications": [
       {
         "label": "Производительность",
@@ -365,7 +365,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Ochiq tipdagi ixcham stol usti biokimyoviy analizator (2-in-1).",
-    "fullDescriptionUz": "Biossays 240 Plus — elektrolit moduli bilan birlashtirilgan (2-in-1) ochiq tipdagi ixcham stol usti biokimyoviy analizator. 100+ parametrli panel: lipidlar, buyrak va jigar funksiyasi, oqsillar, revmatizm, ionlar, anemiya, diabet, kardiologiya."
+    "fullDescriptionUz": "Biossays 240 Plus, elektrolit moduli bilan birlashtirilgan (2-in-1) ochiq tipdagi ixcham stol usti biokimyoviy analizator. 100+ parametrli panel: lipidlar, buyrak va jigar funksiyasi, oqsillar, revmatizm, ionlar, anemiya, diabet, kardiologiya."
   },
   {
     "id": "biossays-c10",
@@ -374,7 +374,7 @@
     "category": "Биохимия",
     "brand": "SNIBE",
     "shortDescription": "Мощная интеллектуальная биохимическая система до 2000 тестов/час.",
-    "fullDescription": "Biossays C10 — мощная и интеллектуальная биохимическая система от SNIBE. Производительность по биохимии до 2000 тестов/час плюс электролитный модуль 1000 тестов/час. Возможность добавления decapper-модуля для автоматического снятия крышек.",
+    "fullDescription": "Biossays C10, мощная и интеллектуальная биохимическая система от SNIBE. Производительность по биохимии до 2000 тестов/час плюс электролитный модуль 1000 тестов/час. Возможность добавления decapper-модуля для автоматического снятия крышек.",
     "specifications": [
       {
         "label": "Биохимия",
@@ -399,7 +399,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "Soatiga 2000 tagacha testli kuchli intellektual biokimyoviy tizim.",
-    "fullDescriptionUz": "Biossays C10 — SNIBE kompaniyasining kuchli va intellektual biokimyoviy tizimi. Biokimyo boʻyicha soatiga 2000 testgacha unumdorlik, qoʻshimcha elektrolit moduli soatiga 1000 test. Qopqoqlarni avtomatik olib tashlash uchun decapper-modulini qoʻshish imkoniyati."
+    "fullDescriptionUz": "Biossays C10, SNIBE kompaniyasining kuchli va intellektual biokimyoviy tizimi. Biokimyo boʻyicha soatiga 2000 testgacha unumdorlik, qoʻshimcha elektrolit moduli soatiga 1000 test. Qopqoqlarni avtomatik olib tashlash uchun decapper-modulini qoʻshish imkoniyati."
   },
   {
     "id": "biolumi-cx-solution",
@@ -408,7 +408,7 @@
     "category": "Биохимия",
     "brand": "SNIBE",
     "shortDescription": "Интегрированная платформа ИХЛА + Биохимия с трек-системой.",
-    "fullDescription": "Biolumi CX Solution — интегрированная платформа, объединяющая ИХЛА и биохимию в единую трек-систему. Доступные конфигурации: X10+C10 (ИХЛА 1000 т/ч + биохимия 2000 т/ч), X8+C10, X8+C8, X6+C8. Все конфигурации включают электролитный модуль 1000 т/ч.",
+    "fullDescription": "Biolumi CX Solution, интегрированная платформа, объединяющая ИХЛА и биохимию в единую трек-систему. Доступные конфигурации: X10+C10 (ИХЛА 1000 т/ч + биохимия 2000 т/ч), X8+C10, X8+C8, X6+C8. Все конфигурации включают электролитный модуль 1000 т/ч.",
     "specifications": [
       {
         "label": "Конфигурация X10+C10",
@@ -433,7 +433,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Trek-tizimli integratsiyalashgan IXLA + Biokimyo platformasi.",
-    "fullDescriptionUz": "Biolumi CX Solution — IXLA va biokimyoni yagona trek-tizimga birlashtiruvchi integratsiyalashgan platforma. Mavjud konfiguratsiyalar: X10+C10 (IXLA 1000 t/s + biokimyo 2000 t/s), X8+C10, X8+C8, X6+C8. Barcha konfiguratsiyalar 1000 t/s elektrolit modulini oʻz ichiga oladi."
+    "fullDescriptionUz": "Biolumi CX Solution, IXLA va biokimyoni yagona trek-tizimga birlashtiruvchi integratsiyalashgan platforma. Mavjud konfiguratsiyalar: X10+C10 (IXLA 1000 t/s + biokimyo 2000 t/s), X8+C10, X8+C8, X6+C8. Barcha konfiguratsiyalar 1000 t/s elektrolit modulini oʻz ichiga oladi."
   },
   {
     "id": "acl-top-350-cts",
@@ -442,7 +442,7 @@
     "category": "Гемостаз",
     "brand": "Werfen",
     "shortDescription": "Автоматический анализатор гемостаза №1 в Узбекистане.",
-    "fullDescription": "ACL TOP 350 CTS от Werfen — №1 в Узбекистане по автоматическому гемостазу. Время до первого результата всего 3 минуты, преаналитический модуль оценивает заполненность пробирки, аномальную аспирацию, гемолиз, гипербилирубинемию и липемию. Широкое меню: рутинный гемостаз, антикоагулянтная терапия, диагностика тромбозов, тромбофилии, болезни Виллебранда, АФС.",
+    "fullDescription": "ACL TOP 350 CTS от Werfen, №1 в Узбекистане по автоматическому гемостазу. Время до первого результата всего 3 минуты, преаналитический модуль оценивает заполненность пробирки, аномальную аспирацию, гемолиз, гипербилирубинемию и липемию. Широкое меню: рутинный гемостаз, антикоагулянтная терапия, диагностика тромбозов, тромбофилии, болезни Виллебранда, АФС.",
     "specifications": [
       {
         "label": "Время до первого анализа",
@@ -467,7 +467,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Oʻzbekistonda №1 avtomatik gemostaz analizatori.",
-    "fullDescriptionUz": "Werfen ACL TOP 350 CTS — Oʻzbekistonda avtomatik gemostaz boʻyicha №1. Birinchi natijagacha bor-yoʻgʻi 3 daqiqa, preanalitik modul probirka toʻldirilganligini, anomal aspiratsiyani, gemolizni, giperbilirubinemiya va lipemiyani baholaydi. Keng menyu: rutin gemostaz, antikoagulyant terapiya, tromboz diagnostikasi, trombofiliya, Villebrand kasalligi, AFS."
+    "fullDescriptionUz": "Werfen ACL TOP 350 CTS, Oʻzbekistonda avtomatik gemostaz boʻyicha №1. Birinchi natijagacha bor-yoʻgʻi 3 daqiqa, preanalitik modul probirka toʻldirilganligini, anomal aspiratsiyani, gemolizni, giperbilirubinemiya va lipemiyani baholaydi. Keng menyu: rutin gemostaz, antikoagulyant terapiya, tromboz diagnostikasi, trombofiliya, Villebrand kasalligi, AFS."
   },
   {
     "id": "gem-premier-5000",
@@ -510,7 +510,7 @@
     "category": "КЩС",
     "brand": "Werfen",
     "shortDescription": "Анализатор для диагностики критических состояний за 85 секунд.",
-    "fullDescription": "GEM Premier 3500 — анализатор для экспресс-диагностики критических состояний. Измеряет pH, pCO₂, pO₂, электролиты, глюкозу, лактат и гематокрит со скоростью 85 секунд. 9 измеряемых и 17 расчётных параметров.",
+    "fullDescription": "GEM Premier 3500, анализатор для экспресс-диагностики критических состояний. Измеряет pH, pCO₂, pO₂, электролиты, глюкозу, лактат и гематокрит со скоростью 85 секунд. 9 измеряемых и 17 расчётных параметров.",
     "specifications": [
       {
         "label": "Скорость",
@@ -535,7 +535,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Kritik holatlarni 85 soniyada aniqlovchi analizator.",
-    "fullDescriptionUz": "GEM Premier 3500 — kritik holatlarni tezkor diagnostika qilish uchun analizator. pH, pCO₂, pO₂, elektrolitlar, glyukoza, laktat va gematokritni 85 soniyada oʻlchaydi. 9 oʻlchanadigan va 17 hisoblanadigan parametr."
+    "fullDescriptionUz": "GEM Premier 3500, kritik holatlarni tezkor diagnostika qilish uchun analizator. pH, pCO₂, pO₂, elektrolitlar, glyukoza, laktat va gematokritni 85 soniyada oʻlchaydi. 9 oʻlchanadigan va 17 hisoblanadigan parametr."
   },
   {
     "id": "dh-800",
@@ -544,7 +544,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "6-Diff гематологический анализатор с AI-анализом, до 110 тестов/час.",
-    "fullDescription": "Dymind DH-800 — топовый гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Сочетает лазерное светорассеивание, флуоресцентный метод и проточную цитометрию. 46 основных и 163 исследовательских параметра, экран 15.6\", автозагрузка 60 образцов, память на 300 000 записей.",
+    "fullDescription": "Dymind DH-800, топовый гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Сочетает лазерное светорассеивание, флуоресцентный метод и проточную цитометрию. 46 основных и 163 исследовательских параметра, экран 15.6\", автозагрузка 60 образцов, память на 300 000 записей.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -577,7 +577,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "AI-tahlilli 6-Diff gematologik analizator, soatiga 110 tagacha test.",
-    "fullDescriptionUz": "Dymind DH-800 — AI-tahlilli 6-Diff + RET + NRBC top gematologik analizator. Lazer yorugʻlik sochilishi, flyuoressent usul va oqim sitometriyasini birlashtiradi. 46 asosiy va 163 tadqiqot parametri, 15.6\" ekran, 60 namunani avtomatik yuklash, 300 000 yozuv xotirasi."
+    "fullDescriptionUz": "Dymind DH-800, AI-tahlilli 6-Diff + RET + NRBC top gematologik analizator. Lazer yorugʻlik sochilishi, flyuoressent usul va oqim sitometriyasini birlashtiradi. 46 asosiy va 163 tadqiqot parametri, 15.6\" ekran, 60 namunani avtomatik yuklash, 300 000 yozuv xotirasi."
   },
   {
     "id": "dh-615",
@@ -586,7 +586,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "6-Diff анализатор с AI, обладатель Red Dot и iF Design Award.",
-    "fullDescription": "Dymind DH-615 — гематологический анализатор 6-Diff + RET с AI-анализом, до 100 тестов/час. 64 параметра (35 основных + 29 исследовательских), лазерно-флуоресцентный метод, экран 12.1\", память 150 000 записей. Обладатель премий Red Dot Winner 2021 и iF Design Award.",
+    "fullDescription": "Dymind DH-615, гематологический анализатор 6-Diff + RET с AI-анализом, до 100 тестов/час. 64 параметра (35 основных + 29 исследовательских), лазерно-флуоресцентный метод, экран 12.1\", память 150 000 записей. Обладатель премий Red Dot Winner 2021 и iF Design Award.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -619,7 +619,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "AI bilan 6-Diff analizator, Red Dot va iF Design Award sovrindori.",
-    "fullDescriptionUz": "Dymind DH-615 — AI-tahlilli 6-Diff + RET gematologik analizator, soatiga 100 testgacha. 64 parametr (35 asosiy + 29 tadqiqot), lazer-flyuoressent usul, 12.1\" ekran, 150 000 yozuv xotirasi. Red Dot Winner 2021 va iF Design Award sovrindori."
+    "fullDescriptionUz": "Dymind DH-615, AI-tahlilli 6-Diff + RET gematologik analizator, soatiga 100 testgacha. 64 parametr (35 asosiy + 29 tadqiqot), lazer-flyuoressent usul, 12.1\" ekran, 150 000 yozuv xotirasi. Red Dot Winner 2021 va iF Design Award sovrindori."
   },
   {
     "id": "dh-88",
@@ -628,7 +628,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "6-Diff анализатор со встроенным измерением СОЭ.",
-    "fullDescription": "Dymind DH-88 — гематологический анализатор 6-Diff + СОЭ + RET + NRBC с AI-анализом, до 100 тестов/час. Встроенный модуль СОЭ выдаёт 80 тестов/час по модифицированному методу Вестергрена — 30 результатов за 25 минут с превосходной корреляцией с золотым стандартом. Объём образца 20 мкл.",
+    "fullDescription": "Dymind DH-88, гематологический анализатор 6-Diff + СОЭ + RET + NRBC с AI-анализом, до 100 тестов/час. Встроенный модуль СОЭ выдаёт 80 тестов/час по модифицированному методу Вестергрена, 30 результатов за 25 минут с превосходной корреляцией с золотым стандартом. Объём образца 20 мкл.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -661,7 +661,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "ECHT oʻlchovi oʻrnatilgan 6-Diff analizator.",
-    "fullDescriptionUz": "Dymind DH-88 — AI-tahlilli 6-Diff + ECHT + RET + NRBC gematologik analizator, soatiga 100 testgacha. Oʻrnatilgan ECHT moduli modifikatsiyalangan Vestergren usuli boʻyicha soatiga 80 test beradi — 25 daqiqada 30 natija, oltin standart bilan ajoyib korrelatsiyada. Namuna hajmi 20 mkl."
+    "fullDescriptionUz": "Dymind DH-88, AI-tahlilli 6-Diff + ECHT + RET + NRBC gematologik analizator, soatiga 100 testgacha. Oʻrnatilgan ECHT moduli modifikatsiyalangan Vestergren usuli boʻyicha soatiga 80 test beradi, 25 daqiqada 30 natija, oltin standart bilan ajoyib korrelatsiyada. Namuna hajmi 20 mkl."
   },
   {
     "id": "df56-vet",
@@ -670,7 +670,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "Ветеринарный 6-Diff анализатор для 6 видов животных.",
-    "fullDescription": "Dymind DF56 Vet — ветеринарный гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Поддерживает 6 видов животных: кошки, собаки, кролики, коровы, лошади, овцы. Производительность до 100 тестов/час, объём образца 20 мкл.",
+    "fullDescription": "Dymind DF56 Vet, ветеринарный гематологический анализатор 6-Diff + RET + NRBC с AI-анализом. Поддерживает 6 видов животных: кошки, собаки, кролики, коровы, лошади, овцы. Производительность до 100 тестов/час, объём образца 20 мкл.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -693,7 +693,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "6 tur hayvon uchun veterinariya 6-Diff analizatori.",
-    "fullDescriptionUz": "Dymind DF56 Vet — AI-tahlilli 6-Diff + RET + NRBC veterinariya gematologik analizatori. 6 turdagi hayvonni qoʻllab-quvvatlaydi: mushuk, it, quyon, sigir, ot, qoʻy. Soatiga 100 testgacha unumdorlik, namuna hajmi 20 mkl."
+    "fullDescriptionUz": "Dymind DF56 Vet, AI-tahlilli 6-Diff + RET + NRBC veterinariya gematologik analizatori. 6 turdagi hayvonni qoʻllab-quvvatlaydi: mushuk, it, quyon, sigir, ot, qoʻy. Soatiga 100 testgacha unumdorlik, namuna hajmi 20 mkl."
   },
   {
     "id": "df50-crp",
@@ -702,7 +702,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "5-Diff анализатор со встроенным определением CRP.",
-    "fullDescription": "Dymind DF50 CRP — гематологический анализатор 5-Diff + CRP, до 60 тестов/час. В режиме 3-Diff автозагрузка до 55 образцов при объёме 20 мкл. Встроенный сканер штрих-кода, термопринтер, сенсорный экран с русскоязычным интерфейсом.",
+    "fullDescription": "Dymind DF50 CRP, гематологический анализатор 5-Diff + CRP, до 60 тестов/час. В режиме 3-Diff автозагрузка до 55 образцов при объёме 20 мкл. Встроенный сканер штрих-кода, термопринтер, сенсорный экран с русскоязычным интерфейсом.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -731,7 +731,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "CRP aniqlash oʻrnatilgan 5-Diff analizator.",
-    "fullDescriptionUz": "Dymind DF50 CRP — 5-Diff + CRP gematologik analizator, soatiga 60 testgacha. 3-Diff rejimida 20 mkl hajmda 55 namunagacha avtomatik yuklash. Oʻrnatilgan shtrix-kod skaneri, termoprinter, rus tilidagi interfeysli sensorli ekran."
+    "fullDescriptionUz": "Dymind DF50 CRP, 5-Diff + CRP gematologik analizator, soatiga 60 testgacha. 3-Diff rejimida 20 mkl hajmda 55 namunagacha avtomatik yuklash. Oʻrnatilgan shtrix-kod skaneri, termoprinter, rus tilidagi interfeysli sensorli ekran."
   },
   {
     "id": "dh-26",
@@ -740,7 +740,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "Компактный 3-Diff гематологический анализатор.",
-    "fullDescription": "Dymind DH-26 — компактный гематологический анализатор 3-Diff производительностью до 20 тестов/час. Оптимальное решение для небольших лабораторий и кабинетов.",
+    "fullDescription": "Dymind DH-26, компактный гематологический анализатор 3-Diff производительностью до 20 тестов/час. Оптимальное решение для небольших лабораторий и кабинетов.",
     "specifications": [
       {
         "label": "Дифференцировка",
@@ -761,7 +761,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Ixcham 3-Diff gematologik analizator.",
-    "fullDescriptionUz": "Dymind DH-26 — soatiga 20 testgacha unumdorlikka ega ixcham 3-Diff gematologik analizator. Kichik laboratoriyalar va kabinetlar uchun optimal yechim."
+    "fullDescriptionUz": "Dymind DH-26, soatiga 20 testgacha unumdorlikka ega ixcham 3-Diff gematologik analizator. Kichik laboratoriyalar va kabinetlar uchun optimal yechim."
   },
   {
     "id": "cube-30-touch",
@@ -770,7 +770,7 @@
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "Автоматический анализатор СОЭ по методу Вестергрена.",
-    "fullDescription": "CUBE 30 Touch — автоматический анализатор скорости оседания эритроцитов (СОЭ). Выдаёт 30 результатов за 25 минут по модифицированному методу Вестергрена с превосходной корреляцией с золотым стандартом.",
+    "fullDescription": "CUBE 30 Touch, автоматический анализатор скорости оседания эритроцитов (СОЭ). Выдаёт 30 результатов за 25 минут по модифицированному методу Вестергрена с превосходной корреляцией с золотым стандартом.",
     "specifications": [
       {
         "label": "Метод",
@@ -791,7 +791,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "Vestergren usuli boʻyicha avtomatik ECHT analizatori.",
-    "fullDescriptionUz": "CUBE 30 Touch — eritrotsitlar choʻkish tezligini (ECHT) avtomatik aniqlovchi analizator. Modifikatsiyalangan Vestergren usuli boʻyicha 25 daqiqada 30 natija beradi, oltin standart bilan ajoyib korrelatsiyada."
+    "fullDescriptionUz": "CUBE 30 Touch, eritrotsitlar choʻkish tezligini (ECHT) avtomatik aniqlovchi analizator. Modifikatsiyalangan Vestergren usuli boʻyicha 25 daqiqada 30 natija beradi, oltin standart bilan ajoyib korrelatsiyada."
   },
   {
     "id": "urit-bs-8000",
@@ -800,7 +800,7 @@
     "category": "Автоматизированная лаборатория",
     "brand": "URIT",
     "shortDescription": "Автономная модульная гематологическая лаборатория.",
-    "fullDescription": "URIT BS-8000 Series — автономная модульная гематологическая лаборатория. Включает модули подготовки образцов, анализа крови CBC, морфологии клеток (до 60 слайдов/час, предварительная классификация 33 типов клеток), приготовления и окрашивания мазков, центр управления данными и хранение пробирок.",
+    "fullDescription": "URIT BS-8000 Series, автономная модульная гематологическая лаборатория. Включает модули подготовки образцов, анализа крови CBC, морфологии клеток (до 60 слайдов/час, предварительная классификация 33 типов клеток), приготовления и окрашивания мазков, центр управления данными и хранение пробирок.",
     "specifications": [
       {
         "label": "Тип",
@@ -825,7 +825,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Avtonom modulli gematologik laboratoriya.",
-    "fullDescriptionUz": "URIT BS-8000 Series — avtonom modulli gematologik laboratoriya. Namunalarni tayyorlash, CBC qon tahlili, hujayra morfologiyasi (soatiga 60 slaydgacha, 33 turdagi hujayrani oldindan tasniflash), surtma tayyorlash va boʻyash, maʼlumotlarni boshqarish markazi va probirkalarni saqlash modullarini oʻz ichiga oladi."
+    "fullDescriptionUz": "URIT BS-8000 Series, avtonom modulli gematologik laboratoriya. Namunalarni tayyorlash, CBC qon tahlili, hujayra morfologiyasi (soatiga 60 slaydgacha, 33 turdagi hujayrani oldindan tasniflash), surtma tayyorlash va boʻyash, maʼlumotlarni boshqarish markazi va probirkalarni saqlash modullarini oʻz ichiga oladi."
   },
   {
     "id": "urit-us-2000c",
@@ -834,7 +834,7 @@
     "category": "Клинический анализ",
     "brand": "URIT",
     "shortDescription": "Модульная автоматизированная станция анализа мочи с AI.",
-    "fullDescription": "URIT US-2000C — полностью автоматизированная модульная станция анализа мочи с AI-усилением. Объединяет химический, микроскопический и физический анализ мочи в единый рабочий процесс.",
+    "fullDescription": "URIT US-2000C, полностью автоматизированная модульная станция анализа мочи с AI-усилением. Объединяет химический, микроскопический и физический анализ мочи в единый рабочий процесс.",
     "specifications": [
       {
         "label": "Тип",
@@ -853,7 +853,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "AI bilan modulli avtomatlashtirilgan siydik tahlili stansiyasi.",
-    "fullDescriptionUz": "URIT US-2000C — AI kuchaytirilgan toʻliq avtomatlashtirilgan modulli siydik tahlili stansiyasi. Siydikning kimyoviy, mikroskopik va fizik tahlilini yagona ish jarayoniga birlashtiradi."
+    "fullDescriptionUz": "URIT US-2000C, AI kuchaytirilgan toʻliq avtomatlashtirilgan modulli siydik tahlili stansiyasi. Siydikning kimyoviy, mikroskopik va fizik tahlilini yagona ish jarayoniga birlashtiradi."
   },
   {
     "id": "urit-us-1000",
@@ -862,7 +862,7 @@
     "category": "Клинический анализ",
     "brand": "URIT",
     "shortDescription": "Автоматизированная система анализа мочи.",
-    "fullDescription": "URIT US-1000 — автоматизированная система для химического анализа мочи. Надёжное решение для рутинной лабораторной диагностики.",
+    "fullDescription": "URIT US-1000, автоматизированная система для химического анализа мочи. Надёжное решение для рутинной лабораторной диагностики.",
     "specifications": [
       {
         "label": "Тип",
@@ -879,7 +879,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Avtomatlashtirilgan siydik tahlili tizimi.",
-    "fullDescriptionUz": "URIT US-1000 — siydikning kimyoviy tahlili uchun avtomatlashtirilgan tizim. Kundalik laboratoriya diagnostikasi uchun ishonchli yechim."
+    "fullDescriptionUz": "URIT US-1000, siydikning kimyoviy tahlili uchun avtomatlashtirilgan tizim. Kundalik laboratoriya diagnostikasi uchun ishonchli yechim."
   },
   {
     "id": "urit-us-1680",
@@ -888,7 +888,7 @@
     "category": "Клинический анализ",
     "brand": "URIT",
     "shortDescription": "Полностью автоматизированный анализатор мочи 3-в-1.",
-    "fullDescription": "URIT US-1680 — полностью автоматизированный анализатор мочи, объединяющий химический, физический и микроскопический анализ в одном корпусе.",
+    "fullDescription": "URIT US-1680, полностью автоматизированный анализатор мочи, объединяющий химический, физический и микроскопический анализ в одном корпусе.",
     "specifications": [
       {
         "label": "Тип",
@@ -909,7 +909,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "Toʻliq avtomatlashtirilgan 3-in-1 siydik analizatori.",
-    "fullDescriptionUz": "URIT US-1680 — kimyoviy, fizik va mikroskopik tahlilni bir korpusda birlashtiruvchi toʻliq avtomatlashtirilgan siydik analizatori."
+    "fullDescriptionUz": "URIT US-1680, kimyoviy, fizik va mikroskopik tahlilni bir korpusda birlashtiruvchi toʻliq avtomatlashtirilgan siydik analizatori."
   },
   {
     "id": "urit-bf-730",
@@ -918,7 +918,7 @@
     "category": "Клинический анализ",
     "brand": "URIT",
     "shortDescription": "Проточный цитометр для клинической и научной практики.",
-    "fullDescription": "URIT BF-730 — проточный цитометр для клинической и научной практики. Применения: онкология, репродуктология, иммунология. Оценка иммунного статуса (Т-лимфоциты, лейкоциты), апоптоз, клеточный цикл, выявление иммунных и генетических маркеров (HLA-B27), анализ фенотипа клеток.",
+    "fullDescription": "URIT BF-730, проточный цитометр для клинической и научной практики. Применения: онкология, репродуктология, иммунология. Оценка иммунного статуса (Т-лимфоциты, лейкоциты), апоптоз, клеточный цикл, выявление иммунных и генетических маркеров (HLA-B27), анализ фенотипа клеток.",
     "specifications": [
       {
         "label": "Тип",
@@ -939,7 +939,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Klinik va ilmiy amaliyot uchun oqim sitometri.",
-    "fullDescriptionUz": "URIT BF-730 — klinik va ilmiy amaliyot uchun oqim sitometri. Qoʻllanilishi: onkologiya, reproduktologiya, immunologiya. Immun holatni baholash (T-limfotsitlar, leykotsitlar), apoptoz, hujayra sikli, immun va genetik markerlarni aniqlash (HLA-B27), hujayra fenotipini tahlil qilish."
+    "fullDescriptionUz": "URIT BF-730, klinik va ilmiy amaliyot uchun oqim sitometri. Qoʻllanilishi: onkologiya, reproduktologiya, immunologiya. Immun holatni baholash (T-limfotsitlar, leykotsitlar), apoptoz, hujayra sikli, immun va genetik markerlarni aniqlash (HLA-B27), hujayra fenotipini tahlil qilish."
   },
   {
     "id": "keyu-ku-f20",
@@ -948,7 +948,7 @@
     "category": "Клинический анализ",
     "brand": "KEYU",
     "shortDescription": "AI-анализатор кала: 30 формённых элементов, 6 видов гельминтов.",
-    "fullDescription": "KEYU KU-F20 — автоматический анализатор кала с AI. Распознаёт 30 формённых элементов и 6 видов гельминтов. Включает ИХА на скрытую кровь и трансферрин.",
+    "fullDescription": "KEYU KU-F20, автоматический анализатор кала с AI. Распознаёт 30 формённых элементов и 6 видов гельминтов. Включает ИХА на скрытую кровь и трансферрин.",
     "specifications": [
       {
         "label": "AI",
@@ -973,7 +973,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "AI-najas analizatori: 30 shaklli element, 6 tur gelmint.",
-    "fullDescriptionUz": "KEYU KU-F20 — AI bilan avtomatik najas analizatori. 30 shaklli element va 6 tur gelmintni aniqlaydi. Yashirin qon va transferringa IXA testini oʻz ichiga oladi."
+    "fullDescriptionUz": "KEYU KU-F20, AI bilan avtomatik najas analizatori. 30 shaklli element va 6 tur gelmintni aniqlaydi. Yashirin qon va transferringa IXA testini oʻz ichiga oladi."
   },
   {
     "id": "keyu-ku-f40",
@@ -982,7 +982,7 @@
     "category": "Клинический анализ",
     "brand": "KEYU",
     "shortDescription": "Автоматический анализатор диагностики кала.",
-    "fullDescription": "KEYU KU-F40 — автоматический анализатор для диагностики кала. Производительное решение для клинических лабораторий.",
+    "fullDescription": "KEYU KU-F40, автоматический анализатор для диагностики кала. Производительное решение для клинических лабораторий.",
     "specifications": [
       {
         "label": "Тип",
@@ -995,7 +995,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Najas diagnostikasi avtomatik analizatori.",
-    "fullDescriptionUz": "KEYU KU-F40 — najas diagnostikasi uchun avtomatik analizator. Klinik laboratoriyalar uchun unumdor yechim."
+    "fullDescriptionUz": "KEYU KU-F40, najas diagnostikasi uchun avtomatik analizator. Klinik laboratoriyalar uchun unumdor yechim."
   },
   {
     "id": "sqa-io-vu",
@@ -1004,7 +1004,7 @@
     "category": "Клинический анализ",
     "brand": "Condalab",
     "shortDescription": "Автоматизированный анализ спермы за 75 секунд по стандартам ВОЗ.",
-    "fullDescription": "SQA-IO + SQA-VU — система автоматизированного анализа спермы. Результат за 75 секунд в полном соответствии со стандартами ВОЗ 5-го и 6-го изданий.",
+    "fullDescription": "SQA-IO + SQA-VU, система автоматизированного анализа спермы. Результат за 75 секунд в полном соответствии со стандартами ВОЗ 5-го и 6-го изданий.",
     "specifications": [
       {
         "label": "Время анализа",
@@ -1025,7 +1025,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "JSST standartlari boʻyicha 75 soniyada avtomatlashtirilgan sperma tahlili.",
-    "fullDescriptionUz": "SQA-IO + SQA-VU — avtomatlashtirilgan sperma tahlili tizimi. JSST 5- va 6-nashr standartlariga toʻliq muvofiq holda 75 soniyada natija."
+    "fullDescriptionUz": "SQA-IO + SQA-VU, avtomatlashtirilgan sperma tahlili tizimi. JSST 5- va 6-nashr standartlariga toʻliq muvofiq holda 75 soniyada natija."
   },
   {
     "id": "h100-plus",
@@ -1034,7 +1034,7 @@
     "category": "ВЭЖХ",
     "brand": "Lifotronic",
     "shortDescription": "Флагманский анализатор гликированного гемоглобина (IEC-HPLC).",
-    "fullDescription": "Lifotronic H100 Plus — флагманский анализатор гликированного гемоглобина по золотому стандарту ВОЗ (ионообменная ВЭЖХ, IEC-HPLC). Наивысшая скорость, расширенная загрузка, полная автоматизация и модульная расширяемость. Встроенный режим тестирования талассемии.",
+    "fullDescription": "Lifotronic H100 Plus, флагманский анализатор гликированного гемоглобина по золотому стандарту ВОЗ (ионообменная ВЭЖХ, IEC-HPLC). Наивысшая скорость, расширенная загрузка, полная автоматизация и модульная расширяемость. Встроенный режим тестирования талассемии.",
     "specifications": [
       {
         "label": "Метод",
@@ -1059,7 +1059,7 @@
     "featured": true,
     "isNew": true,
     "shortDescriptionUz": "Glikatlangan gemoglobin flagman analizatori (IEC-HPLC).",
-    "fullDescriptionUz": "Lifotronic H100 Plus — JSST oltin standarti (ion almashinuvli YuSSX, IEC-HPLC) boʻyicha flagman glikatlangan gemoglobin analizatori. Eng yuqori tezlik, kengaytirilgan yuklash, toʻliq avtomatlashtirish va modulli kengaytiriluvchanlik. Oʻrnatilgan talassemiya test rejimi."
+    "fullDescriptionUz": "Lifotronic H100 Plus, JSST oltin standarti (ion almashinuvli YuSSX, IEC-HPLC) boʻyicha flagman glikatlangan gemoglobin analizatori. Eng yuqori tezlik, kengaytirilgan yuklash, toʻliq avtomatlashtirish va modulli kengaytiriluvchanlik. Oʻrnatilgan talassemiya test rejimi."
   },
   {
     "id": "h8",
@@ -1068,7 +1068,7 @@
     "category": "ВЭЖХ",
     "brand": "Lifotronic",
     "shortDescription": "HbA1c-анализатор с точной диагностикой талассемии.",
-    "fullDescription": "Lifotronic H8 — анализатор гликированного гемоглобина методом IEC-HPLC. Обеспечивает точную диагностику талассемии и выявление патологических вариантов гемоглобина.",
+    "fullDescription": "Lifotronic H8, анализатор гликированного гемоглобина методом IEC-HPLC. Обеспечивает точную диагностику талассемии и выявление патологических вариантов гемоглобина.",
     "specifications": [
       {
         "label": "Метод",
@@ -1085,7 +1085,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Talassemiyani aniq diagnostika qiluvchi HbA1c-analizator.",
-    "fullDescriptionUz": "Lifotronic H8 — IEC-HPLC usulida glikatlangan gemoglobin analizatori. Talassemiyani aniq diagnostika qilish va gemoglobinning patologik variantlarini aniqlashni taʼminlaydi."
+    "fullDescriptionUz": "Lifotronic H8, IEC-HPLC usulida glikatlangan gemoglobin analizatori. Talassemiyani aniq diagnostika qilish va gemoglobinning patologik variantlarini aniqlashni taʼminlaydi."
   },
   {
     "id": "h9",
@@ -1094,7 +1094,7 @@
     "category": "ВЭЖХ",
     "brand": "Lifotronic",
     "shortDescription": "HbA1c-анализатор нового поколения методом HPLC.",
-    "fullDescription": "Lifotronic H9 — анализатор гликированного гемоглобина нового поколения, использующий метод высокоэффективной жидкостной хроматографии.",
+    "fullDescription": "Lifotronic H9, анализатор гликированного гемоглобина нового поколения, использующий метод высокоэффективной жидкостной хроматографии.",
     "specifications": [
       {
         "label": "Метод",
@@ -1111,7 +1111,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "HPLC usulida yangi avlod HbA1c-analizatori.",
-    "fullDescriptionUz": "Lifotronic H9 — yuqori samarali suyuqlik xromatografiyasi usulidan foydalanadigan yangi avlod glikatlangan gemoglobin analizatori."
+    "fullDescriptionUz": "Lifotronic H9, yuqori samarali suyuqlik xromatografiyasi usulidan foydalanadigan yangi avlod glikatlangan gemoglobin analizatori."
   },
   {
     "id": "gh-900-plus",
@@ -1120,7 +1120,7 @@
     "category": "ВЭЖХ",
     "brand": "Lifotronic",
     "shortDescription": "Анализатор гликированного гемоглобина.",
-    "fullDescription": "Lifotronic GH-900 Plus — анализатор гликированного гемоглобина для рутинной диагностики диабета.",
+    "fullDescription": "Lifotronic GH-900 Plus, анализатор гликированного гемоглобина для рутинной диагностики диабета.",
     "specifications": [
       {
         "label": "Метод",
@@ -1137,7 +1137,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Glikatlangan gemoglobin analizatori.",
-    "fullDescriptionUz": "Lifotronic GH-900 Plus — diabetni kundalik diagnostika qilish uchun glikatlangan gemoglobin analizatori."
+    "fullDescriptionUz": "Lifotronic GH-900 Plus, diabetni kundalik diagnostika qilish uchun glikatlangan gemoglobin analizatori."
   },
   {
     "id": "bd-phoenix-m50",
@@ -1146,7 +1146,7 @@
     "category": "Микробиология",
     "brand": "BD",
     "shortDescription": "Система идентификации и определения чувствительности к антибиотикам.",
-    "fullDescription": "BD Phoenix M50 — надёжная и быстрая система фенотипической идентификации микроорганизмов и определения их устойчивости к антибиотикам (AST). Ключевой инструмент в борьбе с антибиотикорезистентностью.",
+    "fullDescription": "BD Phoenix M50, надёжная и быстрая система фенотипической идентификации микроорганизмов и определения их устойчивости к антибиотикам (AST). Ключевой инструмент в борьбе с антибиотикорезистентностью.",
     "specifications": [
       {
         "label": "Назначение",
@@ -1167,7 +1167,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Identifikatsiya va antibiotiklarga sezgirlikni aniqlash tizimi.",
-    "fullDescriptionUz": "BD Phoenix M50 — mikroorganizmlarni fenotipik identifikatsiya qilish va ularning antibiotiklarga chidamliligini (AST) aniqlash uchun ishonchli va tezkor tizim. Antibiotik rezistentligiga qarshi kurashda asosiy vosita."
+    "fullDescriptionUz": "BD Phoenix M50, mikroorganizmlarni fenotipik identifikatsiya qilish va ularning antibiotiklarga chidamliligini (AST) aniqlash uchun ishonchli va tezkor tizim. Antibiotik rezistentligiga qarshi kurashda asosiy vosita."
   },
   {
     "id": "bd-bactec-fx40",
@@ -1176,7 +1176,7 @@
     "category": "Микробиология",
     "brand": "BD",
     "shortDescription": "Система ускоренного обнаружения бактерий и грибков в крови.",
-    "fullDescription": "BD BACTEC FX 40 — система ускоренного обнаружения бактерий и грибков в клинических образцах крови. Питательные среды BACTEC: Standard/10 Aerobic, Plus Anaerobic, Peds Plus, Myco/F Lytic. Подходит для лабораторий, ОРИТ и ЛПУ без собственной микробиологической лаборатории.",
+    "fullDescription": "BD BACTEC FX 40, система ускоренного обнаружения бактерий и грибков в клинических образцах крови. Питательные среды BACTEC: Standard/10 Aerobic, Plus Anaerobic, Peds Plus, Myco/F Lytic. Подходит для лабораторий, ОРИТ и ЛПУ без собственной микробиологической лаборатории.",
     "specifications": [
       {
         "label": "Назначение",
@@ -1193,7 +1193,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Qondagi bakteriya va zamburugʻlarni tezkor aniqlash tizimi.",
-    "fullDescriptionUz": "BD BACTEC FX 40 — klinik qon namunalarida bakteriya va zamburugʻlarni tezkor aniqlash tizimi. BACTEC oziq muhitlari: Standard/10 Aerobic, Plus Anaerobic, Peds Plus, Myco/F Lytic. Oʻz mikrobiologiya laboratoriyasiga ega boʻlmagan laboratoriyalar, reanimatsiya boʻlimlari va tibbiyot muassasalari uchun mos."
+    "fullDescriptionUz": "BD BACTEC FX 40, klinik qon namunalarida bakteriya va zamburugʻlarni tezkor aniqlash tizimi. BACTEC oziq muhitlari: Standard/10 Aerobic, Plus Anaerobic, Peds Plus, Myco/F Lytic. Oʻz mikrobiologiya laboratoriyasiga ega boʻlmagan laboratoriyalar, reanimatsiya boʻlimlari va tibbiyot muassasalari uchun mos."
   },
   {
     "id": "condalab-media",
@@ -1202,7 +1202,7 @@
     "category": "Микробиология",
     "brand": "Condalab",
     "shortDescription": "Готовые питательные среды от испанского производителя с 1960 г.",
-    "fullDescription": "Condalab — производитель питательных сред, основан в 1960 году в Мадриде (Испания). Экспорт в 130 стран. Соответствие стандартам ISO, Европейской фармакопеи, FDA, APHA, USP, AOAC.",
+    "fullDescription": "Condalab, производитель питательных сред, основан в 1960 году в Мадриде (Испания). Экспорт в 130 стран. Соответствие стандартам ISO, Европейской фармакопеи, FDA, APHA, USP, AOAC.",
     "specifications": [
       {
         "label": "Основана",
@@ -1221,7 +1221,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "1960 yildan ispan ishlab chiqaruvchisining tayyor oziq muhitlari.",
-    "fullDescriptionUz": "Condalab — 1960 yilda Madrid (Ispaniya) shahrida tashkil etilgan oziq muhitlari ishlab chiqaruvchisi. 130 mamlakatga eksport. ISO, Yevropa farmakopeyasi, FDA, APHA, USP, AOAC standartlariga muvofiqlik."
+    "fullDescriptionUz": "Condalab, 1960 yilda Madrid (Ispaniya) shahrida tashkil etilgan oziq muhitlari ishlab chiqaruvchisi. 130 mamlakatga eksport. ISO, Yevropa farmakopeyasi, FDA, APHA, USP, AOAC standartlariga muvofiqlik."
   },
   {
     "id": "molecision-r8",
@@ -1230,7 +1230,7 @@
     "category": "ПЦР",
     "brand": "SNIBE",
     "shortDescription": "Полностью автоматизированная высокопроизводительная ПЦР-лаборатория.",
-    "fullDescription": "Molecision R8 — полностью автоматизированная высокопроизводительная ПЦР-«лаборатория» от SNIBE. Объединяет выделение нуклеиновых кислот, постановку реакции и детекцию в едином рабочем процессе.",
+    "fullDescription": "Molecision R8, полностью автоматизированная высокопроизводительная ПЦР-«лаборатория» от SNIBE. Объединяет выделение нуклеиновых кислот, постановку реакции и детекцию в едином рабочем процессе.",
     "specifications": [
       {
         "label": "Тип",
@@ -1251,7 +1251,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Toʻliq avtomatlashtirilgan yuqori unumdor PZR-laboratoriya.",
-    "fullDescriptionUz": "Molecision R8 — SNIBE kompaniyasining toʻliq avtomatlashtirilgan yuqori unumdor PZR-«laboratoriyasi». Nuklein kislotalarni ajratib olish, reaksiyani qoʻyish va aniqlashni yagona ish jarayonida birlashtiradi."
+    "fullDescriptionUz": "Molecision R8, SNIBE kompaniyasining toʻliq avtomatlashtirilgan yuqori unumdor PZR-«laboratoriyasi». Nuklein kislotalarni ajratib olish, reaksiyani qoʻyish va aniqlashni yagona ish jarayonida birlashtiradi."
   },
   {
     "id": "molecision-s6",
@@ -1260,7 +1260,7 @@
     "category": "ПЦР",
     "brand": "SNIBE",
     "shortDescription": "Полностью интегрированная цифровая ПЦР-система.",
-    "fullDescription": "Molecision S6 — полностью интегрированная цифровая ПЦР-система от SNIBE для высокоточного количественного анализа нуклеиновых кислот.",
+    "fullDescription": "Molecision S6, полностью интегрированная цифровая ПЦР-система от SNIBE для высокоточного количественного анализа нуклеиновых кислот.",
     "specifications": [
       {
         "label": "Тип",
@@ -1277,7 +1277,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Toʻliq integratsiyalashgan raqamli PZR-tizim.",
-    "fullDescriptionUz": "Molecision S6 — nuklein kislotalarning yuqori aniqlikdagi miqdoriy tahlili uchun SNIBE toʻliq integratsiyalashgan raqamli PZR-tizimi."
+    "fullDescriptionUz": "Molecision S6, nuklein kislotalarning yuqori aniqlikdagi miqdoriy tahlili uchun SNIBE toʻliq integratsiyalashgan raqamli PZR-tizimi."
   },
   {
     "id": "molecision-mp-32",
@@ -1286,7 +1286,7 @@
     "category": "ПЦР",
     "brand": "SNIBE",
     "shortDescription": "Система очистки нуклеиновых кислот до 32 образцов.",
-    "fullDescription": "Molecision MP-32 — система автоматической очистки нуклеиновых кислот до 32 образцов одновременно. УФ-лампа для деконтаминации и HEPA-фильтр обеспечивают стерильность после каждого запуска.",
+    "fullDescription": "Molecision MP-32, система автоматической очистки нуклеиновых кислот до 32 образцов одновременно. УФ-лампа для деконтаминации и HEPA-фильтр обеспечивают стерильность после каждого запуска.",
     "specifications": [
       {
         "label": "Образцы",
@@ -1307,7 +1307,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "32 tagacha namuna uchun nuklein kislotalarni tozalash tizimi.",
-    "fullDescriptionUz": "Molecision MP-32 — bir vaqtning oʻzida 32 tagacha namuna uchun nuklein kislotalarni avtomatik tozalash tizimi. Dekontaminatsiya uchun UB-lampa va HEPA-filtr har bir ishdan keyin sterillikni taʼminlaydi."
+    "fullDescriptionUz": "Molecision MP-32, bir vaqtning oʻzida 32 tagacha namuna uchun nuklein kislotalarni avtomatik tozalash tizimi. Dekontaminatsiya uchun UB-lampa va HEPA-filtr har bir ishdan keyin sterillikni taʼminlaydi."
   },
   {
     "id": "molecision-mp-96",
@@ -1316,7 +1316,7 @@
     "category": "ПЦР",
     "brand": "SNIBE",
     "shortDescription": "Система очистки нуклеиновых кислот до 96 образцов.",
-    "fullDescription": "Molecision MP-96 — высокопроизводительная система автоматической очистки нуклеиновых кислот до 96 образцов одновременно.",
+    "fullDescription": "Molecision MP-96, высокопроизводительная система автоматической очистки нуклеиновых кислот до 96 образцов одновременно.",
     "specifications": [
       {
         "label": "Образцы",
@@ -1333,7 +1333,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "96 tagacha namuna uchun nuklein kislotalarni tozalash tizimi.",
-    "fullDescriptionUz": "Molecision MP-96 — bir vaqtning oʻzida 96 tagacha namuna uchun nuklein kislotalarni avtomatik tozalash boʻyicha yuqori unumdor tizim."
+    "fullDescriptionUz": "Molecision MP-96, bir vaqtning oʻzida 96 tagacha namuna uchun nuklein kislotalarni avtomatik tozalash boʻyicha yuqori unumdor tizim."
   },
   {
     "id": "blozer-200",
@@ -1342,7 +1342,7 @@
     "category": "Иммуногематология",
     "brand": "BLOZER",
     "shortDescription": "Полностью автоматический анализатор гелевой агглютинации.",
-    "fullDescription": "BLOZER 200 — полностью автоматический иммуногематологический анализатор на основе гель-картной агглютинации (золотой стандарт). 96 гелевых карт/час, 144 образца. Применение: акушерство, трансфузиология, хирургия, гематология, реанимация и неонатология.",
+    "fullDescription": "BLOZER 200, полностью автоматический иммуногематологический анализатор на основе гель-картной агглютинации (золотой стандарт). 96 гелевых карт/час, 144 образца. Применение: акушерство, трансфузиология, хирургия, гематология, реанимация и неонатология.",
     "specifications": [
       {
         "label": "Метод",
@@ -1367,7 +1367,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Toʻliq avtomatik gel agglyutinatsiya analizatori.",
-    "fullDescriptionUz": "BLOZER 200 — gel-kartali agglyutinatsiyaga (oltin standart) asoslangan toʻliq avtomatik immunogematologik analizator. Soatiga 96 gel-karta, 144 namuna. Qoʻllanilishi: akusherlik, transfuziologiya, jarrohlik, gematologiya, reanimatsiya va neonatologiya."
+    "fullDescriptionUz": "BLOZER 200, gel-kartali agglyutinatsiyaga (oltin standart) asoslangan toʻliq avtomatik immunogematologik analizator. Soatiga 96 gel-karta, 144 namuna. Qoʻllanilishi: akusherlik, transfuziologiya, jarrohlik, gematologiya, reanimatsiya va neonatologiya."
   },
   {
     "id": "blozer-72",
@@ -1376,7 +1376,7 @@
     "category": "Иммуногематология",
     "brand": "BLOZER",
     "shortDescription": "Компактный автоматический анализатор иммуногематологии.",
-    "fullDescription": "BLOZER 72 — компактный автоматический иммуногематологический анализатор на основе гель-картной агглютинации. Оптимален для лабораторий с умеренной нагрузкой.",
+    "fullDescription": "BLOZER 72, компактный автоматический иммуногематологический анализатор на основе гель-картной агглютинации. Оптимален для лабораторий с умеренной нагрузкой.",
     "specifications": [
       {
         "label": "Метод",
@@ -1393,7 +1393,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "Ixcham avtomatik immunogematologiya analizatori.",
-    "fullDescriptionUz": "BLOZER 72 — gel-kartali agglyutinatsiyaga asoslangan ixcham avtomatik immunogematologik analizator. Oʻrtacha yuklamali laboratoriyalar uchun optimal."
+    "fullDescriptionUz": "BLOZER 72, gel-kartali agglyutinatsiyaga asoslangan ixcham avtomatik immunogematologik analizator. Oʻrtacha yuklamali laboratoriyalar uchun optimal."
   },
   {
     "id": "evidence-multistat",
@@ -1402,7 +1402,7 @@
     "category": "Токсикология",
     "brand": "Randox",
     "shortDescription": "Биочиповый иммунофлуоресцентный анализатор на 500+ веществ.",
-    "fullDescription": "Evidence Multistat от Randox — полностью автоматизированный биочиповый иммунофлуоресцентный анализатор. Биочиповая технология (BAT) — микроматрица 7×7, до 44 единиц. Определяет 500+ веществ и метаболитов. Применение: аллергия, аутоиммунные и воспалительные заболевания, наркотики и лекарства, вызывающие зависимость.",
+    "fullDescription": "Evidence Multistat от Randox, полностью автоматизированный биочиповый иммунофлуоресцентный анализатор. Биочиповая технология (BAT), микроматрица 7×7, до 44 единиц. Определяет 500+ веществ и метаболитов. Применение: аллергия, аутоиммунные и воспалительные заболевания, наркотики и лекарства, вызывающие зависимость.",
     "specifications": [
       {
         "label": "Технология",
@@ -1427,7 +1427,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "500+ moddani aniqlovchi biochip immunoflyuoressent analizator.",
-    "fullDescriptionUz": "Randox Evidence Multistat — toʻliq avtomatlashtirilgan biochip immunoflyuoressent analizator. Biochip texnologiyasi (BAT) — 7×7 mikromatritsa, 44 birlikgacha. 500+ modda va metabolitni aniqlaydi. Qoʻllanilishi: allergiya, autoimmun va yalligʻlanish kasalliklari, giyohvandlik va bogʻliqlik keltiruvchi dorilar."
+    "fullDescriptionUz": "Randox Evidence Multistat, toʻliq avtomatlashtirilgan biochip immunoflyuoressent analizator. Biochip texnologiyasi (BAT), 7×7 mikromatritsa, 44 birlikgacha. 500+ modda va metabolitni aniqlaydi. Qoʻllanilishi: allergiya, autoimmun va yalligʻlanish kasalliklari, giyohvandlik va bogʻliqlik keltiruvchi dorilar."
   },
   {
     "id": "phadia-200",
@@ -1435,8 +1435,8 @@
     "name": "Phadia 200",
     "category": "Аллергология",
     "brand": "Thermo Fisher",
-    "shortDescription": "Молекулярная аллергодиагностика — золотой стандарт.",
-    "fullDescription": "Phadia 200 — полностью автоматизированный иммунофлуоресцентный анализатор для молекулярной аллергодиагностики, признанный золотым стандартом в аллергологии.",
+    "shortDescription": "Молекулярная аллергодиагностика, золотой стандарт.",
+    "fullDescription": "Phadia 200, полностью автоматизированный иммунофлуоресцентный анализатор для молекулярной аллергодиагностики, признанный золотым стандартом в аллергологии.",
     "specifications": [
       {
         "label": "Метод",
@@ -1456,8 +1456,8 @@
     ],
     "featured": true,
     "isNew": false,
-    "shortDescriptionUz": "Molekulyar allergodiagnostika — oltin standart.",
-    "fullDescriptionUz": "Phadia 200 — molekulyar allergodiagnostika uchun toʻliq avtomatlashtirilgan immunoflyuoressent analizator, allergologiyada oltin standart sifatida tanilgan."
+    "shortDescriptionUz": "Molekulyar allergodiagnostika, oltin standart.",
+    "fullDescriptionUz": "Phadia 200, molekulyar allergodiagnostika uchun toʻliq avtomatlashtirilgan immunoflyuoressent analizator, allergologiyada oltin standart sifatida tanilgan."
   },
   {
     "id": "riqas",
@@ -1466,7 +1466,7 @@
     "category": "Программы контроля качества",
     "brand": "Randox",
     "shortDescription": "Крупнейшая международная схема внешней оценки качества.",
-    "fullDescription": "RIQAS от Randox — крупнейшая международная схема внешней оценки качества (ВОК). Более 85 000 лабораторий из 140 стран. Основана в 1991 году.",
+    "fullDescription": "RIQAS от Randox, крупнейшая международная схема внешней оценки качества (ВОК). Более 85 000 лабораторий из 140 стран. Основана в 1991 году.",
     "specifications": [
       {
         "label": "Тип",
@@ -1489,7 +1489,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Sifatni tashqi baholashning eng yirik xalqaro sxemasi.",
-    "fullDescriptionUz": "Randox RIQAS — sifatni tashqi baholashning (STB) eng yirik xalqaro sxemasi. 140 mamlakatdan 85 000 dan ortiq laboratoriya. 1991 yilda tashkil etilgan."
+    "fullDescriptionUz": "Randox RIQAS, sifatni tashqi baholashning (STB) eng yirik xalqaro sxemasi. 140 mamlakatdan 85 000 dan ortiq laboratoriya. 1991 yilda tashkil etilgan."
   },
   {
     "id": "acusera",
@@ -1498,7 +1498,7 @@
     "category": "Программы контроля качества",
     "brand": "Randox",
     "shortDescription": "Независимый внутренний контроль качества третьей стороны.",
-    "fullDescription": "ACUSERA от Randox — независимый внутренний контроль качества (ВКК) третьей стороны. Широкий ассортимент контрольных материалов с присвоенными значениями.",
+    "fullDescription": "ACUSERA от Randox, независимый внутренний контроль качества (ВКК) третьей стороны. Широкий ассортимент контрольных материалов с присвоенными значениями.",
     "specifications": [
       {
         "label": "Тип",
@@ -1515,7 +1515,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Uchinchi tomon mustaqil ichki sifat nazorati.",
-    "fullDescriptionUz": "Randox ACUSERA — uchinchi tomon mustaqil ichki sifat nazorati (ISN). Belgilangan qiymatli nazorat materiallarining keng assortimenti."
+    "fullDescriptionUz": "Randox ACUSERA, uchinchi tomon mustaqil ichki sifat nazorati (ISN). Belgilangan qiymatli nazorat materiallarining keng assortimenti."
   },
   {
     "id": "qcmd",
@@ -1524,7 +1524,7 @@
     "category": "Программы контроля качества",
     "brand": "Randox",
     "shortDescription": "ВОК для молекулярного тестирования инфекционных заболеваний.",
-    "fullDescription": "QCMD — внешняя оценка качества для молекулярного тестирования инфекционных заболеваний. Обеспечивает достоверность ПЦР-диагностики.",
+    "fullDescription": "QCMD, внешняя оценка качества для молекулярного тестирования инфекционных заболеваний. Обеспечивает достоверность ПЦР-диагностики.",
     "specifications": [
       {
         "label": "Тип",
@@ -1539,7 +1539,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Yuqumli kasalliklarni molekulyar tekshirish boʻyicha tashqi sifat baholash.",
-    "fullDescriptionUz": "QCMD — yuqumli kasalliklarni molekulyar tekshirish uchun tashqi sifat baholash. PZR-diagnostikasining ishonchliligini taʼminlaydi."
+    "fullDescriptionUz": "QCMD, yuqumli kasalliklarni molekulyar tekshirish uchun tashqi sifat baholash. PZR-diagnostikasining ishonchliligini taʼminlaydi."
   },
   {
     "id": "qnostics",
@@ -1548,7 +1548,7 @@
     "category": "Программы контроля качества",
     "brand": "Randox",
     "shortDescription": "Молекулярные средства контроля на 500+ мишеней.",
-    "fullDescription": "Qnostics — молекулярные средства контроля для тестирования на инфекционные заболевания. Более 500 вирусных, бактериальных и грибковых мишеней.",
+    "fullDescription": "Qnostics, молекулярные средства контроля для тестирования на инфекционные заболевания. Более 500 вирусных, бактериальных и грибковых мишеней.",
     "specifications": [
       {
         "label": "Тип",
@@ -1563,7 +1563,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "500+ nishon uchun molekulyar nazorat vositalari.",
-    "fullDescriptionUz": "Qnostics — yuqumli kasalliklarni aniqlash uchun molekulyar nazorat vositalari. 500 dan ortiq virusli, bakterial va zamburugʻ nishonlar."
+    "fullDescriptionUz": "Qnostics, yuqumli kasalliklarni aniqlash uchun molekulyar nazorat vositalari. 500 dan ortiq virusli, bakterial va zamburugʻ nishonlar."
   },
   {
     "id": "miseq-i100",
@@ -1572,7 +1572,7 @@
     "category": "Генетика",
     "brand": "Illumina",
     "shortDescription": "Простейшее и быстрое настольное секвенирование нового поколения.",
-    "fullDescription": "MiSeq i100 Series от Illumina — простейшая и быстрая настольная система секвенирования нового поколения (NGS), устанавливающая новые стандарты доступности геномных исследований. Illumina — пионер NGS, основана в 1998 г. в Сан-Диего, представлена в 160 странах.",
+    "fullDescription": "MiSeq i100 Series от Illumina, простейшая и быстрая настольная система секвенирования нового поколения (NGS), устанавливающая новые стандарты доступности геномных исследований. Illumina, пионер NGS, основана в 1998 г. в Сан-Диего, представлена в 160 странах.",
     "specifications": [
       {
         "label": "Тип",
@@ -1593,7 +1593,7 @@
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "Eng sodda va tez stol usti yangi avlod sekvenatori.",
-    "fullDescriptionUz": "Illumina MiSeq i100 Series — genomik tadqiqotlar mavjudligida yangi standartlarni oʻrnatuvchi eng sodda va tezkor stol usti yangi avlod sekvenatsiya (NGS) tizimi. Illumina — 1998 yilda San-Diegoda tashkil etilgan, 160 mamlakatda taqdim etilgan NGS kashshofi."
+    "fullDescriptionUz": "Illumina MiSeq i100 Series, genomik tadqiqotlar mavjudligida yangi standartlarni oʻrnatuvchi eng sodda va tezkor stol usti yangi avlod sekvenatsiya (NGS) tizimi. Illumina, 1998 yilda San-Diegoda tashkil etilgan, 160 mamlakatda taqdim etilgan NGS kashshofi."
   },
   {
     "id": "nextseq-550",
@@ -1602,7 +1602,7 @@
     "category": "Генетика",
     "brand": "Illumina",
     "shortDescription": "Секвенатор высокой и средней производительности NGS + array.",
-    "fullDescription": "NextSeq 550 от Illumina — секвенатор высокой и средней производительности, поддерживающий как NGS, так и микрочиповые (array) исследования в одном приборе.",
+    "fullDescription": "NextSeq 550 от Illumina, секвенатор высокой и средней производительности, поддерживающий как NGS, так и микрочиповые (array) исследования в одном приборе.",
     "specifications": [
       {
         "label": "Производительность",
@@ -1619,7 +1619,7 @@
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Yuqori va oʻrta unumdorlikdagi NGS + array sekvenatori.",
-    "fullDescriptionUz": "Illumina NextSeq 550 — bir qurilmada ham NGS, ham mikrochip (array) tadqiqotlarini qoʻllab-quvvatlaydigan yuqori va oʻrta unumdorlikdagi sekvenator."
+    "fullDescriptionUz": "Illumina NextSeq 550, bir qurilmada ham NGS, ham mikrochip (array) tadqiqotlarini qoʻllab-quvvatlaydigan yuqori va oʻrta unumdorlikdagi sekvenator."
   },
   {
     "id": "nextseq-1000-2000",
@@ -1654,7 +1654,7 @@
     "category": "Генетика",
     "brand": "Illumina",
     "shortDescription": "Настраиваемый высокопроизводительный секвенатор.",
-    "fullDescription": "NovaSeq 6000 от Illumina — мощный настраиваемый секвенатор с выбором типа проточной кюветы и длины считывания под конкретные исследовательские задачи.",
+    "fullDescription": "NovaSeq 6000 от Illumina, мощный настраиваемый секвенатор с выбором типа проточной кюветы и длины считывания под конкретные исследовательские задачи.",
     "specifications": [
       {
         "label": "Гибкость",
@@ -1671,7 +1671,7 @@
     "featured": true,
     "isNew": false,
     "shortDescriptionUz": "Moslashuvchan yuqori unumdor sekvenator.",
-    "fullDescriptionUz": "Illumina NovaSeq 6000 — aniq tadqiqot vazifalari uchun oqim kyuvetasi turi va oʻqish uzunligini tanlash imkoniyatiga ega kuchli sozlanuvchan sekvenator."
+    "fullDescriptionUz": "Illumina NovaSeq 6000, aniq tadqiqot vazifalari uchun oqim kyuvetasi turi va oʻqish uzunligini tanlash imkoniyatiga ega kuchli sozlanuvchan sekvenator."
   },
   {
     "id": "novaseq-x",
@@ -1680,7 +1680,7 @@
     "category": "Генетика",
     "brand": "Illumina",
     "shortDescription": "Флагманский секвенатор с лиофилизированными реагентами.",
-    "fullDescription": "NovaSeq X / X Plus от Illumina — флагманская система секвенирования с исключительной пропускной способностью и лиофилизированными реагентами для упрощённой логистики и устойчивости.",
+    "fullDescription": "NovaSeq X / X Plus от Illumina, флагманская система секвенирования с исключительной пропускной способностью и лиофилизированными реагентами для упрощённой логистики и устойчивости.",
     "specifications": [
       {
         "label": "Пропускная способность",
@@ -1695,7 +1695,7 @@
     "featured": true,
     "isNew": true,
     "shortDescriptionUz": "Liofillangan reagentli flagman sekvenator.",
-    "fullDescriptionUz": "Illumina NovaSeq X / X Plus — yuqori oʻtkazuvchanlik va soddalashtirilgan logistika va barqarorlik uchun liofillangan reagentlarga ega flagman sekvenatsiya tizimi."
+    "fullDescriptionUz": "Illumina NovaSeq X / X Plus, yuqori oʻtkazuvchanlik va soddalashtirilgan logistika va barqarorlik uchun liofillangan reagentlarga ega flagman sekvenatsiya tizimi."
   },
   {
     "id": "clarius-c3-hd3",
@@ -1970,7 +1970,7 @@
     "category": "Автоматизированная лаборатория",
     "brand": "SNIBE",
     "shortDescription": "Модульная автоматизированная лаборатория, впервые в Узбекистане.",
-    "fullDescription": "SATLARS T8 — модульная автоматизированная лабораторная линия, впервые представленная в Узбекистане. Обладатель iF Design Award 2025. Модули: загрузчик (1000 проб/час), центрифугирование (550 проб/час), ввод/вывод (1000 проб/час), снятие крышек (1000 проб/час), двусторонняя 4-канальная транспортная система, запечатывание (1000 проб/час), холодильный модуль (15 360 проб), снятие запечаток (500 проб/час). Хранение до 60 288 образцов, объединение до 4 холодильных модулей. Совместима с Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8.",
+    "fullDescription": "SATLARS T8, модульная автоматизированная лабораторная линия, впервые представленная в Узбекистане. Обладатель iF Design Award 2025. Модули: загрузчик (1000 проб/час), центрифугирование (550 проб/час), ввод/вывод (1000 проб/час), снятие крышек (1000 проб/час), двусторонняя 4-канальная транспортная система, запечатывание (1000 проб/час), холодильный модуль (15 360 проб), снятие запечаток (500 проб/час). Хранение до 60 288 образцов, объединение до 4 холодильных модулей. Совместима с Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8.",
     "specifications": [
       {
         "label": "Награда",
@@ -1999,7 +1999,7 @@
     "featured": true,
     "isNew": true,
     "shortDescriptionUz": "Oʻzbekistonda birinchi marta modulli avtomatlashtirilgan laboratoriya.",
-    "fullDescriptionUz": "SATLARS T8 — Oʻzbekistonda birinchi marta taqdim etilgan modulli avtomatlashtirilgan laboratoriya liniyasi. iF Design Award 2025 sovrindori. Modullar: yuklagich (soatiga 1000 namuna), sentrifugalash (soatiga 550 namuna), kirish/chiqish (soatiga 1000 namuna), qopqoqlarni olish (soatiga 1000 namuna), ikki tomonlama 4-kanalli transport tizimi, muhrlash (soatiga 1000 namuna), sovutish moduli (15 360 namuna), muhrni olish (soatiga 500 namuna). 60 288 namunagacha saqlash, 4 tagacha sovutish modulini birlashtirish. Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8 bilan moslashuvchan."
+    "fullDescriptionUz": "SATLARS T8, Oʻzbekistonda birinchi marta taqdim etilgan modulli avtomatlashtirilgan laboratoriya liniyasi. iF Design Award 2025 sovrindori. Modullar: yuklagich (soatiga 1000 namuna), sentrifugalash (soatiga 550 namuna), kirish/chiqish (soatiga 1000 namuna), qopqoqlarni olish (soatiga 1000 namuna), ikki tomonlama 4-kanalli transport tizimi, muhrlash (soatiga 1000 namuna), sovutish moduli (15 360 namuna), muhrni olish (soatiga 500 namuna). 60 288 namunagacha saqlash, 4 tagacha sovutish modulini birlashtirish. Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8 bilan moslashuvchan."
   },
   {
     "id": "reagenty-maglumi-ihla",

@@ -15,7 +15,7 @@ import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, type AppLocale } from "@/lib/seo";
 
 // Inter is the single typeface site-wide: body weights 400–600 AND heading
-// weights 700/800 (headings were Syne, which has no Cyrillic — dropped so RU/UZ
+// weights 700/800 (headings were Syne, which has no Cyrillic - dropped so RU/UZ
 // match). latin-ext covers the Uzbek modifier letters (oʻ/gʻ/ʼ), cyrillic covers RU.
 const inter = Inter({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -53,8 +53,8 @@ export async function generateMetadata({
     title: {
       template: "%s | Albatros Health Care",
       default: uz
-        ? "Albatros Health Care — Oʻzbekistonda laboratoriya uskunalari"
-        : "Albatros Health Care — Лабораторное оборудование в Узбекистане",
+        ? "Albatros Health Care - Oʻzbekistonda laboratoriya uskunalari"
+        : "Albatros Health Care - Лабораторное оборудование в Узбекистане",
     },
     description: uz
       ? "SNIBE, BD, Randox, Dymind, Werfen, Illumina va boshqa IVD diagnostika yetakchilarining Oʻzbekistondagi rasmiy distribyutori. Kalit topshirish asosida yetkazib berish, 24/7 servis."

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { AlbatrosWordmark } from "@/components/ui/AlbatrosWordmark";
 
 /**
- * "О компании" stats panel — ported from the Claude Design "Albatros About"
+ * "О компании" stats panel - ported from the Claude Design "Albatros About"
  * prototype, converted to the light theme. Two-column identity + count-up stats.
  * The wordmark is set in the site font (Inter) via <AlbatrosWordmark> to avoid
  * the raster logo's font clash. Numbers count up on scroll; static under reduced-motion.

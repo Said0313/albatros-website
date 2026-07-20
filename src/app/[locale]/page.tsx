@@ -13,7 +13,7 @@ import { EventsTimeline } from "@/components/home/EventsTimeline";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { getFeatured } from "@/lib/catalog";
 
-// Below-the-fold carousel pulls in embla — code-split it (ssr stays on, so the
+// Below-the-fold carousel pulls in embla - code-split it (ssr stays on, so the
 // SSR HTML is unchanged) to keep it out of the initial client bundle.
 const FeaturedProducts = dynamic(() =>
   import("@/components/home/FeaturedProducts").then((m) => m.FeaturedProducts)

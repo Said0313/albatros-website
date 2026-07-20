@@ -100,7 +100,7 @@ export function CatalogView() {
           />
         </div>
 
-        {/* Mobile-only toggle — desktop (lg) shows the filters inline as before */}
+        {/* Mobile-only toggle - desktop (lg) shows the filters inline as before */}
         <button
           onClick={() => setFiltersOpen((v) => !v)}
           className="mt-4 flex w-full items-center justify-between rounded-lg border border-bg-border bg-bg-card px-4 py-3 text-sm font-medium text-text-primary lg:hidden"

@@ -18,7 +18,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     const search = typeof window !== "undefined" ? window.location.search : "";
     router.replace(`${pathname}${search}`, { locale: next });
     // App Router caches the RSC payload per route, so changing only the locale does
-    // not re-fetch the server-rendered (translated) content — the page would appear
+    // not re-fetch the server-rendered (translated) content - the page would appear
     // unchanged until a manual reload. refresh() forces the RSC re-fetch immediately.
     router.refresh();
   };

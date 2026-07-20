@@ -18,7 +18,7 @@
   --line-2: #eef2f8;
   --teal: #2e8aa0;
   --teal-bright: #00c9b8;
-  /* text — dark navy on light */
+  /* text - dark navy on light */
   --text-primary: #0c1b3a;
   --text-strong: #0a1428;
   --text-secondary: #5e6e8f;
@@ -246,7 +246,7 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-  /* Marquee is essential decorative branding — keep it moving, just slower */
+  /* Marquee is essential decorative branding - keep it moving, just slower */
   .marquee-track {
     animation: marquee-scroll 90s linear infinite !important;
     animation-iteration-count: infinite !important;
