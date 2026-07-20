@@ -22,7 +22,7 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
 - Verified: 88 cards render with photos, 10 year chips, 9 type options, search works, detail page renders localized date/title/photo/description, no red-line timeline.
 
 ## Phase 3 — contacts map
-- [ ] pending
+- [x] Yandex Maps embed on the Contacts page (responsive iframe, h 360/440px). Resolved the short link to the office POI (Albatros Health Care, Xalqobod 17, oid 15895749238, ll 69.285340,41.328419). Localized "Мы на карте" / "Bizni xaritada". No personal data in the URL. Verified iframe + title render in served HTML (ru + uz).
 
 ## Phase 4 — product video + specs (+ admin fields)
 - [ ] pending

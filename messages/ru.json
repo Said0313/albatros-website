@@ -179,7 +179,8 @@
     "email": "Email",
     "hours": "Часы работы",
     "hoursValue": "Пн–Пт 09:00–18:00",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "mapTitle": "Мы на карте"
   },
   "form": {
     "name": "Имя*",

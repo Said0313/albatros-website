@@ -179,7 +179,8 @@
     "email": "Email",
     "hours": "Ish vaqti",
     "hoursValue": "Du–Ju 09:00–18:00",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "mapTitle": "Bizni xaritada"
   },
   "form": {
     "name": "Ism*",

@@ -61,6 +61,21 @@ export default function ContactPage() {
 
           <ContactForm />
         </div>
+
+        {/* Office location, Yandex Maps embed (public business POI, no personal data). */}
+        <div className="mt-12">
+          <h2 className="mb-4 font-display text-xl font-bold text-text-primary">{t("mapTitle")}</h2>
+          <div className="overflow-hidden rounded-2xl border border-bg-border">
+            <iframe
+              title={t("mapTitle")}
+              src="https://yandex.com/map-widget/v1/?ll=69.285340%2C41.328419&mode=poi&poi%5Bpoint%5D=69.285340%2C41.328419&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D15895749238&z=17"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-[360px] w-full border-0 md:h-[440px]"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
