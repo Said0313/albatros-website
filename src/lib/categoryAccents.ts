@@ -42,7 +42,7 @@ export function categoryAccent(name: string): string {
 // "Контроль качества" (dark teal); it is not a product category, so it never
 // appears on a card pill, but it is kept here for the admin category list.
 export const CATEGORY_PILL: Record<string, string> = {
-  "ИХЛА": "#2563EB", // bright blue (immunochemistry)
+  "ИХЛА": "#8B1A1A", // deep wine red (immunochemistry; darker than Гематология/Гемостаз to stay distinct)
   "Биохимия": "#EA580C", // bright orange
   "Гемостаз": "#E11D48", // rose (coagulation)
   "Гематология": "#DC2626", // red (blood)

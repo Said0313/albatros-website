@@ -52,25 +52,28 @@ export function Navbar() {
           <Image src="/logo.png" alt="Albatros Health Care" width={180} height={27} priority className="h-7 w-auto md:h-8" />
         </Link>
 
-        <div className={cn("hidden items-center lg:ml-10 lg:flex", isUz ? "gap-5" : "gap-8")}>
-          {NAV.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={cn(
-                "nav-underline relative whitespace-nowrap text-[15px] transition-colors",
-                pathname === l.href ? "active text-text-primary" : "text-text-secondary hover:text-text-primary"
-              )}
-            >
-              {tn(l.key)}
-            </Link>
-          ))}
-        </div>
+        {/* Desktop right cluster: nav links, RU/UZ toggle and price button, evenly
+            spaced so the right side breathes. justify-between keeps the whole
+            cluster pushed right, preserving the logo-to-nav gap. */}
+        <div className="hidden items-center lg:ml-10 lg:flex lg:gap-4 xl:gap-8">
+          <div className={cn("flex items-center", isUz ? "gap-3 xl:gap-5" : "gap-4 xl:gap-7")}>
+            {NAV.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={cn(
+                  "nav-underline relative whitespace-nowrap text-[15px] transition-colors",
+                  pathname === l.href ? "active text-text-primary" : "text-text-secondary hover:text-text-primary"
+                )}
+              >
+                {tn(l.key)}
+              </Link>
+            ))}
+          </div>
 
-        {/* RU/UZ switcher sits BETWEEN the nav links and the price button (both locales) */}
-        <LanguageSwitcher className="hidden lg:inline-flex" />
+          {/* RU/UZ switcher sits BETWEEN the nav links and the price button */}
+          <LanguageSwitcher className="inline-flex" />
 
-        <div className="hidden items-center gap-4 lg:flex">
           <a
             href="/price-list.pdf"
             download="Albatros_Price_List.pdf"
