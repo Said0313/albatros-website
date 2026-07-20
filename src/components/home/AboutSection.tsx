@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import { AlbatrosWordmark } from "@/components/ui/AlbatrosWordmark";
 
 /**
  * "О компании" stats panel - ported from the Claude Design "Albatros About"
@@ -109,7 +109,7 @@ export function AboutSection() {
             {t("eyebrow")}
           </div>
           <div style={{ marginBottom: 34 }}>
-            <AlbatrosWordmark markSize={56} textSize={40} />
+            <Image src="/logo.png" alt="Albatros Health Care" width={1998} height={300} priority style={{ height: 48, width: "auto", display: "block" }} />
           </div>
           <p style={{ color: "#5E6E8F", fontSize: 18, lineHeight: 1.65, maxWidth: 440, margin: 0 }}>{t("panelText")}</p>
         </div>
