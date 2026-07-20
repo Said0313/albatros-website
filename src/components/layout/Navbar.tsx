@@ -49,7 +49,7 @@ export function Navbar() {
     >
       <nav className="container-x flex h-16 items-center justify-between md:h-20">
         <Link href="/" className="relative z-10">
-          <Image src="/logo.png" alt="Albatros Health Care" width={180} height={27} priority className="h-7 w-auto md:h-8" />
+          <Image src="/logo.png" alt="Albatros Health Care" width={1998} height={300} priority className="h-7 w-auto object-contain md:h-8" />
         </Link>
 
         {/* Desktop right cluster: nav links, RU/UZ toggle and price button, evenly
