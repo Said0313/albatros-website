@@ -52,7 +52,7 @@ export function Navbar() {
           <Image src="/logo.png" alt="Albatros Health Care" width={180} height={27} priority className="h-7 w-auto md:h-8" />
         </Link>
 
-        <div className={cn("hidden items-center lg:flex", isUz ? "gap-5" : "gap-8")}>
+        <div className={cn("hidden items-center lg:ml-10 lg:flex", isUz ? "gap-5" : "gap-8")}>
           {NAV.map((l) => (
             <Link
               key={l.href}
