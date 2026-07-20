@@ -35,6 +35,7 @@ export function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       <div className="flex flex-1 flex-col p-4">
+        <span aria-hidden className="mb-3 block h-px w-full bg-bg-border" />
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <h3 className="mt-2 font-display text-base font-bold text-text-primary">{product.name}</h3>
         <p className="mt-1 font-mono text-xs text-brand-blue-deep">{product.brand}</p>
