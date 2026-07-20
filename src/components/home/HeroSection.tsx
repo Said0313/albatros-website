@@ -12,7 +12,7 @@ export function HeroSection() {
   const t = useTranslations("hero");
   const tc = useTranslations("common");
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ background: "var(--grad-hero)" }}>
+    <section className="relative flex min-h-[78vh] items-center overflow-hidden" style={{ background: "var(--grad-hero)" }}>
       <DNACanvas />
       <div
         className="absolute inset-0 z-[1]"
@@ -21,7 +21,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container-x relative z-10 py-28">
+      <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-display text-[clamp(28px,7.5vw,56px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[76px]">
             <motion.span
