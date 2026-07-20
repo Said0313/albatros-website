@@ -1,182 +1,1160 @@
 [
   {
-    "id": "e2026-1",
+    "id": "e-scU0j5eyvH",
     "year": "2026",
-    "title": "Установка анализатора Biossays C8 (SNIBE)",
-    "date": "Январь 2026",
-    "description": "Инсталляция нового биохимического анализатора SNIBE в лаборатории партнёра.",
-    "titleUz": "Biossays C8 analizatorini oʻrnatish (SNIBE)",
-    "descriptionUz": "Hamkor laboratoriyasida yangi SNIBE biokimyoviy analizatorini oʻrnatish."
+    "title": "Семинар по аутоиммунной панели в Навои",
+    "date": "Апрель 2026",
+    "description": "Добрый вечер.\n10 апреля в Навоинском детском многопрофильном центре состоялся обучающий семинар, организованный компанией Albatros Health Care, на тему «Аутоиммунная панель».\nВ ходе мероприятия лектор Ёркин Узуевич подробно осветил ключевые биомаркёры, применяемые в диагностике аутоиммунных заболеваний, а также их клиническое значение и практическое применение. Особое внимание было уделено современным подходам к лабораторной диагностике и интерпретации результатов.\nВ семинаре приняли участие 44 врача-клинициста. По итогам встречи участники отметили высокую актуальность представленной информации и практическую ценность полученных знаний для повседневной медицинской практики.\nКомпания Albatros Health Care продолжает активно поддерживать развитие лабораторной диагностики в регионах, организуя образовательные мероприятия для специалистов здравоохранения.",
+    "titleUz": "Navoiyda autoimmun panel boʻyicha seminar",
+    "descriptionUz": "10-aprel kuni Navoiy bolalar koʻp tarmoqli markazida Albatros Health Care kompaniyasi tashkil etgan «Autoimmun panel» mavzusidagi oʻquv seminari boʻlib oʻtdi. Tadbir davomida maʼruzachi Yorkin Uzuevich autoimmun kasalliklar diagnostikasida qoʻllaniladigan asosiy biomarkerlarni, ularning klinik ahamiyati va amaliy qoʻllanilishini batafsil yoritib berdi. Laboratoriya diagnostikasiga zamonaviy yondashuvlar va natijalarni talqin qilishga alohida eʼtibor qaratildi. Seminarda 44 nafar klinisist shifokor ishtirok etdi. Uchrashuv yakunida ishtirokchilar taqdim etilgan maʼlumotning yuksak dolzarbligini va olingan bilimlarning kundalik tibbiy amaliyot uchun amaliy qiymatini qayd etishdi. Albatros Health Care hududlarda laboratoriya diagnostikasi rivojini faol qoʻllab-quvvatlashda davom etib, sogʻliqni saqlash mutaxassislari uchun taʼlim tadbirlarini tashkil etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/scU0j5eyvH.webp"
+    ]
   },
   {
-    "id": "e2026-2",
+    "id": "e-vO6I6ASFgk",
     "year": "2026",
-    "title": "Семинар: современная лабораторная медицина и управление качеством",
-    "date": "Январь 2026",
-    "description": "Обучающее мероприятие для специалистов клинико-диагностических лабораторий.",
-    "titleUz": "Seminar: zamonaviy laboratoriya tibbiyoti va sifat boshqaruvi",
-    "descriptionUz": "Klinik-diagnostika laboratoriyalari mutaxassislari uchun oʻquv tadbiri."
+    "title": "Семинар по аутоиммунной панели",
+    "date": "Апрель 2026",
+    "description": "Добрый день.\n9 апреля в Навоинском центре матери и ребёнка компания Albatros Health Care провела семинар, посвящённый аутоиммунной панели.\nВ ходе мероприятия лектор Ёркин Узуевич подробно осветил ключевые биомаркёры, их диагностическую ценность и особенности применения в клинической практике. В семинаре приняли участие 25 врачей-клиницистов.\nОсобый интерес участников вызвала практическая часть: после лекции состоялась активная дискуссия, в ходе которой врачи задали множество вопросов, касающихся интерпретации результатов и внедрения данных исследований в повседневную работу.\nПроведённый семинар стал важной площадкой для профессионального обмена опытом и подтверждает высокий интерес специалистов к современным возможностям лабораторной диагностики.",
+    "titleUz": "Autoimmun panel boʻyicha seminar",
+    "descriptionUz": "9-aprel kuni Navoiy ona va bola markazida Albatros Health Care kompaniyasi autoimmun panelga bagʻishlangan seminar oʻtkazdi. Tadbir davomida maʼruzachi Yorkin Uzuevich asosiy biomarkerlarni, ularning diagnostik qiymatini va klinik amaliyotda qoʻllash xususiyatlarini batafsil yoritdi. Seminarda 25 nafar klinisist shifokor ishtirok etdi. Ishtirokchilarda amaliy qism alohida qiziqish uygʻotdi: maʼruzadan soʻng faol muhokama boʻlib oʻtdi, unda shifokorlar natijalarni talqin qilish va tadqiqotlarni kundalik ishga joriy etish boʻyicha koʻplab savollar berishdi. Oʻtkazilgan seminar tajriba almashish uchun muhim maydonga aylandi va mutaxassislarning laboratoriya diagnostikasining zamonaviy imkoniyatlariga boʻlgan yuqori qiziqishini tasdiqladi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/vO6I6ASFgk.webp"
+    ]
   },
   {
-    "id": "e2025-1",
+    "id": "e-AnNRU7nfYy",
+    "year": "2026",
+    "title": "В городе Гиждуван, на базе Централизованной лаборатории состоялся научно-практический семинар, посвящённый кардиологической и противовоспалительной панелям биомаркёров.",
+    "date": "Март 2026",
+    "description": "31 марта в Бухарской области, в городе Гиждуван, на базе Централизованной лаборатории состоялся научно-практический семинар, посвящённый кардиологической и противовоспалительной панелям биомаркёров.\nВ мероприятии приняли участие 35 врачей, включая главных врачей семейных поликлиник и заведующих отделениями. В ходе лекции были рассмотрены ключевые аспекты применения биомаркёров в клинической практике и их значение для повышения качества диагностики.\nПо итогам общения с участниками была получена содержательная обратная связь: отмечен интерес к теме и одновременно выявлена необходимость дальнейшего повышения уровня осведомлённости врачей в регионе для эффективного развития централизованной лабораторной службы.\nAlbatros Health Care продолжает поддерживать образовательные инициативы, направленные на развитие современной лабораторной диагностики.",
+    "titleUz": "Gʻijduvonda Markazlashtirilgan laboratoriya negizida kardiologik va yalligʻlanishga qarshi biomarker panellariga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi",
+    "descriptionUz": "31-mart kuni Buxoro viloyati, Gʻijduvon shahrida Markazlashtirilgan laboratoriya negizida kardiologik va yalligʻlanishga qarshi biomarker panellariga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi. Tadbirda oilaviy poliklinikalarning bosh shifokorlari va boʻlim mudirlari kiritilgan holda 35 nafar shifokor ishtirok etdi. Maʼruza davomida biomarkerlarni klinik amaliyotda qoʻllashning asosiy jihatlari va ularning diagnostika sifatini oshirishdagi ahamiyati koʻrib chiqildi. Ishtirokchilar bilan muloqot yakunida mazmunli fikr-mulohaza olindi: mavzuga qiziqish qayd etildi va ayni paytda markazlashtirilgan laboratoriya xizmatini samarali rivojlantirish uchun hududdagi shifokorlar xabardorligini yanada oshirish zarurati aniqlandi. Albatros Health Care zamonaviy laboratoriya diagnostikasini rivojlantirishga qaratilgan taʼlim tashabbuslarini qoʻllab-quvvatlashda davom etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/AnNRU7nfYy.webp"
+    ]
+  },
+  {
+    "id": "e-g97EQ4A4dW",
+    "year": "2026",
+    "title": "В Бухарском областном кардиологическом диспансере состоялся научно-практический семинар, посвящённый кардиологической панели биомаркёров.",
+    "date": "Март 2026",
+    "description": "31 марта, в Бухарском областном кардиологическом диспансере состоялся научно-практический семинар, посвящённый кардиологической панели биомаркёров.\nЛекцию провёл Ёркин Узуевич, подробно осветив клиническую значимость кардиомаркёров, а также их роль в диагностике и мониторинге пациентов.\nВ мероприятии приняли участие 18 врачей-клиницистов. По итогам встречи была получена положительная обратная связь специалисты отметили практическую ценность представленной информации.\nВ ходе обсуждения также стало очевидно, что ряд важных кардиомаркёров ранее не использовался в данном учреждении в полной мере, что связано с недостаточной информированностью. Проведение подобных образовательных мероприятий способствует восполнению этих пробелов и внедрению современных диагностических подходов в клиническую практику.\nAlbatros Health Care продолжает поддерживать развитие медицинского образования и повышение качества диагностики в регионах.",
+    "titleUz": "Buxoro viloyat kardiologiya dispanserida kardiologik biomarker paneliga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi",
+    "descriptionUz": "31-mart kuni Buxoro viloyat kardiologiya dispanserida kardiologik biomarker paneliga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi. Maʼruzani Yorkin Uzuevich oʻqib, kardiomarkerlarning klinik ahamiyatini, shuningdek ularning bemorlarni diagnostika qilish va kuzatishdagi rolini batafsil yoritdi. Tadbirda 18 nafar klinisist shifokor ishtirok etdi. Uchrashuv yakunida ijobiy fikr-mulohaza olindi, mutaxassislar taqdim etilgan maʼlumotning amaliy qiymatini qayd etishdi. Muhokama davomida bir qator muhim kardiomarkerlar bu muassasada avval toʻliq qoʻllanilmagani, bu esa yetarli xabardor emaslik bilan bogʻliqligi ham ayon boʻldi. Bunday taʼlim tadbirlarini oʻtkazish ushbu boʻshliqlarni toʻldirishga va zamonaviy diagnostik yondashuvlarni klinik amaliyotga joriy etishga xizmat qiladi. Albatros Health Care hududlarda tibbiy taʼlim rivoji va diagnostika sifatini oshirishni qoʻllab-quvvatlashda davom etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/g97EQ4A4dW.webp"
+    ]
+  },
+  {
+    "id": "e-hxqaTe2zCr",
+    "year": "2026",
+    "title": "Hаучно-практический семинар, посвящённый актуальной теме: кардиологической и противовоспалительной панели биомаркёров.",
+    "date": "Март 2026",
+    "description": "Сегодня, 30 марта, в Бухарской детской многопрофильной больнице состоялся научно-практический семинар, посвящённый актуальной теме: кардиологической и противовоспалительной панели биомаркёров.\nЛекцию провёл Ёркин Узуевич, который подробно и доступно раскрыл клиническое значение современных биомаркёров, их роль в диагностике и мониторинге состояния пациентов. Особое внимание было уделено практическому применению в ежедневной работе врачей.\nВ семинаре приняли участие более 40 врачей-клиницистов. После мероприятия состоялось активное обсуждение, в ходе которого специалисты поделились своим опытом и отметили высокую практическую ценность представленного материала.\nМы рады, что подобные образовательные инициативы способствуют развитию медицинского сообщества и повышению качества диагностики в регионах.\nAlbatros Health Care продолжает поддерживать профессиональное развитие врачей и внедрение современных решений в здравоохранении.",
+    "titleUz": "Dolzarb mavzuga bagʻishlangan ilmiy-amaliy seminar: kardiologik va yalligʻlanishga qarshi biomarker paneli",
+    "descriptionUz": "Bugun, 30-mart kuni Buxoro bolalar koʻp tarmoqli kasalxonasida dolzarb mavzuga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi: kardiologik va yalligʻlanishga qarshi biomarker paneli. Maʼruzani Yorkin Uzuevich oʻqib, zamonaviy biomarkerlarning klinik ahamiyatini, ularning bemorlar holatini diagnostika qilish va kuzatishdagi rolini batafsil va tushunarli qilib yoritdi. Shifokorlarning kundalik ishida amaliy qoʻllashga alohida eʼtibor qaratildi. Seminarda 40 dan ortiq klinisist shifokor ishtirok etdi. Tadbirdan soʻng faol muhokama boʻlib oʻtdi, unda mutaxassislar oʻz tajribasi bilan boʻlishib, taqdim etilgan materialning yuqori amaliy qiymatini qayd etishdi. Bunday taʼlim tashabbuslari tibbiy hamjamiyat rivojiga va hududlarda diagnostika sifatini oshirishga xizmat qilayotganidan mamnunmiz. Albatros Health Care shifokorlarning kasbiy rivojini va sogʻliqni saqlashga zamonaviy yechimlarni joriy etishni qoʻllab-quvvatlashda davom etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/hxqaTe2zCr.webp"
+    ]
+  },
+  {
+    "id": "e-OHzz2plb3z",
+    "year": "2026",
+    "title": "В Бухарской многопрофильной больнице состоялся научно-практический семинар, посвящённый теме кардиологической панели биомаркёров.",
+    "date": "Март 2026",
+    "description": "Сегодня, 30 марта, в Бухарской многопрофильной больнице состоялся научно-практический семинар, посвящённый теме кардиологической панели биомаркёров.\nЛекцию провёл Ёркин Узуевич, подробно и доступно осветив ключевые аспекты применения кардиомаркёров в клинической практике, а также их значимость в своевременной диагностике и мониторинге состояния пациентов.\nВ семинаре приняли участие 20 врачей-клиницистов. После лекции состоялось активное обсуждение: специалисты проявили высокий интерес к теме, задали множество вопросов и дали положительную обратную связь.\nПодобные мероприятия способствуют профессиональному развитию медицинского сообщества и внедрению современных диагностических решений в практику.\nAlbatros Health Care продолжает поддерживать образовательные инициативы и развитие здравоохранения в регионах.",
+    "titleUz": "Buxoro koʻp tarmoqli kasalxonasida kardiologik biomarker paneli mavzusiga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi",
+    "descriptionUz": "Bugun, 30-mart kuni Buxoro koʻp tarmoqli kasalxonasida kardiologik biomarker paneli mavzusiga bagʻishlangan ilmiy-amaliy seminar boʻlib oʻtdi. Maʼruzani Yorkin Uzuevich oʻqib, kardiomarkerlarni klinik amaliyotda qoʻllashning asosiy jihatlarini, shuningdek ularning bemorlar holatini oʻz vaqtida diagnostika qilish va kuzatishdagi ahamiyatini batafsil va tushunarli qilib yoritdi. Seminarda 20 nafar klinisist shifokor ishtirok etdi. Maʼruzadan soʻng faol muhokama boʻlib oʻtdi: mutaxassislar mavzuga yuqori qiziqish bildirib, koʻplab savollar berishdi va ijobiy fikr-mulohaza qoldirishdi. Bunday tadbirlar tibbiy hamjamiyatning kasbiy rivojiga va zamonaviy diagnostik yechimlarni amaliyotga joriy etishga xizmat qiladi. Albatros Health Care hududlarda taʼlim tashabbuslari va sogʻliqni saqlash rivojini qoʻllab-quvvatlashda davom etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/OHzz2plb3z.webp"
+    ]
+  },
+  {
+    "id": "e-NS4lf22Zce",
+    "year": "2026",
+    "title": "II RESPUBLIKA ILMIY-AMALIY KONFERENSIYASI 25-MART OZBEKISTON-FARGONA OZBEKISTONDA AMBULATOR XIZMATI. MUAMMOLAR. ULARNI HAL ETISH YOLLARI.",
+    "date": "Март 2026",
+    "description": "Участие во II Республиканской научно-практической конференции\n25 марта 2026 года в городе Фергана состоялась II Республиканская научно-практическая конференция на тему:\n«Амбулаторная служба в Узбекистане: проблемы и пути их решения».\nВ данном значимом мероприятии приняла участие компания « Albatros Health Care » . В рамках конференции были подробно рассмотрены вопросы развития амбулаторной медицинской помощи, повышения качества диагностики и внедрения современных технологий.\nКомпания «Albatros Health Care» представила современные медицинские решения и инновационные подходы, а также приняла участие в профессиональном обмене мнениями по вопросам совершенствования системы здравоохранения.\nПодобные мероприятия способствуют укреплению сотрудничества, обмену опытом и развитию медицинской отрасли на новом уровне.",
+    "titleUz": "II Respublika ilmiy-amaliy konferensiyasi: «Oʻzbekistonda ambulatoriya xizmati: muammolar va ularni hal etish yoʻllari», Fargʻona",
+    "descriptionUz": "II Respublika ilmiy-amaliy konferensiyasida ishtirok. 2026-yil 25-mart kuni Fargʻona shahrida «Oʻzbekistonda ambulatoriya xizmati: muammolar va ularni hal etish yoʻllari» mavzusida II Respublika ilmiy-amaliy konferensiyasi boʻlib oʻtdi. Ushbu muhim tadbirda Albatros Health Care kompaniyasi ishtirok etdi. Konferensiya doirasida ambulatoriya tibbiy yordamini rivojlantirish, diagnostika sifatini oshirish va zamonaviy texnologiyalarni joriy etish masalalari batafsil koʻrib chiqildi. Albatros Health Care kompaniyasi zamonaviy tibbiy yechimlar va innovatsion yondashuvlarni taqdim etdi, shuningdek sogʻliqni saqlash tizimini takomillashtirish boʻyicha kasbiy fikr almashishda ishtirok etdi. Bunday tadbirlar hamkorlikni mustahkamlashga, tajriba almashishga va tibbiyot sohasini yangi darajada rivojlantirishga xizmat qiladi.",
+    "type": "other",
+    "images": [
+      "/images/events/NS4lf22Zce.webp"
+    ]
+  },
+  {
+    "id": "e-hmSOf2wZpv",
+    "year": "2026",
+    "title": "Установка Biossays C8",
+    "date": "Январь 2026",
+    "description": "Оборудование BIOSSAYS C8 успешно установлено в лаборатории OpenLab .\nМонтаж, настройка и ввод в эксплуатацию были выполнены специалистами компании Albatros Health Care .\nУстановка проведена в полном соответствии с техническими требованиями производителя, что обеспечивает стабильную работу анализатора, точность результатов и готовность оборудования к повседневной лабораторной нагрузке.\nAlbatros Health Care продолжает оснащать лаборатории современными диагностическими решениями, обеспечивая полный цикл сопровождения от поставки до запуска и технической поддержки.",
+    "titleUz": "Biossays C8 oʻrnatildi",
+    "descriptionUz": "BIOSSAYS C8 uskunasi OpenLab laboratoriyasiga muvaffaqiyatli oʻrnatildi. Montaj, sozlash va ishga tushirish Albatros Health Care kompaniyasi mutaxassislari tomonidan amalga oshirildi. Oʻrnatish ishlab chiqaruvchining texnik talablariga toʻliq muvofiq oʻtkazildi, bu esa analizatorning barqaror ishlashini, natijalar aniqligini va uskunaning kundalik laboratoriya yukiga tayyorligini taʼminlaydi. Albatros Health Care laboratoriyalarni zamonaviy diagnostik yechimlar bilan jihozlashda davom etib, yetkazib berishdan ishga tushirish va texnik qoʻllab-quvvatlashgacha toʻliq hamrohlik siklini taʼminlaydi.",
+    "type": "installation",
+    "images": [
+      "/images/events/hmSOf2wZpv.webp",
+      "/images/events/X7DsjdCMcA.webp"
+    ]
+  },
+  {
+    "id": "e-IXzNm8jyXW",
+    "year": "2026",
+    "title": "Современная лабораторная медицина: диагностические решения и управление качеством",
+    "date": "Январь 2026",
+    "description": "16 января в Ташкенте успешно прошёл открытый семинар\n«Современная лабораторная медицина: диагностические решения и управление качеством».\nВ рамках мероприятия были подробно рассмотрены ключевые темы современной диагностики:\nАутоиммунная панель научный и клинический взгляд от доктора медицинских наук, профессора Зокирова Ёркина Узувича\nПренатальный скрининг актуальные подходы и практические рекомендации от врача-генетика Камолы Рахмановны\nКонтроль качества лабораторных исследований важные аспекты и практический опыт от специалиста Мурада Мусабаева\nСеминар собрал специалистов лабораторной диагностики, врачей и представителей медицинских организаций. Участники получили ценные знания, обсудили практические кейсы и обменялись профессиональным опытом.\nБлагодарим всех спикеров и гостей за активное участие и живой интерес к развитию современной лабораторной медицины.\nДо новых встреч на мероприятиях Albatros Health Care!",
+    "titleUz": "Zamonaviy laboratoriya tibbiyoti: diagnostik yechimlar va sifat boshqaruvi",
+    "descriptionUz": "16-yanvar kuni Toshkentda «Zamonaviy laboratoriya tibbiyoti: diagnostik yechimlar va sifat boshqaruvi» ochiq seminari muvaffaqiyatli boʻlib oʻtdi. Tadbir doirasida zamonaviy diagnostikaning asosiy mavzulari batafsil koʻrib chiqildi: Autoimmun panel, tibbiyot fanlari doktori, professor Yorkin Uzuevich Zokirovning ilmiy va klinik nuqtai nazari; Prenatal skrining, genetik shifokor Kamola Rahmanovnaning dolzarb yondashuvlari va amaliy tavsiyalari; Laboratoriya tadqiqotlari sifat nazorati, mutaxassis Murod Musabaevning muhim jihatlari va amaliy tajribasi. Seminar laboratoriya diagnostikasi mutaxassislari, shifokorlar va tibbiyot tashkilotlari vakillarini birlashtirdi. Ishtirokchilar qimmatli bilimlar oldi, amaliy holatlarni muhokama qildi va kasbiy tajriba almashdi. Barcha maʼruzachilar va mehmonlarga faol ishtiroki hamda zamonaviy laboratoriya tibbiyoti rivojiga boʻlgan qiziqishi uchun minnatdorchilik bildiramiz. Albatros Health Care tadbirlarida yangi uchrashuvlargacha!",
+    "type": "other",
+    "images": [
+      "/images/events/IXzNm8jyXW.webp",
+      "/images/events/Kqs0UEGkxd.webp"
+    ]
+  },
+  {
+    "id": "e-rAZCF0spjD",
+    "year": "2025",
+    "title": "Современные мультидисциплинарные стратегии в педиатрии: инновации в диагностике, лечении и реабилитации детских заболеваний",
+    "date": "Ноябрь 2025",
+    "description": "20 ноября в Ташкенте состоялась Республиканская научно-практическая конференция с международным участием «Современные мультидисциплинарные стратегии в педиатрии: инновации в диагностике, лечении и реабилитации детских заболеваний» .\nВ конференции приняли участие ведущие специалисты, учёные, практикующие врачи и представители медицинских центров со всего Узбекистана, а также зарубежные эксперты. В течение насыщенной программы обсуждались актуальные направления педиатрии: неонатальный скрининг, генетические исследования, современные методы диагностики, лечение ревматологических, гастроэнтерологических, неврологических и других заболеваний у детей.\nМы рады сообщить, что Albatros Health Care выступила официальным спонсором мероприятия , поддержав инициативу, направленную на развитие детского здравоохранения и внедрение инновационных подходов в медицинскую практику.\nДля нашей компании важно быть частью проектов, которые помогают повышать качество медицинской помощи, расширять профессиональные знания врачей и внедрять современные технологии в систему здравоохранения.\nБлагодарим организаторов и всех участников за высокий уровень подготовки, ценные доклады и обмен опытом.",
+    "titleUz": "Pediatriyada zamonaviy multidisiplinar strategiyalar: bolalar kasalliklari diagnostikasi, davolash va reabilitatsiyasidagi innovatsiyalar",
+    "descriptionUz": "20-noyabr kuni Toshkentda «Pediatriyada zamonaviy multidisiplinar strategiyalar: bolalar kasalliklari diagnostikasi, davolash va reabilitatsiyasidagi innovatsiyalar» mavzusida xalqaro ishtirokli Respublika ilmiy-amaliy konferensiyasi boʻlib oʻtdi. Konferensiyada butun Oʻzbekiston boʻylab yetakchi mutaxassislar, olimlar, amaliyotchi shifokorlar va tibbiy markaz vakillari, shuningdek xorijiy ekspertlar ishtirok etdi. Boy dastur davomida pediatriyaning dolzarb yoʻnalishlari muhokama qilindi: neonatal skrining, genetik tadqiqotlar, zamonaviy diagnostika usullari, bolalardagi revmatologik, gastroenterologik, nevrologik va boshqa kasalliklarni davolash. Albatros Health Care tadbirning rasmiy homiysi sifatida ishtirok etib, bolalar sogʻligʻini rivojlantirish va tibbiy amaliyotga innovatsion yondashuvlarni joriy etishga qaratilgan tashabbusni qoʻllab-quvvatlaganini maʼlum qilishdan mamnunmiz. Kompaniyamiz uchun tibbiy yordam sifatini oshirishga, shifokorlarning kasbiy bilimini kengaytirishga va sogʻliqni saqlash tizimiga zamonaviy texnologiyalarni joriy etishga yordam beradigan loyihalar ishtirokchisi boʻlish muhim. Tashkilotchilar va barcha ishtirokchilarga yuksak tayyorgarlik, qimmatli maʼruzalar va tajriba almashgani uchun minnatdorchilik bildiramiz.",
+    "type": "other",
+    "images": [
+      "/images/events/rAZCF0spjD.webp"
+    ]
+  },
+  {
+    "id": "e-hZ9gaxTSU6",
+    "year": "2025",
+    "title": "Актуальные направления и инновационные подходы токсикологии в современной диагностике",
+    "date": "Ноябрь 2025",
+    "description": "12 ноября состоялось мероприятие на тему «Актуальные направления и инновационные подходы токсикологии в современной диагностике» , организованное Albatros Health Care совместно с Randox Toxicology .\nУчастники получили актуальную информацию о современных методах диагностики, услышали выступления экспертов и увидели презентацию инновационных решений в сфере токсикологии.\nМероприятие прошло в тёплой профессиональной атмосфере, участники обменялись опытом, обсудили ключевые вопросы и познакомились с новыми возможностями лабораторной диагностики.\nБлагодарим всех гостей за активное участие и интерес к теме!\nДо новых встреч на наших мероприятиях!",
+    "titleUz": "Zamonaviy diagnostikada toksikologiyaning dolzarb yoʻnalishlari va innovatsion yondashuvlari",
+    "descriptionUz": "12-noyabr kuni Albatros Health Care va Randox Toxicology hamkorligida «Zamonaviy diagnostikada toksikologiyaning dolzarb yoʻnalishlari va innovatsion yondashuvlari» mavzusidagi tadbir boʻlib oʻtdi. Ishtirokchilar zamonaviy diagnostika usullari haqida dolzarb maʼlumot oldi, ekspertlarning maʼruzalarini tingladi va toksikologiya sohasidagi innovatsion yechimlar taqdimotini koʻrdi. Tadbir iliq kasbiy muhitda oʻtdi, ishtirokchilar tajriba almashdi, asosiy masalalarni muhokama qildi va laboratoriya diagnostikasining yangi imkoniyatlari bilan tanishdi. Barcha mehmonlarga faol ishtiroki va mavzuga qiziqishi uchun minnatdormiz! Tadbirlarimizda yangi uchrashuvlargacha!",
+    "type": "other",
+    "images": [
+      "/images/events/hZ9gaxTSU6.webp",
+      "/images/events/PrQtGzb684.webp"
+    ]
+  },
+  {
+    "id": "e-x93FENGinS",
+    "year": "2025",
+    "title": "Антибактериальная терапия тяжёлых инфекций в эпоху резистентности",
+    "date": "Октябрь 2025",
+    "description": "31 октября состоялась научно-практическая лекция на тему «Антибактериальная терапия тяжёлых инфекций в эпоху резистентности».\nСпикером мероприятия выступил Руслан Эдуардович Якубцевич заведующий кафедрой анестезиологии и реаниматологии Гродненского государственного медицинского университета (Беларусь), профессор, д.м.н.\nВ ходе лекции были подробно рассмотрены современные подходы к лечению тяжёлых инфекций, особенности выбора антибактериальной терапии, а также актуальные вызовы, связанные с ростом антибиотикорезистентности. Участники получили возможность обсудить практические клинические случаи и задать вопросы эксперту.\nМы благодарим всех присутствующих за активное участие и интерес к теме!\nAlbatros Health Care\nПродолжаем поддерживать развитие медицинского сообщества и обмен передовым опытом.",
+    "titleUz": "Rezistentlik davrida ogʻir infeksiyalarning antibakterial terapiyasi",
+    "descriptionUz": "31-oktabr kuni «Rezistentlik davrida ogʻir infeksiyalarning antibakterial terapiyasi» mavzusida ilmiy-amaliy maʼruza boʻlib oʻtdi. Tadbir maʼruzachisi Grodno davlat tibbiyot universiteti (Belarus) anesteziologiya va reanimatologiya kafedrasi mudiri, professor, tibbiyot fanlari doktori Ruslan Eduardovich Yakubtsevich boʻldi. Maʼruza davomida ogʻir infeksiyalarni davolashning zamonaviy yondashuvlari, antibakterial terapiyani tanlash xususiyatlari, shuningdek antibiotikorezistentlikning oʻsishi bilan bogʻliq dolzarb chaqiriqlar batafsil koʻrib chiqildi. Ishtirokchilar amaliy klinik holatlarni muhokama qilish va ekspertga savol berish imkoniyatiga ega boʻldi. Barcha ishtirokchilarga faol ishtiroki va mavzuga qiziqishi uchun minnatdormiz! Albatros Health Care tibbiy hamjamiyat rivojini va ilgʻor tajriba almashishni qoʻllab-quvvatlashda davom etadi.",
+    "type": "other",
+    "images": [
+      "/images/events/x93FENGinS.webp"
+    ]
+  },
+  {
+    "id": "e-izfpoUb8QI",
+    "year": "2025",
+    "title": "Научно-практическая конференция, посвящённая актуальным вопросам антибиотикотерапии и антибиотикорезистентности",
+    "date": "Октябрь 2025",
+    "description": "27 октября прошла научно-практическая конференция, посвящённая актуальным вопросам антибиотикотерапии и антибиотикорезистентности\nВ мероприятии приняли участие ведущие специалисты со всей страны, а также приглашённые эксперты из Беларуси\nОбсуждались современные подходы к лечению инфекций, пневмонии и сепсиса у детей.\nОрганизатором выступила компания Albatros Health Care, обеспечив высокий уровень организации и профессиональную атмосферу\nУчастники активно обменивались опытом, задавали вопросы и обсуждали реальные клинические случаи.\nТакие мероприятия способствуют развитию медицинской науки и повышению качества лечения в Узбекистане",
+    "titleUz": "Antibiotik terapiyasi va antibiotikorezistentlikning dolzarb masalalariga bagʻishlangan ilmiy-amaliy konferensiya",
+    "descriptionUz": "27-oktabr kuni antibiotik terapiyasi va antibiotikorezistentlikning dolzarb masalalariga bagʻishlangan ilmiy-amaliy konferensiya boʻlib oʻtdi. Tadbirda butun mamlakat boʻylab yetakchi mutaxassislar, shuningdek Belarusdan taklif etilgan ekspertlar ishtirok etdi. Bolalardagi infeksiyalar, pnevmoniya va sepsisni davolashning zamonaviy yondashuvlari muhokama qilindi. Tashkilotchi sifatida Albatros Health Care kompaniyasi chiqib, yuqori darajadagi tashkilotchilik va kasbiy muhitni taʼminladi. Ishtirokchilar faol tajriba almashdi, savollar berdi va real klinik holatlarni muhokama qildi. Bunday tadbirlar tibbiyot fani rivojiga va Oʻzbekistonda davolash sifatini oshirishga xizmat qiladi.",
+    "type": "conference",
+    "images": [
+      "/images/events/izfpoUb8QI.webp"
+    ]
+  },
+  {
+    "id": "e-11o0HGRUQ8",
+    "year": "2025",
+    "title": "Семинар на тему \"Преимущества автоматизации в исследовании мочи в сравнении с «классическими - ручными» методами на примере автоматического анализатора URIT US-1000\"",
+    "date": "Октябрь 2025",
+    "description": "22 октября 2025 года компания Albatros Health Care провела семинар для врачей-клиницистов на базе 1-й Центральной консультативно-диагностической поликлиники ТББ при Администрации Президента Республики Узбекистан .\nДокладчик специалист лабораторной диагностики Мусабаев Мурат Мухтарович представил тему:\n«Преимущества автоматизации в исследовании мочи в сравнении с классическими (ручными) методами»\nна примере автоматического анализатора URIT US-1000 .\nЦель семинара познакомить клиницистов с современными возможностями лабораторной диагностики, обсудить преимущества автоматизации и её практическое применение в ежедневной работе лабораторий.\nAlbatros Health Care продолжает развивать направление профессионального образования и внедрение инновационных технологий в медицинскую практику.",
+    "titleUz": "Seminar: «URIT US-1000 avtomatik analizatori misolida siydik tahlilida avtomatlashtirishning klassik (qoʻlda) usullarga nisbatan afzalliklari»",
+    "descriptionUz": "2025-yil 22-oktabr kuni Albatros Health Care kompaniyasi Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi TBB 1-Markaziy maslahat-diagnostika poliklinikasi negizida klinisist shifokorlar uchun seminar oʻtkazdi. Maʼruzachi, laboratoriya diagnostikasi mutaxassisi Musabaev Murat Muxtarovich «Siydik tahlilida avtomatlashtirishning klassik (qoʻlda) usullarga nisbatan afzalliklari» mavzusini URIT US-1000 avtomatik analizatori misolida taqdim etdi. Seminarning maqsadi klinisistlarni laboratoriya diagnostikasining zamonaviy imkoniyatlari bilan tanishtirish, avtomatlashtirish afzalliklari va uning laboratoriyalar kundalik ishidagi amaliy qoʻllanilishini muhokama qilish edi. Albatros Health Care kasbiy taʼlim yoʻnalishini rivojlantirish va tibbiy amaliyotga innovatsion texnologiyalarni joriy etishda davom etmoqda.",
+    "type": "seminar",
+    "images": [
+      "/images/events/11o0HGRUQ8.webp"
+    ]
+  },
+  {
+    "id": "e-run6IqDvA9",
+    "year": "2025",
+    "title": "Современный междисциплинарный подход к дерматовенерологии и эстетической медицине",
+    "date": "Сентябрь 2025",
+    "description": "6 сентября 2025г. состоялся научно-практическая конференция «Современный междисциплинарный подход к дерматовенерологии и эстетической медицине», председателями которой выступили:проф. Сабиров У.Ю., Умаров М.Д., Саурбаев А.А., Хайитбаев Б.Ш.\nКомпания Albatros Health Care приняла участие на конференции в качестве спонсора.\nДля нас это большая честь поддерживать инициативы, которые объединяют специалистов, способствуют обмену знаниями и развитию медицинской отрасли.\nБлагодарим организаторов за доверие и возможность быть частью этого важного события!",
+    "titleUz": "Dermatovenerologiya va estetik tibbiyotga zamonaviy multidisiplinar yondashuv",
+    "descriptionUz": "2025-yil 6-sentabr kuni «Dermatovenerologiya va estetik tibbiyotga zamonaviy multidisiplinar yondashuv» ilmiy-amaliy konferensiyasi boʻlib oʻtdi, uning raislari prof. Sabirov U.Yu., Umarov M.D., Saurbaev A.A., Xayitbaev B.Sh. boʻlishdi. Albatros Health Care kompaniyasi konferensiyada homiy sifatida ishtirok etdi. Mutaxassislarni birlashtiruvchi, bilim almashishga va tibbiyot sohasi rivojiga xizmat qiladigan tashabbuslarni qoʻllab-quvvatlash biz uchun katta sharaf. Tashkilotchilarga ishonch va ushbu muhim tadbirning bir qismi boʻlish imkoni uchun minnatdormiz!",
+    "type": "other",
+    "images": [
+      "/images/events/run6IqDvA9.webp",
+      "/images/events/sAbPS07Dcv.webp"
+    ]
+  },
+  {
+    "id": "e-8be7lxlrop",
     "year": "2025",
     "title": "1-я Центрально-Азиатская конференция по трансплантации и клеточной терапии",
     "date": "Сентябрь 2025",
-    "description": "Участие компании в крупном региональном научном форуме.",
+    "description": "4-5 сентября 2025г. состоялась «1-я Центрально-Азиатская конференция по трансплантации и клеточной терапии» , организаторами которой выступили \"Министерство Здравоохранения Республики Узбекистан\", \"Республиканский Специализированный Научно Практический Медицинский Центр Гематологии МЗ РУз\" и \"Ассоциация гематологов и трансфузиологов Узбекистана\". Мероприятие было проведено на территории гостиницы \"WYNDHAM Tashkent\".\nКомпания Albatros Health Care приняла участие на конференции в качестве спонсора.\nДля нас это большая честь поддерживать инициативы, которые объединяют специалистов, способствуют обмену знаниями и развитию медицинской отрасли.\nСпасибо организаторам за доверие и возможность стать частью этого события. Мы гордимся тем, что вносим свой вклад в развитие медицины и инновационных решений для здоровья людей.",
     "titleUz": "1-Markaziy Osiyo transplantatsiya va hujayra terapiyasi konferensiyasi",
-    "descriptionUz": "Kompaniyaning yirik mintaqaviy ilmiy forumda ishtiroki."
+    "descriptionUz": "2025-yil 4-5-sentabr kunlari «1-Markaziy Osiyo transplantatsiya va hujayra terapiyasi konferensiyasi» boʻlib oʻtdi, uning tashkilotchilari Oʻzbekiston Respublikasi Sogʻliqni saqlash vazirligi, OʻzR SSV Respublika ixtisoslashtirilgan gematologiya ilmiy-amaliy tibbiyot markazi va Oʻzbekiston gematolog va transfuziologlar assotsiatsiyasi boʻldi. Tadbir «WYNDHAM Tashkent» mehmonxonasi hududida oʻtkazildi. Albatros Health Care kompaniyasi konferensiyada homiy sifatida ishtirok etdi. Mutaxassislarni birlashtiruvchi, bilim almashishga va tibbiyot sohasi rivojiga xizmat qiladigan tashabbuslarni qoʻllab-quvvatlash biz uchun katta sharaf. Tashkilotchilarga ishonch va ushbu tadbirning bir qismi boʻlish imkoni uchun rahmat. Biz odamlar sogʻligʻi uchun tibbiyot va innovatsion yechimlar rivojiga hissa qoʻshayotganimizdan faxrlanamiz.",
+    "type": "conference",
+    "images": [
+      "/images/events/8be7lxlrop.webp",
+      "/images/events/Lc3AuMUXvi.webp"
+    ]
   },
   {
-    "id": "e2025-2",
+    "id": "e-QBt6oB3bB8",
     "year": "2025",
-    "title": "Семинар: автоматизация исследования мочи на анализаторе URIT US-1000",
-    "date": "Октябрь 2025",
-    "description": "Практический семинар по автоматизации общего анализа мочи.",
-    "titleUz": "Seminar: URIT US-1000 da siydik tahlilini avtomatlashtirish",
-    "descriptionUz": "Umumiy siydik tahlilini avtomatlashtirish boʻyicha amaliy seminar."
+    "title": "Семинар: Важность регулярного и качественного ОАМ для раннего выявления диабетических поражений почек, используя автоматический анализатор мочи URIT",
+    "date": "Июль 2025",
+    "description": "Спикер: Бегматова Хафиза Аширметовна\nЗаведующая отделением\nПерсонализированной эндокринологии\nМесто проведения:\nРеспубликанский специализированный\nНаучно-практический медицинский центр\nЭндокринологии им. академика Ё.Х.ТУРАКУЛОВА\n(Ташкент)",
+    "titleUz": "Seminar: URIT avtomatik siydik analizatoridan foydalanib, buyrakning diabetik zararlanishini erta aniqlashda muntazam va sifatli UST muhimligi",
+    "descriptionUz": "Maʼruzachi: Begmatova Hafiza Ashirmetovna, Shaxsiylashtirilgan endokrinologiya boʻlimi mudiri. Oʻtkaziladigan joy: akademik Yo.X. Turakulov nomidagi Respublika ixtisoslashtirilgan endokrinologiya ilmiy-amaliy tibbiyot markazi (Toshkent).",
+    "type": "seminar",
+    "images": [
+      "/images/events/QBt6oB3bB8.webp"
+    ]
   },
   {
-    "id": "e2025-3",
+    "id": "e-ybENXgv8s3",
     "year": "2025",
-    "title": "Инсталляция иммунохемилюминесцентного анализатора C8 от SNIBE",
+    "title": "Семинар: Аутоиммунная панель",
+    "date": "Июнь 2025",
+    "description": "Спикер: Зокиров Ёркин Узуевич\nДоктор медицинских наук. Профессор.\nМесто проведения:\nРеспубликанский специализированный\nнаучно-практический медицинский\nцентр эпидемиологии, микробиологии,\nинфекционных и паразитарных заболеваний",
+    "titleUz": "Seminar: Autoimmun panel",
+    "descriptionUz": "Maʼruzachi: Zokirov Yorkin Uzuevich, tibbiyot fanlari doktori, professor. Oʻtkaziladigan joy: Respublika ixtisoslashtirilgan epidemiologiya, mikrobiologiya, yuqumli va parazitar kasalliklar ilmiy-amaliy tibbiyot markazi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/ybENXgv8s3.webp"
+    ]
+  },
+  {
+    "id": "e-zDak2dKYA7",
+    "year": "2025",
+    "title": "Научно-практический семинар по гемостазу и тромбозам у беременных",
+    "date": "Июнь 2025",
+    "description": "Научно-практический семинар по гемостазу и тромбозам у беременных\n13 июня | 14:00 | Ташкент, РСНПМЦ Здоровья матери и ребенка\nОписание:\nAlbatros Health Care совместно с РСНПМЦ здоровья матери и ребенка организовали важное медицинское мероприятие с участием ведущих экспертов из России:\nЖарков Павел Александрович\nДоктор мед. наук, профессор, гематолог международного уровня\nТема: Физиология гемостаза: баланс между тромбозом и кровотечением\nДженина Ольга Вадимовна\nКандидат мед. наук, сосудистый хирург, флеболог\nТема: Тромбозы у беременных: мультидисциплинарный подход, профилактика, лечение и мониторинг\nСеминар стал уникальной возможностью обмена опытом между специалистами по гематологии, акушерству и хирургии.",
+    "titleUz": "Homilador ayollarda gemostaz va tromboz boʻyicha ilmiy-amaliy seminar",
+    "descriptionUz": "Homilador ayollarda gemostaz va tromboz boʻyicha ilmiy-amaliy seminar. 13-iyun, soat 14:00, Toshkent, Ona va bola sogʻligʻi RIASHTM. Tavsif: Albatros Health Care Ona va bola sogʻligʻi RIASHTM bilan hamkorlikda Rossiyadan yetakchi ekspertlar ishtirokida muhim tibbiy tadbir tashkil etdi. Jarkov Pavel Aleksandrovich, tibbiyot fanlari doktori, professor, xalqaro darajadagi gematolog. Mavzu: Gemostaz fiziologiyasi: tromboz va qon ketishi oʻrtasidagi muvozanat. Djenina Olga Vadimovna, tibbiyot fanlari nomzodi, qon-tomir jarrohi, flebolog. Mavzu: Homilador ayollarda tromboz: multidisiplinar yondashuv, profilaktika, davolash va monitoring. Seminar gematologiya, akusherlik va jarrohlik mutaxassislari oʻrtasida tajriba almashish uchun noyob imkoniyat boʻldi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/zDak2dKYA7.webp"
+    ]
+  },
+  {
+    "id": "e-IAP9c0p7jF",
+    "year": "2025",
+    "title": "Семинар по гастропанели в НИИ педиатрии",
+    "date": "Май 2025",
+    "description": "Семинар по гастропанели в НИИ педиатрии\n27 мая 2025 года в НИИ Педиатрии компании Albatros Health Care и Snibe организовали научный семинар на тему «Гастропанель».\nЛектор: Еркин Узуевич\nУчастники: 60 врачей-клиницистов\nКлючевые моменты:\nКлинические аспекты диагностики с использованием гастропанели.\nИнтерпретация результатов и их применение в ежедневной практике.\nАтмосфера была теплой и насыщенной: участники активно задавали вопросы и обсуждали тему, проявляя глубокий интерес.\nСеминар стал ценной платформой для обновления знаний и получения практических инструментов для работы с пациентами.",
+    "titleUz": "Pediatriya ITIda gastropanel boʻyicha seminar",
+    "descriptionUz": "Pediatriya ITIda gastropanel boʻyicha seminar. 2025-yil 27-may kuni Pediatriya ilmiy-tadqiqot institutida Albatros Health Care va Snibe kompaniyalari «Gastropanel» mavzusida ilmiy seminar tashkil etdi. Maʼruzachi: Yorkin Uzuevich. Ishtirokchilar: 60 nafar klinisist shifokor. Asosiy jihatlar: gastropanel yordamida diagnostikaning klinik jihatlari; natijalarni talqin qilish va ularni kundalik amaliyotda qoʻllash. Muhit iliq va mazmunli boʻldi: ishtirokchilar faol savollar berib, mavzuni muhokama qilishdi va chuqur qiziqish bildirishdi. Seminar bilimlarni yangilash va bemorlar bilan ishlash uchun amaliy vositalar olish boʻyicha qimmatli maydonga aylandi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/IAP9c0p7jF.webp"
+    ]
+  },
+  {
+    "id": "e-r3UzYT37r3",
+    "year": "2025",
+    "title": "Онкомаркеры и гастропанель: Современные подходы в лабораторной диагностике",
+    "date": "Май 2025",
+    "description": "Семинар по онкомаркерам и гастропанели в Андижане\n22 мая 2025 года компания Albatros Health Care совместно с компанией Snibe организовали семинар.\nВ Андижанском многопрофильном медицинском центре.\nТема семинара: «Онкомаркеры и гастропанель: современные подходы в лабораторной диагностике».\nЛектор: д.м.н. Ёркин Узуевич\nУчастники: более 60 врачей-онкологов, гастроэнтерологов, терапевтов, урологов, гинекологов и лабораторных специалистов.\nКлючевые темы:\nРоль онкомаркеров (CEA, CA 19-9, CA 125, AFP, PSA) в диагностике, мониторинге и выявлении рецидивов.\nГастропанель: неинвазивная диагностика заболеваний желудка (гастрин-17, пепсиноген I/II, антитела к H. pylori).\nПрактическая часть: разбор клинических случаев и интерпретация результатов.\nОрганизация лабораторной диагностики в районах.\nРезультаты:\nУчастники освоили современные методы диагностики онкологических и гастроэнтерологических заболеваний.\nДаны рекомендации по внедрению гастропанели и онкомаркеров в практику, а также повышению квалификации лабораторного персонала.\nПодчеркнута важность регулярных образовательных мероприятий.",
+    "titleUz": "Onkomarkerlar va gastropanel: laboratoriya diagnostikasida zamonaviy yondashuvlar",
+    "descriptionUz": "Andijonda onkomarkerlar va gastropanel boʻyicha seminar. 2025-yil 22-may kuni Albatros Health Care kompaniyasi Snibe kompaniyasi bilan hamkorlikda Andijon koʻp tarmoqli tibbiyot markazida seminar tashkil etdi. Seminar mavzusi: «Onkomarkerlar va gastropanel: laboratoriya diagnostikasida zamonaviy yondashuvlar». Maʼruzachi: tibbiyot fanlari doktori Yorkin Uzuevich. Ishtirokchilar: 60 dan ortiq onkolog, gastroenterolog, terapevt, urolog, ginekolog va laboratoriya mutaxassisi. Asosiy mavzular: onkomarkerlarning (CEA, CA 19-9, CA 125, AFP, PSA) diagnostika, monitoring va retsidivlarni aniqlashdagi roli; gastropanel: oshqozon kasalliklarining noinvaziv diagnostikasi (gastrin-17, pepsinogen I/II, H. pylori antitelolari); amaliy qism: klinik holatlarni tahlil qilish va natijalarni talqin qilish; hududlarda laboratoriya diagnostikasini tashkil etish. Natijalar: ishtirokchilar onkologik va gastroenterologik kasalliklarni diagnostika qilishning zamonaviy usullarini oʻzlashtirdi. Gastropanel va onkomarkerlarni amaliyotga joriy etish, shuningdek laboratoriya xodimlari malakasini oshirish boʻyicha tavsiyalar berildi. Muntazam taʼlim tadbirlarining muhimligi taʼkidlandi.",
+    "type": "other",
+    "images": [
+      "/images/events/r3UzYT37r3.webp"
+    ]
+  },
+  {
+    "id": "e-xozXwoxBf7",
+    "year": "2025",
+    "title": "Gastropanel: Современное эффективное неинвазивное исследование ЖКТ",
+    "date": "Апрель 2025",
+    "description": "Gastropanel:\nСовременное эффективное\nнеинвазивное исследование ЖКТ\nСпикер: Зокиров Ёркин Узуевич\nДоктор медицинских наук. Профессор.\nМесто проведения: Республиканский специализированный\nнаучно-практический медицинский\nцентр педиатрии",
+    "titleUz": "Gastropanel: oshqozon-ichak traktining zamonaviy samarali noinvaziv tekshiruvi",
+    "descriptionUz": "Gastropanel: oshqozon-ichak traktining zamonaviy samarali noinvaziv tekshiruvi. Maʼruzachi: Zokirov Yorkin Uzuevich, tibbiyot fanlari doktori, professor. Oʻtkaziladigan joy: Respublika ixtisoslashtirilgan pediatriya ilmiy-amaliy tibbiyot markazi.",
+    "type": "other",
+    "images": [
+      "/images/events/xozXwoxBf7.webp"
+    ]
+  },
+  {
+    "id": "e-WwDBxZi3G5",
+    "year": "2025",
+    "title": "Открытый семинар для врачей с международным участием ТЭЛА",
+    "date": "Апрель 2025",
+    "description": "Открытый семинар для врачей\nс международным участием\nТЭЛА\nСпикер:\nЯкубцевич Руслан Эдуардович\nРеспублика Беларусь\nд.м.н., профессор. Заведующий кафедрой\nанестезиологии-реаниматологии Гродненского\nгосударственного медицинского университета,\nзаведующий отделом анестезиологии и реанимации\nГродненской университетской клиники\nМесто проведения: РЕСПУБЛИКАНСКИЙ СПЕЦИАЛИЗИРОВАННЫЙ НАУЧНО-\nПРАКТИЧЕСКИЙ МЕДИЦИНСКИЙ ЦЕНТР ЭНДОКРИНОЛОГИИ\nг. Ташкент, Мирзо Улугбекский район, улица Мирзо Улугбека, 56",
+    "titleUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar: OATE (oʻpka arteriyasi tromboemboliyasi)",
+    "descriptionUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar. OATE (oʻpka arteriyasi tromboemboliyasi). Maʼruzachi: Yakubtsevich Ruslan Eduardovich, Belarus Respublikasi, tibbiyot fanlari doktori, professor. Grodno davlat tibbiyot universiteti anesteziologiya-reanimatologiya kafedrasi mudiri, Grodno universiteti klinikasi anesteziologiya va reanimatsiya boʻlimi boshligʻi. Oʻtkaziladigan joy: Respublika ixtisoslashtirilgan endokrinologiya ilmiy-amaliy tibbiyot markazi, Toshkent shahri, Mirzo Ulugʻbek tumani, Mirzo Ulugʻbek koʻchasi, 56.",
+    "type": "seminar",
+    "images": [
+      "/images/events/WwDBxZi3G5.webp"
+    ]
+  },
+  {
+    "id": "e-MYP2XVWwBv",
+    "year": "2025",
+    "title": "Открытый семинар для врачей с международным участием 1. Гемостаз при инфекциях в интенсивной терапии 2. Аспекты антикоагуляции в плановой и экстренной хирургии",
+    "date": "Апрель 2025",
+    "description": "Открытый семинар для врачей\nс международным участием\n1. Гемостаз при инфекциях в интенсивной терапии\n2. Аспекты антикоагуляции в плановой\nи экстренной хирургии (NEW)\nСпикер:\nЯкубцевич Руслан Эдуардович\nМесто проведения: РНЦЭМП, г. Ташкент, ул. Кичик халка йули, 2.\nХирургический корпус, 2 этаж, кафедра Анестезиологии и реаниматологии",
+    "titleUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar: 1. Intensiv terapiyada infeksiyalarda gemostaz 2. Rejali va shoshilinch jarrohlikda antikoagulyatsiya jihatlari",
+    "descriptionUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar. 1. Intensiv terapiyada infeksiyalarda gemostaz. 2. Rejali va shoshilinch jarrohlikda antikoagulyatsiya jihatlari (YANGI). Maʼruzachi: Yakubtsevich Ruslan Eduardovich. Oʻtkaziladigan joy: RShTYoIM, Toshkent shahri, Kichik halqa yoʻli koʻchasi, 2. Jarrohlik binosi, 2-qavat, Anesteziologiya va reanimatologiya kafedrasi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/MYP2XVWwBv.webp"
+    ]
+  },
+  {
+    "id": "e-s9Wo1j4FMg",
+    "year": "2025",
+    "title": "Открытый семинар для врачей с международным участием ТЭЛА Спикер: Якубцевич Руслан Эдуардович",
+    "date": "Апрель 2025",
+    "description": "Открытый семинар для врачей\nс международным участием\nТЭЛА\nСпикер:\nЯкубцевич Руслан Эдуардович\nРеспублика Беларусь\nд.м.н., профессор. Заведующий кафедрой\nанестезиологии-реаниматологии Гродненского\nгосударственного медицинского университета,\nзаведующий отделом анестезиологии и реанимации\nГродненской университетской клиники\nМесто проведения: Республиканский специализированный научно-практический\nмедицинский центр здоровья матери и ребенка МЗ РУз\nг. Ташкент, ул. Мирзо-Улугбека, дом 132А",
+    "titleUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar: OATE. Maʼruzachi: Yakubtsevich Ruslan Eduardovich",
+    "descriptionUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar. OATE (oʻpka arteriyasi tromboemboliyasi). Maʼruzachi: Yakubtsevich Ruslan Eduardovich, Belarus Respublikasi, tibbiyot fanlari doktori, professor. Grodno davlat tibbiyot universiteti anesteziologiya-reanimatologiya kafedrasi mudiri, Grodno universiteti klinikasi anesteziologiya va reanimatsiya boʻlimi boshligʻi. Oʻtkaziladigan joy: OʻzR SSV Ona va bola sogʻligʻi respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi, Toshkent shahri, Mirzo Ulugʻbek koʻchasi, 132A-uy.",
+    "type": "seminar",
+    "images": [
+      "/images/events/s9Wo1j4FMg.webp"
+    ]
+  },
+  {
+    "id": "e-Lu0Hua17jG",
+    "year": "2025",
+    "title": "СЕМИНАР: ОТ РАННЕГО ВЫЯВЛЕНИЯ К ЭФФЕКТИВНОМУ ЛЕЧЕНИЮ: РОЛЬ ОНКОМАРКЕРОВ И СКРИНИНГА.",
+    "date": "Апрель 2025",
+    "description": "СПИКЕРЫ:\nКамола Рахмановна\nВрач генетик, врач высшей категории\nЗокиров Ёркин Узуевич\nДоктор медицинских\nнаук, профессор\nМесто проведения: Гостиница Atour\nг. Наманган, улица Аэропорт, 1\nПРОГРАММА:\n13:00 - 13:30 Регистрация\nучастников\n13:30 - 13:45 Официальное\nоткрытие. Приветственное слово\nрегионального менеджера\nкомпании Albatros Health Care.\n13:45 - 14:30 Первая лекция:\n«Пренатальный скрининг:\nсовременные подходы»\nСпикер: Камола Рахмоновна\n14:30 - 15:15 Вторая лекция:\n«Онкомаркеры в диагностике\nонкологических заболеваний»\nСпикер: Ёркин Узуевич\n15:15 - 16:15 Кофе-брейк.\nВозможность пообщаться с\nколлегами в неформальной\nобстановке, обсудить актуальные\nвопросы и обменяться\nпрофессиональным опытом.\nБудем рады встрече и\nпродуктивному мероприятию!",
+    "titleUz": "Seminar: erta aniqlashdan samarali davolashga: onkomarkerlar va skriningning roli",
+    "descriptionUz": "Maʼruzachilar: Kamola Rahmanovna, genetik shifokor, oliy toifali shifokor; Zokirov Yorkin Uzuevich, tibbiyot fanlari doktori, professor. Oʻtkaziladigan joy: Atour mehmonxonasi, Namangan shahri, Aeroport koʻchasi, 1. Dastur: 13:00-13:30 ishtirokchilarni roʻyxatga olish; 13:30-13:45 rasmiy ochilish, Albatros Health Care mintaqaviy menejerining tabrik soʻzi; 13:45-14:30 birinchi maʼruza: «Prenatal skrining: zamonaviy yondashuvlar», maʼruzachi Kamola Rahmanovna; 14:30-15:15 ikkinchi maʼruza: «Onkologik kasalliklar diagnostikasida onkomarkerlar», maʼruzachi Yorkin Uzuevich; 15:15-16:15 kofe-breyk, hamkasblar bilan norasmiy muhitda muloqot qilish, dolzarb masalalarni muhokama etish va kasbiy tajriba almashish imkoniyati. Uchrashuv va samarali tadbirdan mamnun boʻlamiz!",
+    "type": "seminar",
+    "images": [
+      "/images/events/Lu0Hua17jG.webp"
+    ]
+  },
+  {
+    "id": "e-pKZsd1PkC2",
+    "year": "2025",
+    "title": "Современные представления • лечении ВТЭО на фоне беременности. Мониторинг антикоагулянтной терапии у беременных.",
+    "date": "Март 2025",
+    "description": "Круглый стол для врачейс международным участием:\nСовременные представления\nлечении ВТЭО на фоне беременности.\nМониторинг антикоагулянтной\nтерапии у беременных.\nПриглашенный эксперт:\nДЖЕНИНА\nОльга Вадимовна\nРоссия\nкандидат медицинских наук, сосудистый хирург, флеболог,\nведущий специалист-гемостазиолог по лечению\nтромбоэмболических осложнений Первого\nфлебологического центра и Группы компаний Мать и Дитя,\nчлен ISTH, EMLTD, АФР, МАРС.",
+    "titleUz": "Homiladorlik fonida VTE (venoz tromboembolik asoratlar) davolash boʻyicha zamonaviy tasavvurlar. Homilador ayollarda antikoagulyant terapiyani monitoring qilish",
+    "descriptionUz": "Xalqaro ishtirokli shifokorlar uchun davra suhbati: Homiladorlik fonida VTE davolash boʻyicha zamonaviy tasavvurlar. Homilador ayollarda antikoagulyant terapiyani monitoring qilish. Taklif etilgan ekspert: DJENINA Olga Vadimovna, Rossiya, tibbiyot fanlari nomzodi, qon-tomir jarrohi, flebolog, Birinchi flebologiya markazi va «Mat i Ditya» kompaniyalar guruhining tromboembolik asoratlarni davolash boʻyicha yetakchi gemostaziolog mutaxassisi, ISTH, EMLTD, AFR, MARS aʼzosi.",
+    "type": "other",
+    "images": [
+      "/images/events/pKZsd1PkC2.webp"
+    ]
+  },
+  {
+    "id": "e-ige4ZvqMOL",
+    "year": "2025",
+    "title": "Семинар: Пренатальный скрининг СПИКЕР: АХМЕДОВА Камола Рахманбердыева",
+    "date": "Февраль 2025",
+    "description": "24 февраля 2025 прошел семинар на тему \"Пренатальный скрининг\".\nСпикер: Ахмедова Камола Рахманбердыева.\nМесто проведения: РЕСПУБЛИКАНСКИЙ\nПЕРИНАТАЛЬНЫЙ ЦЕНТР",
+    "titleUz": "Seminar: Prenatal skrining. Maʼruzachi: AXMEDOVA Kamola Rahmanberdiyeva",
+    "descriptionUz": "2025-yil 24-fevral kuni «Prenatal skrining» mavzusida seminar boʻlib oʻtdi. Maʼruzachi: Axmedova Kamola Rahmanberdiyeva. Oʻtkaziladigan joy: Respublika perinatal markazi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/ige4ZvqMOL.webp"
+    ]
+  },
+  {
+    "id": "e-T38pCA1atF",
+    "year": "2025",
+    "title": "Семинар: Аутоимунная панель",
+    "date": "Февраль 2025",
+    "description": "19 февраля 2025 года на территории Республиканского специализированного научно-практического медицинского центра терапии и медицинской реабилитации, компаниями «Albatros Health Care» и SNIBE был успешно проведен семинар на тему: «Аутоиммунная панель». Спикером выступил доктор медицинских наук, профессор Ёркин Узуевич Зокиров.\nНа мероприятии присутствовало более 40 врачей!",
+    "titleUz": "Seminar: Autoimmun panel",
+    "descriptionUz": "2025-yil 19-fevral kuni Respublika ixtisoslashtirilgan terapiya va tibbiy reabilitatsiya ilmiy-amaliy tibbiyot markazi hududida «Albatros Health Care» va SNIBE kompaniyalari «Autoimmun panel» mavzusida seminarni muvaffaqiyatli oʻtkazdi. Maʼruzachi tibbiyot fanlari doktori, professor Yorkin Uzuevich Zokirov boʻldi. Tadbirda 40 dan ortiq shifokor ishtirok etdi!",
+    "type": "seminar",
+    "images": [
+      "/images/events/T38pCA1atF.webp"
+    ]
+  },
+  {
+    "id": "e-Uf2G6QIiji",
+    "year": "2025",
+    "title": "В клинике Darmon Service состоялось важное образовательное мероприятие SME для гинекологов, посвященное пренатальному скринингу",
     "date": "Январь 2025",
-    "description": "Ввод в эксплуатацию нового ИХЛА-анализатора SNIBE.",
-    "titleUz": "SNIBE C8 immunoxemilyuminessent analizatorini oʻrnatish",
-    "descriptionUz": "Yangi SNIBE IXLA-analizatorini ishga tushirish."
+    "description": "31 января в клинике Darmon Service состоялось важное образовательное мероприятие SME для гинекологов, посвященное пренатальному скринингу - одной из самых актуальных тем в современной медицине.\nЛектором выступила врач высшей категории, генетик Камола Рахмоновна, представившая глубокую и информативную презентацию. Врачи активно включились в обсуждение, задавали множество вопросов, что подтверждает высокий интерес к теме и ее значимость в повседневной практике.\nПренатальный скрининг - это ключ к раннему выявлению возможных генетических аномалий у плода, что позволяет врачам своевременно принимать важные решения. Повышение осведомленности специалистов в этом направлении играет важную роль в улучшении качества медицинской помощи будущим мамам и их малышам.\nВ дополнение к презентации было проведено повторное обучение в лаборатории по методике пренатального скрининга, где специалисты получили практические знания и рекомендации по использованию современного оборудования.\nDarmon Service - наш надежный партнер, который использует только высококачественные реагенты и оборудование от Snibe, обеспечивая точность и надежность лабораторных исследований. Их стремление к высоким стандартам диагностики подтверждает важность нашего сотрудничества и общее стремление к развитию лабораторной медицины.\nТакие встречи способствуют повышению уровня медицинской грамотности и внедрению передовых методов диагностики в клиническую практику. Мы уверены, что это знание принесет пользу многим пациентам!\nБлагодарим всех участников и с нетерпением ждем новых встреч!",
+    "titleUz": "Darmon Service klinikasida ginekologlar uchun prenatal skriningga bagʻishlangan SME taʼlim tadbiri boʻlib oʻtdi",
+    "descriptionUz": "31-yanvar kuni Darmon Service klinikasida ginekologlar uchun zamonaviy tibbiyotning eng dolzarb mavzularidan biri, prenatal skriningga bagʻishlangan muhim SME taʼlim tadbiri boʻlib oʻtdi. Maʼruzachi sifatida oliy toifali shifokor, genetik Kamola Rahmanovna chiqib, chuqur va maʼlumotga boy taqdimot koʻrsatdi. Shifokorlar muhokamaga faol qoʻshilib, koʻplab savollar berishdi, bu esa mavzuga yuqori qiziqish va uning kundalik amaliyotdagi ahamiyatini tasdiqlaydi. Prenatal skrining, homiladagi ehtimoliy genetik anomaliyalarni erta aniqlashning kaliti boʻlib, shifokorlarga muhim qarorlarni oʻz vaqtida qabul qilish imkonini beradi. Mutaxassislarning bu boradagi xabardorligini oshirish boʻlajak onalar va ularning chaqaloqlariga tibbiy yordam sifatini yaxshilashda muhim rol oʻynaydi. Taqdimotga qoʻshimcha ravishda laboratoriyada prenatal skrining metodikasi boʻyicha takroriy oʻqitish oʻtkazildi, unda mutaxassislar zamonaviy uskunadan foydalanish boʻyicha amaliy bilim va tavsiyalar oldi. Darmon Service, faqat Snibe yuqori sifatli reagent va uskunalaridan foydalanadigan ishonchli hamkorimiz boʻlib, laboratoriya tadqiqotlarining aniqligi va ishonchliligini taʼminlaydi. Bunday uchrashuvlar tibbiy savodxonlik darajasini oshirishga va ilgʻor diagnostika usullarini klinik amaliyotga joriy etishga xizmat qiladi. Barcha ishtirokchilarga rahmat va yangi uchrashuvlarni intizorlik bilan kutamiz!",
+    "type": "other",
+    "images": [
+      "/images/events/Uf2G6QIiji.webp"
+    ]
   },
   {
-    "id": "e2024-1",
-    "year": "2024",
-    "title": "Международный симпозиум по иммуноанализу, Hilton Tashkent City",
-    "date": "Май 2024",
-    "description": "Симпозиум с участием иностранных экспертов в области иммуноанализа.",
-    "titleUz": "Immunotahlil boʻyicha xalqaro simpozium, Hilton Tashkent City",
-    "descriptionUz": "Immunotahlil sohasidagi xorijiy ekspertlar ishtirokidagi simpozium."
+    "id": "e-yUsJTRYW28",
+    "year": "2025",
+    "title": "«Республиканский съезд специалистов государственной лабораторной службы»",
+    "date": "Январь 2025",
+    "description": "24 января 2025 года, при поддержке Министерства Здравоохранения Республики Узбекистан, компании Albatros Health Care и Snibe, был организован «Республиканский съезд специалистов государственной лабораторной службы».\nСъезд был открыт заместителем министра здравоохранения Республики Узбекистан, который подчеркнул важность внедрения современных технологий в лабораторную диагностику для повышения качества медицинских услуг.\nМероприятие состоялось в честь установки 125 автоматических биохимических и ИХЛА анализаторов в рамках государственного проекта. На съезде собрались заведующие лабораториями и руководители с 84 медицинских учреждений, которые получили новое оборудование по госпрограмме. Это событие стало значимым шагом к улучшению качества медицинских услуг и дальнейшему развитию лабораторной диагностики в стране.\nПрименение таких современных технологий в лабораторной сфере откроет новые возможности для точной и своевременной диагностики, что в свою очередь повлияет на эффективность лечения и профилактики заболеваний. Внедрение автоматических анализаторов позволит ускорить процессы, повысить точность результатов и снизить человеческий фактор.\nМы уверены, что это событие станет важным этапом в модернизации системы здравоохранения Узбекистана и будет способствовать улучшению доступности и качества медицинских услуг для всех граждан страны.\nВ завершение съезда для всех гостей был организован гала-ужин, на котором участники могли обменяться впечатлениями, обсудить перспективы развития отрасли и укрепить профессиональные связи. Кроме того, во время ужина был проведен розыгрыш более 50 призов, что стало приятным дополнением к вечернему мероприятию.",
+    "titleUz": "«Davlat laboratoriya xizmati mutaxassislari respublika qurultoyi»",
+    "descriptionUz": "2025-yil 24-yanvar kuni Oʻzbekiston Respublikasi Sogʻliqni saqlash vazirligi, Albatros Health Care va Snibe kompaniyalari koʻmagida «Davlat laboratoriya xizmati mutaxassislari respublika qurultoyi» tashkil etildi. Qurultoyni Oʻzbekiston Respublikasi sogʻliqni saqlash vaziri oʻrinbosari ochib, tibbiy xizmatlar sifatini oshirish uchun laboratoriya diagnostikasiga zamonaviy texnologiyalarni joriy etishning muhimligini taʼkidladi. Tadbir davlat loyihasi doirasida 125 ta avtomatik biokimyoviy va IXLA analizatorini oʻrnatish sharafiga oʻtkazildi. Qurultoyga davlat dasturi boʻyicha yangi uskuna olgan 84 tibbiy muassasadan laboratoriya mudirlari va rahbarlar toʻplandi. Ushbu voqea tibbiy xizmatlar sifatini yaxshilash va mamlakatda laboratoriya diagnostikasini yanada rivojlantirishga muhim qadam boʻldi. Bunday zamonaviy texnologiyalarni laboratoriya sohasida qoʻllash aniq va oʻz vaqtida diagnostika uchun yangi imkoniyatlar ochadi, bu esa davolash va kasalliklar profilactikasining samaradorligiga taʼsir qiladi. Avtomatik analizatorlarni joriy etish jarayonlarni tezlashtirish, natijalar aniqligini oshirish va inson omilini kamaytirish imkonini beradi. Ishonamizki, bu voqea Oʻzbekiston sogʻliqni saqlash tizimini modernizatsiyalashda muhim bosqich boʻlib, barcha fuqarolar uchun tibbiy xizmatlar sifati va qulayligini yaxshilashga xizmat qiladi. Qurultoy yakunida barcha mehmonlar uchun gala-kechki ovqat tashkil etildi, unda ishtirokchilar taassurot almashdi va soha rivoji istiqbollarini muhokama qildi. Shuningdek, kechki ovqat davomida 50 dan ortiq sovrin oʻyini oʻtkazildi.",
+    "type": "congress",
+    "images": [
+      "/images/events/yUsJTRYW28.webp",
+      "/images/events/10qIkodWNG.webp"
+    ]
   },
   {
-    "id": "e2024-2",
-    "year": "2024",
-    "title": "Стенд компании на 28-й международной выставке TIHE 2024",
-    "date": "Апрель 2024",
-    "description": "Участие в крупнейшей выставке здравоохранения Tashkent International Healthcare Exhibition.",
-    "titleUz": "Kompaniya stendi 28-xalqaro TIHE 2024 koʻrgazmasida",
-    "descriptionUz": "Tashkent International Healthcare Exhibition sogʻliqni saqlash koʻrgazmasida ishtirok."
+    "id": "e-NSYCcLBSqt",
+    "year": "2025",
+    "title": "Инсталляция новейшего биохимического анализатора C8 от Snibe!",
+    "date": "Январь 2025",
+    "description": "Мы рады поделиться замечательной новостью! Один из наших высокоуважаемых партнеров, лаборатория Swisslab, первой в Республике успешно произвела инсталляцию новейшего биохимического анализатора C8 от Snibe!\nЭтот совершенно новый аппарат инновационная модель, обеспечивающая еще более точные и надежные результаты. За успешной установкой стояла колоссальная работа: трудились инженеры из Китая, специалисты команды Albatros Health care, которые продемонстрировали высокий профессионализм и преданность делу.\nМы не просто движемся вперед мы создаем будущее диагностики! Улучшение качества работы наша главная цель, и этот проект еще раз доказывает: мы делаем большие успехи и не собираемся останавливаться!\nБраво всей команде!",
+    "titleUz": "Snibedan eng yangi C8 biokimyoviy analizatorini oʻrnatish!",
+    "descriptionUz": "Ajoyib xabar bilan boʻlishishdan mamnunmiz! Yuqori hurmatli hamkorlarimizdan biri, Swisslab laboratoriyasi Respublika boʻyicha birinchi boʻlib Snibedan eng yangi C8 biokimyoviy analizatorini muvaffaqiyatli oʻrnatdi! Bu mutlako yangi qurilma, yanada aniq va ishonchli natijalar beruvchi innovatsion model. Muvaffaqiyatli oʻrnatish ortida katta mehnat turdi: Xitoydan kelgan muhandislar va Albatros Health Care jamoasi mutaxassislari yuqori professionalizm va sadoqat koʻrsatdi. Biz shunchaki oldinga emas, diagnostika kelajagini yaratamiz! Ish sifatini yaxshilash asosiy maqsadimiz boʻlib, bu loyixa yana bir bor isbotlaydi: biz katta yutuqlarga erishmoqdamiz va toʻxtash niyatimiz yoʻq! Butun jamoaga tahsin!",
+    "type": "installation",
+    "images": [
+      "/images/events/NSYCcLBSqt.webp"
+    ]
   },
   {
-    "id": "e2024-3",
+    "id": "e-UqLVqdLwwY",
     "year": "2024",
-    "title": "Конференция «Туракуловские чтения»",
+    "title": "Открытый семинар для врачей с международным участием \"Внешняя оценка качества молекулярных методов исследований\"",
     "date": "Ноябрь 2024",
-    "description": "Участие в республиканской научной конференции по эндокринологии и лабораторной диагностике.",
-    "titleUz": "«Turakulov oʻqishlari» konferensiyasi",
-    "descriptionUz": "Endokrinologiya va laboratoriya diagnostikasi boʻyicha respublika ilmiy konferensiyasida ishtirok."
+    "description": "15 ноября компания Albatros Health Care организовала открытый семинар в Medion Academy. Спикер Верин Денис, доктор наук, прочитал лекцию на тему «Внешняя оценка качества молекулярных методов исследований. Назначение, принципы и выгода для лаборатории».",
+    "titleUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar: «Molekulyar tadqiqot usullarining tashqi sifat baholanishi»",
+    "descriptionUz": "15-noyabr kuni Albatros Health Care kompaniyasi Medion Academyda ochiq seminar tashkil etdi. Maʼruzachi, fan doktori Verin Denis «Molekulyar tadqiqot usullarining tashqi sifat baholanishi. Vazifasi, tamoyillari va laboratoriya uchun foydasi» mavzusida maʼruza oʻqidi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/UqLVqdLwwY.webp",
+      "/images/events/thH4eXdT0f.webp"
+    ]
   },
   {
-    "id": "e2023-1",
-    "year": "2023",
-    "title": "Международная конференция по иммуноанализу с профессором Ричардом Пикнером",
-    "date": "Июнь 2023",
-    "description": "Научное мероприятие с участием ведущего британского эксперта по иммуноанализу.",
-    "titleUz": "Professor Richard Pikner bilan immunotahlil xalqaro konferensiyasi",
-    "descriptionUz": "Yetakchi britaniyalik immunotahlil eksperti ishtirokidagi ilmiy tadbir."
+    "id": "e-5FQJJNfDdy",
+    "year": "2024",
+    "title": "V съезд инфекционистов, эпидемиологов, паразитологов, микробиологов и вирусологов Узбекистана. «Уроки пандемии и профилактика новых угроз»",
+    "date": "Ноябрь 2024",
+    "description": "С 14 по 15 ноября состоялся - V съезд инфекционистов, эпидемиологов, паразитологов, микробиологов и вирусологов Узбекистана.\n«Уроки пандемии и профилактика новых угроз»\nКомпания Albatros Health Care является партнёрами данного съезда!\nБыл приглашён спикер международного класса:\nВерин Денис Анатольевич - кандидат наук.\nБыли затронуты следующие вопросы: «Внешняя оценка качества молекулярных методов исследований. Назначение, принципы и выгода для лаборатории»\nМы благодарим всех специалистов, которые посетили наш стенд и обсудили вопросы лабораторной диагностики.",
+    "titleUz": "Oʻzbekiston infeksionist, epidemiolog, parazitolog, mikrobiolog va virusologlarining V qurultoyi. «Pandemiya saboqlari va yangi tahdidlar profilactikasi»",
+    "descriptionUz": "14-15-noyabr kunlari Oʻzbekiston infeksionist, epidemiolog, parazitolog, mikrobiolog va virusologlarining V qurultoyi boʻlib oʻtdi. «Pandemiya saboqlari va yangi tahdidlar profilactikasi». Albatros Health Care kompaniyasi ushbu qurultoyning hamkoridir! Xalqaro darajadagi maʼruzachi taklif etildi: Verin Denis Anatolevich, fan nomzodi. Quyidagi masalalar koʻrib chiqildi: «Molekulyar tadqiqot usullarining tashqi sifat baholanishi. Vazifasi, tamoyillari va laboratoriya uchun foydasi». Stendimizga tashrif buyurib, laboratoriya diagnostikasi masalalarini muhokama qilgan barcha mutaxassislarga minnatdorchilik bildiramiz.",
+    "type": "congress",
+    "images": [
+      "/images/events/5FQJJNfDdy.webp"
+    ]
   },
   {
-    "id": "e2023-2",
+    "id": "e-NdmyWpSpZL",
+    "year": "2024",
+    "title": "Научно-практическая конференция с международным участием - «ТУРАКУЛОВСКИЕ ЧТЕНИЯ»",
+    "date": "Ноябрь 2024",
+    "description": "9 ноября 2024 года, в гостинице Hilton Tashkent City прошла Научно-практическая конференция\nс международным участием - «ТУРАКУЛОВСКИЕ ЧТЕНИЯ»\nКонференция была организована «Республиканским Специализированным Научно-практическим МЦ Эндокринологии имени академика Ё.Х. Туракулова»,\nКомпании «Albatros Health Care» и «Snibe» выступили платиновыми партнерами данной конференции.\nНа конференцию был приглашен спикер международного класса, профессор и доктор наук Джаоа Панчиано.\nПрофессор Джаоа, провел доклад на тему:«Лабораторные данные - управление и использование их в профилактике заболеваний»\nКомпанией был размещен стенд и ролл-апы с панелями тестов Maglumi, были упомянуты тесты на сахарный диабет и определение функции почек.\nВся необходимымая информация и раздаточные материалы можно было получить у наших менеджеров.\nМы благодарим всех специалистов, которые посетили наш стенд и обсудили вопросы лабораторной диагностики.",
+    "titleUz": "Xalqaro ishtirokli ilmiy-amaliy konferensiya «TURAKULOV OʻQISHLARI»",
+    "descriptionUz": "2024-yil 9-noyabr kuni Hilton Tashkent City mehmonxonasida xalqaro ishtirokli «TURAKULOV OʻQISHLARI» ilmiy-amaliy konferensiyasi boʻlib oʻtdi. Konferensiya akademik Yo.X. Turakulov nomidagi Respublika ixtisoslashtirilgan endokrinologiya ilmiy-amaliy tibbiyot markazi tomonidan tashkil etildi, «Albatros Health Care» va «Snibe» kompaniyalari ushbu konferensiyanyng platina hamkorlari boʻldi. Konferensiyaga xalqaro darajadagi maʼruzachi, professor va fan doktori Djaoa Panchiano taklif etildi. Professor Djaoa «Laboratoriya maʼlumotlari, ularni boshqarish va kasalliklar profilactikasida foydalanish» mavzusida maʼruza qildi. Kompaniya Maglumi test panellari bilan stend va roll-up joylashtirdi, qand diabeti va buyrak funksiyasini aniqlash testlari tilga olindi. Barcha kerakli maʼlumot va tarqatma materiallarni menejerlarimizdan olish mumkin edi. Stendimizga tashrif buyurib, laboratoriya diagnostikasi masalalarini muhokama qilgan barcha mutaxassislarga minnatdorchilik bildiramiz.",
+    "type": "conference",
+    "images": [
+      "/images/events/NdmyWpSpZL.webp",
+      "/images/events/cKkkd2y80e.webp"
+    ]
+  },
+  {
+    "id": "e-r6Hro6KV63",
+    "year": "2024",
+    "title": "Открытый семинар для врачей с международным участием \"Особенности планирования и ведения беременности у женщин с повышенным тромбогенным риском\"",
+    "date": "Октябрь 2024",
+    "description": "24 октября в клинике DeFactum, компанией «Albatros Health Care» был успешно проведен вебинар с участием Виноградовой Марии Алексеевны, на вебинаре приняли участие наши партнеры и врачи клиницисты.\nБыл поднят вопрос планирования и ведения беременности у женщин. Обсудили показания к назначению антикоагулянтной терапии.\nНапомним, что подбор лечебной дозировки низкомолекулярных гепаринов осуществляется под контролем теста anti-Xa.",
+    "titleUz": "Xalqaro ishtirokli shifokorlar uchun ochiq seminar: «Yuqori trombogen xavfli ayollarda homiladorlikni rejalashtirish va olib borish xususiyatlari»",
+    "descriptionUz": "24-oktabr kuni DeFactum klinicasida «Albatros Health Care» kompaniyasi Vinogradova Mariya Alekseevna ishtirokida vebinar muvaffaqiyatli oʻtkazdi, vebinarda hamkorlarimiz va klinisist shifokorlar ishtirok etdi. Ayollarda homiladorlikni rejalashtirish va olib borish masalasi koʻtarildi. Antikoagulyant terapiyani tayinlash koʻrsatmalari muhokama qilindi. Eslatib oʻtamiz, kam molekulyar ogʻirlikdagi geparinlarning davolovchi dozasini tanlash anti-Xa testi nazorati ostida amalga oshiriladi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/r6Hro6KV63.webp"
+    ]
+  },
+  {
+    "id": "e-D7otRWuMmg",
+    "year": "2024",
+    "title": "Научно-практическая конференция с международным участием - «ДОСТИЖЕНИЯ, ПРОБЛЕМЫ И ПЕРСПЕКТИВЫ В ГЕМАТОЛОГИИ»",
+    "date": "Октябрь 2024",
+    "description": "C 18 по 19 октября 2024 года, в «РСМНПМЦ хирургии им. акад. В. Вахидова» прошла Научно-практическая конференция\nс международным участием - «ДОСТИЖЕНИЯ, ПРОБЛЕМЫ И ПЕРСПЕКТИВЫ В ГЕМАТОЛОГИИ»\nКонференция была организована «Республиканским Специализированным Гематологическим НПМЦ», наша компания «Albatros Health Care» выступила партнером данной конференции.\nКомпания разместила информационный стенд, со всеми необходимыми информационно-раздаточными материалами.\nМы благодарим всех специалистов, которые посетили наш стенд, обсудили вопросы лабораторной диагностики, как в РСМНПМЦ хирургии им. В. Вахидова, так и в «Республиканском Специализированном Гематологическом НПМЦ».",
+    "titleUz": "Xalqaro ishtirokli ilmiy-amaliy konferensiya «GEMATOLOGIYADA YUTUQLAR, MUAMMOLAR VA ISTIQBOLLAR»",
+    "descriptionUz": "2024-yil 18-19-oktabr kunlari «Akademik V. Vohidov nomidagi RIXAITM» da xalqaro ishtirokli «GEMATOLOGIYADA YUTUQLAR, MUAMMOLAR VA ISTIQBOLLAR» ilmiy-amaliy konferensiyasi boʻlib oʻtdi. Konferensiya «Respublika ixtisoslashtirilgan gematologiya IATM» tomonidan tashkil etildi, kompaniyamiz «Albatros Health Care» ushbu konferensiyaning hamkori boʻldi. Kompaniya barcha kerakli maʼlumot-tarqatma materiallari bilan axborot stendini joylashtirdi. Ham Akademik V. Vohidov nomidagi RIXAITMda, ham «Respublika ixtisoslashtirilgan gematologiya IATM»da stendimizga tashrif buyurib, laboratoriya diagnostikasi masalalarini muhokama qilgan barcha mutaxassislarga minnatdorchilik bildiramiz.",
+    "type": "conference",
+    "images": [
+      "/images/events/D7otRWuMmg.webp"
+    ]
+  },
+  {
+    "id": "e-oLHY88XwvH",
+    "year": "2024",
+    "title": "Международная научно-практическая конференция на тему - «Актуальные вопросы акушерства и гинекологии»",
+    "date": "Октябрь 2024",
+    "description": "C 18 по 19 октября 2024 года,в гостинице «InterContinental Tashkent» прошла Международная научно-практическая конференция на тему - «Актуальные вопросы акушерства и гинекологии».\nКомпания «Albatros Health Care» выступила партнёром данной конференции и пригласила на мероприятие четырех спикеров международного класса:\nКоган Игорь Юрьевич - д.м.н., профессор, директор.\nФГБНУ «Научно-исследовательский институт акушерства, гинекологии и репродуктологии им. Д.О. Отта»\n(Санкт-Петербург, Российская Федерация)\nТема выступления : «Оценка и управление функцией яичников»\nБеспалова Олеся Николаевна - д.м.н., профессор, заместитель директора по научной работе ФГБНУ «Научно-исследовательский институт акушерства, гинекологии и репродуктологии им. Д.О. Отта» (Санкт-Петербург, Российская Федерация)\nТема выступления : «Иммунопрофилактика привычной потери плода»\nБелуга Максим Владимирович - заведующий отделением фетальной хирургии, научный сотрудник лаборатории акушерской и гинекологической патологии ГУ «Республиканский научно-практический центр «Мать и дитя» (Минск, Беларусь)\nТема выступления : «Плод как пациент de Facto»\nПачулия Ольга Владимировна - к.м.н., ученый секретарь ФГБНУ «Научно исследовательский институт акушерства, гинекологии и репродуктологии им. Д.О.Отта» (Санкт-Петербург, Российская Федерация)\nТема выступления : «Особенности неинвазивного пренатального скрининга при двойнях и перспективы прогнозирования акушерской патологии и других состояний».\nТак же на конференции компания разместила информационный стенд, с современными автоматическими анализаторами:\nACL TOP 350 CTS - Анализатор гемостаза\nBD Bactec FX40 - Автоматический бактериологический гемокультиватор\nТак же всем гостям были подготовлены информационные и раздаточные материалы.\nВо время мероприятия от лица «РСНПМЦ здоровья матери и ребёнка» компания «Albatros Health Care» была награждена за многолетнее и плодотворное сотрудничество!",
+    "titleUz": "«Akusherlik va ginekologiyaning dolzarb masalalari» xalqaro ilmiy-amaliy konferensiyasi",
+    "descriptionUz": "2024-yil 18-19-oktabr kunlari «InterContinental Tashkent» mehmonxonasida «Akusherlik va ginekologiyaning dolzarb masalalari» mavzusida xalqaro ilmiy-amaliy konferensiyasi boʻlib oʻtdi. «Albatros Health Care» kompaniyasi ushbu konferensiyaning hamkori sifatida ishtirok etdi va tadbirga xalqaro darajadagi toʻrtta maʼruzachini taklif qildi: Kogan Igor Yurevich, tibbiyot fanlari doktori, professor, direktor, D.O. Ott nomidagi Akusherlik, ginekologiya va reproduktologiya ilmiy-tadqiqot instituti (Sankt-Peterburg, Rossiya). Maʼruza mavzusi: «Tuxumdon funksiyasini baholash va boshqarish». Bespalova Olesya Nikolaevna, tibbiyot fanlari doktori, professor, ilmiy ishlar boʻyicha direktor oʻrinbosari, D.O. Ott nomidagi institut (Sankt-Peterburg, Rossiya). Maʼruza mavzusi: «Odatiy homila yoʻqotishi immunoprofilactikasi». Beluga Maksim Vladimirovich, fetal jarrohlik boʻlimi mudiri, «Ona va bola» respublika ilmiy-amaliy markazi akusherlik va ginekologik patologiya laboratoriyasining ilmiy xodimi (Minsk, Belarus). Maʼruza mavzusi: «Homila de facto bemor sifatida». Pachuliya Olga Vladimirovna, tibbiyot fanlari nomzodi, D.O. Ott nomidagi institut ilmiy kotibi (Sankt-Peterburg, Rossiya). Maʼruza mavzusi: «Egizaklar vaqtida noinvaziv prenatal skriningning xususiyatlari va akusherlik patologiya hamda boshqa holatlarni bashorat qilish istiqbollari». Konferensiyada kompaniya zamonaviy avtomatik analizatorlar bilan axborot stendini ham joylashtirdi: ACL TOP 350 CTS, gemostaz analizatori; BD Bactec FX40, avtomatik bakteriologik gemokultivator. Barcha mehmonlar uchun axborot va tarqatma materiallar tayyorlandi. Tadbir davomida «Ona va bola sogʻligʻi RIASHTM» nomidan «Albatros Health Care» kompaniyasi koʻp yillik va samarali hamkorlik uchun mukofotlandi!",
+    "type": "conference",
+    "images": [
+      "/images/events/oLHY88XwvH.webp",
+      "/images/events/YrtgqbSKlp.webp"
+    ]
+  },
+  {
+    "id": "e-3YcGPEqKNQ",
+    "year": "2024",
+    "title": "Конференция с международным участием «Актуальные вопросы ортопедии, нейрохирургии и реабилитации» в г. Самарканд",
+    "date": "Октябрь 2024",
+    "description": "Albatros Health Care и Snibe выступили партнерами крупного регионального мероприятия!\nНа мероприятии размещен информационный стенд, а так же выставлен современный высокопроизводительный ИХЛА анализатор Maglumi X3\nТак же всем гостям подготовлены информационные и раздаточные материалы.\nВ числе спикеров выступил доктор медицинских наук, профессор Ёркин Узуевич Зокиров с темой «Онкомаркеры в диагностике онкологических заболеваний»",
+    "titleUz": "Samarqand shahrida «Ortopediya, neyroxirurgiya va reabilitatsiyaning dolzarb masalalari» xalqaro ishtirokli konferensiyasi",
+    "descriptionUz": "Albatros Health Care va Snibe yirik mintaqaviy tadbirning hamkorlari boʻldi! Tadbirda axborot stendi joylashtirildi, shuningdek zamonaviy yuqori unumdor Maglumi X3 IXLA analizatori namoyish etildi. Barcha mehmonlar uchun axborot va tarqatma materiallar tayyorlandi. Maʼruzachilar orasida tibbiyot fanlari doktori, professor Yorkin Uzuevich Zokirov «Onkologik kasalliklar diagnostikasida onkomarkerlar» mavzusi bilan chiqdi.",
+    "type": "conference",
+    "images": [
+      "/images/events/3YcGPEqKNQ.webp",
+      "/images/events/XvO6rTGFHl.webp"
+    ]
+  },
+  {
+    "id": "e-aoUK61rHeJ",
+    "year": "2024",
+    "title": "Семинар с международным участием на тему: Онкомаркеры в диагностике онкологических заболеваний",
+    "date": "Сентябрь 2024",
+    "description": "11 сентября в Центральном военном клиническом госпитале при Министерстве обороны\nРеспублики Узбекистан, компаниями «Albatros Health Care» и SNIBE был успешно проведен семинар на тему: «Онкомаркеры в диагностике онкологических заболеваний». Спикером выступил доктор медицинских наук, профессор Ёркин Узуевич Зокиров.\nМероприятие посетило более 70 врачей-клиницистов.\nДля участников был организован фуршет, а помимо раздаточного материала, также были вручены призы за активное участие.\nМы благодарим участников\nсеминара за проявленный интерес, а также наших партнеров из центрального военного практического госпиталя при Министерстве обороны Республики Узбекистан",
+    "titleUz": "Xalqaro ishtirokli seminar: Onkologik kasalliklar diagnostikasida onkomarkerlar",
+    "descriptionUz": "11-sentabr kuni Oʻzbekiston Respublikasi Mudofaa vazirligi huzuridagi Markaziy harbiy klinik gospitalda «Albatros Health Care» va SNIBE kompaniyalari «Onkologik kasalliklar diagnostikasida onkomarkerlar» mavzusida seminarni muvaffaqiyatli oʻtkazdi. Maʼruzachi tibbiyot fanlari doktori, professor Yorkin Uzuevich Zokirov boʻldi. Tadbirni 70 dan ortiq klinisist shifokor ziyorat qildi. Ishtirokchilar uchun furshet tashkil etildi, tarqatma materialdan tashqari, faol ishtirok uchun sovrinlar ham topshirildi. Seminar ishtirokchilarini bildirgan qiziqishlari uchun, shuningdek Mudofaa vazirligi huzuridagi markaziy harbiy gospital hamkorlarimizni minnatdorchilik bilan qayd etamiz.",
+    "type": "seminar",
+    "images": [
+      "/images/events/aoUK61rHeJ.webp"
+    ]
+  },
+  {
+    "id": "e-ExdC4B9zZT",
+    "year": "2024",
+    "title": "Семинар с международным участием, г.Гулистан",
+    "date": "Август 2024",
+    "description": "15 августа в городе Гулистан, компаниями \"Albatros Health Care\" и SNIBE был успешно проведен семинар на тему: «Гастропанель. Современное эффективное неинвазивное исследование ЖКТ». Спикером выступил доктор медицинских наук, профессор Ёркин Узуевич Зокиров.\nМероприятие посетило более 40 врачей-клиницистов.\nДля участников был организован фуршет, а помимо раздаточного материала, также были вручены призы за активное участие.\nСеминар проходил на территории известной в регионе клинике RDM.\nМы благодарим гостей за проявленный интерес, а также наших партнеров из клиники RDM.",
+    "titleUz": "Xalqaro ishtirokli seminar, Guliston shahri",
+    "descriptionUz": "15-avgust kuni Guliston shahrida «Albatros Health Care» va SNIBE kompaniyalari «Gastropanel. Oshqozon-ichak traktining zamonaviy samarali noinvaziv tekshiruvi» mavzusida seminarni muvaffaqiyatli oʻtkazdi. Maʼruzachi tibbiyot fanlari doktori, professor Yorkin Uzuevich Zokirov boʻldi. Tadbirni 40 dan ortiq klinisist shifokor ziyorat qildi. Ishtirokchilar uchun furshet tashkil etildi, tarqatma materialdan tashqari, faol ishtirok uchun sovrinlar ham topshirildi. Seminar hududda mashhur RDM klinicasida oʻtdi. Mehmonlarni bildirgan qiziqishlari uchun, shuningdek RDM klinicasidagi hamkorlarimizni minnatdorchilik bilan qayd etamiz.",
+    "type": "seminar",
+    "images": [
+      "/images/events/ExdC4B9zZT.webp"
+    ]
+  },
+  {
+    "id": "e-Joc4wQYoME",
+    "year": "2024",
+    "title": "Семинар с международным участием на тему: Новые подходы к диагностике антифосфолипидного синдрома",
+    "date": "Июнь 2024",
+    "description": "Уважаемые коллеги, врачи и все заинтересованные лица!\nПриглашаем вас на семинар:\nНовые подходы к диагностике антифосфолипидного синдрома\nСпикер мероприятия:\nВиноградова Мария Алексеевна\nврач - гематолог, к.м.н, доцент кафедры гематологии и трансфузиологии ФГБОУ РМАНПО\nДата: 13 июня\nНачало: 15:00\nМесто проведения: г.Ташкент, Hotel M-Clinic (конференц зал), ул.Тантана, дом 1",
+    "titleUz": "Xalqaro ishtirokli seminar: Antifosfolipid sindromi diagnostikasiga yangi yondashuvlar",
+    "descriptionUz": "Hurmatli hamkasblar, shifokorlar va barcha qiziquvchilar! Sizni seminarga taklif etamiz: Antifosfolipid sindromi diagnostikasiga yangi yondashuvlar. Tadbir maʼruzachisi: Vinogradova Mariya Alekseevna, gematolog shifokor, tibbiyot fanlari nomzodi, RMANPO gematology va transfuziology kafedrası dotsenti. Sana: 13-iyun. Boshlanishi: 15:00. Oʻtkaziladigan joy: Toshkent shahri, Hotel M-Clinic (konferens zali), Tantana koʻchasi, 1-uy.",
+    "type": "seminar",
+    "images": [
+      "/images/events/Joc4wQYoME.webp"
+    ]
+  },
+  {
+    "id": "e-N9Hi7Jo3eB",
+    "year": "2024",
+    "title": "Международный симпозиум по Иммуноанализу, Hilton Tashkent city",
+    "date": "Май 2024",
+    "description": "18 мая в отеле Hilton Tashkent city состоится Международный симпозиум по Иммуноанализу, организованный совместно компаниями SNIBE и Международной Федерацией клинической химии и лабораторной медицины, а также Albatros Health Care.\nПриглашаем вас посетить мероприятие, спикерами которого выступят заслуженные профессора, доктора и кандидаты медицинских наук, заслуженные врачи и преподаватели в области медицины.\nТемы конференции:\n1. Модернизация лабораторной службы\n2. Лабораторные маркеры в онкодиагностике: когда, кому и зачем\n3. Мониторинг септического состояния у больных находящихся на пролонгированной ИВЛ\n4. Особенности диагностики различных фенотипов хронической сердечной недостаточности\n5. Мониторинг иммуносупрессии на периоперативных этапах трансплантации почки от живого родственного донора\nИ другие.\nAlbatros Health Сare является официальным дистрибьютором компании Snibe в Узбекистане.",
+    "titleUz": "Immunotahlil boʻyicha xalqaro simpozium, Hilton Tashkent City",
+    "descriptionUz": "18-may kuni Hilton Tashkent City mehmonxonasida SNIBE, Klinik kimyo va laboratoriya tibbiyoti xalqaro federatsiyasi hamda Albatros Health Care hamkorligida tashkil etilgan Immunotahlil boʻyicha xalqaro simpozium boʻlib oʻtadi. Sizni maʼruzachilari taniqli professorlar, tibbiyot fanlari doktor va nomzodlari, xizmat koʻrsatgan shifokorlar va tibbiyot sohasi oʻqituvchilari boʻlgan tadbirni ziyorat etishga taklif qilamiz. Konferensiya mavzulari: 1. Laboratoriya xizmatini modernizatsiyalash; 2. Onkodiagnostikada laboratoriya markerlari: qachon, kimga va nima uchun; 3. Uzoq muddatli sunʼiy nafas berishda bemorlarda septik holatni monitoring qilish; 4. Surunkali yurak yetishmovchiligining turli fenotiplarini diagnostika qilish xususiyatlari; 5. Tirik qarindosh donordan buyrak transplantatsiyasining perioperativ bosqichlarida immunosuppresiyani monitoring qilish. Va boshqalar. Albatros Health Care Oʻzbekistonda Snibe kompaniyasining rasmiy distribyutoridir.",
+    "type": "symposium",
+    "images": [
+      "/images/events/N9Hi7Jo3eB.webp"
+    ]
+  },
+  {
+    "id": "e-PiG1zpovaf",
+    "year": "2024",
+    "title": "Семинар с международным участием, Medion academy",
+    "date": "Май 2024",
+    "description": "Уважаемые коллеги, врачи и все заинтересованные лица\nПриглашаем вас на семинар:\nДостоверная диагностика сахарного диабета: HPLC vs биохимия.\nСпикеры мероприятия:\nАЛИЕВА Анна Валерьевна\nMD, PhD, DSc, ESE, EASD, IDF, ESPE, ADA member\nСАИДОВА Саодат Хаджиакбаровна\nзаведующая центральной лаборатории РСНПМЦЭ им.Ё.Х.Туракулова\nДата: 3 мая\nНачало: 14:30\nМесто проведения:\nMedion Academy\nг.Ташкент, улица Абдуллы Кадыри, 39/1\nОриентир: ГАНГА, ст. метро Гафура Гуляма",
+    "titleUz": "Xalqaro ishtirokli seminar, Medion Academy",
+    "descriptionUz": "Hurmatli hamkasblar, shifokorlar va barcha qiziquvchilar! Sizni seminarga taklif etamiz: Qand diabetini ishonchli diagnostika qilish: HPLC va biokimyo. Tadbir maʼruzachilari: ALIYEVA Anna Valerevna, MD, PhD, DSc, ESE, EASD, IDF, ESPE, ADA aʼzosi; SAIDOVA Saodat Xadjiakbarovna, Yo.X. Turakulov nomidagi RIETMning markaziy laboratoriyasi mudiri. Sana: 3-may. Boshlanishi: 14:30. Oʻtkaziladigan joy: Medion Academy, Toshkent shahri, Abdulla Qodiriy koʻchasi, 39/1.",
+    "type": "seminar",
+    "images": [
+      "/images/events/PiG1zpovaf.webp"
+    ]
+  },
+  {
+    "id": "e-hw0wsT7q4r",
+    "year": "2024",
+    "title": "Участие в выставке TIHE 2024",
+    "date": "Апрель 2024",
+    "description": "Компания Albatros Health Care приняла участие в ежегодной выставке TIHE 2024",
+    "titleUz": "TIHE 2024 koʻrgazmasida ishtirok",
+    "descriptionUz": "Albatros Health Care kompaniyasi anʼanaviy TIHE 2024 koʻrgazmasida ishtirok etdi.",
+    "type": "exhibition",
+    "images": [
+      "/images/events/hw0wsT7q4r.webp",
+      "/images/events/Q5DR22MxM7.webp"
+    ]
+  },
+  {
+    "id": "e-ZC8Gers5oF",
+    "year": "2024",
+    "title": "Стенд компании Albatros Health Care на 28-й международной выставке TIHE!",
+    "date": "Апрель 2024",
+    "description": "Дорогие друзья!\nМы рады пригласить вас на стенд компании Albatros Health Care на 28-й международной выставке TIHE!\nЗдесь вы ознакомитесь с последними новинками в области лабораторной диагностики, познакомитесь с представителями производителей, сможете заключить выгодные контракты, пообщаться с членами нашей команды!\nМы специально создали фотозону для запечатления прекрасных моментов.\nДрузья, ждём всех и каждого!\nВремя работы выставки:\n16, 17 апреля 10.00-17.00\n18 апреля 10.00-15.00\nАдрес: Узэкспоцентр, павильон 2",
+    "titleUz": "Albatros Health Care kompaniyasining 28-xalqaro TIHE koʻrgazmasidagi stendi!",
+    "descriptionUz": "Aziz doʻstlar! Sizni 28-xalqaro TIHE koʻrgazmasida Albatros Health Care kompaniyasi stendiga taklif etamiz! Bu yerda laboratoriya diagnostikasi sohasidagi eng soʻnggi yangiliklar bilan tanishasiz, ishlab chiqaruvchi vakillari bilan uchrashasiz, foydali shartnomalar tuzishingiz va jamoamiz aʼzolari bilan muloqot qilishingiz mumkin! Goʻzal lahzalarni muhrlash uchun maxsus fotozona tayyorladik. Doʻstlar, hammani kutamiz! Koʻrgazma ish vaqti: 16, 17-aprel 10:00-17:00, 18-aprel 10:00-15:00. Manzil: Oʻzekspomarkaz, 2-pavilon.",
+    "type": "exhibition",
+    "images": [
+      "/images/events/ZC8Gers5oF.webp"
+    ]
+  },
+  {
+    "id": "e-KVP37XAfGP",
+    "year": "2024",
+    "title": "Онлайн семинар: Инфекции кровотока и сепсис: роль микробиологической диагностики в рациональной терапии",
+    "date": "Март 2024",
+    "description": "Мы, Albatros Health Care, вместе с РСНПМЦ Педиатрии рады пригласить вас на открытый онлайн-семинар:\nИнфекции кровотока и сепсис: роль микробиологической диагностики в рациональной терапии\nКоторый проведет лектор из Беларуси, Захаревич Василий Иосифович\nНа нем мы обсудим:\n1. Современные концепции инфекции кровотока и сепсиса;\n2. Диагностики инфекций кровотока и сепсиса: современные возможности и роль микробиологических методов;\n3. Терапия инфекций кровотока и сепсиса, основанная на доказательствах.\nДата: 20 марта (Среда)\nВремя: 13:00 (Ташкент)\nСсылка для участия онлайн:\nhttps://us06web.zoom.us/j/81237818326?pwd=XK38cbabmz5eyUuoRc4dHlQ8Hgbhpl.1\nПросим вас поделиться этой информацией со своими знакомыми, которые заинтересованы в лекции из профессиональных соображений.",
+    "titleUz": "Onlayn seminar: Qon oqimi infeksiyalari va sepsis: ratsional terapiyada mikrobiologik diagnostikaning roli",
+    "descriptionUz": "Biz, Albatros Health Care, Pediatriya RIASHTM bilan birgalikda sizni ochiq onlayn seminarga taklif etamiz: Qon oqimi infeksiyalari va sepsis: ratsional terapiyada mikrobiologik diagnostikaning roli. Uni Belarusdan maʼruzachi Zaxarevich Vasiliy Iosifovich olib boradi. Unda quyidagilarni muhokama qilamiz: 1. Qon oqimi infeksiyasi va sepsisning zamonaviy konsepsiyalari; 2. Qon oqimi infeksiyalari va sepsis diagnostikasi: zamonaviy imkoniyatlar va mikrobiologik usullarning roli; 3. Dalillarga asoslangan qon oqimi infeksiyalari va sepsisni davolash. Sana: 20-mart (chorshanba). Vaqt: 13:00 (Toshkent). Onlayn ishtirok uchun havola Zoom platformasida beriladi. Ushbu maʼlumotni kasbiy jihatdan qiziqqan tanishlaringiz bilan ulashishingizni soʻraymiz.",
+    "type": "seminar",
+    "images": [
+      "/images/events/KVP37XAfGP.webp"
+    ]
+  },
+  {
+    "id": "e-d13oXccbuG",
+    "year": "2024",
+    "title": "Онлайн семинар, Общие принципы респираторных инфекций: этиология и патогенез",
+    "date": "Март 2024",
+    "description": "Уважаемые коллеги!\nМы, Albatros Health Care, вместе с клиникой de factum рады пригласить вас на открытый онлайн-семинар:\nОбщие принципы респираторных инфекций: этиология и патогенез\nКоторый проведет лектор из Беларуси, Захаревич Василий Иосифович\nНа нем мы обсудим:\n1. Общие принципы респираторных инфекций: этиология и патогенез;\n2. Классификация инфекций по анатомической локализации;\n3. Диагностика респираторных инфекций;\n4. Роль микробиологической диагностики: у кого, когда и как?\n5. Терапия респираторных инфекций;\n6. Особенности внутрибольничных респираторных инфекций.\nДата: 15 марта (Пятница)\nВремя: 16:00 (Ташкент)\nЛекция будет транслироваться в конференц-зале клиники de factum Central, а также онлайн на площадке ZOOM.\nСсылка для участия онлайн:\nhttps://us06web.zoom.us/j/89753455249?pwd=vaJ91wqbGJ3iihTnzN5qQ13PWHFZIR.1\nПросим вас поделиться этой информацией со своими знакомыми, которые заинтересованы в лекции из профессиональных соображений.\nС уважением,\n- Команда Albatros Health Care (https://t.me/uzbmicro)",
+    "titleUz": "Onlayn seminar: Respirator infeksiyalarning umumiy tamoyillari: etiologiya va patogenez",
+    "descriptionUz": "Hurmatli hamkasblar! Biz, Albatros Health Care, de factum klinikasi bilan birgalikda sizni ochiq onlayn seminarga taklif etamiz: Respirator infeksiyalarning umumiy tamoyillari: etiologiya va patogenez. Uni Belarusdan maʼruzachi Zaxarevich Vasiliy Iosifovich olib boradi. Unda quyidagilarni muhokama qilamiz: 1. Respirator infeksiyalarning umumiy tamoyillari: etiologiya va patogenez; 2. Infeksiyalarning anatomik joylashuvi boʻyicha tasnifi; 3. Respirator infeksiyalar diagnostikasi; 4. Mikrobiologik diagnostikaning roli: kimga, qachon va qanday? 5. Respirator infeksiyalarni davolash; 6. Kasalxona ichi respirator infeksiyalarining xususiyatlari. Sana: 15-mart (juma). Vaqt: 16:00 (Toshkent). Maʼruza de factum Central klinikasi konferens zalida, shuningdek Zoom platformasida onlayn translatsiya qilinadi. Hurmat bilan, Albatros Health Care jamoasi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/d13oXccbuG.webp"
+    ]
+  },
+  {
+    "id": "e-Bq4DWZcZRA",
+    "year": "2024",
+    "title": "Семинар с международным участием, «Внешний и внутренний контроль в лабораторной диагностике»",
+    "date": "Март 2024",
+    "description": "Уважаемые коллеги, врачи и все заинтересованные лица\nПриглашаем вас на семинар с международным участием: «Внешний и внутренний контроль в лабораторной диагностике»\nДата: 14 марта\nВремя: 13:30-17:00\nМесто проведения: г.Ташкент, Medion academy (улица Абдуллы Кадыри, 39/1 )",
+    "titleUz": "Xalqaro ishtirokli seminar: «Laboratoriya diagnostikasida tashqi va ichki nazorat»",
+    "descriptionUz": "Hurmatli hamkasblar, shifokorlar va barcha qiziquvchilar! Sizni xalqaro ishtirokli seminarga taklif etamiz: «Laboratoriya diagnostikasida tashqi va ichki nazorat». Sana: 14-mart. Vaqt: 13:30-17:00. Oʻtkaziladigan joy: Toshkent shahri, Medion Academy (Abdulla Qodiriy koʻchasi, 39/1).",
+    "type": "seminar",
+    "images": [
+      "/images/events/Bq4DWZcZRA.webp",
+      "/images/events/GYiKRyYupx.webp"
+    ]
+  },
+  {
+    "id": "e-uv14eA0nik",
+    "year": "2024",
+    "title": "Семинар с международным участием, Wyndham Bukhara",
+    "date": "Февраль 2024",
+    "description": "Уважаемые коллеги, врачи и все заинтересованные лица\nПриглашаем вас на семинар с международным участием\n«Ихла - новая ступень в диагностике\nТемы докладов:\n1) Витамин D. Новое поколение детекции с повышенной точностью результатов\n2) Аутоимунные заболевания соединительной ткани\n3) Гастропанель: Современное эффективное неинвазивное исследование ЖКТ\nДата: 22 февраля\nВремя начала: 13:30\nМесто проведения: г. Бухара гостиница Wyndham\nул. Алишера Навои, 8",
+    "titleUz": "Xalqaro ishtirokli seminar, Wyndham Bukhara",
+    "descriptionUz": "Hurmatli hamkasblar, shifokorlar va barcha qiziquvchilar! Sizni xalqaro ishtirokli seminarga taklif etamiz: «IXLA, diagnostikada yangi bosqich». Maʼruza mavzulari: 1) Vitamin D. Natijalar aniqligi oshirilgan yangi avlod deteksiyasi; 2) Biriktiruvchi toʻqimaning autoimmun kasalliklari; 3) Gastropanel: oshqozon-ichak traktining zamonaviy samarali noinvaziv tekshiruvi. Sana: 22-fevral. Boshlanish vaqti: 13:30. Oʻtkaziladigan joy: Buxoro shahri, Wyndham mehmonxonasi, Alisher Navoiy koʻchasi, 8.",
+    "type": "seminar",
+    "images": [
+      "/images/events/uv14eA0nik.webp",
+      "/images/events/DgSAJhpws3.webp"
+    ]
+  },
+  {
+    "id": "e-TCQCktjVdD",
     "year": "2023",
-    "title": "Семинар: ИХЛА — новый взгляд на диагностику",
+    "title": "Семинар с международным участием на тему: ИХЛА- Новый взгляд на диагностику",
     "date": "Ноябрь 2023",
-    "description": "Обучающий семинар по иммунохемилюминесцентному анализу.",
-    "titleUz": "Seminar: IXLA — diagnostikaga yangi nigoh",
-    "descriptionUz": "Immunoxemilyuminessent tahlil boʻyicha oʻquv seminari."
+    "description": "Компания Albatros Health Care совместно с компанией Snibe провели семинар на тему: Ихла- новый взгляд на диагностику в городе Андижан\nПриглашенные спикеры:\nЮсупов Мирзоикром- Лабораторная диагностика анемии, современные технологии Ихла\nСтарцева Наталья- Обзор панели онкомаркеров на Ихла\nДжалилова Гузалия- Кардиологическая панель в иммунохемилюминесцентном анализе",
+    "titleUz": "Xalqaro ishtirokli seminar: IXLA, diagnostikaga yangi nigoh",
+    "descriptionUz": "Albatros Health Care kompaniyasi Snibe kompaniyasi bilan birgalikda Andijon shahrida «IXLA, diagnostikaga yangi nigoh» mavzusida seminar oʻtkazdi. Taklif etilgan maʼruzachilar: Yusupov Mirzoikrom, Anemiya laboratoriya diagnostikasi, IXLA zamonaviy texnologiyalari; Startseva Natalya, IXLAda onkomarkerlar paneli sharhi; Djalilova Guzaliya, Immunoxemilyuminessent tahlilda kardiologik panel.",
+    "type": "seminar",
+    "images": [
+      "/images/events/TCQCktjVdD.webp"
+    ]
   },
   {
-    "id": "e2022-1",
-    "year": "2022",
-    "title": "Участие в международной выставке TIHE 2022",
-    "date": "Апрель 2022",
-    "description": "Демонстрация портфеля лабораторного оборудования на выставке здравоохранения.",
-    "titleUz": "Xalqaro TIHE 2022 koʻrgazmasida ishtirok",
-    "descriptionUz": "Sogʻliqni saqlash koʻrgazmasida laboratoriya uskunalari portfelini namoyish etish."
+    "id": "e-YGWJzQWzVl",
+    "year": "2023",
+    "title": "Семинар с международным участием на тему: Лабораторная диагностика гемостаза",
+    "date": "Ноябрь 2023",
+    "description": "2 ноября компания Albatros Health Care совместно с компанией Werfen организовали международный семинар на тему: Лабораторная диагностика гемостаза\nНа семинаре были подняты актуальные вопросы:\n1) Диагностика геморрагических состояний\n2) Системный подход к коагулопатии, важность оценки гемостаза в работе хирурга\n3) Диагностика и лечение коагулопатии при массивном акушерском кровотечении, важность оценки гемостаза в работе реаниматолога\n4) Место параметров кислотно-основного состояния в интенсивной терапии\nБыли приглашены международные специалисты:\n▫Жарков Павел Александрович. д.м.н., врач-гематолог, врач-педиатр, доцент кафедры гематологии и клеточных технологий.\n▫Марченко Сергей Павлович.\nд.м.н., врач-кардиохирург, заместитель руководителя НИЦ ССХ НИИ хирургии и неотложной медицины, руководитель Отделения кардиохирургии.\n▫Распопин Юрий Святославович\nк.м.х, врач анестезиолог-реанимотолог, заведующий отделением КГБУЗ Красноярский краевой клинический центр охраны материнства и детства.\n▫Наумов Алексей Борисович\nк.м.н., врач анестезиолог-реаниматолог, заведующий Отделением реанимации и интенсивной терапии N 3 СПБ ГБУЗ «Городская Мариинская больница»",
+    "titleUz": "Xalqaro ishtirokli seminar: Gemostazning laboratoriya diagnostikasi",
+    "descriptionUz": "2-noyabr kuni Albatros Health Care kompaniyasi Werfen kompaniyasi bilan birgalikda «Gemostazning laboratoriya diagnostikasi» mavzusida xalqaro seminar tashkil etdi. Seminarda dolzarb masalalar koʻtarildi: 1) Gemorragik holatlar diagnostikasi; 2) Koagulopatiyaga tizimli yondashuv, jarroh ishida gemostazni baholashning muhimligi; 3) Ommaviy akusherlik qon ketishida koagulopatiyani diagnostika va davolash, reanimatolog ishida gemostazni baholashning muhimligi; 4) Intensiv terapiyada kislota-ishqor holati parametrlarining oʻrni. Xalqaro mutaxassislar taklif etildi: Jarkov Pavel Aleksandrovich, tibbiyot fanlari doktori, gematolog, pediatr, gematologiya va hujayra texnologiyalari kafedrasi dotsenti; Marchenko Sergey Pavlovich, tibbiyot fanlari doktori, kardiojarroh; Raspopin Yuriy Svyatoslavovich, anesteziolog-reanimatolog; Naumov Aleksey Borisovich, anesteziolog-reanimatolog.",
+    "type": "seminar",
+    "images": [
+      "/images/events/YGWJzQWzVl.webp",
+      "/images/events/eIxJsZCUIh.webp"
+    ]
   },
   {
-    "id": "e2022-2",
+    "id": "e-pvZ0Jnsq84",
+    "year": "2023",
+    "title": "Международная конференция по иммуноанализу, с участием Чешского профессора Ричарда Пикнера.",
+    "date": "Июнь 2023",
+    "description": "Дата проведения: 2 июня 2023 г.\nВремя проведения: 9:00 - 15:00\nМесто проведения: г. Ташкент, гостиница Hilton (Ташкент Сити, ул. Ислама Каримова, 2, блок 5).",
+    "titleUz": "Immunotahlil boʻyicha xalqaro konferensiya, Chexiyalik professor Richard Pikner ishtirokida",
+    "descriptionUz": "Oʻtkazilish sanasi: 2023-yil 2-iyun. Vaqt: 9:00-15:00. Oʻtkaziladigan joy: Toshkent shahri, Hilton mehmonxonasi (Tashkent City, Islom Karimov koʻchasi, 2, 5-blok).",
+    "type": "conference",
+    "images": [
+      "/images/events/pvZ0Jnsq84.webp"
+    ]
+  },
+  {
+    "id": "e-S35MHhLw12",
+    "year": "2023",
+    "title": "Семинар с международным участием на тему: Гонадная панель",
+    "date": "Февраль 2023",
+    "description": "Семинар с международным участием на тему: Гонадная панель\nСпикер: Пяткова Елена Викторовна ( Специалист компании Snibe с многолетним опытом работы в диагностике методом Ихла\nДата: 8 февраля 2023\nВремя: 11:00\nМесто: Клиника Shox med",
+    "titleUz": "Xalqaro ishtirokli seminar: Gonad paneli",
+    "descriptionUz": "Xalqaro ishtirokli seminar: Gonad paneli. Maʼruzachi: Pyatkova Elena Viktorovna (IXLA usulida diagnostikada koʻp yillik tajribaga ega Snibe kompaniyasi mutaxassisi). Sana: 2023-yil 8-fevral. Vaqt: 11:00. Joy: Shox med klinikasi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/S35MHhLw12.webp"
+    ]
+  },
+  {
+    "id": "e-B54gvHRbNZ",
+    "year": "2023",
+    "title": "Семинар с международным участием на тему: Аутоиммунная панель",
+    "date": "Февраль 2023",
+    "description": "Семинар с международным участием на тему: Аутоиммунная панель\nСпикер: Пяткова Елена Викторовна ( Специалист компании Snibe с многолетним опытом работы в диагностике методом Ихла\nДата: 3 февраля 2023\nВремя: 16:30\nМесто: Клиника Akfa medline",
+    "titleUz": "Xalqaro ishtirokli seminar: Autoimmun panel",
+    "descriptionUz": "Xalqaro ishtirokli seminar: Autoimmun panel. Maʼruzachi: Pyatkova Elena Viktorovna (IXLA usulida diagnostikada koʻp yillik tajribaga ega Snibe kompaniyasi mutaxassisi). Sana: 2023-yil 3-fevral. Vaqt: 16:30. Joy: Akfa medline klinikasi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/B54gvHRbNZ.webp"
+    ]
+  },
+  {
+    "id": "e-3ww8L9sQjh",
+    "year": "2023",
+    "title": "Семинар с международным участием на тему: Панель бесплодия",
+    "date": "Февраль 2023",
+    "description": "Семинар с международным участием на тему: Панель бесплодия\nСпикер: Пяткова Елена Викторовна ( Специалист компании Snibe с многолетним опытом работы в диагностике методом Ихла\nДата: 1 февраля 2023\nВремя: 11:00\nМесто: Израильский медицинский центр",
+    "titleUz": "Xalqaro ishtirokli seminar: Bepushtlik paneli",
+    "descriptionUz": "Xalqaro ishtirokli seminar: Bepushtlik paneli. Maʼruzachi: Pyatkova Elena Viktorovna (IXLA usulida diagnostikada koʻp yillik tajribaga ega Snibe kompaniyasi mutaxassisi). Sana: 2023-yil 1-fevral. Vaqt: 11:00. Joy: Isroil tibbiyot markazi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/3ww8L9sQjh.webp"
+    ]
+  },
+  {
+    "id": "e-3jyNehMYDA",
+    "year": "2023",
+    "title": "Семинар с международным участием на тему Новый взгляд на диагностику",
+    "date": "Январь 2023",
+    "description": "Семинар на тему: Новый взгляд на диагностику\nСпикеры:\nПрофессор Серджио Бернардини (Италия)\nПрофессор Ташкенбаева Элеонора Негматова (Узбекистан)\nПрофессор Шодикулова Гуландом Зикриевна (Узбекистан)\nДоцент Душанова Гавхар Абдукаримова (Узбекистан)\nНачало: 14:00-17:00\nг. Самарканд, Гостиница Asia Samarkand, ул Кош-Хауз 50",
+    "titleUz": "Xalqaro ishtirokli seminar: Diagnostikaga yangi nigoh",
+    "descriptionUz": "Seminar mavzusi: Diagnostikaga yangi nigoh. Maʼruzachilar: professor Serjio Bernardini (Italiya), professor Tashkenbaeva Eleonora Negmatovna (Oʻzbekiston), professor Shodikulova Gulandom Zikriyevna (Oʻzbekiston), dotsent Dushanova Gavhar Abdukarimovna (Oʻzbekiston). Boshlanishi: 14:00-17:00. Samarqand shahri, Asia Samarkand mehmonxonasi, Kosh-Hauz koʻchasi, 50.",
+    "type": "seminar",
+    "images": [
+      "/images/events/3jyNehMYDA.webp"
+    ]
+  },
+  {
+    "id": "e-NwH4SZ0qQj",
     "year": "2022",
-    "title": "«Дни медицинской науки» в Министерстве инновационного развития",
+    "title": "Семинар с международным участием: Проблемы антимикробной резистентности, качественный мониторинг за устойчивостью к противомикробным препаратам",
+    "date": "Ноябрь 2022",
+    "description": "Albatros Health Care, совместно с Кафедрой микробиологии, иммунологии и основ молекулярной генетики Центра развития профессиональной квалификации медицинских работников, приглашает Вас на семинар с международным участием.\nУчастники могут получить сертификат с кредит-часами, предоставив бумажную копию:\n1) Паспорт (в случае смены фамилии, необходимо предоставить официальный документ)\n2) Диплом (бакалавр)\n3) Документ о специализации (для специалистов с не-медицинским дипломным образованием)\nДата: 9 ноября\nВремя: 10:30-15:30\nМесто: PANARAMS Tashkent Hotel (Ташкент, ул. Бойкургон, 2)",
+    "titleUz": "Xalqaro ishtirokli seminar: Antimikrob rezistentlik muammolari, antimikrob preparatlarga chidamlilik ustidan sifatli monitoring",
+    "descriptionUz": "Albatros Health Care, Tibbiyot xodimlari kasbiy malakasini rivojlantirish markazining Mikrobiologiya, immunologiya va molekulyar genetika asoslari kafedrasi bilan birgalikda sizni xalqaro ishtirokli seminarga taklif etadi. Ishtirokchilar quyidagi hujjatlarning qogʻoz nusxasini taqdim etib, kredit-soatli sertifikat olishlari mumkin: 1) Pasport; 2) Diplom (bakalavr); 3) Ixtisoslik hujjati. Sana: 9-noyabr. Vaqt: 10:30-15:30. Joy: PANARAMS Tashkent Hotel (Toshkent, Boykurgon koʻchasi, 2).",
+    "type": "seminar",
+    "images": [
+      "/images/events/NwH4SZ0qQj.webp"
+    ]
+  },
+  {
+    "id": "e-htf2uNrfzb",
+    "year": "2022",
+    "title": "Семинар с международным участием: Вок - Внешняя Оценка Качества",
+    "date": "Октябрь 2022",
+    "description": "Главный спикер: Stephan Doherty (Генеральный директор RIQAS)\nДата: 10 октября\nВремя: 14:00\nМесто: г. Ташкент, ул. Абдулла Кадыри, Medion Academy",
+    "titleUz": "Xalqaro ishtirokli seminar: Tashqi sifat baholash (VOK)",
+    "descriptionUz": "Bosh maʼruzachi: Stephan Doherty (RIQAS bosh direktori). Sana: 10-oktabr. Vaqt: 14:00. Joy: Toshkent shahri, Abdulla Qodiriy koʻchasi, Medion Academy.",
+    "type": "seminar",
+    "images": [
+      "/images/events/htf2uNrfzb.webp"
+    ]
+  },
+  {
+    "id": "e-ln3pr4Udff",
+    "year": "2022",
+    "title": "Семинар с международным участием: Изменение в состоянии системы гемостаза во время беременности",
+    "date": "Сентябрь 2022",
+    "description": "Спикер: Жарков Павел Александрович (Россия г. Москва)\nДата: 22 сентября\nВремя: 12:00\nМесто: г. Ташкент, Мирзо-Улугбекский район, ул. Равнак, 41. Клиника Ixmed.",
+    "titleUz": "Xalqaro ishtirokli seminar: Homiladorlik davrida gemostaz tizimidagi oʻzgarishlar",
+    "descriptionUz": "Maʼruzachi: Jarkov Pavel Aleksandrovich (Rossiya, Moskva shahri). Sana: 22-sentabr. Vaqt: 12:00. Joy: Toshkent shahri, Mirzo Ulugʻbek tumani, Ravnaq koʻchasi, 41. Ixmed klinikasi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/ln3pr4Udff.webp"
+    ]
+  },
+  {
+    "id": "e-rPGiz0du9h",
+    "year": "2022",
+    "title": "Вебинар с международным участием: Инфекции, вызванные Staphylococcus aureus и подходы к их рациональной терапии",
+    "date": "Июль 2022",
+    "description": "На прошлых вебинарах мы обсуждали базовые вопросы клинической микробиологии и терапии антибактериальных препаратов.\nНачиная с этой недели, мы более подробно остановимся на основных возбудителях бактериальных инфекций и правильных подходах к терапии.\nЛектор:\nЗахаревич Василий Иосифович ( Минск Беларусь)\nДата и время проведения:\n21 июля 2022г (четверг)\n16:00-17:30 (Ташкент)\nна платформе Zoom.",
+    "titleUz": "Xalqaro ishtirokli vebinar: Staphylococcus aureus keltirib chiqaradigan infeksiyalar va ularni ratsional davolashga yondashuvlar",
+    "descriptionUz": "Oʻtgan vebinarlarda biz klinik mikrobiologiya va antibakterial preparatlar terapiyasining asosiy masalalarini muhokama qildik. Shu haftadan boshlab biz bakterial infeksiyalarning asosiy qoʻzgʻatuvchilari va terapiyaga toʻgʻri yondashuvlar ustida batafsilroq toʻxtalamiz. Maʼruzachi: Zaxarevich Vasiliy Iosifovich (Minsk, Belarus). Oʻtkazilish sanasi va vaqti: 2022-yil 21-iyul (payshanba) 16:00-17:30 (Toshkent), Zoom platformasida.",
+    "type": "seminar",
+    "images": [
+      "/images/events/rPGiz0du9h.webp"
+    ]
+  },
+  {
+    "id": "e-r0Q8l5sdhA",
+    "year": "2022",
+    "title": "Вебинар с международным участием: Принципы современной рациональной антибактериальной терапии",
+    "date": "Июнь 2022",
+    "description": "Это наша вторая встреча из серии вебинаров о современной клинической микробиологии.\nМы поговорим о самых важных вопросах рациональной антибактериальной терапии, современных подходах к классификации антибиотиков, а также об антибиотикопрофилактике в хирургии.\nЛектор:\nЗахаревич Василий Иосифович (Беларусь)\nДата и время проведения:\n30 июня 2022г (четверг)\n14:00-15:30 (Ташкент)\nна платформе Zoom.",
+    "titleUz": "Xalqaro ishtirokli vebinar: Zamonaviy ratsional antibakterial terapiya tamoyillari",
+    "descriptionUz": "Bu zamonaviy klinik mikrobiologiya haqidagi vebinarlar turkumidagi ikkinchi uchrashuvimiz. Biz ratsional antibakterial terapiyaning eng muhim masalalari, antibiotiklarni tasniflashga zamonaviy yondashuvlar, shuningdek jarrohlikda antibiotikoprofilaktika haqida gaplashamiz. Maʼruzachi: Zaxarevich Vasiliy Iosifovich (Belarus). Oʻtkazilish sanasi va vaqti: 2022-yil 30-iyun (payshanba) 14:00-15:30 (Toshkent), Zoom platformasida.",
+    "type": "seminar",
+    "images": [
+      "/images/events/r0Q8l5sdhA.webp"
+    ]
+  },
+  {
+    "id": "e-7qaJfJ7HCz",
+    "year": "2022",
+    "title": "Вебинар с международным участием: Введение в клиническую микробиологию",
+    "date": "Июнь 2022",
+    "description": "Это первая встреча из целой серии вебинаров, где мы с вами обсудим самые важные вопросы современной клинической микробиологии.\nМы готовим наши лекции так, чтобы они были интересны и врачам-клиницистам, и врачам-бактериологам.\nДата и время проведения:\n23 июня 2022г (четверг)\n14:00-15:30 (Ташкент)\nна платформе Zoom.",
+    "titleUz": "Xalqaro ishtirokli vebinar: Klinik mikrobiologiyaga kirish",
+    "descriptionUz": "Bu butun bir vebinarlar turkumidagi birinchi uchrashuv boʻlib, unda biz siz bilan zamonaviy klinik mikrobiologiyaning eng muhim masalalarini muhokama qilamiz. Maʼruzalarimizni ham klinisist shifokorlar, ham bakteriolog shifokorlar uchun qiziqarli boʻladigan tarzda tayyorlaymiz. Oʻtkazilish sanasi va vaqti: 2022-yil 23-iyun (payshanba) 14:00-15:30 (Toshkent), Zoom platformasida.",
+    "type": "seminar",
+    "images": [
+      "/images/events/7qaJfJ7HCz.webp"
+    ]
+  },
+  {
+    "id": "e-tbx1IiStmH",
+    "year": "2022",
+    "title": "Семинар на тему: Стандарты диагностики, лечения, профилактики анемии в первичном звене здравоохранения",
+    "date": "Июнь 2022",
+    "description": "Семинар организован компанией «Albatros Health Care»\nПриглашенные спикеры:\nСулейманова Дилора Нагаловна Д.М.Н, Профессор, Гематолог, Зав центром анемии НИИГиПК\nЮсупов Мирзоикром Мирзаакбарович Врач лаборант 1 категории, Врач гематолог, Директор ООО \"SAID UNILAB\"\nДата, место проведения:\n15 июня г. Термез ул. Тараккиёт, 15. Сурхандарьинское областное управление здравоохранения\n16 июня г. Карши ул. Узбекистан, 278. Гостиница Нахшаб\n17 июня г. Бухара ул. Мухаммада икбала, 7. Отель Захид Зарафшон\nВремя: 14:00 - 17:00 (с перерывом на кофе брейк)",
+    "titleUz": "Seminar: Birlamchi bugʻinda anemiyani diagnostika qilish, davolash va profilaktika standartlari",
+    "descriptionUz": "Seminar «Albatros Health Care» kompaniyasi tomonidan tashkil etildi. Taklif etilgan maʼruzachilar: Suleymanova Dilora Nagalovna, tibbiyot fanlari doktori, professor, gematolog, GiPKITI anemiya markazi mudiri; Yusupov Mirzoikrom Mirzaakbarovich, 1-toifali laborant shifokor, gematolog shifokor, «SAID UNILAB» MChJ direktori. Sana va joy: 15-iyun Termiz shahri, Taraqqiyot koʻchasi, 15; 16-iyun Qarshi shahri, Oʻzbekiston koʻchasi, 278, Naxshab mehmonxonasi; 17-iyun Buxoro shahri, Muhammad Iqbol koʻchasi, 7, Zohid Zarafshon oteli. Vaqt: 14:00-17:00 (kofe-breyk bilan).",
+    "type": "seminar",
+    "images": [
+      "/images/events/tbx1IiStmH.webp"
+    ]
+  },
+  {
+    "id": "e-DJyl64G6qR",
+    "year": "2022",
+    "title": "«Дни медицинской науки в Министерстве Инновационного развития Республики Узбекистан»",
     "date": "Май 2022",
-    "description": "Участие в государственном научно-практическом мероприятии.",
-    "titleUz": "Innovatsion rivojlanish vazirligida «Tibbiyot fani kunlari»",
-    "descriptionUz": "Davlat ilmiy-amaliy tadbirida ishtirok."
+    "description": "Добрый день, уважаемые друзья!\nРады сообщить вам, что с 18 по 20 мая состоятся организованные Министерством Инновационного развития Республики Узбекистан и Министерством Здравоохранения Республики Узбекистан «Дни медицинской науки в Мининноваций» , где компания Albatros Health Care выступает главным спонсором!\nПриглашаем всех заинтересованных посетить настоящее мероприятие.\nПодробности и расписание вы можете найти в программе ниже.\nМесто проведения семинара-тренинга Министерство Инновационного развития (амфитеатр) Ташкент, Узбекистан, Алмазарский район, ул. Университетская, 7.",
+    "titleUz": "«Oʻzbekiston Respublikasi Innovatsion rivojlanish vazirligida Tibbiyot fani kunlari»",
+    "descriptionUz": "Xayrli kun, hurmatli doʻstlar! Sizga maʼlum qilamizki, 18-20-may kunlari Oʻzbekiston Respublikasi Innovatsion rivojlanish vazirligi va Sogʻliqni saqlash vazirligi tomonidan tashkil etilgan «Innovatsiya vazirligida Tibbiyot fani kunlari» boʻlib oʻtadi, unda Albatros Health Care kompaniyasi bosh homiy sifatida ishtirok etadi! Barcha qiziquvchilarni ushbu tadbirga tashrif buyurishga taklif etamiz. Tafsilotlar va jadvalni quyidagi dasturda topishingiz mumkin. Seminar-trening oʻtkaziladigan joy: Innovatsion rivojlanish vazirligi (amfiteatr), Toshkent, Oʻzbekiston, Olmazor tumani, Universitet koʻchasi, 7.",
+    "type": "other",
+    "images": [
+      "/images/events/DJyl64G6qR.webp"
+    ]
   },
   {
-    "id": "e2021-1",
+    "id": "e-X1gH2hwzo2",
+    "year": "2022",
+    "title": "Участие команды Albatros Health Care на Выставке TIHE 2022",
+    "date": "Апрель 2022",
+    "description": "Добрый день, уважаемые друзья!\nСегодня открылась ежегодная выставка TIHE 2022.\nПриглашаем вас посетить стенд Albatros Health Care, который расположен во 2 павильоне Узэкспоцентра. Будем рады показать и рассказать о наших продуктах и новинках!\nВыставка проходит 3 дня с 12 по 14 апреля.",
+    "titleUz": "Albatros Health Care jamoasining TIHE 2022 koʻrgazmasidagi ishtiroki",
+    "descriptionUz": "Xayrli kun, hurmatli doʻstlar! Bugun anʼanaviy TIHE 2022 koʻrgazmasi ochildi. Sizni Oʻzekspomarkazning 2-pavilonida joylashgan Albatros Health Care stendiga tashrif buyurishga taklif etamiz. Mahsulotlarimiz va yangiliklarimiz haqida koʻrsatib berish va soʻzlab berishdan mamnun boʻlamiz! Koʻrgazma 3 kun davomida, 12-14-aprel kunlari oʻtadi.",
+    "type": "exhibition",
+    "images": [
+      "/images/events/X1gH2hwzo2.webp"
+    ]
+  },
+  {
+    "id": "e-RWbYkoaExm",
+    "year": "2022",
+    "title": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 8 апреля г. Ташкент",
+    "date": "Апрель 2022",
+    "description": "Спикер: Якубцевич Руслан Эдуардович (Республика Беларусь)\nДата: 8 апреля\nВремя: 13:00\nМесто: Республиканский специализированный\nнаучный практический медицинский центр Акушерства и Гинекологии МЗ РУз\nГ. Ташкент Ул. Мирзо Улугбека, дом 132-а",
+    "titleUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. 8-aprel, Toshkent shahri",
+    "descriptionUz": "Maʼruzachi: Yakubtsevich Ruslan Eduardovich (Belarus Respublikasi). Sana: 8-aprel. Vaqt: 13:00. Joy: OʻzR SSV Akusherlik va ginekologiya respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi, Toshkent shahri, Mirzo Ulugʻbek koʻchasi, 132A-uy.",
+    "type": "seminar",
+    "images": [
+      "/images/events/RWbYkoaExm.webp"
+    ]
+  },
+  {
+    "id": "e-BVvmT5211D",
+    "year": "2022",
+    "title": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 7 апреля г. Самарканд",
+    "date": "Апрель 2022",
+    "description": "Спикер: Якубцевич Руслан Эдуардович (Республика беларусь)\nДата: 7 Апреля\nВремя: 14:00\nМесто: Клиника STD (Samarkand tibbiy diagnostika)\nГ. Самарканд, ул. Махмуд Кошгарий, 49. (Ориентир памятник Матери, Хамрок банк)",
+    "titleUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. 7-aprel, Samarqand shahri",
+    "descriptionUz": "Maʼruzachi: Yakubtsevich Ruslan Eduardovich (Belarus Respublikasi). Sana: 7-aprel. Vaqt: 14:00. Joy: STD klinikasi (Samarkand tibbiy diagnostika), Samarqand shahri, Mahmud Koshgʻariy koʻchasi, 49.",
+    "type": "seminar",
+    "images": [
+      "/images/events/BVvmT5211D.webp"
+    ]
+  },
+  {
+    "id": "e-hqJmX1SfFV",
+    "year": "2022",
+    "title": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 6 апреля г.Ташкент",
+    "date": "Апрель 2022",
+    "description": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 6 апреля г.Ташкент\nСпикер: Якубцевич Руслан Эдуардович (Республика Беларусь)\nДата: 6 апреля\nВремя: 14:30\nМесто: Республиканский специализированный\nнаучный практический медицинский центр хирургии им. Вахидова\nГ. Ташкент Ул. Кичик халка йули, 10",
+    "titleUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. 6-aprel, Toshkent shahri",
+    "descriptionUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. Maʼruzachi: Yakubtsevich Ruslan Eduardovich (Belarus Respublikasi). Sana: 6-aprel. Vaqt: 14:30. Joy: Vohidov nomidagi jarrohlik respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi, Toshkent shahri, Kichik halqa yoʻli koʻchasi, 10.",
+    "type": "seminar",
+    "images": [
+      "/images/events/hqJmX1SfFV.webp"
+    ]
+  },
+  {
+    "id": "e-HjzyPTfYkw",
+    "year": "2022",
+    "title": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 5 апреля г.Ташкент",
+    "date": "Апрель 2022",
+    "description": "Семинар с международным участием: Современные аспекты управления гемостазом в критических состояниях. 5 апреля г.Ташкент",
+    "titleUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. 5-aprel, Toshkent shahri",
+    "descriptionUz": "Xalqaro ishtirokli seminar: Kritik holatlarda gemostazni boshqarishning zamonaviy jihatlari. 5-aprel, Toshkent shahri.",
+    "type": "seminar",
+    "images": [
+      "/images/events/HjzyPTfYkw.webp"
+    ]
+  },
+  {
+    "id": "e-y3JUcpfzSu",
     "year": "2021",
-    "title": "Международный симпозиум: инновации в лабораторной диагностике",
+    "title": "Вебинар с международным участием На тему: Covid-19: Вопросы вакцинации и реабилитации",
+    "date": "Сентябрь 2021",
+    "description": "Вебинар с международным участием На тему: ''Covid-19: Вопросы вакцинации и реабилитации''\nВидео-запись прошедшего семинара:\nyoutube.com/watch?v=8PPjLZo1sfA&ab_channel=SnibeDiagnostic",
+    "titleUz": "Xalqaro ishtirokli vebinar: Covid-19: vaksinatsiya va reabilitatsiya masalalari",
+    "descriptionUz": "Xalqaro ishtirokli vebinar mavzusi: «Covid-19: vaksinatsiya va reabilitatsiya masalalari». Oʻtgan seminarning video yozuvi: youtube.com/watch?v=8PPjLZo1sfA",
+    "type": "seminar",
+    "images": [
+      "/images/events/y3JUcpfzSu.webp"
+    ]
+  },
+  {
+    "id": "e-R2Ov6VtLiJ",
+    "year": "2021",
+    "title": "Международный симпозиум. Инновациии в сфере лабораторной диагностики",
     "date": "Июль 2021",
-    "description": "Симпозиум с международным участием по современным методам диагностики.",
-    "titleUz": "Xalqaro simpozium: laboratoriya diagnostikasidagi innovatsiyalar",
-    "descriptionUz": "Zamonaviy diagnostika usullari boʻyicha xalqaro ishtirokli simpozium."
+    "description": "На мероприятии выступили со своими докладами ученые международного уровня из Канады, Италии, Германии, Франции, Швеции, Китая и Австралии.",
+    "titleUz": "Xalqaro simpozium: Laboratoriya diagnostikasi sohasidagi innovatsiyalar",
+    "descriptionUz": "Tadbirda Kanada, Italiya, Germaniya, Fransiya, Shvetsiya, Xitoy va Avstraliyadan xalqaro darajadagi olimlar oʻz maʼruzalari bilan chiqishdi.",
+    "type": "symposium",
+    "images": [
+      "/images/events/R2Ov6VtLiJ.webp"
+    ]
   },
   {
-    "id": "e2021-2",
+    "id": "e-GPIPc1V9Ip",
     "year": "2021",
-    "title": "Участие в международной выставке TIHE 2021",
+    "title": "Вебинар с международным участием. Последние достижения в диагностике туберкулезной инфекции (ЛТБИ)",
     "date": "Июнь 2021",
-    "description": "Представление решений для лабораторной диагностики.",
-    "titleUz": "Xalqaro TIHE 2021 koʻrgazmasida ishtirok",
-    "descriptionUz": "Laboratoriya diagnostikasi yechimlarini taqdim etish."
+    "description": "Уэйн ВАН ГЕМЕРТ, STBP - ведущий докладчик\nМортен РУХВАЛЬД, FIND - докладчик\nВлад НИКОЛАЕВСКИЙ, Qiagen - докладчик\nНаталья ДОКТОРОВА, Generium - докладчик\nШрути ПОЛИШВАЛЛА, Serum Ismtitute - докладчик",
+    "titleUz": "Xalqaro ishtirokli vebinar: Sil infeksiyasi (LTBI) diagnostikasidagi soʻnggi yutuqlar",
+    "descriptionUz": "Ueyn Van Gemert, STBP, bosh maʼruzachi; Morten Ruxvald, FIND, maʼruzachi; Vlad Nikolaevskiy, Qiagen, maʼruzachi; Natalya Doktorova, Generium, maʼruzachi; Shruti Polishvalla, Serum Institute, maʼruzachi.",
+    "type": "seminar",
+    "images": [
+      "/images/events/GPIPc1V9Ip.webp"
+    ]
   },
   {
-    "id": "e2019-1",
+    "id": "e-GF7kMbWdh4",
+    "year": "2021",
+    "title": "Вебинар с международным участием. Применение теста анти Ха-активность у пациентов с венозным тромбоэмболизмом",
+    "date": "Июнь 2021",
+    "description": "Докладчик: Самойленко Вера Владимировна - врач-КЛД центральной клинической лаборатории, ассистент кафедры КЛД ФУВ, ГБУЗ МО МОНИКИ им. М.Ф. Фладимирского.",
+    "titleUz": "Xalqaro ishtirokli vebinar: Venoz tromboembolizmli bemorlarda anti-Xa faollik testini qoʻllash",
+    "descriptionUz": "Maʼruzachi: Samoylenko Vera Vladimirovna, markaziy klinik laboratoriyaning KLD shifokori, M.F. Vladimirskiy nomidagi MONIKI KLD kafedrasi assistenti.",
+    "type": "seminar",
+    "images": [
+      "/images/events/GF7kMbWdh4.webp"
+    ]
+  },
+  {
+    "id": "e-C1Q8yQXe5L",
+    "year": "2021",
+    "title": "Участие в выставке TIHE 2021.",
+    "date": "Июнь 2021",
+    "description": "Участие в выставке TIHE 2021.",
+    "titleUz": "TIHE 2021 koʻrgazmasida ishtirok",
+    "descriptionUz": "TIHE 2021 koʻrgazmasida ishtirok.",
+    "type": "exhibition",
+    "images": [
+      "/images/events/C1Q8yQXe5L.webp"
+    ]
+  },
+  {
+    "id": "e-B7V3uzZh5K",
+    "year": "2021",
+    "title": "Вебинар с международным участием. Использование аутоиммунной панели при скрининге аутоиммунных состояний",
+    "date": "Май 2021",
+    "description": "Академик Арипова Тамара, Проф. Серджио Бернардини (Италия), Проф. Адолат Исмоилова",
+    "titleUz": "Xalqaro ishtirokli vebinar: Autoimmun holatlar skriningida autoimmun paneldan foydalanish",
+    "descriptionUz": "Akademik Aripova Tamara, professor Serjio Bernardini (Italiya), professor Adolat Ismoilova.",
+    "type": "seminar",
+    "images": [
+      "/images/events/B7V3uzZh5K.webp"
+    ]
+  },
+  {
+    "id": "e-aVsjpQQ7sf",
+    "year": "2021",
+    "title": "Вебинар с международным участием, круглый стол. Тромбофилии, проблема диагностики АФЦ. Взгляд клинициста",
+    "date": "Май 2021",
+    "description": "д.м.н. Жарков Павел Александрович (Россия, Москва)",
+    "titleUz": "Xalqaro ishtirokli vebinar, davra suhbati: Trombofiliyalar, AFS diagnostikasi muammosi. Klinisist nigohi",
+    "descriptionUz": "Tibbiyot fanlari doktori Jarkov Pavel Aleksandrovich (Rossiya, Moskva).",
+    "type": "seminar",
+    "images": [
+      "/images/events/aVsjpQQ7sf.webp"
+    ]
+  },
+  {
+    "id": "e-uH9hv1Azvw",
+    "year": "2021",
+    "title": "Вебинар с международным участием. Как быть уверенным в точности результатов вашей лаборатории?",
+    "date": "Апрель 2021",
+    "description": "Ведущий специалист компании Randox Laboratories Юсиф Мирзазаде (Россия, Москва)",
+    "titleUz": "Xalqaro ishtirokli vebinar: Laboratoriyangiz natijalari aniqligiga qanday ishonch hosil qilish mumkin?",
+    "descriptionUz": "Randox Laboratories kompaniyasining yetakchi mutaxassisi Yusif Mirzazade (Rossiya, Moskva).",
+    "type": "seminar",
+    "images": [
+      "/images/events/uH9hv1Azvw.webp"
+    ]
+  },
+  {
+    "id": "e-3C1dDZ1W21",
+    "year": "2021",
+    "title": "Вебинар с международным участием. COVID-19. Поствакциональное лабораторное тестирование и биомаркеры воспаления",
+    "date": "Март 2021",
+    "description": "Проф. Мусабаев Э.И, Проф. Марио Плебани (Италия), Проф. Захаревич (Белоруссия)",
+    "titleUz": "Xalqaro ishtirokli vebinar: COVID-19. Vaksinatsiyadan keyingi laboratoriya testlari va yalligʻlanish biomarkerlari",
+    "descriptionUz": "Professor Musabaev E.I., professor Mario Plebani (Italiya), professor Zaxarevich (Belarus).",
+    "type": "seminar",
+    "images": [
+      "/images/events/3C1dDZ1W21.webp"
+    ]
+  },
+  {
+    "id": "e-MqoFThH8pl",
     "year": "2019",
-    "title": "Регистрационное удостоверение для анализатора MAGLUMI 600 (SNIBE)",
+    "title": "Получено регистрационное удостоверение для реагентов MAGLUMI™",
     "date": "Август 2019",
-    "description": "Получено регистрационное удостоверение для компактного ИХЛА-анализатора.",
-    "titleUz": "MAGLUMI 600 analizatori uchun roʻyxatdan oʻtkazish guvohnomasi (SNIBE)",
-    "descriptionUz": "Ixcham IXLA-analizator uchun roʻyxatdan oʻtkazish guvohnomasi olindi."
+    "description": "Получено регистрационное удостоверение для реагентов MAGLUMI PG I, PG II, Syphilis, AMG, 17-OH-Progesterone, H-FABP, IGFBP-3",
+    "titleUz": "MAGLUMI reagentlari uchun roʻyxatdan oʻtkazish guvohnomasi olindi",
+    "descriptionUz": "MAGLUMI PG I, PG II, Syphilis, AMG, 17-OH-Progesterone, H-FABP, IGFBP-3 reagentlari uchun roʻyxatdan oʻtkazish guvohnomasi olindi.",
+    "type": "registration",
+    "images": [
+      "/images/events/MqoFThH8pl.webp"
+    ]
   },
   {
-    "id": "e2019-2",
+    "id": "e-Kp5E23jM2V",
     "year": "2019",
-    "title": "Регистрационное удостоверение для анализатора MAGLUMI 2000 (SNIBE)",
+    "title": "Получено регистрационное удостоверение для ИХЛА анализатора MAGLUMI™ 600 (SNIBE)",
+    "date": "Август 2019",
+    "description": "Получено регистрационное удостоверение для ИХЛА анализатора MAGLUMI 600 (SNIBE)",
+    "titleUz": "MAGLUMI 600 (SNIBE) IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi",
+    "descriptionUz": "MAGLUMI 600 (SNIBE) IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi.",
+    "type": "registration",
+    "images": [
+      "/images/events/Kp5E23jM2V.webp"
+    ]
+  },
+  {
+    "id": "e-WAMXonXn1B",
+    "year": "2019",
+    "title": "Получено регистрационное удостоверение для ИХЛА анализатора MAGLUMI 2000 (SNIBE)",
     "date": "Июль 2019",
-    "description": "Регистрация высокопроизводительного ИХЛА-анализатора в Узбекистане.",
-    "titleUz": "MAGLUMI 2000 analizatori uchun roʻyxatdan oʻtkazish guvohnomasi (SNIBE)",
-    "descriptionUz": "Oʻzbekistonda yuqori unumdor IXLA-analizatorni roʻyxatdan oʻtkazish."
+    "description": "Получено регистрационное удостоверение для ИХЛА анализатора MAGLUMI 2000 (SNIBE)",
+    "titleUz": "MAGLUMI 2000 (SNIBE) IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi",
+    "descriptionUz": "MAGLUMI 2000 (SNIBE) IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi.",
+    "type": "registration",
+    "images": [
+      "/images/events/WAMXonXn1B.webp"
+    ]
   },
   {
-    "id": "e2019-3",
+    "id": "e-LKmYWkdOe4",
     "year": "2019",
-    "title": "Участие в международной выставке TIHE 2019",
+    "title": "Участие в выставке TIHE 2019",
     "date": "Апрель 2019",
-    "description": "Демонстрация оборудования на Tashkent International Healthcare Exhibition.",
-    "titleUz": "Xalqaro TIHE 2019 koʻrgazmasida ishtirok",
-    "descriptionUz": "Tashkent International Healthcare Exhibition da uskunalarni namoyish etish."
+    "description": "Компания Albatros health care приняла участие на выставке TIHE 2019",
+    "titleUz": "TIHE 2019 koʻrgazmasida ishtirok",
+    "descriptionUz": "Albatros Health Care kompaniyasi TIHE 2019 koʻrgazmasida ishtirok etdi.",
+    "type": "exhibition",
+    "images": [
+      "/images/events/LKmYWkdOe4.webp"
+    ]
   },
   {
-    "id": "e2017-1",
+    "id": "e-CI1I2rQ2tD",
+    "year": "2019",
+    "title": "Семинар с международным участием, Институт Усовершенствования Врачей. Современные методы клинической диагностики врожденных пороков развития плода",
+    "date": "Март 2019",
+    "description": "Проф. Акилов Хабибулла Атауллаевич, Проф. Серджио Бернардини (Италия)",
+    "titleUz": "Xalqaro ishtirokli seminar, Vrachlar malakasini oshirish instituti. Homila tugʻma nuqsonlarini klinik diagnostika qilishning zamonaviy usullari",
+    "descriptionUz": "Professor Akilov Xabibulla Ataullaevich, professor Serjio Bernardini (Italiya).",
+    "type": "seminar",
+    "images": [
+      "/images/events/CI1I2rQ2tD.webp"
+    ]
+  },
+  {
+    "id": "e-W6lL31keVA",
+    "year": "2019",
+    "title": "Получено регистрационное удостоверение для ИХЛА анализатора",
+    "date": "Январь 2019",
+    "description": "Получено регистрационное удостоверение для ИХЛА анализатора MAGLUMI 1000 (SNIBE)",
+    "titleUz": "IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi",
+    "descriptionUz": "MAGLUMI 1000 (SNIBE) IXLA analizatori uchun roʻyxatdan oʻtkazish guvohnomasi olindi.",
+    "type": "registration",
+    "images": [
+      "/images/events/W6lL31keVA.webp"
+    ]
+  },
+  {
+    "id": "e-l751sCman0",
     "year": "2017",
     "title": "Семинар с международным участием, Radisson SAS Tashkent",
     "date": "Декабрь 2017",
-    "description": "Первый крупный международный семинар компании для специалистов лабораторий.",
+    "description": "Семинар с международным участием, Radisson SAS Tashkent",
     "titleUz": "Xalqaro ishtirokli seminar, Radisson SAS Tashkent",
-    "descriptionUz": "Kompaniyaning laboratoriya mutaxassislari uchun birinchi yirik xalqaro seminari."
+    "descriptionUz": "Xalqaro ishtirokli seminar, Radisson SAS Tashkent.",
+    "type": "seminar",
+    "images": [
+      "/images/events/l751sCman0.webp"
+    ]
   },
   {
-    "id": "e2017-2",
+    "id": "e-hmOEjPw5po",
     "year": "2017",
-    "title": "Разработан реагент для определения эритропоэтина в сыворотке крови",
+    "title": "Разработан реагент для определения ЭРИТРОПОЭТИНА в сыворотке крови",
     "date": "Август 2017",
-    "description": "Собственная разработка реагента для иммунохимического анализа.",
+    "description": "Компания SNIBE разработала реагент для определения ЭРИТРОПОЭТИНА в сыворотке крови, который поможет вам в диагностике анемии.",
     "titleUz": "Qon zardobida eritropoetinni aniqlash uchun reagent ishlab chiqildi",
-    "descriptionUz": "Immunokimyoviy tahlil uchun reagentning xususiy ishlanmasi."
+    "descriptionUz": "SNIBE kompaniyasi qon zardobida eritropoetinni aniqlash uchun reagent ishlab chiqdi, u anemiya diagnostikasida sizga yordam beradi.",
+    "type": "other",
+    "images": [
+      "/images/events/hmOEjPw5po.webp"
+    ]
   },
   {
-    "id": "e2016-1",
+    "id": "e-aJzrJoxMHu",
     "year": "2016",
-    "title": "Регистрационные удостоверения для MAGLUMI 800 и 2000 Plus (SNIBE)",
+    "title": "Получено регистрационное удостоверение для ИХЛА анализатороа MAGLUMI 800 и 2000 Plus (SNIBE)",
     "date": "Июль 2016",
-    "description": "Получены первые регистрационные удостоверения на ИХЛА-анализаторы SNIBE.",
-    "titleUz": "MAGLUMI 800 va 2000 Plus uchun roʻyxatdan oʻtkazish guvohnomalari (SNIBE)",
-    "descriptionUz": "SNIBE IXLA-analizatorlari uchun birinchi roʻyxatdan oʻtkazish guvohnomalari olindi."
+    "description": "Получено регистрационное удостоверение для ИХЛА анализатороа MAGLUMI 800 и 2000 Plus (SNIBE)",
+    "titleUz": "MAGLUMI 800 va 2000 Plus (SNIBE) IXLA analizatorlari uchun roʻyxatdan oʻtkazish guvohnomasi olindi",
+    "descriptionUz": "MAGLUMI 800 va 2000 Plus (SNIBE) IXLA analizatorlari uchun roʻyxatdan oʻtkazish guvohnomasi olindi.",
+    "type": "registration",
+    "images": [
+      "/images/events/aJzrJoxMHu.webp"
+    ]
   }
 ]
