@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { CatalogView } from "@/components/catalog/CatalogView";
+import { CategoryChips } from "@/components/catalog/CategoryChips";
 
 export async function generateMetadata({
   params,
@@ -36,6 +37,9 @@ export default function CatalogPage() {
       <div className="container-x mb-10">
         <h1 className="font-display text-4xl font-extrabold text-text-primary">{t("title")}</h1>
         <p className="mt-2 text-text-secondary">{t("subtitle")}</p>
+        <Suspense fallback={null}>
+          <CategoryChips />
+        </Suspense>
       </div>
       <Suspense fallback={<div className="container-x text-text-secondary">{tc("loading")}</div>}>
         <CatalogView />
