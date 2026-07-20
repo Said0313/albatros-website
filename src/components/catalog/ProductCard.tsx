@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { ProductImage } from "@/components/ui/ProductImage";
 import { categoryLabel, productShort } from "@/data/i18n";
+import { categoryPill } from "@/lib/categoryAccents";
 import { imageAlt, type AppLocale } from "@/lib/seo";
 
 export function ProductCard({ product }: { product: Product }) {
@@ -34,7 +35,7 @@ export function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       <div className="flex flex-1 flex-col p-4">
-        <Badge>{categoryLabel(product.category, locale)}</Badge>
+        <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <h3 className="mt-2 font-display text-base font-bold text-text-primary">{product.name}</h3>
         <p className="mt-1 font-mono text-xs text-brand-blue-deep">{product.brand}</p>
         <p className="mt-2 line-clamp-2 text-[13px] text-text-secondary">{productShort(product, locale)}</p>

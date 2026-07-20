@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import type { Product } from "@/types";
 import { Badge } from "@/components/ui/Badge";
 import { categoryLabel, productShort } from "@/data/i18n";
+import { categoryPill } from "@/lib/categoryAccents";
 
 /**
  * Image-less catalog card for reagents / consumables / controls. Renders cleanly
@@ -24,7 +25,7 @@ export function ReagentCard({ product }: { product: Product }) {
   return (
     <div className="flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-5 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
       <div className="flex items-start justify-between gap-2">
-        <Badge>{categoryLabel(product.category, locale)}</Badge>
+        <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <span className="shrink-0 font-mono text-xs text-brand-blue-deep">{product.brand}</span>
       </div>
       <h3 className="mt-3 font-display text-base font-bold text-text-primary">{product.name}</h3>

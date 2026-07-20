@@ -3,10 +3,13 @@ import { cn } from "@/lib/utils";
 export function Badge({
   children,
   variant = "red",
+  color,
   className,
 }: {
   children: React.ReactNode;
   variant?: "red" | "blue" | "teal";
+  /** Optional explicit background color (hex). Overrides `variant`; text stays white. */
+  color?: string;
   className?: string;
 }) {
   const styles = {
@@ -18,9 +21,10 @@ export function Badge({
     <span
       className={cn(
         "inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide",
-        styles[variant],
+        color ? "text-white" : styles[variant],
         className
       )}
+      style={color ? { backgroundColor: color } : undefined}
     >
       {children}
     </span>

@@ -28,3 +28,41 @@ export const CATEGORY_ACCENT: Record<string, string> = {
 export function categoryAccent(name: string): string {
   return CATEGORY_ACCENT[name] ?? "#2E549C";
 }
+
+// Per-sub-category PILL colors for the product-card category badge. Vivid and,
+// where possible, tied to the meaning of the sub-category (all dark enough for
+// white text). Keys are the INTERNAL RU category names (product.category values,
+// same keys used across catalog.json / URLs), so the admin category list can
+// reference this same map. If a sub-category is unmapped, the pill falls back to
+// brand red (the previous single color for every pill).
+//
+// Note: the QC EQUIPMENT sub-category is stored internally as "Программы контроля
+// качества" but displayed as "Системы контроля качества" (steel). The general
+// direction displayed as "Программы контроля качества" is stored internally as
+// "Контроль качества" (dark teal); it is not a product category, so it never
+// appears on a card pill, but it is kept here for the admin category list.
+export const CATEGORY_PILL: Record<string, string> = {
+  "ИХЛА": "#2563EB", // bright blue (immunochemistry)
+  "Биохимия": "#EA580C", // bright orange
+  "Гемостаз": "#E11D48", // rose (coagulation)
+  "Гематология": "#DC2626", // red (blood)
+  "Микробиология": "#16A34A", // green
+  "ПЦР": "#7C3AED", // violet (molecular)
+  "Аллергология": "#0D9488", // teal
+  "КЩС": "#0891B2", // cyan
+  "ВЭЖХ": "#4F46E5", // indigo
+  "Клинический анализ": "#D97706", // amber
+  "Генетика": "#DB2777", // pink
+  "Функциональная диагностика": "#0284C7", // sky
+  "Биодеконтаминация": "#0E7490", // deep cyan
+  "Контроль качества": "#059669", // emerald (general direction, displayed as "Программы контроля качества")
+  "Программы контроля качества": "#0F766E", // dark teal (displayed as "Системы контроля качества")
+  "Автоматизированная лаборатория": "#4338CA", // deep indigo (modular lab)
+  "Иммуногематология": "#BE123C", // deep rose
+  "Токсикология": "#C2410C", // deep orange
+};
+
+// Fall back to the previous single pill color (brand red) when unmapped.
+export function categoryPill(name: string): string {
+  return CATEGORY_PILL[name] ?? "#D0181F";
+}
