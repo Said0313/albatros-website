@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { directions, categoryCount, generalDirections, directionPositions } from "@/lib/catalog";
+import { categoryAccent } from "@/lib/categoryAccents";
 import { categoryLabel } from "@/data/i18n";
 
 /**
@@ -82,7 +83,9 @@ export function CategoriesGrid() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(244px,1fr))", gap: 18 }}>
-          {items.map((item) => (
+          {items.map((item) => {
+            const accent = categoryAccent(item.name);
+            return (
             <Link
               key={item.name}
               href={`/catalog?category=${encodeURIComponent(item.name)}`}
@@ -93,6 +96,7 @@ export function CategoriesGrid() {
                 textDecoration: "none",
                 background: "#FFFFFF",
                 border: "1px solid #E5EAF3",
+                borderTop: `3px solid ${accent}`,
                 borderRadius: 14,
                 overflow: "hidden",
               }}
@@ -116,7 +120,8 @@ export function CategoriesGrid() {
                 />
               </div>
               <div style={{ padding: "18px 18px 16px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
-                <div style={{ fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 11, letterSpacing: ".08em", color: "#2E8AA0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 7, fontFamily: "var(--font-mono), var(--font-inter), monospace", fontSize: 11, letterSpacing: ".08em", color: "#2E8AA0" }}>
+                  <span style={{ width: 7, height: 7, borderRadius: "50%", background: accent, flexShrink: 0 }} />
                   {item.brand}
                 </div>
                 <div style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 700, fontSize: 18, lineHeight: 1.2, color: "#0C1B3A" }}>
@@ -132,7 +137,8 @@ export function CategoriesGrid() {
                 </div>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
