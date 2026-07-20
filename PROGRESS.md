@@ -39,8 +39,11 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
 - [x] 5.5 Partner logos smaller on mobile (foreign + local): logo box h-16 w-24 (lg h-20 w-32), img max-h-8/9 (lg max-h-10/12).
 - [x] 5.6 About numbers/text smaller on mobile: homepage AboutSection stat clamp 28-58 (was 36-58) + panel text clamp; /about stat numbers text-2xl on mobile (sm/md unchanged).
 
-## Phase 6 — performance + loader
-- [ ] pending
+## Phase 6 — performance + loader (conservative)
+- [x] 6.1 Reviewed and applied safe optimizations. The site was already well-optimized: DNACanvas is dynamic ssr:false, FeaturedProducts is dynamic, product/catalog images use next/image with proper sizes, event/marquee images are lazy. Added a dynamic code-split for the below-the-fold AboutSection (client). No functionality or design changed.
+  - Bundle sizes BEFORE -> AFTER (First Load JS): home 258kB -> 258kB, catalog 229 -> 229, events 177 -> 177, product 186 -> 186, shared 87.2kB -> 87.2kB. Essentially unchanged: Next already code-splits the client boundaries, so no further safe reduction was available. No regression.
+  - NOTE (possible future win, not done to avoid risk): the events list page renders 88 event photos as lazy plain <img> at up to 1200px; converting them to next/image would serve responsive sizes on mobile. Left as-is because it is runtime/admin content and the conversion risks layout shift on that grid.
+- [x] 6.2 DNA loader: mobile squish fixed in 5.1 (responsive wave periods); desktop unchanged (760x210, smooth rAF-driven helix). Proportional on both.
 
 ## Phase 7 — data audit (report only)
 - [ ] pending

@@ -7,7 +7,6 @@ import { StatsBar } from "@/components/home/StatsBar";
 import { CategoriesGrid } from "@/components/home/CategoriesGrid";
 import { PartnersMarquee } from "@/components/home/PartnersMarquee";
 import { ClientsMarquee } from "@/components/home/ClientsMarquee";
-import { AboutSection } from "@/components/home/AboutSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { EventsTimeline } from "@/components/home/EventsTimeline";
 import { ContactCTA } from "@/components/home/ContactCTA";
@@ -17,6 +16,11 @@ import { getFeatured } from "@/lib/catalog";
 // SSR HTML is unchanged) to keep it out of the initial client bundle.
 const FeaturedProducts = dynamic(() =>
   import("@/components/home/FeaturedProducts").then((m) => m.FeaturedProducts)
+);
+// Below-the-fold client section: code-split so its JS (count-up + intersection
+// observer) stays out of the initial homepage bundle. SSR stays on.
+const AboutSection = dynamic(() =>
+  import("@/components/home/AboutSection").then((m) => m.AboutSection)
 );
 
 export async function generateMetadata({
