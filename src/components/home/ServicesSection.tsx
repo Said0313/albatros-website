@@ -39,7 +39,7 @@ export function ServicesSection() {
               >
                 {`0${i + 1}`}
               </span>
-              <h3 className="relative font-display text-xl font-bold text-text-primary md:text-[22px]">
+              <h3 className="relative max-w-[calc(100%-4rem)] font-display text-lg font-bold leading-snug text-text-primary md:text-xl">
                 {t(`${c.key}.title`)}
               </h3>
               <p className="relative mt-3 max-w-[46ch] text-sm leading-relaxed text-text-secondary">
