@@ -16,20 +16,31 @@ export const CATEGORY_UZ: Record<string, string> = {
   "Иммуногематология": "Immunogematologiya",
   "Токсикология": "Toksikologiya",
   "Аллергология": "Allergologiya",
-  "Контроль качества": "Sifat nazorati",
-  "Программы контроля качества": "Sifat nazorati dasturlari",
+  "Контроль качества": "Sifat nazorati dasturlari",
+  "Программы контроля качества": "Sifat nazorati tizimlari",
   "Генетика": "Genetika",
   "Функциональная диагностика": "Funksional diagnostika",
   "Биодеконтаминация": "Biodekontaminatsiya",
   "Клиническая диагностика": "Klinik diagnostika",
   // General directions (top level of the two-level taxonomy)
-  "Медицинское оборудование": "Tibbiy uskunalar",
+  "Медицинское оборудование": "Laboratoriya uskunalari",
   "Реагенты": "Reagentlar",
-  "Расходные материалы": "Sarf materiallari",
+  "Расходные материалы": "Sarf materiallari va butlovchi qismlar",
+};
+
+// RU DISPLAY overrides. Keys are the INTERNAL category / general-direction
+// names (used in catalog.json, URLs and filters, which must not change);
+// values are what the visitor sees. Keep in sync with CATEGORY_UZ.
+export const CATEGORY_RU: Record<string, string> = {
+  "Контроль качества": "Программы контроля качества",
+  "Программы контроля качества": "Системы контроля качества",
+  "Расходные материалы": "Расходные материалы и комплектующие",
+  "Медицинское оборудование": "Лабораторное оборудование",
 };
 
 export function categoryLabel(name: string, locale: string): string {
-  return locale === "uz" ? CATEGORY_UZ[name] ?? name : name;
+  if (locale === "uz") return CATEGORY_UZ[name] ?? name;
+  return CATEGORY_RU[name] ?? name;
 }
 
 export function productShort(p: Product, locale: string): string {

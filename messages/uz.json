@@ -4,7 +4,7 @@
     "catalog": "Katalog",
     "about": "Kompaniya haqida",
     "partners": "Hamkorlar",
-    "events": "Tadbirlar",
+    "events": "Yangiliklar va tadbirlar",
     "contact": "Aloqa"
   },
   "common": {
@@ -115,7 +115,7 @@
     "certificatesEmpty": "Boʻlim toʻldirilmoqda"
   },
   "events": {
-    "title": "Tadbirlar",
+    "title": "Yangiliklar va tadbirlar",
     "pageSubtitle": "Konferensiyalar, seminarlar va kompaniyaning muhim tadbirlari.",
     "allYears": "Barcha yillar",
     "allTypes": "Barcha turlar",
