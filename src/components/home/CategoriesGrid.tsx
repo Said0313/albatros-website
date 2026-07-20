@@ -101,8 +101,9 @@ export function CategoriesGrid() {
                 className="alb-photo"
                 style={{
                   position: "relative",
-                  height: 158,
-                  background: "radial-gradient(120% 120% at 50% 38%,#ffffff 0%,#eef1f7 70%,#e4e9f3 100%)",
+                  height: 188,
+                  background: "#FFFFFF",
+                  borderBottom: "1px solid #EDF1F8",
                   overflow: "hidden",
                 }}
               >
@@ -111,7 +112,7 @@ export function CategoriesGrid() {
                   alt={item.name}
                   fill
                   sizes="244px"
-                  style={{ objectFit: "contain", padding: 18 }}
+                  style={{ objectFit: "contain", padding: 10 }}
                 />
               </div>
               <div style={{ padding: "18px 18px 16px", display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
