@@ -16,7 +16,10 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
 - [~] 1.10 Homepage "Направления" block move-right: NEEDS-OWNER-REVIEW. The instruction is internally inconsistent (the Направления/CategoriesGrid block sits near the TOP, not the bottom) and no large blank area was reproducible at 1280 (directions grids fill their rows, 0 trailing blank). Skipped to avoid a speculative structural change that could break the layout. Recommended options for owner: (a) if the concern is the sub-category grid's partial last row, switch it to a fixed 4-col desktop grid (16 cards = 4 clean rows); (b) if it is the EventsTimeline narrow centered column, widen it. Awaiting owner clarification.
 
 ## Phase 2 — events rebuild
-- [ ] pending
+- [x] Events page rebuilt (old-site structure, new visuals): year-filter chips (2016..2026) + search bar + type filter; clean chronological card list (newest first) with ONE bigger main photo, title, date, short excerpt and a "Подробнее" link to each event's own detail page. Secondary thumbnails removed.
+- [x] Event detail page /events/[slug] (slug = event id): full description, main photo, date, type; both locales; 176 static pages generated (88 events x2). Respects hidden flag.
+- [x] Removed the cramped red-line timeline: homepage events preview is now a compact 3-card grid linking to detail pages.
+- Verified: 88 cards render with photos, 10 year chips, 9 type options, search works, detail page renders localized date/title/photo/description, no red-line timeline.
 
 ## Phase 3 — contacts map
 - [ ] pending

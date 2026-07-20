@@ -65,6 +65,10 @@ export function getProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
 }
 
+export function getEvent(id: string): CompanyEvent | undefined {
+  return events.find((e) => e.id === id);
+}
+
 export function getFeatured(): Product[] {
   return products.filter((p) => p.featured);
 }
