@@ -20,6 +20,12 @@ export interface Product {
   generalDirection?: "equipment" | "reagents" | "consumables" | "controls";
   analytes?: string[];
   imageless?: boolean;
+  // Admin-managed extras rendered on the public product page (both optional):
+  // a YouTube video URL and a longer detailed spec/description (multiline),
+  // with an Uzbek translation of the latter.
+  videoUrl?: string;
+  detailedDescription?: string;
+  detailedDescriptionUz?: string;
 }
 
 export interface Brand {

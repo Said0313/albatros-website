@@ -92,6 +92,9 @@ function buildProduct(body, existing) {
   setStr("fullDescription");
   setOptStr("shortDescriptionUz");
   setOptStr("fullDescriptionUz");
+  setOptStr("videoUrl");
+  setOptStr("detailedDescription");
+  setOptStr("detailedDescriptionUz");
   setOptStr("originalUrl");
 
   if (Array.isArray(body.images)) p.images = body.images.filter((x) => typeof x === "string");

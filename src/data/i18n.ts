@@ -51,6 +51,10 @@ export function productFull(p: Product, locale: string): string {
   return locale === "uz" ? p.fullDescriptionUz ?? p.fullDescription : p.fullDescription;
 }
 
+export function productDetailed(p: Product, locale: string): string | undefined {
+  return locale === "uz" ? p.detailedDescriptionUz ?? p.detailedDescription : p.detailedDescription;
+}
+
 // Uzbek translations for the recurring product spec LABELS (values are mostly
 // numeric/units and stay as-is; a few Russian value words are left for owner review).
 export const SPEC_LABEL_UZ: Record<string, string> = {

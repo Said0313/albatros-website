@@ -19,6 +19,9 @@ const EMPTY = {
   shortDescriptionUz: "",
   fullDescription: "",
   fullDescriptionUz: "",
+  videoUrl: "",
+  detailedDescription: "",
+  detailedDescriptionUz: "",
   specifications: [],
   images: [],
 };
@@ -138,6 +141,9 @@ export default function ProductEdit({ mode }) {
     shortDescriptionUz: form.shortDescriptionUz,
     fullDescription: form.fullDescription,
     fullDescriptionUz: form.fullDescriptionUz,
+    videoUrl: form.videoUrl.trim(),
+    detailedDescription: form.detailedDescription,
+    detailedDescriptionUz: form.detailedDescriptionUz,
     specifications: form.specifications.filter((s) => s.label.trim() !== ""),
     images: form.images,
   });
@@ -397,6 +403,49 @@ export default function ProductEdit({ mode }) {
                 className="field h-40"
                 value={form.fullDescriptionUz}
                 onChange={(e) => set("fullDescriptionUz", e.target.value)}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Video + detailed description */}
+        <section className="card p-5 lg:col-span-2">
+          <h2 className="mb-4 font-bold text-ink">Видео и подробное описание</h2>
+
+          <label className="label">Ссылка на видео YouTube</label>
+          <input
+            className="field mb-1"
+            value={form.videoUrl}
+            onChange={(e) => set("videoUrl", e.target.value)}
+            placeholder="https://www.youtube.com/watch?v=..."
+          />
+          <p className="mb-4 text-xs text-soft">
+            Пусто = видео не показывается. Поддерживаются ссылки watch, youtu.be, embed, shorts.
+          </p>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            <div>
+              <label className="label">Подробное описание / характеристики, RU</label>
+              <textarea
+                className="field h-56"
+                value={form.detailedDescription}
+                onChange={(e) => set("detailedDescription", e.target.value)}
+                placeholder="Особенности, загрузка реагентов/образцов, технические характеристики, габариты, вес. Каждый пункт с новой строки."
+              />
+            </div>
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Подробное описание / характеристики, UZ</label>
+                <DraftUz
+                  source={form.detailedDescription}
+                  value={form.detailedDescriptionUz}
+                  onChange={(v) => set("detailedDescriptionUz", v)}
+                />
+              </div>
+              <textarea
+                className="field h-56"
+                value={form.detailedDescriptionUz}
+                onChange={(e) => set("detailedDescriptionUz", e.target.value)}
               />
             </div>
           </div>

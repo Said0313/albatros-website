@@ -4,7 +4,8 @@ import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { products, getProduct, getRelated, brandIdOf } from "@/lib/catalog";
 import { Link } from "@/i18n/navigation";
-import { categoryLabel, productFull, productShort, specLabel, specValue } from "@/data/i18n";
+import { categoryLabel, productFull, productShort, productDetailed, specLabel, specValue } from "@/data/i18n";
+import { youtubeId } from "@/lib/youtube";
 import { absoluteUrl, categoryKeyword, pageMetadata, SITE_URL, type AppLocale } from "@/lib/seo";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
@@ -130,6 +131,41 @@ export default function ProductPage({ params }: { params: { slug: string; locale
             <ProductActions name={product.name} />
           </div>
         </div>
+
+        {(() => {
+          const vid = youtubeId(product.videoUrl);
+          const detailed = productDetailed(product, locale);
+          if (!vid && !detailed) return null;
+          return (
+            <div className="mt-16 border-t border-bg-border pt-12">
+              {vid && (
+                <div className="mb-12">
+                  <h2 className="mb-5 font-display text-2xl font-bold text-text-primary">{t("video")}</h2>
+                  <div className="aspect-video w-full max-w-3xl overflow-hidden rounded-2xl border border-bg-border bg-black">
+                    <iframe
+                      className="h-full w-full border-0"
+                      src={`https://www.youtube-nocookie.com/embed/${vid}`}
+                      title={product.name}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              )}
+              {detailed && (
+                <div>
+                  <h2 className="mb-5 font-display text-2xl font-bold text-text-primary">{t("detailed")}</h2>
+                  <div className="max-w-3xl space-y-3 text-[15px] leading-[1.8] text-text-secondary">
+                    {detailed.split("\n").map((line) => line.trim()).filter(Boolean).map((para, i) => (
+                      <p key={i}>{para}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {related.length > 0 && (
           <div className="mt-20">

@@ -167,7 +167,9 @@
   },
   "product": {
     "breadcrumbHome": "Bosh sahifa",
-    "related": "Oʻxshash mahsulotlar"
+    "related": "Oʻxshash mahsulotlar",
+    "video": "Video",
+    "detailed": "Batafsil tavsif va xususiyatlar"
   },
   "contact": {
     "title": "Aloqa",
