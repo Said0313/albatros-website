@@ -85,7 +85,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
-          <button className="relative z-10 p-2 text-text-primary" onClick={() => setMobileOpen((v) => !v)} aria-label={tc("menu")}>
+          <button className="relative z-40 p-2 text-text-primary" onClick={() => setMobileOpen((v) => !v)} aria-label={tc("menu")}>
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -98,7 +98,7 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-0 bg-black/60 lg:hidden"
+              className="fixed inset-0 z-20 bg-black/60 lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
             <motion.div
@@ -106,7 +106,7 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.35 }}
-              className="fixed right-0 top-0 z-[5] flex h-screen w-72 flex-col gap-2 border-l border-bg-border bg-bg-card px-6 pt-24 lg:hidden"
+              className="fixed right-0 top-0 z-30 flex h-screen w-72 flex-col gap-2 border-l border-bg-border bg-bg-card px-6 pt-24 lg:hidden"
             >
               {NAV.map((l) => (
                 <Link

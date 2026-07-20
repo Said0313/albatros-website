@@ -55,10 +55,10 @@ export default function AboutPage() {
         <div className="mt-16 grid grid-cols-2 gap-6 border-y border-bg-border py-12 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.key} className="text-center">
-              <div className="font-display text-3xl font-bold text-brand-blue-deep md:text-4xl">
+              <div className="font-display text-2xl font-bold text-brand-blue-deep sm:text-3xl md:text-4xl">
                 <AnimatedCounter end={s.end} suffix={s.suffix} />
               </div>
-              <div className="mt-2 text-[13px] text-text-secondary">{t(`stats.${s.key}`)}</div>
+              <div className="mt-2 text-xs text-text-secondary sm:text-[13px]">{t(`stats.${s.key}`)}</div>
             </div>
           ))}
         </div>

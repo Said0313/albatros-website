@@ -230,6 +230,13 @@ body {
 .alb-photo img {
   transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
+/* Mobile/tablet (below lg): hide the direction-card photos so the cards are
+   compact text-only tiles; desktop is unchanged. */
+@media (max-width: 1023px) {
+  .alb-photo {
+    display: none !important;
+  }
+}
 
 /* ── DNA intro splash (ported from Claude Design "Albatros DNA Intro") ── */
 @keyframes alb-bar {

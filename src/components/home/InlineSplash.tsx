@@ -41,7 +41,7 @@ const SCRIPT = `
   function rgba(c,a){return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')';}
   function mix(a,b,m){return [a[0]+(b[0]-a[0])*m,a[1]+(b[1]-a[1])*m,a[2]+(b[2]-a[2])*m];}
   function draw(t){
-    var w=cw,h=ch,cy=h/2,amp=h*0.34,N=52,periods=2.6,phase=t*1.7,i;
+    var w=cw,h=ch,cy=h/2,amp=h*0.34,N=52,periods=(w<520?1.6:2.6),phase=t*1.7,i;
     ctx.clearRect(0,0,w,h);
     var nodes=[];
     for(i=0;i<N;i++){var fx=i/(N-1);var x=8+fx*(w-16);var th=fx*periods*Math.PI*2+phase;nodes.push({x:x,yA:cy+amp*Math.sin(th),yB:cy-amp*Math.sin(th),z:Math.cos(th)});}

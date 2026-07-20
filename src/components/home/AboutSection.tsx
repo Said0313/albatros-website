@@ -60,11 +60,11 @@ function StatItem({ stat, run }: { stat: Stat; run: boolean }) {
   return (
     <div style={{ padding: "30px 0", borderTop: "1px solid #E5EAF3" }}>
       <div style={{ display: "flex", alignItems: "baseline", lineHeight: 1 }}>
-        <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(36px,11vw,58px)", color: "#0C1B3A", letterSpacing: "-.01em" }}>
+        <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(28px,8vw,58px)", color: "#0C1B3A", letterSpacing: "-.01em" }}>
           {stat.year ? value : fmt(value)}
         </span>
         {stat.suffix && (
-          <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(20px,6vw,32px)", marginLeft: 2, color: ACCENT }}>
+          <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(16px,4.5vw,32px)", marginLeft: 2, color: ACCENT }}>
             {stat.suffix}
           </span>
         )}
@@ -111,7 +111,7 @@ export function AboutSection() {
           <div style={{ marginBottom: 34 }}>
             <Image src="/logo.png" alt="Albatros Health Care" width={1998} height={300} priority style={{ height: 48, width: "auto", display: "block" }} />
           </div>
-          <p style={{ color: "#5E6E8F", fontSize: 18, lineHeight: 1.65, maxWidth: 440, margin: 0 }}>{t("panelText")}</p>
+          <p style={{ color: "#5E6E8F", fontSize: "clamp(15px,4vw,18px)", lineHeight: 1.65, maxWidth: 440, margin: 0 }}>{t("panelText")}</p>
         </div>
 
         {/* right: stats */}

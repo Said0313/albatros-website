@@ -31,8 +31,13 @@ Legend: [x] done, [~] partial/needs-owner-review, [skip] skipped-with-reason.
   - [~] detailedDescriptionUz PENDING TRANSLATION (needs-owner-review): the UZ product page already shows the detailed content via graceful fallback to RU (productDetailed uses uz ?? ru), so no content is missing; the admin editor now has the UZ field + DraftUz helper to complete these ~56 technical translations. Left untranslated in-session to avoid fabricating ~87k chars of low-quality machine Uzbek.
   - Unmatched (no detailed filled): reagenty-ihla, maglumi-2000, maglumi-2000-plus, condalab-media, nextseq-1000-2000 (not present on the old catalog or Cyrillic-slugged).
 
-## Phase 5 — mobile pass
-- [ ] pending
+## Phase 5 — mobile pass (below lg; desktop unchanged)
+- [x] 5.1 DNA loader: wave periods now responsive (1.6 on narrow < 520px, 2.6 desktop) so the helix is not horizontally squished on mobile.
+- [x] 5.2 Mobile nav panel raised above the logo (panel z-30, overlay z-20, burger z-40, logo z-10) so it no longer overlaps. Verified panel z(30) > logo z(10).
+- [x] 5.3 Направления cards: photos hidden below lg via globals.css (.alb-photo display:none @max-width 1023px). Verified hidden at 375px.
+- [x] 5.4 Флагманское carousel prev/next arrows now visible on mobile (were md:block only), with a shadow; positioned at edges on mobile. Verified 2 arrows visible at 375px.
+- [x] 5.5 Partner logos smaller on mobile (foreign + local): logo box h-16 w-24 (lg h-20 w-32), img max-h-8/9 (lg max-h-10/12).
+- [x] 5.6 About numbers/text smaller on mobile: homepage AboutSection stat clamp 28-58 (was 36-58) + panel text clamp; /about stat numbers text-2xl on mobile (sm/md unchanged).
 
 ## Phase 6 — performance + loader
 - [ ] pending

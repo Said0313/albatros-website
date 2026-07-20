@@ -71,14 +71,14 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
           <button
             onClick={scrollPrev}
             aria-label="Назад"
-            className="absolute -left-3 top-1/2 hidden -translate-y-1/2 rounded-full border border-bg-border bg-bg-card p-2.5 text-text-primary hover:border-brand-red md:block"
+            className="absolute left-0 top-1/2 block -translate-y-1/2 rounded-full border border-bg-border bg-bg-card p-2.5 text-text-primary shadow-[0_2px_10px_rgba(16,40,90,0.12)] hover:border-brand-red md:-left-3"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
           <button
             onClick={scrollNext}
             aria-label="Вперёд"
-            className="absolute -right-3 top-1/2 hidden -translate-y-1/2 rounded-full border border-bg-border bg-bg-card p-2.5 text-text-primary hover:border-brand-red md:block"
+            className="absolute right-0 top-1/2 block -translate-y-1/2 rounded-full border border-bg-border bg-bg-card p-2.5 text-text-primary shadow-[0_2px_10px_rgba(16,40,90,0.12)] hover:border-brand-red md:-right-3"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

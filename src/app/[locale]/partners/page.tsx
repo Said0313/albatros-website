@@ -47,8 +47,8 @@ export default function PartnersPage() {
                 id={`partner-${b.id}`}
                 className="partner-card flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-6 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
               >
-                <div className="flex h-20 w-32 items-center justify-center rounded-lg bg-white p-4 shadow-[0_4px_24px_rgba(0,0,0,0.25)]">
-                  <Image src={b.logo} alt={b.name} width={120} height={48} className="max-h-10 w-auto object-contain" />
+                <div className="flex h-16 w-24 items-center justify-center rounded-lg bg-white p-3 shadow-[0_4px_24px_rgba(0,0,0,0.25)] lg:h-20 lg:w-32 lg:p-4">
+                  <Image src={b.logo} alt={b.name} width={120} height={48} className="max-h-8 w-auto object-contain lg:max-h-10" />
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-text-primary">{b.name}</h3>
                 {(b.country || b.founded) && (
@@ -84,9 +84,9 @@ export default function PartnersPage() {
               return (
                 <ScrollReveal key={c.id} delay={(i % 3) * 0.06}>
                   <div className="flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-6 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
-                    <div className="flex h-20 w-32 items-center justify-center rounded-lg bg-white p-4 shadow-[0_4px_24px_rgba(0,0,0,0.25)]">
+                    <div className="flex h-16 w-24 items-center justify-center rounded-lg bg-white p-3 shadow-[0_4px_24px_rgba(0,0,0,0.25)] lg:h-20 lg:w-32 lg:p-4">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={c.logo} alt={c.name} className="max-h-12 w-auto object-contain" />
+                      <img src={c.logo} alt={c.name} className="max-h-9 w-auto object-contain lg:max-h-12" />
                     </div>
                     <h3 className="mt-4 font-display text-lg font-bold text-text-primary">{c.name}</h3>
                     <ExpandableText text={desc} className="mt-2" />
