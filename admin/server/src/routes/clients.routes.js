@@ -24,6 +24,7 @@ function buildRecord(body, existing) {
   };
   setOpt("description");
   setOpt("descriptionUz");
+  setOpt("descriptionEn");
   setOpt("link");
   if (typeof body.hidden === "boolean") {
     if (body.hidden) c.hidden = true;
@@ -35,7 +36,7 @@ function buildRecord(body, existing) {
 const router = makeContentRouter({
   filePath: CLIENTS_PATH,
   label: "client",
-  fieldOrder: ["id", "name", "logo", "description", "descriptionUz", "link", "hidden"],
+  fieldOrder: ["id", "name", "logo", "description", "descriptionUz", "descriptionEn", "link", "hidden"],
   nameOf: (r) => r.name,
   buildRecord,
   validateCreate: (body) => {

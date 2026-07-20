@@ -47,25 +47,32 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const uz = locale === "uz";
+  const TITLE = {
+    ru: "Albatros Health Care — Лабораторное оборудование в Узбекистане",
+    uz: "Albatros Health Care — Oʻzbekistonda laboratoriya uskunalari",
+    en: "Albatros Health Care — Laboratory Equipment in Uzbekistan",
+  };
+  const DESCRIPTION = {
+    ru: "Официальный дистрибьютор SNIBE, BD, Randox, Dymind, Werfen, Illumina и других мировых лидеров IVD-диагностики в Узбекистане. Поставка под ключ, сервис 24/7.",
+    uz: "SNIBE, BD, Randox, Dymind, Werfen, Illumina va boshqa IVD diagnostika yetakchilarining Oʻzbekistondagi rasmiy distribyutori. Kalit topshirish asosida yetkazib berish, 24/7 servis.",
+    en: "Official distributor of SNIBE, BD, Randox, Dymind, Werfen, Illumina and other global IVD diagnostics leaders in Uzbekistan. Turnkey supply, 24/7 service.",
+  };
+  const KEYWORDS = {
+    ru: ["лабораторное оборудование", "IVD", "Узбекистан", "SNIBE", "Maglumi", "диагностика", "Albatros"],
+    uz: ["laboratoriya uskunalari", "IVD", "Oʻzbekiston", "SNIBE", "Maglumi", "diagnostika", "Albatros"],
+    en: ["laboratory equipment", "IVD", "Uzbekistan", "SNIBE", "Maglumi", "diagnostics", "Albatros"],
+  };
+  const OG_LOCALE = { ru: "ru_RU", uz: "uz_UZ", en: "en_US" };
+  const l = (routing.locales as readonly string[]).includes(locale) ? (locale as AppLocale) : routing.defaultLocale;
   return {
     metadataBase: new URL(SITE_URL),
-    title: {
-      template: "%s | Albatros Health Care",
-      default: uz
-        ? "Albatros Health Care - Oʻzbekistonda laboratoriya uskunalari"
-        : "Albatros Health Care - Лабораторное оборудование в Узбекистане",
-    },
-    description: uz
-      ? "SNIBE, BD, Randox, Dymind, Werfen, Illumina va boshqa IVD diagnostika yetakchilarining Oʻzbekistondagi rasmiy distribyutori. Kalit topshirish asosida yetkazib berish, 24/7 servis."
-      : "Официальный дистрибьютор SNIBE, BD, Randox, Dymind, Werfen, Illumina и других мировых лидеров IVD-диагностики в Узбекистане. Поставка под ключ, сервис 24/7.",
-    keywords: uz
-      ? ["laboratoriya uskunalari", "IVD", "Oʻzbekiston", "SNIBE", "Maglumi", "diagnostika", "Albatros"]
-      : ["лабораторное оборудование", "IVD", "Узбекистан", "SNIBE", "Maglumi", "диагностика", "Albatros"],
+    title: { template: "%s | Albatros Health Care", default: TITLE[l] },
+    description: DESCRIPTION[l],
+    keywords: KEYWORDS[l],
     openGraph: {
       type: "website",
       siteName: "Albatros Health Care",
-      locale: uz ? "uz_UZ" : "ru_RU",
+      locale: OG_LOCALE[l],
       images: ["/logo.png"],
     },
     twitter: { card: "summary_large_image", images: ["/logo.png"] },
@@ -80,7 +87,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!routing.locales.includes(locale as "ru" | "uz")) notFound();
+  if (!(routing.locales as readonly string[]).includes(locale)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages();
 

@@ -13,6 +13,8 @@ export interface Product {
   originalUrl?: string;
   shortDescriptionUz?: string;
   fullDescriptionUz?: string;
+  shortDescriptionEn?: string;
+  fullDescriptionEn?: string;
   // Two-level taxonomy: general direction (equipment | reagents | consumables |
   // controls). Absent means equipment (all existing products). `analytes` is an
   // in-card, language-neutral sub-list (e.g. TSH, CA-125) indexed by search;
@@ -39,6 +41,8 @@ export interface Brand {
   specialty?: string;
   specialtyUz?: string;
   descriptionUz?: string;
+  specialtyEn?: string;
+  descriptionEn?: string;
   // Admin-managed flag; the public site does not render it yet.
   hidden?: boolean;
 }
@@ -52,6 +56,8 @@ export interface CompanyEvent {
   description?: string;
   titleUz?: string;
   descriptionUz?: string;
+  titleEn?: string;
+  descriptionEn?: string;
   // Added for the events page redesign (all optional, older records lack them):
   // type key (seminar | conference | congress | symposium | exhibition |
   // installation | registration | other), photos under /images/events/,

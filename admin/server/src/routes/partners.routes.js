@@ -33,6 +33,8 @@ function buildRecord(body, existing) {
   setOpt("specialty");
   setOpt("specialtyUz");
   setOpt("descriptionUz");
+  setOpt("specialtyEn");
+  setOpt("descriptionEn");
   if (typeof body.hidden === "boolean") {
     if (body.hidden) p.hidden = true;
     else delete p.hidden;
@@ -54,6 +56,8 @@ const router = makeContentRouter({
     "specialty",
     "specialtyUz",
     "descriptionUz",
+    "specialtyEn",
+    "descriptionEn",
     "hidden",
   ],
   nameOf: (r) => r.name,

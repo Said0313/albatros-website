@@ -9,7 +9,9 @@
     "country": "Китай · Шэньчжэнь",
     "specialty": "Иммунохемилюминесцентный анализ (ИХЛА)",
     "specialtyUz": "Immunoxemilyuminessent tahlil (IXLA)",
-    "descriptionUz": "30 yillik tarixga ega IXLA sohasidagi jahon yetakchisi. 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda immunoxemilyuminessent tahlil boʻyicha №1."
+    "specialtyEn": "Chemiluminescence immunoassay (CLIA)",
+    "descriptionUz": "30 yillik tarixga ega IXLA sohasidagi jahon yetakchisi. 163 mamlakatda taqdim etilgan, 40 000 dan ortiq oʻrnatilgan analizator. Oʻzbekistonda immunoxemilyuminessent tahlil boʻyicha №1.",
+    "descriptionEn": "A global CLIA leader with a 30-year history. Present in 163 countries, with more than 40,000 analyzers installed. #1 in Uzbekistan for chemiluminescence immunoassay."
   },
   {
     "id": "bd",
@@ -21,7 +23,9 @@
     "country": "США · Нью-Джерси",
     "specialty": "Микробиология и гемокультуры",
     "specialtyUz": "Mikrobiologiya va gemokulturalar",
-    "descriptionUz": "Becton Dickinson, global tibbiy-texnologik kompaniya. Mikrobiologiya, gemokultura hamda antibiotikorezistentlikni aniqlash bilan fenotipik identifikatsiya boʻyicha yechimlar."
+    "specialtyEn": "Microbiology and blood cultures",
+    "descriptionUz": "Becton Dickinson, global tibbiy-texnologik kompaniya. Mikrobiologiya, gemokultura hamda antibiotikorezistentlikni aniqlash bilan fenotipik identifikatsiya boʻyicha yechimlar.",
+    "descriptionEn": "Becton Dickinson, a global medical technology company. Solutions for microbiology, blood cultures, and phenotypic identification with antibiotic resistance testing."
   },
   {
     "id": "randox",
@@ -33,7 +37,9 @@
     "country": "Великобритания · Кримлин",
     "specialty": "Контроль качества и биочиповые анализаторы",
     "specialtyUz": "Sifat nazorati va biochip analizatorlari",
-    "descriptionUz": "In-vitro diagnostika va sifat nazoratining jahon yetakchilaridan biri. Biochip analizatorlari va sifatni tashqi baholashning eng yirik sxemasi RIQAS."
+    "specialtyEn": "Quality control and biochip analyzers",
+    "descriptionUz": "In-vitro diagnostika va sifat nazoratining jahon yetakchilaridan biri. Biochip analizatorlari va sifatni tashqi baholashning eng yirik sxemasi RIQAS.",
+    "descriptionEn": "One of the world's leaders in in-vitro diagnostics and quality control. Biochip analyzers and the largest external quality assessment scheme, RIQAS."
   },
   {
     "id": "dymind",
@@ -45,7 +51,9 @@
     "country": "Китай · Шэньчжэнь",
     "specialty": "Гематологический анализ",
     "specialtyUz": "Gematologik tahlil",
-    "descriptionUz": "AI-tahlilli gematologik analizatorlar ishlab chiqaruvchisi. Dizayn va innovatsiyalar uchun Red Dot va iF Design Award mukofotlari sohibi."
+    "specialtyEn": "Hematology analysis",
+    "descriptionUz": "AI-tahlilli gematologik analizatorlar ishlab chiqaruvchisi. Dizayn va innovatsiyalar uchun Red Dot va iF Design Award mukofotlari sohibi.",
+    "descriptionEn": "A manufacturer of hematology analyzers with AI-powered analysis. Winner of the Red Dot and iF Design Awards for design and innovation."
   },
   {
     "id": "werfen",
@@ -57,7 +65,9 @@
     "country": "Испания · Барселона",
     "specialty": "Гемостаз и анализ критических состояний",
     "specialtyUz": "Gemostaz va kritik holatlar tahlili",
-    "descriptionUz": "Gemostaz va kritik holatlar tahlili sohasidagi jahon yetakchisi. ACL TOP va GEM Premier analizatorlari."
+    "specialtyEn": "Hemostasis and critical care testing",
+    "descriptionUz": "Gemostaz va kritik holatlar tahlili sohasidagi jahon yetakchisi. ACL TOP va GEM Premier analizatorlari.",
+    "descriptionEn": "A global leader in hemostasis and critical care (blood gas) testing. The ACL TOP and GEM Premier analyzer lines."
   },
   {
     "id": "illumina",
@@ -69,7 +79,9 @@
     "country": "США · Сан-Диего",
     "specialty": "Секвенирование нового поколения (NGS)",
     "specialtyUz": "Yangi avlod sekvenatsiyasi (NGS)",
-    "descriptionUz": "Yangi avlod sekvenatsiyasi (NGS) kashshofi. 1998 yilda San-Diegoda tashkil etilgan. 160 mamlakatda taqdim etilgan."
+    "specialtyEn": "Next-generation sequencing (NGS)",
+    "descriptionUz": "Yangi avlod sekvenatsiyasi (NGS) kashshofi. 1998 yilda San-Diegoda tashkil etilgan. 160 mamlakatda taqdim etilgan.",
+    "descriptionEn": "A pioneer of next-generation sequencing (NGS). Founded in 1998 in San Diego. Present in 160 countries."
   },
   {
     "id": "lifotronic",
@@ -81,7 +93,9 @@
     "country": "Китай · Шэньчжэнь",
     "specialty": "ВЭЖХ-анализ гликированного гемоглобина",
     "specialtyUz": "Glikatlangan gemoglobinning YuSSX tahlili",
-    "descriptionUz": "Ion almashinuvli YuSSX usulida glikatlangan gemoglobin analizatorlari ishlab chiqaruvchisi (JSST oltin standarti)."
+    "specialtyEn": "HPLC glycated hemoglobin analysis",
+    "descriptionUz": "Ion almashinuvli YuSSX usulida glikatlangan gemoglobin analizatorlari ishlab chiqaruvchisi (JSST oltin standarti).",
+    "descriptionEn": "A manufacturer of glycated hemoglobin analyzers using ion-exchange HPLC (the WHO gold standard)."
   },
   {
     "id": "urit",
@@ -93,7 +107,9 @@
     "country": "Китай · Гуйлинь",
     "specialty": "Анализ мочи и гематология",
     "specialtyUz": "Siydik tahlili va gematologiya",
-    "descriptionUz": "Siydik analizatorlari, oqim sitometrlari va modulli gematologik laboratoriyalar ishlab chiqaruvchisi."
+    "specialtyEn": "Urinalysis and hematology",
+    "descriptionUz": "Siydik analizatorlari, oqim sitometrlari va modulli gematologik laboratoriyalar ishlab chiqaruvchisi.",
+    "descriptionEn": "A manufacturer of urine analyzers, flow cytometers, and modular hematology laboratories."
   },
   {
     "id": "clarius",
@@ -105,7 +121,9 @@
     "country": "Канада · Ванкувер",
     "specialty": "Беспроводная ультразвуковая диагностика",
     "specialtyUz": "Simsiz ultratovush diagnostikasi",
-    "descriptionUz": "Tibbiyot, oʻqitish va veterinariya uchun simsiz ultratovush skanerlari. Butun dunyo boʻylab 20 000 dan ortiq shifokor."
+    "specialtyEn": "Wireless ultrasound diagnostics",
+    "descriptionUz": "Tibbiyot, oʻqitish va veterinariya uchun simsiz ultratovush skanerlari. Butun dunyo boʻylab 20 000 dan ortiq shifokor.",
+    "descriptionEn": "Wireless ultrasound scanners for medicine, education, and veterinary use. More than 20,000 physicians worldwide."
   },
   {
     "id": "condalab",
@@ -117,7 +135,9 @@
     "country": "Испания · Мадрид",
     "specialty": "Питательные среды для микробиологии",
     "specialtyUz": "Mikrobiologiya uchun oziq muhitlar",
-    "descriptionUz": "1960 yildan faoliyat yuritayotgan ispan oziq muhitlari ishlab chiqaruvchisi. 130 mamlakatga eksport, ISO, FDA, USP, AOAC standartlariga muvofiq."
+    "specialtyEn": "Culture media for microbiology",
+    "descriptionUz": "1960 yildan faoliyat yuritayotgan ispan oziq muhitlari ishlab chiqaruvchisi. 130 mamlakatga eksport, ISO, FDA, USP, AOAC standartlariga muvofiq.",
+    "descriptionEn": "A Spanish culture media manufacturer since 1960. Exports to 130 countries, compliant with ISO, FDA, USP and AOAC standards."
   },
   {
     "id": "thermofisher",
@@ -129,7 +149,9 @@
     "country": "Швеция · Уппсала",
     "specialty": "Молекулярная аллергодиагностика (Phadia)",
     "specialtyUz": "Molekulyar allergodiagnostika (Phadia)",
-    "descriptionUz": "Phadia molekulyar allergodiagnostikasi, allergologiyada oltin standart."
+    "specialtyEn": "Molecular allergy diagnostics (Phadia)",
+    "descriptionUz": "Phadia molekulyar allergodiagnostikasi, allergologiyada oltin standart.",
+    "descriptionEn": "Phadia molecular allergy diagnostics, the gold standard in allergology."
   },
   {
     "id": "keyu",
@@ -141,6 +163,8 @@
     "country": "Китай",
     "specialty": "AI-анализ кала",
     "specialtyUz": "Najasning AI tahlili",
-    "descriptionUz": "Shaklli elementlar va gelmintlarni aniqlaydigan AI-najas analizatorlari."
+    "specialtyEn": "AI stool analysis",
+    "descriptionUz": "Shaklli elementlar va gelmintlarni aniqlaydigan AI-najas analizatorlari.",
+    "descriptionEn": "AI-powered stool analyzers that recognize formed elements and helminths."
   }
 ]

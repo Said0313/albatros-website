@@ -74,7 +74,10 @@ export default function AboutPage() {
           {certificates.filter((c) => !c.hidden).length > 0 ? (
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
               {certificates.filter((c) => !c.hidden).map((c) => {
-                const certTitle = locale === "uz" ? c.titleUz ?? c.title : c.title;
+                const certTitle =
+                  locale === "uz" ? c.titleUz ?? c.title
+                  : locale === "en" ? c.titleEn ?? c.title
+                  : c.title;
                 return (
                   <a
                     key={c.id}

@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const languagesFor = (path: string) => ({
     ru: absoluteUrl("ru", path),
     uz: absoluteUrl("uz", path),
+    en: absoluteUrl("en", path),
   });
 
   // One entry per locale per page, each with full language alternates.

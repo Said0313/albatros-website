@@ -38,10 +38,19 @@ function buildRecord(body, existing) {
   const setReq = (k) => {
     if (typeof body[k] === "string") e[k] = body[k].trim();
   };
+  const setOpt = (k) => {
+    if (typeof body[k] === "string") {
+      const v = body[k].trim();
+      if (v) e[k] = v;
+      else delete e[k];
+    }
+  };
   setReq("title");
   setReq("titleUz");
   setReq("description");
   setReq("descriptionUz");
+  setOpt("titleEn");
+  setOpt("descriptionEn");
   if (validDate(body.date)) {
     e.date = str(body.date);
     e.year = str(body.date).split(" ")[1]; // year always derived from date
@@ -75,6 +84,8 @@ const router = makeContentRouter({
     "description",
     "titleUz",
     "descriptionUz",
+    "titleEn",
+    "descriptionEn",
     "type",
     "images",
     "priority",

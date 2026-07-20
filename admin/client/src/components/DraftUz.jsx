@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../api";
 
-// "Черновик UZ" helper for a bilingual field pair. Renders the button (placed
-// next to the UZ field's label) and a "черновик, проверьте" badge that stays
-// until the admin edits the drafted text. `source` is the RU text, `value` the
-// current UZ value, `onChange` writes the draft into the UZ field.
-export default function DraftUz({ source, value, onChange }) {
+// "Черновик UZ/EN" helper for a bilingual field pair. Renders the button
+// (placed next to the target field's label) and a "черновик, проверьте" badge
+// that stays until the admin edits the drafted text. `source` is the RU text,
+// `value` the current target-language value, `onChange` writes the draft into
+// the target field. `lang` selects the translation target ("uz" default, "en").
+export default function DraftUz({ source, value, onChange, lang = "uz" }) {
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState("");
   const [isDraft, setIsDraft] = useState(false);
@@ -24,7 +25,7 @@ export default function DraftUz({ source, value, onChange }) {
     }
     setBusy(true);
     try {
-      const d = await api.translateDraft(source);
+      const d = await api.translateDraft(source, lang);
       if (d.configured === false) {
         setNote(d.error || "Перевод не настроен.");
         return;
@@ -39,6 +40,8 @@ export default function DraftUz({ source, value, onChange }) {
     }
   };
 
+  const label = lang.toUpperCase();
+
   return (
     <span className="inline-flex flex-wrap items-center gap-2">
       <button
@@ -46,9 +49,9 @@ export default function DraftUz({ source, value, onChange }) {
         className="rounded border border-line bg-white px-2 py-0.5 text-[11px] font-semibold text-clinical hover:bg-panel disabled:opacity-50"
         onClick={generate}
         disabled={busy}
-        title="Сгенерировать черновик перевода из поля RU. Черновик нужно проверить перед сохранением."
+        title={`Сгенерировать черновик перевода (${label}) из поля RU. Черновик нужно проверить перед сохранением.`}
       >
-        {busy ? "Перевод..." : "Черновик UZ"}
+        {busy ? "Перевод..." : `Черновик ${label}`}
       </button>
       {isDraft && (
         <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[11px] font-semibold text-amber-700">

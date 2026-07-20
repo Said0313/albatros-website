@@ -1,10 +1,10 @@
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  locales: ["ru", "uz"],
+  locales: ["ru", "uz", "en"],
   defaultLocale: "ru",
   // ru stays at the root (/, /catalog ...) so existing URLs are unchanged;
-  // uz is served under /uz/...
+  // uz and en are served under /uz/... and /en/...
   localePrefix: "as-needed",
 });
 

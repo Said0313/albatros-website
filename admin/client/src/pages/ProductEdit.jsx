@@ -17,8 +17,10 @@ const EMPTY = {
   isNew: false,
   shortDescription: "",
   shortDescriptionUz: "",
+  shortDescriptionEn: "",
   fullDescription: "",
   fullDescriptionUz: "",
+  fullDescriptionEn: "",
   videoUrl: "",
   detailedDescription: "",
   detailedDescriptionUz: "",
@@ -139,8 +141,10 @@ export default function ProductEdit({ mode }) {
     isNew: !!form.isNew,
     shortDescription: form.shortDescription,
     shortDescriptionUz: form.shortDescriptionUz,
+    shortDescriptionEn: form.shortDescriptionEn,
     fullDescription: form.fullDescription,
     fullDescriptionUz: form.fullDescriptionUz,
+    fullDescriptionEn: form.fullDescriptionEn,
     videoUrl: form.videoUrl.trim(),
     detailedDescription: form.detailedDescription,
     detailedDescriptionUz: form.detailedDescriptionUz,
@@ -358,7 +362,7 @@ export default function ProductEdit({ mode }) {
         {/* Descriptions */}
         <section className="card p-5 lg:col-span-2">
           <h2 className="mb-4 font-bold text-ink">Описания</h2>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             <div>
               <label className="label">Краткое описание, RU *</label>
               <textarea
@@ -383,6 +387,22 @@ export default function ProductEdit({ mode }) {
               />
             </div>
             <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Краткое описание, EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.shortDescription}
+                  value={form.shortDescriptionEn}
+                  onChange={(v) => set("shortDescriptionEn", v)}
+                />
+              </div>
+              <textarea
+                className="field mb-4 h-24"
+                value={form.shortDescriptionEn}
+                onChange={(e) => set("shortDescriptionEn", e.target.value)}
+              />
+            </div>
+            <div>
               <label className="label">Полное описание, RU</label>
               <textarea
                 className="field h-40"
@@ -403,6 +423,22 @@ export default function ProductEdit({ mode }) {
                 className="field h-40"
                 value={form.fullDescriptionUz}
                 onChange={(e) => set("fullDescriptionUz", e.target.value)}
+              />
+            </div>
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Полное описание, EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.fullDescription}
+                  value={form.fullDescriptionEn}
+                  onChange={(v) => set("fullDescriptionEn", v)}
+                />
+              </div>
+              <textarea
+                className="field h-40"
+                value={form.fullDescriptionEn}
+                onChange={(e) => set("fullDescriptionEn", e.target.value)}
               />
             </div>
           </div>

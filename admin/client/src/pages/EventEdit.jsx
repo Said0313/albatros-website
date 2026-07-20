@@ -8,11 +8,13 @@ import DraftUz from "../components/DraftUz.jsx";
 const EMPTY = {
   title: "",
   titleUz: "",
+  titleEn: "",
   month: "",
   year: "",
   type: "",
   description: "",
   descriptionUz: "",
+  descriptionEn: "",
   images: [],
   priority: "",
   hidden: false,
@@ -99,10 +101,12 @@ export default function EventEdit({ mode }) {
   const payload = () => ({
     title: form.title,
     titleUz: form.titleUz,
+    titleEn: form.titleEn,
     date: form.month && form.year ? `${form.month} ${form.year}` : "",
     type: form.type,
     description: form.description,
     descriptionUz: form.descriptionUz,
+    descriptionEn: form.descriptionEn,
     images: form.images,
     priority: form.priority === "" ? "" : Number(form.priority),
     hidden: !!form.hidden,
@@ -172,6 +176,12 @@ export default function EventEdit({ mode }) {
             <DraftUz source={form.title} value={form.titleUz} onChange={(v) => set("titleUz", v)} />
           </div>
           <input className="field mb-4" value={form.titleUz} onChange={(e) => set("titleUz", e.target.value)} />
+
+          <div className="mb-1 flex items-center justify-between">
+            <label className="label mb-0">Название, EN</label>
+            <DraftUz lang="en" source={form.title} value={form.titleEn} onChange={(v) => set("titleEn", v)} />
+          </div>
+          <input className="field mb-4" value={form.titleEn} onChange={(e) => set("titleEn", e.target.value)} />
 
           <div className="mb-4 grid grid-cols-2 gap-3">
             <div>
@@ -290,7 +300,7 @@ export default function EventEdit({ mode }) {
 
         <section className="card p-5 lg:col-span-2">
           <h2 className="mb-4 font-bold text-ink">Описания</h2>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             <div>
               <div className="mb-1 flex items-center justify-between">
                 <label className="label mb-0">Описание, RU *</label>
@@ -318,6 +328,22 @@ export default function EventEdit({ mode }) {
                 className="field h-40"
                 value={form.descriptionUz}
                 onChange={(e) => set("descriptionUz", e.target.value)}
+              />
+            </div>
+            <div>
+              <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+                <label className="label mb-0">Описание, EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.description}
+                  value={form.descriptionEn}
+                  onChange={(v) => set("descriptionEn", v)}
+                />
+              </div>
+              <textarea
+                className="field h-40"
+                value={form.descriptionEn}
+                onChange={(e) => set("descriptionEn", e.target.value)}
               />
             </div>
           </div>
