@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import "../globals.css";
@@ -23,6 +24,18 @@ const inter = Inter({
   display: "swap",
 });
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400"], variable: "--font-mono", display: "swap" });
+
+// Bounded is the display face for headings in BOTH locales. Verified with
+// fontTools: the variable file carries the FULL Cyrillic block (all RU letters)
+// plus the Uzbek modifier letters ʻ/ʼ (U+02BB / U+02BC), so RU and UZ headings
+// both render in real Bounded — no missing-glyph squares. Weight axis 200–900
+// covers the 700/800 heading weights; Inter stays the fallback.
+const bounded = localFont({
+  src: "../../fonts/Bounded-Variable.ttf",
+  weight: "200 900",
+  variable: "--font-bounded",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -72,7 +85,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${mono.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${mono.variable} ${bounded.variable}`}>
       <body>
         <OrganizationJsonLd locale={locale as AppLocale} />
         {/* Single-stage inline CSS loader only; the canvas <Splash> is intentionally

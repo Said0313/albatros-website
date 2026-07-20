@@ -15,11 +15,11 @@ const config: Config = {
         text: { primary: "#0C1B3A", secondary: "#5E6E8F", muted: "#8A98B5" },
       },
       fontFamily: {
-        // Headings use Inter (heavy weight) in BOTH locales. Syne was dropped:
-        // it ships with no Cyrillic glyphs, so RU headings already fell back to
-        // Inter while UZ (Latin) rendered in actual Syne — the two locales looked
-        // different. Inter for headings makes UZ match RU exactly.
-        display: ["var(--font-inter)", "system-ui", "sans-serif"],
+        // Headings use Bounded in BOTH locales. Unlike the old Syne (Latin-only),
+        // Bounded carries the full Cyrillic block plus the Uzbek modifier letters
+        // ʻ/ʼ (verified with fontTools), so RU and UZ headings both render in real
+        // Bounded with no missing-glyph squares. Inter stays the fallback.
+        display: ["var(--font-bounded)", "var(--font-inter)", "system-ui", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
         // JetBrains Mono also lacks Cyrillic — fall to Inter so "mono" spots with
         // Cyrillic/Uzbek render cleanly instead of dropping to a system font.

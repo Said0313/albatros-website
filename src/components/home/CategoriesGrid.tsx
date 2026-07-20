@@ -37,7 +37,7 @@ export function CategoriesGrid() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-inter), sans-serif",
+              fontFamily: "var(--font-bounded), var(--font-inter), sans-serif",
               fontWeight: 800,
               fontSize: "clamp(30px,7vw,46px)",
               lineHeight: 1.05,
