@@ -13,6 +13,8 @@
     "openCatalog": "Katalogni ochish",
     "aboutCompany": "Kompaniya haqida",
     "more": "Batafsil",
+    "expand": "yana",
+    "collapse": "yigʻish",
     "view": "Koʻrish",
     "requestPrice": "Narxni soʻrash",
     "submit": "Ariza yuborish",
@@ -56,10 +58,10 @@
     "noProducts": "Uskunalar tez orada qoʻshiladi"
   },
   "clients": {
-    "homeTitle": "Bizning mijozlarimiz",
+    "homeTitle": "Bizning mahalliy hamkorlarimiz",
     "homeSubtitle": "Oʻzbekiston boʻylab 900 dan ortiq tibbiyot muassasasi bizga ishonadi",
-    "pageTitle": "Bizning mijozlarimiz",
-    "scaleStat": "900 dan ortiq mijoz",
+    "pageTitle": "Bizning mahalliy hamkorlarimiz",
+    "scaleStat": "900 dan ortiq hamkor",
     "scaleNote": "Bu yerda bizga ishonch bildirgan tashkilotlarning bir qismi keltirilgan"
   },
   "services": {

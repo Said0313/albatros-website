@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { clients } from "@/data/clients";
 import { certificates } from "@/data/certificates";
 import { totalPositions } from "@/lib/catalog";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
@@ -38,7 +37,6 @@ const stats = [
 
 export default function AboutPage() {
   const t = useTranslations("aboutPage");
-  const tcl = useTranslations("clients");
   const locale = useLocale();
   return (
     <div className="pt-28 md:pt-32">
@@ -71,32 +69,6 @@ export default function AboutPage() {
       </div>
 
       <div className="container-x">
-        <section id="clients" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tcl("pageTitle")}</h2>
-          <p className="mt-4 font-display text-xl font-bold text-brand-blue-deep md:text-2xl">{tcl("scaleStat")}</p>
-          <p className="mt-2 max-w-2xl text-text-secondary">{tcl("scaleNote")}</p>
-
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {clients.map((c, i) => {
-              const desc = locale === "uz" ? c.descriptionUz ?? c.description : c.description;
-              return (
-                <ScrollReveal key={c.id} delay={(i % 2) * 0.08}>
-                  <div className="flex h-full gap-5 rounded-2xl border border-bg-border bg-bg-card p-6 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
-                    <div className="flex h-20 w-32 shrink-0 items-center justify-center rounded-lg bg-white p-4 shadow-[0_4px_24px_rgba(0,0,0,0.25)]">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={c.logo} alt={c.name} className="max-h-12 w-auto object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-bold text-text-primary">{c.name}</h3>
-                      {desc && <p className="mt-2 text-sm leading-relaxed text-text-secondary">{desc}</p>}
-                    </div>
-                  </div>
-                </ScrollReveal>
-              );
-            })}
-          </div>
-        </section>
-
         <section id="certificates" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
           {certificates.filter((c) => !c.hidden).length > 0 ? (
