@@ -266,10 +266,13 @@ export default function ParticleBackground({
         }
       }
 
-      // links via spatial hash (field states only)
+      // links via spatial hash (field states only). Sparse on purpose: a short
+      // reach (100px vs 130px) and a hard cap of 3 links per dot keep the
+      // constellation legible instead of a dense mesh of lines.
       if ((fieldLike || phase === 6) && linkIntensity > 0.02) {
         const la = phase === 5 ? ei(Math.min(1, pr(5))) : phase === 0 ? Math.min(1, pr(0)) * 0.5 : 1;
-        const cell = 130;
+        const cell = 100, maxLinks = 3;
+        const linkCount = new Uint8Array(draw.length);
         const grid = new Map<string, number[]>();
         draw.forEach((d, i) => {
           const k = `${(d.ox / cell) | 0},${(d.oy / cell) | 0}`;
@@ -280,19 +283,21 @@ export default function ParticleBackground({
         for (let i = 0; i < draw.length; i++) {
           const a = draw[i];
           const gx = (a.ox / cell) | 0, gy = (a.oy / cell) | 0;
-          for (let nx = gx; nx <= gx + 1; nx++)
-            for (let ny = gy - 1; ny <= gy + 1; ny++) {
+          for (let nx = gx; nx <= gx + 1 && linkCount[i] < maxLinks; nx++)
+            for (let ny = gy - 1; ny <= gy + 1 && linkCount[i] < maxLinks; ny++) {
               if (nx === gx && ny < gy) continue;
               const bucket = grid.get(`${nx},${ny}`);
               if (!bucket) continue;
               for (const j of bucket) {
-                if (j <= i) continue;
+                if (j <= i || linkCount[j] >= maxLinks) continue;
+                if (linkCount[i] >= maxLinks) break;
                 const b = draw[j];
                 const dx = a.ox - b.ox, dy = a.oy - b.oy, d2 = dx * dx + dy * dy;
-                if (d2 < 16900) {
+                if (d2 < 10000) {
                   const d = Math.sqrt(d2);
-                  ctx.strokeStyle = rgba(BLUE, (1 - d / 130) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1));
+                  ctx.strokeStyle = rgba(BLUE, (1 - d / 100) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1));
                   ctx.beginPath(); ctx.moveTo(a.ox, a.oy); ctx.lineTo(b.ox, b.oy); ctx.stroke();
+                  linkCount[i]++; linkCount[j]++;
                 }
               }
             }
