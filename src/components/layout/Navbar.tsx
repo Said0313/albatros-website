@@ -7,6 +7,7 @@ import { Menu, X, Download } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+import { categoryLabel } from "@/data/i18n";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 
 const NAV = [
@@ -18,6 +19,9 @@ const NAV = [
   { href: "/contact", key: "contact" },
 ] as const;
 
+// Top catalog directions for the mobile menu's second column (mirrors the footer).
+const MENU_DIRECTIONS = ["ИХЛА", "Биохимия", "Гематология", "Микробиология", "ПЦР", "Генетика"];
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -25,6 +29,7 @@ export function Navbar() {
   const locale = useLocale();
   const tn = useTranslations("nav");
   const tc = useTranslations("common");
+  const tf = useTranslations("footer");
   const isUz = locale === "uz";
 
   useEffect(() => {
@@ -106,25 +111,52 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.35 }}
-              className="fixed right-0 top-0 z-30 flex h-screen w-72 flex-col gap-2 border-l border-bg-border bg-bg-card px-6 pt-24 lg:hidden"
+              className="fixed right-0 top-0 z-30 flex h-screen w-[86vw] max-w-md flex-col overflow-y-auto border-l border-bg-border bg-bg-card px-6 pb-8 pt-24 lg:hidden"
             >
-              {NAV.map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  className={cn(
-                    "rounded-lg px-3 py-3 text-lg",
-                    pathname === l.href ? "bg-bg-elevated text-text-primary" : "text-text-secondary"
-                  )}
-                >
-                  {tn(l.key)}
-                </Link>
-              ))}
+              {/* Two columns so the width is used: navigation on the left, catalog
+                  directions on the right. */}
+              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                <div>
+                  <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-wide text-text-muted">
+                    {tf("navigation")}
+                  </h4>
+                  <div className="flex flex-col">
+                    {NAV.map((l) => (
+                      <Link
+                        key={l.href}
+                        href={l.href}
+                        className={cn(
+                          "rounded-lg px-3 py-2.5 text-base",
+                          pathname === l.href ? "bg-bg-elevated text-text-primary" : "text-text-secondary"
+                        )}
+                      >
+                        {tn(l.key)}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-wide text-text-muted">
+                    {tf("directions")}
+                  </h4>
+                  <div className="flex flex-col">
+                    {MENU_DIRECTIONS.map((c) => (
+                      <Link
+                        key={c}
+                        href={{ pathname: "/catalog", query: { category: c } }}
+                        className="rounded-lg px-3 py-2.5 text-base text-text-secondary"
+                      >
+                        {categoryLabel(c, locale)}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
               <a
                 href="/price-list.pdf"
                 download="Albatros_Price_List.pdf"
                 onClick={() => setMobileOpen(false)}
-                className="btn-red mt-4 flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium"
+                className="btn-red mt-6 flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium"
               >
                 <Download className="h-4 w-4" /> {tc("downloadPrice")}
               </a>
