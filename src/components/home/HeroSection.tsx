@@ -1,16 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
-
-// Full-page particle field (fixed, z-0, pointer-events none). Client-only:
-// it draws on canvas from mount and must never run during SSR. It replaces the
-// old hero-scoped DNACanvas and brings its own radial halo overlay.
-const ParticleBackground = dynamic(() => import("@/components/ui/ParticleBackground"), { ssr: false });
+import { useFieldReveal } from "@/components/ui/ParticleField";
 
 // Reveal choreography: 550ms per element, 100ms stagger, translateY 18px -> 0.
 // fast (intro skipped by click/scroll): no stagger, 0.4x durations.
@@ -19,21 +14,23 @@ const EASE = [0.2, 0.7, 0.2, 1] as const;
 export function HeroSection() {
   const t = useTranslations("hero");
   const tc = useTranslations("common");
-  // Flipped by the field's onRevealReady: fast=false after the full intro
-  // choreography, fast=true when the user skipped it (click / early scroll).
-  const [reveal, setReveal] = useState<{ on: boolean; fast: boolean }>({ on: false, fast: false });
+  // The particle field is mounted site-wide in the layout; its intro fires the
+  // reveal signal through context (fast=true when skipped by click/scroll).
+  const reveal = useFieldReveal();
 
-  // Safety net: if the callback never fires (component failed to mount, or the
+  // Safety net: if the signal never arrives (field failed to mount, or the
   // intro stalled in a throttled tab), reveal anyway so the hero can never get
-  // stuck invisible. The intro naturally fires onRevealReady at ~4.7s
-  // (spread phase at speed 0.75), so the fallback sits just past it; anything
-  // shorter would preempt the choreography on every normal load.
+  // stuck invisible. The intro naturally fires at ~4.7s (spread phase at
+  // speed 0.75), so the fallback sits just past it; anything shorter would
+  // preempt the choreography on every normal load.
+  const [safety, setSafety] = useState(false);
   useEffect(() => {
-    const id = setTimeout(() => setReveal((r) => (r.on ? r : { on: true, fast: false })), 6000);
+    const id = setTimeout(() => setSafety(true), 6000);
     return () => clearTimeout(id);
   }, []);
 
-  const { on, fast } = reveal;
+  const on = reveal.on || safety;
+  const fast = reveal.fast;
   const dur = fast ? 0.55 * 0.4 : 0.55;
   const stagger = (i: number) => (fast ? 0 : i * 0.1);
   const item = (i: number) => ({
@@ -44,10 +41,10 @@ export function HeroSection() {
 
   return (
     // pt equals the fixed navbar height so the vertical centering happens in
-    // the space BELOW the navbar; the container padding adds breathing room
-    <section className="relative flex min-h-[78vh] items-center overflow-hidden pt-16 md:pt-20" style={{ background: "var(--grad-hero)" }}>
-      <ParticleBackground onRevealReady={(isFast) => setReveal((r) => (r.on ? r : { on: true, fast: isFast }))} />
-
+    // the space BELOW the navbar; the container padding adds breathing room.
+    // No background: the section is transparent so the site-wide field (fixed
+    // z-0, below main's z-1) shows through; the body carries the page color.
+    <section className="relative flex min-h-[78vh] items-center overflow-hidden pt-16 md:pt-20">
       <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-display text-[clamp(28px,7vw,52px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[68px]">

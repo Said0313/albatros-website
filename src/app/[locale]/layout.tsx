@@ -9,6 +9,7 @@ import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ContactProvider } from "@/components/ui/ContactModal";
+import { ParticleFieldProvider } from "@/components/ui/ParticleField";
 import { InlineSplash } from "@/components/home/InlineSplash";
 import { Analytics } from "@/components/seo/Analytics";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
@@ -93,11 +94,15 @@ export default async function LocaleLayout({
         <InlineSplash />
         <NextIntlClientProvider messages={messages}>
           <ContactProvider>
-            <Navbar />
-            {/* relative z-1 keeps all route content above the fixed z-0
-                particle canvas (mounted by the homepage hero) */}
-            <main className="relative z-[1]">{children}</main>
-            <Footer />
+            {/* Site-wide particle field (fixed z-0 canvas). relative z-1 on
+                main and the footer wrapper keeps all content above it. */}
+            <ParticleFieldProvider>
+              <Navbar />
+              <main className="relative z-[1]">{children}</main>
+              <div className="relative z-[1]">
+                <Footer />
+              </div>
+            </ParticleFieldProvider>
           </ContactProvider>
         </NextIntlClientProvider>
         <Analytics />
