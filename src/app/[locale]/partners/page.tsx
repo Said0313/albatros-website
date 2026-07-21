@@ -10,6 +10,7 @@ import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { ExpandableText } from "@/components/partners/ExpandableText";
+import { CappedList } from "@/components/ui/CappedList";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
 export async function generateMetadata({
@@ -40,7 +41,7 @@ export default function PartnersPage() {
 
         {/* Foreign partners (the brands we distribute). Logo on top, short text
             below with an "ещё" toggle, plus a link to the brand detail page. */}
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <CappedList count={brands.length} className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {brands.map((b, i) => (
             <ScrollReveal key={b.id} delay={(i % 3) * 0.06}>
               <div
@@ -70,7 +71,7 @@ export default function PartnersPage() {
               </div>
             </ScrollReveal>
           ))}
-        </div>
+        </CappedList>
 
         {/* Local partners (formerly "clients"): logo + short info with a toggle. */}
         <section id="clients" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
@@ -78,7 +79,10 @@ export default function PartnersPage() {
           <p className="mt-4 font-display text-xl font-bold text-brand-blue-deep md:text-2xl">{tcl("scaleStat")}</p>
           <p className="mt-2 max-w-2xl text-text-secondary">{tcl("scaleNote")}</p>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <CappedList
+            count={clients.filter((c) => !c.hidden).length}
+            className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {clients.filter((c) => !c.hidden).map((c, i) => {
               const desc = locale === "uz" ? c.descriptionUz ?? c.description : c.description;
               return (
@@ -94,7 +98,7 @@ export default function PartnersPage() {
                 </ScrollReveal>
               );
             })}
-          </div>
+          </CappedList>
         </section>
       </div>
       <ContactCTA />
