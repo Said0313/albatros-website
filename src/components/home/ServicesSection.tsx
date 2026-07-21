@@ -19,7 +19,7 @@ const CARDS = [
 export function ServicesSection() {
   const t = useTranslations("services");
   return (
-    <section className="border-y border-bg-border bg-[rgba(244,247,251,0.86)] py-16 backdrop-blur-[6px] md:py-20">
+    <section className="border-y border-bg-border py-16 md:py-20">
       <div className="container-x mb-10 text-center">
         <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
           {t("sectionTitle")}

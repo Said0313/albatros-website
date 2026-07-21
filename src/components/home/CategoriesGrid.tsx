@@ -21,7 +21,7 @@ export function CategoriesGrid() {
     .filter((d) => d.count > 0);
 
   return (
-    <section style={{ background: "#FBFCFE", fontFamily: "var(--font-inter), sans-serif", padding: "80px 24px 96px" }}>
+    <section style={{ fontFamily: "var(--font-inter), sans-serif", padding: "80px 24px 96px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <div style={{ marginBottom: 48 }}>
           <div
@@ -61,9 +61,7 @@ export function CategoriesGrid() {
                 flexDirection: "column",
                 gap: 6,
                 textDecoration: "none",
-                background: "rgba(255,255,255,0.9)",
-                backdropFilter: "blur(6px)",
-                WebkitBackdropFilter: "blur(6px)",
+                background: "rgba(255,255,255,0.92)",
                 border: "1px solid #E5EAF3",
                 borderRadius: 14,
                 padding: "18px 20px",
@@ -96,9 +94,7 @@ export function CategoriesGrid() {
                 display: "flex",
                 flexDirection: "column",
                 textDecoration: "none",
-                background: "rgba(255,255,255,0.9)",
-                backdropFilter: "blur(6px)",
-                WebkitBackdropFilter: "blur(6px)",
+                background: "rgba(255,255,255,0.92)",
                 border: "1px solid #E5EAF3",
                 borderTop: `3px solid ${accent}`,
                 borderRadius: 14,

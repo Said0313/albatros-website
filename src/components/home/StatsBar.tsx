@@ -11,7 +11,7 @@ const stats = [
 export function StatsBar() {
   const t = useTranslations("statsBar");
   return (
-    <section className="border-y border-bg-border bg-[rgba(244,247,251,0.86)] backdrop-blur-[6px]">
+    <section className="border-y border-bg-border">
       <div className="container-x grid grid-cols-2 gap-y-8 py-12 lg:grid-cols-4">
         {stats.map((s, i) => (
           <div
