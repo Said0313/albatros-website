@@ -15,7 +15,9 @@ export function EventsTimeline() {
   const t = useTranslations("events");
   const tc = useTranslations("common");
   const locale = useLocale();
-  const recent = events.filter((e) => !e.hidden).slice(0, 3);
+  // Preview capped to 3 (mobile) / 9 (lg) via the shared capped-collapsed CSS;
+  // no in-place expand here, the button below links to the full events page.
+  const recent = events.filter((e) => !e.hidden).slice(0, 9);
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x">
@@ -23,7 +25,7 @@ export function EventsTimeline() {
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("title")}</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="capped-collapsed grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {recent.map((e, i) => {
             const title = eventTitle(e, locale);
             const photo = e.images?.[0];

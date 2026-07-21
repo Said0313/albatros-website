@@ -9,6 +9,7 @@ import type { CompanyEvent } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { eventTitle, eventDescription, eventDate } from "@/data/i18n";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { CappedList } from "@/components/ui/CappedList";
 import { cn } from "@/lib/utils";
 
 const KNOWN_TYPES = [
@@ -127,8 +128,14 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
         </select>
       </div>
 
-      {/* Chronological list of event cards */}
-      <div className="mt-10 flex flex-col gap-6 pb-20">
+      {/* Chronological list of event cards, capped 3 (mobile) / 9 (lg). */}
+      <div className="mt-10 pb-20">
+        {filtered.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-bg-border bg-bg-elevated py-16 text-center text-sm text-text-muted">
+            {t("empty")}
+          </div>
+        ) : (
+        <CappedList key={`${year}|${type}|${query}`} count={filtered.length} className="flex flex-col gap-6">
         {filtered.map((e, i) => {
           const title = eventTitle(e, locale);
           const photo = e.images?.[0];
@@ -176,10 +183,7 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
             </ScrollReveal>
           );
         })}
-        {filtered.length === 0 && (
-          <div className="rounded-2xl border border-dashed border-bg-border bg-bg-elevated py-16 text-center text-sm text-text-muted">
-            {t("empty")}
-          </div>
+        </CappedList>
         )}
       </div>
     </div>
