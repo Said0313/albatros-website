@@ -43,12 +43,14 @@ export function HeroSection() {
   });
 
   return (
-    <section className="relative flex min-h-[78vh] items-center overflow-hidden" style={{ background: "var(--grad-hero)" }}>
+    // pt equals the fixed navbar height so the vertical centering happens in
+    // the space BELOW the navbar; the container padding adds breathing room
+    <section className="relative flex min-h-[78vh] items-center overflow-hidden pt-16 md:pt-20" style={{ background: "var(--grad-hero)" }}>
       <ParticleBackground onRevealReady={(isFast) => setReveal((r) => (r.on ? r : { on: true, fast: isFast }))} />
 
       <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-display text-[clamp(28px,7.5vw,56px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[76px]">
+          <h1 className="font-display text-[clamp(28px,7vw,52px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[68px]">
             <motion.span {...item(0)} className="block">
               {t("titleA")}
             </motion.span>
