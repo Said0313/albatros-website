@@ -2,13 +2,13 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, SlidersHorizontal, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { products, categories, generalDirections, directionPositions, itemCount, productDirection } from "@/lib/catalog";
 import { categoryLabel } from "@/data/i18n";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { ReagentCard } from "@/components/catalog/ReagentCard";
+import { CappedList } from "@/components/ui/CappedList";
 import { cn } from "@/lib/utils";
 
 export function CatalogView() {
@@ -20,9 +20,6 @@ export function CatalogView() {
 
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [filtersOpen, setFiltersOpen] = useState(false);
-  // Show a compact first page of results with a down-arrow to reveal the rest.
-  const [expanded, setExpanded] = useState(false);
-  const LIMIT = 9;
   const selectedDirs = searchParams.getAll("direction");
   const selectedCats = searchParams.getAll("category");
   const selectedBrands = searchParams.getAll("brand");
@@ -41,7 +38,6 @@ export function CatalogView() {
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
-    setExpanded(false); // collapse back to the compact view when filters change
   }, [searchParams]);
 
   const updateParams = (key: string, value: string, multi = true) => {
@@ -179,35 +175,17 @@ export function CatalogView() {
             </button>
           </div>
         ) : (
-          <>
-            <motion.div layout className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              <AnimatePresence mode="popLayout">
-                {(expanded ? filtered : filtered.slice(0, LIMIT)).map((p) => (
-                  <motion.div
-                    key={p.slug}
-                    layout
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.25 }}
-                  >
-                    {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </motion.div>
-            {filtered.length > LIMIT && (
-              <div className="mt-8 flex justify-center">
-                <button
-                  onClick={() => setExpanded((v) => !v)}
-                  className="inline-flex items-center gap-2 rounded-full border border-bg-border bg-bg-card px-5 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-blue-light"
-                >
-                  {expanded ? t("hideTests") : `${t("showMore")} (${filtered.length - LIMIT})`}
-                  <ChevronDown className={cn("h-4 w-4 transition-transform", expanded && "rotate-180")} />
-                </button>
+          <CappedList
+            key={[query, ...selectedDirs, ...selectedCats, ...selectedBrands].join("|")}
+            count={filtered.length}
+            className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3"
+          >
+            {filtered.map((p) => (
+              <div key={p.slug}>
+                {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
               </div>
-            )}
-          </>
+            ))}
+          </CappedList>
         )}
       </div>
     </div>

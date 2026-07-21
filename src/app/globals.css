@@ -238,6 +238,22 @@ body {
   }
 }
 
+/* ── Capped preview list (CappedList component) ──
+   All items render into the DOM; when collapsed, overflow past the per-breakpoint
+   cap is hidden with nth-child (no JS, no layout shift, hydration-safe). Each
+   breakpoint carries exactly one cap rule, so nothing needs re-showing:
+   below lg show 3 (hide the 4th onward), at lg and up show 9 (hide the 10th onward). */
+@media (max-width: 1023px) {
+  .capped-collapsed > :nth-child(n + 4) {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .capped-collapsed > :nth-child(n + 10) {
+    display: none;
+  }
+}
+
 /* ── DNA intro splash (ported from Claude Design "Albatros DNA Intro") ── */
 @keyframes alb-bar {
   0% { transform: translateX(-100%); }
