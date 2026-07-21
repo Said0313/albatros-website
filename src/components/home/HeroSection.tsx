@@ -7,9 +7,9 @@ import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
-const DNACanvas = dynamic(() => import("@/components/ui/DNACanvas"), { ssr: false });
 // Full-page particle field (fixed, z-0, pointer-events none). Client-only:
-// it draws on canvas from mount and must never run during SSR.
+// it draws on canvas from mount and must never run during SSR. It replaces the
+// old hero-scoped DNACanvas and brings its own radial halo overlay.
 const ParticleBackground = dynamic(() => import("@/components/ui/ParticleBackground"), { ssr: false });
 
 export function HeroSection() {
@@ -25,13 +25,6 @@ export function HeroSection() {
       data-hero-revealed={heroVisible || undefined}
     >
       <ParticleBackground onRevealReady={() => setHeroVisible(true)} />
-      <DNACanvas />
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background: "radial-gradient(ellipse 70% 55% at 50% 38%, rgba(46,84,156,0.07) 0%, transparent 70%)",
-        }}
-      />
 
       <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">

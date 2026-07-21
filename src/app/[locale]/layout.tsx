@@ -94,7 +94,9 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <ContactProvider>
             <Navbar />
-            <main>{children}</main>
+            {/* relative z-1 keeps all route content above the fixed z-0
+                particle canvas (mounted by the homepage hero) */}
+            <main className="relative z-[1]">{children}</main>
             <Footer />
           </ContactProvider>
         </NextIntlClientProvider>
