@@ -82,7 +82,14 @@ export function AboutSection() {
 
   return (
     <section
-      style={{ position: "relative", background: "#EEF3FA", fontFamily: "var(--font-inter), sans-serif", overflow: "hidden" }}
+      style={{
+        position: "relative",
+        background: "rgba(238,243,250,0.88)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+        fontFamily: "var(--font-inter), sans-serif",
+        overflow: "hidden",
+      }}
     >
       <div
         style={{

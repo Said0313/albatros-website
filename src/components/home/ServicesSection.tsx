@@ -19,7 +19,7 @@ const CARDS = [
 export function ServicesSection() {
   const t = useTranslations("services");
   return (
-    <section className="border-y border-bg-border bg-bg-elevated py-16 md:py-20">
+    <section className="border-y border-bg-border bg-[rgba(244,247,251,0.86)] py-16 backdrop-blur-[6px] md:py-20">
       <div className="container-x mb-10 text-center">
         <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
           {t("sectionTitle")}
@@ -29,7 +29,7 @@ export function ServicesSection() {
         {CARDS.map((c, i) => (
           <ScrollReveal key={c.key} delay={(i % 2) * 0.08} className="h-full">
             <div
-              className="relative h-full overflow-hidden rounded-2xl border border-bg-border bg-bg-card p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
+              className="relative h-full overflow-hidden rounded-2xl border border-bg-border bg-white/90 p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)] backdrop-blur-[6px]"
               style={{ borderLeft: `4px solid ${c.color}` }}
             >
               <span

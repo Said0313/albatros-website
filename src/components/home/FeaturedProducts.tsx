@@ -35,7 +35,7 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
   }, [embla]);
 
   return (
-    <section className="section-pad border-y border-bg-border bg-bg-elevated">
+    <section className="section-pad border-y border-bg-border bg-[rgba(244,247,251,0.86)] backdrop-blur-[6px]">
       <div className="container-x">
         <div className="mb-12 text-center">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tf("title")}</h2>
@@ -49,7 +49,7 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
                 <Link
                   key={p.slug}
                   href={`/product/${p.slug}`}
-                  className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-bg-border bg-bg-card shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-blue-light hover:shadow-[0_24px_48px_-28px_rgba(29,58,130,0.35)] sm:w-[300px]"
+                  className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-bg-border bg-white/90 backdrop-blur-[6px] shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-blue-light hover:shadow-[0_24px_48px_-28px_rgba(29,58,130,0.35)] sm:w-[300px]"
                 >
                   <div className="relative aspect-square overflow-hidden rounded-t-2xl bg-white">
                     <ProductImage src={p.images[0]} alt={p.name} brand={p.brand} category={p.category} name={p.name} sizes="300px" className="p-4" />

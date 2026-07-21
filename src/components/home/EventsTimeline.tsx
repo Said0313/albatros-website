@@ -33,7 +33,7 @@ export function EventsTimeline() {
               <ScrollReveal key={e.id} delay={i * 0.08}>
                 <Link
                   href={`/events/${e.id}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-bg-border bg-bg-card shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue-light hover:shadow-[0_18px_40px_-26px_rgba(29,58,130,0.35)]"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-bg-border bg-white/90 backdrop-blur-[6px] shadow-[0_1px_2px_rgba(16,40,90,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue-light hover:shadow-[0_18px_40px_-26px_rgba(29,58,130,0.35)]"
                 >
                   {photo && (
                     <div className="overflow-hidden">
