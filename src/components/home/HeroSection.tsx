@@ -1,18 +1,30 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
 const DNACanvas = dynamic(() => import("@/components/ui/DNACanvas"), { ssr: false });
+// Full-page particle field (fixed, z-0, pointer-events none). Client-only:
+// it draws on canvas from mount and must never run during SSR.
+const ParticleBackground = dynamic(() => import("@/components/ui/ParticleBackground"), { ssr: false });
 
 export function HeroSection() {
   const t = useTranslations("hero");
   const tc = useTranslations("common");
+  // Flipped by the field's onRevealReady (spread phase reached or intro
+  // skipped). Step 3 drives the staggered hero reveal off this state.
+  const [heroVisible, setHeroVisible] = useState(false);
   return (
-    <section className="relative flex min-h-[78vh] items-center overflow-hidden" style={{ background: "var(--grad-hero)" }}>
+    <section
+      className="relative flex min-h-[78vh] items-center overflow-hidden"
+      style={{ background: "var(--grad-hero)" }}
+      data-hero-revealed={heroVisible || undefined}
+    >
+      <ParticleBackground onRevealReady={() => setHeroVisible(true)} />
       <DNACanvas />
       <div
         className="absolute inset-0 z-[1]"
