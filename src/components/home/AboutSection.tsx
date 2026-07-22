@@ -58,8 +58,8 @@ function StatItem({ stat, run }: { stat: Stat; run: boolean }) {
   const value = useCountUp(stat.num, run);
   const t = useTranslations("about.stats");
   return (
-    <div style={{ padding: "30px 0", borderTop: "1px solid #E5EAF3" }}>
-      <div style={{ display: "flex", alignItems: "baseline", lineHeight: 1 }}>
+    <div className="max-md:text-center" style={{ padding: "30px 0", borderTop: "1px solid #E5EAF3" }}>
+      <div className="max-md:justify-center" style={{ display: "flex", alignItems: "baseline", lineHeight: 1 }}>
         <span style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 800, fontSize: "clamp(28px,8vw,58px)", color: "#0C1B3A", letterSpacing: "-.01em" }}>
           {stat.year ? value : fmt(value)}
         </span>
@@ -107,7 +107,7 @@ export function AboutSection() {
 
       <div
         ref={ref}
-        className="container-x grid grid-cols-1 items-center gap-14 py-24 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20"
+        className="container-x grid grid-cols-1 items-center gap-10 py-14 md:gap-14 md:py-24 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20"
         style={{ position: "relative" }}
       >
         {/* left: identity */}

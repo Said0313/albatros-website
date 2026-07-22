@@ -11,9 +11,9 @@ const stats = [
 export function StatsBar() {
   const t = useTranslations("statsBar");
   return (
-    <section className="py-10">
+    <section className="py-6 md:py-10">
       <div className="container-x">
-        <div className="section-card grid grid-cols-2 gap-y-8 px-6 py-12 lg:grid-cols-4">
+        <div className="section-card grid grid-cols-2 gap-y-8 px-6 py-8 md:py-12 lg:grid-cols-4">
         {stats.map((s, i) => (
           <div
             key={i}

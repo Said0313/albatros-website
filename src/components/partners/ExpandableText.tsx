@@ -15,14 +15,16 @@ export function ExpandableText({ text, className }: { text?: string; className?:
   const isLong = text.length > 120;
   return (
     <div className={className}>
-      <p className={open || !isLong ? "text-sm leading-relaxed text-text-secondary" : "line-clamp-2 text-sm leading-relaxed text-text-secondary"}>
+      {/* Below lg the text always shows in full and the toggle is hidden;
+          the clamp + "ещё" button apply at lg and up only. */}
+      <p className={open || !isLong ? "text-sm leading-relaxed text-text-secondary" : "text-sm leading-relaxed text-text-secondary lg:line-clamp-2"}>
         {text}
       </p>
       {isLong && (
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="mt-1.5 text-sm font-medium text-brand-red-bright hover:underline"
+          className="mt-1.5 hidden text-sm font-medium text-brand-red-bright hover:underline lg:inline"
         >
           {open ? tc("collapse") : tc("expand")}
         </button>

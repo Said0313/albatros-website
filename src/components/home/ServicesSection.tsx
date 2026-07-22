@@ -19,7 +19,7 @@ const CARDS = [
 export function ServicesSection() {
   const t = useTranslations("services");
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-10 md:py-20">
       <div className="container-x">
         <div className="section-card px-6 py-10 md:px-10">
         <div className="mb-10 text-center">

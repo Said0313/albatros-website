@@ -31,7 +31,7 @@ export default function CatalogPage() {
     { name: tn("catalog"), path: "/catalog" },
   ];
   return (
-    <div className="pb-24 pt-28 md:pt-32">
+    <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <BreadcrumbJsonLd locale={locale} items={crumbs} />
       <div className="container-x mb-10">
         <div className="section-card px-6 py-6 md:px-8">

@@ -68,7 +68,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
   ];
 
   return (
-    <div className="pb-24 pt-28 md:pt-32">
+    <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <JsonLd data={productLd} />
       <BreadcrumbJsonLd locale={loc} items={crumbs} />
       <div className="container-x">

@@ -26,7 +26,7 @@ export default function EventsPage() {
   // Hidden events are dropped server-side so they never reach the client payload.
   const visible = events.filter((e) => !e.hidden);
   return (
-    <div className="pt-28 md:pt-32">
+    <div className="pt-24 md:pt-32">
       <div className="container-x">
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>

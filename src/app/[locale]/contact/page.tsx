@@ -32,7 +32,7 @@ const contacts: { icon: typeof MapPin; key: string; valueKey?: string; value?: s
 export default function ContactPage() {
   const t = useTranslations("contact");
   return (
-    <div className="pb-24 pt-28 md:pt-32">
+    <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <div className="container-x">
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>

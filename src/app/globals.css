@@ -74,7 +74,7 @@ body {
     @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
   }
   .section-pad {
-    @apply py-20 md:py-28;
+    @apply py-12 md:py-28;
   }
   .grad-text {
     background: var(--grad-text-hero);
