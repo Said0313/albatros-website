@@ -89,7 +89,7 @@ export function CatalogView() {
 
   return (
     <div className="container-x grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr]">
-      <aside className="filter-scroll lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto lg:pb-6 lg:pr-3">
+      <aside className="filter-scroll section-card self-start p-5 lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" />
           <input
@@ -161,12 +161,16 @@ export function CatalogView() {
       </aside>
 
       <div>
-        {selectedDirs.length === 1 && (
-          <p className="mb-5 max-w-3xl text-sm leading-relaxed text-text-secondary">
-            {t(`directionDesc.${selectedDirs[0]}`)}
-          </p>
-        )}
-        <p className="mb-5 font-mono text-sm text-text-secondary">{t("found", { count: filtered.length })}</p>
+        {/* Results header on its own surface; the grid below stays transparent
+            so the field shows between the (near-opaque) product cards. */}
+        <div className="section-card mb-6 px-5 py-4">
+          {selectedDirs.length === 1 && (
+            <p className="mb-3 max-w-3xl text-sm leading-relaxed text-text-secondary">
+              {t(`directionDesc.${selectedDirs[0]}`)}
+            </p>
+          )}
+          <p className="font-mono text-sm text-text-primary">{t("found", { count: filtered.length })}</p>
+        </div>
         {filtered.length === 0 ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border border-bg-border bg-bg-card py-20 text-center">
             <p className="text-text-secondary">{t("empty")}</p>
@@ -218,7 +222,7 @@ function CheckRow({
         <input type="checkbox" checked={checked} onChange={onChange} className="accent-brand-red" />
         {label}
       </span>
-      <span className="font-mono text-xs text-text-muted">{count}</span>
+      <span className="font-mono text-xs text-text-secondary">{count}</span>
     </label>
   );
 }

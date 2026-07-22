@@ -34,8 +34,10 @@ export default function ContactPage() {
   return (
     <div className="pb-24 pt-28 md:pt-32">
       <div className="container-x">
-        <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>
-        <p className="mt-3 max-w-2xl text-text-secondary">{t("subtitle")}</p>
+        <div className="section-card px-6 py-6 md:px-8">
+          <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>
+          <p className="mt-3 max-w-2xl text-text-secondary">{t("subtitle")}</p>
+        </div>
 
         <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr]">
           <div className="space-y-5">
@@ -63,7 +65,7 @@ export default function ContactPage() {
         </div>
 
         {/* Office location, Yandex Maps embed (public business POI, no personal data). */}
-        <div className="mt-12">
+        <div className="section-card mt-12 p-5 md:p-6">
           <h2 className="mb-4 font-display text-xl font-bold text-text-primary">{t("mapTitle")}</h2>
           <div className="overflow-hidden rounded-2xl border border-bg-border">
             <iframe

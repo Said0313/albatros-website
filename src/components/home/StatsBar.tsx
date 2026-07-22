@@ -11,8 +11,9 @@ const stats = [
 export function StatsBar() {
   const t = useTranslations("statsBar");
   return (
-    <section className="border-y border-bg-border">
-      <div className="container-x grid grid-cols-2 gap-y-8 py-12 lg:grid-cols-4">
+    <section className="py-10">
+      <div className="container-x">
+        <div className="section-card grid grid-cols-2 gap-y-8 px-6 py-12 lg:grid-cols-4">
         {stats.map((s, i) => (
           <div
             key={i}
@@ -24,6 +25,7 @@ export function StatsBar() {
             <span className="mt-2 text-[13px] text-text-secondary">{t(s.key)}</span>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

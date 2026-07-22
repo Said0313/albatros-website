@@ -175,6 +175,18 @@ body {
 .partner-card {
   scroll-margin-top: 7rem; /* clear the fixed navbar when scrolled to via #hash */
 }
+
+/* ── Text surface over the particle field ──
+   Every block of text sits on one of these LARGE near-opaque containers; the
+   field shows in the page background, gutters and gaps between them. One
+   backdrop blur per container, never per small card. */
+.section-card {
+  background: rgba(251, 252, 254, 0.95);
+  border: 1px solid var(--bg-border);
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
 .partner-card:target {
   animation: partner-flash 2.4s ease-out both;
 }

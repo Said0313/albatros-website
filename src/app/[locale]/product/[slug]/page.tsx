@@ -72,6 +72,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
       <JsonLd data={productLd} />
       <BreadcrumbJsonLd locale={loc} items={crumbs} />
       <div className="container-x">
+        <div className="section-card px-5 py-6 md:px-8">
         <nav className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-text-secondary">
           <Link href="/" className="hover:text-text-primary">{t("breadcrumbHome")}</Link>
           <ChevronRight className="h-3.5 w-3.5" />
@@ -177,6 +178,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ export function AboutSection() {
     <section
       style={{
         position: "relative",
-        background: "rgba(238,243,250,0.6)",
+        background: "rgba(238,243,250,0.94)",
         backdropFilter: "blur(6px)",
         WebkitBackdropFilter: "blur(6px)",
         fontFamily: "var(--font-inter), sans-serif",

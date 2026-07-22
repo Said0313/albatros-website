@@ -41,6 +41,7 @@ export default function AboutPage() {
   return (
     <div className="pt-28 md:pt-32">
       <div className="container-x">
+        <div className="section-card px-6 py-8 md:px-10">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-red">{t("eyebrow")}</span>
           <h1 className="mt-3 max-w-3xl font-display text-[clamp(26px,6.5vw,36px)] font-extrabold leading-tight text-text-primary md:text-5xl">
@@ -52,7 +53,7 @@ export default function AboutPage() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-16 grid grid-cols-2 gap-6 border-y border-bg-border py-12 md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-6 border-t border-bg-border pt-10 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.key} className="text-center">
               <div className="font-display text-2xl font-bold text-brand-blue-deep sm:text-3xl md:text-4xl">
@@ -62,6 +63,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+        </div>
       </div>
 
       <div className="mt-16">
@@ -69,7 +71,8 @@ export default function AboutPage() {
       </div>
 
       <div className="container-x">
-        <section id="certificates" className="mt-16 scroll-mt-28 border-t border-bg-border pt-14 pb-20">
+        <section id="certificates" className="mt-16 scroll-mt-28 pb-20">
+          <div className="section-card px-6 py-8 md:px-10">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
           {certificates.filter((c) => !c.hidden).length > 0 ? (
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
@@ -99,6 +102,7 @@ export default function AboutPage() {
               {t("certificatesEmpty")}
             </div>
           )}
+          </div>
         </section>
       </div>
       <ContactCTA />

@@ -19,8 +19,9 @@ export function EventsTimeline() {
   // no in-place expand here, the button below links to the full events page.
   const recent = events.filter((e) => !e.hidden).slice(0, 9);
   return (
-    <section className="section-pad border-t border-bg-border">
+    <section className="section-pad">
       <div className="container-x">
+        <div className="section-card px-6 py-10 md:px-8">
         <div className="mb-12 text-center">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("title")}</h2>
         </div>
@@ -61,6 +62,7 @@ export function EventsTimeline() {
           <Button href="/events" variant="outline">
             {tc("allEvents")} <ArrowRight className="h-4 w-4" />
           </Button>
+        </div>
         </div>
       </div>
     </section>

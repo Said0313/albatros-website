@@ -19,17 +19,19 @@ const CARDS = [
 export function ServicesSection() {
   const t = useTranslations("services");
   return (
-    <section className="border-y border-bg-border py-16 md:py-20">
-      <div className="container-x mb-10 text-center">
-        <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
-          {t("sectionTitle")}
-        </h2>
-      </div>
-      <div className="container-x grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
+    <section className="py-16 md:py-20">
+      <div className="container-x">
+        <div className="section-card px-6 py-10 md:px-10">
+        <div className="mb-10 text-center">
+          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
+            {t("sectionTitle")}
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
         {CARDS.map((c, i) => (
           <ScrollReveal key={c.key} delay={(i % 2) * 0.08} className="h-full">
             <div
-              className="relative h-full overflow-hidden rounded-2xl border border-bg-border bg-white/90 p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)] backdrop-blur-[6px]"
+              className="relative h-full overflow-hidden rounded-2xl border border-bg-border bg-white p-7 pl-8 shadow-[0_1px_2px_rgba(16,40,90,0.04)]"
               style={{ borderLeft: `4px solid ${c.color}` }}
             >
               <span
@@ -48,6 +50,8 @@ export function ServicesSection() {
             </div>
           </ScrollReveal>
         ))}
+        </div>
+        </div>
       </div>
     </section>
   );

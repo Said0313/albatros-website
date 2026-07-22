@@ -22,7 +22,7 @@ export function CategoriesGrid() {
 
   return (
     <section style={{ fontFamily: "var(--font-inter), sans-serif", padding: "80px 24px 96px" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+      <div className="section-card" style={{ maxWidth: 1280, margin: "0 auto", padding: "40px 28px 44px" }}>
         <div style={{ marginBottom: 48 }}>
           <div
             style={{

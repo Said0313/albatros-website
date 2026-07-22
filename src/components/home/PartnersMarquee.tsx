@@ -8,11 +8,13 @@ export function PartnersMarquee() {
   const loop = [...brands, ...brands];
   return (
     <section className="section-pad border-t border-bg-border">
-      <div className="container-x mb-12 text-center">
-        <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
-          {t("homeTitle")}
-        </h2>
-        <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
+      <div className="container-x mb-12">
+        <div className="section-card mx-auto max-w-3xl px-8 py-6 text-center">
+          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
+            {t("homeTitle")}
+          </h2>
+          <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
+        </div>
       </div>
       <div className="marquee">
         <div className="marquee-track">

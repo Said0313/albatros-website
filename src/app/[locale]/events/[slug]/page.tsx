@@ -48,6 +48,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
   return (
     <div className="pt-28 md:pt-32">
       <article className="container-x max-w-4xl pb-20">
+        <div className="section-card px-5 py-6 md:px-8">
         <Link href="/events" className="inline-flex items-center gap-1.5 text-sm text-text-secondary transition-colors hover:text-brand-red">
           <ArrowLeft className="h-4 w-4" /> {t("title")}
         </Link>
@@ -88,6 +89,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
             ))}
           </div>
         )}
+        </div>
       </article>
       <ContactCTA />
     </div>

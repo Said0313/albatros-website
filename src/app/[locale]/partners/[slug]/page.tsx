@@ -63,6 +63,7 @@ export default function PartnerDetailPage({ params }: { params: { slug: string; 
     <div className="pb-24 pt-28 md:pt-32">
       <BreadcrumbJsonLd locale={locale as AppLocale} items={crumbs} />
       <div className="container-x">
+        <div className="section-card px-5 py-6 md:px-8">
         <nav className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-text-secondary">
           <Link href="/" className="hover:text-text-primary">
             {tn("home")}
@@ -115,6 +116,7 @@ export default function PartnerDetailPage({ params }: { params: { slug: string; 
           ) : (
             <p className="text-text-secondary">{t("noProducts")}</p>
           )}
+        </div>
         </div>
       </div>
     </div>

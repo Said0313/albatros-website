@@ -35,8 +35,9 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
   }, [embla]);
 
   return (
-    <section className="section-pad border-y border-bg-border">
+    <section className="section-pad">
       <div className="container-x">
+        <div className="section-card px-6 py-10 md:px-8">
         <div className="mb-12 text-center">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tf("title")}</h2>
           <p className="mt-3 text-text-secondary">{tf("subtitle")}</p>
@@ -96,6 +97,7 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
               )}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>
