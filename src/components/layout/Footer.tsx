@@ -26,8 +26,11 @@ export function Footer() {
   const tf = useTranslations("footer");
   return (
     <footer className="bg-[#0C1B3A] text-white/70">
-      <div className="container-x grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
+      {/* Below lg: 2 columns so НАВИГАЦИЯ and НАПРАВЛЕНИЯ sit side by side
+          (nav LEFT, directions RIGHT) with brand and КОНТАКТЫ full-width
+          around them. lg and up: the original 4-column layout. */}
+      <div className="container-x grid grid-cols-2 gap-10 py-16 lg:grid-cols-4">
+        <div className="col-span-2 lg:col-span-1">
           <Image src="/logo-white.png" alt="Albatros Health Care" width={180} height={27} className="h-9 w-auto" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">{tf("tagline")}</p>
           <div className="mt-4 flex items-center gap-2 text-sm text-white/65">
@@ -82,7 +85,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="col-span-2 lg:col-span-1">
           <h4 className="font-display text-sm font-bold uppercase tracking-wide text-white">{tf("contacts")}</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/65">
             <li className="flex items-start gap-2">
