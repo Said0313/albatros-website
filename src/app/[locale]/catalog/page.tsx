@@ -35,7 +35,7 @@ export default function CatalogPage() {
       <BreadcrumbJsonLd locale={locale} items={crumbs} />
       <div className="container-x mb-10">
         <div className="section-card px-6 py-6 md:px-8">
-          <h1 className="font-display text-4xl font-extrabold text-text-primary">{t("title")}</h1>
+          <h1 className="font-display text-2xl font-extrabold text-text-primary md:text-4xl">{t("title")}</h1>
           <p className="mt-2 text-text-secondary">{t("subtitle")}</p>
         </div>
       </div>

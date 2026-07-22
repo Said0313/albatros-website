@@ -9,7 +9,7 @@ import type { CompanyEvent } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { eventTitle, eventDescription, eventDate } from "@/data/i18n";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { CappedList } from "@/components/ui/CappedList";
+import { IncrementalList } from "@/components/ui/IncrementalList";
 import { cn } from "@/lib/utils";
 
 const KNOWN_TYPES = [
@@ -135,7 +135,7 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
             {t("empty")}
           </div>
         ) : (
-        <CappedList key={`${year}|${type}|${query}`} count={filtered.length} className="flex flex-col gap-6">
+        <IncrementalList key={`${year}|${type}|${query}`} count={filtered.length} className="flex flex-col gap-6">
         {filtered.map((e, i) => {
           const title = eventTitle(e, locale);
           const photo = e.images?.[0];
@@ -183,7 +183,7 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
             </ScrollReveal>
           );
         })}
-        </CappedList>
+        </IncrementalList>
         )}
       </div>
     </div>

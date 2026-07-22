@@ -8,7 +8,7 @@ import { products, categories, generalDirections, directionPositions, itemCount,
 import { categoryLabel } from "@/data/i18n";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { ReagentCard } from "@/components/catalog/ReagentCard";
-import { CappedList } from "@/components/ui/CappedList";
+import { IncrementalList } from "@/components/ui/IncrementalList";
 import { cn } from "@/lib/utils";
 
 export function CatalogView() {
@@ -179,7 +179,7 @@ export function CatalogView() {
             </button>
           </div>
         ) : (
-          <CappedList
+          <IncrementalList
             key={[query, ...selectedDirs, ...selectedCats, ...selectedBrands].join("|")}
             count={filtered.length}
             className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3"
@@ -189,7 +189,7 @@ export function CatalogView() {
                 {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
               </div>
             ))}
-          </CappedList>
+          </IncrementalList>
         )}
       </div>
     </div>

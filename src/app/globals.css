@@ -282,9 +282,17 @@ body {
   .capped-collapsed > :nth-child(n + 4) {
     display: none;
   }
+  /* IncrementalList: items past the mobile progressive count (mobile only) */
+  .inc-mobile-hidden {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
   .capped-collapsed > :nth-child(n + 10) {
+    display: none;
+  }
+  /* IncrementalList: desktop keeps the classic 9-then-expand-all cap */
+  .capped-collapsed-lg > :nth-child(n + 10) {
     display: none;
   }
 }
