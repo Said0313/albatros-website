@@ -178,6 +178,14 @@ body {
   width: auto;
   object-fit: contain;
 }
+/* Mobile: the particle field reads as a subtle background: dimmed overall
+   (the top-fade mask on the element itself stays as is). Desktop untouched. */
+@media (max-width: 1023px) {
+  .particle-canvas {
+    opacity: 0.55;
+  }
+}
+
 /* Mobile: partner logos 20% smaller (48px -> 38px, chip scaled to match). */
 @media (max-width: 1023px) {
   .logo-chip {

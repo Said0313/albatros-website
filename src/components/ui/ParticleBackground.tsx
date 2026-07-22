@@ -76,6 +76,11 @@ export default function ParticleBackground({
     const dm = (navigator as any).deviceMemory || 8;
     if (hc <= 4 || dm <= 4) quality = 0.7;
     if (hc <= 2 || dm <= 2) quality = 0.5;
+    // Mobile (below lg): the field is a subtle background, not a feature.
+    // Capping quality cuts the dot count ~40% and caps DPR at 1; the canvas is
+    // additionally dimmed via CSS (.particle-canvas media rule). Desktop keeps
+    // full density.
+    if (window.innerWidth < 1024) quality = Math.min(quality, 0.6);
     let markPts: { fx: number; fy: number; col: number[] }[] | null = null;
     let ph = reduced ? TOTAL : 0, hrot = 0, disp = 0, scrollY = 0;
     let lastPhase = -1, revealed = false, last = 0, raf = 0;
@@ -394,6 +399,7 @@ export default function ParticleBackground({
       <canvas
         ref={canvasRef}
         aria-hidden
+        className="particle-canvas"
         style={{
           position: "fixed",
           inset: 0,
