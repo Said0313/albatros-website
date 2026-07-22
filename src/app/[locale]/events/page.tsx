@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { getTranslations } from "next-intl/server";
 import { events } from "@/lib/catalog";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
@@ -28,10 +29,12 @@ export default function EventsPage() {
   return (
     <div className="pt-24 md:pt-32">
       <div className="container-x">
+        <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>
           <p className="mt-3 max-w-2xl text-text-secondary">{t("pageSubtitle")}</p>
         </div>
+        </ScrollReveal>
         <EventsView events={visible} />
       </div>
       <ContactCTA />

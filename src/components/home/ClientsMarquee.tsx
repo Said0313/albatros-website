@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
 import { clients } from "@/data/clients";
 
@@ -37,6 +38,7 @@ export function ClientsMarquee() {
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x mb-12">
+        <ScrollReveal>
         <div className="section-card mx-auto max-w-3xl px-8 py-6 text-center">
           <Link href="/about#clients" className="inline-block transition-colors hover:text-brand-blue-deep">
             <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
@@ -45,6 +47,7 @@ export function ClientsMarquee() {
           </Link>
           <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
         </div>
+        </ScrollReveal>
       </div>
       {/* Desktop: single row scrolling left (unchanged) */}
       <div className="marquee hidden lg:block">

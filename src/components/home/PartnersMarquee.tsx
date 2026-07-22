@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
 import { brands } from "@/lib/catalog";
 
@@ -28,12 +29,14 @@ export function PartnersMarquee() {
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x mb-12">
+        <ScrollReveal>
         <div className="section-card mx-auto max-w-3xl px-8 py-6 text-center">
           <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
             {t("homeTitle")}
           </h2>
           <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
         </div>
+        </ScrollReveal>
       </div>
       {/* Desktop: single row scrolling right (unchanged) */}
       <div className="marquee hidden lg:block">

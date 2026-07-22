@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import type { Product } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
@@ -38,10 +39,12 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
     <section className="section-pad">
       <div className="container-x">
         <div className="section-card px-6 py-10 md:px-8">
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tf("title")}</h2>
-          <p className="mt-3 text-text-secondary">{tf("subtitle")}</p>
-        </div>
+        <ScrollReveal>
+          <div className="mb-12 text-center">
+            <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tf("title")}</h2>
+            <p className="mt-3 text-text-secondary">{tf("subtitle")}</p>
+          </div>
+        </ScrollReveal>
 
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>

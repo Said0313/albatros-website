@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
 import { directions, categoryCount, generalDirections, directionPositions } from "@/lib/catalog";
 import { categoryAccent } from "@/lib/categoryAccents";
@@ -23,6 +24,7 @@ export function CategoriesGrid() {
   return (
     <section className="px-6 py-12 md:pb-24 md:pt-20" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
       <div className="section-card" style={{ maxWidth: 1280, margin: "0 auto", padding: "40px 28px 44px" }}>
+        <ScrollReveal>
         <div style={{ marginBottom: 48 }}>
           <div
             style={{
@@ -48,6 +50,7 @@ export function CategoriesGrid() {
             {t("title")}
           </h2>
         </div>
+        </ScrollReveal>
 
         {/* General directions (top level of the taxonomy) - click to open the catalog filtered */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(248px,1fr))", gap: 14, marginBottom: 34, alignItems: "stretch" }}>

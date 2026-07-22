@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { getTranslations } from "next-intl/server";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
@@ -34,10 +35,12 @@ export default function CatalogPage() {
     <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <BreadcrumbJsonLd locale={locale} items={crumbs} />
       <div className="container-x mb-10">
+        <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-2xl font-extrabold text-text-primary md:text-4xl">{t("title")}</h1>
           <p className="mt-2 text-text-secondary">{t("subtitle")}</p>
         </div>
+        </ScrollReveal>
       </div>
       <Suspense fallback={<div className="container-x text-text-secondary">{tc("loading")}</div>}>
         <CatalogView />

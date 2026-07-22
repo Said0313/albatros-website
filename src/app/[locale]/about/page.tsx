@@ -73,7 +73,9 @@ export default function AboutPage() {
       <div className="container-x">
         <section id="certificates" className="mt-16 scroll-mt-28 pb-20">
           <div className="section-card px-6 py-8 md:px-10">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
+          <ScrollReveal>
+            <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("certificatesTitle")}</h2>
+          </ScrollReveal>
           {certificates.filter((c) => !c.hidden).length > 0 ? (
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
               {certificates.filter((c) => !c.hidden).map((c) => {

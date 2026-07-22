@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { getTranslations } from "next-intl/server";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -34,10 +35,12 @@ export default function ContactPage() {
   return (
     <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <div className="container-x">
+        <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("title")}</h1>
           <p className="mt-3 max-w-2xl text-text-secondary">{t("subtitle")}</p>
         </div>
+        </ScrollReveal>
 
         <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr]">
           <div className="space-y-5">

@@ -22,9 +22,11 @@ export function EventsTimeline() {
     <section className="section-pad">
       <div className="container-x">
         <div className="section-card px-6 py-10 md:px-8">
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("title")}</h2>
-        </div>
+        <ScrollReveal>
+          <div className="mb-12 text-center">
+            <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("title")}</h2>
+          </div>
+        </ScrollReveal>
 
         <div className="capped-collapsed grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {recent.map((e, i) => {

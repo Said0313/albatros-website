@@ -2,6 +2,7 @@
 
 import { Download } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { useContactModal } from "@/components/ui/ContactModal";
 
 export function ContactCTA() {
@@ -18,7 +19,8 @@ export function ContactCTA() {
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-red/20 blur-[120px]" />
       {/* hairline at the boundary so the lighter CTA navy reads separate from the darker footer */}
       <div className="absolute inset-x-0 bottom-0 h-px bg-white/10" />
-      <div className="container-x relative z-10 flex flex-col items-center py-14 text-center md:py-28">
+      <div className="container-x relative z-10 py-14 text-center md:py-28">
+        <ScrollReveal className="flex flex-col items-center">
         <h2 className="font-display text-3xl font-bold text-white md:text-[44px]">{t("title")}</h2>
         <p className="mt-4 max-w-xl text-white/70">{t("subtitle")}</p>
         <a href="tel:+998781478880" className="mt-6 font-mono text-2xl text-white">
@@ -37,6 +39,7 @@ export function ContactCTA() {
         >
           {tc("contactUs")}
         </button>
+        </ScrollReveal>
       </div>
     </section>
   );

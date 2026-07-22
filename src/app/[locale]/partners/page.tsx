@@ -36,10 +36,12 @@ export default function PartnersPage() {
   return (
     <div className="pt-24 md:pt-32">
       <div className="container-x">
+        <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
           <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("pageTitle")}</h1>
           <p className="mt-3 max-w-2xl text-text-secondary">{t("pageSubtitle")}</p>
         </div>
+        </ScrollReveal>
 
         {/* Foreign partners (the brands we distribute). Logo on top, short text
             below with an "ещё" toggle, plus a link to the brand detail page. */}
@@ -77,11 +79,13 @@ export default function PartnersPage() {
 
         {/* Local partners (formerly "clients"): logo + short info with a toggle. */}
         <section id="clients" className="mt-16 scroll-mt-28 pb-20">
+          <ScrollReveal>
           <div className="section-card px-6 py-6 md:px-8">
             <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tcl("pageTitle")}</h2>
             <p className="mt-4 font-display text-xl font-bold text-brand-blue-deep md:text-2xl">{tcl("scaleStat")}</p>
             <p className="mt-2 max-w-2xl text-text-secondary">{tcl("scaleNote")}</p>
           </div>
+          </ScrollReveal>
 
           <CappedList
             count={clients.filter((c) => !c.hidden).length}
