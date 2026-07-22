@@ -237,8 +237,11 @@ export default function ParticleBackground({
         let ox = p.x, oy = p.y, boost = 0;
         if (fieldLike || phase === 6) {
           ox += parX * p.seed * 12; oy += parY * p.seed * 8;
+          // tight cursor halo: only dots CLOSE to the pointer react (small
+          // local cluster, not a wide net); boost drives both the dot
+          // enlarge/brighten and the red cursor links below
           const md = Math.hypot(ox - mouse.x, oy - mouse.y);
-          if (md < 170) boost = 1 - md / 170;
+          if (md < 80) boost = 1 - md / 80;
         }
         if (disp > 0) {
           ox += Math.sin(p.seed * 9.4) * disp * 60;
