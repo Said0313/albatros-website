@@ -124,9 +124,9 @@ body {
 .marquee-track {
   display: flex;
   align-items: center;
-  gap: 32px;
   width: max-content;
   animation: marquee-scroll 40s linear infinite;
+  will-change: transform;
 }
 .marquee:hover .marquee-track {
   animation-play-state: paused;
@@ -136,12 +136,20 @@ body {
 .marquee-track-rev {
   display: flex;
   align-items: center;
-  gap: 32px;
   width: max-content;
   animation: marquee-scroll 46s linear infinite reverse;
+  will-change: transform;
 }
 .marquee:hover .marquee-track-rev {
   animation-play-state: paused;
+}
+/* Seamless loop: spacing comes from per-item margin, NOT flex gap. With gap,
+   translateX(-50%) lands half a gap short of one full logo set and the loop
+   jumps 16px at every restart. With margin the track is exactly two sets wide,
+   so -50% is precisely one set and the restart is invisible. */
+.marquee-track > *,
+.marquee-track-rev > * {
+  margin-right: 32px;
 }
 @keyframes marquee-scroll {
   from { transform: translateX(-50%); }
@@ -169,6 +177,18 @@ body {
   max-height: 48px;
   width: auto;
   object-fit: contain;
+}
+/* Mobile: partner logos 20% smaller (48px -> 38px, chip scaled to match). */
+@media (max-width: 1023px) {
+  .logo-chip {
+    height: 67px;
+    min-width: 120px;
+    padding: 11px 20px;
+  }
+  .logo-chip img {
+    height: 38px;
+    max-height: 38px;
+  }
 }
 
 /* ── Partner cards: deep-link target (from marquee logos on the homepage) ── */

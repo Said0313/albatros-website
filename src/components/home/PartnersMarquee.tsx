@@ -6,6 +6,25 @@ import { brands } from "@/lib/catalog";
 export function PartnersMarquee() {
   const t = useTranslations("partners");
   const loop = [...brands, ...brands];
+  // Mobile: two half-set rows scrolling in opposite directions (first row
+  // right, second row left). Each half is duplicated exactly once so the
+  // 0 -> -50% loop stays seamless.
+  const half = Math.ceil(brands.length / 2);
+  const rowA = brands.slice(0, half);
+  const rowB = brands.slice(half);
+  const loopA = [...rowA, ...rowA];
+  const loopB = [...rowB, ...rowB];
+
+  const chip = (b: (typeof brands)[number], i: number) => (
+    <Link
+      key={`${b.id}-${i}`}
+      href={`/partners#partner-${b.id}`}
+      aria-label={b.name}
+      className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
+    >
+      <Image src={b.logo} alt={b.name} width={160} height={48} className="w-auto object-contain" />
+    </Link>
+  );
   return (
     <section className="section-pad border-t border-bg-border">
       <div className="container-x mb-12">
@@ -16,25 +35,16 @@ export function PartnersMarquee() {
           <p className="mt-3 text-text-secondary">{t("homeSubtitle")}</p>
         </div>
       </div>
-      <div className="marquee">
-        <div className="marquee-track">
-          {loop.map((b, i) => (
-            <Link
-              key={`${b.id}-${i}`}
-              href={`/partners#partner-${b.id}`}
-              aria-label={b.name}
-              className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
-            >
-              <Image
-                src={b.logo}
-                alt={b.name}
-                width={160}
-                height={48}
-                className="w-auto object-contain"
-              />
-            </Link>
-          ))}
-        </div>
+      {/* Desktop: single row scrolling right (unchanged) */}
+      <div className="marquee hidden lg:block">
+        <div className="marquee-track">{loop.map(chip)}</div>
+      </div>
+      {/* Mobile: two rows, first right, second left */}
+      <div className="marquee lg:hidden">
+        <div className="marquee-track">{loopA.map(chip)}</div>
+      </div>
+      <div className="marquee mt-4 lg:hidden">
+        <div className="marquee-track-rev">{loopB.map(chip)}</div>
       </div>
     </section>
   );
