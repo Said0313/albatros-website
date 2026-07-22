@@ -391,7 +391,20 @@ export default function ParticleBackground({
       <canvas
         ref={canvasRef}
         aria-hidden
-        style={{ position: "fixed", inset: 0, width: "100vw", height: "100vh", zIndex: 0, pointerEvents: "none" }}
+        style={{
+          position: "fixed",
+          inset: 0,
+          width: "100vw",
+          height: "100vh",
+          zIndex: 0,
+          pointerEvents: "none",
+          // Calm the top of the viewport (navbar strip + page titles): dots and
+          // links fade out toward the top, full strength by ~a quarter of the
+          // viewport. GPU-composited, zero per-frame cost. The hero assembly
+          // centers near 45vh so the intro stays strong.
+          maskImage: "linear-gradient(to bottom, transparent 0, rgba(0,0,0,0.5) 12vh, #000 24vh)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0, rgba(0,0,0,0.5) 12vh, #000 24vh)",
+        }}
       />
       <div
         aria-hidden
