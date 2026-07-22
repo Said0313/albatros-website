@@ -34,8 +34,22 @@ interface Dot {
   colF: number[]; colH: number[]; colM: number[];
 }
 
+// Field palette: red and blue family ONLY (navy #0C1B3A, blue #2E549C,
+// lighter blue #5C7FB4, reds #D0181F / #ED1C24). No teal or warm tones
+// anywhere in the field; teal stays a brand color elsewhere in the UI.
 const NAVY = [12, 27, 58], BLUE = [46, 84, 156], BLUEL = [92, 127, 180],
-  TEAL = [62, 143, 166], RED = [208, 24, 31], WHITE = [255, 255, 255];
+  RED = [208, 24, 31], REDB = [237, 28, 36], WHITE = [255, 255, 255];
+const PALETTE = [NAVY, BLUE, BLUEL, RED, REDB];
+// snap an arbitrary sampled color (e.g. from the mark png) to the palette so
+// no off-family hue can be derived or blended into the field
+const snap = (c: number[]) => {
+  let best = PALETTE[0], bd = Infinity;
+  for (const p of PALETTE) {
+    const d = (p[0] - c[0]) ** 2 + (p[1] - c[1]) ** 2 + (p[2] - c[2]) ** 2;
+    if (d < bd) { bd = d; best = p; }
+  }
+  return best;
+};
 const D = [0.6, 0.7, 0.9, 0.7, 0.6, 0.8]; // phase durations, s (at speed=1)
 const CUM = D.reduce<number[]>((a, d) => (a.push((a[a.length - 1] || 0) + d), a), []);
 const TOTAL = CUM[CUM.length - 1];
@@ -50,7 +64,9 @@ const rgba = (c: number[], a: number) =>
 export default function ParticleBackground({
   density = 1.55,
   dotSize = 1.25,
-  redMix = 0.12,
+  // 0.12 -> 0.15: modest bump to compensate for the removed teal share so the
+  // constellation does not read monochrome; red stays an accent
+  redMix = 0.15,
   speed = 0.75,
   linkIntensity = 0.85,
   glow = 0.55,
@@ -99,10 +115,10 @@ export default function ParticleBackground({
       ps = [];
       for (let i = 0; i < n; i++) {
         let colF: number[];
-        if (Math.random() < redMix) colF = RED;
+        if (Math.random() < redMix) colF = Math.random() < 0.5 ? RED : REDB;
         else {
           const r2 = Math.random();
-          colF = r2 < 0.32 ? NAVY : r2 < 0.72 ? BLUE : r2 < 0.86 ? BLUEL : TEAL;
+          colF = r2 < 0.34 ? NAVY : r2 < 0.72 ? BLUE : BLUEL;
         }
         const strand = i % 2;
         const gc = 8, gr = 5, cell = i % (gc * gr);
@@ -323,7 +339,7 @@ export default function ParticleBackground({
         for (let i = 0; i + 1 < ps.length; i += 14) {
           const a = ps[i], b = ps[i + 1];
           const dz = 1 - Math.abs(Math.cos(a.hfx * TWISTS * Math.PI * 2 + hrot));
-          ctx.strokeStyle = rgba(TEAL, (0.14 + 0.32 * dz) * f);
+          ctx.strokeStyle = rgba(BLUEL, (0.14 + 0.32 * dz) * f);
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
         ctx.setLineDash([]);
@@ -372,7 +388,7 @@ export default function ParticleBackground({
       for (let py = 0; py < h; py += 2)
         for (let px = 0; px < w; px += 2) {
           const o = (py * w + px) * 4;
-          if (d[o + 3] > 110) pts.push({ fx: px / w, fy: py / h, col: [d[o], d[o + 1], d[o + 2]] });
+          if (d[o + 3] > 110) pts.push({ fx: px / w, fy: py / h, col: snap([d[o], d[o + 1], d[o + 2]]) });
         }
       if (pts.length) { markPts = pts; build(); }
     };
