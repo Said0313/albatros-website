@@ -151,7 +151,7 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
                       src={photo}
                       alt={title}
                       loading="lazy"
-                      className="aspect-[16/10] h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] md:aspect-auto md:h-full"
+                      className="aspect-[4/3] h-full w-full bg-white object-contain transition-transform duration-500 group-hover:scale-[1.03] md:aspect-auto md:h-full"
                     />
                   </div>
                 )}
