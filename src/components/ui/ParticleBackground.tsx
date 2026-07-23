@@ -34,14 +34,28 @@ interface Dot {
   colF: number[]; colH: number[]; colM: number[];
 }
 
-// Field palette: red and blue family ONLY (navy #0C1B3A, blue #2E549C,
-// lighter blue #5C7FB4, reds #D0181F / #ED1C24). No teal or warm tones
-// anywhere in the field; teal stays a brand color elsewhere in the UI.
-const NAVY = [12, 27, 58], BLUE = [46, 84, 156], BLUEL = [92, 127, 180],
-  RED = [208, 24, 31], REDB = [237, 28, 36], WHITE = [255, 255, 255];
-const PALETTE = [NAVY, BLUE, BLUEL, RED, REDB];
+// STRICT field palette: exactly 8 fixed values, two hues, no neutrals. Every
+// value has HSL saturation >= 50% and lightness 25-75%. The text navy #0C1B3A
+// is FORBIDDEN here (at ~14% lightness it reads as charcoal on the light bg);
+// it stays a text color elsewhere. Particles pick ONE value and keep it: no
+// blending, mixing or desaturating between colors anywhere in the field.
+const D_BLUE = [30, 58, 110],   // #1E3A6E dark blue
+  M_BLUE = [46, 84, 156],       // #2E549C mid blue
+  B_BLUE = [74, 123, 200],      // #4A7BC8 bright blue
+  L_BLUE = [123, 163, 220],     // #7BA3DC light blue
+  D_RED = [160, 18, 24],        // #A01218 dark red
+  DP_RED = [208, 24, 31],       // #D0181F deep red
+  B_RED = [237, 28, 36],        // #ED1C24 bright red
+  L_RED = [244, 99, 106];       // #F4636A light red
+const BLUES = [D_BLUE, M_BLUE, B_BLUE, L_BLUE];
+const REDS = [D_RED, DP_RED, B_RED, L_RED];
+const PALETTE = [...BLUES, ...REDS];
+// Alpha floor: below ~0.35 the hue washes out to gray on the near-white page.
+// Nothing (dot or line) draws under it; subtlety comes from the lighter
+// palette entries, never from lower alpha.
+const ALPHA_FLOOR = 0.35;
 // snap an arbitrary sampled color (e.g. from the mark png) to the palette so
-// no off-family hue can be derived or blended into the field
+// no off-family hue can enter the field
 const snap = (c: number[]) => {
   let best = PALETTE[0], bd = Infinity;
   for (const p of PALETTE) {
@@ -55,8 +69,6 @@ const CUM = D.reduce<number[]>((a, d) => (a.push((a[a.length - 1] || 0) + d), a)
 const TOTAL = CUM[CUM.length - 1];
 const JIT = 5, HELIX_SPEED = 0.65, TWISTS = 2.6;
 
-const mix = (a: number[], b: number[], m: number) =>
-  [a[0] + (b[0] - a[0]) * m, a[1] + (b[1] - a[1]) * m, a[2] + (b[2] - a[2]) * m];
 const ei = (x: number) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
 const rgba = (c: number[], a: number) =>
   `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${a.toFixed(3)})`;
@@ -114,12 +126,10 @@ export default function ParticleBackground({
       const idle = ph >= TOTAL;
       ps = [];
       for (let i = 0; i < n; i++) {
-        let colF: number[];
-        if (Math.random() < redMix) colF = Math.random() < 0.5 ? RED : REDB;
-        else {
-          const r2 = Math.random();
-          colF = r2 < 0.34 ? NAVY : r2 < 0.72 ? BLUE : BLUEL;
-        }
+        // each particle picks ONE palette value and keeps it
+        const colF: number[] = Math.random() < redMix
+          ? REDS[(Math.random() * REDS.length) | 0]
+          : BLUES[(Math.random() * BLUES.length) | 0];
         const strand = i % 2;
         const gc = 8, gr = 5, cell = i % (gc * gr);
         const p: Dot = {
@@ -133,7 +143,7 @@ export default function ParticleBackground({
           ux: 0, uy: 0,
           r: 1.7 + Math.random() * 1.5, pulse: Math.random() * 6.3,
           strand, hfx: cols > 1 ? (i >> 1) / (cols - 1) : 0,
-          colF, colH: strand ? RED : BLUE, colM: colF,
+          colF, colH: strand ? DP_RED : M_BLUE, colM: colF,
         };
         if (markPts) {
           const mp = markPts;
@@ -225,19 +235,20 @@ export default function ParticleBackground({
           const h = helixPos(p); z = h.z;
           p.x = p.px + (h.x - p.px) * e; p.y = p.py + (h.y - p.py) * e;
           const dn = (z + 1) / 2;
-          col = mix(p.colF, mix(p.colH, WHITE, 0.15 * dn), e);
+          // hard switch mid-transition: no color interpolation in the field
+          col = e < 0.5 ? p.colF : p.colH;
           alpha = 0.5 + e * (0.35 * dn); rad = p.r * (1 + e * dn * 1.1);
         } else if (phase === 2) {
           const h = helixPos(p); z = h.z;
           p.x = h.x + Math.sin(p.pulse * 1.4 + p.seed * 13) * JIT * 0.16;
           p.y = h.y + Math.cos(p.pulse * 1.1 + p.seed * 17) * JIT * 0.16;
           const dn = (z + 1) / 2;
-          col = mix(p.colH, WHITE, 0.15 * dn);
+          col = p.colH;
           alpha = 0.42 + 0.5 * dn; rad = p.r * (1 + dn * 1.1);
         } else if (phase === 3) {
           const e = ei(Math.min(1, pr(3)));
           p.x = p.px + (p.mx - p.px) * e; p.y = p.py + (p.my - p.py) * e;
-          col = mix(p.colH, p.colM, e); alpha = 0.75; rad = p.r * (1.15 - 0.15 * e);
+          col = e < 0.5 ? p.colH : p.colM; alpha = 0.75; rad = p.r * (1.15 - 0.15 * e);
         } else if (phase === 4) {
           p.x = p.mx + Math.sin(p.pulse * 1.3 + p.seed * 11) * JIT * 0.12;
           p.y = p.my + Math.cos(p.pulse + p.seed * 5) * JIT * 0.12;
@@ -245,7 +256,7 @@ export default function ParticleBackground({
         } else if (phase === 5) {
           const e = ei(Math.min(1, pr(5)));
           p.x = p.px + (p.rx - p.px) * e; p.y = p.py + (p.ry - p.py) * e;
-          col = mix(p.colM, p.colF, e); alpha = 0.85 - e * 0.4; rad = p.r;
+          col = e < 0.5 ? p.colM : p.colF; alpha = 0.85 - e * 0.4; rad = p.r;
         } else {
           p.x += p.vx * dt * 60; p.y += p.vy * dt * 60;
           if (p.x < 0 || p.x > W) p.vx *= -1;
@@ -278,15 +289,18 @@ export default function ParticleBackground({
           oy = ((oy % H) + H) % H;
           ox += Math.sin(sp * 6.3 + p.seed * 12) * 26 * disp;
         }
-        alpha = Math.min(1, alpha + boost * 0.4);
+        // alpha floor: hue must stay visible on the near-white page
+        alpha = Math.min(1, Math.max(ALPHA_FLOOR, alpha + boost * 0.4));
         rad = rad * dotSize * (1 + boost * 0.8);
         draw.push({ ox, oy, col, alpha, rad, z, boost });
 
         if (p.sat && phase >= 3 && phase <= 5) {
           const sf = phase === 3 ? ei(Math.min(1, pr(3))) : phase === 4 ? 1 : Math.max(0, 1 - pr(5) * 10);
-          if (sf > 0.02)
+          const sa = 0.85 * sf;
+          // satellites either draw at or above the floor, or not at all
+          if (sa >= ALPHA_FLOOR)
             for (const st of p.sat)
-              draw.push({ ox: st.x, oy: st.y, col: st.col, alpha: 0.85 * sf, rad: p.r * 0.8 * dotSize, z: 0, boost: 0 });
+              draw.push({ ox: st.x, oy: st.y, col: st.col, alpha: sa, rad: p.r * 0.8 * dotSize, z: 0, boost: 0 });
         }
       }
 
@@ -319,14 +333,15 @@ export default function ParticleBackground({
                 const dx = a.ox - b.ox, dy = a.oy - b.oy, d2 = dx * dx + dy * dy;
                 if (d2 < 10000) {
                   const d = Math.sqrt(d2);
-                  ctx.strokeStyle = rgba(BLUE, (1 - d / 100) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1));
+                  // lines obey the same palette and alpha floor as the dots
+                  ctx.strokeStyle = rgba(M_BLUE, Math.max(ALPHA_FLOOR, (1 - d / 100) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1)));
                   ctx.beginPath(); ctx.moveTo(a.ox, a.oy); ctx.lineTo(b.ox, b.oy); ctx.stroke();
                   linkCount[i]++; linkCount[j]++;
                 }
               }
             }
           if (a.boost > 0 && phase === 6 && disp < 0.3) {
-            ctx.strokeStyle = rgba(RED, a.boost * 0.45 * linkIntensity);
+            ctx.strokeStyle = rgba(B_RED, Math.max(ALPHA_FLOOR, a.boost * 0.45 * linkIntensity));
             ctx.beginPath(); ctx.moveTo(a.ox, a.oy); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
           }
         }
@@ -339,7 +354,7 @@ export default function ParticleBackground({
         for (let i = 0; i + 1 < ps.length; i += 14) {
           const a = ps[i], b = ps[i + 1];
           const dz = 1 - Math.abs(Math.cos(a.hfx * TWISTS * Math.PI * 2 + hrot));
-          ctx.strokeStyle = rgba(BLUEL, (0.14 + 0.32 * dz) * f);
+          ctx.strokeStyle = rgba(B_BLUE, Math.max(ALPHA_FLOOR, (0.14 + 0.32 * dz) * f));
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
         ctx.setLineDash([]);
