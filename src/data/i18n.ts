@@ -1,5 +1,5 @@
-// Uzbek translations for catalog DATA (category names + per-product short text).
-// Product names are brand/model and stay identical in both locales.
+// Uzbek + English translations for catalog DATA (category names + per-product
+// short text). Product names are brand/model and stay identical in all locales.
 import type { Product, Brand, CompanyEvent } from "@/types";
 
 export const CATEGORY_UZ: Record<string, string> = {
@@ -38,17 +38,48 @@ export const CATEGORY_RU: Record<string, string> = {
   "Медицинское оборудование": "Лабораторное оборудование",
 };
 
+export const CATEGORY_EN: Record<string, string> = {
+  "ИХЛА": "CLIA",
+  "Биохимия": "Biochemistry",
+  "Гемостаз": "Hemostasis",
+  "КЩС": "Blood Gas",
+  "Гематология": "Hematology",
+  "Автоматизированная лаборатория": "Automated Laboratory",
+  "Клинический анализ": "Clinical Analysis",
+  "ВЭЖХ": "HPLC",
+  "Микробиология": "Microbiology",
+  "ПЦР": "PCR",
+  "Иммуногематология": "Immunohematology",
+  "Токсикология": "Toxicology",
+  "Аллергология": "Allergology",
+  "Контроль качества": "Quality Control",
+  "Программы контроля качества": "Quality Control Programs",
+  "Генетика": "Genetics",
+  "Функциональная диагностика": "Functional Diagnostics",
+  "Биодеконтаминация": "Biodecontamination",
+  "Клиническая диагностика": "Clinical Diagnostics",
+  // General directions (top level of the two-level taxonomy)
+  "Медицинское оборудование": "Medical Equipment",
+  "Реагенты": "Reagents",
+  "Расходные материалы": "Consumables",
+};
+
 export function categoryLabel(name: string, locale: string): string {
   if (locale === "uz") return CATEGORY_UZ[name] ?? name;
+  if (locale === "en") return CATEGORY_EN[name] ?? name;
   return CATEGORY_RU[name] ?? name;
 }
 
 export function productShort(p: Product, locale: string): string {
-  return locale === "uz" ? p.shortDescriptionUz ?? p.shortDescription : p.shortDescription;
+  if (locale === "uz") return p.shortDescriptionUz ?? p.shortDescription;
+  if (locale === "en") return p.shortDescriptionEn ?? p.shortDescription;
+  return p.shortDescription;
 }
 
 export function productFull(p: Product, locale: string): string {
-  return locale === "uz" ? p.fullDescriptionUz ?? p.fullDescription : p.fullDescription;
+  if (locale === "uz") return p.fullDescriptionUz ?? p.fullDescription;
+  if (locale === "en") return p.fullDescriptionEn ?? p.fullDescription;
+  return p.fullDescription;
 }
 
 export function productDetailed(p: Product, locale: string): string | undefined {
@@ -87,8 +118,40 @@ export const SPEC_LABEL_UZ: Record<string, string> = {
   "Экран": "Ekran", "Экспорт": "Eksport", "Электролитный модуль": "Elektrolit moduli", "Электролиты": "Elektrolitlar",
 };
 
+export const SPEC_LABEL_EN: Record<string, string> = {
+  "AI": "AI", "Автоматизация": "Automation", "Аккумулятор": "Battery",
+  "Анализ": "Analysis", "Биохимия": "Biochemistry", "Вещества": "Substances",
+  "Виды животных": "Animal species", "Время анализа": "Analysis time",
+  "Время до первого анализа": "Time to first result", "Габариты": "Dimensions",
+  "Габариты / вес": "Dimensions / weight", "Гельминты": "Helminths", "Гибкость": "Flexibility",
+  "Деконтаминация": "Decontamination", "Диагностика": "Diagnostics", "Дифференцировка": "Differentiation",
+  "Единиц": "Units", "Загрузчик": "Loader", "ИХА": "Immunochromatography", "Измеряемые параметры": "Measured parameters",
+  "Интеграция": "Integration", "Интерфейс": "Interface", "Исследование": "Study", "Класс": "Class",
+  "Классификация": "Classification", "Контроль качества": "Quality control", "Конфигурация X10+C10": "X10+C10 configuration",
+  "Конфигурация X6+C8": "X6+C8 configuration", "Конфигурация X8+C10": "X8+C10 configuration",
+  "Корпус": "Housing", "Кюветы": "Cuvettes", "Лаборатории": "Laboratories", "Маркеры": "Markers",
+  "Масса": "Weight", "Метод": "Method", "Мишени": "Targets", "Морфология": "Morphology", "Награда": "Award",
+  "Награды": "Awards", "Назначение": "Purpose", "Образцов на борту": "Samples on board",
+  "Образцы": "Samples", "Образцы (3-Diff)": "Samples (3-Diff)", "Объём образца": "Sample volume",
+  "Основана": "Founded", "Панели": "Panels", "Параметров": "Parameters", "Параметры": "Parameters",
+  "Первый результат": "First result", "Платформа": "Platform", "Подключение": "Connectivity",
+  "Поколение": "Generation", "Применение": "Application", "Применения": "Applications", "Производитель": "Manufacturer",
+  "Производительность": "Throughput", "Пропускная способность": "Throughput capacity", "Размеры": "Dimensions",
+  "Расчётные параметры": "Calculated parameters", "Расширяемость": "Expandability",
+  "Реагентов на борту": "Reagents on board", "Реагенты": "Reagents", "Реагенты на борту": "Reagents on board",
+  "Результаты": "Results", "СОЭ": "ESR", "Сегмент": "Segment", "Скорость": "Speed", "Совместимость": "Compatibility",
+  "Среды": "Media", "Стабильность калибровки": "Calibration stability", "Стандарты": "Standards",
+  "Статус": "Status", "Сторона": "Party", "Страны": "Countries", "Талассемия": "Thalassemia",
+  "Технологии": "Technologies", "Технология": "Technology", "Тип": "Type", "Тип датчика": "Probe type",
+  "Фильтр": "Filter", "Формат": "Format", "Формённые элементы": "Formed elements", "Функции": "Functions",
+  "Химия": "Chemistry", "Холодильные модули": "Refrigeration modules", "Хранение": "Storage", "Частота": "Frequency",
+  "Экран": "Screen", "Экспорт": "Export", "Электролитный модуль": "Electrolyte module", "Электролиты": "Electrolytes",
+};
+
 export function specLabel(label: string, locale: string): string {
-  return locale === "uz" ? SPEC_LABEL_UZ[label] ?? label : label;
+  if (locale === "uz") return SPEC_LABEL_UZ[label] ?? label;
+  if (locale === "en") return SPEC_LABEL_EN[label] ?? label;
+  return label;
 }
 
 const COUNTRY_UZ: Record<string, string> = {
@@ -99,21 +162,39 @@ const COUNTRY_UZ: Record<string, string> = {
   "Швеция · Уппсала": "Shvetsiya · Uppsala", "Китай": "Xitoy",
 };
 
+const COUNTRY_EN: Record<string, string> = {
+  "Китай · Шэньчжэнь": "China · Shenzhen", "США · Нью-Джерси": "USA · New Jersey",
+  "Великобритания · Кримлин": "UK · Crumlin", "Испания · Барселона": "Spain · Barcelona",
+  "США · Сан-Диего": "USA · San Diego", "Китай · Гуйлинь": "China · Guilin",
+  "Канада · Ванкувер": "Canada · Vancouver", "Испания · Мадрид": "Spain · Madrid",
+  "Швеция · Уппсала": "Sweden · Uppsala", "Китай": "China",
+};
+
 export function brandSpecialty(b: Brand, locale: string): string | undefined {
-  return locale === "uz" ? b.specialtyUz ?? b.specialty : b.specialty;
+  if (locale === "uz") return b.specialtyUz ?? b.specialty;
+  if (locale === "en") return b.specialtyEn ?? b.specialty;
+  return b.specialty;
 }
 export function brandDescription(b: Brand, locale: string): string {
-  return locale === "uz" ? b.descriptionUz ?? b.description : b.description;
+  if (locale === "uz") return b.descriptionUz ?? b.description;
+  if (locale === "en") return b.descriptionEn ?? b.description;
+  return b.description;
 }
 export function brandCountry(b: Brand, locale: string): string | undefined {
   if (!b.country) return undefined;
-  return locale === "uz" ? COUNTRY_UZ[b.country] ?? b.country : b.country;
+  if (locale === "uz") return COUNTRY_UZ[b.country] ?? b.country;
+  if (locale === "en") return COUNTRY_EN[b.country] ?? b.country;
+  return b.country;
 }
 export function eventTitle(e: CompanyEvent, locale: string): string {
-  return locale === "uz" ? e.titleUz ?? e.title : e.title;
+  if (locale === "uz") return e.titleUz ?? e.title;
+  if (locale === "en") return e.titleEn ?? e.title;
+  return e.title;
 }
 export function eventDescription(e: CompanyEvent, locale: string): string | undefined {
-  return locale === "uz" ? e.descriptionUz ?? e.description : e.description;
+  if (locale === "uz") return e.descriptionUz ?? e.description;
+  if (locale === "en") return e.descriptionEn ?? e.description;
+  return e.description;
 }
 
 const MONTH_UZ: Record<string, string> = {
@@ -121,10 +202,16 @@ const MONTH_UZ: Record<string, string> = {
   "Июль": "Iyul", "Август": "Avgust", "Сентябрь": "Sentabr", "Октябрь": "Oktabr", "Ноябрь": "Noyabr", "Декабрь": "Dekabr",
 };
 
+const MONTH_EN: Record<string, string> = {
+  "Январь": "January", "Февраль": "February", "Март": "March", "Апрель": "April", "Май": "May", "Июнь": "June",
+  "Июль": "July", "Август": "August", "Сентябрь": "September", "Октябрь": "October", "Ноябрь": "November", "Декабрь": "December",
+};
+
 export function eventDate(date: string, locale: string): string {
-  if (locale !== "uz") return date;
+  if (locale !== "uz" && locale !== "en") return date;
+  const dict = locale === "uz" ? MONTH_UZ : MONTH_EN;
   let out = date;
-  for (const [ru, uz] of Object.entries(MONTH_UZ)) out = out.replace(ru, uz);
+  for (const [ru, translated] of Object.entries(dict)) out = out.replace(ru, translated);
   return out;
 }
 
@@ -149,7 +236,7 @@ export const SPEC_VALUE_UZ: Record<string, string> = {
   "2-е поколение реагентов": "2-avlod reagentlari",
   "20 мкл": "20 mkl",
   "20 позиций": "20 pozitsiya",
-  "240 тестов/час": "soatiga 240 test",
+  "240 тестов/час": "240 test/soat",
   "3 минуты": "3 daqiqa",
   "30 за 25 минут": "25 daqiqada 30 ta",
   "30 позиций": "30 pozitsiya",
@@ -276,6 +363,155 @@ export const SPEC_VALUE_UZ: Record<string, string> = {
   "цифровая ПЦР": "raqamli PZR",
 };
 
+export const SPEC_VALUE_EN: Record<string, string> = {
+  "10 000 тестов": "10,000 tests",
+  "100+100 позиций": "100+100 positions",
+  "1000 проб/час": "1000 samples/hour",
+  "1000 т/ч": "1000/hour",
+  "1000 тестов/час": "1000 tests/hour",
+  "102×72×56 см · 73 кг": "102×72×56 cm · 73 kg",
+  "112 позиций": "112 positions",
+  "127 кг": "127 kg",
+  "130 стран": "130 countries",
+  "148×94×155 см": "148×94×155 cm",
+  "17 минут": "17 minutes",
+  "180 тестов/час": "180 tests/hour",
+  "192.5×123×154 см": "192.5×123×154 cm",
+  "192×118×150 см": "192×118×150 cm",
+  "1960, Мадрид": "1960, Madrid",
+  "1–15 МГц": "1–15 MHz",
+  "2-е поколение реагентов": "2nd-generation reagents",
+  "20 мкл": "20 µL",
+  "20 позиций": "20 positions",
+  "240 тестов/час": "240 tests/hour",
+  "3 минуты": "3 minutes",
+  "30 за 25 минут": "30 in 25 minutes",
+  "30 позиций": "30 positions",
+  "300 позиций": "300 positions",
+  "33 типа клеток": "33 cell types",
+  "42 позиции": "42 positions",
+  "45+ позиций": "45+ positions",
+  "450 + 1600 т/ч": "450 + 1600/hour",
+  "450 кг": "450 kg",
+  "46 основных / 163 исследовательских": "46 basic / 163 research",
+  "50 позиций": "50 positions",
+  "500+ вирусных, бактериальных, грибковых": "500+ viral, bacterial, fungal",
+  "6 видов": "6 species",
+  "6-Diff + СОЭ + RET + NRBC": "6-Diff + ESR + RET + NRBC",
+  "600 + 2000 т/ч": "600 + 2000/hour",
+  "655×868×867 мм / 115 кг": "655×868×867 mm / 115 kg",
+  "670 кг": "670 kg",
+  "690 кг": "690 kg",
+  "72 позиции": "72 positions",
+  "75 секунд": "75 seconds",
+  "80 тестов/час, метод Вестергрена": "80 tests/hour, Westergren method",
+  "85 секунд": "85 seconds",
+  "9 наборов": "9 kits",
+  "90×75×78 см": "90×75×78 cm",
+  "96 карт/час": "96 cards/hour",
+  "HLA-B27, фенотип клеток": "HLA-B27, cell phenotype",
+  "HbA1c / диабет": "HbA1c / diabetes",
+  "IEC-HPLC (золотой стандарт ВОЗ)": "IEC-HPLC (WHO gold standard)",
+  "pH, pCO₂, pO₂, Na+, K+, Ca++, Cl-, Glu, Lac, Hct, CO-окси, tBili": "pH, pCO₂, pO₂, Na+, K+, Ca++, Cl-, Glu, Lac, Hct, CO-oximetry, tBili",
+  "~1–5 МГц": "~1–5 MHz",
+  "~2–6 МГц": "~2–6 MHz",
+  "~3–10 МГц": "~3–10 MHz",
+  "~4–13 МГц": "~4–13 MHz",
+  "~5–15 МГц": "~5–15 MHz",
+  "~60 минут": "~60 minutes",
+  "ВОЗ 5-е и 6-е издания": "WHO 5th and 6th editions",
+  "ВОК молекулярная": "Molecular EQA",
+  "Внутриполостной (эндокавитарный)": "Intracavitary (endocavitary)",
+  "Гормоны, онкомаркеры, инфекции, аутоиммунные": "Hormones, tumor markers, infections, autoimmune",
+  "Двухматричный (фазированный + линейный)": "Dual-array (phased + linear)",
+  "ИИ, облачное хранение": "AI, cloud storage",
+  "ИХЛА 1000 + Биохимия 2000 т/ч": "CLIA 1000 + Biochemistry 2000/hour",
+  "Конвексный": "Convex",
+  "Крупные лаборатории": "Large laboratories",
+  "Линейный": "Linear",
+  "Линейный (высокочастотный)": "Linear (high-frequency)",
+  "Линейный (сверхвысокочастотный)": "Linear (ultra-high-frequency)",
+  "Небольшие лаборатории": "Small laboratories",
+  "Смартфон / планшет (iOS, Android)": "Smartphone / tablet (iOS, Android)",
+  "Средние и крупные лаборатории": "Medium and large laboratories",
+  "УФ-лампа": "UV lamp",
+  "Фазированная решётка": "Phased array",
+  "Флэш-ХЛ (ABEI), магнитные микрочастицы": "Flash-CL (ABEI), magnetic microparticles",
+  "автоматизированная ПЦР": "automated PCR",
+  "автоматический": "automatic",
+  "автоматический СОЭ": "automatic ESR",
+  "автоматический анализатор кала": "automatic stool analyzer",
+  "автоматический анализатор мочи": "automatic urine analyzer",
+  "аллергия, токсикология, аутоиммунные": "allergy, toxicology, autoimmune",
+  "биочип (BAT) 7×7": "biochip (BAT) 7×7",
+  "внешняя оценка качества": "external quality assessment",
+  "внутренний контроль (ВКК)": "internal quality control (IQC)",
+  "встроенный DRAGEN": "built-in DRAGEN",
+  "встроенный режим": "built-in mode",
+  "высокая": "high",
+  "высокая / средняя": "high / medium",
+  "высокая производительность": "high throughput",
+  "гель-картная агглютинация": "gel card agglutination",
+  "гемокультуры": "blood cultures",
+  "да": "yes",
+  "до 100 тестов/час": "up to 100 tests/hour",
+  "до 1000 тестов/час": "up to 1000 tests/hour",
+  "до 110 тестов/час": "up to 110 tests/hour",
+  "до 120 тестов/час": "up to 120 tests/hour",
+  "до 180 тестов/час": "up to 180 tests/hour",
+  "до 20 МГц": "up to 20 MHz",
+  "до 20 тестов/час": "up to 20 tests/hour",
+  "до 200 тестов/час": "up to 200 tests/hour",
+  "до 2000 тестов/час": "up to 2000 tests/hour",
+  "до 280 тестов/час": "up to 280 tests/hour",
+  "до 32": "up to 32",
+  "до 4": "up to 4",
+  "до 4 недель": "up to 4 weeks",
+  "до 40 со штрих-кодом": "up to 40 with barcode",
+  "до 44": "up to 44",
+  "до 450 тестов/час": "up to 450 tests/hour",
+  "до 55": "up to 55",
+  "до 60 288 образцов": "up to 60,288 samples",
+  "до 60 слайдов/час": "up to 60 slides/hour",
+  "до 60 тестов/час": "up to 60 tests/hour",
+  "до 600 тестов/час": "up to 600 tests/hour",
+  "до 96": "up to 96",
+  "единый": "unified",
+  "золотой стандарт": "gold standard",
+  "идентификация + AST": "identification + AST",
+  "иммунофлуоресцентный": "immunofluorescent",
+  "инфекционные заболевания": "infectious diseases",
+  "исключительная": "exceptional",
+  "компактный автоматический": "compact automatic",
+  "компактный настольный": "compact benchtop",
+  "лиофилизированные": "lyophilized",
+  "модифицированный Вестергрен": "modified Westergren",
+  "модульная": "modular",
+  "модульная лаборатория": "modular laboratory",
+  "модульная станция": "modular station",
+  "молекулярная аллергодиагностика": "molecular allergy diagnostics",
+  "молекулярный контроль": "molecular control",
+  "настольный секвенатор NGS": "benchtop NGS sequencer",
+  "независимая третья": "independent third-party",
+  "новое": "new",
+  "онкология, иммунология, репродуктология": "oncology, immunology, reproductive medicine",
+  "очистка нуклеиновых кислот": "nucleic acid purification",
+  "полная": "full",
+  "полностью автоматический": "fully automatic",
+  "проточный цитометр": "flow cytometer",
+  "русский язык": "Russian language",
+  "скрытая кровь + трансферрин": "occult blood + transferrin",
+  "талассемия, варианты Hb": "thalassemia, Hb variants",
+  "тип кюветы и длина считывания": "flow cell type and read length",
+  "фенотипический": "phenotypic",
+  "химический": "chemical",
+  "химический + микроскопический + физический": "chemical + microscopic + physical",
+  "химический + физический + микроскопический": "chemical + physical + microscopic",
+  "цифровая ПЦР": "digital PCR",
+};
+
 export function specValue(value: string, locale: string): string {
-  return locale === "uz" ? SPEC_VALUE_UZ[value] ?? value : value;
+  if (locale === "uz") return SPEC_VALUE_UZ[value] ?? value;
+  if (locale === "en") return SPEC_VALUE_EN[value] ?? value;
+  return value;
 }

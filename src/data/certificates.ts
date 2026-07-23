@@ -11,6 +11,7 @@ export interface Certificate {
   image: string; // preview/scan image under /public, e.g. "/images/certificates/iso-9001.jpg"
   title?: string;
   titleUz?: string;
+  titleEn?: string;
   file?: string; // optional full document (PDF) under /public, e.g. "/files/certificates/iso-9001.pdf"
   hidden?: boolean; // hidden certificates are not rendered on the site
 }

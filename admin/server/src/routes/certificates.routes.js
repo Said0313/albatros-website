@@ -23,6 +23,7 @@ function buildRecord(body, existing) {
   };
   setOpt("title");
   setOpt("titleUz");
+  setOpt("titleEn");
   setOpt("file");
   if (typeof body.hidden === "boolean") {
     if (body.hidden) c.hidden = true;
@@ -34,7 +35,7 @@ function buildRecord(body, existing) {
 const router = makeContentRouter({
   filePath: CERTIFICATES_PATH,
   label: "certificate",
-  fieldOrder: ["id", "image", "title", "titleUz", "file", "hidden"],
+  fieldOrder: ["id", "image", "title", "titleUz", "titleEn", "file", "hidden"],
   nameOf: (r) => r.title || r.id,
   buildRecord,
   validateCreate: (body) => {

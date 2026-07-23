@@ -49,11 +49,11 @@ export const api = {
     return request("/products/upload", { method: "POST", body: fd });
   },
 
-  // UZ auto-draft
-  translateDraft: (text) =>
+  // UZ/EN auto-draft
+  translateDraft: (text, to = "uz") =>
     request("/translate-draft", {
       method: "POST",
-      body: JSON.stringify({ text, from: "ru", to: "uz" }),
+      body: JSON.stringify({ text, from: "ru", to }),
     }),
 
   // audit log
