@@ -15,7 +15,6 @@ export interface ParticleBackgroundProps {
   redMix?: number; // share of red dots 0..0.3
   speed?: number; // choreography speed multiplier
   linkIntensity?: number; // 0..1
-  glow?: number; // 0..1
   markSrc?: string; // logo mark png (transparent) for the mark phase
   onRevealReady?: (fast: boolean) => void; // fire hero content reveal
 }
@@ -81,7 +80,6 @@ export default function ParticleBackground({
   redMix = 0.15,
   speed = 0.75,
   linkIntensity = 0.85,
-  glow = 0.55,
   markSrc = "/images/albatros-helix-mark.png",
   onRevealReady,
 }: ParticleBackgroundProps) {
@@ -361,13 +359,11 @@ export default function ParticleBackground({
       }
 
       if (phase === 1 || phase === 2) draw.sort((a, b) => a.z - b.z);
+      // crisp solid dots only: the old soft halo (3.2x radius at ~0.03 alpha)
+      // doubled every particle's footprint, washed out to gray on the light
+      // page, and cost a second fill per dot per frame. Removed entirely.
       for (const d of draw) {
         if (d.alpha <= 0.005) continue;
-        if (quality >= 0.6 && glow > 0.03 && d.rad > 1) {
-          ctx.beginPath();
-          ctx.fillStyle = rgba(d.col, d.alpha * 0.1 * glow);
-          ctx.arc(d.ox, d.oy, d.rad * 3.2, 0, 6.3); ctx.fill();
-        }
         ctx.beginPath();
         ctx.fillStyle = rgba(d.col, d.alpha);
         ctx.arc(d.ox, d.oy, d.rad, 0, 6.3); ctx.fill();
@@ -423,7 +419,7 @@ export default function ParticleBackground({
       window.removeEventListener("resize", onResize);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [density, dotSize, redMix, speed, linkIntensity, glow, markSrc]);
+  }, [density, dotSize, redMix, speed, linkIntensity, markSrc]);
 
   return (
     <>
