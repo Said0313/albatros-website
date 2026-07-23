@@ -74,7 +74,9 @@ const rgba = (c: number[], a: number) =>
 
 export default function ParticleBackground({
   density = 1.55,
-  dotSize = 1.25,
+  // 1.25 -> 1.1: finer, more precise dots (judged at the 90% desktop scale,
+  // where the effective visual size lands near 1.0 of the original design)
+  dotSize = 1.1,
   // 0.12 -> 0.15: modest bump to compensate for the removed teal share so the
   // constellation does not read monochrome; red stays an accent
   redMix = 0.15,
@@ -104,9 +106,12 @@ export default function ParticleBackground({
     if (hc <= 2 || dm <= 2) quality = 0.5;
     // Mobile (below lg): the field is a subtle background, not a feature.
     // Capping quality cuts the dot count ~40% and caps DPR at 1; the canvas is
-    // additionally dimmed via CSS (.particle-canvas media rule). Desktop keeps
-    // full density.
+    // additionally dimmed via CSS (.particle-canvas media rule).
     if (window.innerWidth < 1024) quality = Math.min(quality, 0.6);
+    // Desktop: sparse elegant constellation, ~38% fewer dots than the tuned
+    // default (496 -> ~308 at quality 1). Kept separate from `quality` so the
+    // weak-device DPR cap is not triggered; mobile density stays as set above.
+    const sparse = window.innerWidth < 1024 ? 1 : 0.62;
     let markPts: { fx: number; fy: number; col: number[] }[] | null = null;
     let ph = reduced ? TOTAL : 0, hrot = 0, disp = 0, scrollY = 0;
     let lastPhase = -1, revealed = false, last = 0, raf = 0;
@@ -119,7 +124,7 @@ export default function ParticleBackground({
     };
 
     const build = () => {
-      const n = Math.max(40, Math.round(320 * density * quality));
+      const n = Math.max(40, Math.round(320 * density * quality * sparse));
       const cols = Math.ceil(n / 2);
       const idle = ph >= TOTAL;
       ps = [];
