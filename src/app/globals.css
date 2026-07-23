@@ -303,6 +303,10 @@ body {
   .capped-collapsed-lg > :nth-child(n + 10) {
     display: none;
   }
+  /* IncrementalList desktop increment mode: items past the progressive count */
+  .inc-desktop-hidden {
+    display: none;
+  }
 }
 
 /* ── DNA intro splash (ported from Claude Design "Albatros DNA Intro") ── */

@@ -135,7 +135,12 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
             {t("empty")}
           </div>
         ) : (
-        <IncrementalList key={`${year}|${type}|${query}`} count={filtered.length} className="flex flex-col gap-6">
+        <IncrementalList
+          key={`${year}|${type}|${query}`}
+          count={filtered.length}
+          desktopMode="increment"
+          className="flex flex-col gap-6"
+        >
         {filtered.map((e, i) => {
           const title = eventTitle(e, locale);
           const photo = e.images?.[0];
