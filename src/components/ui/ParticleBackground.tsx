@@ -428,10 +428,16 @@ export default function ParticleBackground({
         aria-hidden
         className="particle-canvas"
         style={{
+          // 100% (of the viewport as containing block), NOT 100vw/100vh:
+          // under the desktop zoom (0.9 on html) viewport-unit lengths get
+          // scaled and leave an uncovered band at the right/bottom, and a
+          // replaced element with plain inset does not stretch. Percentages
+          // resolve against the containing block and always fill the real
+          // viewport.
           position: "fixed",
           inset: 0,
-          width: "100vw",
-          height: "100vh",
+          width: "100%",
+          height: "100%",
           zIndex: 0,
           pointerEvents: "none",
           // Calm the top of the viewport (navbar strip + page titles): dots and

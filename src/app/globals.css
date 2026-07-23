@@ -178,6 +178,17 @@ body {
   width: auto;
   object-fit: contain;
 }
+/* Desktop base scale: the site reads best at 90% browser zoom, so that is
+   the default at lg and up (standard CSS zoom, current Chrome/Edge/Safari/
+   Firefox). NOT applied below lg: mobile text is small enough already. Note:
+   media queries evaluate against the unzoomed viewport, so the lg boundary
+   itself is unaffected. */
+@media (min-width: 1024px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
 /* Mobile: the particle field reads as a subtle background: dimmed overall
    (the top-fade mask on the element itself stays as is). Desktop untouched. */
 @media (max-width: 1023px) {
