@@ -40,6 +40,12 @@
 
 html {
   scroll-behavior: smooth;
+  /* Site-wide 90% scale. Uses `zoom` (not `font-size` or `transform`) so it
+     affects EVERYTHING uniformly — including the many arbitrary-px values
+     used throughout this codebase (text-[15px], w-[92vw], fixed pixel
+     widths/heights, etc.) that a rem-based font-size trick would miss, and
+     without the layout/overflow/scrollbar side effects of transform: scale. */
+  zoom: 0.9;
 }
 
 body {
