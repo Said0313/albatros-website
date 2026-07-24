@@ -1,27 +1,20 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
-const DNACanvas = dynamic(() => import("@/components/ui/DNACanvas"), { ssr: false });
-
 export function HeroSection() {
   const t = useTranslations("hero");
   const tc = useTranslations("common");
   return (
-    // pt equals the fixed navbar height so the vertical centering happens in
-    // the space BELOW the navbar; the container padding adds breathing room
-    <section className="relative flex min-h-[78vh] items-center overflow-hidden pt-16 md:pt-20" style={{ background: "var(--grad-hero)" }}>
-      <DNACanvas />
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background: "radial-gradient(ellipse 70% 55% at 50% 38%, rgba(46,84,156,0.07) 0%, transparent 70%)",
-        }}
-      />
+    // Transparent so the site-wide particle field (fixed z-0, mounted in the
+    // layout) shows through behind the headline, including its logo-print
+    // intro. pt equals the fixed navbar height so vertical centering happens
+    // in the space BELOW the navbar. The old DNACanvas + grad-hero backdrop is
+    // removed: only one field renders now.
+    <section className="relative flex min-h-[78vh] items-center overflow-hidden pt-16 md:pt-20">
 
       <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
