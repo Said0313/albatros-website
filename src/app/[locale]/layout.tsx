@@ -95,6 +95,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${mono.variable} ${bounded.variable}`}>
       <body>
+        {/* Preload the particle mark so it is fetched and decoded before the
+            field's intro reaches its scan-print phase (~0.5s after mount);
+            otherwise the async image load lands mid-intro and rebuilds the
+            field, snapping every particle. Next hoists this link to <head>. */}
+        <link rel="preload" as="image" href="/images/albatros-helix-mark3.png" />
         <OrganizationJsonLd locale={locale as AppLocale} />
         {/* Single-stage inline CSS loader only; the canvas <Splash> is intentionally
             NOT mounted so there is no second helix intro after hydration. */}

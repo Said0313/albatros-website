@@ -162,13 +162,21 @@ export default function ParticleBackground({
       if (ftN >= 90) {
         const avg = ftAcc / ftN;
         ftAcc = 0; ftN = 0;
-        if (avg > 0.024 && quality > 0.4) {
+        // Keep measuring throughout, but defer any quality rebuild until the
+        // intro choreography has finished. build() resets every particle to
+        // scatter, so downgrading mid-intro (early frames are the slowest,
+        // exactly during the intro) snaps the whole field and breaks the logo.
+        if (ph >= TOTAL && avg > 0.024 && quality > 0.4) {
           quality = Math.max(0.4, quality * 0.75);
           sizeCanvas();
           build();
         }
       }
       ph += dt;
+      // Do not start the logo scan-print until the mark PNG has been sampled.
+      // Until markPts is set every dot uses the fallback centre and collapses
+      // into one blob, so hold at the end of the fade-in phase if it is late.
+      if (!markPts && ph > CUM[0]) ph = CUM[0];
       const t = ph;
       let phase = 6;
       for (let i = 0; i < 6; i++) if (t < CUM[i]) { phase = i; break; }
