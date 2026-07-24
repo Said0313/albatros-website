@@ -1,13 +1,44 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
+import { useFieldReveal } from "@/components/ui/ParticleField3";
+
+// Reveal cascade: 550ms per element, 100ms stagger, translateY 18px -> 0,
+// ease cubic-bezier(.2,.7,.2,1). fast (intro skipped by click/scroll): no
+// stagger, 0.4x durations. No eyebrow in this hero, so the cascade runs
+// headline line A -> line B -> subtitle -> buttons (indices 0..3).
+const EASE = [0.2, 0.7, 0.2, 1] as const;
 
 export function HeroSection() {
   const t = useTranslations("hero");
   const tc = useTranslations("common");
+  // The particle field (mounted site-wide in the layout) fires the reveal
+  // signal through context when its intro reaches the spread phase, or
+  // immediately with fast=true when the user skips it (click / early scroll).
+  const reveal = useFieldReveal();
+
+  // Failsafe: if the signal never arrives (field failed to mount, throttled
+  // tab, or any stall), reveal anyway so the hero can never stay invisible.
+  // The intro runs ~3.3s, so 6s clears it and only catches genuine stalls.
+  const [safety, setSafety] = useState(false);
+  useEffect(() => {
+    const id = setTimeout(() => setSafety(true), 6000);
+    return () => clearTimeout(id);
+  }, []);
+
+  const on = reveal.on || safety;
+  const fast = reveal.fast;
+  const dur = fast ? 0.55 * 0.4 : 0.55;
+  const item = (i: number) => ({
+    initial: { opacity: 0, y: 18 },
+    animate: on ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 },
+    transition: { delay: fast ? 0 : i * 0.1, duration: dur, ease: EASE },
+  });
+
   return (
     // Transparent so the site-wide particle field (fixed z-0, mounted in the
     // layout) shows through behind the headline, including its logo-print
@@ -19,20 +50,10 @@ export function HeroSection() {
       <div className="container-x relative z-10 py-20 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-display text-[clamp(28px,7vw,52px)] font-extrabold leading-[1.05] tracking-tight text-text-primary lg:text-[68px]">
-            <motion.span
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="block"
-            >
+            <motion.span {...item(0)} className="block">
               {t("titleA")}
             </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="block"
-            >
+            <motion.span {...item(1)} className="block">
               {t("titleB")}{" "}
               <span className="relative inline-block grad-text">
                 {t("titleHighlight")}
@@ -44,8 +65,8 @@ export function HeroSection() {
                     fill="none"
                     strokeDasharray="400"
                     initial={{ strokeDashoffset: 400 }}
-                    animate={{ strokeDashoffset: 0 }}
-                    transition={{ delay: 0.9, duration: 0.6 }}
+                    animate={{ strokeDashoffset: on ? 0 : 400 }}
+                    transition={{ delay: fast ? 0.28 : 0.7, duration: fast ? 0.24 : 0.6 }}
                   />
                 </svg>
               </span>
@@ -53,18 +74,14 @@ export function HeroSection() {
           </h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            {...item(2)}
             className="mx-auto mt-7 max-w-xl text-[17px] leading-relaxed text-text-secondary sm:text-[19px]"
           >
             {t("subtitle")}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.65, duration: 0.6 }}
+            {...item(3)}
             className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }}>
@@ -79,8 +96,8 @@ export function HeroSection() {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
+        animate={{ opacity: on ? 1 : 0 }}
+        transition={{ delay: fast ? 0.3 : 1 }}
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
       >
         <ChevronDown className="h-6 w-6 animate-bounceY text-text-muted" />

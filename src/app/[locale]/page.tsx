@@ -46,7 +46,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       {/* relative z-1 lifts every below-hero section above the fixed z-0
-          particle canvas (which lives inside HeroSection); the hero's own
+          particle field (mounted site-wide in the layout); the hero's own
           content is already z-10 */}
       <div className="relative z-[1]">
         <StatsBar />
