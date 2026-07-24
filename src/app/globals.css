@@ -187,6 +187,17 @@ body {
   html {
     zoom: 0.9;
   }
+  /* The particle field canvas is authored (in the design source) as fixed
+     width:100vw/height:100vh. Under the desktop zoom above, viewport units
+     scale with the zoom and leave a ~10% uncovered band at the right and
+     bottom edges. 100% resolves against the fixed containing block (the real
+     viewport) and covers it exactly at any zoom. Done in CSS so the component
+     file stays byte-identical to the design source. The gradient overlay div
+     uses inset:0 and already stretches to full coverage, so it needs nothing. */
+  canvas[aria-hidden] {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 /* Mobile: partner logos 20% smaller (48px -> 38px, chip scaled to match). */
