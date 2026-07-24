@@ -23,7 +23,11 @@
     "positions": "items",
     "new": "NEW",
     "menu": "Menu",
-    "loading": "Loading…"
+    "loading": "Loading…",
+    "showAll": "Show all",
+    "showMore": "Show more",
+    "expand": "more",
+    "collapse": "collapse"
   },
   "hero": {
     "eyebrow": "🇺🇿  Uzbekistan  ·  In-Vitro Diagnostics  ·  Since 2017",
@@ -130,7 +134,8 @@
       "installation": "Installations",
       "registration": "Registrations",
       "other": "Other"
-    }
+    },
+    "search": "Search events"
   },
   "statsBar": {
     "founded": "year founded",
@@ -161,11 +166,14 @@
       "reagents": "Diagnostic reagents and test systems for all study groups: hormones, tumor markers, infections, cardiac markers, biochemistry, hematology and hemostasis indicators. Supplied as original kits from the equipment manufacturers, ensuring stable results, compatibility with the analyzers and compliance with international laboratory diagnostics quality standards.",
       "consumables": "Consumables for uninterrupted analyzer operation: cuvettes, tips, wash and system solutions, cartridges and starter kits. Original consumables are matched to specific equipment models, help avoid downtime, maintain measurement accuracy and extend instrument service life under a lab's high daily workload.",
       "controls": "Control materials and calibrators for in-lab quality control and analyzer calibration. They ensure result reliability and reproducibility, compliance with regulatory requirements and readiness for external quality assessment. Selected to match the lab's methods and equipment, covering biochemistry, hemostasis, immunochemistry, urinalysis and other directions."
-    }
+    },
+    "showMore": "Show more"
   },
   "product": {
     "breadcrumbHome": "Home",
-    "related": "Related products"
+    "related": "Related products",
+    "detailed": "Detailed description and specifications",
+    "video": "Video"
   },
   "contact": {
     "title": "Contact",
@@ -177,7 +185,8 @@
     "email": "Email",
     "hours": "Working hours",
     "hoursValue": "Mon–Fri 09:00–18:00",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "mapTitle": "Find us on the map"
   },
   "form": {
     "name": "Name*",
