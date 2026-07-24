@@ -18,7 +18,7 @@
  */
 
 const STYLE = `
-#alb-pre{position:fixed;inset:0;z-index:10001;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(120% 80% at 50% 40%,#FFFFFF,#EAF0F8);}
+#alb-pre{position:fixed;inset:0;z-index:10001;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(120% 80% at 50% 40%,#FFFFFF,#EAF0F8);pointer-events:none;}
 #alb-pre img.alb-logo{height:56px;width:auto;display:block;}
 #alb-pre canvas.alb-dna{display:block;}
 `.trim();
