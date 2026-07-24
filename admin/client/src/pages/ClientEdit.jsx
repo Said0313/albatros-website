@@ -10,6 +10,7 @@ const EMPTY = {
   link: "",
   description: "",
   descriptionUz: "",
+  descriptionEn: "",
   hidden: false,
 };
 
@@ -122,7 +123,7 @@ export default function ClientEdit({ mode }) {
 
         <section className="card p-5 lg:col-span-2">
           <h2 className="mb-4 font-bold text-ink">Описания</h2>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             <div>
               <label className="label">Описание, RU</label>
               <textarea
@@ -144,6 +145,22 @@ export default function ClientEdit({ mode }) {
                 className="field h-36"
                 value={form.descriptionUz}
                 onChange={(e) => set("descriptionUz", e.target.value)}
+              />
+            </div>
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Описание, EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.description}
+                  value={form.descriptionEn}
+                  onChange={(v) => set("descriptionEn", v)}
+                />
+              </div>
+              <textarea
+                className="field h-36"
+                value={form.descriptionEn}
+                onChange={(e) => set("descriptionEn", e.target.value)}
               />
             </div>
           </div>

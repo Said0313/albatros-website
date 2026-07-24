@@ -1,0 +1,232 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "about": "About",
+    "partners": "Partners",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "common": {
+    "downloadPrice": "Download price list",
+    "priceShort": "Download price list",
+    "openCatalog": "Open catalog",
+    "aboutCompany": "About the company",
+    "more": "Learn more",
+    "view": "View",
+    "requestPrice": "Request a price",
+    "submit": "Submit request",
+    "contactUs": "Contact us",
+    "share": "Share",
+    "copied": "Copied",
+    "allEvents": "All events",
+    "positions": "items",
+    "new": "NEW",
+    "menu": "Menu",
+    "loading": "Loading…"
+  },
+  "hero": {
+    "eyebrow": "🇺🇿  Uzbekistan  ·  In-Vitro Diagnostics  ·  Since 2017",
+    "titleA": "Advanced technology",
+    "titleB": "for laboratory",
+    "titleHighlight": "diagnostics",
+    "subtitle": "Official distributor of 12 global IVD industry leaders in Uzbekistan. Turnkey supply, 24/7 service, international standards."
+  },
+  "directions": {
+    "eyebrow": "{count} DIRECTIONS",
+    "title": "Diagnostic directions",
+    "intro": "A full range of solutions — from immunochemistry and hematology to molecular diagnostics and automated laboratory lines.",
+    "tileDesc": {
+      "equipment": "Automatic analyzers and laboratory systems for every diagnostic direction, with turnkey supply and service.",
+      "reagents": "Original reagents and test systems for all study groups, fully compatible with the analyzers.",
+      "consumables": "Original consumables for specific equipment models: cuvettes, tips, solutions and starter kits.",
+      "controls": "Controls and calibrators for in-lab quality control and analyzer calibration."
+    }
+  },
+  "featured": {
+    "title": "Flagship equipment",
+    "subtitle": "Advanced solutions from world manufacturers"
+  },
+  "partners": {
+    "homeTitle": "Our international partners",
+    "homeSubtitle": "12 global In-Vitro diagnostics leaders in Uzbekistan",
+    "pageTitle": "Our partners",
+    "pageSubtitle": "We represent 12 global leaders of the in-vitro diagnostics industry in Uzbekistan.",
+    "since": "since {year}",
+    "detailProducts": "Brand equipment",
+    "officialSite": "Official website",
+    "noProducts": "Equipment coming soon"
+  },
+  "clients": {
+    "homeTitle": "Our clients",
+    "homeSubtitle": "Over 900 medical institutions across Uzbekistan trust us",
+    "pageTitle": "Our clients",
+    "scaleStat": "900+ clients",
+    "scaleNote": "Shown here is only a portion of the organizations that trust us"
+  },
+  "services": {
+    "sectionTitle": "Service",
+    "turnkey": {
+      "title": "Turnkey supply",
+      "body": "A full cycle of work: selecting the right configuration for the laboratory's tasks, delivery, installation, commissioning and staff training. You get a solution that's ready to work, with support at every stage."
+    },
+    "service": {
+      "title": "24/7 service",
+      "body": "Round-the-clock technical support across the Republic of Uzbekistan. Our engineers train at the manufacturers' factories, so faults are resolved quickly with minimal downtime."
+    },
+    "standards": {
+      "title": "International standards",
+      "body": "We work directly with global IVD industry leaders. Equipment and reagents comply with ISO, FDA and European Pharmacopoeia standards."
+    },
+    "education": {
+      "title": "Education",
+      "body": "Together with the Tashkent Institute of Postgraduate Medical Education, we develop training materials and hold seminars and conferences with international experts, helping lab specialists advance their skills."
+    }
+  },
+  "about": {
+    "eyebrow": "ABOUT THE COMPANY",
+    "panelText": "Official distributor of premium laboratory diagnostics equipment in Uzbekistan. Delivery, commissioning, training and service — across the full life cycle of the instrument.",
+    "stats": {
+      "models": "analyzer models",
+      "brands": "partner brands",
+      "clients": "clinics and labs",
+      "support": "service support",
+      "founded": "year founded",
+      "trained": "specialists trained"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "About the company",
+    "title": "Your trusted partner in equipping the laboratory",
+    "intro1": "Albatros Health Care was founded in 2017 to bring modern technology into the practice of clinical diagnostic laboratories in Uzbekistan. Today we are one of the leading distributors of medical laboratory equipment and IVD solutions in the country, representing 12 global brands: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius and others. More than 2,000 clinics and laboratories across the country trust us to equip their labs.",
+    "intro2": "The company's mission is turnkey equipment supply backed by fast methodological and service support for our partners. Our team includes specialists with higher specialized education who regularly train at the manufacturers' factories. We regularly organize international conferences and seminars featuring foreign experts in clinical biochemistry and molecular biology.",
+    "slogan": "Albatros Health Care — your trusted partner in equipping and supporting the laboratory.",
+    "stats": {
+      "models": "analyzer models",
+      "directions": "diagnostic directions",
+      "leaders": "global leaders",
+      "conferences": "conferences organized",
+      "congresses": "congress participations",
+      "assortment": "Range",
+      "doctors": "specialists trained",
+      "clients": "clients in our database"
+    },
+    "certificatesTitle": "Certificates",
+    "certificatesEmpty": "This section is being updated"
+  },
+  "events": {
+    "title": "Events",
+    "pageSubtitle": "Conferences, seminars and key company events.",
+    "allYears": "All years",
+    "allTypes": "All types",
+    "empty": "Nothing found",
+    "photos": "Photos",
+    "types": {
+      "seminar": "Seminars",
+      "conference": "Conferences",
+      "congress": "Congresses",
+      "symposium": "Symposiums",
+      "exhibition": "Exhibitions",
+      "installation": "Installations",
+      "registration": "Registrations",
+      "other": "Other"
+    }
+  },
+  "statsBar": {
+    "founded": "year founded",
+    "brands": "global brands",
+    "clients": "clients in our database",
+    "service": "technical service"
+  },
+  "cta": {
+    "title": "Ready to equip your laboratory?",
+    "subtitle": "Contact us for a consultation and cost estimate"
+  },
+  "catalog": {
+    "title": "Catalog of laboratory and diagnostic equipment",
+    "subtitle": "Laboratory and diagnostic equipment, reagents, consumables and quality control from world-leading IVD brands.",
+    "search": "Search equipment...",
+    "generalDirection": "General direction",
+    "direction": "Direction",
+    "brand": "Brand",
+    "filters": "Filters",
+    "reset": "Reset filters",
+    "found": "Found: {count} products",
+    "showAllTests": "Show all tests ({count})",
+    "hideTests": "Collapse",
+    "empty": "Nothing found",
+    "metaTitle": "Equipment catalog",
+    "directionDesc": {
+      "equipment": "Automatic analyzers and laboratory systems for clinical diagnostics: immunochemistry, biochemistry, hematology, hemostasis, microbiology and molecular diagnostics. Equipment from world manufacturers is supplied turnkey, with installation, commissioning, staff training and service support throughout the instrument's service life.",
+      "reagents": "Diagnostic reagents and test systems for all study groups: hormones, tumor markers, infections, cardiac markers, biochemistry, hematology and hemostasis indicators. Supplied as original kits from the equipment manufacturers, ensuring stable results, compatibility with the analyzers and compliance with international laboratory diagnostics quality standards.",
+      "consumables": "Consumables for uninterrupted analyzer operation: cuvettes, tips, wash and system solutions, cartridges and starter kits. Original consumables are matched to specific equipment models, help avoid downtime, maintain measurement accuracy and extend instrument service life under a lab's high daily workload.",
+      "controls": "Control materials and calibrators for in-lab quality control and analyzer calibration. They ensure result reliability and reproducibility, compliance with regulatory requirements and readiness for external quality assessment. Selected to match the lab's methods and equipment, covering biochemistry, hemostasis, immunochemistry, urinalysis and other directions."
+    }
+  },
+  "product": {
+    "breadcrumbHome": "Home",
+    "related": "Related products"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contact us for a consultation and equipment cost estimate.",
+    "address": "Address",
+    "addressValue": "17 Khalkobod St., Tashkent, Republic of Uzbekistan",
+    "office": "Head office / Sales department",
+    "accounting": "Accounting",
+    "email": "Email",
+    "hours": "Working hours",
+    "hoursValue": "Mon–Fri 09:00–18:00",
+    "telegram": "Telegram"
+  },
+  "form": {
+    "name": "Name*",
+    "phone": "Phone* (+998...)",
+    "company": "Company",
+    "comment": "Comment",
+    "consent": "I agree to the processing of personal data",
+    "submit": "Submit request",
+    "sending": "Sending…",
+    "success": "Thank you! We will contact you shortly.",
+    "error": "Failed to submit the request. Please try again later or call us.",
+    "callTitle": "Request a call",
+    "callSubtitle": "We will contact you shortly",
+    "priceFor": "Price request: {product}"
+  },
+  "footer": {
+    "tagline": "Official distributor of global IVD diagnostics leaders in Uzbekistan since 2017.",
+    "hours": "Mon–Fri 09:00–18:00",
+    "addressValue": "17 Khalkobod St., Tashkent",
+    "navigation": "Navigation",
+    "directions": "Directions",
+    "contacts": "Contacts",
+    "rights": "© 2017–2025 Albatros Health Care. All rights reserved.",
+    "city": "Tashkent, Uzbekistan"
+  },
+  "meta": {
+    "home": {
+      "title": "Medical equipment for laboratory diagnostics",
+      "description": "Albatros Health Care, official IVD diagnostics distributor in Uzbekistan: laboratory and diagnostic equipment, reagents and turnkey lab automation."
+    },
+    "catalog": {
+      "title": "Laboratory and diagnostic equipment",
+      "description": "Catalog of laboratory and diagnostic equipment, reagents and consumables from world-leading brands: CLIA, biochemistry, hematology, hemostasis, PCR, quality control."
+    },
+    "partners": {
+      "title": "Official IVD diagnostics brand partners",
+      "description": "Official distributor of SNIBE, Werfen, BD, Randox, Dymind, Illumina, URIT, Lifotronic and other global leaders in laboratory diagnostics in Uzbekistan."
+    },
+    "about": {
+      "title": "About Albatros Health Care",
+      "description": "Albatros Health Care, distributor of medical and laboratory equipment in Uzbekistan since 2017. Turnkey supply, training and service support."
+    },
+    "events": {
+      "title": "Events and conferences",
+      "description": "Albatros Health Care's participation in medical conferences, symposiums and exhibitions on laboratory diagnostics in Uzbekistan since 2017."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Albatros Health Care: 17 Khalkobod St., Tashkent, tel. +998 78 147 88 80, info@albatros.uz. Turnkey laboratory equipment supply."
+    }
+  }
+}

@@ -23,6 +23,7 @@ export interface Client {
   logo: string;
   description?: string;
   descriptionUz?: string;
+  descriptionEn?: string;
   link?: string;
   hidden?: boolean;
 }

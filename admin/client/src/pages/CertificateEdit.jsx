@@ -4,7 +4,7 @@ import { certificatesApi } from "../api";
 import SingleFileUpload from "../components/SingleFileUpload.jsx";
 import DraftUz from "../components/DraftUz.jsx";
 
-const EMPTY = { image: "", title: "", titleUz: "", file: "" };
+const EMPTY = { image: "", title: "", titleUz: "", titleEn: "", file: "" };
 
 export default function CertificateEdit({ mode }) {
   const isNew = mode === "new";
@@ -86,6 +86,12 @@ export default function CertificateEdit({ mode }) {
             <DraftUz source={form.title} value={form.titleUz} onChange={(v) => set("titleUz", v)} />
           </div>
           <input className="field mb-4" value={form.titleUz} onChange={(e) => set("titleUz", e.target.value)} />
+
+          <div className="mb-1 flex items-center justify-between">
+            <label className="label mb-0">Название, EN</label>
+            <DraftUz lang="en" source={form.title} value={form.titleEn} onChange={(v) => set("titleEn", v)} />
+          </div>
+          <input className="field mb-4" value={form.titleEn} onChange={(e) => set("titleEn", e.target.value)} />
         </section>
 
         <section className="card p-5">

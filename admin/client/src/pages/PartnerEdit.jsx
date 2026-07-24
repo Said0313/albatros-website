@@ -12,8 +12,10 @@ const EMPTY = {
   country: "",
   specialty: "",
   specialtyUz: "",
+  specialtyEn: "",
   description: "",
   descriptionUz: "",
+  descriptionEn: "",
   hidden: false,
 };
 
@@ -141,7 +143,7 @@ export default function PartnerEdit({ mode }) {
 
         <section className="card p-5 lg:col-span-2">
           <h2 className="mb-4 font-bold text-ink">Описания</h2>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             <div>
               <label className="label">Специализация (краткое), RU</label>
               <input
@@ -166,6 +168,22 @@ export default function PartnerEdit({ mode }) {
               />
             </div>
             <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Специализация (краткое), EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.specialty}
+                  value={form.specialtyEn}
+                  onChange={(v) => set("specialtyEn", v)}
+                />
+              </div>
+              <input
+                className="field mb-4"
+                value={form.specialtyEn}
+                onChange={(e) => set("specialtyEn", e.target.value)}
+              />
+            </div>
+            <div>
               <label className="label">Описание (полное), RU</label>
               <textarea
                 className="field h-32"
@@ -186,6 +204,22 @@ export default function PartnerEdit({ mode }) {
                 className="field h-32"
                 value={form.descriptionUz}
                 onChange={(e) => set("descriptionUz", e.target.value)}
+              />
+            </div>
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label className="label mb-0">Описание (полное), EN</label>
+                <DraftUz
+                  lang="en"
+                  source={form.description}
+                  value={form.descriptionEn}
+                  onChange={(v) => set("descriptionEn", v)}
+                />
+              </div>
+              <textarea
+                className="field h-32"
+                value={form.descriptionEn}
+                onChange={(e) => set("descriptionEn", e.target.value)}
               />
             </div>
           </div>
