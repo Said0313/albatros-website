@@ -28,10 +28,18 @@ export function ContactCTA() {
         <ScrollReveal className="flex flex-col items-center">
         <h2 className="font-display text-3xl font-bold text-white md:text-[44px]">{t("title")}</h2>
         <p className="mt-4 max-w-xl text-white/70">{t("subtitle")}</p>
-        <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:gap-10">
+        {/* Each phone sits in its own rounded card, tinted with the brand blue
+            (#2E549C at 30% over the navy) so it reads clearly blue, not grey,
+            and the two numbers no longer run together. Stacks full-width on
+            mobile, two side-by-side cards from sm up. */}
+        <div className="mt-7 grid w-full max-w-xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
           {phones.map((p) => (
-            <a key={p.href} href={p.href} className="flex flex-col items-center hover:opacity-90">
-              <span className="text-xs uppercase tracking-wide text-white/50">{p.label}</span>
+            <a
+              key={p.href}
+              href={p.href}
+              className="flex flex-col items-center gap-1 rounded-2xl border border-white/10 bg-[#2E549C]/30 px-6 py-5 transition-colors hover:bg-[#2E549C]/40"
+            >
+              <span className="text-xs uppercase tracking-wide text-white/60">{p.label}</span>
               <span className="font-mono text-2xl text-white">{p.num}</span>
             </a>
           ))}
