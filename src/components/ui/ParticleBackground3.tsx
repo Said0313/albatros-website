@@ -19,6 +19,7 @@ export interface ParticleBackgroundProps {
   glow?: number; // 0..1
   markSrc?: string; // logo mark png (transparent) for the mark phase
   onRevealReady?: (fast: boolean) => void; // fire hero content reveal
+  onChoreographyStart?: () => void; // hold released, logo scan-print begins
 }
 
 interface Dot {
@@ -41,6 +42,10 @@ const D = [0.5, 0.001, 0.001, 1.0, 1.0, 0.8]; // fade-in, (skipped), (skipped), 
 const CUM = D.reduce<number[]>((a, d) => (a.push((a[a.length - 1] || 0) + d), a), []);
 const TOTAL = CUM[CUM.length - 1];
 const JIT = 5, VORTEX_SPEED = 0.9;
+// Longest the intro will wait at the end of the fade-in for the mark PNG to
+// sample before it gives up and skips straight to the ambient field. Keeps a
+// cold load (slow PNG) from stalling the choreography indefinitely.
+const HOLD_CAP_MS = 2500;
 
 const mix = (a: number[], b: number[], m: number) =>
   [a[0] + (b[0] - a[0]) * m, a[1] + (b[1] - a[1]) * m, a[2] + (b[2] - a[2]) * m];
@@ -57,10 +62,13 @@ export default function ParticleBackground({
   glow = 0.55,
   markSrc = "/images/albatros-helix-mark3.png",
   onRevealReady,
+  onChoreographyStart,
 }: ParticleBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const revealRef = useRef(onRevealReady);
   revealRef.current = onRevealReady;
+  const startRef = useRef(onChoreographyStart);
+  startRef.current = onChoreographyStart;
 
   useEffect(() => {
     const cv = canvasRef.current;
@@ -80,6 +88,7 @@ export default function ParticleBackground({
     let markPts: { fx: number; fy: number; col: number[] }[] | null = null;
     let ph = reduced ? TOTAL : 0, hrot = 0, disp = 0, scrollY = 0;
     let lastPhase = -1, revealed = false, last = 0, raf = 0;
+    let started = false, holdStart = -1;
     const mouse = { x: -9999, y: -9999 };
 
     const sizeCanvas = () => {
@@ -176,7 +185,14 @@ export default function ParticleBackground({
       // Do not start the logo scan-print until the mark PNG has been sampled.
       // Until markPts is set every dot uses the fallback centre and collapses
       // into one blob, so hold at the end of the fade-in phase if it is late.
-      if (!markPts && ph > CUM[0]) ph = CUM[0];
+      // The hold is capped at HOLD_CAP_MS: if the PNG is still not sampled by
+      // then (a slow cold load), give up on the logo and skip to the ambient
+      // field rather than stall the intro forever.
+      if (!markPts && ph > CUM[0]) {
+        ph = CUM[0];
+        if (holdStart < 0) holdStart = now;
+        if (now - holdStart > HOLD_CAP_MS) skip(); // ph -> TOTAL; frame falls through to ambient
+      }
       const t = ph;
       let phase = 6;
       for (let i = 0; i < 6; i++) if (t < CUM[i]) { phase = i; break; }
@@ -184,6 +200,11 @@ export default function ParticleBackground({
         for (const p of ps) { p.px = p.x; p.py = p.y; }
         lastPhase = phase;
       }
+      // The hold has released and the logo scan-print is actually beginning:
+      // signal the hero so it can start its reveal failsafe from HERE, not from
+      // mount (a long cold-load hold used to push the ~2.8s choreography past a
+      // mount-based failsafe, revealing the hero over a still-forming logo).
+      if (phase >= 3 && !started) { started = true; startRef.current?.(); }
       if (phase >= 1 && phase <= 2) hrot += dt * 1.7 * VORTEX_SPEED;
       const mw = (W >= 1024 ? Math.min(780, W * 0.6) : Math.min(600, W * 0.88)), mkL = W / 2 - mw / 2, mh = (mw * 1188) / 2720;
       if (phase >= 5 && !revealed) reveal(false);

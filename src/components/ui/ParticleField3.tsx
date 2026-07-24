@@ -9,9 +9,9 @@ import { createContext, useCallback, useContext, useState } from "react";
 // on main. No props: every default in the component is already tuned.
 const ParticleBackground3 = dynamic(() => import("@/components/ui/ParticleBackground3"), { ssr: false });
 
-type RevealState = { on: boolean; fast: boolean };
+type RevealState = { on: boolean; fast: boolean; started: boolean };
 
-const FieldRevealContext = createContext<RevealState>({ on: false, fast: false });
+const FieldRevealContext = createContext<RevealState>({ on: false, fast: false, started: false });
 
 /**
  * Reveal signal from the field's intro choreography. ONLY the homepage hero
@@ -24,16 +24,21 @@ export function useFieldReveal(): RevealState {
 }
 
 export function ParticleFieldProvider({ children }: { children: React.ReactNode }) {
-  const [reveal, setReveal] = useState<RevealState>({ on: false, fast: false });
+  const [reveal, setReveal] = useState<RevealState>({ on: false, fast: false, started: false });
   const onReady = useCallback((fast: boolean) => {
-    setReveal((r) => (r.on ? r : { on: true, fast }));
+    setReveal((r) => (r.on ? r : { ...r, on: true, fast }));
+  }, []);
+  // Fired when the intro's hold releases and the logo scan-print begins. The
+  // hero starts its reveal failsafe from this signal, not from mount.
+  const onStart = useCallback(() => {
+    setReveal((r) => (r.started ? r : { ...r, started: true }));
   }, []);
   return (
     <FieldRevealContext.Provider value={reveal}>
       {/* linkIntensity lowered from the 0.55 default so the (now shorter-reach)
           links read as faint connective texture, not a mesh. Radius is reduced
           inside the component; this only dims the remaining lines. */}
-      <ParticleBackground3 onRevealReady={onReady} linkIntensity={0.35} />
+      <ParticleBackground3 onRevealReady={onReady} onChoreographyStart={onStart} linkIntensity={0.35} />
       {children}
     </FieldRevealContext.Provider>
   );

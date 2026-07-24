@@ -21,12 +21,28 @@ export function HeroSection() {
   // immediately with fast=true when the user skips it (click / early scroll).
   const reveal = useFieldReveal();
 
-  // Failsafe: if the signal never arrives (field failed to mount, throttled
-  // tab, or any stall), reveal anyway so the hero can never stay invisible.
-  // The intro runs ~3.3s, so 6s clears it and only catches genuine stalls.
   const [safety, setSafety] = useState(false);
+
+  // Primary reveal failsafe: armed ONLY once the intro choreography actually
+  // begins (reveal.started fires when the hold releases and the logo scan-print
+  // starts), never from mount. A slow cold-load hold used to push the ~2.8s
+  // choreography past a mount-based 6s timer, revealing the hero over a still-
+  // forming logo. Timing from choreography start instead, 6s clears the intro
+  // with margin and only catches a genuine stall after it has begun.
   useEffect(() => {
+    if (!reveal.started) return;
     const id = setTimeout(() => setSafety(true), 6000);
+    return () => clearTimeout(id);
+  }, [reveal.started]);
+
+  // Ultimate backstop for the true last-resort case: if the field never mounts
+  // or throws, neither `started` nor the reveal signal ever arrives, so the
+  // hero would stay invisible. This mount-based timer guarantees it appears.
+  // It is long enough that a normal cold load (PNG hold capped at 2.5s + ~2.8s
+  // choreography) always reveals through the real signal first, so it only ever
+  // fires on an actual failure.
+  useEffect(() => {
+    const id = setTimeout(() => setSafety(true), 10000);
     return () => clearTimeout(id);
   }, []);
 
