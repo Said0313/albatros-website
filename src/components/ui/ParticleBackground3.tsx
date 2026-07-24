@@ -107,7 +107,7 @@ export default function ParticleBackground({
           sx: Math.random() * W, sy: Math.random() * H,
           rx: ((cell % gc) + 0.1 + Math.random() * 0.8) * (W / gc),
           ry: (((cell / gc) | 0) + 0.1 + Math.random() * 0.8) * (H / gr),
-          mx: W / 2, my: H * 0.44, sat: null,
+          mx: W / 2, my: H * 0.5, sat: null,
           x: 0, y: 0, px: 0, py: 0,
           vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
           ux: 0, uy: 0,
@@ -117,12 +117,12 @@ export default function ParticleBackground({
         };
         if (markPts) {
           const mp = markPts;
-          const mw = Math.min(860, W * 0.66), mh = (mw * 1188) / 2720;
+          const mw = Math.min(780, W * 0.6), mh = (mw * 1188) / 2720;
           const pick = (idx: number) => {
             const pt = mp[idx % mp.length];
             return {
               x: W / 2 + (pt.fx - 0.5) * mw + (Math.random() - 0.5) * 2.5,
-              y: H * 0.44 + (pt.fy - 0.5) * mh + (Math.random() - 0.5) * 2.5,
+              y: H * 0.5 + (pt.fy - 0.5) * mh + (Math.random() - 0.5) * 2.5,
               col: pt.col,
               sx: Math.random() * W, sy: Math.random() * H,
               hfx: Math.random(), strand: Math.random() < 0.5 ? 1 : 0,
@@ -177,7 +177,7 @@ export default function ParticleBackground({
         lastPhase = phase;
       }
       if (phase >= 1 && phase <= 2) hrot += dt * 1.7 * VORTEX_SPEED;
-      const mw = Math.min(860, W * 0.66), mkL = W / 2 - mw / 2, mh = (mw * 1188) / 2720;
+      const mw = Math.min(780, W * 0.6), mkL = W / 2 - mw / 2, mh = (mw * 1188) / 2720;
       if (phase >= 5 && !revealed) reveal(false);
 
       ctx.clearRect(0, 0, W, H);
@@ -306,7 +306,7 @@ export default function ParticleBackground({
       // half-transparent white scanline: dots snap into place behind it
       if (phase === 3) {
         const x = mkL + Math.min(1, pr(3)) * mw;
-        const bandY = H * 0.44 - mh / 2 - 10, bandH = mh + 20;
+        const bandY = H * 0.5 - mh / 2 - 10, bandH = mh + 20;
         const g = ctx.createLinearGradient(x - 34, 0, x, 0);
         g.addColorStop(0, "rgba(255,255,255,0)"); g.addColorStop(1, "rgba(255,255,255,0.5)");
         ctx.fillStyle = g; ctx.fillRect(x - 34, bandY, 34, bandH);
