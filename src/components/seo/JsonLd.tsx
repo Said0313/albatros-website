@@ -23,7 +23,11 @@ export function OrganizationJsonLd({ locale }: { locale: AppLocale }) {
     logo: `${SITE_URL}/logo.png`,
     image: `${SITE_URL}/logo.png`,
     email: "info@albatros.uz",
-    telephone: "+998 78 147 88 80",
+    telephone: "+998 77 756 42 36",
+    contactPoint: [
+      { "@type": "ContactPoint", telephone: "+998 77 756 42 36", contactType: "office" },
+      { "@type": "ContactPoint", telephone: "+998 99 792 79 00", contactType: "sales" },
+    ],
     foundingDate: "2017",
     address: {
       "@type": "PostalAddress",

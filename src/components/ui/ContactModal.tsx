@@ -21,9 +21,10 @@ const CONTACT_FORM_ENABLED = false;
 // Direct contact channels shown in the "in development" state, mirrored from the
 // contacts page and footer. Do not invent values here.
 const DIRECT_CONTACTS = [
-  { Icon: Phone, label: "+998 78 147 88 80", href: "tel:+998781478880", external: false },
-  { Icon: Send, label: "@ahc_seminars", href: "https://t.me/ahc_seminars", external: true },
-  { Icon: Mail, label: "info@albatros.uz", href: "mailto:info@albatros.uz", external: false },
+  { Icon: Phone, roleKey: "office", label: "+998 77 756 42 36", href: "tel:+998777564236", external: false },
+  { Icon: Phone, roleKey: "sales", label: "+998 99 792 79 00", href: "tel:+998997927900", external: false },
+  { Icon: Send, roleKey: null, label: "@ahc_seminars", href: "https://t.me/ahc_seminars", external: true },
+  { Icon: Mail, roleKey: null, label: "info@albatros.uz", href: "mailto:info@albatros.uz", external: false },
 ] as const;
 
 interface Ctx {
@@ -198,6 +199,7 @@ function Field({
  * modal is never a dead end. The title/subtitle live in the dialog header.
  */
 function DevState() {
+  const tct = useTranslations("contact");
   return (
     <div className="flex flex-col items-center gap-5 py-2 text-center">
       {/* eslint-disable-next-line @next/next/no-img-element -- decorative animated mark */}
@@ -208,7 +210,7 @@ function DevState() {
         className="dev-helix pointer-events-none h-auto w-48 max-w-full select-none"
       />
       <div className="w-full space-y-2">
-        {DIRECT_CONTACTS.map(({ Icon, label, href, external }) => (
+        {DIRECT_CONTACTS.map(({ Icon, roleKey, label, href, external }) => (
           <a
             key={href}
             href={href}
@@ -216,7 +218,10 @@ function DevState() {
             className="flex items-center justify-center gap-2.5 rounded-lg border border-bg-border bg-bg-elevated px-4 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-red"
           >
             <Icon className="h-4 w-4 shrink-0 text-brand-red" />
-            {label}
+            <span className="flex flex-col text-left leading-tight">
+              {roleKey && <span className="text-[11px] uppercase tracking-wide text-text-muted">{tct(roleKey)}</span>}
+              <span>{label}</span>
+            </span>
           </a>
         ))}
       </div>

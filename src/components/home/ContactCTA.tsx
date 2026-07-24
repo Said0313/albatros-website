@@ -9,6 +9,11 @@ export function ContactCTA() {
   const { open } = useContactModal();
   const t = useTranslations("cta");
   const tc = useTranslations("common");
+  const tct = useTranslations("contact");
+  const phones = [
+    { label: tct("office"), num: "+998 77 756 42 36", href: "tel:+998777564236" },
+    { label: tct("sales"), num: "+998 99 792 79 00", href: "tel:+998997927900" },
+  ];
   return (
     <section
       className="relative overflow-hidden"
@@ -23,9 +28,14 @@ export function ContactCTA() {
         <ScrollReveal className="flex flex-col items-center">
         <h2 className="font-display text-3xl font-bold text-white md:text-[44px]">{t("title")}</h2>
         <p className="mt-4 max-w-xl text-white/70">{t("subtitle")}</p>
-        <a href="tel:+998781478880" className="mt-6 font-mono text-2xl text-white">
-          +998 78 147 88 80
-        </a>
+        <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:gap-10">
+          {phones.map((p) => (
+            <a key={p.href} href={p.href} className="flex flex-col items-center hover:opacity-90">
+              <span className="text-xs uppercase tracking-wide text-white/50">{p.label}</span>
+              <span className="font-mono text-2xl text-white">{p.num}</span>
+            </a>
+          ))}
+        </div>
         {/* Primary CTA: opens the contact modal (was a price-list download).
             The old secondary "contact us" text link is dropped since this
             button now carries that action. */}

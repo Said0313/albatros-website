@@ -23,8 +23,8 @@ export async function generateMetadata({
 
 const contacts: { icon: typeof MapPin; key: string; valueKey?: string; value?: string; href?: string }[] = [
   { icon: MapPin, key: "address", valueKey: "addressValue" },
-  { icon: Phone, key: "office", value: "+998 78 147 88 80", href: "tel:+998781478880" },
-  { icon: Phone, key: "accounting", value: "+998 99 831 77 81", href: "tel:+998998317781" },
+  { icon: Phone, key: "office", value: "+998 77 756 42 36", href: "tel:+998777564236" },
+  { icon: Phone, key: "sales", value: "+998 99 792 79 00", href: "tel:+998997927900" },
   { icon: Mail, key: "email", value: "info@albatros.uz", href: "mailto:info@albatros.uz" },
   { icon: Clock, key: "hours", valueKey: "hoursValue" },
   { icon: Send, key: "telegram", value: "@ahc_seminars", href: "https://t.me/ahc_seminars" },

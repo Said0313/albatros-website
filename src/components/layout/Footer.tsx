@@ -24,6 +24,7 @@ export function Footer() {
   const locale = useLocale();
   const tn = useTranslations("nav");
   const tf = useTranslations("footer");
+  const tct = useTranslations("contact");
   return (
     <footer className="bg-[#0C1B3A] text-white/70">
       {/* Below lg: 2 columns so НАВИГАЦИЯ and НАПРАВЛЕНИЯ sit side by side
@@ -91,13 +92,19 @@ export function Footer() {
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-red-bright" /> {tf("addressValue")}
             </li>
-            <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 shrink-0 text-brand-red-bright" />
-              <a href="tel:+998781478880" className="hover:text-white">+998 78 147 88 80</a>
+            <li className="flex items-start gap-2">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-red-bright" />
+              <span>
+                <span className="block text-xs uppercase tracking-wide text-white/45">{tct("office")}</span>
+                <a href="tel:+998777564236" className="hover:text-white">+998 77 756 42 36</a>
+              </span>
             </li>
-            <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 shrink-0 text-brand-red-bright" />
-              <a href="tel:+998998317781" className="hover:text-white">+998 99 831 77 81</a>
+            <li className="flex items-start gap-2">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-red-bright" />
+              <span>
+                <span className="block text-xs uppercase tracking-wide text-white/45">{tct("sales")}</span>
+                <a href="tel:+998997927900" className="hover:text-white">+998 99 792 79 00</a>
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 shrink-0 text-brand-red-bright" />

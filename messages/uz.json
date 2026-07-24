@@ -178,7 +178,8 @@
     "subtitle": "Uskunalar narxini hisoblash va maslahat uchun biz bilan bogʻlaning.",
     "address": "Manzil",
     "addressValue": "Oʻzbekiston Respublikasi, Toshkent sh., Xalqobod koʻchasi, 17",
-    "office": "Bosh ofis / Savdo boʻlimi",
+    "office": "Офис TODO(uz)",
+    "sales": "Отдел продаж TODO(uz)",
     "accounting": "Buxgalteriya",
     "email": "Email",
     "hours": "Ish vaqti",
@@ -235,7 +236,7 @@
     },
     "contact": {
       "title": "Aloqa",
-      "description": "Albatros Health Care bilan bogʻlaning: Toshkent sh., Xalqobod koʻch., 17, tel. +998 78 147 88 80, info@albatros.uz. Laboratoriya uskunalarini yetkazib berish."
+      "description": "Albatros Health Care bilan bogʻlaning: Toshkent sh., Xalqobod koʻch., 17, tel. +998 77 756 42 36, +998 99 792 79 00, info@albatros.uz. Laboratoriya uskunalarini yetkazib berish."
     }
   }
 }
