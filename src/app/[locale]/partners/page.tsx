@@ -38,7 +38,9 @@ export default function PartnersPage() {
       <div className="container-x">
         <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
-          <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("pageTitle")}</h1>
+          {/* Reuse the homepage foreign-partners heading ("Наши зарубежные
+              партнёры") so the wording matches the homepage in every locale. */}
+          <h1 className="font-display text-4xl font-extrabold text-text-primary md:text-5xl">{t("homeTitle")}</h1>
           <p className="mt-3 max-w-2xl text-text-secondary">{t("pageSubtitle")}</p>
         </div>
         </ScrollReveal>
