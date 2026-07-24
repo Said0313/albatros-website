@@ -3,7 +3,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { useState, createContext, useContext, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Check, Phone, Send, Mail } from "lucide-react";
+import { X, Check, Phone, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 
@@ -20,10 +20,11 @@ const CONTACT_FORM_ENABLED = false;
 
 // Direct contact channels shown in the "in development" state, mirrored from the
 // contacts page and footer. Do not invent values here.
+// Exactly three contacts: the two role-labelled office/sales numbers and the
+// email. No Telegram: @ahc_seminars is a seminars channel, not a contact line.
 const DIRECT_CONTACTS = [
   { Icon: Phone, roleKey: "office", label: "+998 77 756 42 36", href: "tel:+998777564236", external: false },
   { Icon: Phone, roleKey: "sales", label: "+998 99 792 79 00", href: "tel:+998997927900", external: false },
-  { Icon: Send, roleKey: null, label: "@ahc_seminars", href: "https://t.me/ahc_seminars", external: true },
   { Icon: Mail, roleKey: null, label: "info@albatros.uz", href: "mailto:info@albatros.uz", external: false },
 ] as const;
 
