@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { getTranslations } from "next-intl/server";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
@@ -30,8 +30,15 @@ const contacts: { icon: typeof MapPin; key: string; valueKey?: string; value?: s
   { icon: Send, key: "telegram", value: "@ahc_seminars", href: "https://t.me/ahc_seminars" },
 ];
 
+// Yandex Maps widget UI locales. Yandex does NOT ship an Uzbek widget locale
+// (supported set is ru_RU / en_US / tr_TR / uk_UA ...), so UZ falls back to
+// Russian rather than English. ru is the default for anything unexpected.
+const YANDEX_LANG: Record<string, string> = { ru: "ru_RU", en: "en_US", uz: "ru_RU" };
+
 export default function ContactPage() {
   const t = useTranslations("contact");
+  const locale = useLocale();
+  const mapLang = YANDEX_LANG[locale] ?? "ru_RU";
   return (
     <div className="pb-16 md:pb-24 pt-24 md:pt-32">
       <div className="container-x">
@@ -72,8 +79,11 @@ export default function ContactPage() {
           <h2 className="mb-4 font-display text-xl font-bold text-text-primary">{t("mapTitle")}</h2>
           <div className="overflow-hidden rounded-2xl border border-bg-border">
             <iframe
+              // key forces a remount (fresh map load) when the visitor switches
+              // locale, so the labels never stay stuck in the previous language.
+              key={locale}
               title={t("mapTitle")}
-              src="https://yandex.com/map-widget/v1/?ll=69.285340%2C41.328419&mode=poi&poi%5Bpoint%5D=69.285340%2C41.328419&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D15895749238&z=17"
+              src={`https://yandex.com/map-widget/v1/?ll=69.285340%2C41.328419&mode=poi&poi%5Bpoint%5D=69.285340%2C41.328419&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D15895749238&z=17&lang=${mapLang}`}
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
