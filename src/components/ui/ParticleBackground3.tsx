@@ -255,7 +255,10 @@ export default function ParticleBackground({
         if (fieldLike || phase === 6) {
           ox += parX * p.seed * 12; oy += parY * p.seed * 8;
           const md = Math.hypot(ox - mouse.x, oy - mouse.y);
-          if (md < 170) boost = 1 - md / 170;
+          // Tight cursor cluster: only genuinely nearby dots connect, so the
+          // red cursor lines stay short (a small local cluster following the
+          // pointer, not a wide net). Threshold and falloff divisor match.
+          if (md < 75) boost = 1 - md / 75;
         }
         if (disp > 0) {
           ox += Math.sin(p.seed * 9.4) * disp * 60;
