@@ -27,7 +27,22 @@ export function Navbar() {
   const tn = useTranslations("nav");
   const tc = useTranslations("common");
   const isUz = locale === "uz";
+  const isEn = locale === "en";
   const { open: openContact } = useContactModal();
+
+  // Shared across both desktop layouts (EN centred grid vs RU/UZ right cluster).
+  const navLinks = NAV.map((l) => (
+    <Link
+      key={l.href}
+      href={l.href}
+      className={cn(
+        "nav-underline relative whitespace-nowrap text-[15px] transition-colors",
+        pathname === l.href ? "active text-text-primary" : "text-text-secondary hover:text-text-primary"
+      )}
+    >
+      {tn(l.key)}
+    </Link>
+  ));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -49,44 +64,54 @@ export function Navbar() {
           : "bg-[rgba(251,252,254,0.8)] backdrop-blur-[8px]"
       )}
     >
-      {/* lg+ uses a 3-column grid (1fr auto 1fr): logo left, nav links in the
-          CENTRE column, controls right. The centre column is auto-width between
-          two equal 1fr columns, so the nav group sits in the viewport centre in
-          EVERY locale, independent of label lengths (EN labels are much shorter
-          than RU and used to pull the group off-centre). Below lg it stays a
-          simple flex justify-between (logo + hamburger). */}
-      <nav className="container-x flex h-16 items-center justify-between md:h-20 lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
-        <Link href="/" className="relative z-10 lg:justify-self-start">
+      {/* EN ONLY uses a 3-column grid (1fr auto 1fr) so its short labels sit at
+          the exact viewport centre. RU/UZ keep the original right-cluster flex
+          layout (their long labels do not need centring and the owner prefers
+          the previous spacing). Below lg both stay a simple flex justify-between
+          (logo + hamburger). */}
+      <nav
+        className={cn(
+          "container-x flex h-16 items-center justify-between md:h-20",
+          isEn && "lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]"
+        )}
+      >
+        <Link href="/" className={cn("relative z-10", isEn && "lg:justify-self-start")}>
           <Image src="/logo.png" alt="Albatros Health Care" width={1998} height={300} priority className="h-7 w-auto object-contain md:h-8" />
         </Link>
 
-        {/* EN labels are short so it can breathe; RU/UZ are long, so tighter
-            gaps keep the centred group clear of the logo and controls. */}
-        <div className={cn("hidden items-center justify-self-center lg:flex", locale === "en" ? "gap-4 xl:gap-7" : "gap-2.5 xl:gap-3")}>
-          {NAV.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={cn(
-                "nav-underline relative whitespace-nowrap text-[15px] transition-colors",
-                pathname === l.href ? "active text-text-primary" : "text-text-secondary hover:text-text-primary"
-              )}
+        {isEn ? (
+          <>
+            {/* EN: nav links in the centred grid column. */}
+            <div className="hidden items-center justify-self-center gap-4 lg:flex xl:gap-7">
+              {navLinks}
+            </div>
+            {/* EN: controls pinned to the right grid column. */}
+            <div className="hidden items-center gap-3 justify-self-end lg:flex">
+              <LanguageSwitcher className="inline-flex" />
+              <button
+                onClick={() => openContact()}
+                className="btn-red flex items-center gap-2 whitespace-nowrap rounded-lg px-4 py-2.5 text-sm font-medium"
+              >
+                <Phone className="h-4 w-4 shrink-0" /> {tc("contactUs")}
+              </button>
+            </div>
+          </>
+        ) : (
+          /* RU/UZ: original right cluster (pre-2fe6918) — nav links, switcher and
+             contact button grouped on the right with the original gaps/padding. */
+          <div className="hidden items-center lg:ml-10 lg:flex lg:gap-4 xl:gap-8">
+            <div className={cn("flex items-center", isUz ? "gap-3 xl:gap-5" : "gap-4 xl:gap-7")}>
+              {navLinks}
+            </div>
+            <LanguageSwitcher className="inline-flex" />
+            <button
+              onClick={() => openContact()}
+              className="btn-red flex items-center gap-2 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium"
             >
-              {tn(l.key)}
-            </Link>
-          ))}
-        </div>
-
-        {/* Right controls: language switcher + contact button, pinned right. */}
-        <div className="hidden items-center gap-3 justify-self-end lg:flex">
-          <LanguageSwitcher className="inline-flex" />
-          <button
-            onClick={() => openContact()}
-            className="btn-red flex items-center gap-2 whitespace-nowrap rounded-lg px-4 py-2.5 text-sm font-medium"
-          >
-            <Phone className="h-4 w-4 shrink-0" /> {tc("contactUs")}
-          </button>
-        </div>
+              <Phone className="h-4 w-4 shrink-0" /> {tc("contactUs")}
+            </button>
+          </div>
+        )}
 
         <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
