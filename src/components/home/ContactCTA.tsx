@@ -1,6 +1,6 @@
 "use client";
 
-import { Download } from "lucide-react";
+import { Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { useContactModal } from "@/components/ui/ContactModal";
@@ -26,18 +26,14 @@ export function ContactCTA() {
         <a href="tel:+998781478880" className="mt-6 font-mono text-2xl text-white">
           +998 78 147 88 80
         </a>
-        <a
-          href="/price-list.pdf"
-          download="Albatros_Price_List.pdf"
-          className="btn-red mt-8 inline-flex items-center gap-2 rounded-lg px-7 py-3.5 font-medium"
-        >
-          <Download className="h-4 w-4" /> {tc("downloadPrice")}
-        </a>
+        {/* Primary CTA: opens the contact modal (was a price-list download).
+            The old secondary "contact us" text link is dropped since this
+            button now carries that action. */}
         <button
           onClick={() => open()}
-          className="mt-4 text-sm text-white/60 underline-offset-4 transition-colors hover:text-white hover:underline"
+          className="btn-red mt-8 inline-flex items-center gap-2 rounded-lg px-7 py-3.5 font-medium"
         >
-          {tc("contactUs")}
+          <Phone className="h-4 w-4" /> {tc("contactUs")}
         </button>
         </ScrollReveal>
       </div>
