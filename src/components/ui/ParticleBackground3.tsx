@@ -277,7 +277,7 @@ export default function ParticleBackground({
       // links via spatial hash (field states only)
       if ((fieldLike || phase === 6) && linkIntensity > 0.02) {
         const la = phase === 5 ? ei(Math.min(1, pr(5))) : phase === 0 ? Math.min(1, pr(0)) * 0.5 : 1;
-        const cell = 130;
+        const cell = 90;
         const grid = new Map<string, number[]>();
         draw.forEach((d, i) => {
           const k = `${(d.ox / cell) | 0},${(d.oy / cell) | 0}`;
@@ -297,9 +297,9 @@ export default function ParticleBackground({
                 if (j <= i) continue;
                 const b = draw[j];
                 const dx = a.ox - b.ox, dy = a.oy - b.oy, d2 = dx * dx + dy * dy;
-                if (d2 < 16900) {
+                if (d2 < 8100) {
                   const d = Math.sqrt(d2);
-                  ctx.strokeStyle = rgba(BLUE, (1 - d / 130) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1));
+                  ctx.strokeStyle = rgba(BLUE, (1 - d / 90) * 0.3 * linkIntensity * la * Math.min(a.alpha + 0.3, 1));
                   ctx.beginPath(); ctx.moveTo(a.ox, a.oy); ctx.lineTo(b.ox, b.oy); ctx.stroke();
                 }
               }

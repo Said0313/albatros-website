@@ -30,7 +30,10 @@ export function ParticleFieldProvider({ children }: { children: React.ReactNode 
   }, []);
   return (
     <FieldRevealContext.Provider value={reveal}>
-      <ParticleBackground3 onRevealReady={onReady} />
+      {/* linkIntensity lowered from the 0.55 default so the (now shorter-reach)
+          links read as faint connective texture, not a mesh. Radius is reduced
+          inside the component; this only dims the remaining lines. */}
+      <ParticleBackground3 onRevealReady={onReady} linkIntensity={0.35} />
       {children}
     </FieldRevealContext.Provider>
   );
