@@ -40,7 +40,11 @@ export function ContactCTA() {
               className="flex flex-col items-center gap-1 rounded-2xl border border-white/10 bg-[#2E549C]/30 px-6 py-5 transition-colors hover:bg-[#2E549C]/40"
             >
               <span className="text-xs uppercase tracking-wide text-white/60">{p.label}</span>
-              <span className="font-mono text-2xl text-white">{p.num}</span>
+              {/* whitespace-nowrap keeps the whole number on one line; the tight
+                  negative tracking pulls the mono digit groups together so it
+                  reads as one compact number (mono spaces are otherwise very
+                  wide) and fits the card at every width. */}
+              <span className="whitespace-nowrap font-mono text-xl tracking-[-0.04em] text-white">{p.num}</span>
             </a>
           ))}
         </div>
