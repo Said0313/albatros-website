@@ -81,6 +81,10 @@ export default function ParticleBackground({
     let ps: Dot[] = [];
     // adaptive quality: heuristic start, one-way downgrade on sustained slow frames
     let quality = 1, ftAcc = 0, ftN = 0;
+    // When a click happens the field yields the main thread until this time, so
+    // a click that starts a client navigation is not starved by the per-frame
+    // draw + link work. See onClick / step().
+    let navPauseUntil = 0;
     const hc = navigator.hardwareConcurrency || 8;
     const dm = (navigator as any).deviceMemory || 8;
     if (hc <= 4 || dm <= 4) quality = 0.7;
@@ -164,6 +168,12 @@ export default function ParticleBackground({
     };
 
     const step = (now: number) => {
+      // Yield the main thread for a short window after a click so the browser
+      // can fetch and render the navigation the click may have started. The
+      // A/B test proved the per-frame draw + link computation otherwise starves
+      // React's render of the new route, so the first click during the intro
+      // registered but never completed (the "navbar needs several clicks" bug).
+      if (now < navPauseUntil) { last = now; raf = requestAnimationFrame(step); return; }
       const rawDt = Math.min(0.05, (now - (last || now)) / 1000);
       const dt = rawDt * speed;
       last = now;
@@ -377,6 +387,10 @@ export default function ParticleBackground({
     // these clicks; a click on empty background still skips).
     const INTERACTIVE = "a,button,input,textarea,select,label,summary,[role='button'],[role='link'],[onclick]";
     const onClick = (e: MouseEvent) => {
+      // Any click may start a navigation: free the main thread for ~600ms so the
+      // route change is not starved by the field (imperceptible for an ambient
+      // background, and the intro's reveal still fires from skip() below).
+      navPauseUntil = performance.now() + 600;
       const t = e.target as Element | null;
       if (t && typeof t.closest === "function" && t.closest(INTERACTIVE)) return;
       skip();
