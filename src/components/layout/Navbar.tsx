@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { useContactModal } from "@/components/ui/ContactModal";
 
 const NAV = [
   { href: "/", key: "home" },
@@ -26,6 +27,7 @@ export function Navbar() {
   const tn = useTranslations("nav");
   const tc = useTranslations("common");
   const isUz = locale === "uz";
+  const { open: openContact } = useContactModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -74,13 +76,12 @@ export function Navbar() {
           {/* RU/UZ switcher sits BETWEEN the nav links and the price button */}
           <LanguageSwitcher className="inline-flex" />
 
-          <a
-            href="/price-list.pdf"
-            download="Albatros_Price_List.pdf"
+          <button
+            onClick={() => openContact()}
             className="btn-red flex items-center gap-2 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium"
           >
-            <Download className="h-4 w-4 shrink-0" /> {tc("priceShort")}
-          </a>
+            <Phone className="h-4 w-4 shrink-0" /> {tc("contactUs")}
+          </button>
         </div>
 
         <div className="flex items-center gap-3 lg:hidden">
@@ -120,14 +121,15 @@ export function Navbar() {
                   {tn(l.key)}
                 </Link>
               ))}
-              <a
-                href="/price-list.pdf"
-                download="Albatros_Price_List.pdf"
-                onClick={() => setMobileOpen(false)}
+              <button
+                onClick={() => {
+                  setMobileOpen(false);
+                  openContact();
+                }}
                 className="btn-red mt-4 flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium"
               >
-                <Download className="h-4 w-4" /> {tc("downloadPrice")}
-              </a>
+                <Phone className="h-4 w-4" /> {tc("contactUs")}
+              </button>
             </motion.div>
           </>
         )}
