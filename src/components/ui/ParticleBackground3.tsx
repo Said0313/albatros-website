@@ -367,7 +367,20 @@ export default function ParticleBackground({
       scrollY = window.scrollY;
       if (ph < TOTAL && window.scrollY > 8) skip();
     };
-    const onClick = () => skip();
+    // Skip the intro on a click, EXCEPT on interactive elements. A click on a
+    // nav link, button or form control is a navigation/action, not an intent to
+    // skip the intro. Firing the one-time reveal state update on that same click
+    // re-renders the whole app tree the field provider wraps and races the
+    // click's own navigation, dropping it. That collision is the real cause of
+    // the "navbar links need several clicks right after opening" bug (the intro
+    // still auto-reveals via the choreography, so nothing is lost by ignoring
+    // these clicks; a click on empty background still skips).
+    const INTERACTIVE = "a,button,input,textarea,select,label,summary,[role='button'],[role='link'],[onclick]";
+    const onClick = (e: MouseEvent) => {
+      const t = e.target as Element | null;
+      if (t && typeof t.closest === "function" && t.closest(INTERACTIVE)) return;
+      skip();
+    };
     const onResize = () => { W = window.innerWidth; H = window.innerHeight; sizeCanvas(); build(); };
 
     sizeCanvas();
