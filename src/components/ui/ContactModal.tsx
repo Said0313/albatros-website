@@ -3,9 +3,28 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { useState, createContext, useContext, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Check, Phone } from "lucide-react";
+import { X, Check, Phone, Send, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PhoneInput } from "@/components/ui/PhoneInput";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MASTER SWITCH for the contact form.
+//   false -> the modal shows an "in development" state (brand helix + the direct
+//            contact details) instead of the form. This is the current default
+//            because the /api/contact Telegram backend is not confirmed live.
+//   true  -> fully restores the working form below with NO other edits needed.
+// Before flipping this to true, make sure the server has the TELEGRAM_BOT_TOKEN
+// and TELEGRAM_CHAT_ID env vars set (that is what /api/contact posts leads to).
+// ─────────────────────────────────────────────────────────────────────────────
+const CONTACT_FORM_ENABLED = false;
+
+// Direct contact channels shown in the "in development" state, mirrored from the
+// contacts page and footer. Do not invent values here.
+const DIRECT_CONTACTS = [
+  { Icon: Phone, label: "+998 78 147 88 80", href: "tel:+998781478880", external: false },
+  { Icon: Send, label: "@ahc_seminars", href: "https://t.me/ahc_seminars", external: true },
+  { Icon: Mail, label: "info@albatros.uz", href: "mailto:info@albatros.uz", external: false },
+] as const;
 
 interface Ctx {
   open: (product?: string) => void;
@@ -85,10 +104,14 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
                     <div className="mb-5 flex items-start justify-between">
                       <div>
                         <Dialog.Title className="font-display text-xl font-bold text-text-primary">
-                          {t("callTitle")}
+                          {CONTACT_FORM_ENABLED ? t("callTitle") : t("devTitle")}
                         </Dialog.Title>
                         <Dialog.Description className="mt-1 text-sm text-text-secondary">
-                          {product ? t("priceFor", { product }) : t("callSubtitle")}
+                          {CONTACT_FORM_ENABLED
+                            ? product
+                              ? t("priceFor", { product })
+                              : t("callSubtitle")
+                            : t("devSubtitle")}
                         </Dialog.Description>
                       </div>
                       <Dialog.Close className="rounded-md p-1 text-text-muted hover:text-text-primary">
@@ -96,7 +119,9 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
                       </Dialog.Close>
                     </div>
 
-                    {sent ? (
+                    {!CONTACT_FORM_ENABLED ? (
+                      <DevState />
+                    ) : sent ? (
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -163,5 +188,38 @@ function Field({
       required={required}
       className="w-full rounded-lg border border-bg-border bg-bg-elevated px-3.5 py-2.5 text-sm text-text-primary placeholder:text-text-muted focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
     />
+  );
+}
+
+/**
+ * "In development" state shown while CONTACT_FORM_ENABLED is false: the brand
+ * helix mark with a calm, GPU-only breathing animation (static under reduced
+ * motion, handled in globals.css), plus the direct contact channels so the
+ * modal is never a dead end. The title/subtitle live in the dialog header.
+ */
+function DevState() {
+  return (
+    <div className="flex flex-col items-center gap-5 py-2 text-center">
+      {/* eslint-disable-next-line @next/next/no-img-element -- decorative animated mark */}
+      <img
+        src="/images/albatros-helix-mark3.png"
+        alt=""
+        aria-hidden
+        className="dev-helix pointer-events-none h-auto w-48 max-w-full select-none"
+      />
+      <div className="w-full space-y-2">
+        {DIRECT_CONTACTS.map(({ Icon, label, href, external }) => (
+          <a
+            key={href}
+            href={href}
+            {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            className="flex items-center justify-center gap-2.5 rounded-lg border border-bg-border bg-bg-elevated px-4 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-red"
+          >
+            <Icon className="h-4 w-4 shrink-0 text-brand-red" />
+            {label}
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }

@@ -200,7 +200,9 @@
     "error": "Failed to submit the request. Please try again later or call us.",
     "callTitle": "Request a call",
     "callSubtitle": "We will contact you shortly",
-    "priceFor": "Price request: {product}"
+    "priceFor": "Price request: {product}",
+    "devTitle": "In development",
+    "devSubtitle": "The form is coming soon. In the meantime, reach us directly:"
   },
   "footer": {
     "tagline": "Official distributor of global IVD diagnostics leaders in Uzbekistan since 2017.",

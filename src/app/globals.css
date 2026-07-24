@@ -224,6 +224,30 @@ body {
   scroll-margin-top: 7rem; /* clear the fixed navbar when scrolled to via #hash */
 }
 
+/* ── Contact modal "in development" state: calm breathing of the brand helix.
+   Transform + opacity only (GPU-composited); static under reduced motion. ── */
+@keyframes dev-helix-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+.dev-helix {
+  animation: dev-helix-breathe 3.6s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dev-helix {
+    animation: none;
+    opacity: 1;
+  }
+}
+
 /* ── Text surface over the particle field ──
    Every block of text sits on one of these LARGE near-opaque containers; the
    field shows in the page background, gutters and gaps between them. One

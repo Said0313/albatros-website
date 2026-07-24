@@ -198,7 +198,9 @@
     "error": "Arizani yuborib boʻlmadi. Keyinroq urinib koʻring yoki bizga qoʻngʻiroq qiling.",
     "callTitle": "Qoʻngʻiroqqa buyurtma",
     "callSubtitle": "Tez orada siz bilan bogʻlanamiz",
-    "priceFor": "Narx soʻrovi: {product}"
+    "priceFor": "Narx soʻrovi: {product}",
+    "devTitle": "В разработке TODO(uz)",
+    "devSubtitle": "Форма скоро заработает. А пока свяжитесь с нами напрямую: TODO(uz)"
   },
   "footer": {
     "tagline": "2017 yildan beri Oʻzbekistonda IVD diagnostikasi jahon yetakchilarining rasmiy distribyutori.",
