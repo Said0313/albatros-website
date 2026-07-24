@@ -117,7 +117,7 @@ export default function ParticleBackground({
         };
         if (markPts) {
           const mp = markPts;
-          const mw = Math.min(780, W * 0.6), mh = (mw * 1188) / 2720;
+          const mw = (W >= 1024 ? Math.min(780, W * 0.6) : Math.min(600, W * 0.88)), mh = (mw * 1188) / 2720;
           const pick = (idx: number) => {
             const pt = mp[idx % mp.length];
             return {
@@ -185,7 +185,7 @@ export default function ParticleBackground({
         lastPhase = phase;
       }
       if (phase >= 1 && phase <= 2) hrot += dt * 1.7 * VORTEX_SPEED;
-      const mw = Math.min(780, W * 0.6), mkL = W / 2 - mw / 2, mh = (mw * 1188) / 2720;
+      const mw = (W >= 1024 ? Math.min(780, W * 0.6) : Math.min(600, W * 0.88)), mkL = W / 2 - mw / 2, mh = (mw * 1188) / 2720;
       if (phase >= 5 && !revealed) reveal(false);
 
       ctx.clearRect(0, 0, W, H);
