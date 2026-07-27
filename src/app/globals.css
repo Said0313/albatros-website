@@ -206,6 +206,25 @@ body {
   }
 }
 
+/* ── Very large monitors ──
+   The base content cap is 1280px, which under the 0.9 zoom is ~1152px visual:
+   fine up to 1920 wide, but a narrow ribbon on 2560+ screens. Widen the cap
+   only ABOVE 1920 so 1280-1920 layouts are byte-identical. Media queries
+   evaluate against the UNZOOMED viewport, so the thresholds are real screen
+   widths and the zoom cannot compound with them. .container-x is the single
+   container class used by every section, navbar and footer, so this scales
+   the whole layout consistently. */
+@media (min-width: 2240px) {
+  .container-x {
+    max-width: 1600px; /* ~1440px visual at zoom .9 on a 2560 screen */
+  }
+}
+@media (min-width: 3000px) {
+  .container-x {
+    max-width: 2080px; /* ~1872px visual at zoom .9 on a 3440 screen */
+  }
+}
+
 /* Mobile: partner logos 20% smaller (48px -> 38px, chip scaled to match). */
 @media (max-width: 1023px) {
   .logo-chip {
