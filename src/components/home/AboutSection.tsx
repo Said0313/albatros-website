@@ -32,8 +32,11 @@ const fmt = (n: number) => n.toLocaleString("en-US").replace(/,/g, " ");
 
 const ACCENT = "#ED1C24";
 
+// Initial state is the TARGET, not 0: the server-rendered HTML carries the
+// real figure (no-JS visitors and search engines see the truth), and the
+// count-up only animates as a progressive enhancement once scrolled into view.
 function useCountUp(target: number, run: boolean, duration = 1600) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(target);
   useEffect(() => {
     if (!run) return;
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
