@@ -212,7 +212,7 @@
     "navigation": "Navigation",
     "directions": "Directions",
     "contacts": "Contacts",
-    "rights": "© 2017–2025 Albatros Health Care. All rights reserved.",
+    "rights": "© 2017–{year} Albatros Health Care. All rights reserved.",
     "city": "Tashkent, Uzbekistan"
   },
   "meta": {

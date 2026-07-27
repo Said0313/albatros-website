@@ -116,7 +116,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-6 text-xs text-white/45 sm:flex-row">
-          <span>{tf("rights")}</span>
+          <span>{tf("rights", { year: new Date().getFullYear() })}</span>
           <span>{tf("city")}</span>
         </div>
       </div>
