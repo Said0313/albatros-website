@@ -6,10 +6,15 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // Serve modern formats — AVIF/WebP are far smaller than the source PNGs at
-    // visually identical quality. next/image picks the best the browser accepts.
-    formats: ["image/avif", "image/webp"],
-    remotePatterns: [{ protocol: "https", hostname: "www.albatros.uz" }],
+    // Serve every image as its static file, bypassing the /_next/image runtime
+    // optimizer. All images in this repo are already pre-normalized for the web
+    // (products: uniform 1000x1000 on white; events: compressed webp), so the
+    // optimizer adds no quality, only cost: on shared Hostinger hosting each
+    // uncached transform takes 1-2s of sharp CPU, the cache is wiped on every
+    // redeploy, and a catalog page requesting dozens of transforms at once
+    // times out and renders broken product/event photos until the cache warms.
+    // Static serving removes that whole failure class.
+    unoptimized: true,
   },
 };
 
