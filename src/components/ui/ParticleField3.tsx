@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 import { createContext, useCallback, useContext, useState } from "react";
 
 // Site-wide particle field (v2), mounted once in the [locale] layout.
@@ -23,7 +24,17 @@ export function useFieldReveal(): RevealState {
   return useContext(FieldRevealContext);
 }
 
+// The homepage in every locale: "/", "/uz", "/en" (with or without a trailing
+// slash). Anything else ("/catalog", "/uz/catalog", "/en/contact", ...) is an
+// inner route and gets the field at rest with no mark assembly.
+const HOME_PATH = /^\/(uz|en)?\/?$/;
+
 export function ParticleFieldProvider({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  // Frozen at mount: the intro decision belongs to the page LOAD. The field
+  // stays mounted across client-side navigation, so re-evaluating on route
+  // change would wrongly restart the field mid-session.
+  const [introEnabled] = useState(() => HOME_PATH.test(pathname));
   const [reveal, setReveal] = useState<RevealState>({ on: false, fast: false, started: false });
   const onReady = useCallback((fast: boolean) => {
     setReveal((r) => (r.on ? r : { ...r, on: true, fast }));
@@ -38,7 +49,7 @@ export function ParticleFieldProvider({ children }: { children: React.ReactNode 
       {/* linkIntensity lowered from the 0.55 default so the (now shorter-reach)
           links read as faint connective texture, not a mesh. Radius is reduced
           inside the component; this only dims the remaining lines. */}
-      <ParticleBackground3 onRevealReady={onReady} onChoreographyStart={onStart} linkIntensity={0.35} />
+      <ParticleBackground3 onRevealReady={onReady} onChoreographyStart={onStart} linkIntensity={0.35} intro={introEnabled} />
       {children}
     </FieldRevealContext.Provider>
   );

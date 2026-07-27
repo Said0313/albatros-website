@@ -44,6 +44,11 @@ export async function generateMetadata({
 export default function HomePage() {
   return (
     <>
+      {/* Preload the particle mark so it is decoded before the field's intro
+          reaches its scan-print phase. Lives HERE (not the shared layout)
+          because only the homepage plays the mark assembly; inner routes
+          start the field at rest and never fetch the mark. */}
+      <link rel="preload" as="image" href="/images/albatros-helix-mark3.png" />
       <HeroSection />
       {/* relative z-1 lifts every below-hero section above the fixed z-0
           particle field (mounted site-wide in the layout); the hero's own

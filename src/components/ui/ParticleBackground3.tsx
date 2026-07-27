@@ -20,6 +20,7 @@ export interface ParticleBackgroundProps {
   markSrc?: string; // logo mark png (transparent) for the mark phase
   onRevealReady?: (fast: boolean) => void; // fire hero content reveal
   onChoreographyStart?: () => void; // hold released, logo scan-print begins
+  intro?: boolean; // false = start at the resting constellation (no mark assembly)
 }
 
 interface Dot {
@@ -63,6 +64,7 @@ export default function ParticleBackground({
   markSrc = "/images/albatros-helix-mark3.png",
   onRevealReady,
   onChoreographyStart,
+  intro = true,
 }: ParticleBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const revealRef = useRef(onRevealReady);
@@ -90,7 +92,12 @@ export default function ParticleBackground({
     if (hc <= 4 || dm <= 4) quality = 0.7;
     if (hc <= 2 || dm <= 2) quality = 0.5;
     let markPts: { fx: number; fy: number; col: number[] }[] | null = null;
-    let ph = reduced ? TOTAL : 0, hrot = 0, disp = 0, scrollY = 0;
+    // No intro (inner routes) behaves exactly like the skip path from frame 0:
+    // ph starts at TOTAL, so build() places every dot at its resting position
+    // and the loop renders only the ambient constellation. Reduced motion has
+    // always taken the same shortcut.
+    const playIntro = intro && !reduced;
+    let ph = playIntro ? 0 : TOTAL, hrot = 0, disp = 0, scrollY = 0;
     let lastPhase = -1, revealed = false, last = 0, raf = 0;
     let started = false, holdStart = -1;
     const mouse = { x: -9999, y: -9999 };
@@ -399,27 +406,32 @@ export default function ParticleBackground({
 
     sizeCanvas();
     build();
-    if (reduced) reveal(true);
+    // Without the intro there is nothing to wait for: content must never gate
+    // on a choreography that will not run, so the reveal fires immediately.
+    if (!playIntro) reveal(true);
 
-    // sample the mark png into normalized points
-    const img = new Image();
-    img.onload = () => {
-      const w = 240, h = Math.max(1, Math.round((w * img.height) / img.width));
-      const c = document.createElement("canvas");
-      c.width = w; c.height = h;
-      const x = c.getContext("2d");
-      if (!x) return;
-      x.drawImage(img, 0, 0, w, h);
-      const d = x.getImageData(0, 0, w, h).data;
-      const pts: { fx: number; fy: number; col: number[] }[] = [];
-      for (let py = 0; py < h; py += 2)
-        for (let px = 0; px < w; px += 2) {
-          const o = (py * w + px) * 4;
-          if (d[o + 3] > 110) pts.push({ fx: px / w, fy: py / h, col: [d[o], d[o + 1], d[o + 2]] });
-        }
-      if (pts.length) { markPts = pts; build(); }
-    };
-    img.src = markSrc;
+    // sample the mark png into normalized points (only needed by the intro's
+    // scan-print phases; skipped entirely when the intro does not play)
+    if (playIntro) {
+      const img = new Image();
+      img.onload = () => {
+        const w = 240, h = Math.max(1, Math.round((w * img.height) / img.width));
+        const c = document.createElement("canvas");
+        c.width = w; c.height = h;
+        const x = c.getContext("2d");
+        if (!x) return;
+        x.drawImage(img, 0, 0, w, h);
+        const d = x.getImageData(0, 0, w, h).data;
+        const pts: { fx: number; fy: number; col: number[] }[] = [];
+        for (let py = 0; py < h; py += 2)
+          for (let px = 0; px < w; px += 2) {
+            const o = (py * w + px) * 4;
+            if (d[o + 3] > 110) pts.push({ fx: px / w, fy: py / h, col: [d[o], d[o + 1], d[o + 2]] });
+          }
+        if (pts.length) { markPts = pts; build(); }
+      };
+      img.src = markSrc;
+    }
 
     window.addEventListener("mousemove", onMouse);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -435,7 +447,7 @@ export default function ParticleBackground({
       window.removeEventListener("resize", onResize);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [density, dotSize, redMix, speed, linkIntensity, glow, markSrc]);
+  }, [density, dotSize, redMix, speed, linkIntensity, glow, markSrc, intro]);
 
   return (
     <>
