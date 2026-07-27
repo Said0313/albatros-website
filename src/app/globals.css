@@ -193,17 +193,21 @@ body {
   html {
     zoom: 0.9;
   }
-  /* The particle field canvas is authored (in the design source) as fixed
-     width:100vw/height:100vh. Under the desktop zoom above, viewport units
-     scale with the zoom and leave a ~10% uncovered band at the right and
-     bottom edges. 100% resolves against the fixed containing block (the real
-     viewport) and covers it exactly at any zoom. Done in CSS so the component
-     file stays byte-identical to the design source. The gradient overlay div
-     uses inset:0 and already stretches to full coverage, so it needs nothing. */
-  canvas[aria-hidden] {
-    width: 100% !important;
-    height: 100% !important;
-  }
+}
+/* The particle field canvas is authored (in the design source) as fixed
+   width:100vw/height:100vh. Two problems with viewport units here:
+   (1) under the site zoom they scale with the zoom and leave a ~10%
+   uncovered band at the right and bottom edges, and (2) on mobile 100vh is
+   the static large-viewport height, so the box drifts as the address bar
+   hides and shows. 100% on a position:fixed inset:0 element resolves against
+   the real, DYNAMIC viewport: exact coverage at any zoom and while the
+   mobile address bar collapses/expands. Applied at ALL widths (an earlier
+   fix was scoped to >=1024px only, which left phones with the gap). Done in
+   CSS so the component file stays byte-identical to the design source. The
+   gradient overlay div uses inset:0 and already stretches fully. */
+canvas[aria-hidden] {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* ── Very large monitors ──
