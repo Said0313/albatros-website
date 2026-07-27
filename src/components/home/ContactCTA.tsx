@@ -24,7 +24,7 @@ export function ContactCTA() {
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-red/20 blur-[120px]" />
       {/* hairline at the boundary so the lighter CTA navy reads separate from the darker footer */}
       <div className="absolute inset-x-0 bottom-0 h-px bg-white/10" />
-      <div className="container-x relative z-10 py-14 text-center md:py-28">
+      <div className="container-x relative z-10 py-10 text-center md:py-16">
         <ScrollReveal className="flex flex-col items-center">
         <h2 className="font-display text-3xl font-bold text-white md:text-[44px]">{t("title")}</h2>
         <p className="mt-4 max-w-xl text-white/70">{t("subtitle")}</p>

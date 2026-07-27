@@ -32,7 +32,7 @@ export default function CatalogPage() {
     { name: tn("catalog"), path: "/catalog" },
   ];
   return (
-    <div className="pb-16 md:pb-24 pt-24 md:pt-32">
+    <div className="pb-12 md:pb-16 pt-24 md:pt-28">
       <BreadcrumbJsonLd locale={locale} items={crumbs} />
       <div className="container-x mb-10">
         <ScrollReveal>

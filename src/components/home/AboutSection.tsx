@@ -110,7 +110,7 @@ export function AboutSection() {
 
       <div
         ref={ref}
-        className="container-x grid grid-cols-1 items-center gap-10 py-14 md:gap-14 md:py-24 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20"
+        className="container-x grid grid-cols-1 items-center gap-10 py-10 md:gap-14 md:py-16 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20"
         style={{ position: "relative" }}
       >
         {/* left: identity */}

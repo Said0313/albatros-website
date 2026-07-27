@@ -40,7 +40,7 @@ export default function ContactPage() {
   const locale = useLocale();
   const mapLang = YANDEX_LANG[locale] ?? "ru_RU";
   return (
-    <div className="pb-16 md:pb-24 pt-24 md:pt-32">
+    <div className="pb-12 md:pb-16 pt-24 md:pt-28">
       <div className="container-x">
         <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
@@ -49,7 +49,7 @@ export default function ContactPage() {
         </div>
         </ScrollReveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr]">
+        <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr]">
           <div className="space-y-5">
             {contacts.map((c) => {
               const value = c.valueKey ? t(c.valueKey) : c.value!;
@@ -75,7 +75,7 @@ export default function ContactPage() {
         </div>
 
         {/* Office location, Yandex Maps embed (public business POI, no personal data). */}
-        <div className="section-card mt-12 p-5 md:p-6">
+        <div className="section-card mt-8 p-5 md:p-6">
           <h2 className="mb-4 font-display text-xl font-bold text-text-primary">{t("mapTitle")}</h2>
           <div className="overflow-hidden rounded-2xl border border-bg-border">
             <iframe

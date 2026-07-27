@@ -129,7 +129,7 @@ export function EventsView({ events }: { events: CompanyEvent[] }) {
       </div>
 
       {/* Chronological list of event cards, capped 3 (mobile) / 9 (lg). */}
-      <div className="mt-10 pb-20">
+      <div className="mt-8 pb-16">
         {filtered.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-bg-border bg-bg-elevated py-16 text-center text-sm text-text-muted">
             {t("empty")}

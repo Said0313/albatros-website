@@ -27,7 +27,7 @@ export default function EventsPage() {
   // Hidden events are dropped server-side so they never reach the client payload.
   const visible = events.filter((e) => !e.hidden);
   return (
-    <div className="pt-24 md:pt-32">
+    <div className="pt-24 md:pt-28">
       <div className="container-x">
         <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">

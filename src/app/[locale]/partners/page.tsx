@@ -34,7 +34,7 @@ export default function PartnersPage() {
   const tc = useTranslations("common");
   const locale = useLocale();
   return (
-    <div className="pt-24 md:pt-32">
+    <div className="pt-24 md:pt-28">
       <div className="container-x">
         <ScrollReveal>
         <div className="section-card px-6 py-6 md:px-8">
@@ -47,7 +47,7 @@ export default function PartnersPage() {
 
         {/* Foreign partners (the brands we distribute). Logo on top, short text
             below with an "ещё" toggle, plus a link to the brand detail page. */}
-        <CappedList count={brands.length} className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <CappedList count={brands.length} className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {brands.map((b, i) => (
             <ScrollReveal key={b.id} delay={(i % 3) * 0.06}>
               <div
@@ -80,7 +80,7 @@ export default function PartnersPage() {
         </CappedList>
 
         {/* Local partners (formerly "clients"): logo + short info with a toggle. */}
-        <section id="clients" className="mt-16 scroll-mt-28 pb-20">
+        <section id="clients" className="mt-12 scroll-mt-28 pb-16">
           <ScrollReveal>
           <div className="section-card px-6 py-6 md:px-8">
             <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{tcl("pageTitle")}</h2>

@@ -22,7 +22,7 @@ export function CategoriesGrid() {
     .filter((d) => d.count > 0);
 
   return (
-    <section className="px-6 py-12 md:pb-24 md:pt-20" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+    <section className="px-6 py-8 md:pb-16 md:pt-14" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
       <div className="section-card" style={{ maxWidth: 1280, margin: "0 auto", padding: "40px 28px 44px" }}>
         <ScrollReveal>
         <div style={{ marginBottom: 48 }}>
