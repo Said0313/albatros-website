@@ -1156,5 +1156,20 @@
     "images": [
       "/images/events/aJzrJoxMHu.webp"
     ]
+  },
+  {
+    "id": "e2026",
+    "year": "2026",
+    "title": "Международный симпозиум по лабораторной медицине",
+    "date": "Май 2026",
+    "description": "23 мая 2026 года компания Albatros Health Care совместно с Snibe Diagnostic и International Federation of Clinical Chemistry and Laboratory Medicine (IFCC) провела Международный симпозиум по лабораторной медицине в Hyatt Regency Tashkent. Мероприятие объединило ведущих специалистов из Узбекистана, России и Египта для обсуждения современных подходов к лабораторной диагностике, иммунологии и автоматизации лабораторий. Участники познакомились с актуальными научными докладами, обменялись профессиональным опытом и обсудили инновационные решения, направленные на развитие лабораторной медицины и повышение качества диагностики пациентов.",
+    "titleUz": "Laboratoriya tibbiyoti bo'yicha xalqaro simpozium",
+    "descriptionUz": "2026-yil 23-may kuni Albatros Health Care kompaniyasi Snibe Diagnostic va Klinik kimyo va laboratoriya tibbiyoti xalqaro federatsiyasi (IFCC) bilan hamkorlikda Toshkentdagi Hyatt Regency mehmonxonasida Laboratoriya tibbiyoti bo'yicha xalqaro simpoziumni o'tkazdi. Tadbir O'zbekiston, Rossiya va Misrning yetakchi mutaxassislarini laboratoriya diagnostikasi, immunologiya va laboratoriyalarni avtomatlashtirish sohasidagi zamonaviy yondashuvlarni muhokama qilish uchun bir joyga to'pladi. Ishtirokchilar dolzarb ilmiy ma'ruzalar bilan tanishdilar, kasbiy tajriba almashdilar hamda laboratoriya tibbiyotini rivojlantirish va bemorlar diagnostikasi sifatini oshirishga qaratilgan innovatsion yechimlarni muhokama qildilar.",
+    "titleEn": "International Symposium on Laboratory Medicine",
+    "descriptionEn": "On 23 May 2026, Albatros Health Care, together with Snibe Diagnostic and the International Federation of Clinical Chemistry and Laboratory Medicine (IFCC), held the International Symposium on Laboratory Medicine at the Hyatt Regency Tashkent. The event brought together leading specialists from Uzbekistan, Russia and Egypt to discuss modern approaches to laboratory diagnostics, immunology and laboratory automation. Participants attended current scientific presentations, exchanged professional experience and discussed innovative solutions aimed at advancing laboratory medicine and improving the quality of patient diagnostics.",
+    "type": "symposium",
+    "images": [
+      "/images/events/e2026.jpg"
+    ]
   }
 ]
