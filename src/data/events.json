@@ -1171,5 +1171,20 @@
     "images": [
       "/images/events/e2026.jpg"
     ]
+  },
+  {
+    "id": "e2026-2",
+    "year": "2026",
+    "title": "Научно-практический семинар с профессором Русланом Якубцевичем",
+    "date": "Июнь 2026",
+    "description": "Со 2 по 5 июня 2026 года компания Albatros Health Care организовала серию научно-практических семинаров с участием профессора Руслана Якубцевича (Беларусь). Мероприятия прошли в ведущих клиниках и медицинских центрах Узбекистана и были посвящены современным подходам к антибиотикотерапии, интенсивной терапии и менеджменту крови. Семинары объединили врачей различных специальностей, предоставив возможность обменяться опытом, обсудить актуальные клинические вопросы и ознакомиться с международными практиками. Компания Albatros Health Care продолжает содействовать развитию медицинского образования и внедрению современных знаний в систему здравоохранения Узбекистана.",
+    "titleUz": "Professor Ruslan Yakubtsevich ishtirokidagi ilmiy-amaliy seminar",
+    "descriptionUz": "2026-yil 2-iyundan 5-iyunga qadar Albatros Health Care kompaniyasi professor Ruslan Yakubtsevich (Belarus) ishtirokida ilmiy-amaliy seminarlar turkumini tashkil etdi. Tadbirlar O'zbekistonning yetakchi klinikalari va tibbiyot markazlarida bo'lib o'tdi hamda antibiotikoterapiya, intensiv terapiya va qon menejmentiga zamonaviy yondashuvlarga bag'ishlandi. Seminarlar turli mutaxassislikdagi shifokorlarni birlashtirib, tajriba almashish, dolzarb klinik masalalarni muhokama qilish va xalqaro amaliyotlar bilan tanishish imkonini berdi. Albatros Health Care kompaniyasi tibbiy ta'limni rivojlantirish va O'zbekiston sog'liqni saqlash tizimiga zamonaviy bilimlarni joriy etishga ko'maklashishni davom ettirmoqda.",
+    "titleEn": "Scientific and Practical Seminar with Professor Ruslan Yakubtsevich",
+    "descriptionEn": "From 2 to 5 June 2026, Albatros Health Care organised a series of scientific and practical seminars featuring Professor Ruslan Yakubtsevich (Belarus). The events were held at leading clinics and medical centres across Uzbekistan and focused on modern approaches to antibiotic therapy, intensive care and patient blood management. The seminars brought together physicians from various specialities, offering an opportunity to exchange experience, discuss current clinical issues and learn about international practices. Albatros Health Care continues to support the development of medical education and the introduction of modern knowledge into Uzbekistan's healthcare system.",
+    "type": "seminar",
+    "images": [
+      "/images/events/eevent.jpg"
+    ]
   }
 ]
