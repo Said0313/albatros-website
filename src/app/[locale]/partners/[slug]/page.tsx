@@ -10,6 +10,7 @@ import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
 import { ProductCard } from "@/components/catalog/ProductCard";
+import { ReagentCard } from "@/components/catalog/ReagentCard";
 
 // Partner -> product.brand string. All partners match the product `brand` field by
 // name except Thermo Fisher (product brand is "Thermo Fisher", partner is Phadia).
@@ -109,9 +110,16 @@ export default function PartnerDetailPage({ params }: { params: { slug: string; 
           <h2 className="mb-6 font-display text-2xl font-bold text-text-primary">{t("detailProducts")}</h2>
           {items.length > 0 ? (
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {items.map((p) => (
-                <ProductCard key={p.slug} product={p} />
-              ))}
+              {items.map((p) =>
+                // Imageless reagents/consumables/controls render the clean
+                // text-only ReagentCard (no icon-placeholder image area that
+                // just repeated the name and brand), matching the catalog.
+                p.imageless ? (
+                  <ReagentCard key={p.slug} product={p} />
+                ) : (
+                  <ProductCard key={p.slug} product={p} />
+                )
+              )}
             </div>
           ) : (
             <p className="text-text-secondary">{t("noProducts")}</p>
