@@ -295,66 +295,6 @@
     "detailedDescription": "Преимущества анализатора Maglumi 800:\n- Удобное и исчерпывающее меню более 120 параметров.\n- Один и тот же набор реагентов для всех приборов серии, независимо от модели.\n- Интегрированный набор реагентов включает все материалы для внутреннего контроля и калибровки.\n- В системе используется особо устойчивая к воздействию кислот и щелочей специальная метка АВЕI. В отличие от меток других производителей она имеет неферментную природу и намного стабильней, чем ферментные метки.\n- Разделение магнитными наношариками позволяет уменьшить время реакции; повысить чувствительность - отделение комплексов антиген‑антитело от несвязанных реагентов происходит значительно эффективнее из-за анализа большего количество частиц, что позволяет получить сильный сигнал даже при низких концентрациях антигена; повышение точности, благодаря абсорбции наношариками антигенов или антител в ходе химической реакции.\nОсновные характеристики\n- Флэш-хемилюминесценция без привлечения ферментов, стабильность реагентов в течение длительного времени.\n- ABEI метка, стабильна в кислотном и щелочном буферах.\n- Время до первого результата - 17 минут.\n- 24-часовой режим ожидания.\n- Возможность выполнения тестов \"по требованию\" и STAT-функция.\n- Непрерывная загрузка, доступно загрузки по требованию.\n- Режим случайного или серийного доступа к реагентам.\n- Автоматическая нумерация анализатором. Связь с системой LIS через COM-порт или сетевую карту. Управление анализом со стороны LIS.\n- Комплексный набор реагентов (с калибратором), готов к использованию, не требует предварительной подготовки.\n- RFID-метка содержит всю информацию о реагенте и калибровочную кривую.\n- 2-точечная калибровка для коррекции калибровочной кривой.\n- Калибровочная стабильность - до 4 недель.\n- Выявление сгустков. Функция определения уровня жидкого реагента.\n- Опциональный коэффициент разведения образца. Авторазведение образцов с высокой концентрацией.\n- Инкубация при постоянной температуре 37 ° С. Температура проведения анализа 15-30 ° С.\nТехнические характеристики:\n- Пропускная способность: 180 проб в час\n- Количество проб на борту: 40\n- Количество наборов реагентов на борту: 9\n- Загрузка кювет до 40 штативов по 240 анализов\n- Рекомендуемое количество пациентов в день: 30-50\nГабариты, вес и пр.\n102х72х56 см\n73 кг\n110-230, 50/60 ГЦ"
   },
   {
-    "id": "maglumi-2000",
-    "slug": "maglumi-2000",
-    "name": "Maglumi 2000",
-    "category": "ИХЛА",
-    "brand": "SNIBE",
-    "shortDescription": "Высокопроизводительный ИХЛА-анализатор для средних и крупных лабораторий.",
-    "fullDescription": "Maglumi 2000, высокопроизводительный иммунохемилюминесцентный анализатор SNIBE для средних и крупных лабораторий. Непрерывная загрузка проб и реагентов, флэш-хемилюминесценция на ABEI-метках и магнитных микрочастицах.",
-    "specifications": [
-      {
-        "label": "Производительность",
-        "value": "до 180 тестов/час"
-      },
-      {
-        "label": "Метод",
-        "value": "Флэш-ХЛ (ABEI), магнитные микрочастицы"
-      },
-      {
-        "label": "Сегмент",
-        "value": "Средние и крупные лаборатории"
-      }
-    ],
-    "images": [],
-    "featured": false,
-    "isNew": false,
-    "shortDescriptionUz": "Oʻrta va yirik laboratoriyalar uchun yuqori unumdor IXLA-analizator.",
-    "shortDescriptionEn": "High-throughput CLIA analyzer for medium and large laboratories.",
-    "fullDescriptionUz": "Maglumi 2000, oʻrta va yirik laboratoriyalar uchun SNIBE yuqori unumdor immunoxemilyuminessent analizatori. Namuna va reagentlarni uzluksiz yuklash, ABEI belgilari va magnit mikrozarrachalarida flesh-xemilyuminessensiya.",
-    "fullDescriptionEn": "Maglumi 2000 is SNIBE's high-throughput chemiluminescence immunoassay analyzer for medium and large laboratories. Continuous sample and reagent loading, flash chemiluminescence on ABEI labels and magnetic microparticles."
-  },
-  {
-    "id": "maglumi-2000-plus",
-    "slug": "maglumi-2000-plus",
-    "name": "Maglumi 2000 Plus",
-    "category": "ИХЛА",
-    "brand": "SNIBE",
-    "shortDescription": "Высокопроизводительный ИХЛА-анализатор для крупных лабораторий.",
-    "fullDescription": "Maglumi 2000 Plus, усовершенствованный высокопроизводительный иммунохемилюминесцентный анализатор SNIBE с увеличенной пропускной способностью для крупных лабораторий и потоковых исследований. Флэш-хемилюминесцентная технология на основе ABEI-меток и магнитных микрочастиц.",
-    "specifications": [
-      {
-        "label": "Производительность",
-        "value": "до 280 тестов/час"
-      },
-      {
-        "label": "Метод",
-        "value": "Флэш-ХЛ (ABEI), магнитные микрочастицы"
-      },
-      {
-        "label": "Сегмент",
-        "value": "Крупные лаборатории"
-      }
-    ],
-    "images": [],
-    "featured": false,
-    "isNew": false,
-    "shortDescriptionUz": "Yirik laboratoriyalar uchun yuqori unumdor IXLA-analizator.",
-    "shortDescriptionEn": "High-throughput CLIA analyzer for large laboratories.",
-    "fullDescriptionUz": "Maglumi 2000 Plus, yirik laboratoriyalar va oqimli tadqiqotlar uchun kengaytirilgan oʻtkazuvchanlikka ega SNIBE takomillashtirilgan yuqori unumdor immunoxemilyuminessent analizatori. ABEI belgilari va magnit mikrozarrachalariga asoslangan flesh-xemilyuminessent texnologiya.",
-    "fullDescriptionEn": "Maglumi 2000 Plus is SNIBE's upgraded high-throughput chemiluminescence immunoassay analyzer with increased throughput for large laboratories and high-volume testing. Flash chemiluminescence technology based on ABEI labels and magnetic microparticles."
-  },
-  {
     "id": "biossays-240-plus",
     "slug": "biossays-240-plus",
     "name": "Biossays 240 Plus",
@@ -431,6 +371,96 @@
     "fullDescriptionUz": "Biossays C10, SNIBE kompaniyasining kuchli va intellektual biokimyoviy tizimi. Biokimyo boʻyicha soatiga 2000 testgacha unumdorlik, qoʻshimcha elektrolit moduli soatiga 1000 test. Qopqoqlarni avtomatik olib tashlash uchun decapper-modulini qoʻshish imkoniyati.",
     "fullDescriptionEn": "Biossays C10 is SNIBE's powerful, intelligent biochemistry system. Biochemistry throughput of up to 2000 tests/hour plus an electrolyte module at 1000 tests/hour. A decapper module can be added for automatic cap removal.",
     "detailedDescription": "Производительность\nBiossays C10 обеспечивает высокую скорость выполнения исследований:\nдо 2000 тестов/час биохимический модуль\nдо 1000 тестов/час электролитный модуль\nТакая производительность позволяет эффективно справляться с большими потоками образцов и значительно сокращать время получения результатов.\nАвтоматизация и вместимость\nСистема оснащена увеличенной рабочей зоной, что делает её удобной для лабораторий с высокой нагрузкой:\nдо 300 позиций для образцов\n100 + 100 позиций для реагентов\nЭто обеспечивает непрерывную работу без частой перезагрузки и позволяет одновременно выполнять большое количество исследований.\nГибкость системы\nBiossays C10 поддерживает расширение функциональности за счёт подключения дополнительных модулей, включая decapper-модуль для автоматического открытия пробирок. Это снижает ручной труд и повышает биобезопасность лаборатории.\nИтог\nBiossays C10 это мощное и гибкое решение для биохимических лабораторий, которое сочетает высокую скорость, автоматизацию и удобство работы. Система позволяет оптимизировать лабораторные процессы, повысить производительность и обеспечить стабильное качество результатов."
+  },
+  {
+    "id": "biossays-c8",
+    "slug": "biossays-c8",
+    "name": "Biossays C8",
+    "category": "Биохимия",
+    "brand": "SNIBE",
+    "shortDescription": "Автоматический биохимический анализатор с модульной масштабируемостью для полной автоматизации лаборатории.",
+    "fullDescription": "Biossays C8, автоматический биохимический анализатор SNIBE с модульной архитектурой. Производительность до 1600 тестов/час на один модуль и до 6400 тестов/час при объединении четырёх модулей. Технология микрозабора обеспечивает точность при объёме образца от 1,5 мкл; постоянные кварцевые кюветы не требуют замены. Возможна интеграция с MAGLUMI X8 (Biolumi CX8) и лабораторной системой автоматизации (TLA/LAS).",
+    "specifications": [
+      {
+        "label": "Производительность",
+        "value": "1600 тестов/час (один модуль); до 6400 тестов/час (четыре модуля)"
+      },
+      {
+        "label": "Позиции для образцов",
+        "value": "300"
+      },
+      {
+        "label": "Типы образцов",
+        "value": "Сыворотка, плазма, моча, СМЖ"
+      },
+      {
+        "label": "Объём образца",
+        "value": "1,5 - 25 мкл (шаг 0,1 мкл)"
+      },
+      {
+        "label": "Реагентные отсеки",
+        "value": "72 позиции для R1 и 72 для R2"
+      },
+      {
+        "label": "Температура реагентов",
+        "value": "Работа 8-12°C, хранение 2-8°C"
+      },
+      {
+        "label": "Реакционные кюветы",
+        "value": "362 (постоянные кварцевые)"
+      },
+      {
+        "label": "Время анализа",
+        "value": "10 минут; 22 минуты"
+      },
+      {
+        "label": "Температура реакции",
+        "value": "37,0°C ± 0,2°C"
+      },
+      {
+        "label": "Объём реакции",
+        "value": "80 - 250 мкл"
+      },
+      {
+        "label": "Длины волн",
+        "value": "13 фиксированных (340-800 нм)"
+      },
+      {
+        "label": "Источник света",
+        "value": "Галогенная лампа 12 В, 100 Вт"
+      },
+      {
+        "label": "Габариты",
+        "value": "133×118×135 см, 560 кг (биохимический модуль)"
+      },
+      {
+        "label": "Штрих-коды",
+        "value": "Code128, Code39, Code93, Codabar, 2/5 Interleaved"
+      },
+      {
+        "label": "Контроль качества",
+        "value": "Batch QC, Month QC"
+      },
+      {
+        "label": "Интеграция",
+        "value": "MAGLUMI X8 (Biolumi CX8), TLA/LAS"
+      },
+      {
+        "label": "Опциональные модули",
+        "value": "ISE (300 тестов/час), декаппер (по заказу)"
+      }
+    ],
+    "images": [
+      "/images/products/biossays-c8.png"
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescriptionUz": "Автоматический биохимический анализатор с модульной масштабируемостью для полной автоматизации лаборатории. TODO(uz)",
+    "shortDescriptionEn": "Automatic biochemistry analyzer with modular scalability for full laboratory automation.",
+    "fullDescriptionUz": "Biossays C8, автоматический биохимический анализатор SNIBE с модульной архитектурой. Производительность до 1600 тестов/час на один модуль и до 6400 тестов/час при объединении четырёх модулей. Технология микрозабора обеспечивает точность при объёме образца от 1,5 мкл; постоянные кварцевые кюветы не требуют замены. Возможна интеграция с MAGLUMI X8 (Biolumi CX8) и лабораторной системой автоматизации (TLA/LAS). TODO(uz)",
+    "fullDescriptionEn": "Biossays C8 is a SNIBE automatic biochemistry analyzer with a modular architecture. Throughput reaches 1600 tests/hour per module and up to 6400 tests/hour with four modules combined. Micro-sampling technology ensures accuracy from a 1.5 µL sample volume, and permanent quartz cuvettes are maintenance-free. It can integrate with MAGLUMI X8 (Biolumi CX8) and a Laboratory Automation System (TLA/LAS).",
+    "detailedDescription": "Biossays C8 объединяет высокую производительность и модульную масштабируемость: лаборатория начинает с одного модуля и расширяется до четырёх по мере роста нагрузки. 10-ступенчатая технология промывки и независимый механизм перемешивания снижают перенос и обеспечивают тщательную очистку. Точный контроль температуры и напряжения источника света вместе с вогнутой голографической решёткой обеспечивают высокое разрешение и низкий уровень рассеянного света. Опционально доступны модуль ISE и модуль-декаппер (конфигурация по заказу).",
+    "detailedDescriptionUz": "Biossays C8 объединяет высокую производительность и модульную масштабируемость: лаборатория начинает с одного модуля и расширяется до четырёх по мере роста нагрузки. 10-ступенчатая технология промывки и независимый механизм перемешивания снижают перенос и обеспечивают тщательную очистку. Точный контроль температуры и напряжения источника света вместе с вогнутой голографической решёткой обеспечивают высокое разрешение и низкий уровень рассеянного света. Опционально доступны модуль ISE и модуль-декаппер (конфигурация по заказу). TODO(uz)"
   },
   {
     "id": "biolumi-cx-solution",
@@ -743,7 +773,9 @@
         "value": "20 мкл"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/df56-vet.png"
+    ],
     "featured": false,
     "isNew": true,
     "shortDescriptionUz": "6 tur hayvon uchun veterinariya 6-Diff analizatori.",
@@ -918,7 +950,9 @@
         "value": "да"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/urit-us-2000c.png"
+    ],
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "AI bilan modulli avtomatlashtirilgan siydik tahlili stansiyasi.",
@@ -1325,7 +1359,9 @@
         "value": "ISO, EP, FDA, USP, AOAC"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/condalab-media.png"
+    ],
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "1960 yildan ispan ishlab chiqaruvchisining tayyor oziq muhitlari.",
@@ -1619,7 +1655,9 @@
         "value": "1991"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/riqas.png"
+    ],
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Sifatni tashqi baholashning eng yirik xalqaro sxemasi.",
@@ -1675,7 +1713,9 @@
         "value": "инфекционные заболевания"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/qcmd.png"
+    ],
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "Yuqumli kasalliklarni molekulyar tekshirish boʻyicha tashqi sifat baholash.",
@@ -1702,7 +1742,9 @@
         "value": "500+ вирусных, бактериальных, грибковых"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/qnostics.png"
+    ],
     "featured": false,
     "isNew": false,
     "shortDescriptionUz": "500+ nishon uchun molekulyar nazorat vositalari.",
@@ -1817,6 +1859,10 @@
       {
         "label": "Класс",
         "value": "высокая производительность"
+      },
+      {
+        "label": "Габариты",
+        "value": "158,8 × 93,3 × 86,4 см (В×Ш×Г)"
       }
     ],
     "images": [
@@ -1846,9 +1892,15 @@
       {
         "label": "Реагенты",
         "value": "лиофилизированные"
+      },
+      {
+        "label": "Габариты",
+        "value": "158,8 × 93,3 × 86,4 см (В×Ш×Г)"
       }
     ],
-    "images": [],
+    "images": [
+      "/images/products/novaseq-x.png"
+    ],
     "featured": true,
     "isNew": true,
     "shortDescriptionUz": "Liofillangan reagentli flagman sekvenator.",
@@ -2653,5 +2705,71 @@
     "shortDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls.",
     "fullDescriptionUz": "Siydik analizatorlari uchun nazoratlar va kalibratorlar: rang, solishtirma ogʻirlik va loyqalik nazoratlari.",
     "fullDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls."
+  },
+  {
+    "id": "truscreen",
+    "slug": "truscreen",
+    "name": "TruScreen ULTRA",
+    "category": "Скрининг",
+    "brand": "TruScreen",
+    "shortDescription": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории.",
+    "fullDescription": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "Оптический (4 светодиода, 3 длины волны) + электрический (импедансная спектроскопия)"
+      },
+      {
+        "label": "Измерений в секунду",
+        "value": "14"
+      },
+      {
+        "label": "Точечных измерений",
+        "value": "~20 на поверхности шейки матки"
+      },
+      {
+        "label": "Время результата",
+        "value": "~10 минут"
+      },
+      {
+        "label": "Результат",
+        "value": "«Норма» или «Аномалия» (ИИ-алгоритм)"
+      },
+      {
+        "label": "Датчик",
+        "value": "Одноразовый (SUS)"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "87,5% (Chen et al., n=15 661)"
+      },
+      {
+        "label": "Специфичность",
+        "value": "88,4%"
+      },
+      {
+        "label": "Клинические исследования",
+        "value": "42 000+ пациенток"
+      },
+      {
+        "label": "Регуляторные одобрения",
+        "value": "CE, MHRA, NMPA, SFDA, TGA, Росздравнадзор"
+      },
+      {
+        "label": "Производитель",
+        "value": "TruScreen Group Ltd (Австралия)"
+      }
+    ],
+    "images": [
+      "/images/products/truscreen.png"
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescriptionUz": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории. TODO(uz)",
+    "shortDescriptionEn": "Portable real-time cervical cancer screening device delivering a result in 10 minutes with no laboratory.",
+    "fullDescriptionUz": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки. TODO(uz)",
+    "fullDescriptionEn": "TruScreen ULTRA is a next-generation medical device for real-time cervical cancer screening. It combines an optical method (4 LEDs, 3 wavelengths, 14 measurements per second) and an electrical method (impedance spectroscopy) with an AI algorithm. The clinician takes about 20 point measurements with a single-use sensor, and a \"Normal\" or \"Abnormal\" result is delivered instantly, with no laboratory and no patient discomfort.",
+    "detailedDescription": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом.",
+    "detailedDescriptionUz": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом. TODO(uz)"
   }
 ]

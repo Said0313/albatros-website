@@ -22,6 +22,7 @@ export const CATEGORY_UZ: Record<string, string> = {
   "Функциональная диагностика": "Funksional diagnostika",
   "Биодеконтаминация": "Biodekontaminatsiya",
   "Клиническая диагностика": "Klinik diagnostika",
+  "Скрининг": "Скрининг TODO(uz)",
   // General directions (top level of the two-level taxonomy)
   "Медицинское оборудование": "Laboratoriya uskunalari",
   "Реагенты": "Reagentlar",
@@ -58,6 +59,7 @@ export const CATEGORY_EN: Record<string, string> = {
   "Функциональная диагностика": "Functional Diagnostics",
   "Биодеконтаминация": "Biodecontamination",
   "Клиническая диагностика": "Clinical Diagnostics",
+  "Скрининг": "Screening",
   // General directions (top level of the two-level taxonomy)
   "Медицинское оборудование": "Medical Equipment",
   "Реагенты": "Reagents",

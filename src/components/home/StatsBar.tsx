@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const stats = [
   { value: 2017, start: 2010, key: "founded", plain: true },
-  { value: 12, start: 0, key: "brands" },
+  { value: 13, start: 0, key: "brands" },
   { value: 900, start: 0, suffix: "+", key: "clients" },
   { static: "24/7", key: "service" },
 ];

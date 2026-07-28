@@ -1,7 +1,7 @@
 import {
   FlaskConical, Beaker, Droplets, Microscope, Bug, Dna, Wind, Activity,
   BarChart3, TestTube2, Stethoscope, ShieldCheck, BadgeCheck, Workflow,
-  HeartPulse, AlertTriangle, type LucideIcon,
+  HeartPulse, AlertTriangle, ScanLine, type LucideIcon,
 } from "lucide-react";
 
 const byCategory: Record<string, LucideIcon> = {
@@ -23,6 +23,7 @@ const byCategory: Record<string, LucideIcon> = {
   "Иммуногематология": HeartPulse,
   "Токсикология": AlertTriangle,
   "Клиническая диагностика": FlaskConical,
+  "Скрининг": ScanLine,
 };
 
 export function categoryIcon(category?: string): LucideIcon {

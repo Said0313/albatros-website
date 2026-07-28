@@ -59,6 +59,7 @@ export const directions: Direction[] = [
   { name: "Автоматизированная лаборатория", brand: "SNIBE · SATLARS", img: "/images/products/satlars-t8.png" },
   { name: "Иммуногематология", brand: "BLOZER", img: "/images/products/blozer-200.png" },
   { name: "Токсикология", brand: "Randox · Evidence", img: "/images/products/evidence-multistat.png" },
+  { name: "Скрининг", brand: "TruScreen", img: "/images/products/truscreen.png" },
 ];
 
 export function getProduct(slug: string): Product | undefined {
