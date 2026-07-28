@@ -2277,7 +2277,7 @@
   {
     "id": "reagenty-maglumi-ihla",
     "slug": "reagenty-maglumi-ihla",
-    "name": "Реагенты MAGLUMI (ИХЛА)",
+    "name": "Реагенты MAGLUMI",
     "category": "ИХЛА",
     "brand": "SNIBE",
     "shortDescription": "Наборы реагентов MAGLUMI для иммунохемилюминесцентного анализа: гормоны, онкомаркеры, инфекции, кардиомаркеры, аутоиммунные и другие тесты.",
@@ -2363,7 +2363,7 @@
   {
     "id": "reagenty-biohimiya-snibe",
     "slug": "reagenty-biohimiya-snibe",
-    "name": "Биохимические реагенты SNIBE (Биохимия)",
+    "name": "Биохимические реагенты SNIBE",
     "category": "Биохимия",
     "brand": "SNIBE",
     "shortDescription": "Биохимические реагенты для анализаторов открытого типа: липиды, функции печени и почек, электролиты, ферменты и специфические белки.",
@@ -2426,7 +2426,7 @@
   {
     "id": "reagenty-dymind-gematologiya",
     "slug": "reagenty-dymind-gematologiya",
-    "name": "Реагенты для гематологии Dymind (Гематология)",
+    "name": "Реагенты для гематологии Dymind",
     "category": "Гематология",
     "brand": "Dymind",
     "shortDescription": "Дилюенты, лизирующие и промывочные реагенты, наборы для СРБ и гликированного гемоглобина для гематологических анализаторов Dymind.",
@@ -2458,7 +2458,7 @@
   {
     "id": "reagenty-werfen-gemostaz",
     "slug": "reagenty-werfen-gemostaz",
-    "name": "Реагенты для гемостаза Werfen (Гемостаз)",
+    "name": "Реагенты для гемостаза Werfen",
     "category": "Гемостаз",
     "brand": "Werfen",
     "shortDescription": "Реагенты для коагулологии: ПВ/МНО, АЧТВ, фибриноген, антитромбин, D-димер, протеины C и S, факторы свёртывания.",
@@ -2501,7 +2501,7 @@
   {
     "id": "reagenty-bd-phoenix-mikrobiologiya",
     "slug": "reagenty-bd-phoenix-mikrobiologiya",
-    "name": "Реагенты для микробиологии BD Phoenix (Микробиология)",
+    "name": "Реагенты для микробиологии BD Phoenix",
     "category": "Микробиология",
     "brand": "BD",
     "shortDescription": "Панели BD Phoenix для идентификации микроорганизмов и определения чувствительности к антибиотикам, сопутствующие реагенты и растворы.",
@@ -2530,7 +2530,7 @@
   {
     "id": "reagenty-urit-analiz-mochi",
     "slug": "reagenty-urit-analiz-mochi",
-    "name": "Реагенты для анализа мочи URIT (Клинический анализ)",
+    "name": "Реагенты для анализа мочи URIT",
     "category": "Клинический анализ",
     "brand": "URIT",
     "shortDescription": "Тест-полоски, пробирки и сопутствующие реагенты для анализаторов мочи URIT.",
