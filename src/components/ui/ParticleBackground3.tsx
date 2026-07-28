@@ -21,6 +21,7 @@ export interface ParticleBackgroundProps {
   onRevealReady?: (fast: boolean) => void; // fire hero content reveal
   onChoreographyStart?: () => void; // hold released, logo scan-print begins
   intro?: boolean; // false = start at the resting constellation (no mark assembly)
+  navKey?: string; // current route key (pathname); changes when a navigation commits
 }
 
 interface Dot {
@@ -65,12 +66,29 @@ export default function ParticleBackground({
   onRevealReady,
   onChoreographyStart,
   intro = true,
+  navKey,
 }: ParticleBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  // Timestamp until which the field yields the main thread. Set on a click that
+  // may start a navigation and cleared when the new route commits (see the
+  // navKey effect). A ref so both the rAF loop and that effect can touch it.
+  const navPauseUntilRef = useRef(0);
   const revealRef = useRef(onRevealReady);
   revealRef.current = onRevealReady;
   const startRef = useRef(onChoreographyStart);
   startRef.current = onChoreographyStart;
+
+  // When the route commits (navKey changes), the navigation that a click paused
+  // for is done. Resume the field two frames later so the new route has painted
+  // first. Skips the very first mount (nothing was navigating).
+  const firstNav = useRef(true);
+  useEffect(() => {
+    if (firstNav.current) { firstNav.current = false; return; }
+    let a = requestAnimationFrame(() => {
+      a = requestAnimationFrame(() => { navPauseUntilRef.current = 0; });
+    });
+    return () => cancelAnimationFrame(a);
+  }, [navKey]);
 
   useEffect(() => {
     const cv = canvasRef.current;
@@ -83,10 +101,6 @@ export default function ParticleBackground({
     let ps: Dot[] = [];
     // adaptive quality: heuristic start, one-way downgrade on sustained slow frames
     let quality = 1, ftAcc = 0, ftN = 0;
-    // When a click happens the field yields the main thread until this time, so
-    // a click that starts a client navigation is not starved by the per-frame
-    // draw + link work. See onClick / step().
-    let navPauseUntil = 0;
     const hc = navigator.hardwareConcurrency || 8;
     const dm = (navigator as any).deviceMemory || 8;
     if (hc <= 4 || dm <= 4) quality = 0.7;
@@ -175,12 +189,14 @@ export default function ParticleBackground({
     };
 
     const step = (now: number) => {
-      // Yield the main thread for a short window after a click so the browser
-      // can fetch and render the navigation the click may have started. The
-      // A/B test proved the per-frame draw + link computation otherwise starves
-      // React's render of the new route, so the first click during the intro
-      // registered but never completed (the "navbar needs several clicks" bug).
-      if (now < navPauseUntil) { last = now; raf = requestAnimationFrame(step); return; }
+      // Yield the main thread while a navigation the click may have started is in
+      // flight. The A/B test proved the per-frame draw + link computation
+      // otherwise starves React's render of the new route, so the click
+      // registered but the route never committed (the "navbar needs several
+      // clicks" bug). The pause is cleared the moment the new route commits (the
+      // navKey effect), so it lasts exactly as long as the navigation, not a
+      // fixed guess that is too short for heavy pages or slow devices.
+      if (now < navPauseUntilRef.current) { last = now; raf = requestAnimationFrame(step); return; }
       const rawDt = Math.min(0.05, (now - (last || now)) / 1000);
       const dt = rawDt * speed;
       last = now;
@@ -394,12 +410,19 @@ export default function ParticleBackground({
     // these clicks; a click on empty background still skips).
     const INTERACTIVE = "a,button,input,textarea,select,label,summary,[role='button'],[role='link'],[onclick]";
     const onClick = (e: MouseEvent) => {
-      // Any click may start a navigation: free the main thread for ~600ms so the
-      // route change is not starved by the field (imperceptible for an ambient
-      // background, and the intro's reveal still fires from skip() below).
-      navPauseUntil = performance.now() + 600;
       const t = e.target as Element | null;
-      if (t && typeof t.closest === "function" && t.closest(INTERACTIVE)) return;
+      const interactive = t && typeof t.closest === "function" && t.closest(INTERACTIVE);
+      if (interactive) {
+        // A click on a link/button/control may start a client navigation (or a
+        // heavy re-render): pause the field so that work is not starved. The
+        // navKey effect clears this the instant the new route commits; the cap
+        // is only a backstop for clicks that turn out not to navigate. Not
+        // calling skip() here avoids the reveal state update racing the click's
+        // own navigation, which was the original multi-click bug.
+        navPauseUntilRef.current = performance.now() + 2500;
+        return;
+      }
+      // A click on empty background is an intent to skip the intro.
       skip();
     };
     const onResize = () => { W = window.innerWidth; H = window.innerHeight; sizeCanvas(); build(); };

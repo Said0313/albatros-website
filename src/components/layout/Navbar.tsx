@@ -35,6 +35,10 @@ export function Navbar() {
     <Link
       key={l.href}
       href={l.href}
+      // Force a full-payload prefetch. The navbar is always in the viewport, so
+      // every route is fetched on load and a click only has to render, not wait
+      // on the network. Pairs with the field pausing for the render.
+      prefetch
       className={cn(
         "nav-underline relative whitespace-nowrap text-[15px] transition-colors",
         pathname === l.href ? "active text-text-primary" : "text-text-secondary hover:text-text-primary"
