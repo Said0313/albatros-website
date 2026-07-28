@@ -8,6 +8,7 @@ import { CalendarDays, Search, ArrowRight } from "lucide-react";
 import type { CompanyEvent } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { eventTitle, eventDescription, eventDate } from "@/data/i18n";
+import { compareEvents } from "@/lib/events";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { IncrementalList } from "@/components/ui/IncrementalList";
 import { cn } from "@/lib/utils";
@@ -22,24 +23,6 @@ const KNOWN_TYPES = [
   "registration",
   "other",
 ] as const;
-
-const MONTH_INDEX: Record<string, number> = {
-  "Январь": 1, "Февраль": 2, "Март": 3, "Апрель": 4, "Май": 5, "Июнь": 6,
-  "Июль": 7, "Август": 8, "Сентябрь": 9, "Октябрь": 10, "Ноябрь": 11, "Декабрь": 12,
-};
-
-function sortKey(e: CompanyEvent): number {
-  const year = parseInt(e.year, 10) || 0;
-  const month = MONTH_INDEX[e.date.split(" ")[0]] || 0;
-  return year * 100 + month;
-}
-
-function compareEvents(a: CompanyEvent, b: CompanyEvent): number {
-  const pa = a.priority ?? Number.POSITIVE_INFINITY;
-  const pb = b.priority ?? Number.POSITIVE_INFINITY;
-  if (pa !== pb) return pa - pb;
-  return sortKey(b) - sortKey(a);
-}
 
 function excerpt(text: string | undefined, max = 180): string {
   if (!text) return "";

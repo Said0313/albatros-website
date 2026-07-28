@@ -2,6 +2,7 @@
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { events } from "@/lib/catalog";
+import { sortedEvents } from "@/lib/events";
 import { eventTitle, eventDate } from "@/data/i18n";
 import { Link } from "@/i18n/navigation";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -15,9 +16,10 @@ export function EventsTimeline() {
   const t = useTranslations("events");
   const tc = useTranslations("common");
   const locale = useLocale();
-  // Preview capped to 3 (mobile) / 9 (lg) via the shared capped-collapsed CSS;
-  // no in-place expand here, the button below links to the full events page.
-  const recent = events.filter((e) => !e.hidden).slice(0, 9);
+  // Newest first (sorted, not array order) so events added via the admin panel
+  // surface automatically. Preview capped to 3 (mobile) / 9 (lg) via the shared
+  // capped-collapsed CSS; the button below links to the full events page.
+  const recent = sortedEvents(events).slice(0, 9);
   return (
     <section className="section-pad">
       <div className="container-x">
