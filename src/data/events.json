@@ -1186,5 +1186,20 @@
     "images": [
       "/images/events/e2026-2.jpg"
     ]
+  },
+  {
+    "id": "e2026-3",
+    "year": "2026",
+    "title": "Научно-практический семинар по внедрению TruScreen Ultra в Узбекистане",
+    "date": "Июль 2026",
+    "description": "Компания Albatros Health Care организовала серию научно-практических семинаров, посвященных внедрению инновационной технологии TruScreen Ultra для скрининга рака шейки матки. Международный эксперт Valeria F. Negrini (Италия) представила возможности системы, основанной на искусственном интеллекте, а также поделилась мировым опытом применения технологии в клинической практике. Врачи и специалисты ознакомились с современными подходами к ранней диагностике, принципами работы TruScreen Ultra и перспективами внедрения высокотехнологичного скрининга в систему здравоохранения Узбекистана.",
+    "titleUz": "TruScreen Ultra tizimini O'zbekistonda joriy etishga bag'ishlangan ilmiy-amaliy seminar",
+    "descriptionUz": "Albatros Health Care kompaniyasi bachadon bo'yni saratonini skrining qilishda innovatsion TruScreen Ultra texnologiyasini joriy etishga bag'ishlangan ilmiy-amaliy seminarlar turkumini tashkil etdi. Xalqaro ekspert Valeria F. Negrini (Italiya) sun'iy intellektga asoslangan tizimning imkoniyatlarini taqdim etdi hamda texnologiyani klinik amaliyotda qo'llash bo'yicha jahon tajribasi bilan o'rtoqlashdi. Shifokorlar va mutaxassislar erta tashxis qo'yishning zamonaviy yondashuvlari, TruScreen Ultra ish tamoyillari va yuqori texnologiyali skriningni O'zbekiston sog'liqni saqlash tizimiga joriy etish istiqbollari bilan tanishdilar.",
+    "titleEn": "Scientific and Practical Seminar on the Introduction of TruScreen Ultra in Uzbekistan",
+    "descriptionEn": "Albatros Health Care organised a series of scientific and practical seminars dedicated to the introduction of TruScreen Ultra, an innovative technology for cervical cancer screening. International expert Valeria F. Negrini (Italy) presented the capabilities of this AI-based system and shared global experience in applying the technology in clinical practice. Physicians and specialists learned about modern approaches to early diagnosis, the operating principles of TruScreen Ultra and the prospects for introducing high-technology screening into Uzbekistan's healthcare system.",
+    "type": "seminar",
+    "images": [
+      "/images/events/e2026-3.jpg"
+    ]
   }
 ]
