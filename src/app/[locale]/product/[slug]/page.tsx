@@ -45,8 +45,6 @@ export default function ProductPage({ params }: { params: { slug: string; locale
   const t = useTranslations("product");
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const tn = useTranslations("nav");
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const tc = useTranslations("common");
 
   const loc = locale as AppLocale;
   const brandId = brandIdOf(product.brand);
@@ -100,7 +98,6 @@ export default function ProductPage({ params }: { params: { slug: string; locale
               ) : (
                 <Badge variant="blue">{product.brand}</Badge>
               )}
-              {product.isNew && <Badge variant="teal">{tc("new")}</Badge>}
             </div>
             <h1 className="mt-4 font-display text-3xl font-extrabold text-text-primary md:text-4xl">{product.name}</h1>
             {brandId ? (

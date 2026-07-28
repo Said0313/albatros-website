@@ -28,11 +28,6 @@ export function ProductCard({ product }: { product: Product }) {
           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
           className="p-4 transition-transform duration-500 group-hover:scale-[1.04]"
         />
-        {product.isNew && (
-          <span className="absolute left-3 top-3">
-            <Badge variant="teal">{tc("new")}</Badge>
-          </span>
-        )}
       </div>
       <div className="flex flex-1 flex-col p-4">
         <span aria-hidden className="mb-3 block h-px w-full bg-bg-border" />
