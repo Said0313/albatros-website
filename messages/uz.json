@@ -33,7 +33,7 @@
     "titleA": "Laboratoriya",
     "titleB": "diagnostikasining",
     "titleHighlight": "ilgʻor texnologiyalari",
-    "subtitle": "Oʻzbekistonda IVD sohasidagi 13 jahon yetakchisining rasmiy distribyutori. Tugatish-shartli yetkazib berish, 24/7 servis, xalqaro standartlar."
+    "subtitle": "Oʻzbekistonda laboratoriya va tibbiy diagnostika sohasidagi 13 jahon yetakchisining rasmiy distribyutori. Tugatish-shartli yetkazib berish, 24/7 servis, xalqaro standartlar."
   },
   "directions": {
     "eyebrow": "{count} YOʻNALISH",
@@ -51,9 +51,9 @@
   },
   "partners": {
     "homeTitle": "Bizning xorijiy hamkorlarimiz",
-    "homeSubtitle": "Oʻzbekistonda In-Vitro diagnostikasining 13 jahon yetakchisi",
+    "homeSubtitle": "Oʻzbekistonda laboratoriya va tibbiy diagnostikaning 13 jahon yetakchisi",
     "pageTitle": "Bizning hamkorlarimiz",
-    "pageSubtitle": "Biz Oʻzbekistonda in-vitro diagnostika sohasining 13 jahon yetakchisini taqdim etamiz.",
+    "pageSubtitle": "Biz Oʻzbekistonda laboratoriya va tibbiy diagnostika sohasining 13 jahon yetakchisini taqdim etamiz.",
     "since": "{year} yildan",
     "detailProducts": "Brend uskunalari",
     "officialSite": "Rasmiy sayt",
@@ -78,7 +78,7 @@
     },
     "standards": {
       "title": "Xalqaro standartlar",
-      "body": "IVD sohasining jahon yetakchilari bilan bevosita ishlaymiz. Uskunalar va reagentlar ISO, FDA va Yevropa farmakopeyasi standartlariga mos keladi."
+      "body": "laboratoriya va tibbiy diagnostika sohasining jahon yetakchilari bilan bevosita ishlaymiz. Uskunalar va reagentlar ISO, FDA va Yevropa farmakopeyasi standartlariga mos keladi."
     },
     "education": {
       "title": "Taʼlim",
@@ -100,7 +100,7 @@
   "aboutPage": {
     "eyebrow": "Kompaniya haqida",
     "title": "Laboratoriyangizni jihozlashda ishonchli hamkoringiz",
-    "intro1": "Albatros Health Care 2017 yilda Oʻzbekiston klinik-diagnostika laboratoriyalari amaliyotiga zamonaviy texnologiyalarni joriy etish maqsadida tashkil etilgan. Bugun biz respublikadagi tibbiy laboratoriya uskunalari va IVD yechimlarining yetakchi distribyutorlaridan biri boʻlib, 13 jahon brendini taqdim etamiz: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius, TruScreen va boshqalar. Mamlakat boʻylab 2000 dan ortiq klinika va laboratoriya bizga laboratoriyalarini jihozlashni ishonib topshiradi.",
+    "intro1": "Albatros Health Care 2017 yilda Oʻzbekiston klinik-diagnostika laboratoriyalari amaliyotiga zamonaviy texnologiyalarni joriy etish maqsadida tashkil etilgan. Bugun biz respublikadagi tibbiy laboratoriya uskunalari va laboratoriya va tibbiy diagnostika yechimlarining yetakchi distribyutorlaridan biri boʻlib, 13 jahon brendini taqdim etamiz: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius, TruScreen va boshqalar. Mamlakat boʻylab 2000 dan ortiq klinika va laboratoriya bizga laboratoriyalarini jihozlashni ishonib topshiradi.",
     "intro2": "Kompaniya missiyasi, uskunalarni tugatish-shartli yetkazib berish hamda hamkorlarni tezkor uslubiy va servis qoʻllab-quvvatlash bilan taʼminlash. Jamoada oliy maxsus maʼlumotli, uskuna ishlab chiqaruvchilari zavodlarida muntazam malaka oshirib turadigan mutaxassislar ishlaydi. Biz klinik biokimyo va molekulyar biologiya sohasidagi xorijiy ekspertlarni jalb qilgan holda muntazam xalqaro konferensiya va seminarlar tashkil etamiz.",
     "slogan": "Albatros Health Care, laboratoriyani jihozlash va qoʻllab-quvvatlashda ishonchli hamkoringiz.",
     "stats": {
@@ -147,7 +147,7 @@
   },
   "catalog": {
     "title": "Laboratoriya va diagnostika uskunalari katalogi",
-    "subtitle": "Jahon IVD brendlarining laboratoriya va diagnostika uskunalari, reagentlar, sarf materiallari va sifat nazorati.",
+    "subtitle": "Jahon laboratoriya va tibbiy diagnostika brendlarining laboratoriya va diagnostika uskunalari, reagentlar, sarf materiallari va sifat nazorati.",
     "search": "Uskunalarni qidirish...",
     "generalDirection": "Umumiy yoʻnalish",
     "direction": "Yoʻnalish",
@@ -204,7 +204,7 @@
     "devSubtitle": "Форма скоро заработает. А пока свяжитесь с нами напрямую: TODO(uz)"
   },
   "footer": {
-    "tagline": "2017 yildan beri Oʻzbekistonda IVD diagnostikasi jahon yetakchilarining rasmiy distribyutori.",
+    "tagline": "2017 yildan beri Oʻzbekistonda laboratoriya va tibbiy diagnostika jahon yetakchilarining rasmiy distribyutori.",
     "hours": "Du–Ju 09:00–18:00",
     "addressValue": "Toshkent sh., Xalqobod koʻchasi, 17",
     "navigation": "Navigatsiya",
@@ -216,14 +216,14 @@
   "meta": {
     "home": {
       "title": "Laboratoriya diagnostikasi uchun tibbiy uskunalar",
-      "description": "Albatros Health Care, Oʻzbekistonda IVD diagnostikaning rasmiy distribyutori: laboratoriya va diagnostika uskunalari, reagentlar va laboratoriyani avtomatlashtirish."
+      "description": "Albatros Health Care, Oʻzbekistonda laboratoriya va tibbiy diagnostikaning rasmiy distribyutori: laboratoriya va diagnostika uskunalari, reagentlar va laboratoriyani avtomatlashtirish."
     },
     "catalog": {
       "title": "Laboratoriya va diagnostika uskunalari",
       "description": "Jahon brendlarining laboratoriya va diagnostika uskunalari, reagentlar va sarf materiallari katalogi: IXLA, biokimyo, gematologiya, gemostaz, PZR, sifat nazorati."
     },
     "partners": {
-      "title": "IVD diagnostikaning rasmiy brend-hamkorlari",
+      "title": "laboratoriya va tibbiy diagnostikaning rasmiy brend-hamkorlari",
       "description": "SNIBE, Werfen, BD, Randox, Dymind, Illumina, URIT, Lifotronic va boshqa jahon laboratoriya diagnostikasi yetakchilarining Oʻzbekistondagi rasmiy distribyutori."
     },
     "about": {

@@ -54,9 +54,9 @@ export async function generateMetadata({
     en: "Albatros Health Care — Laboratory Equipment in Uzbekistan",
   };
   const DESCRIPTION = {
-    ru: "Официальный дистрибьютор SNIBE, BD, Randox, Dymind, Werfen, Illumina и других мировых лидеров IVD-диагностики в Узбекистане. Поставка под ключ, сервис 24/7.",
-    uz: "SNIBE, BD, Randox, Dymind, Werfen, Illumina va boshqa IVD diagnostika yetakchilarining Oʻzbekistondagi rasmiy distribyutori. Kalit topshirish asosida yetkazib berish, 24/7 servis.",
-    en: "Official distributor of SNIBE, BD, Randox, Dymind, Werfen, Illumina and other global IVD diagnostics leaders in Uzbekistan. Turnkey supply, 24/7 service.",
+    ru: "Официальный дистрибьютор SNIBE, BD, Randox, Dymind, Werfen, Illumina и других мировых лидеров лабораторной и медицинской диагностики в Узбекистане. Поставка под ключ, сервис 24/7.",
+    uz: "SNIBE, BD, Randox, Dymind, Werfen, Illumina va boshqa laboratoriya va tibbiy diagnostika yetakchilarining Oʻzbekistondagi rasmiy distribyutori. Kalit topshirish asosida yetkazib berish, 24/7 servis.",
+    en: "Official distributor of SNIBE, BD, Randox, Dymind, Werfen, Illumina and other global laboratory and medical diagnostics leaders in Uzbekistan. Turnkey supply, 24/7 service.",
   };
   const KEYWORDS = {
     ru: ["лабораторное оборудование", "IVD", "Узбекистан", "SNIBE", "Maglumi", "диагностика", "Albatros"],

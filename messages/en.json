@@ -30,11 +30,11 @@
     "collapse": "collapse"
   },
   "hero": {
-    "eyebrow": "🇺🇿  Uzbekistan  ·  In-Vitro Diagnostics  ·  Since 2017",
+    "eyebrow": "🇺🇿  Uzbekistan  ·  Laboratory & Medical Diagnostics  ·  Since 2017",
     "titleA": "Advanced technology",
     "titleB": "for laboratory",
     "titleHighlight": "diagnostics",
-    "subtitle": "Official distributor of 13 global IVD industry leaders in Uzbekistan. Turnkey supply, 24/7 service, international standards."
+    "subtitle": "Official distributor of 13 global laboratory and medical diagnostics leaders in Uzbekistan. Turnkey supply, 24/7 service, international standards."
   },
   "directions": {
     "eyebrow": "{count} DIRECTIONS",
@@ -53,9 +53,9 @@
   },
   "partners": {
     "homeTitle": "Our international partners",
-    "homeSubtitle": "13 global In-Vitro diagnostics leaders in Uzbekistan",
+    "homeSubtitle": "13 global laboratory and medical diagnostics leaders in Uzbekistan",
     "pageTitle": "Our partners",
-    "pageSubtitle": "We represent 13 global leaders of the in-vitro diagnostics industry in Uzbekistan.",
+    "pageSubtitle": "We represent 13 global leaders of laboratory and medical diagnostics in Uzbekistan.",
     "since": "since {year}",
     "detailProducts": "Brand equipment",
     "officialSite": "Official website",
@@ -80,7 +80,7 @@
     },
     "standards": {
       "title": "International standards",
-      "body": "We work directly with global IVD industry leaders. Equipment and reagents comply with ISO, FDA and European Pharmacopoeia standards."
+      "body": "We work directly with global laboratory and medical diagnostics leaders. Equipment and reagents comply with ISO, FDA and European Pharmacopoeia standards."
     },
     "education": {
       "title": "Education",
@@ -102,7 +102,7 @@
   "aboutPage": {
     "eyebrow": "About the company",
     "title": "Your trusted partner in equipping the laboratory",
-    "intro1": "Albatros Health Care was founded in 2017 to bring modern technology into the practice of clinical diagnostic laboratories in Uzbekistan. Today we are one of the leading distributors of medical laboratory equipment and IVD solutions in the country, representing 13 global brands: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius, TruScreen and others. More than 2,000 clinics and laboratories across the country trust us to equip their labs.",
+    "intro1": "Albatros Health Care was founded in 2017 to bring modern technology into the practice of clinical diagnostic laboratories in Uzbekistan. Today we are one of the leading distributors of medical laboratory equipment and laboratory and medical diagnostics solutions in the country, representing 13 global brands: SNIBE, BD, Randox, Dymind, Werfen, Lifotronic, URIT, Illumina, Condalab, Clarius, TruScreen and others. More than 2,000 clinics and laboratories across the country trust us to equip their labs.",
     "intro2": "The company's mission is turnkey equipment supply backed by fast methodological and service support for our partners. Our team includes specialists with higher specialized education who regularly train at the manufacturers' factories. We regularly organize international conferences and seminars featuring foreign experts in clinical biochemistry and molecular biology.",
     "slogan": "Albatros Health Care — your trusted partner in equipping and supporting the laboratory.",
     "stats": {
@@ -149,7 +149,7 @@
   },
   "catalog": {
     "title": "Catalog of laboratory and diagnostic equipment",
-    "subtitle": "Laboratory and diagnostic equipment, reagents, consumables and quality control from world-leading IVD brands.",
+    "subtitle": "Laboratory and diagnostic equipment, reagents, consumables and quality control from world-leading laboratory and medical diagnostics brands.",
     "search": "Search equipment...",
     "generalDirection": "General direction",
     "direction": "Direction",
@@ -206,7 +206,7 @@
     "devSubtitle": "The form is coming soon. In the meantime, reach us directly:"
   },
   "footer": {
-    "tagline": "Official distributor of global IVD diagnostics leaders in Uzbekistan since 2017.",
+    "tagline": "Official distributor of global laboratory and medical diagnostics leaders in Uzbekistan since 2017.",
     "hours": "Mon–Fri 09:00–18:00",
     "addressValue": "17 Khalkobod St., Tashkent",
     "navigation": "Navigation",
@@ -218,14 +218,14 @@
   "meta": {
     "home": {
       "title": "Medical equipment for laboratory diagnostics",
-      "description": "Albatros Health Care, official IVD diagnostics distributor in Uzbekistan: laboratory and diagnostic equipment, reagents and turnkey lab automation."
+      "description": "Albatros Health Care, official laboratory and medical diagnostics distributor in Uzbekistan: laboratory and diagnostic equipment, reagents and turnkey lab automation."
     },
     "catalog": {
       "title": "Laboratory and diagnostic equipment",
       "description": "Catalog of laboratory and diagnostic equipment, reagents and consumables from world-leading brands: CLIA, biochemistry, hematology, hemostasis, PCR, quality control."
     },
     "partners": {
-      "title": "Official IVD diagnostics brand partners",
+      "title": "Official laboratory and medical diagnostics brand partners",
       "description": "Official distributor of SNIBE, Werfen, BD, Randox, Dymind, Illumina, URIT, Lifotronic and other global leaders in laboratory diagnostics in Uzbekistan."
     },
     "about": {
