@@ -32,7 +32,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="flex flex-1 flex-col p-4">
         <span aria-hidden className="mb-3 block h-px w-full bg-bg-border" />
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
-        <h3 className="mt-2 font-display text-[15px] font-bold text-text-primary">{product.name}</h3>
+        <h3 className="mt-2 break-words font-display text-[15px] font-bold text-text-primary">{product.name}</h3>
         <p className="mt-1 font-mono text-[11px] text-brand-blue-deep">{product.brand}</p>
         <p className="mt-2 line-clamp-2 text-xs text-text-secondary">{productShort(product, locale)}</p>
         <span className="mt-3 inline-flex items-center gap-1 text-[13px] text-brand-red-bright group-hover:gap-2 group-hover:underline">

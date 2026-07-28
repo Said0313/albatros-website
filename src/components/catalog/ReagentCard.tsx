@@ -29,8 +29,8 @@ export function ReagentCard({ product }: { product: Product }) {
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <span className="shrink-0 font-mono text-xs text-brand-blue-deep">{product.brand}</span>
       </div>
-      <h3 className="mt-3 font-display text-base font-bold text-text-primary">{product.name}</h3>
-      <p className="mt-2 text-[13px] leading-relaxed text-text-secondary">{productShort(product, locale)}</p>
+      <h3 className="mt-3 break-words font-display text-base font-bold text-text-primary">{product.name}</h3>
+      <p className="mt-2 break-words text-[13px] leading-relaxed text-text-secondary">{productShort(product, locale)}</p>
 
       {analytes.length > 0 && (
         <div className="mt-4">
@@ -38,7 +38,7 @@ export function ReagentCard({ product }: { product: Product }) {
             {shown.map((a) => (
               <span
                 key={a}
-                className="rounded-md bg-bg-elevated px-2 py-1 font-mono text-[11px] text-text-secondary"
+                className="break-words rounded-md bg-bg-elevated px-2 py-1 font-mono text-[11px] text-text-secondary"
               >
                 {a}
               </span>
