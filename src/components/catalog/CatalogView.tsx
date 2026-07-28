@@ -185,7 +185,10 @@ export function CatalogView() {
             className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3"
           >
             {filtered.map((p) => (
-              <div key={p.slug}>
+              // h-full lets the card fill the grid cell (grid rows stretch), so
+              // reagent/consumable/control cards with different chip counts and
+              // text lengths line up to a common row height.
+              <div key={p.slug} className="h-full">
                 {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
               </div>
             ))}
