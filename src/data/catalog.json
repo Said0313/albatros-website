@@ -2241,6 +2241,72 @@
     "fullDescriptionEn": "SATLARS T8 is a modular automated laboratory line, the first ever presented in Uzbekistan. Winner of the iF Design Award 2025. Modules: loader (1000 samples/hour), centrifugation (550 samples/hour), input/output (1000 samples/hour), decapping (1000 samples/hour), a bidirectional 4-lane transport system, sealing (1000 samples/hour), a refrigeration module (15,360 samples), reseal removal (500 samples/hour). Storage for up to 60,288 samples, combining up to 4 refrigeration modules. Compatible with Maglumi X6/X8/X10, Biossays C8/C10, Molecision R8."
   },
   {
+    "id": "truscreen",
+    "slug": "truscreen",
+    "name": "TruScreen ULTRA",
+    "category": "Скрининг",
+    "brand": "TruScreen",
+    "shortDescription": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории.",
+    "fullDescription": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки.",
+    "specifications": [
+      {
+        "label": "Метод",
+        "value": "Оптический (4 светодиода, 3 длины волны) + электрический (импедансная спектроскопия)"
+      },
+      {
+        "label": "Измерений в секунду",
+        "value": "14"
+      },
+      {
+        "label": "Точечных измерений",
+        "value": "~20 на поверхности шейки матки"
+      },
+      {
+        "label": "Время результата",
+        "value": "~10 минут"
+      },
+      {
+        "label": "Результат",
+        "value": "«Норма» или «Аномалия» (ИИ-алгоритм)"
+      },
+      {
+        "label": "Датчик",
+        "value": "Одноразовый (SUS)"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "87,5% (Chen et al., n=15 661)"
+      },
+      {
+        "label": "Специфичность",
+        "value": "88,4%"
+      },
+      {
+        "label": "Клинические исследования",
+        "value": "42 000+ пациенток"
+      },
+      {
+        "label": "Регуляторные одобрения",
+        "value": "CE, MHRA, NMPA, SFDA, TGA, Росздравнадзор"
+      },
+      {
+        "label": "Производитель",
+        "value": "TruScreen Group Ltd (Австралия)"
+      }
+    ],
+    "images": [
+      "/images/products/truscreen.png"
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescriptionUz": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории. TODO(uz)",
+    "shortDescriptionEn": "Portable real-time cervical cancer screening device delivering a result in 10 minutes with no laboratory.",
+    "fullDescriptionUz": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки. TODO(uz)",
+    "fullDescriptionEn": "TruScreen ULTRA is a next-generation medical device for real-time cervical cancer screening. It combines an optical method (4 LEDs, 3 wavelengths, 14 measurements per second) and an electrical method (impedance spectroscopy) with an AI algorithm. The clinician takes about 20 point measurements with a single-use sensor, and a \"Normal\" or \"Abnormal\" result is delivered instantly, with no laboratory and no patient discomfort.",
+    "detailedDescription": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом.",
+    "detailedDescriptionUz": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом. TODO(uz)"
+  },
+  {
     "id": "reagenty-maglumi-ihla",
     "slug": "reagenty-maglumi-ihla",
     "name": "Реагенты MAGLUMI (ИХЛА)",
@@ -2709,71 +2775,5 @@
     "shortDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls.",
     "fullDescriptionUz": "Siydik analizatorlari uchun nazoratlar va kalibratorlar: rang, solishtirma ogʻirlik va loyqalik nazoratlari.",
     "fullDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls."
-  },
-  {
-    "id": "truscreen",
-    "slug": "truscreen",
-    "name": "TruScreen ULTRA",
-    "category": "Скрининг",
-    "brand": "TruScreen",
-    "shortDescription": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории.",
-    "fullDescription": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки.",
-    "specifications": [
-      {
-        "label": "Метод",
-        "value": "Оптический (4 светодиода, 3 длины волны) + электрический (импедансная спектроскопия)"
-      },
-      {
-        "label": "Измерений в секунду",
-        "value": "14"
-      },
-      {
-        "label": "Точечных измерений",
-        "value": "~20 на поверхности шейки матки"
-      },
-      {
-        "label": "Время результата",
-        "value": "~10 минут"
-      },
-      {
-        "label": "Результат",
-        "value": "«Норма» или «Аномалия» (ИИ-алгоритм)"
-      },
-      {
-        "label": "Датчик",
-        "value": "Одноразовый (SUS)"
-      },
-      {
-        "label": "Чувствительность",
-        "value": "87,5% (Chen et al., n=15 661)"
-      },
-      {
-        "label": "Специфичность",
-        "value": "88,4%"
-      },
-      {
-        "label": "Клинические исследования",
-        "value": "42 000+ пациенток"
-      },
-      {
-        "label": "Регуляторные одобрения",
-        "value": "CE, MHRA, NMPA, SFDA, TGA, Росздравнадзор"
-      },
-      {
-        "label": "Производитель",
-        "value": "TruScreen Group Ltd (Австралия)"
-      }
-    ],
-    "images": [
-      "/images/products/truscreen.png"
-    ],
-    "featured": false,
-    "isNew": true,
-    "shortDescriptionUz": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории. TODO(uz)",
-    "shortDescriptionEn": "Portable real-time cervical cancer screening device delivering a result in 10 minutes with no laboratory.",
-    "fullDescriptionUz": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки. TODO(uz)",
-    "fullDescriptionEn": "TruScreen ULTRA is a next-generation medical device for real-time cervical cancer screening. It combines an optical method (4 LEDs, 3 wavelengths, 14 measurements per second) and an electrical method (impedance spectroscopy) with an AI algorithm. The clinician takes about 20 point measurements with a single-use sensor, and a \"Normal\" or \"Abnormal\" result is delivered instantly, with no laboratory and no patient discomfort.",
-    "detailedDescription": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом.",
-    "detailedDescriptionUz": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом. TODO(uz)"
   }
 ]
