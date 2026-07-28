@@ -26,7 +26,7 @@ export async function generateMetadata({
 
 const stats = [
   { end: 45, suffix: "+", key: "models" },
-  { end: 16, key: "directions" },
+  { end: 17, key: "directions" },
   { end: 13, key: "leaders" },
   { end: 85, key: "conferences" },
   { end: 24, key: "congresses" },
