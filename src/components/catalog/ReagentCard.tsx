@@ -24,7 +24,9 @@ export function ReagentCard({ product }: { product: Product }) {
 
   return (
     <div className="flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-5 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
-      <span aria-hidden className="mb-3 block h-px w-full bg-bg-border" />
+      {/* No divider here: this card has no image, so the line that separates a
+          product photo from the text below would just sit at the top separating
+          nothing. */}
       <div className="flex items-start justify-between gap-2">
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <span className="shrink-0 font-mono text-xs text-brand-blue-deep">{product.brand}</span>
