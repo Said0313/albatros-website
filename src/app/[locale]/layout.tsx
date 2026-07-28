@@ -49,9 +49,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const TITLE = {
-    ru: "Albatros Health Care — Лабораторное оборудование в Узбекистане",
-    uz: "Albatros Health Care — Oʻzbekistonda laboratoriya uskunalari",
-    en: "Albatros Health Care — Laboratory Equipment in Uzbekistan",
+    ru: "Albatros Health Care | Лабораторное оборудование",
+    uz: "Albatros Health Care | Laboratoriya uskunalari",
+    en: "Albatros Health Care | Laboratory Equipment",
   };
   const DESCRIPTION = {
     ru: "Официальный дистрибьютор SNIBE, BD, Randox, Dymind, Werfen, Illumina и других мировых лидеров лабораторной и медицинской диагностики в Узбекистане. Поставка под ключ, сервис 24/7.",
@@ -67,7 +67,9 @@ export async function generateMetadata({
   const l = (routing.locales as readonly string[]).includes(locale) ? (locale as AppLocale) : routing.defaultLocale;
   return {
     metadataBase: new URL(SITE_URL),
-    title: { template: "%s | Albatros Health Care", default: TITLE[l] },
+    // No title.template: page titles are built brand-first in pageMetadata
+    // (brandTitle) so the company name leads. `default` is the root fallback.
+    title: TITLE[l],
     description: DESCRIPTION[l],
     keywords: KEYWORDS[l],
     openGraph: {

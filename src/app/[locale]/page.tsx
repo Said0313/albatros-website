@@ -32,11 +32,10 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
   return pageMetadata({
     locale,
-    // The home page shares the [locale] segment with the layout that declares
-    // title.template, so the template is NOT applied here. Append the brand
-    // suffix explicitly to match every other page's title.
+    // pageMetadata prepends the brand (brandTitle), so pass only the page
+    // portion; the tab reads "Albatros Health Care | <home title>".
     path: "/",
-    title: `${t("home.title")} | Albatros Health Care`,
+    title: t("home.title"),
     description: t("home.description"),
   });
 }

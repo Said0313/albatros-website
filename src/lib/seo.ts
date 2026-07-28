@@ -5,6 +5,13 @@ import type { Metadata } from "next";
 // fallback so builds never emit an undefined URL.
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://albatros.uz").replace(/\/$/, "");
 
+// Brand shown in every browser tab and search result. Latin in all locales
+// (never transliterated). Titles are built brand-first as
+// "Albatros Health Care | <page>" so the company name stays visible even when
+// a narrow tab truncates the title.
+export const SITE_NAME = "Albatros Health Care";
+export const brandTitle = (page: string): string => `${SITE_NAME} | ${page}`;
+
 export type AppLocale = "ru" | "uz" | "en";
 export const LOCALES: AppLocale[] = ["ru", "uz", "en"];
 
@@ -100,22 +107,27 @@ export function pageMetadata(opts: {
   const { locale, path, title, description, images } = opts;
   const url = absoluteUrl(locale, path);
   const ogImages = images && images.length ? images : ["/logo.png"];
+  // `title` is the page portion (e.g. "Каталог оборудования"); prepend the brand
+  // once here so the tab, OpenGraph and Twitter titles all read the same
+  // brand-first string. The root layout no longer sets a title.template, so this
+  // is the single place the brand is joined.
+  const full = brandTitle(title);
   return {
-    title,
+    title: full,
     description,
     alternates: seoAlternates(locale, path),
     openGraph: {
-      title,
+      title: full,
       description,
       url,
       type: "website",
-      siteName: "Albatros Health Care",
+      siteName: SITE_NAME,
       locale: OG_LOCALE[locale],
       images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: full,
       description,
       images: ogImages,
     },
