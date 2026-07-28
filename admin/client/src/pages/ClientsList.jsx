@@ -8,6 +8,8 @@ export default function ClientsList() {
       api={clientsApi}
       basePath="/clients"
       thumb={(c) => c.logo}
+      searchPlaceholder="Поиск по названию, описанию..."
+      searchText={(c) => `${c.name || ""} ${c.id || ""} ${c.description || ""}`}
       columns={[
         {
           key: "name",

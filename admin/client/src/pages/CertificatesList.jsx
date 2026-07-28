@@ -8,6 +8,8 @@ export default function CertificatesList() {
       api={certificatesApi}
       basePath="/certificates"
       thumb={(c) => c.image}
+      searchPlaceholder="Поиск по названию..."
+      searchText={(c) => `${c.title || ""} ${c.titleUz || ""} ${c.titleEn || ""} ${c.id || ""}`}
       columns={[
         {
           key: "title",

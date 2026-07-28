@@ -9,6 +9,8 @@ export default function EventsList() {
       api={eventsApi}
       basePath="/events"
       thumb={(e) => (e.images && e.images[0]) || null}
+      searchPlaceholder="Поиск по названию, дате, типу..."
+      searchText={(e) => `${e.title || ""} ${e.id || ""} ${e.date || ""} ${EVENT_TYPE_RU[e.type] || e.type || ""}`}
       columns={[
         {
           key: "title",

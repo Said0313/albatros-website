@@ -2,12 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
 import { imgUrl } from "../imgUrl";
+import SearchBox, { useSearch } from "../components/SearchBox.jsx";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [q, setQ] = useState("");
   const [category, setCategory] = useState("");
   const [busySlug, setBusySlug] = useState("");
 
@@ -27,18 +27,12 @@ export default function ProductList() {
     [products]
   );
 
-  const filtered = useMemo(() => {
-    const needle = q.trim().toLowerCase();
-    return products.filter((p) => {
-      if (category && p.category !== category) return false;
-      if (!needle) return true;
-      return (
-        p.name.toLowerCase().includes(needle) ||
-        (p.brand || "").toLowerCase().includes(needle) ||
-        p.slug.toLowerCase().includes(needle)
-      );
-    });
-  }, [products, q, category]);
+  // Text search via the shared component; the category dropdown filters on top.
+  const { query, setQuery, filtered: searched } = useSearch(
+    products,
+    (p) => `${p.name} ${p.brand || ""} ${p.slug} ${p.category || ""}`
+  );
+  const filtered = category ? searched.filter((p) => p.category === category) : searched;
 
   const toggleHide = async (p) => {
     setBusySlug(p.slug);
@@ -80,13 +74,12 @@ export default function ProductList() {
         </Link>
       </div>
 
-      <div className="mb-4 flex flex-wrap gap-3">
-        <input
-          className="field max-w-xs"
-          placeholder="Поиск по названию, бренду, slug..."
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-        />
+      <SearchBox
+        query={query}
+        setQuery={setQuery}
+        count={filtered.length}
+        placeholder="Поиск по названию, бренду, категории, slug..."
+      >
         <select className="field max-w-xs" value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="">Все категории</option>
           {categories.map((c) => (
@@ -95,7 +88,7 @@ export default function ProductList() {
             </option>
           ))}
         </select>
-      </div>
+      </SearchBox>
 
       <div className="card overflow-hidden">
         <table className="w-full text-sm">

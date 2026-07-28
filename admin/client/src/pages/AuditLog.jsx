@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../api";
+import SearchBox, { useSearch } from "../components/SearchBox.jsx";
 
 const TYPE_RU = {
   product: "Продукт",
@@ -95,7 +96,13 @@ export default function AuditLog() {
     [commits]
   );
 
-  const filtered = commits
+  // Free-text search over author, changed target, action and section, chained
+  // with the existing author/type dropdown filters.
+  const { query, setQuery, filtered: searched } = useSearch(
+    commits,
+    (c) => `${c.author} ${c.target} ${VERB_RU[c.verb] || c.verb} ${TYPE_RU[c.type] || c.type}`
+  );
+  const filtered = searched
     .filter((c) => (author ? c.author === author : true))
     .filter((c) => (type ? c.type === type : true));
 
@@ -134,7 +141,12 @@ export default function AuditLog() {
       {error && <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
       {ok && <div className="mb-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-700">{ok}</div>}
 
-      <div className="mb-4 flex flex-wrap gap-3">
+      <SearchBox
+        query={query}
+        setQuery={setQuery}
+        count={filtered.length}
+        placeholder="Поиск по автору, объекту, действию..."
+      >
         <select className="field max-w-xs" value={author} onChange={(e) => setAuthor(e.target.value)}>
           <option value="">Все авторы</option>
           {authors.map((a) => (
@@ -151,7 +163,7 @@ export default function AuditLog() {
             </option>
           ))}
         </select>
-      </div>
+      </SearchBox>
 
       <div className="card overflow-hidden">
         <table className="w-full text-sm">

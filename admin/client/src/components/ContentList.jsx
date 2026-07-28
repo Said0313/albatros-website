@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { imgUrl } from "../imgUrl";
+import SearchBox, { useSearch } from "./SearchBox.jsx";
 
 // Generic list page for Phase 2 content types. Renders a table with thumbnail,
 // custom columns, optional reorder arrows (writes the full new order), hide
@@ -13,12 +14,21 @@ export default function ContentList({
   thumb, // (item) => image public path or null
   canHide = true,
   canReorder = true,
+  searchText, // (item) => string of searchable fields; enables the search box
+  searchPlaceholder = "Поиск...",
   deleteConfirm = (item) => `Удалить "${item.name || item.title || item.id}"? Это действие необратимо.`,
 }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [busyId, setBusyId] = useState("");
+  // Search filters only what is displayed; edit/hide/delete use item.id so they
+  // are unaffected. Reorder is index based, so it is hidden while filtering (a
+  // filtered view has no meaningful adjacent-row order to write back).
+  const { query, setQuery, filtered } = useSearch(items, searchText || (() => ""));
+  const searching = query.trim() !== "";
+  const visible = searchText ? filtered : items;
+  const showReorder = canReorder && !searching;
 
   const load = () => {
     setLoading(true);
@@ -86,6 +96,15 @@ export default function ContentList({
         </Link>
       </div>
 
+      {searchText && (
+        <SearchBox
+          query={query}
+          setQuery={setQuery}
+          count={visible.length}
+          placeholder={searchPlaceholder}
+        />
+      )}
+
       <div className="card overflow-hidden">
         <table className="w-full text-sm">
           <thead className="bg-panel text-left text-xs uppercase tracking-wide text-soft">
@@ -101,7 +120,7 @@ export default function ContentList({
             </tr>
           </thead>
           <tbody>
-            {items.map((item, i) => (
+            {visible.map((item, i) => (
               <tr key={item.id} className="border-t border-line">
                 {thumb && (
                   <td className="px-4 py-2">
@@ -138,7 +157,7 @@ export default function ContentList({
                 )}
                 <td className="px-4 py-2">
                   <div className="flex justify-end gap-2">
-                    {canReorder && (
+                    {showReorder && (
                       <>
                         <button
                           className="btn-ghost"
@@ -179,10 +198,10 @@ export default function ContentList({
                 </td>
               </tr>
             ))}
-            {items.length === 0 && (
+            {visible.length === 0 && (
               <tr>
                 <td colSpan={99} className="px-4 py-8 text-center text-soft">
-                  Пока пусто. Нажмите «Добавить».
+                  {searching ? "Ничего не найдено." : "Пока пусто. Нажмите «Добавить»."}
                 </td>
               </tr>
             )}

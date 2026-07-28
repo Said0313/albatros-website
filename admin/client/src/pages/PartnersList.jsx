@@ -8,6 +8,8 @@ export default function PartnersList() {
       api={partnersApi}
       basePath="/partners"
       thumb={(p) => p.logo}
+      searchPlaceholder="Поиск по названию, стране, специализации..."
+      searchText={(p) => `${p.name || ""} ${p.id || ""} ${p.specialty || ""} ${p.country || ""}`}
       columns={[
         {
           key: "name",
