@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { Search, X, SlidersHorizontal, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { products, categories, generalDirections, directionPositions, itemCount, productDirection } from "@/lib/catalog";
@@ -13,16 +13,21 @@ import { cn } from "@/lib/utils";
 
 export function CatalogView() {
   const searchParams = useSearchParams();
-  const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("catalog");
 
+  // Filters live in client state so toggling a checkbox updates the results
+  // instantly: every product is already in the browser, so there is nothing to
+  // fetch. The previous code derived the filters from the URL and called
+  // router.push on each click, which ran a full RSC round trip (~1s) just to
+  // re-filter data already at hand. We keep the URL in sync with
+  // history.replaceState instead, so it stays shareable without a navigation.
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const selectedDirs = searchParams.getAll("direction");
-  const selectedCats = searchParams.getAll("category");
-  const selectedBrands = searchParams.getAll("brand");
+  const [selectedDirs, setSelectedDirs] = useState(() => searchParams.getAll("direction"));
+  const [selectedCats, setSelectedCats] = useState(() => searchParams.getAll("category"));
+  const [selectedBrands, setSelectedBrands] = useState(() => searchParams.getAll("brand"));
 
   // Sub-category and brand options are scoped to the selected general direction(s),
   // so the second filter level reflects the first. With no direction selected, all
@@ -36,37 +41,59 @@ export function CatalogView() {
   const scopedBrandCount = (b: string) =>
     products.filter((p) => inDir(p) && p.brand === b).reduce((s, p) => s + itemCount(p), 0);
 
+  // Re-seed from the URL when a real navigation changes the params (e.g. a
+  // category link elsewhere, or back/forward). useSearchParams only changes for
+  // Next navigations, not for our own history.replaceState, so this never loops.
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
+    setSelectedDirs(searchParams.getAll("direction"));
+    setSelectedCats(searchParams.getAll("category"));
+    setSelectedBrands(searchParams.getAll("brand"));
   }, [searchParams]);
 
-  const updateParams = (key: string, value: string, multi = true) => {
-    const params = new URLSearchParams(searchParams.toString());
-    if (multi) {
-      const current = params.getAll(key);
-      params.delete(key);
-      if (current.includes(value)) {
-        current.filter((v) => v !== value).forEach((v) => params.append(key, v));
-      } else {
-        [...current, value].forEach((v) => params.append(key, v));
-      }
-    } else if (value) {
-      params.set(key, value);
-    } else {
-      params.delete(key);
+  // Reflect the current filter state in the URL bar without navigating, so the
+  // link stays shareable but the click itself does no server round trip.
+  const syncUrl = (dirs: string[], cats: string[], brands: string[], q: string) => {
+    const params = new URLSearchParams();
+    dirs.forEach((v) => params.append("direction", v));
+    cats.forEach((v) => params.append("category", v));
+    brands.forEach((v) => params.append("brand", v));
+    if (q) params.set("q", q);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `${pathname}?${qs}` : pathname);
+  };
+
+  const toggle = (list: string[], value: string) =>
+    list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
+
+  const updateParams = (key: string, value: string) => {
+    if (key === "direction") {
+      const next = toggle(selectedDirs, value);
+      setSelectedDirs(next);
+      syncUrl(next, selectedCats, selectedBrands, query);
+    } else if (key === "category") {
+      const next = toggle(selectedCats, value);
+      setSelectedCats(next);
+      syncUrl(selectedDirs, next, selectedBrands, query);
+    } else if (key === "brand") {
+      const next = toggle(selectedBrands, value);
+      setSelectedBrands(next);
+      syncUrl(selectedDirs, selectedCats, next, query);
     }
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   const onSearch = (v: string) => {
     setQuery(v);
-    const params = new URLSearchParams(searchParams.toString());
-    if (v) params.set("q", v);
-    else params.delete("q");
-    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    syncUrl(selectedDirs, selectedCats, selectedBrands, v);
   };
 
-  const reset = () => router.push(pathname, { scroll: false });
+  const reset = () => {
+    setSelectedDirs([]);
+    setSelectedCats([]);
+    setSelectedBrands([]);
+    setQuery("");
+    window.history.replaceState(null, "", pathname);
+  };
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase();
