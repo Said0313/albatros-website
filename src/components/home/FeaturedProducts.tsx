@@ -48,7 +48,12 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
 
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-5">
+            {/* will-change:transform promotes the embla track to its own GPU
+                compositor layer, so the heavy 1000px product images raster
+                once and the transform animation just translates that layer
+                instead of re-rasterising every frame (the source of the
+                stutter; the particle field was ruled out by an A/B test). */}
+            <div className="flex gap-5 [will-change:transform] [backface-visibility:hidden]">
               {products.map((p) => (
                 <Link
                   key={p.slug}
