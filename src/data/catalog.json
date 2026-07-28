@@ -182,39 +182,6 @@
     "detailedDescription": "Производительность\nMAGLUMI&reg; X10 обеспечивает до 1000 тестов в час на одном модуле с возможностью масштабирования до 4000 тестов в час . Высокая производительность на единицу площади позволяет максимально эффективно использовать пространство лаборатории.\nТочность и технологии\nАнализатор оснащён технологией X-Tech, которая обеспечивает:\nвысокоточную работу с микрообъёмами\nстабильную инкубацию и контроль температуры\nминимизацию перекрёстного загрязнения\nТехнология хемилюминесценции позволяет получать быстрые и надёжные результаты, сокращая время реакции до нескольких секунд.\nАвтоматизация и удобство\nСистема полностью автоматизирована и ориентирована на снижение ручного труда. MAGLUMI&reg; X10 оснащён вместительной рабочей зоной до 300 позиций для образцов и 50 позиций для реагентов, что позволяет одновременно обрабатывать большие объёмы исследований без остановки процесса.\nДополнительно:\nнепрерывная загрузка образцов\nавтономная работа до 3000 тестов\nинтеллектуальное ПО с мониторингом в реальном времени\nЭто обеспечивает стабильную работу лаборатории даже при пиковых нагрузках.\nГибкость и применение\nАнализатор легко интегрируется в лабораторные системы, поддерживает подключение к ЛИС и автоматизированным линиям, а также масштабируется под рост объёмов исследований.\nПоддержка более 260 параметров в различных клинических направлениях делает систему универсальным инструментом диагностики.\nИтог\nMAGLUMI&reg; X10 это сочетание высокой скорости, точности и автоматизации, позволяющее лабораториям повышать производительность, ускорять диагностику и обеспечивать стабильное качество результатов."
   },
   {
-    "id": "reagenty-ihla",
-    "slug": "reagenty-ihla",
-    "name": "Реагенты ИХЛА",
-    "category": "ИХЛА",
-    "brand": "SNIBE",
-    "shortDescription": "Линейка реагентов SNIBE Maglumi 2-го поколения для ИХЛА.",
-    "fullDescription": "Полная линейка реагентов SNIBE Maglumi второго поколения для иммунохемилюминесцентного анализа: тиреоидная панель, репродуктивные гормоны и онкомаркеры, инфекции, сердечные и воспалительные биомаркеры, аутоиммунная и пренатальная панели. Совместимы со всеми анализаторами серии Maglumi.",
-    "specifications": [
-      {
-        "label": "Платформа",
-        "value": "SNIBE Maglumi"
-      },
-      {
-        "label": "Поколение",
-        "value": "2-е поколение реагентов"
-      },
-      {
-        "label": "Панели",
-        "value": "Гормоны, онкомаркеры, инфекции, аутоиммунные"
-      }
-    ],
-    "images": [
-      "/images/products/reagenty-ihla.png"
-    ],
-    "featured": false,
-    "isNew": false,
-    "originalUrl": "https://www.albatros.uz/product/Реагенты_ИХЛА-bOYCT",
-    "shortDescriptionUz": "IXLA uchun SNIBE Maglumi 2-avlod reagentlari liniyasi.",
-    "shortDescriptionEn": "SNIBE Maglumi 2nd-generation reagent line for CLIA.",
-    "fullDescriptionUz": "Immunoxemilyuminessent tahlil uchun SNIBE Maglumi ikkinchi avlod reagentlarining toʻliq liniyasi: qalqonsimon bez paneli, reproduktiv gormonlar va onkomarkerlar, infeksiyalar, yurak va yalligʻlanish biomarkerlari, autoimmun va prenatal panellar. Maglumi seriyasidagi barcha analizatorlar bilan mos keladi.",
-    "fullDescriptionEn": "The complete SNIBE Maglumi 2nd-generation reagent line for chemiluminescence immunoassay: thyroid panel, reproductive hormones and tumor markers, infections, cardiac and inflammatory biomarkers, autoimmune and prenatal panels. Compatible with all Maglumi-series analyzers."
-  },
-  {
     "id": "maglumi-600",
     "slug": "maglumi-600",
     "name": "Maglumi 600",
