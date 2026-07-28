@@ -13,7 +13,11 @@ import { categoryPill } from "@/lib/categoryAccents";
  * and a language-neutral analyte/item sub-list (collapsible when long). The analyte
  * names are indexed by the catalog search (see CatalogView).
  */
-const LIMIT = 12;
+// Show a small, consistent number of chips so cards line up: with 5, every
+// reagent card in the catalog shows exactly 5 chips collapsed (10 of the 13
+// have more and get the expand control; the 3 smallest have exactly 5). The
+// full list is always reachable via the "Показать все тесты (N)" toggle.
+const LIMIT = 5;
 
 export function ReagentCard({ product }: { product: Product }) {
   const locale = useLocale();
