@@ -1,9 +1,10 @@
 "use client";
 
 import { Children, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import { useStrandGuard } from "@/components/ui/useStrandGuard";
 
 const MOBILE_STEP = 5;
 const DESKTOP_STEP = 9;
@@ -40,11 +41,19 @@ export function IncrementalList({
   const [dShown, setDShown] = useState(DESKTOP_STEP); // desktop progressive count (increment mode)
   const [expanded, setExpanded] = useState(false); // desktop expand-all toggle
   const tc = useTranslations("common");
+  const { ref, guard } = useStrandGuard<HTMLDivElement>();
   const items = Children.toArray(children);
   const incrementDesktop = desktopMode === "increment";
 
+  // Mobile only: fold the progressively-expanded list back to the initial 5 in
+  // one step, then keep the scroll position sensible (see useStrandGuard).
+  const collapseMobile = () => {
+    setShown(MOBILE_STEP);
+    guard();
+  };
+
   return (
-    <div>
+    <div ref={ref} className="scroll-mt-24">
       <div className={cn(className, !incrementDesktop && !expanded && count > 9 && "capped-collapsed-lg")}>
         {items.map((child, i) => (
           <div
@@ -59,17 +68,33 @@ export function IncrementalList({
         ))}
       </div>
 
-      {/* Mobile: 5 more per tap; gone when everything is shown */}
-      {shown < count && (
-        <div className="mt-8 flex justify-center lg:hidden">
-          <button
-            type="button"
-            onClick={() => setShown((s) => s + MOBILE_STEP)}
-            className="inline-flex items-center gap-2 rounded-full border border-bg-border bg-bg-card px-5 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-blue-light"
-          >
-            {tc("showMore")}
-            <ChevronDown className="h-4 w-4" />
-          </button>
+      {/* Mobile: "show more" adds 5 per tap; the collapse control appears as soon
+          as the list has been expanded past the initial 5 and folds it all the
+          way back in one step. Both sit side by side so the visitor can keep
+          expanding or fold everything back at any point. */}
+      {(shown < count || shown > MOBILE_STEP) && (
+        <div className="mt-8 flex flex-wrap justify-center gap-3 lg:hidden">
+          {shown < count && (
+            <button
+              type="button"
+              onClick={() => setShown((s) => s + MOBILE_STEP)}
+              className="inline-flex items-center gap-2 rounded-full border border-bg-border bg-bg-card px-5 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-blue-light"
+            >
+              {tc("showMore")}
+              <ChevronDown className="h-4 w-4" />
+            </button>
+          )}
+          {shown > MOBILE_STEP && (
+            <button
+              type="button"
+              onClick={collapseMobile}
+              aria-label={tc("collapse")}
+              className="inline-flex items-center gap-2 rounded-full border border-bg-border bg-bg-card px-5 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-brand-blue-light"
+            >
+              {tc("collapse")}
+              <ChevronUp className="h-4 w-4" />
+            </button>
+          )}
         </div>
       )}
 
