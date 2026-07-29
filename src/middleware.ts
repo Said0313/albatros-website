@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
+import { legacyProductRedirects } from "./lib/legacyRedirects";
 
 const intl = createMiddleware(routing);
 
@@ -18,6 +19,18 @@ export default function middleware(req: NextRequest) {
     // Explicit target: always https, no stray port, path and query preserved.
     return NextResponse.redirect(new URL(pathname + search, "https://albatros.uz"), 301);
   }
+
+  // Old albatros.uz slugs (still indexed/linked from before the rebuild) are
+  // free-form CMS output - random suffixes, percent-encoded Cyrillic, "+" and
+  // "™"/"®" characters - which next.config redirects() can't match literally
+  // via path-to-regexp. Decoding the pathname and doing a plain lookup sidesteps
+  // that entirely. Checked pre-intl so it also catches bare (unprefixed) paths.
+  const decodedPath = decodeURIComponent(req.nextUrl.pathname);
+  const legacyTarget = legacyProductRedirects[decodedPath];
+  if (legacyTarget) {
+    return NextResponse.redirect(new URL(legacyTarget, "https://albatros.uz"), 301);
+  }
+
   return intl(req);
 }
 
