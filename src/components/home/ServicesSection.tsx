@@ -140,7 +140,7 @@ export function ServicesSection() {
             <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">{t("sectionTitle")}</h2>
           </div>
 
-          <div ref={wrapRef} className="relative mx-auto max-w-3xl">
+          <div ref={wrapRef} className="relative mx-auto w-fit max-w-full">
             {/* Track and fill share the same top-2/bottom-2 inset, so the fill's
                 scaleY maps 1:1 onto the track without measuring its height. */}
             <div aria-hidden className="pointer-events-none absolute bottom-2 left-[7px] top-2 w-0.5 bg-bg-border" />
@@ -161,11 +161,11 @@ export function ServicesSection() {
                     aria-hidden
                     className="relative z-10 mt-1 h-4 w-4 shrink-0 rounded-full border-2 border-brand-red bg-brand-red"
                   />
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 max-w-[72ch]">
                     <h3 className="font-display text-lg font-bold leading-snug text-text-primary md:text-xl">
                       {t(`${key}.title`)}
                     </h3>
-                    <p className="mt-2 max-w-[52ch] text-sm leading-relaxed text-text-secondary">{t(`${key}.body`)}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-text-secondary">{t(`${key}.body`)}</p>
                   </div>
                 </li>
               ))}

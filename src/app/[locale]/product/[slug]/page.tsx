@@ -11,6 +11,7 @@ import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductActions } from "@/components/product/ProductActions";
+import { DetailedDescription } from "@/components/product/DetailedDescription";
 import { ProductCard } from "@/components/catalog/ProductCard";
 
 export function generateStaticParams() {
@@ -154,11 +155,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
               {detailed && (
                 <div>
                   <h2 className="mb-5 font-display text-2xl font-bold text-text-primary">{t("detailed")}</h2>
-                  <div className="max-w-3xl space-y-3 text-[15px] leading-[1.8] text-text-secondary">
-                    {detailed.split("\n").map((line) => line.trim()).filter(Boolean).map((para, i) => (
-                      <p key={i}>{para}</p>
-                    ))}
-                  </div>
+                  <DetailedDescription text={detailed} />
                 </div>
               )}
             </div>
