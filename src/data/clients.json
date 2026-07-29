@@ -123,9 +123,9 @@
     "id": "endomed",
     "name": "Endomed",
     "logo": "/images/clients/endomed.webp",
-    "description": "",
-    "descriptionUz": "",
-    "descriptionEn": ""
+    "description": "Частная клиника Endomed в Бухаре. Специализируется на эндоскопических исследованиях желудочно-кишечного тракта, располагает собственной лабораторией, ультразвуковой и ЭКГ-диагностикой, а также кардиологическим приёмом. Работает с понедельника по субботу.",
+    "descriptionUz": "Buxorodagi Endomed xususiy klinikasi. Meʼda-ichak yoʻli endoskopiyasiga ixtisoslashgan, oʻz laboratoriyasi, UZI va EKG diagnostikasi hamda kardiologiya qabuliga ega. Dushanbadan shanbagacha ishlaydi.",
+    "descriptionEn": "Endomed private clinic in Bukhara. It specialises in endoscopy of the gastrointestinal tract and has its own laboratory, ultrasound and ECG diagnostics, and cardiology consultations. Open Monday to Saturday."
   },
   {
     "id": "ezgu-niyat",
@@ -139,9 +139,9 @@
     "id": "hayot-plus-med",
     "name": "Hayot Plus",
     "logo": "/images/clients/hayot-plus-med.jpg",
-    "description": "",
-    "descriptionUz": "",
-    "descriptionEn": ""
+    "description": "Центр вакцинации HAYOT PLUS MED в Гулистане, Сырдарьинская область. Прививки для детей, взрослых, пожилых и путешественников, включая гепатит A и B и грипп, а также все виды лабораторных анализов.",
+    "descriptionUz": "Guliston (Sirdaryo viloyati) shahridagi HAYOT PLUS MED emlash markazi. Bolalar, kattalar, keksalar va sayohatchilar uchun emlash, jumladan A va B gepatiti hamda gripp, shuningdek barcha turdagi laboratoriya tahlillari.",
+    "descriptionEn": "HAYOT PLUS MED vaccination centre in Gulistan, Sirdaryo region. Immunisation for children, adults, the elderly and travellers, including hepatitis A and B and influenza, plus all types of laboratory tests."
   },
   {
     "id": "innova-expert",
@@ -163,9 +163,9 @@
     "id": "medi-art",
     "name": "Medi Art",
     "logo": "/images/clients/medi-art.webp",
-    "description": "",
-    "descriptionUz": "",
-    "descriptionEn": ""
+    "description": "Медицинский центр Medi Art с собственной лабораторией в Ташкенте, Яшнабадский район. Гинекология и репродуктология, эндокринология, ЛОР, ультразвуковая диагностика, педиатрия и косметология. Приём с понедельника по субботу.",
+    "descriptionUz": "Toshkentdagi (Yashnobod tumani) Medi Art tibbiyot markazi oʻz laboratoriyasi bilan. Ginekologiya va reproduktologiya, endokrinologiya, LOR, ultratovush diagnostikasi, pediatriya va kosmetologiya. Dushanbadan shanbagacha ishlaydi.",
+    "descriptionEn": "Medi Art medical centre with its own laboratory in Tashkent, Yashnabad district. Gynecology and reproductive medicine, endocrinology, ENT, ultrasound diagnostics, pediatrics and cosmetology. Open Monday to Saturday."
   },
   {
     "id": "medik-as",
@@ -179,9 +179,9 @@
     "id": "ntd",
     "name": "NTD",
     "logo": "/images/clients/ntd.jpg",
-    "description": "",
-    "descriptionUz": "",
-    "descriptionEn": ""
+    "description": "Диагностический центр и лаборатория «Namangan Tibbiy Diagnostika» в Намангане. Работает круглосуточно: лабораторные исследования, УЗИ, МСКТ, ЭКГ и более ста видов услуг. Входит в сеть Toshkent Tibbiy Diagnostika (TTD).",
+    "descriptionUz": "Namangandagi «Namangan Tibbiy Diagnostika» diagnostika markazi va laboratoriyasi. Sutkalik rejimda ishlaydi: laboratoriya tekshiruvlari, UZI, MSKT, EKG va yuzdan ortiq xizmat turi. Toshkent Tibbiy Diagnostika (TTD) tarmogʻiga kiradi.",
+    "descriptionEn": "The Namangan Tibbiy Diagnostika centre and laboratory in Namangan. Open around the clock: laboratory testing, ultrasound, MSCT, ECG and more than a hundred services. Part of the Toshkent Tibbiy Diagnostika (TTD) network."
   },
   {
     "id": "respublika-sport-tibbiyoti",
