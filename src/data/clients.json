@@ -72,14 +72,6 @@
     "descriptionEn": "An independent clinical diagnostic laboratory in Tashkent, working in an open-space format where patients can observe the testing. Core tests run express (from 30 minutes), open seven days a week."
   },
   {
-    "id": "shifonur",
-    "name": "Shifonur",
-    "logo": "/images/clients/shifonur.webp",
-    "description": "Многопрофильный медицинский центр в Ташкенте, работает с 2001 года. Первопроходец в Узбекистане по лазерной хирургии катаракты и эксимер-лазерной коррекции зрения. Офтальмология, ЛОР, хирургия, гинекология, эндокринология, кардиология; собственная лаборатория и филиалы в Самарканде, Бухаре, Карши и Хорезме.",
-    "descriptionUz": "Toshkentdagi koʻp tarmoqli tibbiyot markazi, 2001 yildan beri ishlaydi. Oʻzbekistonda kataraktani lazer bilan jarrohlik qilish va koʻrishni eksimer-lazer bilan tuzatishda kashshof. Oftalmologiya, LOR, jarrohlik, ginekologiya, endokrinologiya, kardiologiya; oʻz laboratoriyasi va Samarqand, Buxoro, Qarshi, Xorazmdagi filiallari.",
-    "descriptionEn": "A multidisciplinary medical center in Tashkent, operating since 2001. A pioneer in Uzbekistan for laser cataract surgery and excimer laser vision correction. Ophthalmology, ENT, surgery, gynecology, endocrinology, cardiology; its own laboratory and branches in Samarkand, Bukhara, Karshi and Khorezm."
-  },
-  {
     "id": "swiss-lab",
     "name": "Swiss Lab",
     "logo": "/images/clients/swiss-lab.svg",

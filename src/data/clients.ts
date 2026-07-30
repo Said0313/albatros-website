@@ -7,7 +7,7 @@
  * `description` (RU, from the vetted Appendix A copy) + `descriptionUz` power the
  * client cards.
  *
- * Order: the strongly-red logos (akfa, vitros, hayat, arzon, shifonur, alfa) are
+ * Order: the strongly-red logos (akfa, vitros, hayat, arzon, alfa) are
  * interleaved with blue/green/dark/mixed and softer-coral ones so no two strong-red
  * logos sit adjacent, including across the duplicated marquee loop seam (shox -> akfa).
  *
