@@ -13,6 +13,8 @@ import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductActions } from "@/components/product/ProductActions";
 import { DetailedDescription } from "@/components/product/DetailedDescription";
 import { ProductCard } from "@/components/catalog/ProductCard";
+import { ReagentCard } from "@/components/catalog/ReagentCard";
+import { IncrementalList } from "@/components/ui/IncrementalList";
 
 export function generateStaticParams() {
   // Image-less catalog entries (reagents/consumables/controls) have no product page.
@@ -40,7 +42,9 @@ export async function generateMetadata({
 export default function ProductPage({ params }: { params: { slug: string; locale: string } }) {
   const product = getProduct(params.slug);
   if (!product || product.imageless) notFound();
-  const related = getRelated(product);
+  // Show every same-category sibling (the largest category has 8) and let
+  // IncrementalList do the limiting, instead of silently truncating to 4.
+  const related = getRelated(product, 8);
   const locale = params.locale;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const t = useTranslations("product");
@@ -174,11 +178,18 @@ export default function ProductPage({ params }: { params: { slug: string; locale
         {related.length > 0 && (
           <div className="mt-20">
             <h2 className="mb-6 font-display text-2xl font-bold text-text-primary">{t("related")}</h2>
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {/* Same show-more control as the catalog and events lists: 5 on mobile
+                (+5 per tap, with the collapse arrow), 9 at lg. A related list can
+                include image-less siblings (reagents/consumables/controls share
+                categories with the analyzers), so those render as ReagentCard here
+                too, matching the catalog and brand pages. */}
+            <IncrementalList count={related.length} className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((p) => (
-                <ProductCard key={p.slug} product={p} />
+                <div key={p.slug} className="h-full">
+                  {p.imageless ? <ReagentCard product={p} /> : <ProductCard product={p} />}
+                </div>
               ))}
-            </div>
+            </IncrementalList>
           </div>
         )}
         </div>
