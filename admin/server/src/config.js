@@ -27,6 +27,9 @@ module.exports = {
   CLIENT_ORIGIN: process.env.CLIENT_ORIGIN || "http://localhost:5173",
   JWT_SECRET: process.env.JWT_SECRET || "dev-insecure-secret-change-me",
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "12h",
+  // Off by default so local development stays commit-only, as before.
+  AUTO_PUSH: process.env.AUTO_PUSH === "true",
+  DEPLOY_BRANCH: process.env.DEPLOY_BRANCH || "deploy-website",
   SITE_ROOT,
   CATALOG_PATH,
   BRANDS_PATH,

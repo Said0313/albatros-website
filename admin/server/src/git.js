@@ -1,12 +1,15 @@
 "use strict";
 const path = require("path");
 const simpleGit = require("simple-git");
-const { SITE_ROOT } = require("./config");
+const { SITE_ROOT, AUTO_PUSH, DEPLOY_BRANCH } = require("./config");
 
 const git = simpleGit({ baseDir: SITE_ROOT });
 
 // Commits the given files (absolute or repo-relative paths) attributed to the
-// logged-in admin. LOCAL commit only: this never pushes and never deploys.
+// logged-in admin. Commit is always local. When AUTO_PUSH=true it also pushes
+// to origin/DEPLOY_BRANCH; a push failure (network/auth/conflict) is reported
+// back via the `pushError` field but never undoes or throws past the commit,
+// which has already succeeded locally.
 async function commitFiles(files, message, author) {
   const rel = files.map((f) => path.relative(SITE_ROOT, path.resolve(SITE_ROOT, f)));
   await git.add(rel);
@@ -31,7 +34,17 @@ async function commitFiles(files, message, author) {
 
   const authorStr = `${author.name} <${author.email}>`;
   const result = await git.commit(message, rel, { "--author": authorStr });
-  return { committed: true, commit: result.commit, summary: result.summary };
+  const commitResult = { committed: true, commit: result.commit, summary: result.summary };
+
+  if (AUTO_PUSH) {
+    try {
+      await git.push("origin", DEPLOY_BRANCH);
+    } catch (err) {
+      commitResult.pushError = err.message || String(err);
+    }
+  }
+
+  return commitResult;
 }
 
 async function currentBranch() {

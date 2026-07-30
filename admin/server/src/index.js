@@ -1,6 +1,7 @@
 "use strict";
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { PORT, CLIENT_ORIGIN, SITE_ROOT, CATALOG_PATH } = require("./config");
@@ -49,7 +50,26 @@ app.use("/api/pricelist", pricelistRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/translate-draft", translateRoutes);
 
-app.use((req, res) => res.status(404).json({ error: "Не найдено." }));
+// JSON 404 for unmatched /api/* routes must come before the static/SPA
+// fallback below, so unknown API calls never resolve to index.html.
+app.use("/api", (req, res) => res.status(404).json({ error: "Не найдено." }));
+
+// In production the built admin UI (admin/client/dist) is served by this
+// same process. Locally the UI runs separately via the Vite dev server on
+// 5173, and dist/ typically doesn't exist yet — that's fine, we just stay
+// API-only and warn.
+const CLIENT_DIST = path.join(__dirname, "..", "..", "client", "dist");
+if (fs.existsSync(path.join(CLIENT_DIST, "index.html"))) {
+  app.use(express.static(CLIENT_DIST));
+  app.get(/(.*)/, (req, res) => {
+    res.sendFile(path.join(CLIENT_DIST, "index.html"));
+  });
+} else {
+  console.warn(
+    `[admin] client build not found at ${CLIENT_DIST} — serving API only. ` +
+      `Run "npm run build" in admin/client to enable serving the UI, or use the Vite dev server for local development.`
+  );
+}
 
 app.listen(PORT, () => {
   console.log(`[admin] backend on http://localhost:${PORT}`);
