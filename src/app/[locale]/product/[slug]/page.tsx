@@ -116,12 +116,21 @@ export default function ProductPage({ params }: { params: { slug: string; locale
             {product.specifications.length > 0 && (
               <div className="mt-7 overflow-hidden rounded-xl border border-bg-border">
                 {product.specifications.map((s, i) => (
+                  // Label and value stack below sm and sit side by side from sm up.
+                  // The 40% track is only ~124px on a 375px phone (less at 320px),
+                  // which is narrower than a single long label word such as
+                  // "Производительность" or the Uzbek "Kengaytiriluvchanlik", so a
+                  // fixed two-column grid let the label overflow its track and
+                  // collide with the value. min-w-0 + break-words keeps even an
+                  // unbreakable token inside its own column at every width.
                   <div
                     key={s.label}
-                    className={`grid grid-cols-[40%_60%] gap-2 px-4 py-3 text-sm ${i % 2 === 0 ? "bg-bg-card" : "bg-bg-elevated"}`}
+                    className={`grid grid-cols-1 gap-1 px-4 py-3 text-sm sm:grid-cols-[40%_60%] sm:gap-2 ${i % 2 === 0 ? "bg-bg-card" : "bg-bg-elevated"}`}
                   >
-                    <span className="text-text-secondary">{specLabel(s.label, locale)}</span>
-                    <span className="font-mono text-text-primary">{specValue(s.value, locale)}</span>
+                    <span className="min-w-0 break-words text-text-secondary">{specLabel(s.label, locale)}</span>
+                    <span className="min-w-0 break-words font-mono text-text-primary">
+                      {specValue(s.value, locale)}
+                    </span>
                   </div>
                 ))}
               </div>
