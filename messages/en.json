@@ -38,7 +38,7 @@
   },
   "directions": {
     "eyebrow": "{count} DIRECTIONS",
-    "title": "Diagnostic directions",
+    "title": "Product categories",
     "intro": "A full range of solutions — from immunochemistry and hematology to molecular diagnostics and automated laboratory lines.",
     "tileDesc": {
       "equipment": "Automatic analyzers and laboratory systems for every diagnostic direction, with turnkey supply and service.",
@@ -52,7 +52,7 @@
     "subtitle": "Advanced solutions from world manufacturers"
   },
   "partners": {
-    "homeTitle": "Our international partners",
+    "homeTitle": "International brand portfolio",
     "homeSubtitle": "13 global laboratory and medical diagnostics leaders in Uzbekistan",
     "pageTitle": "Our partners",
     "pageSubtitle": "We represent 13 global leaders of laboratory and medical diagnostics in Uzbekistan.",
@@ -62,9 +62,9 @@
     "noProducts": "Equipment coming soon"
   },
   "clients": {
-    "homeTitle": "Our clients",
+    "homeTitle": "Our partners",
     "homeSubtitle": "Over 900 medical institutions across Uzbekistan trust us",
-    "pageTitle": "Our clients",
+    "pageTitle": "Our partners",
     "scaleStat": "900+ clients",
     "scaleNote": "Shown here is only a portion of the organizations that trust us"
   },

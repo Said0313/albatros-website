@@ -37,7 +37,7 @@
   },
   "directions": {
     "eyebrow": "{count} YOʻNALISH",
-    "title": "Diagnostika yoʻnalishlari",
+    "title": "Mahsulot yoʻnalishlari",
     "tileDesc": {
       "equipment": "Barcha diagnostika yoʻnalishlari uchun avtomatik analizatorlar va laboratoriya tizimlari, kalit topshirish asosida yetkazib berish va servis bilan.",
       "reagents": "Barcha tadqiqot guruhlari uchun original reagentlar va test-tizimlar, analizatorlar bilan toʻliq mos.",
@@ -50,7 +50,7 @@
     "subtitle": "Jahon ishlab chiqaruvchilarining ilgʻor yechimlari"
   },
   "partners": {
-    "homeTitle": "Bizning xorijiy hamkorlarimiz",
+    "homeTitle": "Xalqaro brendlar portfeli",
     "homeSubtitle": "Oʻzbekistonda laboratoriya va tibbiy diagnostikaning 13 jahon yetakchisi",
     "pageTitle": "Bizning hamkorlarimiz",
     "pageSubtitle": "Biz Oʻzbekistonda laboratoriya va tibbiy diagnostika sohasining 13 jahon yetakchisini taqdim etamiz.",
@@ -60,9 +60,9 @@
     "noProducts": "Uskunalar tez orada qoʻshiladi"
   },
   "clients": {
-    "homeTitle": "Bizning mahalliy hamkorlarimiz",
+    "homeTitle": "Bizning hamkorlarimiz",
     "homeSubtitle": "Oʻzbekiston boʻylab 900 dan ortiq tibbiyot muassasasi bizga ishonadi",
-    "pageTitle": "Bizning mahalliy hamkorlarimiz",
+    "pageTitle": "Bizning hamkorlarimiz",
     "scaleStat": "900 dan ortiq hamkor",
     "scaleNote": "Bu yerda bizga ishonch bildirgan tashkilotlarning bir qismi keltirilgan"
   },
