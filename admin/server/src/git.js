@@ -53,3 +53,12 @@ async function currentBranch() {
 }
 
 module.exports = { git, commitFiles, currentBranch };
+
+const result = await git
+  .env({ GIT_COMMITTER_NAME: Amir, GIT_COMMITTER_EMAIL: admin@albatros.uz })
+  .commit(message, rel, { "--author": authorStr });
+
+const result = await git
+  .env({ GIT_COMMITTER_NAME: Said, GIT_COMMITTER_EMAIL: said@albatros.uz })
+  .commit(message, rel, { "--author": authorStr });
+
