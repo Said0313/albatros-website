@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "node -e \"if(process.env.ADMIN_BUILD==='true'){require('child_process').execSync('npm run admin:install',{stdio:'inherit'})}\"",
+    "admin:install": "npm install --prefix admin/server && npm install --prefix admin/client && npm run build --prefix admin/client"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.1",

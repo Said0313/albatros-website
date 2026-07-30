@@ -27,6 +27,9 @@ module.exports = {
   CLIENT_ORIGIN: process.env.CLIENT_ORIGIN || "http://localhost:5173",
   JWT_SECRET: process.env.JWT_SECRET || "dev-insecure-secret-change-me",
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "12h",
+  // Off by default so local development stays commit-only, as before.
+  AUTO_PUSH: process.env.AUTO_PUSH === "true",
+  DEPLOY_BRANCH: process.env.DEPLOY_BRANCH || "deploy-website",
   SITE_ROOT,
   CATALOG_PATH,
   BRANDS_PATH,
@@ -41,6 +44,8 @@ module.exports = {
   CERT_FILES_DIR: path.join(SITE_ROOT, "public", "files", "certificates"),
   EVENT_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "events"),
   PRICE_LIST_PATH: path.join(SITE_ROOT, "public", "price-list.pdf"),
-  USERS_PATH: path.join(__dirname, "..", "users.json"),
+  USERS_PATH: process.env.USERS_PATH
+    ? path.resolve(process.env.USERS_PATH)
+    : path.join(__dirname, "..", "users.json"),
   UPLOADS_TMP: path.join(__dirname, "..", "uploads-tmp"),
 };
