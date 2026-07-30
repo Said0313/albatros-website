@@ -44,6 +44,8 @@ module.exports = {
   CERT_FILES_DIR: path.join(SITE_ROOT, "public", "files", "certificates"),
   EVENT_IMAGES_DIR: path.join(SITE_ROOT, "public", "images", "events"),
   PRICE_LIST_PATH: path.join(SITE_ROOT, "public", "price-list.pdf"),
-  USERS_PATH: path.join(__dirname, "..", "users.json"),
+  USERS_PATH: process.env.USERS_PATH
+    ? path.resolve(process.env.USERS_PATH)
+    : path.join(__dirname, "..", "users.json"),
   UPLOADS_TMP: path.join(__dirname, "..", "uploads-tmp"),
 };
