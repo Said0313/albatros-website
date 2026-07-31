@@ -6,6 +6,7 @@ import { getTranslations } from "next-intl/server";
 import { brands } from "@/lib/catalog";
 import { clients } from "@/data/clients";
 import { brandSpecialty, brandDescription, brandCountry, clientDescription } from "@/data/i18n";
+import { isRoundish } from "@/lib/logoChip";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -99,8 +100,16 @@ export default function PartnersPage() {
                 <ScrollReveal key={c.id} delay={(i % 3) * 0.06}>
                   <div className="flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-6 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
                     <div className="flex h-16 w-24 items-center justify-center rounded-lg bg-white p-3 shadow-[0_4px_24px_rgba(0,0,0,0.25)] lg:h-20 lg:w-32 lg:p-4">
+                      {/* Round marks read smaller than wide wordmarks at the same height,
+                          so they get the box's full inner height on mobile; at lg both
+                          already fill it. This tile is a fixed card, not the marquee chip,
+                          so the width stays uniform across the grid. */}
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={c.logo} alt={c.name} className="max-h-9 w-auto object-contain lg:max-h-12" />
+                      <img
+                        src={c.logo}
+                        alt={c.name}
+                        className={`w-auto object-contain lg:max-h-12 ${isRoundish(c.logo) ? "max-h-10" : "max-h-9"}`}
+                      />
                     </div>
                     <h3 className="mt-4 font-display text-lg font-bold text-text-primary">{c.name}</h3>
                     <ExpandableText text={desc} className="mt-2" />

@@ -2,31 +2,16 @@ import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
 import { clients } from "@/data/clients";
-import logoSizes from "@/data/logoSizes.json";
+import { chipSize } from "@/lib/logoChip";
 
 /**
- * Clients logo marquee. Mirrors <PartnersMarquee> (same .marquee / .logo-chip
- * chrome, same duplicated-track seamless loop) but scrolls LEFT and a touch
- * slower/calmer via the .marquee-track-rev class (globals.css).
- *
- * Uses a plain <img> instead of next/image because the client logos are a mix of
- * formats including SVG, which next/image blocks unless dangerouslyAllowSVG is
- * enabled in next.config; a raw <img> renders every format uniformly and the
- * visual result inside .logo-chip is identical.
- *
- * The width/height attributes are the logo's REAL intrinsic size (from
- * src/data/logoSizes.json, regenerate with scripts/gen-logo-sizes.mjs). Without
- * them a raw <img> has no aspect ratio until its file arrives, so with
- * images.unoptimized every chip started at zero width and widened as it loaded.
- * The track scrolls with translateX(-50%), which is relative to its current
- * width, so that reflow moved the running animation and made it jump.
+ * Chip width follows each logo's aspect ratio at a per-shape height, from
+ * src/lib/logoChip.ts. The width and height attributes stay the logo's true
+ * intrinsic size so the reserved box equals the final box from first paint:
+ * with images.unoptimized a raw <img> has no aspect ratio until its file
+ * arrives, and the track scrolls with translateX(-50%) of its current width, so
+ * any reflow would move the running animation.
  */
-const SIZES: Record<string, number[]> = logoSizes;
-const sizeOf = (logo: string): [number, number] => {
-  const s = SIZES[logo];
-  return s && s.length === 2 ? [s[0], s[1]] : [160, 48];
-};
-
 export function ClientsMarquee() {
   const t = useTranslations("clients");
   const loop = [...clients, ...clients];
@@ -39,7 +24,7 @@ export function ClientsMarquee() {
   const loopB = [...rowB, ...rowB];
 
   const chip = (c: (typeof clients)[number], i: number) => {
-    const [w, h] = sizeOf(c.logo);
+    const { width, height, intrinsic } = chipSize(c.logo);
     return (
       <Link
         key={`${c.id}-${i}`}
@@ -48,7 +33,13 @@ export function ClientsMarquee() {
         className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={c.logo} alt={c.name} width={w} height={h} />
+        <img
+          src={c.logo}
+          alt={c.name}
+          width={intrinsic[0]}
+          height={intrinsic[1]}
+          style={{ "--chip-w": `${width}px`, "--chip-h": `${height}px` } as React.CSSProperties}
+        />
       </Link>
     );
   };

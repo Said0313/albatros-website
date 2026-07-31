@@ -166,7 +166,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 84px;
-  min-width: 150px;
+  /* Chip width follows the logo. The old 150px floor put every round mark in a
+     box far wider than itself, about 50px of dead space each, so it rendered
+     small while a wide wordmark filled the same box edge to edge. The floor now
+     sits just below a square chip, so it only stops the narrowest marks looking
+     pinched and never pads a round one. */
+  min-width: 108px;
   padding: 14px 26px;
   /* semi-transparent so the homepage particle field shows through; no
      backdrop-filter here: chips animate in the marquee and a moving blur is
@@ -176,12 +181,16 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 24px -16px rgba(29, 58, 130, 0.28);
 }
-/* Both marquees (partner + client) render logos at a uniform 48px height; logos
-   were trimmed of dead margin so this reads consistently across the two rows. */
+/* Per-logo size comes from src/lib/logoChip.ts, handed over as the --chip-w and
+   --chip-h custom properties. A single fixed height for everyone reads
+   unevenly: a round mark looks smaller than a wide wordmark of the same
+   height, and a very wide one runs away with the line. Both axes are set, so
+   the box is fully determined before the file loads and the marquee cannot
+   reflow. No max-height here: max-height beats an inline height, which is what
+   was flattening every logo to one size on mobile. */
 .logo-chip img {
-  height: 48px;
-  max-height: 48px;
-  width: auto;
+  width: var(--chip-w, 160px);
+  height: var(--chip-h, 48px);
   object-fit: contain;
 }
 /* Desktop base scale: the site reads best at 90% browser zoom, so that is
@@ -229,16 +238,19 @@ canvas[aria-hidden] {
   }
 }
 
-/* Mobile: partner logos 20% smaller (48px -> 38px, chip scaled to match). */
+/* Mobile: the whole chip scales down about 20%. Both axes are scaled by the
+   same factor so each logo keeps its aspect ratio and its relative size within
+   the set; the previous flat 38px height collapsed every shape back to one
+   size, which is what made round marks unreadable here. */
 @media (max-width: 1023px) {
   .logo-chip {
     height: 67px;
-    min-width: 120px;
+    min-width: 86px;
     padding: 11px 20px;
   }
   .logo-chip img {
-    height: 38px;
-    max-height: 38px;
+    width: calc(var(--chip-w, 160px) * 0.79);
+    height: calc(var(--chip-h, 48px) * 0.79);
   }
 }
 

@@ -3,19 +3,7 @@ import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
 import { brands } from "@/lib/catalog";
-import logoSizes from "@/data/logoSizes.json";
-
-// The track scrolls with translateX(-50%), which is relative to its CURRENT
-// width, and images.unoptimized means the logos arrive progressively at full
-// size. Declaring a guessed box (160x48 for every logo) let each logo's width
-// snap by up to 111px as its file loaded, moving the running animation and
-// producing the intermittent jerk. Real intrinsic sizes make the track width
-// final at first paint. Regenerate with scripts/gen-logo-sizes.mjs.
-const SIZES: Record<string, number[]> = logoSizes;
-const sizeOf = (logo: string): [number, number] => {
-  const s = SIZES[logo];
-  return s && s.length === 2 ? [s[0], s[1]] : [160, 48];
-};
+import { chipSize } from "@/lib/logoChip";
 
 export function PartnersMarquee() {
   const t = useTranslations("partners");
@@ -30,7 +18,7 @@ export function PartnersMarquee() {
   const loopB = [...rowB, ...rowB];
 
   const chip = (b: (typeof brands)[number], i: number) => {
-    const [w, h] = sizeOf(b.logo);
+    const { width, height, intrinsic } = chipSize(b.logo);
     return (
       <Link
         key={`${b.id}-${i}`}
@@ -38,7 +26,14 @@ export function PartnersMarquee() {
         aria-label={b.name}
         className="logo-chip transition-shadow hover:shadow-[0_10px_28px_-14px_rgba(29,58,130,0.45)]"
       >
-        <Image src={b.logo} alt={b.name} width={w} height={h} className="w-auto object-contain" />
+        <Image
+          src={b.logo}
+          alt={b.name}
+          width={intrinsic[0]}
+          height={intrinsic[1]}
+          style={{ "--chip-w": `${width}px`, "--chip-h": `${height}px` } as React.CSSProperties}
+          className="object-contain"
+        />
       </Link>
     );
   };
