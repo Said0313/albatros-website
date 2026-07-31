@@ -157,11 +157,10 @@ export async function POST(request: Request) {
 
   // The price-request modal sends the product it was opened from. Keep it with
   // the lead: a price request that does not say what it is about is useless.
-  // The person always leads the comment, so they stay readable on the deal card
-  // after conversion even if the contact link were ever to break.
-  const comments = [`Контактное лицо: ${name}, ${phone}`, product ? `Продукт: ${product}` : "", comment]
-    .filter(Boolean)
-    .join("\n\n");
+  // The person is not repeated here: they are on the lead and on the linked
+  // contact via CONTACT_ID, and repeating them only pushed the actual enquiry
+  // further down the card.
+  const comments = [product ? `Продукт: ${product}` : "", comment].filter(Boolean).join("\n\n");
 
   // The lead list reads better with the enquiry itself in the title than with
   // the name, which is already on the lead and on the linked contact. Bitrix
