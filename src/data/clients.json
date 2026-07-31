@@ -8,20 +8,20 @@
     "descriptionEn": "A clinical diagnostic laboratory in Tashkent, offering a wide range of laboratory tests with an emphasis on affordable prices."
   },
   {
-    "id": "openlab",
-    "name": "OpenLab",
-    "logo": "/images/clients/openlab.jpg",
-    "description": "Независимая клинико-диагностическая лаборатория в Ташкенте, работает в формате открытой лаборатории (open-space): пациент может наблюдать за ходом исследований. Основные анализы в экспресс-режиме (от 30 минут), приём семь дней в неделю.",
-    "descriptionUz": "Toshkentdagi mustaqil klinik-diagnostik laboratoriya, ochiq laboratoriya (open-space) formatida ishlaydi: bemor tekshiruv jarayonini kuzatishi mumkin. Asosiy tahlillar ekspress rejimda (30 daqiqadan), qabul haftaning yetti kuni.",
-    "descriptionEn": "An independent clinical diagnostic laboratory in Tashkent, working in an open-space format where patients can observe the testing. Core tests run express (from 30 minutes), open seven days a week."
-  },
-  {
     "id": "akfa-medline",
     "name": "Akfa Medline",
     "logo": "/images/clients/akfa-medline.jpg",
     "description": "Крупнейший в Центральной Азии частный многопрофильный госпиталь, работает в Ташкенте с 2017 года. Единственная в Узбекистане клиника с аккредитацией JCI. Более 150 врачей, оборудование Siemens, лаборатория Roche и Sysmex, роботизированная хирургия.",
     "descriptionUz": "Markaziy Osiyodagi eng yirik xususiy koʻp tarmoqli shifoxona, Toshkentda 2017 yildan beri ishlaydi. Oʻzbekistonda yagona JCI akkreditatsiyasiga ega klinika. 150 dan ortiq shifokor, Siemens uskunalari, Roche va Sysmex laboratoriyasi, robototexnik jarrohlik.",
     "descriptionEn": "The largest private multidisciplinary hospital in Central Asia, operating in Tashkent since 2017. The only JCI-accredited clinic in Uzbekistan. More than 150 doctors, Siemens equipment, a Roche and Sysmex laboratory, and robotic surgery."
+  },
+  {
+    "id": "openlab",
+    "name": "OpenLab",
+    "logo": "/images/clients/openlab.jpg",
+    "description": "Независимая клинико-диагностическая лаборатория в Ташкенте, работает в формате открытой лаборатории (open-space): пациент может наблюдать за ходом исследований. Основные анализы в экспресс-режиме (от 30 минут), приём семь дней в неделю.",
+    "descriptionUz": "Toshkentdagi mustaqil klinik-diagnostik laboratoriya, ochiq laboratoriya (open-space) formatida ishlaydi: bemor tekshiruv jarayonini kuzatishi mumkin. Asosiy tahlillar ekspress rejimda (30 daqiqadan), qabul haftaning yetti kuni.",
+    "descriptionEn": "An independent clinical diagnostic laboratory in Tashkent, working in an open-space format where patients can observe the testing. Core tests run express (from 30 minutes), open seven days a week."
   },
   {
     "id": "darmon-servis",
