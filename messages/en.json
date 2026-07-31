@@ -193,7 +193,7 @@
     "name": "Name*",
     "phone": "Phone* (+998...)",
     "company": "Company",
-    "comment": "Comment",
+    "comment": "Comment*",
     "consent": "I agree to the processing of personal data",
     "submit": "Submit request",
     "sending": "Sending…",

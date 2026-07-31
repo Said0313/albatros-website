@@ -147,6 +147,7 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
                           name="comment"
                           placeholder={t("comment")}
                           rows={3}
+                          required
                           className="w-full rounded-lg border border-bg-border bg-bg-elevated px-3.5 py-2.5 text-sm text-text-primary placeholder:text-text-muted focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
                         />
                         <label className="flex items-start gap-2 text-xs text-text-secondary">

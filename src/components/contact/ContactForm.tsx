@@ -59,6 +59,7 @@ export function ContactForm() {
         name="comment"
         rows={4}
         placeholder={t("comment")}
+        required
         className="w-full rounded-lg border border-bg-border bg-bg-elevated px-4 py-3 text-sm text-text-primary placeholder:text-text-muted focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
       />
       <label className="flex items-start gap-2 text-xs text-text-secondary">

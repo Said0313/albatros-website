@@ -132,7 +132,7 @@ export async function POST(request: Request) {
   const comment = clean(data.comment);
   const product = clean(data.product);
 
-  if (!name || !phone) {
+  if (!name || !phone || !comment) {
     return NextResponse.json({ ok: false, error: "missing_fields" }, { status: 400 });
   }
 
