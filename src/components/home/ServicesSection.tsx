@@ -10,21 +10,24 @@ import { useTranslations } from "next-intl";
  * namespace, laid out as a VERTICAL TIMELINE: a red line down the left with a
  * dot per stage, headings and body text beside it. No cards, no 01-04 numerals.
  *
- * The line fills downward as the visitor scrolls through the section, and each
- * dot latches red once the fill reaches it. Progressive-enhancement + perf:
+ * The line fills downward as the visitor scrolls through the section. The fill
+ * front tracks the middle of the screen, so a stage lights up as its dot
+ * reaches the centre of the viewport, and goes back off when the front recedes
+ * past it on the way up. Progressive-enhancement + perf:
  *
  * - No JavaScript / SSR: the fill renders at scaleY(1) and the dots red, so the
  *   timeline looks complete rather than a blank line with grey dots.
  * - prefers-reduced-motion: JS leaves that complete state in place, no scroll
  *   animation.
- * - Otherwise JS resets the fill to empty on mount and drives it from scroll.
- *   The fill is a compositor-only `transform: scaleY()` on a red overlay with
+ * - Otherwise JS resets the fill to empty on mount and drives it from its own
+ *   rAF loop while the section is near the viewport. The fill is a
+ *   compositor-only `transform: scaleY()` on a red overlay with
  *   `transform-origin: top` - never height/top, so it never triggers layout.
- *   The scroll listener is passive and throttled through requestAnimationFrame
- *   (one transform write + a few dot class toggles per frame), and an
- *   IntersectionObserver gates it so nothing runs while the section is off
- *   screen. This avoids the main-thread starvation that previously broke
- *   navigation and stuttered the carousel.
+ *   Each frame returns immediately unless the scroll position or the viewport
+ *   height changed, so an idle in-view section does no layout work, and an
+ *   IntersectionObserver cancels the loop outright once the section leaves.
+ *   This avoids the main-thread starvation that previously broke navigation and
+ *   stuttered the carousel.
  *
  * The whole timeline still sits on the section-card surface so the text is
  * readable over the particle field.
@@ -77,35 +80,51 @@ export function ServicesSection() {
       });
     };
 
-    const latched = new Array(dots.length).fill(false);
+    // Current on/off state per dot, so a frame only touches classList when a dot
+    // actually crosses the line rather than on every frame.
+    const dotOn = new Array(dots.length).fill(false);
 
     const update = () => {
       const r = wrap.getBoundingClientRect();
       const vh = window.innerHeight;
-      const p = Math.max(0, Math.min(1, (vh * 0.72 - r.top) / r.height));
+      // The fill front sits at the middle of the screen, so a stage lights up as
+      // its dot reaches the centre of the viewport on the way down.
+      const p = Math.max(0, Math.min(1, (vh * 0.5 - r.top) / r.height));
       fill.style.transform = `scaleY(${p})`;
       for (let i = 0; i < dots.length; i++) {
         const d = dots[i];
-        if (d && !latched[i] && p >= fracs[i] - 0.001) {
-          latched[i] = true; // dots stay red once reached
-          setDot(d, true);
+        if (!d) continue;
+        // Reversible: the fill front passing a dot turns it red going down, and
+        // receding past it turns it back off going up.
+        const on = p >= fracs[i] - 0.001;
+        if (on !== dotOn[i]) {
+          dotOn[i] = on;
+          setDot(d, on);
         }
       }
     };
 
-    // While the section is near the viewport we drive the fill from our own rAF
-    // loop rather than from scroll events. On mobile the scroll-event path is
-    // not dependable: events are coalesced or dropped during momentum scrolling,
-    // and the viewport height itself changes as the address bar hides and shows,
-    // which silently invalidates a value read at the previous event. The loop
-    // reads the live rect each frame instead, so it cannot go stale or stall.
+    // The fill is driven from two independent sources, because either one alone
+    // has a way of leaving the line frozen:
     //
-    // It stays cheap: each frame first compares scroll position and viewport
+    // - A passive scroll listener, coalesced into one rAF per frame. This is the
+    //   primary driver and needs nothing to have started it.
+    // - A rAF loop that runs only while the section is in view, which catches
+    //   what scroll events miss: momentum frames where no event lands, and the
+    //   viewport height changing as the mobile address bar hides and shows.
+    //
+    // The loop stays cheap: each frame compares scroll position and viewport
     // height against the previous frame and returns immediately when neither
-    // moved, so an idle in-view section does no layout work at all, and the loop
-    // is cancelled outright once the section leaves the viewport. The only write
-    // is still a compositor-only transform.
+    // moved, so an idle in-view section does no layout work, and it is cancelled
+    // outright once the section leaves. The only write is a compositor-only
+    // transform either way.
+    //
+    // inView starts true rather than false on purpose. It is only ever narrowed
+    // by the observer, so a missed or late first callback cannot leave the
+    // section permanently unresponsive to scrolling.
     let raf = 0;
+    let ticking = false;
+    let inView = true;
     let lastY = NaN;
     let lastVh = NaN;
 
@@ -132,29 +151,48 @@ export function ServicesSection() {
         raf = 0;
       }
     };
+    const schedule = () => {
+      if (!inView || ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        update();
+      });
+    };
+    const onScroll = () => schedule();
+    const onResize = () => {
+      measure();
+      schedule();
+    };
 
     measure();
-    // The observer's first callback fires on observe regardless of whether the
-    // section is intersecting, so the single update below also sets the correct
-    // state at mount - including when the page loads already scrolled past the
-    // section (scroll restoration / deep link), where p computes to 1 and the
-    // line renders filled.
+    update(); // paint the correct state immediately, without waiting for anything
+    // The observer gates the continuous loop. Its first callback fires on
+    // observe regardless of whether the section is intersecting, so this also
+    // settles the state at mount, including when the page loads already scrolled
+    // past the section (scroll restoration / deep link), where p computes to 1
+    // and the line renders filled.
     const io = new IntersectionObserver(
       (entries) => {
+        inView = entries[0].isIntersecting;
         measure();
-        if (entries[0].isIntersecting) start();
+        if (inView) start();
         else {
           stop();
-          requestAnimationFrame(update); // settle on the correct end state
+          update(); // settle on the correct end state
         }
       },
       { rootMargin: "120px 0px" }
     );
     io.observe(wrap);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
 
     return () => {
       stop();
       io.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
     };
   }, []);
 
