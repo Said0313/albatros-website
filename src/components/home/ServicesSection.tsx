@@ -78,11 +78,8 @@ export function ServicesSection() {
     };
 
     const latched = new Array(dots.length).fill(false);
-    let ticking = false;
-    let inView = false;
 
     const update = () => {
-      ticking = false;
       const r = wrap.getBoundingClientRect();
       const vh = window.innerHeight;
       const p = Math.max(0, Math.min(1, (vh * 0.72 - r.top) / r.height));
@@ -96,39 +93,68 @@ export function ServicesSection() {
       }
     };
 
-    const onScroll = () => {
-      if (!inView || ticking) return;
-      ticking = true;
-      requestAnimationFrame(update);
+    // While the section is near the viewport we drive the fill from our own rAF
+    // loop rather than from scroll events. On mobile the scroll-event path is
+    // not dependable: events are coalesced or dropped during momentum scrolling,
+    // and the viewport height itself changes as the address bar hides and shows,
+    // which silently invalidates a value read at the previous event. The loop
+    // reads the live rect each frame instead, so it cannot go stale or stall.
+    //
+    // It stays cheap: each frame first compares scroll position and viewport
+    // height against the previous frame and returns immediately when neither
+    // moved, so an idle in-view section does no layout work at all, and the loop
+    // is cancelled outright once the section leaves the viewport. The only write
+    // is still a compositor-only transform.
+    let raf = 0;
+    let lastY = NaN;
+    let lastVh = NaN;
+
+    const frame = () => {
+      const y = window.scrollY;
+      const vh = window.innerHeight;
+      if (y !== lastY || vh !== lastVh) {
+        if (vh !== lastVh) measure(); // address bar shown/hidden: dot positions move
+        lastY = y;
+        lastVh = vh;
+        update();
+      }
+      raf = requestAnimationFrame(frame);
     };
-    const onResize = () => {
-      measure();
-      onScroll();
+    const start = () => {
+      if (!raf) {
+        lastY = NaN; // force one update on entry
+        raf = requestAnimationFrame(frame);
+      }
+    };
+    const stop = () => {
+      if (raf) {
+        cancelAnimationFrame(raf);
+        raf = 0;
+      }
     };
 
     measure();
     // The observer's first callback fires on observe regardless of whether the
-    // section is intersecting, so running one update on every intersection
-    // change (enter AND leave) sets the correct state at mount too - including
-    // when the page loads already scrolled past the section (scroll restoration
-    // / deep link): update then computes p >= 1 and fills the line. Only the
-    // continuous per-scroll work below is gated to the in-view window.
+    // section is intersecting, so the single update below also sets the correct
+    // state at mount - including when the page loads already scrolled past the
+    // section (scroll restoration / deep link), where p computes to 1 and the
+    // line renders filled.
     const io = new IntersectionObserver(
       (entries) => {
-        inView = entries[0].isIntersecting;
         measure();
-        requestAnimationFrame(update);
+        if (entries[0].isIntersecting) start();
+        else {
+          stop();
+          requestAnimationFrame(update); // settle on the correct end state
+        }
       },
       { rootMargin: "120px 0px" }
     );
     io.observe(wrap);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onResize, { passive: true });
 
     return () => {
+      stop();
       io.disconnect();
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
     };
   }, []);
 
