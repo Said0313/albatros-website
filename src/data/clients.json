@@ -1,61 +1,5 @@
 [
   {
-    "id": "akfa-medline",
-    "name": "Akfa Medline",
-    "logo": "/images/clients/akfa-medline.jpg",
-    "description": "Крупнейший в Центральной Азии частный многопрофильный госпиталь, работает в Ташкенте с 2017 года. Единственная в Узбекистане клиника с аккредитацией JCI. Более 150 врачей, оборудование Siemens, лаборатория Roche и Sysmex, роботизированная хирургия.",
-    "descriptionUz": "Markaziy Osiyodagi eng yirik xususiy koʻp tarmoqli shifoxona, Toshkentda 2017 yildan beri ishlaydi. Oʻzbekistonda yagona JCI akkreditatsiyasiga ega klinika. 150 dan ortiq shifokor, Siemens uskunalari, Roche va Sysmex laboratoriyasi, robototexnik jarrohlik.",
-    "descriptionEn": "The largest private multidisciplinary hospital in Central Asia, operating in Tashkent since 2017. The only JCI-accredited clinic in Uzbekistan. More than 150 doctors, Siemens equipment, a Roche and Sysmex laboratory, and robotic surgery."
-  },
-  {
-    "id": "biogen-med",
-    "name": "Biogen Med",
-    "logo": "/images/clients/biogen-med.png",
-    "description": "Сеть медицинских клиник и лабораторий в Ташкенте с несколькими филиалами. Лабораторные анализы, УЗИ, круглосуточный ЛОР-прием, консультации специалистов и процедурный кабинет.",
-    "descriptionUz": "Toshkentdagi bir nechta filialga ega tibbiyot klinikalari va laboratoriyalari tarmogʻi. Laboratoriya tahlillari, UZI, sutkalik LOR qabuli, mutaxassislar maslahati va muolaja xonasi.",
-    "descriptionEn": "A network of medical clinics and laboratories in Tashkent with several branches. Laboratory tests, ultrasound, round-the-clock ENT consultations, specialist appointments, and a procedure room."
-  },
-  {
-    "id": "vitros",
-    "name": "Vitros",
-    "logo": "/images/clients/vitros.svg",
-    "description": "Частная сеть клинико-диагностических лабораторий, на рынке Узбекистана с 2012 года. Около 15 филиалов в Ташкенте, более 600 видов анализов. Исследования выполняются на оборудовании и реагентах Ortho Clinical Diagnostics (США).",
-    "descriptionUz": "Xususiy klinik-diagnostik laboratoriyalar tarmogʻi, Oʻzbekiston bozorida 2012 yildan beri. Toshkentda 15 ga yaqin filial, 600 dan ortiq tahlil turi. Tekshiruvlar Ortho Clinical Diagnostics (AQSh) uskunalari va reagentlarida bajariladi.",
-    "descriptionEn": "A private network of clinical diagnostic laboratories, on the Uzbekistan market since 2012. About 15 branches in Tashkent, more than 600 types of tests. Testing is performed on Ortho Clinical Diagnostics (USA) equipment and reagents."
-  },
-  {
-    "id": "darmon-servis",
-    "name": "Darmon Servis",
-    "logo": "/images/clients/darmon-servis.svg",
-    "description": "Многопрофильная лечебно-диагностическая клиника, основана в 2005 году. Прием по 18 направлениям; лаборатория DS Lab с международным контролем качества (BIO-RAD, RIQAS) и более чем 1000 видами анализов; диагностика МРТ, МСКТ, УЗИ 24/7.",
-    "descriptionUz": "Koʻp tarmoqli davolash-diagnostika klinikasi, 2005 yilda tashkil etilgan. 18 yoʻnalish boʻyicha qabul; xalqaro sifat nazoratiga ega DS Lab laboratoriyasi (BIO-RAD, RIQAS) va 1000 dan ortiq tahlil turi; MRT, MSKT, UZI diagnostikasi 24/7.",
-    "descriptionEn": "A multidisciplinary treatment and diagnostic clinic, founded in 2005. Care across 18 specialties; the DS Lab laboratory with international quality control (BIO-RAD, RIQAS) and over 1,000 test types; and 24/7 MRI, CT and ultrasound."
-  },
-  {
-    "id": "hayat-medical-centre",
-    "name": "Hayat Medical Centre",
-    "logo": "/images/clients/hayat-medical-centre.png",
-    "description": "Многопрофильная клиника в Ташкенте, работает с 2015 года. Поликлиника и стационар, собственная лаборатория на системах Roche, МРТ 1.5Т, цифровой рентген Siemens, УЗИ Philips, центр реабилитации и детское отделение Hayat Kids.",
-    "descriptionUz": "Toshkentdagi koʻp tarmoqli klinika, 2015 yildan beri ishlaydi. Poliklinika va statsionar, Roche tizimlaridagi oʻz laboratoriyasi, 1.5T MRT, Siemens raqamli rentgeni, Philips UZI, reabilitatsiya markazi va Hayat Kids bolalar boʻlimi.",
-    "descriptionEn": "A multidisciplinary clinic in Tashkent, operating since 2015. Outpatient clinic and inpatient ward, its own Roche laboratory, a 1.5T MRI, Siemens digital X-ray, Philips ultrasound, a rehabilitation center and the Hayat Kids pediatric department."
-  },
-  {
-    "id": "sinomed-md",
-    "name": "Sinomed MD",
-    "logo": "/images/clients/sinomed-md.svg",
-    "description": "Sinomed MD, современный частный многопрофильный госпиталь в Ташкенте, открыт в 2025 году. Более 100 палат, 13 операционных и три реанимационных блока, первый в Узбекистане частный роддом при многопрофильном центре. Назван в честь Ибн Сины (Авиценны).",
-    "descriptionUz": "Sinomed MD, Toshkentdagi zamonaviy xususiy koʻp tarmoqli shifoxona, 2025 yilda ochilgan. 100 dan ortiq palata, 13 operatsiya xonasi va uchta reanimatsiya bloki, Oʻzbekistonda koʻp tarmoqli markaz tarkibidagi birinchi xususiy tugʻruqxona. Abu Ali ibn Sino (Avitsenna) sharafiga nomlangan.",
-    "descriptionEn": "Sinomed MD, a private multidisciplinary hospital in Tashkent, opened in 2025. More than 100 wards, 13 operating rooms and three intensive care units, and Uzbekistan's first private maternity hospital within a multidisciplinary center. Named after Ibn Sina (Avicenna)."
-  },
-  {
-    "id": "samarqand-tibbiy-diagnostika",
-    "name": "Samarqand tibbiy diagnostika",
-    "logo": "/images/clients/samarqand-tibbiy-diagnostika.webp",
-    "description": "Частный диагностический центр и лаборатория в Самарканде с несколькими филиалами. Объединяет современное диагностическое оборудование и квалифицированных специалистов, известен точной лабораторной диагностикой по доступным ценам.",
-    "descriptionUz": "Samarqanddagi bir nechta filialga ega xususiy diagnostika markazi va laboratoriyasi. Zamonaviy diagnostika uskunalari va malakali mutaxassislarni birlashtiradi, arzon narxlarda aniq laboratoriya diagnostikasi bilan tanilgan.",
-    "descriptionEn": "A private diagnostic center and laboratory in Samarkand with several branches. It combines modern diagnostic equipment with qualified specialists, and is known for accurate laboratory diagnostics at affordable prices."
-  },
-  {
     "id": "arzon-lab",
     "name": "Arzon Lab",
     "logo": "/images/clients/arzon-lab.webp",
@@ -72,44 +16,20 @@
     "descriptionEn": "An independent clinical diagnostic laboratory in Tashkent, working in an open-space format where patients can observe the testing. Core tests run express (from 30 minutes), open seven days a week."
   },
   {
-    "id": "swiss-lab",
-    "name": "Swiss Lab",
-    "logo": "/images/clients/swiss-lab.svg",
-    "description": "Первая в Узбекистане сеть клинико-диагностических лабораторий, узбекско-швейцарское СП (2019). Около двадцати лабораторий в Ташкенте, Ангрене и Самарканде, более 2000 видов исследований, международные сертификаты качества (BioSystems PREVECAL, ФСВОК).",
-    "descriptionUz": "Oʻzbekistondagi birinchi klinik-diagnostik laboratoriyalar tarmogʻi, oʻzbek-shveytsariya qoʻshma korxonasi (2019). Toshkent, Angren va Samarqandda yigirmaga yaqin laboratoriya, 2000 dan ortiq tekshiruv turi, xalqaro sifat sertifikatlari (BioSystems PREVECAL, FSVOK).",
-    "descriptionEn": "Uzbekistan's first network of clinical diagnostic laboratories, an Uzbek-Swiss joint venture (2019). About twenty laboratories in Tashkent, Angren and Samarkand, more than 2,000 test types, and international quality certifications (BioSystems PREVECAL, FSVOK)."
+    "id": "akfa-medline",
+    "name": "Akfa Medline",
+    "logo": "/images/clients/akfa-medline.jpg",
+    "description": "Крупнейший в Центральной Азии частный многопрофильный госпиталь, работает в Ташкенте с 2017 года. Единственная в Узбекистане клиника с аккредитацией JCI. Более 150 врачей, оборудование Siemens, лаборатория Roche и Sysmex, роботизированная хирургия.",
+    "descriptionUz": "Markaziy Osiyodagi eng yirik xususiy koʻp tarmoqli shifoxona, Toshkentda 2017 yildan beri ishlaydi. Oʻzbekistonda yagona JCI akkreditatsiyasiga ega klinika. 150 dan ortiq shifokor, Siemens uskunalari, Roche va Sysmex laboratoriyasi, robototexnik jarrohlik.",
+    "descriptionEn": "The largest private multidisciplinary hospital in Central Asia, operating in Tashkent since 2017. The only JCI-accredited clinic in Uzbekistan. More than 150 doctors, Siemens equipment, a Roche and Sysmex laboratory, and robotic surgery."
   },
   {
-    "id": "defactum",
-    "name": "Defactum",
-    "logo": "/images/clients/defactum.svg",
-    "description": "Многопрофильная клиника и лаборатория в Ташкенте. Амбулаторный прием, диагностика (УЗИ, ЭКГ, эндоскопия, ПЦР), детское отделение и программы чек-апов, сеть филиалов с центром в Юнусабадском районе.",
-    "descriptionUz": "Toshkentdagi koʻp tarmoqli klinika va laboratoriya. Ambulator qabul, diagnostika (UZI, EKG, endoskopiya, PSR), bolalar boʻlimi va chek-ap dasturlari, markazi Yunusobod tumanida joylashgan filiallar tarmogʻi.",
-    "descriptionEn": "A multidisciplinary clinic and laboratory in Tashkent. Outpatient care, diagnostics (ultrasound, ECG, endoscopy, PCR), a pediatric department and check-up programs, and a branch network centered in the Yunusabad district."
-  },
-  {
-    "id": "alfa-med-service",
-    "name": "Alfa Med Service",
-    "logo": "/images/clients/alfa-med-service.webp",
-    "description": "Многопрофильный лечебно-диагностический центр. В команде свыше 30 специалистов высшей категории, докторов и кандидатов медицинских наук; профилактика, диагностика и лечение по широкому спектру направлений.",
-    "descriptionUz": "Koʻp tarmoqli davolash-diagnostika markazi. Jamoada oliy toifali 30 dan ortiq mutaxassis, fan doktorlari va nomzodlari; keng yoʻnalishlar boʻyicha profilaktika, diagnostika va davolash.",
-    "descriptionEn": "A multidisciplinary treatment and diagnostic center. The team includes more than 30 top-category specialists, doctors and candidates of medical science; prevention, diagnostics and treatment across a wide range of specialties."
-  },
-  {
-    "id": "shox-international-hospital",
-    "name": "Shox International Hospital",
-    "logo": "/images/clients/shox-international-hospital.png",
-    "description": "Одна из первых частных клиник Узбекистана, сеть многопрофильных медицинских центров с более чем 15-летней историей. Специализируется на кардиологической диагностике и хирургии, применяет малоинвазивные и роботизированные методы, имеет собственную лабораторию и стационар.",
-    "descriptionUz": "Oʻzbekistonning birinchi xususiy klinikalaridan biri, 15 yildan ortiq tarixga ega koʻp tarmoqli tibbiyot markazlari tarmogʻi. Kardiologik diagnostika va jarrohlikka ixtisoslashgan, kam invaziv va robototexnik usullarni qoʻllaydi, oʻz laboratoriyasi va statsionariga ega.",
-    "descriptionEn": "One of Uzbekistan's first private clinics, a network of multidisciplinary centers with over 15 years of history. It specialises in cardiac diagnostics and surgery, uses minimally invasive and robotic methods, and has its own laboratory and inpatient ward."
-  },
-  {
-    "id": "endomed",
-    "name": "Endomed",
-    "logo": "/images/clients/endomed.webp",
-    "description": "Частная клиника Endomed в Бухаре. Специализируется на эндоскопических исследованиях желудочно-кишечного тракта, располагает собственной лабораторией, ультразвуковой и ЭКГ-диагностикой, а также кардиологическим приёмом. Работает с понедельника по субботу.",
-    "descriptionUz": "Buxorodagi Endomed xususiy klinikasi. Meʼda-ichak yoʻli endoskopiyasiga ixtisoslashgan, oʻz laboratoriyasi, UZI va EKG diagnostikasi hamda kardiologiya qabuliga ega. Dushanbadan shanbagacha ishlaydi.",
-    "descriptionEn": "Endomed private clinic in Bukhara. It specialises in endoscopy of the gastrointestinal tract and has its own laboratory, ultrasound and ECG diagnostics, and cardiology consultations. Open Monday to Saturday."
+    "id": "darmon-servis",
+    "name": "Darmon Servis",
+    "logo": "/images/clients/darmon-servis.svg",
+    "description": "Многопрофильная лечебно-диагностическая клиника, основана в 2005 году. Прием по 18 направлениям; лаборатория DS Lab с международным контролем качества (BIO-RAD, RIQAS) и более чем 1000 видами анализов; диагностика МРТ, МСКТ, УЗИ 24/7.",
+    "descriptionUz": "Koʻp tarmoqli davolash-diagnostika klinikasi, 2005 yilda tashkil etilgan. 18 yoʻnalish boʻyicha qabul; xalqaro sifat nazoratiga ega DS Lab laboratoriyasi (BIO-RAD, RIQAS) va 1000 dan ortiq tahlil turi; MRT, MSKT, UZI diagnostikasi 24/7.",
+    "descriptionEn": "A multidisciplinary treatment and diagnostic clinic, founded in 2005. Care across 18 specialties; the DS Lab laboratory with international quality control (BIO-RAD, RIQAS) and over 1,000 test types; and 24/7 MRI, CT and ultrasound."
   },
   {
     "id": "ezgu-niyat",
@@ -128,12 +48,12 @@
     "descriptionEn": "HAYOT PLUS MED vaccination centre in Gulistan, Sirdaryo region. Immunisation for children, adults, the elderly and travellers, including hepatitis A and B and influenza, plus all types of laboratory tests."
   },
   {
-    "id": "innova-expert",
-    "name": "Innova Expert",
-    "logo": "/images/clients/innova-expert.webp",
-    "description": "Клинико-диагностический центр «Innova Expert» в Самарканде. Лучевая диагностика (МРТ, КТ), лабораторные исследования, УЗИ, ЭКГ и консультации специалистов.",
-    "descriptionUz": "Samarqanddagi «Innova Expert» klinik-diagnostika markazi. Nurli diagnostika (MRT, KT), laboratoriya tekshiruvlari, UZI, EKG va mutaxassislar maslahati.",
-    "descriptionEn": "The Innova Expert clinical and diagnostic centre in Samarkand. Radiological diagnostics (MRI, CT), laboratory testing, ultrasound, ECG and specialist consultations."
+    "id": "sinomed-md",
+    "name": "Sinomed MD",
+    "logo": "/images/clients/sinomed-md.svg",
+    "description": "Sinomed MD, современный частный многопрофильный госпиталь в Ташкенте, открыт в 2025 году. Более 100 палат, 13 операционных и три реанимационных блока, первый в Узбекистане частный роддом при многопрофильном центре. Назван в честь Ибн Сины (Авиценны).",
+    "descriptionUz": "Sinomed MD, Toshkentdagi zamonaviy xususiy koʻp tarmoqli shifoxona, 2025 yilda ochilgan. 100 dan ortiq palata, 13 operatsiya xonasi va uchta reanimatsiya bloki, Oʻzbekistonda koʻp tarmoqli markaz tarkibidagi birinchi xususiy tugʻruqxona. Abu Ali ibn Sino (Avitsenna) sharafiga nomlangan.",
+    "descriptionEn": "Sinomed MD, a private multidisciplinary hospital in Tashkent, opened in 2025. More than 100 wards, 13 operating rooms and three intensive care units, and Uzbekistan's first private maternity hospital within a multidisciplinary center. Named after Ibn Sina (Avicenna)."
   },
   {
     "id": "israeli-medical-center",
@@ -144,28 +64,20 @@
     "descriptionEn": "Israeli Medical Center for reproduction and family health in Tashkent, founded in 2021 by Professor David Levran. Its own genetic laboratory performs testing on Illumina sequencers."
   },
   {
+    "id": "biogen-med",
+    "name": "Biogen Med",
+    "logo": "/images/clients/biogen-med.png",
+    "description": "Сеть медицинских клиник и лабораторий в Ташкенте с несколькими филиалами. Лабораторные анализы, УЗИ, круглосуточный ЛОР-прием, консультации специалистов и процедурный кабинет.",
+    "descriptionUz": "Toshkentdagi bir nechta filialga ega tibbiyot klinikalari va laboratoriyalari tarmogʻi. Laboratoriya tahlillari, UZI, sutkalik LOR qabuli, mutaxassislar maslahati va muolaja xonasi.",
+    "descriptionEn": "A network of medical clinics and laboratories in Tashkent with several branches. Laboratory tests, ultrasound, round-the-clock ENT consultations, specialist appointments, and a procedure room."
+  },
+  {
     "id": "medi-art",
     "name": "Medi Art",
     "logo": "/images/clients/medi-art.webp",
     "description": "Медицинский центр Medi Art с собственной лабораторией в Ташкенте, Яшнабадский район. Гинекология и репродуктология, эндокринология, ЛОР, ультразвуковая диагностика, педиатрия и косметология. Приём с понедельника по субботу.",
     "descriptionUz": "Toshkentdagi (Yashnobod tumani) Medi Art tibbiyot markazi oʻz laboratoriyasi bilan. Ginekologiya va reproduktologiya, endokrinologiya, LOR, ultratovush diagnostikasi, pediatriya va kosmetologiya. Dushanbadan shanbagacha ishlaydi.",
     "descriptionEn": "Medi Art medical centre with its own laboratory in Tashkent, Yashnabad district. Gynecology and reproductive medicine, endocrinology, ENT, ultrasound diagnostics, pediatrics and cosmetology. Open Monday to Saturday."
-  },
-  {
-    "id": "medik-as",
-    "name": "Medik-As",
-    "logo": "/images/clients/medik-as.png",
-    "description": "Сеть диагностических центров и медицинских лабораторий в Ташкенте с несколькими филиалами. Лабораторная и инструментальная диагностика на современном оборудовании.",
-    "descriptionUz": "Toshkentdagi diagnostika markazlari va tibbiy laboratoriyalar tarmogʻi, bir nechta filialga ega. Zamonaviy uskunalarda laboratoriya va instrumental diagnostika.",
-    "descriptionEn": "A network of diagnostic centres and medical laboratories in Tashkent with several branches, offering laboratory and instrumental diagnostics on modern equipment."
-  },
-  {
-    "id": "ntd",
-    "name": "NTD",
-    "logo": "/images/clients/ntd.png",
-    "description": "Диагностический центр и лаборатория «Namangan Tibbiy Diagnostika» в Намангане. Работает круглосуточно: лабораторные исследования, УЗИ, МСКТ, ЭКГ и более ста видов услуг. Входит в сеть Toshkent Tibbiy Diagnostika (TTD).",
-    "descriptionUz": "Namangandagi «Namangan Tibbiy Diagnostika» diagnostika markazi va laboratoriyasi. Sutkalik rejimda ishlaydi: laboratoriya tekshiruvlari, UZI, MSKT, EKG va yuzdan ortiq xizmat turi. Toshkent Tibbiy Diagnostika (TTD) tarmogʻiga kiradi.",
-    "descriptionEn": "The Namangan Tibbiy Diagnostika centre and laboratory in Namangan. Open around the clock: laboratory testing, ultrasound, MSCT, ECG and more than a hundred services. Part of the Toshkent Tibbiy Diagnostika (TTD) network."
   },
   {
     "id": "respublika-sport-tibbiyoti",
@@ -176,12 +88,44 @@
     "descriptionEn": "The Republican Scientific and Practical Centre for Sports Medicine in Tashkent, established in 2013 under the National Olympic Committee. Medical and biological support for national-team athletes, diagnosis and treatment of sports injuries."
   },
   {
+    "id": "samarqand-tibbiy-diagnostika",
+    "name": "Samarqand tibbiy diagnostika",
+    "logo": "/images/clients/samarqand-tibbiy-diagnostika.webp",
+    "description": "Частный диагностический центр и лаборатория в Самарканде с несколькими филиалами. Объединяет современное диагностическое оборудование и квалифицированных специалистов, известен точной лабораторной диагностикой по доступным ценам.",
+    "descriptionUz": "Samarqanddagi bir nechta filialga ega xususiy diagnostika markazi va laboratoriyasi. Zamonaviy diagnostika uskunalari va malakali mutaxassislarni birlashtiradi, arzon narxlarda aniq laboratoriya diagnostikasi bilan tanilgan.",
+    "descriptionEn": "A private diagnostic center and laboratory in Samarkand with several branches. It combines modern diagnostic equipment with qualified specialists, and is known for accurate laboratory diagnostics at affordable prices."
+  },
+  {
     "id": "rsnpmc-ona-bola",
     "name": "РСНПМЦ здоровья матери и ребёнка",
     "logo": "/images/clients/rsnpmc-ona-bola.jpg",
     "description": "Республиканский специализированный научно-практический медицинский центр здоровья матери и ребёнка, образован в 2023 году. В 2022 году первым среди государственных клиник Узбекистана прошёл международную аккредитацию качества.",
     "descriptionUz": "Respublika ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi, 2023 yilda tashkil etilgan. 2022 yilda Oʻzbekiston davlat klinikalari orasida birinchi boʻlib xalqaro sifat akkreditatsiyasidan oʻtgan.",
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre for Mother and Child Health, formed in 2023. In 2022 it became the first state clinic in Uzbekistan to pass international quality accreditation."
+  },
+  {
+    "id": "swiss-lab",
+    "name": "Swiss Lab",
+    "logo": "/images/clients/swiss-lab.svg",
+    "description": "Первая в Узбекистане сеть клинико-диагностических лабораторий, узбекско-швейцарское СП (2019). Около двадцати лабораторий в Ташкенте, Ангрене и Самарканде, более 2000 видов исследований, международные сертификаты качества (BioSystems PREVECAL, ФСВОК).",
+    "descriptionUz": "Oʻzbekistondagi birinchi klinik-diagnostik laboratoriyalar tarmogʻi, oʻzbek-shveytsariya qoʻshma korxonasi (2019). Toshkent, Angren va Samarqandda yigirmaga yaqin laboratoriya, 2000 dan ortiq tekshiruv turi, xalqaro sifat sertifikatlari (BioSystems PREVECAL, FSVOK).",
+    "descriptionEn": "Uzbekistan's first network of clinical diagnostic laboratories, an Uzbek-Swiss joint venture (2019). About twenty laboratories in Tashkent, Angren and Samarkand, more than 2,000 test types, and international quality certifications (BioSystems PREVECAL, FSVOK)."
+  },
+  {
+    "id": "qon-quyish-navoiy",
+    "name": "Навоийская областная станция переливания крови",
+    "logo": "/images/clients/qon-quyish-navoiy.png",
+    "description": "Навоийская областная станция переливания крови. Заготовка донорской крови и её компонентов, лабораторное обследование на инфекции, хранение и обеспечение лечебных учреждений Навоийской области.",
+    "descriptionUz": "Navoiy viloyat qon quyish stansiyasi. Donor qonini va uning komponentlarini olish, infeksiyalarga laboratoriya tekshiruvi, saqlash va Navoiy viloyati davolash muassasalarini qon bilan taʼminlash.",
+    "descriptionEn": "The Navoiy regional blood transfusion station. Collection of donor blood and its components, laboratory screening for infections, storage, and supply to the medical institutions of Navoiy region."
+  },
+  {
+    "id": "defactum",
+    "name": "Defactum",
+    "logo": "/images/clients/defactum.svg",
+    "description": "Многопрофильная клиника и лаборатория в Ташкенте. Амбулаторный прием, диагностика (УЗИ, ЭКГ, эндоскопия, ПЦР), детское отделение и программы чек-апов, сеть филиалов с центром в Юнусабадском районе.",
+    "descriptionUz": "Toshkentdagi koʻp tarmoqli klinika va laboratoriya. Ambulator qabul, diagnostika (UZI, EKG, endoskopiya, PSR), bolalar boʻlimi va chek-ap dasturlari, markazi Yunusobod tumanida joylashgan filiallar tarmogʻi.",
+    "descriptionEn": "A multidisciplinary clinic and laboratory in Tashkent. Outpatient care, diagnostics (ultrasound, ECG, endoscopy, PCR), a pediatric department and check-up programs, and a branch network centered in the Yunusabad district."
   },
   {
     "id": "rsnpmc-pediatriya",
@@ -192,22 +136,6 @@
     "descriptionEn": "The state Republican Specialized Scientific and Practical Medical Centre of Pediatrics. Provides specialised care to more than 10,000 children a year and is a methodological centre for WHO programmes."
   },
   {
-    "id": "ttd",
-    "name": "TTD",
-    "logo": "/images/clients/ttd.svg",
-    "description": "Сеть диагностических центров «Toshkent Tibbiy Diagnostika» в Ташкенте с несколькими филиалами. Лабораторные исследования, УЗИ, рентген, МСКТ, ЭКГ и амбулаторное лечение.",
-    "descriptionUz": "Toshkentdagi «Toshkent Tibbiy Diagnostika» (TTD) diagnostika markazlari tarmogʻi, bir nechta filialga ega. Laboratoriya tekshiruvlari, UZI, rentgen, MSKT, EKG va ambulator davolash.",
-    "descriptionEn": "The Toshkent Tibbiy Diagnostika (TTD) network of diagnostic centres in Tashkent, with several branches offering laboratory testing, ultrasound, X-ray, MSCT, ECG and outpatient care."
-  },
-  {
-    "id": "zam-zam-med-servis",
-    "name": "Zam-Zam Med Servis",
-    "logo": "/images/clients/zam-zam-med-servis.webp",
-    "description": "Медицинский диагностический центр «Zam-Zam Med Servis» в Андижане. МРТ, МСКТ и ультразвуковая диагностика, консультации и лечение на современном оборудовании.",
-    "descriptionUz": "Andijondagi «Zam-Zam Med Servis» tibbiy diagnostika markazi. MRT, MSKT va ultratovush diagnostikasi, maslahatlar va zamonaviy uskunalarda davolash.",
-    "descriptionEn": "The Zam-Zam Med Servis medical diagnostic centre in Andijan. MRI, MSCT and ultrasound diagnostics, consultations and treatment on modern equipment."
-  },
-  {
     "id": "milliy-tibbiyot-markazi",
     "name": "Национальный медицинский центр",
     "logo": "/images/clients/milliy-tibbiyot-markazi.png",
@@ -216,12 +144,28 @@
     "descriptionEn": "Uzbekistan's National Medical Centre in Tashkent, Yashnabad district. Surgery, urology, transplantology, traumatology and orthopedics, cardiac surgery, nephrology, cardiology and endocrinology; it performs organ transplants including liver transplantation."
   },
   {
+    "id": "vitros",
+    "name": "Vitros",
+    "logo": "/images/clients/vitros.svg",
+    "description": "Частная сеть клинико-диагностических лабораторий, на рынке Узбекистана с 2012 года. Около 15 филиалов в Ташкенте, более 600 видов анализов. Исследования выполняются на оборудовании и реагентах Ortho Clinical Diagnostics (США).",
+    "descriptionUz": "Xususiy klinik-diagnostik laboratoriyalar tarmogʻi, Oʻzbekiston bozorida 2012 yildan beri. Toshkentda 15 ga yaqin filial, 600 dan ortiq tahlil turi. Tekshiruvlar Ortho Clinical Diagnostics (AQSh) uskunalari va reagentlarida bajariladi.",
+    "descriptionEn": "A private network of clinical diagnostic laboratories, on the Uzbekistan market since 2012. About 15 branches in Tashkent, more than 600 types of tests. Testing is performed on Ortho Clinical Diagnostics (USA) equipment and reagents."
+  },
+  {
     "id": "bolalar-milliy-tibbiyot-markazi",
     "name": "Национальный детский медицинский центр",
     "logo": "/images/clients/bolalar-milliy-tibbiyot-markazi.png",
     "description": "«Национальный детский медицинский центр» в Ташкенте, головное педиатрическое учреждение страны. Более ста врачей оказывают специализированную помощь детям по широкому спектру направлений, от диагностики до высокотехнологичного лечения.",
     "descriptionUz": "Toshkentdagi «Bolalar milliy tibbiyot markazi», mamlakatning yetakchi pediatriya muassasasi. Yuzdan ortiq shifokor bolalarga keng yoʻnalishlar boʻyicha ixtisoslashtirilgan yordam, diagnostikadan yuqori texnologiyali davolashgacha koʻrsatadi.",
     "descriptionEn": "The National Children's Medical Centre in Tashkent, the country's leading paediatric institution. More than a hundred doctors provide specialised care for children, from diagnostics to high-technology treatment."
+  },
+  {
+    "id": "shox-international-hospital",
+    "name": "Shox International Hospital",
+    "logo": "/images/clients/shox-international-hospital.png",
+    "description": "Одна из первых частных клиник Узбекистана, сеть многопрофильных медицинских центров с более чем 15-летней историей. Специализируется на кардиологической диагностике и хирургии, применяет малоинвазивные и роботизированные методы, имеет собственную лабораторию и стационар.",
+    "descriptionUz": "Oʻzbekistonning birinchi xususiy klinikalaridan biri, 15 yildan ortiq tarixga ega koʻp tarmoqli tibbiyot markazlari tarmogʻi. Kardiologik diagnostika va jarrohlikka ixtisoslashgan, kam invaziv va robototexnik usullarni qoʻllaydi, oʻz laboratoriyasi va statsionariga ega.",
+    "descriptionEn": "One of Uzbekistan's first private clinics, a network of multidisciplinary centers with over 15 years of history. It specialises in cardiac diagnostics and surgery, uses minimally invasive and robotic methods, and has its own laboratory and inpatient ward."
   },
   {
     "id": "rsnpmc-endokrinologiya",
@@ -240,12 +184,28 @@
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre of Cardiology in Tashkent. The country's lead cardiology institution: diagnosis and treatment of heart and vascular disease, research, and the training of cardiologists."
   },
   {
+    "id": "endomed",
+    "name": "Endomed",
+    "logo": "/images/clients/endomed.webp",
+    "description": "Частная клиника Endomed в Бухаре. Специализируется на эндоскопических исследованиях желудочно-кишечного тракта, располагает собственной лабораторией, ультразвуковой и ЭКГ-диагностикой, а также кардиологическим приёмом. Работает с понедельника по субботу.",
+    "descriptionUz": "Buxorodagi Endomed xususiy klinikasi. Meʼda-ichak yoʻli endoskopiyasiga ixtisoslashgan, oʻz laboratoriyasi, UZI va EKG diagnostikasi hamda kardiologiya qabuliga ega. Dushanbadan shanbagacha ishlaydi.",
+    "descriptionEn": "Endomed private clinic in Bukhara. It specialises in endoscopy of the gastrointestinal tract and has its own laboratory, ultrasound and ECG diagnostics, and cardiology consultations. Open Monday to Saturday."
+  },
+  {
     "id": "rsnpmc-onkologiya",
     "name": "РСНПМЦ онкологии и радиологии",
     "logo": "/images/clients/rsnpmc-onkologiya.png",
     "description": "Республиканский специализированный научно-практический медицинский центр онкологии и радиологии в Ташкенте. Головное онкологическое учреждение страны: диагностика, химиотерапия, лучевая терапия и хирургическое лечение опухолей, а также подготовка онкологов.",
     "descriptionUz": "Toshkentdagi Respublika ixtisoslashtirilgan onkologiya va radiologiya ilmiy-amaliy tibbiyot markazi. Onkologiya boʻyicha mamlakatning yetakchi muassasasi: tashxis, kimyoterapiya, nurli terapiya va oʻsmalarni jarrohlik davolash, shuningdek onkologlar tayyorlash.",
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre of Oncology and Radiology in Tashkent. The country's lead cancer institution: diagnosis, chemotherapy, radiotherapy and surgical treatment of tumours, plus the training of oncologists."
+  },
+  {
+    "id": "hayat-medical-centre",
+    "name": "Hayat Medical Centre",
+    "logo": "/images/clients/hayat-medical-centre.png",
+    "description": "Многопрофильная клиника в Ташкенте, работает с 2015 года. Поликлиника и стационар, собственная лаборатория на системах Roche, МРТ 1.5Т, цифровой рентген Siemens, УЗИ Philips, центр реабилитации и детское отделение Hayat Kids.",
+    "descriptionUz": "Toshkentdagi koʻp tarmoqli klinika, 2015 yildan beri ishlaydi. Poliklinika va statsionar, Roche tizimlaridagi oʻz laboratoriyasi, 1.5T MRT, Siemens raqamli rentgeni, Philips UZI, reabilitatsiya markazi va Hayat Kids bolalar boʻlimi.",
+    "descriptionEn": "A multidisciplinary clinic in Tashkent, operating since 2015. Outpatient clinic and inpatient ward, its own Roche laboratory, a 1.5T MRI, Siemens digital X-ray, Philips ultrasound, a rehabilitation center and the Hayat Kids pediatric department."
   },
   {
     "id": "rsnpmc-gematologiya",
@@ -256,6 +216,22 @@
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre of Hematology in Tashkent. Diagnosis and treatment of blood and blood-forming system disease, laboratory testing, research and the training of haematologists."
   },
   {
+    "id": "innova-expert",
+    "name": "Innova Expert",
+    "logo": "/images/clients/innova-expert.webp",
+    "description": "Клинико-диагностический центр «Innova Expert» в Самарканде. Лучевая диагностика (МРТ, КТ), лабораторные исследования, УЗИ, ЭКГ и консультации специалистов.",
+    "descriptionUz": "Samarqanddagi «Innova Expert» klinik-diagnostika markazi. Nurli diagnostika (MRT, KT), laboratoriya tekshiruvlari, UZI, EKG va mutaxassislar maslahati.",
+    "descriptionEn": "The Innova Expert clinical and diagnostic centre in Samarkand. Radiological diagnostics (MRI, CT), laboratory testing, ultrasound, ECG and specialist consultations."
+  },
+  {
+    "id": "global-medical-system",
+    "name": "Global Medical System",
+    "logo": "/images/clients/global-medical-system.webp",
+    "description": "Современная частная клиника. Основные направления: неврология, диагностика и реабилитация. Опытные врачи, индивидуальный подход, современные методы лечения и качественная медицинская помощь.",
+    "descriptionUz": "Zamonaviy xususiy klinika. Asosiy yo‘nalishlari: nevrologiya, diagnostika va reabilitatsiya. Tajribali shifokorlar, individual yondashuv, zamonaviy davolash usullari va sifatli tibbiy xizmat.",
+    "descriptionEn": "A modern private clinic. Main areas include neurology, diagnostics, and rehabilitation. Experienced doctors, personalized care, modern treatment methods, and quality medical services."
+  },
+  {
     "id": "rsnpmc-nefrologiya",
     "name": "РСНПМЦ нефрологии и трансплантации почки",
     "logo": "/images/clients/rsnpmc-nefrologiya.jpg",
@@ -264,12 +240,28 @@
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre of Nephrology and Kidney Transplantation in Tashkent. The country's lead nephrology institution: diagnosis and treatment of kidney disease, kidney transplantation, laboratory testing and research."
   },
   {
+    "id": "medik-as",
+    "name": "Medik-As",
+    "logo": "/images/clients/medik-as.png",
+    "description": "Сеть диагностических центров и медицинских лабораторий в Ташкенте с несколькими филиалами. Лабораторная и инструментальная диагностика на современном оборудовании.",
+    "descriptionUz": "Toshkentdagi diagnostika markazlari va tibbiy laboratoriyalar tarmogʻi, bir nechta filialga ega. Zamonaviy uskunalarda laboratoriya va instrumental diagnostika.",
+    "descriptionEn": "A network of diagnostic centres and medical laboratories in Tashkent with several branches, offering laboratory and instrumental diagnostics on modern equipment."
+  },
+  {
     "id": "rsnpmc-allergologiya",
     "name": "РСНПМЦ аллергологии и клинической иммунологии",
     "logo": "/images/clients/rsnpmc-allergologiya.png",
     "description": "Республиканский специализированный научно-практический медицинский центр аллергологии и клинической иммунологии в Ташкенте. Диагностика и лечение аллергических заболеваний и нарушений иммунной системы, лабораторные исследования и подготовка специалистов.",
     "descriptionUz": "Toshkentdagi Respublika ixtisoslashtirilgan allergologiya va klinik immunologiya ilmiy-amaliy tibbiyot markazi. Allergik kasalliklar va immun tizimi buzilishlarini tashxislash va davolash, laboratoriya tekshiruvlari va mutaxassislar tayyorlash.",
     "descriptionEn": "The Republican Specialized Scientific and Practical Medical Centre of Allergology and Clinical Immunology in Tashkent. Diagnosis and treatment of allergic disease and immune system disorders, laboratory testing and specialist training."
+  },
+  {
+    "id": "ntd",
+    "name": "NTD",
+    "logo": "/images/clients/ntd.png",
+    "description": "Диагностический центр и лаборатория «Namangan Tibbiy Diagnostika» в Намангане. Работает круглосуточно: лабораторные исследования, УЗИ, МСКТ, ЭКГ и более ста видов услуг. Входит в сеть Toshkent Tibbiy Diagnostika (TTD).",
+    "descriptionUz": "Namangandagi «Namangan Tibbiy Diagnostika» diagnostika markazi va laboratoriyasi. Sutkalik rejimda ishlaydi: laboratoriya tekshiruvlari, UZI, MSKT, EKG va yuzdan ortiq xizmat turi. Toshkent Tibbiy Diagnostika (TTD) tarmogʻiga kiradi.",
+    "descriptionEn": "The Namangan Tibbiy Diagnostika centre and laboratory in Namangan. Open around the clock: laboratory testing, ultrasound, MSCT, ECG and more than a hundred services. Part of the Toshkent Tibbiy Diagnostika (TTD) network."
   },
   {
     "id": "rsnpmc-xirurgiya-vahidov",
@@ -288,12 +280,28 @@
     "descriptionEn": "Central Consultative and Diagnostic Polyclinic No. 1 of the Main Medical Directorate under the Administration of the President of Uzbekistan, on Sadiq Azimov street in Tashkent. Specialist consultations, radiology, laboratory diagnostics and emergency care."
   },
   {
+    "id": "alfa-med-service",
+    "name": "Alfa Med Service",
+    "logo": "/images/clients/alfa-med-service.webp",
+    "description": "Многопрофильный лечебно-диагностический центр. В команде свыше 30 специалистов высшей категории, докторов и кандидатов медицинских наук; профилактика, диагностика и лечение по широкому спектру направлений.",
+    "descriptionUz": "Koʻp tarmoqli davolash-diagnostika markazi. Jamoada oliy toifali 30 dan ortiq mutaxassis, fan doktorlari va nomzodlari; keng yoʻnalishlar boʻyicha profilaktika, diagnostika va davolash.",
+    "descriptionEn": "A multidisciplinary treatment and diagnostic center. The team includes more than 30 top-category specialists, doctors and candidates of medical science; prevention, diagnostics and treatment across a wide range of specialties."
+  },
+  {
     "id": "buxoro-viloyat-tibbiyot-markazi",
     "name": "Бухарский областной многопрофильный медицинский центр",
     "logo": "/images/clients/buxoro-viloyat-tibbiyot-markazi.webp",
     "description": "Бухарский областной многопрофильный медицинский центр, ведущее лечебное учреждение региона. Ведёт историю с 1891 года; стационар, поликлиника и лабораторная диагностика по широкому спектру направлений для жителей Бухарской области.",
     "descriptionUz": "Buxoro viloyat koʻp tarmoqli tibbiyot markazi, viloyatning yetakchi davolash muassasasi. Tarixi 1891 yildan boshlanadi; Buxoro viloyati aholisi uchun statsionar, poliklinika va keng yoʻnalishlar boʻyicha laboratoriya diagnostikasi.",
     "descriptionEn": "The Bukhara Regional Multidisciplinary Medical Centre, the leading hospital of the region. Its history dates back to 1891; inpatient care, outpatient clinics and laboratory diagnostics across a wide range of specialties."
+  },
+  {
+    "id": "ttd",
+    "name": "TTD",
+    "logo": "/images/clients/ttd.svg",
+    "description": "Сеть диагностических центров «Toshkent Tibbiy Diagnostika» в Ташкенте с несколькими филиалами. Лабораторные исследования, УЗИ, рентген, МСКТ, ЭКГ и амбулаторное лечение.",
+    "descriptionUz": "Toshkentdagi «Toshkent Tibbiy Diagnostika» (TTD) diagnostika markazlari tarmogʻi, bir nechta filialga ega. Laboratoriya tekshiruvlari, UZI, rentgen, MSKT, EKG va ambulator davolash.",
+    "descriptionEn": "The Toshkent Tibbiy Diagnostika (TTD) network of diagnostic centres in Tashkent, with several branches offering laboratory testing, ultrasound, X-ray, MSCT, ECG and outpatient care."
   },
   {
     "id": "dermatovenerologiya-jizzax",
@@ -304,14 +312,6 @@
     "descriptionEn": "The Jizzakh regional branch of the Republican Specialized Scientific and Practical Medical Centre of Dermatovenereology and Cosmetology. Diagnosis and treatment of skin and venereal disease, cosmetology and laboratory testing for the Jizzakh region."
   },
   {
-    "id": "qon-quyish-navoiy",
-    "name": "Навоийская областная станция переливания крови",
-    "logo": "/images/clients/qon-quyish-navoiy.png",
-    "description": "Навоийская областная станция переливания крови. Заготовка донорской крови и её компонентов, лабораторное обследование на инфекции, хранение и обеспечение лечебных учреждений Навоийской области.",
-    "descriptionUz": "Navoiy viloyat qon quyish stansiyasi. Donor qonini va uning komponentlarini olish, infeksiyalarga laboratoriya tekshiruvi, saqlash va Navoiy viloyati davolash muassasalarini qon bilan taʼminlash.",
-    "descriptionEn": "The Navoiy regional blood transfusion station. Collection of donor blood and its components, laboratory screening for infections, storage, and supply to the medical institutions of Navoiy region."
-  },
-  {
     "id": "qon-quyish-samarqand",
     "name": "Самаркандская областная станция переливания крови",
     "logo": "/images/clients/qon-quyish-samarqand.webp",
@@ -320,11 +320,11 @@
     "descriptionEn": "The Samarkand regional blood transfusion station. The same role for Samarkand region: collection of donor blood and components, laboratory screening, storage, and supply to the region's medical institutions."
   },
   {
-    "id": "global-medical-system",
-    "name": "Global Medical System",
-    "logo": "/images/clients/global-medical-system.webp",
-    "description": "Современная частная клиника. Основные направления: неврология, диагностика и реабилитация. Опытные врачи, индивидуальный подход, современные методы лечения и качественная медицинская помощь.",
-    "descriptionUz": "Zamonaviy xususiy klinika. Asosiy yo‘nalishlari: nevrologiya, diagnostika va reabilitatsiya. Tajribali shifokorlar, individual yondashuv, zamonaviy davolash usullari va sifatli tibbiy xizmat.",
-    "descriptionEn": "A modern private clinic. Main areas include neurology, diagnostics, and rehabilitation. Experienced doctors, personalized care, modern treatment methods, and quality medical services."
+    "id": "zam-zam-med-servis",
+    "name": "Zam-Zam Med Servis",
+    "logo": "/images/clients/zam-zam-med-servis.webp",
+    "description": "Медицинский диагностический центр «Zam-Zam Med Servis» в Андижане. МРТ, МСКТ и ультразвуковая диагностика, консультации и лечение на современном оборудовании.",
+    "descriptionUz": "Andijondagi «Zam-Zam Med Servis» tibbiy diagnostika markazi. MRT, MSKT va ultratovush diagnostikasi, maslahatlar va zamonaviy uskunalarda davolash.",
+    "descriptionEn": "The Zam-Zam Med Servis medical diagnostic centre in Andijan. MRI, MSCT and ultrasound diagnostics, consultations and treatment on modern equipment."
   }
 ]
