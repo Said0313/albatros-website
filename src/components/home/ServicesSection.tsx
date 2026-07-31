@@ -104,24 +104,29 @@ export function ServicesSection() {
       }
     };
 
-    // The fill is driven from two independent sources, because either one alone
-    // has a way of leaving the line frozen:
+    // The fill is driven from several independent sources, because any one of
+    // them can fail to fire on a real device.
     //
-    // - A passive scroll listener, coalesced into one rAF per frame. This is the
-    //   primary driver and needs nothing to have started it.
-    // - A rAF loop that runs only while the section is in view, which catches
-    //   what scroll events miss: momentum frames where no event lands, and the
-    //   viewport height changing as the mobile address bar hides and shows.
+    // The rule that matters: NOTHING here may gate the event-driven path behind
+    // the observer. An earlier version did, and it was the bug. On any load with
+    // the section below the fold the observer's first callback reports
+    // "not intersecting", which set inView = false, which made schedule() a
+    // no-op, which left the scroll listener dead with only another observer
+    // callback able to revive it. On iOS that callback apparently never came, so
+    // the line sat at zero at every scroll position. The observer now does one
+    // job only: start and stop the continuous rAF loop. It can never switch the
+    // scroll path off.
+    //
+    // Scroll is listened for on the document in the capture phase, so it also
+    // catches scrolling from a nested scroller rather than only the window, and
+    // visualViewport is listened to as well since that is what actually moves on
+    // iOS when the address bar collapses.
     //
     // The loop stays cheap: each frame compares scroll position and viewport
     // height against the previous frame and returns immediately when neither
-    // moved, so an idle in-view section does no layout work, and it is cancelled
-    // outright once the section leaves. The only write is a compositor-only
-    // transform either way.
-    //
-    // inView starts true rather than false on purpose. It is only ever narrowed
-    // by the observer, so a missed or late first callback cannot leave the
-    // section permanently unresponsive to scrolling.
+    // moved, so an idle in-view section does no layout work. The only write is a
+    // compositor-only transform either way, and all geometry is read fresh from
+    // getBoundingClientRect at update time rather than cached.
     let raf = 0;
     let ticking = false;
     let inView = true;
@@ -151,13 +156,17 @@ export function ServicesSection() {
         raf = 0;
       }
     };
+    // Deliberately NOT gated on inView: see the note above. Coalesced to one
+    // update per frame, and falls back to a direct call if rAF is unavailable.
     const schedule = () => {
-      if (!inView || ticking) return;
+      if (ticking) return;
       ticking = true;
-      requestAnimationFrame(() => {
+      const run = () => {
         ticking = false;
         update();
-      });
+      };
+      if (typeof requestAnimationFrame === "function") requestAnimationFrame(run);
+      else run();
     };
     const onScroll = () => schedule();
     const onResize = () => {
@@ -185,14 +194,23 @@ export function ServicesSection() {
       { rootMargin: "120px 0px" }
     );
     io.observe(wrap);
-    window.addEventListener("scroll", onScroll, { passive: true });
+    // Capture phase on the document, so scrolling inside any nested scroller
+    // reaches this too, not just a scroll of the window itself.
+    document.addEventListener("scroll", onScroll, { passive: true, capture: true });
     window.addEventListener("resize", onResize, { passive: true });
+    // On iOS the address bar collapsing moves the visual viewport without
+    // necessarily firing a window resize.
+    const vv = window.visualViewport;
+    vv?.addEventListener("resize", onResize);
+    vv?.addEventListener("scroll", onScroll);
 
     return () => {
       stop();
       io.disconnect();
-      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("scroll", onScroll, { capture: true });
       window.removeEventListener("resize", onResize);
+      vv?.removeEventListener("resize", onResize);
+      vv?.removeEventListener("scroll", onScroll);
     };
   }, []);
 
