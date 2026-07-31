@@ -32,7 +32,91 @@ interface BitrixResponse {
   error_description?: string;
 }
 
+// crm.duplicate.findbycomm answers with the matching ids grouped by entity type.
+interface BitrixDuplicateResponse {
+  result?: { CONTACT?: number[] };
+  error?: string;
+  error_description?: string;
+}
+
 const clean = (v: unknown): string => (typeof v === "string" ? v.trim() : "");
+
+/**
+ * One Bitrix REST call. Returns the parsed body, or null when the call could not
+ * be completed at all (network error, timeout, non-JSON answer). Bitrix answers
+ * HTTP 200 even on failure with an `error` key in the body, so callers must
+ * still inspect what they get back. `method` is only ever appended to the base
+ * URL, and neither the base nor the full endpoint is ever logged.
+ */
+async function bitrix<T>(base: string, method: string, body: unknown): Promise<T | null> {
+  try {
+    const res = await fetch(`${base.replace(/\/+$/, "")}/${method}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    const raw = await res.text();
+    try {
+      return JSON.parse(raw) as T;
+    } catch {
+      // eslint-disable-next-line no-console
+      console.error(`[contact] ${method}: non-JSON answer (HTTP ${res.status}):`, raw.slice(0, 300));
+      return null;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error(`[contact] ${method}: request failed:`, e instanceof Error ? `${e.name}: ${e.message}` : "unknown");
+    return null;
+  }
+}
+
+/**
+ * Resolve the CRM contact for this enquiry: reuse an existing one matched on
+ * phone, otherwise create one. Returns undefined if anything at all goes wrong,
+ * and the caller then creates the lead exactly as before, without CONTACT_ID.
+ * An enquiry is never lost because a contact call failed.
+ *
+ * Why this exists: lead person fields are not a Contact record. Bitrix only
+ * materialises a Contact when a lead is converted, which was not happening
+ * reliably, so the deal showed a Company and no person. A lead that already
+ * carries CONTACT_ID takes that contact through to the deal.
+ */
+async function resolveContactId(base: string, name: string, phone: string): Promise<number | undefined> {
+  // 1a. Existing contact with this phone? Stops a duplicate contact being made
+  // for every repeat enquiry from the same person.
+  const dup = await bitrix<BitrixDuplicateResponse>(base, "crm.duplicate.findbycomm.json", {
+    type: "PHONE",
+    values: [phone],
+    entity_type: "CONTACT",
+  });
+  if (dup?.error) {
+    // eslint-disable-next-line no-console
+    console.error("[contact] crm.duplicate.findbycomm:", dup.error, dup.error_description ?? "");
+  } else {
+    const found = dup?.result?.CONTACT;
+    if (Array.isArray(found) && found.length > 0 && typeof found[0] === "number") return found[0];
+  }
+
+  // 1b. No match, so create one. Single "Имя" input, so the whole value goes in
+  // NAME: never split on whitespace to invent a LAST_NAME, and never put a
+  // company on the contact.
+  const created = await bitrix<BitrixResponse>(base, "crm.contact.add.json", {
+    fields: {
+      NAME: name,
+      PHONE: [{ VALUE: phone, VALUE_TYPE: "WORK" }],
+      SOURCE_ID: "WEB",
+      OPENED: "Y",
+      TYPE_ID: "CLIENT",
+    },
+  });
+  if (created?.error) {
+    // eslint-disable-next-line no-console
+    console.error("[contact] crm.contact.add:", created.error, created.error_description ?? "");
+    return undefined;
+  }
+  return typeof created?.result === "number" ? created.result : undefined;
+}
 
 export async function POST(request: Request) {
   let data: Lead;
@@ -67,19 +151,28 @@ export async function POST(request: Request) {
   // The stored URL may or may not carry a trailing slash.
   const endpoint = `${base.replace(/\/+$/, "")}/crm.lead.add.json`;
 
+  // Resolve the CRM contact first so the lead can carry CONTACT_ID. Any failure
+  // in here returns undefined and the lead is created exactly as before.
+  const contactId = await resolveContactId(base, name, phone);
+
   // The price-request modal sends the product it was opened from. Keep it with
   // the lead: a price request that does not say what it is about is useless.
-  const comments = [product ? `Продукт: ${product}` : "", comment].filter(Boolean).join("\n\n");
+  // The person always leads the comment, so they stay readable on the deal card
+  // after conversion even if the contact link were ever to break.
+  const comments = [`Контактное лицо: ${name}, ${phone}`, product ? `Продукт: ${product}` : "", comment]
+    .filter(Boolean)
+    .join("\n\n");
 
   const fields: Record<string, unknown> = {
     TITLE: `Заявка с сайта: ${name}`,
     NAME: name,
     PHONE: [{ VALUE: phone, VALUE_TYPE: "WORK" }],
     SOURCE_ID: "WEB",
+    COMMENTS: comments,
   };
   // Omit optional fields rather than sending blanks.
   if (company) fields.COMPANY_TITLE = company;
-  if (comments) fields.COMMENTS = comments;
+  if (contactId !== undefined) fields.CONTACT_ID = contactId;
 
   const failed = (reason: string, detail: unknown) => {
     // eslint-disable-next-line no-console
