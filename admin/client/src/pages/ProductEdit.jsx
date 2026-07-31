@@ -25,6 +25,7 @@ const EMPTY = {
   detailedDescription: "",
   detailedDescriptionUz: "",
   specifications: [],
+  analytes: [],
   images: [],
 };
 
@@ -77,6 +78,7 @@ export default function ProductEdit({ mode }) {
           featured: !!p.featured,
           isNew: !!p.isNew,
           specifications: p.specifications || [],
+          analytes: p.analytes || [],
           images: p.images || [],
         });
       })
@@ -128,6 +130,22 @@ export default function ProductEdit({ mode }) {
   const removeSpec = (i) =>
     set("specifications", form.specifications.filter((_, idx) => idx !== i));
 
+  // ── analytes (related items) ──
+  const addAnalyte = () => set("analytes", [...form.analytes, ""]);
+  const setAnalyte = (i, val) =>
+    set("analytes", form.analytes.map((a, idx) => (idx === i ? val : a)));
+  const removeAnalyte = (i) =>
+    set("analytes", form.analytes.filter((_, idx) => idx !== i));
+  const moveAnalyte = (i, dir) => {
+    setForm((f) => {
+      const items = [...f.analytes];
+      const j = i + dir;
+      if (j < 0 || j >= items.length) return f;
+      [items[i], items[j]] = [items[j], items[i]];
+      return { ...f, analytes: items };
+    });
+  };
+
   // ── save ──
   const payload = () => ({
     name: form.name.trim(),
@@ -149,6 +167,7 @@ export default function ProductEdit({ mode }) {
     detailedDescription: form.detailedDescription,
     detailedDescriptionUz: form.detailedDescriptionUz,
     specifications: form.specifications.filter((s) => s.label.trim() !== ""),
+    analytes: form.analytes.map((a) => a.trim()).filter(Boolean),
     images: form.images,
   });
 
@@ -520,6 +539,51 @@ export default function ProductEdit({ mode }) {
             )}
           </div>
         </section>
+
+        {/* Related items (analytes) */}
+        {form.generalDirection !== "equipment" && (
+          <section className="card p-5 lg:col-span-2">
+            <div className="mb-1 flex items-center justify-between">
+              <h2 className="font-bold text-ink">Похожие позиции</h2>
+              <button className="btn-ghost" onClick={addAnalyte}>
+                + Добавить позицию
+              </button>
+            </div>
+            <p className="mb-4 text-xs text-soft">
+              Отображается в виде плашек внизу карточки товара в каталоге (реагенты,
+              расходники, контроли/калибраторы). По умолчанию показываются первые 5, дальше
+              кнопка «показать все». Порядок важен — сначала самое важное.
+            </p>
+            <div className="space-y-2">
+              {form.analytes.map((a, i) => (
+                <div key={i} className="flex items-center gap-3 rounded-lg border border-line p-2">
+                  <input
+                    className="field flex-1"
+                    placeholder="Название позиции"
+                    value={a}
+                    onChange={(e) => setAnalyte(i, e.target.value)}
+                  />
+                  <button className="btn-ghost" onClick={() => moveAnalyte(i, -1)} disabled={i === 0}>
+                    ↑
+                  </button>
+                  <button
+                    className="btn-ghost"
+                    onClick={() => moveAnalyte(i, 1)}
+                    disabled={i === form.analytes.length - 1}
+                  >
+                    ↓
+                  </button>
+                  <button className="btn-danger" onClick={() => removeAnalyte(i)}>
+                    Удалить
+                  </button>
+                </div>
+              ))}
+              {form.analytes.length === 0 && (
+                <p className="text-sm text-soft">Похожих позиций пока нет.</p>
+              )}
+            </div>
+          </section>
+        )}
       </div>
 
       <div className="mt-6 flex justify-end">
