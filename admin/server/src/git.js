@@ -33,7 +33,9 @@ async function commitFiles(files, message, author) {
   }
 
   const authorStr = `${author.name} <${author.email}>`;
-  const result = await git.commit(message, rel, { "--author": authorStr });
+  const result = await git
+    .env({ GIT_COMMITTER_NAME: author.name, GIT_COMMITTER_EMAIL: author.email })
+    .commit(message, rel, { "--author": authorStr });
   const commitResult = { committed: true, commit: result.commit, summary: result.summary };
 
   if (AUTO_PUSH) {
