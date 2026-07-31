@@ -163,8 +163,15 @@ export async function POST(request: Request) {
     .filter(Boolean)
     .join("\n\n");
 
+  // The lead list reads better with the enquiry itself in the title than with
+  // the name, which is already on the lead and on the linked contact. Bitrix
+  // rejects long titles, so collapse whitespace and cap the length. The name is
+  // kept as a fallback so the title can never end up as a bare prefix, even for
+  // a stale cached client or a direct POST that omits the comment.
+  const commentForTitle = comment.replace(/\s+/g, " ").trim().slice(0, 200) || name;
+
   const fields: Record<string, unknown> = {
-    TITLE: `Заявка с сайта: ${name}`,
+    TITLE: `Заявка с сайта: ${commentForTitle}`,
     NAME: name,
     PHONE: [{ VALUE: phone, VALUE_TYPE: "WORK" }],
     SOURCE_ID: "WEB",
