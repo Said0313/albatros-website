@@ -11,10 +11,12 @@ import { PhoneInput } from "@/components/ui/PhoneInput";
 // MASTER SWITCH for the contact form.
 //   false -> the modal shows an "in development" state (brand helix + the direct
 //            contact details) instead of the form. This is the current default
-//            because the /api/contact Telegram backend is not confirmed live.
+//            because the /api/contact Bitrix24 backend is not confirmed live.
 //   true  -> fully restores the working form below with NO other edits needed.
-// Before flipping this to true, make sure the server has the TELEGRAM_BOT_TOKEN
-// and TELEGRAM_CHAT_ID env vars set (that is what /api/contact posts leads to).
+// Before flipping this to true, set BITRIX_WEBHOOK_URL in the server environment
+// (that is the CRM webhook /api/contact creates the lead through) and confirm a
+// test submission actually lands in Bitrix. Without the variable the route now
+// fails loudly rather than accepting and discarding the lead.
 // ─────────────────────────────────────────────────────────────────────────────
 const CONTACT_FORM_ENABLED = false;
 
