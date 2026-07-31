@@ -175,9 +175,9 @@
     "description": "Устройство нового поколения для скрининга рака шейки матки в реальном времени. Оптический и электрический методы с ИИ-алгоритмом дают результат за ~10 минут без лаборатории. Более 42 000 пациенток в клинических исследованиях.",
     "country": "Австралия",
     "specialty": "Скрининг рака шейки матки",
-    "specialtyUz": "Скрининг рака шейки матки TODO(uz)",
+    "specialtyUz": "Bachadon boʻyni saratoni skriningi",
     "specialtyEn": "Cervical cancer screening",
-    "descriptionUz": "Устройство нового поколения для скрининга рака шейки матки в реальном времени. Оптический и электрический методы с ИИ-алгоритмом дают результат за ~10 минут без лаборатории. Более 42 000 пациенток в клинических исследованиях. TODO(uz)",
+    "descriptionUz": "Bachadon boʻyni saratonini real vaqt rejimida skrining qilish uchun yangi avlod qurilmasi. Optik va elektr usullari SI algoritmi bilan laboratoriyasiz ~10 daqiqada natija beradi. Klinik tadqiqotlarda 42 000 dan ortiq bemor ayol.",
     "descriptionEn": "A next-generation device for real-time cervical cancer screening. Optical and electrical methods with an AI algorithm deliver a result in about 10 minutes with no laboratory. More than 42,000 patients in clinical studies."
   }
 ]

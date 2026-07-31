@@ -5,7 +5,7 @@ import { useSearchParams, usePathname } from "next/navigation";
 import { Search, X, SlidersHorizontal, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { products, categories, generalDirections, directionPositions, itemCount, productDirection } from "@/lib/catalog";
-import { categoryLabel } from "@/data/i18n";
+import { categoryLabel, productName } from "@/data/i18n";
 import { ProductCard } from "@/components/catalog/ProductCard";
 import { ReagentCard } from "@/components/catalog/ReagentCard";
 import { IncrementalList } from "@/components/ui/IncrementalList";
@@ -104,12 +104,13 @@ export function CatalogView() {
       const matchQuery =
         !query ||
         p.name.toLowerCase().includes(q) ||
+        productName(p, locale).toLowerCase().includes(q) ||
         p.brand.toLowerCase().includes(q) ||
         p.shortDescription.toLowerCase().includes(q) ||
         (p.analytes?.some((a) => a.toLowerCase().includes(q)) ?? false);
       return matchDir && matchCat && matchBrand && matchQuery;
     });
-  }, [selectedDirs, selectedCats, selectedBrands, query]);
+  }, [selectedDirs, selectedCats, selectedBrands, query, locale]);
 
   const hasFilters =
     selectedDirs.length > 0 || selectedCats.length > 0 || selectedBrands.length > 0 || query.length > 0;

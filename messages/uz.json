@@ -178,8 +178,8 @@
     "subtitle": "Uskunalar narxini hisoblash va maslahat uchun biz bilan bogʻlaning.",
     "address": "Manzil",
     "addressValue": "Oʻzbekiston Respublikasi, Toshkent sh., Xalqobod koʻchasi, 17",
-    "office": "Офис TODO(uz)",
-    "sales": "Отдел продаж TODO(uz)",
+    "office": "Ofis",
+    "sales": "Savdo boʻlimi",
     "accounting": "Buxgalteriya",
     "email": "Email",
     "hours": "Ish vaqti",
@@ -200,8 +200,8 @@
     "callTitle": "Qoʻngʻiroqqa buyurtma",
     "callSubtitle": "Tez orada siz bilan bogʻlanamiz",
     "priceFor": "Narx soʻrovi: {product}",
-    "devTitle": "В разработке TODO(uz)",
-    "devSubtitle": "Форма скоро заработает. А пока свяжитесь с нами напрямую: TODO(uz)"
+    "devTitle": "Ishlab chiqilmoqda",
+    "devSubtitle": "Forma tez orada ishga tushadi. Hozircha biz bilan bevosita bogʻlaning:"
   },
   "footer": {
     "tagline": "2017 yildan beri Oʻzbekistonda laboratoriya va tibbiy diagnostika jahon yetakchilarining rasmiy distribyutori.",

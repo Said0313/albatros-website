@@ -10,7 +10,7 @@ import type { Product } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { ProductImage } from "@/components/ui/ProductImage";
-import { categoryLabel, productShort } from "@/data/i18n";
+import { categoryLabel, productShort, productName } from "@/data/i18n";
 import { categoryPill } from "@/lib/categoryAccents";
 import { cn } from "@/lib/utils";
 
@@ -65,7 +65,7 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
                   </div>
                   <div className="p-4">
                     <Badge color={categoryPill(p.category)}>{categoryLabel(p.category, locale)}</Badge>
-                    <h3 className="mt-2 break-words font-display text-base font-bold text-text-primary">{p.name}</h3>
+                    <h3 className="mt-2 break-words font-display text-base font-bold text-text-primary">{productName(p, locale)}</h3>
                     <p className="mt-1 font-mono text-xs text-brand-blue-deep">{p.brand}</p>
                     <p className="mt-2 line-clamp-2 text-[13px] text-text-secondary">{productShort(p, locale)}</p>
                     <span className="mt-3 inline-flex items-center gap-1 text-sm text-brand-red-bright group-hover:underline">

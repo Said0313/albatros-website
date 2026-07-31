@@ -422,12 +422,12 @@
     ],
     "featured": false,
     "isNew": false,
-    "shortDescriptionUz": "Автоматический биохимический анализатор с модульной масштабируемостью для полной автоматизации лаборатории. TODO(uz)",
+    "shortDescriptionUz": "Toʻliq laboratoriya avtomatlashtirishi uchun modulli kengaytiriluvchan avtomatik biokimyoviy analizator.",
     "shortDescriptionEn": "Automatic biochemistry analyzer with modular scalability for full laboratory automation.",
-    "fullDescriptionUz": "Biossays C8, автоматический биохимический анализатор SNIBE с модульной архитектурой. Производительность до 1600 тестов/час на один модуль и до 6400 тестов/час при объединении четырёх модулей. Технология микрозабора обеспечивает точность при объёме образца от 1,5 мкл; постоянные кварцевые кюветы не требуют замены. Возможна интеграция с MAGLUMI X8 (Biolumi CX8) и лабораторной системой автоматизации (TLA/LAS). TODO(uz)",
+    "fullDescriptionUz": "Biossays C8, modulli arxitekturaga ega SNIBE avtomatik biokimyoviy analizatori. Unumdorligi bitta modulda 1600 test/soatgacha va toʻrtta modul birlashtirilganda 6400 test/soatgacha. Mikronamuna texnologiyasi 1,5 mkl dan boshlab namuna hajmida aniqlikni taʼminlaydi; doimiy kvarsli kyuvetalar almashtirishni talab qilmaydi. MAGLUMI X8 (Biolumi CX8) va laboratoriya avtomatlashtirish tizimi (TLA/LAS) bilan integratsiya qilish mumkin.",
     "fullDescriptionEn": "Biossays C8 is a SNIBE automatic biochemistry analyzer with a modular architecture. Throughput reaches 1600 tests/hour per module and up to 6400 tests/hour with four modules combined. Micro-sampling technology ensures accuracy from a 1.5 µL sample volume, and permanent quartz cuvettes are maintenance-free. It can integrate with MAGLUMI X8 (Biolumi CX8) and a Laboratory Automation System (TLA/LAS).",
     "detailedDescription": "Biossays C8 объединяет высокую производительность и модульную масштабируемость: лаборатория начинает с одного модуля и расширяется до четырёх по мере роста нагрузки. 10-ступенчатая технология промывки и независимый механизм перемешивания снижают перенос и обеспечивают тщательную очистку. Точный контроль температуры и напряжения источника света вместе с вогнутой голографической решёткой обеспечивают высокое разрешение и низкий уровень рассеянного света. Опционально доступны модуль ISE и модуль-декаппер (конфигурация по заказу).",
-    "detailedDescriptionUz": "Biossays C8 объединяет высокую производительность и модульную масштабируемость: лаборатория начинает с одного модуля и расширяется до четырёх по мере роста нагрузки. 10-ступенчатая технология промывки и независимый механизм перемешивания снижают перенос и обеспечивают тщательную очистку. Точный контроль температуры и напряжения источника света вместе с вогнутой голографической решёткой обеспечивают высокое разрешение и низкий уровень рассеянного света. Опционально доступны модуль ISE и модуль-декаппер (конфигурация по заказу). TODO(uz)",
+    "detailedDescriptionUz": "Biossays C8 yuqori unumdorlik va modulli kengaytiriluvchanlikni birlashtiradi: laboratoriya bitta moduldan boshlaydi va yuklama ortishi bilan toʻrttagacha kengayadi. 10 bosqichli yuvish texnologiyasi va mustaqil aralashtirish mexanizmi oʻtkazishni kamaytiradi hamda puxta tozalashni taʼminlaydi. Haroratni va yorugʻlik manbai kuchlanishini aniq nazorat qilish botiq golografik panjara bilan birgalikda yuqori ajratish qobiliyati va past darajadagi sochilgan yorugʻlikni taʼminlaydi. Ixtiyoriy ravishda ISE moduli va dekapper moduli mavjud (konfiguratsiya buyurtma asosida).",
     "hidden": false
   },
   {
@@ -1335,7 +1335,9 @@
     "shortDescriptionUz": "1960 yildan ispan ishlab chiqaruvchisining tayyor oziq muhitlari.",
     "shortDescriptionEn": "Ready-to-use culture media from a Spanish manufacturer since 1960.",
     "fullDescriptionUz": "Condalab, 1960 yilda Madrid (Ispaniya) shahrida tashkil etilgan oziq muhitlari ishlab chiqaruvchisi. 130 mamlakatga eksport. ISO, Yevropa farmakopeyasi, FDA, APHA, USP, AOAC standartlariga muvofiqlik.",
-    "fullDescriptionEn": "Condalab is a culture media manufacturer founded in 1960 in Madrid, Spain. Exports to 130 countries. Compliant with ISO, European Pharmacopoeia, FDA, APHA, USP and AOAC standards."
+    "fullDescriptionEn": "Condalab is a culture media manufacturer founded in 1960 in Madrid, Spain. Exports to 130 countries. Compliant with ISO, European Pharmacopoeia, FDA, APHA, USP and AOAC standards.",
+    "nameUz": "Condalab oziq muhitlari",
+    "nameEn": "Condalab culture media"
   },
   {
     "id": "molecision-r8",
@@ -2267,12 +2269,12 @@
     ],
     "featured": false,
     "isNew": true,
-    "shortDescriptionUz": "Портативное устройство для скрининга рака шейки матки в реальном времени с результатом за 10 минут без лаборатории. TODO(uz)",
+    "shortDescriptionUz": "Bachadon boʻyni saratonini real vaqt rejimida skrining qilish uchun portativ qurilma, laboratoriyasiz 10 daqiqada natija.",
     "shortDescriptionEn": "Portable real-time cervical cancer screening device delivering a result in 10 minutes with no laboratory.",
-    "fullDescriptionUz": "TruScreen ULTRA, медицинское устройство нового поколения для скрининга рака шейки матки в режиме реального времени. Объединяет оптический метод (4 светодиода, 3 длины волны, 14 измерений в секунду) и электрический метод (импедансная спектроскопия) с ИИ-алгоритмом. Врач выполняет около 20 точечных измерений одноразовым датчиком, результат «Норма» или «Аномалия» выдаётся мгновенно, без лаборатории и без дискомфорта для пациентки. TODO(uz)",
+    "fullDescriptionUz": "TruScreen ULTRA, bachadon boʻyni saratonini real vaqt rejimida skrining qilish uchun yangi avlod tibbiy qurilmasi. Optik usul (4 svetodiod, 3 toʻlqin uzunligi, sekundiga 14 oʻlchash) va elektr usulini (impedans spektroskopiyasi) SI algoritmi bilan birlashtiradi. Shifokor bir martalik datchik bilan taxminan 20 ta nuqtaviy oʻlchash bajaradi, «Norma» yoki «Anomaliya» natijasi laboratoriyasiz va bemor uchun noqulaylik tugʻdirmasdan darhol beriladi.",
     "fullDescriptionEn": "TruScreen ULTRA is a next-generation medical device for real-time cervical cancer screening. It combines an optical method (4 LEDs, 3 wavelengths, 14 measurements per second) and an electrical method (impedance spectroscopy) with an AI algorithm. The clinician takes about 20 point measurements with a single-use sensor, and a \"Normal\" or \"Abnormal\" result is delivered instantly, with no laboratory and no patient discomfort.",
     "detailedDescription": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом.",
-    "detailedDescriptionUz": "Разработано австралийской компанией TruScreen Group Ltd. Клинические данные: чувствительность 87,5% и специфичность 88,4% (исследование Chen et al., n=15 661); более 42 000 пациенток в независимых исследованиях. По сравнению с мазком Папаниколау результат готов за ~10 минут вместо 2-3 недель, без лаборатории, безболезненно и объективно (ИИ). Регуляторные одобрения: CE (ЕС), MHRA (Великобритания), NMPA (Китай), SFDA (Саудовская Аравия), TGA (Австралия), Росздравнадзор (Россия). Устройство является скрининговым; окончательный диагноз устанавливается врачом. TODO(uz)"
+    "detailedDescriptionUz": "Avstraliyaning TruScreen Group Ltd kompaniyasi tomonidan ishlab chiqilgan. Klinik maʼlumotlar: sezgirlik 87,5% va oʻziga xoslik 88,4% (Chen et al. tadqiqoti, n=15 661); mustaqil tadqiqotlarda 42 000 dan ortiq bemor ayol. Papanikolau surtmasi bilan solishtirganda natija 2-3 hafta oʻrniga ~10 daqiqada tayyor boʻladi, laboratoriyasiz, ogʻriqsiz va obyektiv (SI). Tartibga soluvchi ruxsatlar: CE (Yevropa Ittifoqi), MHRA (Buyuk Britaniya), NMPA (Xitoy), SFDA (Saudiya Arabistoni), TGA (Avstraliya), Roszdravnadzor (Rossiya). Qurilma skrining qurilmasi hisoblanadi; yakuniy tashxisni shifokor qoʻyadi."
   },
   {
     "id": "reagenty-maglumi-ihla",
@@ -2358,7 +2360,9 @@
     "shortDescriptionUz": "IXLA uchun MAGLUMI reagent toʻplamlari: gormonlar, onkomarkerlar, infeksiyalar, kardiomarkerlar, autoimmun va boshqa testlar.",
     "shortDescriptionEn": "MAGLUMI reagent kits for chemiluminescence immunoassay: hormones, tumor markers, infections, cardiac markers, autoimmune and other tests.",
     "fullDescriptionUz": "IXLA uchun MAGLUMI reagent toʻplamlari: gormonlar, onkomarkerlar, infeksiyalar, kardiomarkerlar, autoimmun va boshqa testlar.",
-    "fullDescriptionEn": "MAGLUMI reagent kits for chemiluminescence immunoassay: hormones, tumor markers, infections, cardiac markers, autoimmune and other tests."
+    "fullDescriptionEn": "MAGLUMI reagent kits for chemiluminescence immunoassay: hormones, tumor markers, infections, cardiac markers, autoimmune and other tests.",
+    "nameUz": "MAGLUMI reagentlari",
+    "nameEn": "MAGLUMI reagents"
   },
   {
     "id": "reagenty-biohimiya-snibe",
@@ -2421,7 +2425,9 @@
     "shortDescriptionUz": "Ochiq tipdagi analizatorlar uchun biokimyoviy reagentlar: lipidlar, jigar va buyrak funksiyalari, elektrolitlar, fermentlar va maxsus oqsillar.",
     "shortDescriptionEn": "Biochemistry reagents for open-type analyzers: lipids, liver and kidney function, electrolytes, enzymes and specific proteins.",
     "fullDescriptionUz": "Ochiq tipdagi analizatorlar uchun biokimyoviy reagentlar: lipidlar, jigar va buyrak funksiyalari, elektrolitlar, fermentlar va maxsus oqsillar.",
-    "fullDescriptionEn": "Biochemistry reagents for open-type analyzers: lipids, liver and kidney function, electrolytes, enzymes and specific proteins."
+    "fullDescriptionEn": "Biochemistry reagents for open-type analyzers: lipids, liver and kidney function, electrolytes, enzymes and specific proteins.",
+    "nameUz": "SNIBE biokimyoviy reagentlari",
+    "nameEn": "SNIBE biochemistry reagents"
   },
   {
     "id": "reagenty-dymind-gematologiya",
@@ -2453,7 +2459,9 @@
     "shortDescriptionUz": "Dymind gematologik analizatorlari uchun dilyuentlar, lizuvchi va yuvuvchi reagentlar, CRP va glikatlangan gemoglobin toʻplamlari.",
     "shortDescriptionEn": "Diluents, lysing and rinse reagents, CRP and glycated hemoglobin kits for Dymind hematology analyzers.",
     "fullDescriptionUz": "Dymind gematologik analizatorlari uchun dilyuentlar, lizuvchi va yuvuvchi reagentlar, CRP va glikatlangan gemoglobin toʻplamlari.",
-    "fullDescriptionEn": "Diluents, lysing and rinse reagents, CRP and glycated hemoglobin kits for Dymind hematology analyzers."
+    "fullDescriptionEn": "Diluents, lysing and rinse reagents, CRP and glycated hemoglobin kits for Dymind hematology analyzers.",
+    "nameUz": "Dymind gematologiya reagentlari",
+    "nameEn": "Dymind hematology reagents"
   },
   {
     "id": "reagenty-werfen-gemostaz",
@@ -2496,7 +2504,9 @@
     "shortDescriptionUz": "Koagulologiya uchun reagentlar: PV/XNI, AChTV, fibrinogen, antitrombin, D-dimer, C va S oqsillari, ivish omillari.",
     "shortDescriptionEn": "Reagents for coagulation testing: PT/INR, APTT, fibrinogen, antithrombin, D-dimer, protein C and S, clotting factors.",
     "fullDescriptionUz": "Koagulologiya uchun reagentlar: PV/XNI, AChTV, fibrinogen, antitrombin, D-dimer, C va S oqsillari, ivish omillari.",
-    "fullDescriptionEn": "Reagents for coagulation testing: PT/INR, APTT, fibrinogen, antithrombin, D-dimer, protein C and S, clotting factors."
+    "fullDescriptionEn": "Reagents for coagulation testing: PT/INR, APTT, fibrinogen, antithrombin, D-dimer, protein C and S, clotting factors.",
+    "nameUz": "Werfen gemostaz reagentlari",
+    "nameEn": "Werfen hemostasis reagents"
   },
   {
     "id": "reagenty-bd-phoenix-mikrobiologiya",
@@ -2525,7 +2535,9 @@
     "shortDescriptionUz": "Mikroorganizmlarni aniqlash va antibiotiklarga sezgirlikni belgilash uchun BD Phoenix panellari, tegishli reagent va eritmalar.",
     "shortDescriptionEn": "BD Phoenix panels for microorganism identification and antibiotic susceptibility testing, plus supporting reagents and solutions.",
     "fullDescriptionUz": "Mikroorganizmlarni aniqlash va antibiotiklarga sezgirlikni belgilash uchun BD Phoenix panellari, tegishli reagent va eritmalar.",
-    "fullDescriptionEn": "BD Phoenix panels for microorganism identification and antibiotic susceptibility testing, plus supporting reagents and solutions."
+    "fullDescriptionEn": "BD Phoenix panels for microorganism identification and antibiotic susceptibility testing, plus supporting reagents and solutions.",
+    "nameUz": "BD Phoenix mikrobiologiya reagentlari",
+    "nameEn": "BD Phoenix microbiology reagents"
   },
   {
     "id": "reagenty-urit-analiz-mochi",
@@ -2549,7 +2561,9 @@
     "shortDescriptionUz": "URIT siydik analizatorlari uchun test-poloskalar, probirkalar va tegishli reagentlar.",
     "shortDescriptionEn": "Test strips, tubes and supporting reagents for URIT urine analyzers.",
     "fullDescriptionUz": "URIT siydik analizatorlari uchun test-poloskalar, probirkalar va tegishli reagentlar.",
-    "fullDescriptionEn": "Test strips, tubes and supporting reagents for URIT urine analyzers."
+    "fullDescriptionEn": "Test strips, tubes and supporting reagents for URIT urine analyzers.",
+    "nameUz": "URIT siydik tahlili reagentlari",
+    "nameEn": "URIT urinalysis reagents"
   },
   {
     "id": "rashodniki-maglumi-m",
@@ -2573,7 +2587,9 @@
     "shortDescriptionUz": "MAGLUMI M seriyali analizatorlari uchun sarf materiallari: starterlar, kyuvetalar, yuvish eritmalari, optik nazorat.",
     "shortDescriptionEn": "Consumables for MAGLUMI M-series analyzers: starters, cuvettes, wash solutions, optical control.",
     "fullDescriptionUz": "MAGLUMI M seriyali analizatorlari uchun sarf materiallari: starterlar, kyuvetalar, yuvish eritmalari, optik nazorat.",
-    "fullDescriptionEn": "Consumables for MAGLUMI M-series analyzers: starters, cuvettes, wash solutions, optical control."
+    "fullDescriptionEn": "Consumables for MAGLUMI M-series analyzers: starters, cuvettes, wash solutions, optical control.",
+    "nameUz": "MAGLUMI M600/M800/M2000/M4000 sarf materiallari",
+    "nameEn": "MAGLUMI M600/M800/M2000/M4000 consumables"
   },
   {
     "id": "rashodniki-maglumi-x",
@@ -2599,7 +2615,9 @@
     "shortDescriptionUz": "MAGLUMI X seriyali analizatorlari uchun sarf materiallari: starterlar, kyuvetalar, uchliklar, yuvish eritmalari.",
     "shortDescriptionEn": "Consumables for MAGLUMI X-series analyzers: starters, cuvettes, tips, wash solutions.",
     "fullDescriptionUz": "MAGLUMI X seriyali analizatorlari uchun sarf materiallari: starterlar, kyuvetalar, uchliklar, yuvish eritmalari.",
-    "fullDescriptionEn": "Consumables for MAGLUMI X-series analyzers: starters, cuvettes, tips, wash solutions."
+    "fullDescriptionEn": "Consumables for MAGLUMI X-series analyzers: starters, cuvettes, tips, wash solutions.",
+    "nameUz": "MAGLUMI X3/X6/X8 sarf materiallari",
+    "nameEn": "MAGLUMI X3/X6/X8 consumables"
   },
   {
     "id": "rashodniki-biossays-biohimiya",
@@ -2625,7 +2643,9 @@
     "shortDescriptionUz": "Biossays biokimyoviy analizatorlari uchun sarf materiallari: yuvishlar, kyuvetalar, galogen lampa, ISE toʻplamlari.",
     "shortDescriptionEn": "Consumables for Biossays biochemistry analyzers: washes, cuvettes, halogen lamp, ISE kits.",
     "fullDescriptionUz": "Biossays biokimyoviy analizatorlari uchun sarf materiallari: yuvishlar, kyuvetalar, galogen lampa, ISE toʻplamlari.",
-    "fullDescriptionEn": "Consumables for Biossays biochemistry analyzers: washes, cuvettes, halogen lamp, ISE kits."
+    "fullDescriptionEn": "Consumables for Biossays biochemistry analyzers: washes, cuvettes, halogen lamp, ISE kits.",
+    "nameUz": "Biossays biokimyo sarf materiallari",
+    "nameEn": "Biossays biochemistry consumables"
   },
   {
     "id": "rashodniki-acl-top-gemostaz",
@@ -2649,7 +2669,9 @@
     "shortDescriptionUz": "ACL TOP koagulometrlari uchun sarf materiallari: yuvuvchi eritmalar, kyuvetalar, namuna suyultirgichlari.",
     "shortDescriptionEn": "Consumables for ACL TOP coagulometers: cleaning solutions, cuvettes, sample diluents.",
     "fullDescriptionUz": "ACL TOP koagulometrlari uchun sarf materiallari: yuvuvchi eritmalar, kyuvetalar, namuna suyultirgichlari.",
-    "fullDescriptionEn": "Consumables for ACL TOP coagulometers: cleaning solutions, cuvettes, sample diluents."
+    "fullDescriptionEn": "Consumables for ACL TOP coagulometers: cleaning solutions, cuvettes, sample diluents.",
+    "nameUz": "ACL TOP gemostaz sarf materiallari",
+    "nameEn": "ACL TOP hemostasis consumables"
   },
   {
     "id": "kontroli-biohimiya-snibe",
@@ -2680,7 +2702,9 @@
     "shortDescriptionUz": "Biokimyoviy analizatorlar uchun koʻp darajali nazorat zardoblari va kalibratorlar.",
     "shortDescriptionEn": "Multi-level control sera and calibrators for biochemistry analyzers.",
     "fullDescriptionUz": "Biokimyoviy analizatorlar uchun koʻp darajali nazorat zardoblari va kalibratorlar.",
-    "fullDescriptionEn": "Multi-level control sera and calibrators for biochemistry analyzers."
+    "fullDescriptionEn": "Multi-level control sera and calibrators for biochemistry analyzers.",
+    "nameUz": "Biokimyo uchun nazorat materiallari va kalibratorlar",
+    "nameEn": "Biochemistry controls and calibrators"
   },
   {
     "id": "kontroli-gemostaz-werfen",
@@ -2714,7 +2738,9 @@
     "shortDescriptionUz": "Koagulologiya uchun kalibrlash plazmalari va nazoratlar: normal va patologik nazoratlar, geparin va POAK kalibratorlari, XNI/MICh.",
     "shortDescriptionEn": "Calibration plasmas and controls for coagulation testing: normal and abnormal controls, heparin and DOAC calibrators, INR/ISI.",
     "fullDescriptionUz": "Koagulologiya uchun kalibrlash plazmalari va nazoratlar: normal va patologik nazoratlar, geparin va POAK kalibratorlari, XNI/MICh.",
-    "fullDescriptionEn": "Calibration plasmas and controls for coagulation testing: normal and abnormal controls, heparin and DOAC calibrators, INR/ISI."
+    "fullDescriptionEn": "Calibration plasmas and controls for coagulation testing: normal and abnormal controls, heparin and DOAC calibrators, INR/ISI.",
+    "nameUz": "Gemostaz uchun nazorat materiallari va kalibratorlar",
+    "nameEn": "Hemostasis controls and calibrators"
   },
   {
     "id": "kontroli-urit-analiz-mochi",
@@ -2742,6 +2768,8 @@
     "shortDescriptionUz": "Siydik analizatorlari uchun nazoratlar va kalibratorlar: rang, solishtirma ogʻirlik va loyqalik nazoratlari.",
     "shortDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls.",
     "fullDescriptionUz": "Siydik analizatorlari uchun nazoratlar va kalibratorlar: rang, solishtirma ogʻirlik va loyqalik nazoratlari.",
-    "fullDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls."
+    "fullDescriptionEn": "Controls and calibrators for urine analyzers: color, specific gravity and turbidity controls.",
+    "nameUz": "Siydik tahlili uchun nazorat materiallari va kalibratorlar",
+    "nameEn": "Urinalysis controls and calibrators"
   }
 ]

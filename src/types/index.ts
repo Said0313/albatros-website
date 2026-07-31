@@ -15,6 +15,10 @@ export interface Product {
   fullDescriptionUz?: string;
   shortDescriptionEn?: string;
   fullDescriptionEn?: string;
+  // Only the reagent/consumable/control entries carry these: their names are
+  // Russian prose rather than a language-neutral model name.
+  nameUz?: string;
+  nameEn?: string;
   // Two-level taxonomy: general direction (equipment | reagents | consumables |
   // controls). Absent means equipment (all existing products). `analytes` is an
   // in-card, language-neutral sub-list (e.g. TSH, CA-125) indexed by search;
@@ -28,6 +32,7 @@ export interface Product {
   videoUrl?: string;
   detailedDescription?: string;
   detailedDescriptionUz?: string;
+  detailedDescriptionEn?: string;
 }
 
 export interface Brand {

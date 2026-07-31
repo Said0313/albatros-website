@@ -6,7 +6,7 @@ import type { Product } from "@/types";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { ProductImage } from "@/components/ui/ProductImage";
-import { categoryLabel, productShort } from "@/data/i18n";
+import { categoryLabel, productShort, productName } from "@/data/i18n";
 import { categoryPill } from "@/lib/categoryAccents";
 import { imageAlt, type AppLocale } from "@/lib/seo";
 
@@ -21,10 +21,10 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-square w-full overflow-hidden rounded-t-2xl bg-white">
         <ProductImage
           src={product.images[0]}
-          alt={imageAlt({ name: product.name, brand: product.brand, category: product.category, locale: locale as AppLocale })}
+          alt={imageAlt({ name: productName(product, locale), brand: product.brand, category: product.category, locale: locale as AppLocale })}
           brand={product.brand}
           category={product.category}
-          name={product.name}
+          name={productName(product, locale)}
           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
           className="p-4 transition-transform duration-500 group-hover:scale-[1.04]"
         />
@@ -32,7 +32,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="flex flex-1 flex-col p-4">
         <span aria-hidden className="mb-3 block h-px w-full bg-bg-border" />
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
-        <h3 className="mt-2 break-words font-display text-[15px] font-bold text-text-primary">{product.name}</h3>
+        <h3 className="mt-2 break-words font-display text-[15px] font-bold text-text-primary">{productName(product, locale)}</h3>
         <p className="mt-1 font-mono text-[11px] text-brand-blue-deep">{product.brand}</p>
         <p className="mt-2 line-clamp-2 text-xs text-text-secondary">{productShort(product, locale)}</p>
         <span className="mt-3 inline-flex items-center gap-1 text-[13px] text-brand-red-bright group-hover:gap-2 group-hover:underline">

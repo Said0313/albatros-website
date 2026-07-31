@@ -65,6 +65,7 @@ const CATEGORY_KEYWORD: Record<string, { ru: string; uz: string; en: string }> =
   "ВЭЖХ": { ru: "ВЭЖХ анализатор (HPLC)", uz: "HPLC analizatori", en: "HPLC analyzer" },
   "Иммуногематология": { ru: "иммуногематология", uz: "immunogematologiya", en: "immunohematology" },
   "Токсикология": { ru: "токсикология", uz: "toksikologiya", en: "toxicology" },
+  "Скрининг": { ru: "скрининг", uz: "skrining", en: "screening" },
   "Аллергология": { ru: "молекулярная аллергодиагностика", uz: "molekulyar allergodiagnostika", en: "molecular allergy diagnostics" },
   "Программы контроля качества": { ru: "контроль качества лаборатории", uz: "laboratoriya sifat nazorati", en: "laboratory quality control" },
   "Функциональная диагностика": { ru: "функциональная диагностика", uz: "funksional diagnostika", en: "functional diagnostics" },

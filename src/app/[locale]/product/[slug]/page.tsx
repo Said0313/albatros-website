@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { products, getProduct, getRelated, brandIdOf } from "@/lib/catalog";
 import { Link } from "@/i18n/navigation";
-import { categoryLabel, productFull, productShort, productDetailed, specLabel, specValue } from "@/data/i18n";
+import { categoryLabel, productFull, productShort, productDetailed, productName, specLabel, specValue } from "@/data/i18n";
 import { youtubeId } from "@/lib/youtube";
 import { absoluteUrl, categoryKeyword, pageMetadata, SITE_URL, type AppLocale } from "@/lib/seo";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
@@ -33,7 +33,7 @@ export async function generateMetadata({
   return pageMetadata({
     locale,
     path: `/product/${product.slug}`,
-    title: `${product.name} · ${kw}`,
+    title: `${productName(product, locale)} · ${kw}`,
     description: productShort(product, locale),
     images: product.images.length ? product.images : ["/logo.png"],
   });
@@ -56,7 +56,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.name,
+    name: productName(product, loc),
     image: product.images.length ? product.images.map((i) => `${SITE_URL}${i}`) : [`${SITE_URL}/logo.png`],
     description: productFull(product, loc) || productShort(product, loc),
     brand: { "@type": "Brand", name: product.brand },
@@ -67,7 +67,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
     { name: t("breadcrumbHome"), path: "/" },
     { name: tn("catalog"), path: "/catalog" },
     { name: categoryLabel(product.category, loc), path: `/catalog?category=${encodeURIComponent(product.category)}` },
-    { name: product.name, path: `/product/${product.slug}` },
+    { name: productName(product, loc), path: `/product/${product.slug}` },
   ];
 
   return (
@@ -85,11 +85,11 @@ export default function ProductPage({ params }: { params: { slug: string; locale
             {categoryLabel(product.category, locale)}
           </Link>
           <ChevronRight className="h-3.5 w-3.5" />
-          <span className="text-text-primary">{product.name}</span>
+          <span className="text-text-primary">{productName(product, locale)}</span>
         </nav>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[55fr_45fr]">
-          <ProductGallery images={product.images} name={product.name} brand={product.brand} category={product.category} />
+          <ProductGallery images={product.images} name={productName(product, locale)} brand={product.brand} category={product.category} />
 
           <div>
             <div className="flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
                 <Badge variant="blue">{product.brand}</Badge>
               )}
             </div>
-            <h1 className="mt-4 font-display text-3xl font-extrabold text-text-primary md:text-4xl">{product.name}</h1>
+            <h1 className="mt-4 font-display text-3xl font-extrabold text-text-primary md:text-4xl">{productName(product, locale)}</h1>
             {brandId ? (
               <Link href={`/partners/${brandId}`} className="mt-2 inline-block font-mono text-sm text-brand-blue-deep hover:underline">
                 {product.brand}
@@ -140,7 +140,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
               </div>
             )}
 
-            <ProductActions name={product.name} />
+            <ProductActions name={productName(product, locale)} />
           </div>
         </div>
 
@@ -157,7 +157,7 @@ export default function ProductPage({ params }: { params: { slug: string; locale
                     <iframe
                       className="h-full w-full border-0"
                       src={`https://www.youtube-nocookie.com/embed/${vid}`}
-                      title={product.name}
+                      title={productName(product, locale)}
                       loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen

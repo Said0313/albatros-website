@@ -1,6 +1,7 @@
 // Uzbek + English translations for catalog DATA (category names + per-product
 // short text). Product names are brand/model and stay identical in all locales.
 import type { Product, Brand, CompanyEvent } from "@/types";
+import type { Client } from "@/data/clients";
 
 export const CATEGORY_UZ: Record<string, string> = {
   "ИХЛА": "IXLA",
@@ -22,7 +23,7 @@ export const CATEGORY_UZ: Record<string, string> = {
   "Функциональная диагностика": "Funksional diagnostika",
   "Биодеконтаминация": "Biodekontaminatsiya",
   "Клиническая диагностика": "Klinik diagnostika",
-  "Скрининг": "Скрининг TODO(uz)",
+  "Скрининг": "Skrining",
   // General directions (top level of the two-level taxonomy)
   "Медицинское оборудование": "Laboratoriya uskunalari",
   "Реагенты": "Reagentlar",
@@ -85,7 +86,27 @@ export function productFull(p: Product, locale: string): string {
 }
 
 export function productDetailed(p: Product, locale: string): string | undefined {
-  return locale === "uz" ? p.detailedDescriptionUz ?? p.detailedDescription : p.detailedDescription;
+  if (locale === "uz") return p.detailedDescriptionUz ?? p.detailedDescription;
+  if (locale === "en") return p.detailedDescriptionEn ?? p.detailedDescription;
+  return p.detailedDescription;
+}
+
+/**
+ * Product display name. Model names (Maglumi X3, NovaSeq X) are language neutral
+ * and carry no per-locale variant, so they fall through unchanged; the
+ * reagent/consumable/control entries are Russian prose and do carry one.
+ */
+export function productName(p: Product, locale: string): string {
+  if (locale === "uz") return p.nameUz ?? p.name;
+  if (locale === "en") return p.nameEn ?? p.name;
+  return p.name;
+}
+
+/** Client card description. All three locales are stored on every client. */
+export function clientDescription(c: Client, locale: string): string | undefined {
+  if (locale === "uz") return c.descriptionUz ?? c.description;
+  if (locale === "en") return c.descriptionEn ?? c.description;
+  return c.description;
 }
 
 // Uzbek translations for the recurring product spec LABELS (values are mostly
@@ -118,6 +139,26 @@ export const SPEC_LABEL_UZ: Record<string, string> = {
   "Фильтр": "Filtr", "Формат": "Format", "Формённые элементы": "Shaklli elementlar", "Функции": "Funksiyalar",
   "Химия": "Kimyo", "Холодильные модули": "Sovutish modullari", "Хранение": "Saqlash", "Частота": "Chastota",
   "Экран": "Ekran", "Экспорт": "Eksport", "Электролитный модуль": "Elektrolit moduli", "Электролиты": "Elektrolitlar",
+  "Позиции для образцов": "Namuna pozitsiyalari",
+  "Типы образцов": "Namuna turlari",
+  "Реагентные отсеки": "Reagent boʻlmalari",
+  "Температура реагентов": "Reagentlar harorati",
+  "Реакционные кюветы": "Reaksiya kyuvetalari",
+  "Температура реакции": "Reaksiya harorati",
+  "Объём реакции": "Reaksiya hajmi",
+  "Длины волн": "Toʻlqin uzunliklari",
+  "Источник света": "Yorugʻlik manbai",
+  "Штрих-коды": "Shtrix-kodlar",
+  "Опциональные модули": "Ixtiyoriy modullar",
+  "Измерений в секунду": "Sekundiga oʻlchashlar",
+  "Точечных измерений": "Nuqtaviy oʻlchashlar",
+  "Время результата": "Natija vaqti",
+  "Результат": "Natija",
+  "Датчик": "Datchik",
+  "Чувствительность": "Sezgirlik",
+  "Специфичность": "Oʻziga xoslik",
+  "Клинические исследования": "Klinik tadqiqotlar",
+  "Регуляторные одобрения": "Tartibga soluvchi ruxsatlar",
 };
 
 export const SPEC_LABEL_EN: Record<string, string> = {
@@ -148,6 +189,26 @@ export const SPEC_LABEL_EN: Record<string, string> = {
   "Фильтр": "Filter", "Формат": "Format", "Формённые элементы": "Formed elements", "Функции": "Functions",
   "Химия": "Chemistry", "Холодильные модули": "Refrigeration modules", "Хранение": "Storage", "Частота": "Frequency",
   "Экран": "Screen", "Экспорт": "Export", "Электролитный модуль": "Electrolyte module", "Электролиты": "Electrolytes",
+  "Позиции для образцов": "Sample positions",
+  "Типы образцов": "Sample types",
+  "Реагентные отсеки": "Reagent compartments",
+  "Температура реагентов": "Reagent temperature",
+  "Реакционные кюветы": "Reaction cuvettes",
+  "Температура реакции": "Reaction temperature",
+  "Объём реакции": "Reaction volume",
+  "Длины волн": "Wavelengths",
+  "Источник света": "Light source",
+  "Штрих-коды": "Barcodes",
+  "Опциональные модули": "Optional modules",
+  "Измерений в секунду": "Measurements per second",
+  "Точечных измерений": "Point measurements",
+  "Время результата": "Time to result",
+  "Результат": "Result",
+  "Датчик": "Sensor",
+  "Чувствительность": "Sensitivity",
+  "Специфичность": "Specificity",
+  "Клинические исследования": "Clinical studies",
+  "Регуляторные одобрения": "Regulatory approvals",
 };
 
 export function specLabel(label: string, locale: string): string {
@@ -162,6 +223,7 @@ const COUNTRY_UZ: Record<string, string> = {
   "США · Сан-Диего": "AQSh · San-Diego", "Китай · Гуйлинь": "Xitoy · Guylin",
   "Канада · Ванкувер": "Kanada · Vankuver", "Испания · Мадрид": "Ispaniya · Madrid",
   "Швеция · Уппсала": "Shvetsiya · Uppsala", "Китай": "Xitoy",
+  "Австралия": "Avstraliya",
 };
 
 const COUNTRY_EN: Record<string, string> = {
@@ -170,6 +232,7 @@ const COUNTRY_EN: Record<string, string> = {
   "США · Сан-Диего": "USA · San Diego", "Китай · Гуйлинь": "China · Guilin",
   "Канада · Ванкувер": "Canada · Vancouver", "Испания · Мадрид": "Spain · Madrid",
   "Швеция · Уппсала": "Sweden · Uppsala", "Китай": "China",
+  "Австралия": "Australia",
 };
 
 export function brandSpecialty(b: Brand, locale: string): string | undefined {
@@ -363,6 +426,28 @@ export const SPEC_VALUE_UZ: Record<string, string> = {
   "химический + микроскопический + физический": "kimyoviy + mikroskopik + fizik",
   "химический + физический + микроскопический": "kimyoviy + fizik + mikroskopik",
   "цифровая ПЦР": "raqamli PZR",
+  "1600 тестов/час (один модуль); до 6400 тестов/час (четыре модуля)": "1600 test/soat (bitta modul); 6400 test/soatgacha (toʻrtta modul)",
+  "Сыворотка, плазма, моча, СМЖ": "Zardob, plazma, siydik, orqa miya suyuqligi",
+  "1,5 - 25 мкл (шаг 0,1 мкл)": "1,5 - 25 mkl (qadam 0,1 mkl)",
+  "72 позиции для R1 и 72 для R2": "R1 uchun 72 pozitsiya va R2 uchun 72",
+  "Работа 8-12°C, хранение 2-8°C": "Ish 8-12°C, saqlash 2-8°C",
+  "362 (постоянные кварцевые)": "362 (doimiy kvarsli)",
+  "10 минут; 22 минуты": "10 daqiqa; 22 daqiqa",
+  "80 - 250 мкл": "80 - 250 mkl",
+  "13 фиксированных (340-800 нм)": "13 ta qatʼiy (340-800 nm)",
+  "Галогенная лампа 12 В, 100 Вт": "Galogen lampa 12 V, 100 Vt",
+  "133×118×135 см, 560 кг (биохимический модуль)": "133×118×135 sm, 560 kg (biokimyo moduli)",
+  "ISE (300 тестов/час), декаппер (по заказу)": "ISE (300 test/soat), dekapper (buyurtma asosida)",
+  "58,5 × 53,3 × 63,5 см (В×Ш×Г)": "58,5 × 53,3 × 63,5 sm (B×E×Ch)",
+  "158,8 × 93,3 × 86,4 см (В×Ш×Г)": "158,8 × 93,3 × 86,4 sm (B×E×Ch)",
+  "Оптический (4 светодиода, 3 длины волны) + электрический (импедансная спектроскопия)": "Optik (4 svetodiod, 3 toʻlqin uzunligi) + elektr (impedans spektroskopiyasi)",
+  "~20 на поверхности шейки матки": "~20 ta bachadon boʻyni yuzasida",
+  "~10 минут": "~10 daqiqa",
+  "«Норма» или «Аномалия» (ИИ-алгоритм)": "«Norma» yoki «Anomaliya» (SI algoritmi)",
+  "Одноразовый (SUS)": "Bir martalik (SUS)",
+  "42 000+ пациенток": "42 000+ bemor ayol",
+  "CE, MHRA, NMPA, SFDA, TGA, Росздравнадзор": "CE, MHRA, NMPA, SFDA, TGA, Roszdravnadzor",
+  "TruScreen Group Ltd (Австралия)": "TruScreen Group Ltd (Avstraliya)",
 };
 
 export const SPEC_VALUE_EN: Record<string, string> = {
@@ -510,10 +595,78 @@ export const SPEC_VALUE_EN: Record<string, string> = {
   "химический + микроскопический + физический": "chemical + microscopic + physical",
   "химический + физический + микроскопический": "chemical + physical + microscopic",
   "цифровая ПЦР": "digital PCR",
+  "1600 тестов/час (один модуль); до 6400 тестов/час (четыре модуля)": "1,600 tests/hour (one module); up to 6,400 tests/hour (four modules)",
+  "Сыворотка, плазма, моча, СМЖ": "Serum, plasma, urine, CSF",
+  "1,5 - 25 мкл (шаг 0,1 мкл)": "1.5 - 25 µl (0.1 µl steps)",
+  "72 позиции для R1 и 72 для R2": "72 positions for R1 and 72 for R2",
+  "Работа 8-12°C, хранение 2-8°C": "Operation 8-12°C, storage 2-8°C",
+  "362 (постоянные кварцевые)": "362 (permanent quartz)",
+  "10 минут; 22 минуты": "10 minutes; 22 minutes",
+  "80 - 250 мкл": "80 - 250 µl",
+  "13 фиксированных (340-800 нм)": "13 fixed (340-800 nm)",
+  "Галогенная лампа 12 В, 100 Вт": "Halogen lamp 12 V, 100 W",
+  "133×118×135 см, 560 кг (биохимический модуль)": "133×118×135 cm, 560 kg (biochemistry module)",
+  "ISE (300 тестов/час), декаппер (по заказу)": "ISE (300 tests/hour), decapper (to order)",
+  "58,5 × 53,3 × 63,5 см (В×Ш×Г)": "58.5 × 53.3 × 63.5 cm (H×W×D)",
+  "158,8 × 93,3 × 86,4 см (В×Ш×Г)": "158.8 × 93.3 × 86.4 cm (H×W×D)",
+  "Оптический (4 светодиода, 3 длины волны) + электрический (импедансная спектроскопия)": "Optical (4 LEDs, 3 wavelengths) + electrical (impedance spectroscopy)",
+  "~20 на поверхности шейки матки": "~20 on the cervical surface",
+  "~10 минут": "~10 minutes",
+  "«Норма» или «Аномалия» (ИИ-алгоритм)": "'Normal' or 'Abnormal' (AI algorithm)",
+  "Одноразовый (SUS)": "Single-use (SUS)",
+  "42 000+ пациенток": "42,000+ patients",
+  "CE, MHRA, NMPA, SFDA, TGA, Росздравнадзор": "CE, MHRA, NMPA, SFDA, TGA, Roszdravnadzor",
+  "TruScreen Group Ltd (Австралия)": "TruScreen Group Ltd (Australia)",
 };
 
 export function specValue(value: string, locale: string): string {
   if (locale === "uz") return SPEC_VALUE_UZ[value] ?? value;
   if (locale === "en") return SPEC_VALUE_EN[value] ?? value;
   return value;
+}
+
+// The analyte/item chips on the reagent cards are mostly language neutral
+// (TSH, CA-125); these are the few Russian ones.
+const ANALYTE_UZ: Record<string, string> = {
+  "Пробирки": "Probirkalar",
+  "Starter 1+2 (2x230 мл)": "Starter 1+2 (2x230 ml)",
+  "Кюветы Reaction Modules": "Reaction Modules kyuvetalari",
+  "Промывочный концентрат": "Yuvish konsentrati",
+  "Оптический контроль": "Optik nazorat",
+  "Раствор для очистки труб": "Quvurlarni tozalash eritmasi",
+  "Starter 1+2 для X3": "X3 uchun Starter 1+2",
+  "Starter 1+2 (2x1.5 л)": "Starter 1+2 (2x1.5 l)",
+  "Кюветы Reaction Cup": "Reaction Cup kyuvetalari",
+  "Наконечники": "Uchliklar",
+  "Щелочная промывка": "Ishqoriy yuvish",
+  "Кислотная промывка": "Kislotali yuvish",
+  "ISE очистка": "ISE tozalash",
+  "ISE набор": "ISE toʻplami",
+  "Галогеновая лампа": "Galogen lampa",
+  "Кюветы": "Kyuvetalar",
+};
+
+const ANALYTE_EN: Record<string, string> = {
+  "Пробирки": "Tubes",
+  "Starter 1+2 (2x230 мл)": "Starter 1+2 (2x230 ml)",
+  "Кюветы Reaction Modules": "Reaction Modules cuvettes",
+  "Промывочный концентрат": "Wash concentrate",
+  "Оптический контроль": "Optical control",
+  "Раствор для очистки труб": "Tubing cleaning solution",
+  "Starter 1+2 для X3": "Starter 1+2 for X3",
+  "Starter 1+2 (2x1.5 л)": "Starter 1+2 (2x1.5 l)",
+  "Кюветы Reaction Cup": "Reaction Cup cuvettes",
+  "Наконечники": "Tips",
+  "Щелочная промывка": "Alkaline wash",
+  "Кислотная промывка": "Acid wash",
+  "ISE очистка": "ISE cleaning",
+  "ISE набор": "ISE kit",
+  "Галогеновая лампа": "Halogen lamp",
+  "Кюветы": "Cuvettes",
+};
+
+export function analyteLabel(a: string, locale: string): string {
+  if (locale === "uz") return ANALYTE_UZ[a] ?? a;
+  if (locale === "en") return ANALYTE_EN[a] ?? a;
+  return a;
 }

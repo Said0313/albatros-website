@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import type { Product } from "@/types";
 import { Badge } from "@/components/ui/Badge";
-import { categoryLabel, productShort } from "@/data/i18n";
+import { categoryLabel, productShort, productName, analyteLabel } from "@/data/i18n";
 import { categoryPill } from "@/lib/categoryAccents";
 
 /**
@@ -35,7 +35,7 @@ export function ReagentCard({ product }: { product: Product }) {
         <Badge color={categoryPill(product.category)}>{categoryLabel(product.category, locale)}</Badge>
         <span className="shrink-0 font-mono text-xs text-brand-blue-deep">{product.brand}</span>
       </div>
-      <h3 className="mt-3 break-words font-display text-base font-bold text-text-primary">{product.name}</h3>
+      <h3 className="mt-3 break-words font-display text-base font-bold text-text-primary">{productName(product, locale)}</h3>
       <p className="mt-2 break-words text-[13px] leading-relaxed text-text-secondary">{productShort(product, locale)}</p>
 
       {analytes.length > 0 && (
@@ -46,7 +46,7 @@ export function ReagentCard({ product }: { product: Product }) {
                 key={a}
                 className="break-words rounded-md bg-bg-elevated px-2 py-1 font-mono text-[11px] text-text-secondary"
               >
-                {a}
+                {analyteLabel(a, locale)}
               </span>
             ))}
           </div>

@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { brands } from "@/lib/catalog";
 import { clients } from "@/data/clients";
-import { brandSpecialty, brandDescription, brandCountry } from "@/data/i18n";
+import { brandSpecialty, brandDescription, brandCountry, clientDescription } from "@/data/i18n";
 import { pageMetadata, type AppLocale } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -94,7 +94,7 @@ export default function PartnersPage() {
             className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
             {clients.filter((c) => !c.hidden).map((c, i) => {
-              const desc = locale === "uz" ? c.descriptionUz ?? c.description : c.description;
+              const desc = clientDescription(c, locale);
               return (
                 <ScrollReveal key={c.id} delay={(i % 3) * 0.06}>
                   <div className="flex h-full flex-col rounded-2xl border border-bg-border bg-bg-card p-6 shadow-[0_1px_2px_rgba(16,40,90,0.04)]">
