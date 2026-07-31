@@ -13,6 +13,7 @@ import PriceListPage from "./pages/PriceListPage.jsx";
 import EventsList from "./pages/EventsList.jsx";
 import EventEdit from "./pages/EventEdit.jsx";
 import AuditLog from "./pages/AuditLog.jsx";
+import PublishBar from "./components/PublishBar.jsx";
 
 function RequireAuth({ children }) {
   const { user, loading } = useAuth();
@@ -63,6 +64,7 @@ function Shell({ children }) {
             </nav>
           </div>
           <div className="flex items-center gap-4 text-sm">
+            <PublishBar />
             <span className="text-soft">
               {user.name} ({user.email})
             </span>

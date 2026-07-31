@@ -4,6 +4,7 @@ import { eventsApi } from "../api";
 import { imgUrl } from "../imgUrl";
 import { EVENT_TYPE_RU, RU_MONTHS, wordCount } from "./eventTypes.js";
 import DraftUz from "../components/DraftUz.jsx";
+import PublishStatus from "../components/PublishStatus.jsx";
 
 const EMPTY = {
   title: "",
@@ -46,7 +47,7 @@ export default function EventEdit({ mode }) {
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
-  const [ok, setOk] = useState("");
+  const [commit, setCommit] = useState(null);
   const fileRef = useRef(null);
 
   useEffect(() => {
@@ -114,7 +115,7 @@ export default function EventEdit({ mode }) {
 
   const save = async () => {
     setError("");
-    setOk("");
+    setCommit(null);
     const miss = [];
     if (!form.title.trim()) miss.push("название (RU)");
     if (!form.titleUz.trim()) miss.push("название (UZ)");
@@ -130,11 +131,11 @@ export default function EventEdit({ mode }) {
     try {
       if (isNew) {
         const d = await eventsApi.create(payload());
-        setOk("Мероприятие создано. Коммит: " + (d.commit?.commit || "—"));
+        setCommit(d.commit);
         navigate(`/events/${d.item.id}`, { replace: true });
       } else {
         const d = await eventsApi.update(id, payload());
-        setOk("Сохранено. Коммит: " + (d.commit?.commit || d.commit?.reason || "—"));
+        setCommit(d.commit);
       }
     } catch (e) {
       setError(e.message);
@@ -162,7 +163,7 @@ export default function EventEdit({ mode }) {
       </div>
 
       {error && <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
-      {ok && <div className="mb-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-700">{ok}</div>}
+      <PublishStatus commit={commit} action={isNew ? "Мероприятие создано" : "Сохранено"} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className="card p-5">

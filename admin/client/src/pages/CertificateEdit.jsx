@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { certificatesApi } from "../api";
 import SingleFileUpload from "../components/SingleFileUpload.jsx";
 import DraftUz from "../components/DraftUz.jsx";
+import PublishStatus from "../components/PublishStatus.jsx";
 
 const EMPTY = { image: "", title: "", titleUz: "", titleEn: "", file: "" };
 
@@ -14,7 +15,7 @@ export default function CertificateEdit({ mode }) {
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
-  const [ok, setOk] = useState("");
+  const [commit, setCommit] = useState(null);
 
   useEffect(() => {
     if (isNew) return;
@@ -29,7 +30,7 @@ export default function CertificateEdit({ mode }) {
 
   const save = async () => {
     setError("");
-    setOk("");
+    setCommit(null);
     const miss = [];
     if (!form.image) miss.push("изображение");
     if (!form.title.trim()) miss.push("название (RU)");
@@ -42,11 +43,11 @@ export default function CertificateEdit({ mode }) {
     try {
       if (isNew) {
         const d = await certificatesApi.create(form);
-        setOk("Сертификат создан. Коммит: " + (d.commit?.commit || "—"));
+        setCommit(d.commit);
         navigate(`/certificates/${d.item.id}`, { replace: true });
       } else {
         const d = await certificatesApi.update(id, form);
-        setOk("Сохранено. Коммит: " + (d.commit?.commit || d.commit?.reason || "—"));
+        setCommit(d.commit);
       }
     } catch (e) {
       setError(e.message);
@@ -74,7 +75,7 @@ export default function CertificateEdit({ mode }) {
       </div>
 
       {error && <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
-      {ok && <div className="mb-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-700">{ok}</div>}
+      <PublishStatus commit={commit} action={isNew ? "Сертификат создан" : "Сохранено"} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className="card p-5">

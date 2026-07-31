@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../api";
+import PublishStatus from "../components/PublishStatus.jsx";
 
 function fmtSize(bytes) {
   if (!bytes && bytes !== 0) return "—";
@@ -11,7 +12,7 @@ export default function PriceListPage() {
   const [info, setInfo] = useState(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const [ok, setOk] = useState("");
+  const [commit, setCommit] = useState(null);
   const fileRef = useRef(null);
 
   const load = () => {
@@ -22,7 +23,7 @@ export default function PriceListPage() {
   const handle = async (file) => {
     if (!file) return;
     setError("");
-    setOk("");
+    setCommit(null);
     if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
       setError("Нужен PDF-файл.");
       return;
@@ -30,7 +31,7 @@ export default function PriceListPage() {
     setBusy(true);
     try {
       const d = await api.priceListUpload(file);
-      setOk("Прайс-лист заменён. Коммит: " + (d.commit?.commit || "—"));
+      setCommit(d.commit);
       load();
     } catch (e) {
       setError(e.message);
@@ -48,7 +49,7 @@ export default function PriceListPage() {
       </p>
 
       {error && <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
-      {ok && <div className="mb-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-700">{ok}</div>}
+      <PublishStatus commit={commit} action="Прайс-лист заменён" />
 
       <div className="card p-5">
         <h2 className="mb-3 font-bold text-ink">Текущий файл</h2>

@@ -4,6 +4,7 @@ import { api } from "../api";
 import { imgUrl } from "../imgUrl";
 import BrandCombobox from "../components/BrandCombobox.jsx";
 import DraftUz from "../components/DraftUz.jsx";
+import PublishStatus from "../components/PublishStatus.jsx";
 
 const EMPTY = {
   name: "",
@@ -40,7 +41,7 @@ export default function ProductEdit({ mode }) {
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
-  const [ok, setOk] = useState("");
+  const [commit, setCommit] = useState(null);
   const [catalogBrands, setCatalogBrands] = useState([]);
   const fileRef = useRef(null);
 
@@ -184,7 +185,7 @@ export default function ProductEdit({ mode }) {
 
   const save = async () => {
     setError("");
-    setOk("");
+    setCommit(null);
     const miss = clientValidate();
     if (miss.length) {
       setError("Заполните обязательные поля: " + miss.join(", ") + ".");
@@ -194,12 +195,12 @@ export default function ProductEdit({ mode }) {
     try {
       if (isNew) {
         const d = await api.createProduct(payload());
-        setOk("Продукт создан. Коммит: " + (d.commit?.commit || "—"));
+        setCommit(d.commit);
         navigate(`/products/${d.product.slug}`, { replace: true });
       } else {
         const d = await api.updateProduct(slug, payload());
         setForm((f) => ({ ...f, images: d.product.images || f.images }));
-        setOk("Сохранено. Коммит: " + (d.commit?.commit || d.commit?.reason || "—"));
+        setCommit(d.commit);
       }
     } catch (e) {
       setError(e.message);
@@ -227,7 +228,7 @@ export default function ProductEdit({ mode }) {
       </div>
 
       {error && <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
-      {ok && <div className="mb-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-700">{ok}</div>}
+      <PublishStatus commit={commit} action={isNew ? "Продукт создан" : "Сохранено"} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Basic */}

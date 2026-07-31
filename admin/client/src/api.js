@@ -68,6 +68,10 @@ export const api = {
     fd.append("file", file);
     return request("/pricelist", { method: "POST", body: fd });
   },
+
+  // publish (catch up any commits that piled up without going out)
+  publishStatus: () => request("/publish/status"),
+  publish: () => request("/publish", { method: "POST" }),
 };
 
 // Generic resource API for the Phase 2 content types (partners, clients,

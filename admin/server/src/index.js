@@ -16,6 +16,8 @@ const { router: eventRoutes } = require("./routes/events.routes");
 const pricelistRoutes = require("./routes/pricelist.routes");
 const auditRoutes = require("./routes/audit.routes");
 const translateRoutes = require("./routes/translate.routes");
+const publishRoutes = require("./routes/publish.routes");
+const { checkGitIdentity } = require("./git");
 
 const app = express();
 
@@ -49,6 +51,7 @@ app.use("/api/events", eventRoutes);
 app.use("/api/pricelist", pricelistRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/translate-draft", translateRoutes);
+app.use("/api/publish", publishRoutes);
 
 // JSON 404 for unmatched /api/* routes must come before the static/SPA
 // fallback below, so unknown API calls never resolve to index.html.
@@ -75,3 +78,5 @@ app.listen(PORT, () => {
   console.log(`[admin] backend on http://localhost:${PORT}`);
   console.log(`[admin] site root: ${SITE_ROOT}`);
 });
+
+checkGitIdentity();
