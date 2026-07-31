@@ -10,7 +10,7 @@
   {
     "id": "biogen-med",
     "name": "Biogen Med",
-    "logo": "/images/clients/biogen-med.jpg",
+    "logo": "/images/clients/biogen-med.png",
     "description": "Сеть медицинских клиник и лабораторий в Ташкенте с несколькими филиалами. Лабораторные анализы, УЗИ, круглосуточный ЛОР-прием, консультации специалистов и процедурный кабинет.",
     "descriptionUz": "Toshkentdagi bir nechta filialga ega tibbiyot klinikalari va laboratoriyalari tarmogʻi. Laboratoriya tahlillari, UZI, sutkalik LOR qabuli, mutaxassislar maslahati va muolaja xonasi.",
     "descriptionEn": "A network of medical clinics and laboratories in Tashkent with several branches. Laboratory tests, ultrasound, round-the-clock ENT consultations, specialist appointments, and a procedure room."
@@ -98,7 +98,7 @@
   {
     "id": "shox-international-hospital",
     "name": "Shox International Hospital",
-    "logo": "/images/clients/shox-international-hospital.jpg",
+    "logo": "/images/clients/shox-international-hospital.png",
     "description": "Одна из первых частных клиник Узбекистана, сеть многопрофильных медицинских центров с более чем 15-летней историей. Специализируется на кардиологической диагностике и хирургии, применяет малоинвазивные и роботизированные методы, имеет собственную лабораторию и стационар.",
     "descriptionUz": "Oʻzbekistonning birinchi xususiy klinikalaridan biri, 15 yildan ortiq tarixga ega koʻp tarmoqli tibbiyot markazlari tarmogʻi. Kardiologik diagnostika va jarrohlikka ixtisoslashgan, kam invaziv va robototexnik usullarni qoʻllaydi, oʻz laboratoriyasi va statsionariga ega.",
     "descriptionEn": "One of Uzbekistan's first private clinics, a network of multidisciplinary centers with over 15 years of history. It specialises in cardiac diagnostics and surgery, uses minimally invasive and robotic methods, and has its own laboratory and inpatient ward."
@@ -162,7 +162,7 @@
   {
     "id": "ntd",
     "name": "NTD",
-    "logo": "/images/clients/ntd.jpg",
+    "logo": "/images/clients/ntd.png",
     "description": "Диагностический центр и лаборатория «Namangan Tibbiy Diagnostika» в Намангане. Работает круглосуточно: лабораторные исследования, УЗИ, МСКТ, ЭКГ и более ста видов услуг. Входит в сеть Toshkent Tibbiy Diagnostika (TTD).",
     "descriptionUz": "Namangandagi «Namangan Tibbiy Diagnostika» diagnostika markazi va laboratoriyasi. Sutkalik rejimda ishlaydi: laboratoriya tekshiruvlari, UZI, MSKT, EKG va yuzdan ortiq xizmat turi. Toshkent Tibbiy Diagnostika (TTD) tarmogʻiga kiradi.",
     "descriptionEn": "The Namangan Tibbiy Diagnostika centre and laboratory in Namangan. Open around the clock: laboratory testing, ultrasound, MSCT, ECG and more than a hundred services. Part of the Toshkent Tibbiy Diagnostika (TTD) network."
