@@ -10,15 +10,16 @@ import { PhoneInput } from "@/components/ui/PhoneInput";
 // ─────────────────────────────────────────────────────────────────────────────
 // MASTER SWITCH for the contact form.
 //   false -> the modal shows an "in development" state (brand helix + the direct
-//            contact details) instead of the form. This is the current default
-//            because the /api/contact Bitrix24 backend is not confirmed live.
-//   true  -> fully restores the working form below with NO other edits needed.
-// Before flipping this to true, set BITRIX_WEBHOOK_URL in the server environment
-// (that is the CRM webhook /api/contact creates the lead through) and confirm a
-// test submission actually lands in Bitrix. Without the variable the route now
-// fails loudly rather than accepting and discarding the lead.
+//            contact details) instead of the form.
+//   true  -> the working form below, posting to /api/contact. Current setting:
+//            BITRIX_WEBHOOK_URL is set in the server environment, which is the
+//            CRM webhook the route creates the lead through.
+// Flip back to false to return to the "in development" state with NO other
+// edits needed: that branch and its form.devTitle / form.devSubtitle strings are
+// deliberately kept in place. Note the route fails loudly if the variable is
+// ever missing, rather than accepting and discarding the lead.
 // ─────────────────────────────────────────────────────────────────────────────
-const CONTACT_FORM_ENABLED = false;
+const CONTACT_FORM_ENABLED = true;
 
 // Direct contact channels shown in the "in development" state, mirrored from the
 // contacts page and footer. Do not invent values here.
