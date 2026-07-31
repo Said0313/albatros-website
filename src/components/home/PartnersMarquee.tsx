@@ -11,8 +11,11 @@ import logoSizes from "@/data/logoSizes.json";
 // snap by up to 111px as its file loaded, moving the running animation and
 // producing the intermittent jerk. Real intrinsic sizes make the track width
 // final at first paint. Regenerate with scripts/gen-logo-sizes.mjs.
-const SIZES = logoSizes as Record<string, [number, number]>;
-const sizeOf = (logo: string): [number, number] => SIZES[logo] ?? [160, 48];
+const SIZES: Record<string, number[]> = logoSizes;
+const sizeOf = (logo: string): [number, number] => {
+  const s = SIZES[logo];
+  return s && s.length === 2 ? [s[0], s[1]] : [160, 48];
+};
 
 export function PartnersMarquee() {
   const t = useTranslations("partners");
