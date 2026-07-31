@@ -1,19 +1,19 @@
 [
   {
-    "id": "arzon-lab",
-    "name": "Arzon Lab",
-    "logo": "/images/clients/arzon-lab.webp",
-    "description": "Клинико-диагностическая лаборатория в Ташкенте, предлагает широкий спектр лабораторных анализов с акцентом на доступные цены.",
-    "descriptionUz": "Toshkentdagi klinik-diagnostik laboratoriya, arzon narxlarga urgʻu bergan holda keng koʻlamli laboratoriya tahlillarini taklif etadi.",
-    "descriptionEn": "A clinical diagnostic laboratory in Tashkent, offering a wide range of laboratory tests with an emphasis on affordable prices."
-  },
-  {
     "id": "akfa-medline",
     "name": "Akfa Medline",
     "logo": "/images/clients/akfa-medline.jpg",
     "description": "Крупнейший в Центральной Азии частный многопрофильный госпиталь, работает в Ташкенте с 2017 года. Единственная в Узбекистане клиника с аккредитацией JCI. Более 150 врачей, оборудование Siemens, лаборатория Roche и Sysmex, роботизированная хирургия.",
     "descriptionUz": "Markaziy Osiyodagi eng yirik xususiy koʻp tarmoqli shifoxona, Toshkentda 2017 yildan beri ishlaydi. Oʻzbekistonda yagona JCI akkreditatsiyasiga ega klinika. 150 dan ortiq shifokor, Siemens uskunalari, Roche va Sysmex laboratoriyasi, robototexnik jarrohlik.",
     "descriptionEn": "The largest private multidisciplinary hospital in Central Asia, operating in Tashkent since 2017. The only JCI-accredited clinic in Uzbekistan. More than 150 doctors, Siemens equipment, a Roche and Sysmex laboratory, and robotic surgery."
+  },
+  {
+    "id": "arzon-lab",
+    "name": "Arzon Lab",
+    "logo": "/images/clients/arzon-lab.webp",
+    "description": "Клинико-диагностическая лаборатория в Ташкенте, предлагает широкий спектр лабораторных анализов с акцентом на доступные цены.",
+    "descriptionUz": "Toshkentdagi klinik-diagnostik laboratoriya, arzon narxlarga urgʻu bergan holda keng koʻlamli laboratoriya tahlillarini taklif etadi.",
+    "descriptionEn": "A clinical diagnostic laboratory in Tashkent, offering a wide range of laboratory tests with an emphasis on affordable prices."
   },
   {
     "id": "openlab",
